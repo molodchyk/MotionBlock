@@ -46,9 +46,9 @@ Common uses:
 - allow image-heavy sites while blocking motion elsewhere
 - quickly allow media on sites that need it
 
-The popup controls the current site. The options page manages global defaults, per-site preferences, import/export, blocked media display, optional reveal buttons, and light/dark/system UI theme.
+The popup controls the current site. The options page manages global defaults, per-site preferences, JSON backup import/export, Chrome-profile settings sync, blocked media display, optional reveal buttons, and light/dark/system UI theme.
 
-MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings stay in Chrome extension storage.
+MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings are stored in Chrome extension sync storage and may sync through Chrome if the user has Chrome extension sync enabled.
 
 ## Support URL
 
@@ -66,7 +66,7 @@ https://github.com/molodchyk/MotionBlock/blob/main/PRIVACY.md
 
 ### storage
 
-Used to save global defaults, per-site preferences, blocked media display mode, UI theme, and import/export settings.
+Used to save global defaults, per-site preferences, blocked media display mode, UI theme, and reveal-button preference in Chrome extension sync storage.
 
 ### declarativeNetRequest
 
@@ -82,9 +82,9 @@ Used because users expect media blocking to work across arbitrary websites. Moti
 
 ## Data Disclosure
 
-MotionBlock does not collect, sell, transmit, or analyze personal data. It does not use analytics, remote configuration, tracking pixels, or external services.
+MotionBlock does not collect, sell, transmit, or analyze personal data. It does not use analytics, remote configuration, tracking pixels, external accounts, or developer-operated sync servers.
 
-MotionBlock reads page media elements only to apply the user's selected blocking rules. Per-site preferences are stored as hostnames in Chrome extension storage.
+MotionBlock reads page media elements only to apply the user's selected blocking rules. Per-site preferences are stored as hostnames in Chrome extension sync storage.
 
 ## Promo Assets
 

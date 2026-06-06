@@ -13,6 +13,9 @@
   const siteTableBody = document.getElementById("siteTableBody");
   const exportSettings = document.getElementById("exportSettings");
   const importSettings = document.getElementById("importSettings");
+  const applyPastedSettings = document.getElementById("applyPastedSettings");
+  const importSettingsFile = document.getElementById("importSettingsFile");
+  const refreshSettings = document.getElementById("refreshSettings");
   const settingsJson = document.getElementById("settingsJson");
   const statusLine = document.getElementById("statusLine");
 
@@ -98,30 +101,60 @@
   });
 
   exportSettings.addEventListener("click", function () {
-    settingsJson.value = JSON.stringify(MB.normalizeSettings(settings), null, 2);
-    showStatus("Settings exported.");
+    const json = JSON.stringify(createBackupPayload(), null, 2);
+    settingsJson.value = json;
+    downloadJson(json, createBackupFilename());
+    showStatus("Settings exported to a JSON file.");
   });
 
-  importSettings.addEventListener("click", async function () {
+  importSettings.addEventListener("click", function () {
+    importSettingsFile.value = "";
+    importSettingsFile.click();
+  });
+
+  importSettingsFile.addEventListener("change", async function () {
+    const file = importSettingsFile.files && importSettingsFile.files[0];
+    if (!file) {
+      return;
+    }
+
     try {
-      const parsed = JSON.parse(settingsJson.value);
-      settings = MB.normalizeSettings(parsed);
-      await saveAllSettings("Settings imported.");
+      const text = await file.text();
+      settingsJson.value = text;
+      await importSettingsFromText(text, "Settings imported from file.");
     } catch (error) {
-      showStatus("Import failed: invalid JSON.");
+      showStatus("Import failed: " + getErrorMessage(error));
     }
   });
 
+  applyPastedSettings.addEventListener("click", async function () {
+    await importSettingsFromText(settingsJson.value, "Settings imported from pasted JSON.");
+  });
+
+  refreshSettings.addEventListener("click", async function () {
+    await loadSettings("Settings refreshed from Chrome sync.");
+  });
+
   async function init() {
+    await loadSettings("");
+  }
+
+  async function loadSettings(message) {
     const response = await sendMessage({ type: "motionblock:getSettings" });
     if (!response || !response.ok) {
       showStatus(response && response.error ? response.error : "Could not load settings.");
-      return;
+      return false;
     }
 
     settings = MB.normalizeSettings(response.settings);
     MB.applyUiTheme(settings.uiTheme);
     render();
+
+    if (message) {
+      showStatus(message);
+    }
+
+    return true;
   }
 
   function render() {
@@ -267,6 +300,70 @@
     showStatus(message);
   }
 
+  async function importSettingsFromText(text, message) {
+    try {
+      settings = parseImportedSettings(text);
+      await saveAllSettings(message);
+    } catch (error) {
+      showStatus("Import failed: " + getErrorMessage(error));
+    }
+  }
+
+  function parseImportedSettings(text) {
+    if (!text || !text.trim()) {
+      throw new Error("choose a JSON file or paste a backup first.");
+    }
+
+    const parsed = JSON.parse(text);
+    const candidate = parsed && typeof parsed === "object" && parsed.settings ? parsed.settings : parsed;
+
+    if (!hasRecognizedSettingsShape(candidate)) {
+      throw new Error("this does not look like a MotionBlock settings backup.");
+    }
+
+    return MB.normalizeSettings(candidate);
+  }
+
+  function hasRecognizedSettingsShape(value) {
+    if (!value || typeof value !== "object" || Array.isArray(value)) {
+      return false;
+    }
+
+    return ["enabled", "uiTheme", "showRevealControls", "replacementMode", "features", "siteRules"].some(function (key) {
+      return Object.prototype.hasOwnProperty.call(value, key);
+    });
+  }
+
+  function createBackupPayload() {
+    return {
+      app: "MotionBlock",
+      schemaVersion: 1,
+      exportedAt: new Date().toISOString(),
+      settings: MB.normalizeSettings(settings)
+    };
+  }
+
+  function createBackupFilename() {
+    const date = new Date().toISOString().slice(0, 10);
+    return "motionblock-settings-" + date + ".json";
+  }
+
+  function downloadJson(json, filename) {
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    window.setTimeout(function () {
+      URL.revokeObjectURL(url);
+    }, 0);
+  }
+
   function parseTriState(value) {
     if (value === "true") {
       return true;
@@ -289,6 +386,14 @@
 
   function showStatus(message) {
     statusLine.textContent = message;
+  }
+
+  function getErrorMessage(error) {
+    if (error && error.name === "SyntaxError") {
+      return "invalid JSON.";
+    }
+
+    return error && error.message ? error.message : "invalid JSON.";
   }
 
   function sendMessage(message) {

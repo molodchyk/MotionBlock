@@ -205,6 +205,18 @@ td select {
   display: flex;
   gap: 8px;
   margin-bottom: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 textarea {

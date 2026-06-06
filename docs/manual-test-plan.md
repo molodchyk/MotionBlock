@@ -24,7 +24,10 @@
 9. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
 10. In Options, switch Interface theme between System, Light, and Dark and confirm popup/options follow the selected mode.
 11. In Options, confirm **Reveal buttons for blocked media** is off by default. Enable it only when testing click-to-play on simple pages.
-12. Use **Reset site** and reload.
+12. Export a JSON backup file, import it back from the file picker, and confirm settings remain intact.
+13. Paste the exported JSON into the textarea, apply it, and confirm settings remain intact.
+14. Click **Refresh from sync** and confirm the options page reloads current settings without changing them.
+15. Use **Reset site** and reload.
 
 ## Review-Derived Live Sites
 

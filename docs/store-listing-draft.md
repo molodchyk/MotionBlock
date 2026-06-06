@@ -34,7 +34,7 @@ Common uses:
 - allow image-heavy sites while blocking motion elsewhere
 - quickly allow media on sites that need it
 
-MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings stay in Chrome extension storage.
+MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings are stored in Chrome extension sync storage and may sync through Chrome if the user has Chrome extension sync enabled.
 
 ## Troubleshooting Copy
 

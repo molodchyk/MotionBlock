@@ -30,7 +30,8 @@ The popup controls the current site. The options page controls global defaults a
 - Dynamic network blocking for GIF, GIFV, WebP URL patterns, broad image, broad video, and audio settings.
 - DOM cleanup for already-in-page images, video, audio, emoji renderers, and CSS motion.
 - Per-site tri-state preferences: inherit, block/on, allow/off.
-- Settings export and import.
+- Settings export/import with JSON backup files.
+- Chrome-profile settings sync through Chrome extension sync storage when browser sync is enabled.
 - System, light, and dark UI theme modes.
 - Optional reveal buttons for blocked media. Off by default because complex sites can reuse hidden media surfaces.
 

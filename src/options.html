@@ -73,11 +73,15 @@
 
       <section class="band">
         <h2>Backup</h2>
+        <p>Settings are stored in Chrome sync storage. If Chrome sync is enabled for extensions, they can follow your Chrome profile.</p>
         <div class="backup-actions">
           <button id="exportSettings" type="button">Export JSON</button>
-          <button id="importSettings" type="button">Import JSON</button>
+          <button id="importSettings" type="button">Import file</button>
+          <button id="applyPastedSettings" class="secondary" type="button">Apply pasted JSON</button>
+          <button id="refreshSettings" class="secondary" type="button">Refresh from sync</button>
         </div>
-        <textarea id="settingsJson" spellcheck="false" placeholder="Exported settings appear here. Paste JSON here to import."></textarea>
+        <input id="importSettingsFile" class="visually-hidden" type="file" accept="application/json,.json">
+        <textarea id="settingsJson" spellcheck="false" placeholder="Export preview appears here. You can also paste a MotionBlock JSON backup and apply it."></textarea>
         <p id="statusLine" class="status-line" aria-live="polite"></p>
       </section>
     </main>
