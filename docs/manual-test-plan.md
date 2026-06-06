@@ -15,12 +15,14 @@
    - audio remains visible
    - CSS animation still runs
    - emoji remains visible
+   - GitHub-style reaction buttons remain visible
    - dynamically inserted GIF/media is blocked
 5. Open the popup and click **Allow this site**.
 6. Reload the page and confirm media is allowed.
 7. Click **Block motion here**.
 8. Reload the page and confirm GIF/GIFV/autoplay/CSS motion are blocked on the fixture.
-9. Use **Reset site** and reload.
+9. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
+10. Use **Reset site** and reload.
 
 ## Review-Derived Live Sites
 

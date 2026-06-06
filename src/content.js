@@ -8,6 +8,26 @@
   const GIF_LIKE_TEXT_PATTERN = /\b(gif|gifv|giphy|tenor|looping|animated)\b/i;
   const GIF_LIKE_URL_PATTERN =
     /(giphy\.com|media\.tenor\.com|tenor\.com|gfycat\.com|redgifs\.com|external-preview\.redd\.it|preview\.redd\.it|\.gifv(?:$|[?#])|[?&](?:format|type)=gifv?(?:&|$)|\/gif[s/]?)/i;
+  const EMOJI_UI_SELECTORS = [
+    "img.emoji",
+    "img.twemoji",
+    "g-emoji",
+    "[data-emoji]",
+    "[data-emoji-name]",
+    "[data-reaction-label]",
+    "[data-reaction-content]",
+    "[data-testid*='emoji' i]",
+    "[data-testid*='reaction' i]",
+    "[aria-label*='emoji' i]",
+    "[aria-label*='reaction' i]",
+    ".emoji",
+    ".twemoji",
+    ".reaction-summary-item",
+    ".reaction-popover-container",
+    ".social-reaction-summary-item",
+    ".js-reaction-group-button",
+    ".js-reaction-summary-item"
+  ].join(",");
 
   let storedSettings = MB.DEFAULT_SETTINGS;
   let effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
@@ -94,6 +114,8 @@
 
     if (effectiveSettings.features.emoji) {
       processEmoji(document);
+    } else {
+      restoreEmojiElements(document);
     }
 
     updateAllRevealOverlayPositions();
@@ -156,9 +178,15 @@
     body.querySelectorAll("img.emoji, img.twemoji, img[alt]").forEach(function (image) {
       const alt = image.getAttribute("alt") || "";
       if (EMOJI_PATTERN.test(alt)) {
-        image.classList.add("motionblock-emoji-image");
+        hideEmojiElement(image);
       }
       EMOJI_PATTERN.lastIndex = 0;
+    });
+
+    body.querySelectorAll(EMOJI_UI_SELECTORS).forEach(function (element) {
+      if (isLikelyEmojiUiElement(element)) {
+        hideEmojiElement(element);
+      }
     });
 
     const walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
@@ -188,6 +216,55 @@
     nodes.forEach(function (textNode) {
       textNode.nodeValue = textNode.nodeValue.replace(EMOJI_PATTERN, "");
     });
+  }
+
+  function hideEmojiElement(element) {
+    element.classList.add("motionblock-emoji-hidden");
+    if (element.tagName === "IMG") {
+      element.classList.add("motionblock-emoji-image");
+    }
+  }
+
+  function restoreEmojiElements(root) {
+    const body = root.body;
+    if (!body) {
+      return;
+    }
+
+    body.querySelectorAll(".motionblock-emoji-hidden, .motionblock-emoji-image").forEach(function (element) {
+      element.classList.remove("motionblock-emoji-hidden", "motionblock-emoji-image");
+    });
+  }
+
+  function isLikelyEmojiUiElement(element) {
+    if (element.closest(".motionblock-reveal-button")) {
+      return false;
+    }
+
+    if (element.matches("g-emoji, img.emoji, img.twemoji, [data-emoji], [data-emoji-name], [data-reaction-label], [data-reaction-content]")) {
+      return true;
+    }
+
+    const text = [
+      element.getAttribute("alt"),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id"),
+      element.getAttribute("data-reaction-label"),
+      element.getAttribute("data-reaction-content"),
+      element.textContent
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    if (EMOJI_PATTERN.test(text)) {
+      EMOJI_PATTERN.lastIndex = 0;
+      return true;
+    }
+    EMOJI_PATTERN.lastIndex = 0;
+
+    return /\b(emoji|reaction|react|thumbs up|thumbs down|hooray|heart|rocket|eyes|laugh|confused)\b/i.test(text);
   }
 
   function shouldInspectImages() {

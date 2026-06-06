@@ -43,6 +43,7 @@ audio.motionblock-media-placeholder {
   visibility: hidden !important;
 }
 
+.motionblock-emoji-hidden,
 img.motionblock-emoji-image {
   display: none !important;
 }
