@@ -63,6 +63,13 @@ node .\test\sanity.js
 - First-frame GIF replacement is not implemented yet. The current default is a compact placeholder that preserves the displayed size when possible.
 - Emoji removal changes text and cannot be cleanly restored without reloading the page.
 
+## Support
+
+If this extension saves you time and you want to support its development:
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?logo=buymeacoffee&logoColor=000)](https://buymeacoffee.com/molodchyk)
+[![Patreon](https://img.shields.io/badge/Patreon-support-F96854?logo=patreon&logoColor=fff)](https://www.patreon.com/OMolodchyk)
+
 ## License
 
 MotionBlock is licensed under the GNU General Public License v3.0. See `LICENSE`.
