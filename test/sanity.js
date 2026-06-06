@@ -25,6 +25,12 @@ assert.equal(defaults.features.gifs, true);
 assert.equal(defaults.features.gifv, true);
 assert.equal(defaults.features.animatedWebp, false);
 assert.equal(defaults.features.images, false);
+assert.equal(MB.FEATURE_GROUPS.length >= 2, true);
+assert.equal(MB.FEATURE_DEFINITIONS.every(function (feature) {
+  return MB.FEATURE_GROUPS.some(function (group) {
+    return group.key === feature.group;
+  });
+}), true);
 
 const settings = MB.normalizeSettings({
   enabled: true,

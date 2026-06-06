@@ -6,6 +6,7 @@
   const statusBadge = document.getElementById("statusBadge");
   const effectiveSummary = document.getElementById("effectiveSummary");
   const siteEnabled = document.getElementById("siteEnabled");
+  const siteRuleNote = document.getElementById("siteRuleNote");
   const featureList = document.getElementById("featureList");
   const blockMotionHereButton = document.getElementById("blockMotionHere");
   const allowSiteButton = document.getElementById("allowSite");
@@ -96,44 +97,73 @@
     unsupportedPage = false;
     delete document.body.dataset.pageState;
     siteLabel.textContent = host || "Unknown site";
-    statusBadge.textContent = effective.enabled ? "On" : "Allowed";
+    statusBadge.textContent = effective.enabled ? "Blocking" : "Allowed";
     statusBadge.classList.toggle("off", !effective.enabled);
     effectiveSummary.textContent = getEffectiveSummary();
 
     const rule = getCurrentRule();
     siteEnabled.value = formatTriState(rule.enabled);
+    siteRuleNote.textContent = getSiteRuleNote(rule);
 
     featureList.innerHTML = "";
-    MB.FEATURE_DEFINITIONS.forEach(function (feature) {
-      const row = document.createElement("label");
-      row.className = "feature-row";
+    MB.FEATURE_GROUPS.forEach(function (group) {
+      const features = MB.FEATURE_DEFINITIONS.filter(function (feature) {
+        return feature.group === group.key;
+      });
 
-      const nameWrap = document.createElement("span");
-      nameWrap.className = "feature-label";
-      const name = document.createElement("span");
-      const meta = document.createElement("span");
+      if (!features.length) {
+        return;
+      }
 
-      name.className = "feature-name";
-      name.textContent = feature.shortLabel;
-      meta.className = "feature-meta";
-      meta.textContent = effective.features[feature.key] ? "Blocking" : "Allowed";
+      const groupNode = document.createElement("div");
+      groupNode.className = "feature-group";
 
-      nameWrap.appendChild(name);
-      nameWrap.appendChild(meta);
+      if (group.key !== "motion") {
+        const title = document.createElement("div");
+        title.className = "feature-group-title";
+        title.textContent = group.label;
+        groupNode.appendChild(title);
+      }
 
-      const select = document.createElement("select");
-      select.dataset.feature = feature.key;
-      select.innerHTML = [
-        "<option value=''>Use global</option>",
-        "<option value='true'>Block here</option>",
-        "<option value='false'>Allow here</option>"
-      ].join("");
-      select.value = formatTriState(rule.features[feature.key]);
+      features.forEach(function (feature) {
+        groupNode.appendChild(createFeatureRow(feature, rule));
+      });
 
-      row.appendChild(nameWrap);
-      row.appendChild(select);
-      featureList.appendChild(row);
+      featureList.appendChild(groupNode);
     });
+
+    resetSiteButton.disabled = !hasSiteRule();
+  }
+
+  function createFeatureRow(feature, rule) {
+    const row = document.createElement("label");
+    row.className = "feature-row";
+
+    const nameWrap = document.createElement("span");
+    nameWrap.className = "feature-label";
+    const name = document.createElement("span");
+    const meta = document.createElement("span");
+
+    name.className = "feature-name";
+    name.textContent = feature.shortLabel;
+    meta.className = "feature-meta";
+    meta.textContent = getFeatureMeta(feature, rule);
+
+    nameWrap.appendChild(name);
+    nameWrap.appendChild(meta);
+
+    const select = document.createElement("select");
+    select.dataset.feature = feature.key;
+    select.innerHTML = [
+      "<option value=''>Use global</option>",
+      "<option value='true'>Block here</option>",
+      "<option value='false'>Allow here</option>"
+    ].join("");
+    select.value = formatTriState(rule.features[feature.key]);
+
+    row.appendChild(nameWrap);
+    row.appendChild(select);
+    return row;
   }
 
   async function saveSiteRule(rule) {
@@ -203,7 +233,7 @@
     siteEnabled.disabled = disabled;
     blockMotionHereButton.disabled = disabled;
     allowSiteButton.disabled = disabled;
-    resetSiteButton.disabled = disabled;
+    resetSiteButton.disabled = disabled || !hasSiteRule();
     reloadTabButton.disabled = disabled;
     featureList.querySelectorAll("select").forEach(function (select) {
       select.disabled = disabled;
@@ -224,6 +254,7 @@
     statusBadge.classList.add("off");
     effectiveSummary.textContent = "MotionBlock cannot configure browser, extension, or other protected pages.";
     siteEnabled.value = "";
+    siteRuleNote.textContent = "";
     featureList.innerHTML = "";
     setControlsDisabled(true);
     openOptionsButton.disabled = false;
@@ -243,7 +274,7 @@
     }
 
     if (!effective.enabled) {
-      return "Allowed here: MotionBlock is off for this site.";
+      return "This site is allowed. MotionBlock is not blocking media here.";
     }
 
     const active = MB.FEATURE_DEFINITIONS.filter(function (feature) {
@@ -256,6 +287,44 @@
       return "Active here, but no media categories are currently blocked.";
     }
 
-    return "Blocking here: " + active.join(", ") + ".";
+    return "Blocking " + active.join(", ") + " on this site.";
+  }
+
+  function getSiteRuleNote(rule) {
+    if (rule.enabled === false) {
+      return "All MotionBlock rules are off for this site.";
+    }
+
+    if (rule.enabled === true) {
+      return "This site uses its own MotionBlock settings.";
+    }
+
+    if (hasFeatureOverrides(rule)) {
+      return "This site follows global status with media-specific overrides.";
+    }
+
+    return "This site follows your global defaults.";
+  }
+
+  function getFeatureMeta(feature, rule) {
+    if (rule.enabled === false) {
+      return "Inactive while site is allowed";
+    }
+
+    if (typeof rule.features[feature.key] === "boolean") {
+      return rule.features[feature.key] ? "Override: blocking" : "Override: allowed";
+    }
+
+    return effective.features[feature.key] ? "Global: blocking" : "Global: allowed";
+  }
+
+  function hasSiteRule() {
+    return Boolean(host && settings.siteRules[host] && !MB.isEmptySiteRule(settings.siteRules[host]));
+  }
+
+  function hasFeatureOverrides(rule) {
+    return MB.FEATURE_KEYS.some(function (key) {
+      return typeof rule.features[key] === "boolean";
+    });
   }
 })();

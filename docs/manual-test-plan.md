@@ -22,15 +22,18 @@
 7. Click **Block motion here**.
 8. Reload the page and confirm GIF/GIFV/autoplay/CSS motion are blocked on the fixture.
 9. Confirm popup feature labels show each media type and its Blocking/Allowed state on separate lines.
-10. Confirm changing a popup preference shows the reload hint.
-11. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
-12. In Options, switch Interface theme between System, Light, and Dark and confirm popup/options follow the selected mode.
-13. In Options, confirm **Reveal buttons for blocked media** is off by default. Enable it only when testing click-to-play on simple pages.
-14. Export a JSON backup file, import it back from the file picker, and confirm settings remain intact.
-15. Paste the exported JSON into the textarea, apply it, and confirm settings remain intact.
-16. Click **Refresh from sync** and confirm the options page reloads current settings without changing them.
-17. Open the popup while the Options page or `chrome://extensions` is active and confirm current-site controls are hidden.
-18. Use **Reset site** and reload.
+10. Confirm popup rows distinguish Global from Override state.
+11. Confirm changing a popup preference shows the reload hint.
+12. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
+13. In Options, confirm global features are grouped into motion blocking and broad media blockers.
+14. Click **Restore recommended** and confirm GIFs/GIFV/autoplay return on while broad blockers remain off.
+15. In Options, switch Interface theme between System, Light, and Dark and confirm popup/options follow the selected mode.
+16. In Options, confirm **Reveal buttons for blocked media** is off by default. Enable it only when testing click-to-play on simple pages.
+17. Export a JSON backup file, import it back from the file picker, and confirm settings remain intact.
+18. Paste the exported JSON into the textarea, apply it, and confirm settings remain intact.
+19. Click **Refresh from sync** and confirm the options page reloads current settings without changing them.
+20. Open the popup while the Options page or `chrome://extensions` is active and confirm current-site controls are hidden.
+21. Use **Reset site** and reload.
 
 ## Review-Derived Live Sites
 

@@ -7,6 +7,7 @@
   const replacementMode = document.getElementById("replacementMode");
   const uiTheme = document.getElementById("uiTheme");
   const showRevealControls = document.getElementById("showRevealControls");
+  const restoreRecommended = document.getElementById("restoreRecommended");
   const addSiteForm = document.getElementById("addSiteForm");
   const newSiteHost = document.getElementById("newSiteHost");
   const siteTableHead = document.getElementById("siteTableHead");
@@ -52,6 +53,14 @@
   showRevealControls.addEventListener("change", function () {
     settings.showRevealControls = showRevealControls.checked;
     saveAllSettings("Reveal button setting saved.");
+  });
+
+  restoreRecommended.addEventListener("click", function () {
+    settings.enabled = true;
+    settings.replacementMode = "placeholder";
+    settings.showRevealControls = false;
+    settings.features = MB.normalizeFeatures({}, MB.DEFAULT_FEATURES);
+    saveAllSettings("Recommended defaults restored.");
   });
 
   addSiteForm.addEventListener("submit", function (event) {
@@ -170,28 +179,71 @@
   function renderGlobalFeatures() {
     globalFeatures.innerHTML = "";
 
-    MB.FEATURE_DEFINITIONS.forEach(function (feature) {
-      const label = document.createElement("label");
-      label.className = "feature-toggle";
+    MB.FEATURE_GROUPS.forEach(function (group) {
+      const features = MB.FEATURE_DEFINITIONS.filter(function (feature) {
+        return feature.group === group.key;
+      });
 
-      const input = document.createElement("input");
-      input.type = "checkbox";
-      input.dataset.feature = feature.key;
-      input.checked = Boolean(settings.features[feature.key]);
+      if (!features.length) {
+        return;
+      }
 
-      const text = document.createElement("span");
-      const title = document.createElement("strong");
-      const description = document.createElement("span");
+      const section = document.createElement("section");
+      section.className = "feature-group-card";
 
-      title.textContent = feature.label;
-      description.textContent = feature.description;
-      text.appendChild(title);
-      text.appendChild(description);
+      const heading = document.createElement("div");
+      heading.className = "feature-group-heading";
 
-      label.appendChild(input);
-      label.appendChild(text);
-      globalFeatures.appendChild(label);
+      const title = document.createElement("h3");
+      const description = document.createElement("p");
+
+      title.textContent = group.label;
+      description.textContent = group.description;
+      heading.appendChild(title);
+      heading.appendChild(description);
+      section.appendChild(heading);
+
+      const grid = document.createElement("div");
+      grid.className = "feature-card-grid";
+
+      features.forEach(function (feature) {
+        grid.appendChild(createGlobalFeatureToggle(feature));
+      });
+
+      section.appendChild(grid);
+      globalFeatures.appendChild(section);
     });
+  }
+
+  function createGlobalFeatureToggle(feature) {
+    const label = document.createElement("label");
+    label.className = "feature-toggle";
+
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.dataset.feature = feature.key;
+    input.checked = Boolean(settings.features[feature.key]);
+
+    const text = document.createElement("span");
+    const titleRow = document.createElement("span");
+    const title = document.createElement("strong");
+    const state = document.createElement("span");
+    const description = document.createElement("span");
+
+    titleRow.className = "feature-title-row";
+    state.className = "feature-state";
+    state.textContent = settings.features[feature.key] ? "Default on" : "Default off";
+
+    title.textContent = feature.label;
+    description.textContent = feature.description;
+    titleRow.appendChild(title);
+    titleRow.appendChild(state);
+    text.appendChild(titleRow);
+    text.appendChild(description);
+
+    label.appendChild(input);
+    label.appendChild(text);
+    return label;
   }
 
   function renderSiteTable() {

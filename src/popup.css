@@ -11,7 +11,7 @@ body {
   background: #f7f8f5;
   color: #172522;
   margin: 0;
-  min-width: 360px;
+  min-width: 380px;
 }
 
 button,
@@ -118,6 +118,15 @@ body[data-page-state="unsupported"] .reload-hint {
   text-transform: uppercase;
 }
 
+.site-note {
+  color: #68766f;
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 8px 0 0;
+  max-width: none;
+  white-space: normal;
+}
+
 .field,
 .feature-row {
   align-items: center;
@@ -152,7 +161,25 @@ select {
 
 .feature-list {
   display: grid;
+  gap: 12px;
+}
+
+.feature-group {
+  display: grid;
   gap: 8px;
+}
+
+.feature-group + .feature-group {
+  border-top: 1px solid #e4e9e4;
+  padding-top: 10px;
+}
+
+.feature-group-title {
+  color: #59645e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .feature-meta {
@@ -201,9 +228,8 @@ button.primary:hover {
   background: #245462;
 }
 
-.icon-button {
+.options-button {
   align-items: center;
-  aspect-ratio: 1;
   background: #183b45;
   border-color: #183b45;
   border-radius: 8px;
@@ -213,11 +239,10 @@ button.primary:hover {
   font-weight: 800;
   justify-content: center;
   min-height: 36px;
-  padding: 0;
-  width: 36px;
+  padding: 0 12px;
 }
 
-.icon-button:hover {
+.options-button:hover {
   background: #245462;
 }
 
@@ -242,6 +267,15 @@ html[data-theme="dark"] .section-title {
   color: #c2d0c9;
 }
 
+html[data-theme="dark"] .site-note,
+html[data-theme="dark"] .feature-group-title {
+  color: #aebbb5;
+}
+
+html[data-theme="dark"] .feature-group + .feature-group {
+  border-top-color: #2a383f;
+}
+
 html[data-theme="dark"] select {
   background: #10171b;
   border-color: #3a4a52;
@@ -262,6 +296,16 @@ html[data-theme="dark"] button.primary {
   background: #2f7754;
   border-color: #2f7754;
   color: #ffffff;
+}
+
+html[data-theme="dark"] .options-button {
+  background: #2f7754;
+  border-color: #2f7754;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .options-button:hover {
+  background: #3a8c63;
 }
 
 html[data-theme="dark"] .status {

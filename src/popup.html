@@ -13,7 +13,7 @@
           <h1>MotionBlock</h1>
           <p id="siteLabel">Loading site...</p>
         </div>
-        <button id="openOptions" type="button" class="icon-button" title="Open options" aria-label="Open options">MB</button>
+        <button id="openOptions" type="button" class="options-button">Options</button>
       </header>
 
       <section class="summary" aria-live="polite">
@@ -28,17 +28,18 @@
 
       <section class="section">
         <label class="field">
-          <span>Current site</span>
+          <span>Site mode</span>
           <select id="siteEnabled">
-            <option value="">Use global setting</option>
-            <option value="true">Always on here</option>
-            <option value="false">Allow all media here</option>
+            <option value="">Follow global defaults</option>
+            <option value="true">Block on this site</option>
+            <option value="false">Allow this site</option>
           </select>
         </label>
+        <p id="siteRuleNote" class="site-note"></p>
       </section>
 
       <section class="section">
-        <div class="section-title">Site preferences</div>
+        <div class="section-title">Site media controls</div>
         <div id="featureList" class="feature-list"></div>
       </section>
 

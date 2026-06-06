@@ -8,57 +8,79 @@
   const FEATURE_DEFINITIONS = [
     {
       key: "gifs",
+      group: "motion",
       label: "GIF images",
       shortLabel: "GIFs",
       description: "Block .gif image requests and GIF data URLs before they animate."
     },
     {
       key: "gifv",
+      group: "motion",
       label: "GIFV and GIF-like video URLs",
       shortLabel: "GIFV",
       description: "Block .gifv URLs and video elements that behave like looping GIFs."
     },
     {
       key: "animatedWebp",
+      group: "broad",
       label: "WebP URL patterns",
       shortLabel: "WebP",
       description: "Block .webp image URLs. Off by default because many WebP images are not animated."
     },
     {
       key: "autoplayVideo",
+      group: "motion",
       label: "Autoplay and looping video",
       shortLabel: "Autoplay",
       description: "Pause autoplay video and remove muted looping video used as animation."
     },
     {
       key: "video",
+      group: "broad",
       label: "All video",
       shortLabel: "Video",
       description: "Block HTML5 video and common video file requests."
     },
     {
       key: "audio",
+      group: "broad",
       label: "Audio",
       shortLabel: "Audio",
       description: "Block audio elements and common audio file requests."
     },
     {
       key: "images",
+      group: "broad",
       label: "All images",
       shortLabel: "Images",
       description: "Block image requests and remove image elements. Use per-site allow rules for image-heavy sites."
     },
     {
       key: "emoji",
+      group: "broad",
       label: "Emoji text and emoji images",
       shortLabel: "Emoji",
       description: "Remove emoji characters and common emoji image renderers. Off by default because it changes text."
     },
     {
       key: "cssMotion",
+      group: "motion",
       label: "CSS animation and transitions",
       shortLabel: "CSS",
       description: "Disable CSS animations, transitions, and smooth scrolling."
+    }
+  ];
+
+  const FEATURE_GROUPS = [
+    {
+      key: "motion",
+      label: "Motion blocking",
+      description: "Recommended defaults for GIFs, GIF-like videos, autoplay, and page motion."
+    },
+    {
+      key: "broad",
+      label: "Broad media blockers",
+      description: "Power-user controls for images, video, audio, WebP URLs, and emoji. These can change or break some sites."
     }
   ];
 
@@ -308,6 +330,7 @@
   root.MotionBlock = {
     STORAGE_KEY,
     FEATURE_DEFINITIONS,
+    FEATURE_GROUPS,
     FEATURE_KEYS,
     UI_THEME_MODES,
     DEFAULT_FEATURES: clone(DEFAULT_FEATURES),
