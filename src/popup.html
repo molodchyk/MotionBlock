@@ -13,10 +13,13 @@
           <h1>MotionBlock</h1>
           <p id="siteLabel">Loading site...</p>
         </div>
-        <span id="statusBadge" class="status">On</span>
+        <button id="openOptions" type="button" class="icon-button" title="Open options" aria-label="Open options">MB</button>
       </header>
 
-      <p id="effectiveSummary" class="summary">Checking active rules...</p>
+      <section class="summary" aria-live="polite">
+        <span id="statusBadge" class="status">On</span>
+        <p id="effectiveSummary">Checking active rules...</p>
+      </section>
 
       <section class="quick-actions">
         <button id="blockMotionHere" type="button" class="primary">Block motion here</button>
@@ -42,7 +45,6 @@
       <footer class="footer">
         <button id="resetSite" type="button">Reset site</button>
         <button id="reloadTab" type="button">Reload</button>
-        <button id="openOptions" type="button" class="primary">Options</button>
       </footer>
     </main>
 

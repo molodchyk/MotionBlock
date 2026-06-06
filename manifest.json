@@ -3,7 +3,7 @@
   "name": "MotionBlock: GIF, Animation & Autoplay Blocker",
   "short_name": "MotionBlock",
   "description": "Stop looping GIFs, GIFV, animated WebP by URL, and autoplay media with per-site rules.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "permissions": [
     "storage",
     "declarativeNetRequest",

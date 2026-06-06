@@ -1,5 +1,7 @@
 # Store Listing Draft
 
+For Chrome Web Store copy-paste fields, use `docs/chrome-web-store-entry.md`.
+
 ## Title
 
 MotionBlock: GIF, Animation & Autoplay Blocker

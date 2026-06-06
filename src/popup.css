@@ -48,17 +48,26 @@ p {
 }
 
 .summary {
+  align-items: flex-start;
   background: #ffffff;
   border: 1px solid #dfe5df;
   border-radius: 8px;
   box-sizing: border-box;
   color: #42504a;
+  display: flex;
+  gap: 8px;
   line-height: 1.35;
   margin: 0 0 10px;
   max-width: none;
   overflow: visible;
   padding: 9px 10px;
   text-overflow: clip;
+  white-space: normal;
+}
+
+.summary p {
+  margin: 0;
+  max-width: none;
   white-space: normal;
 }
 
@@ -139,7 +148,7 @@ select {
 .footer {
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 button {
@@ -163,6 +172,26 @@ button.primary {
 }
 
 button.primary:hover {
+  background: #245462;
+}
+
+.icon-button {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #183b45;
+  border-color: #183b45;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0;
+  width: 36px;
+}
+
+.icon-button:hover {
   background: #245462;
 }
 
