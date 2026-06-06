@@ -62,3 +62,7 @@ node .\test\sanity.js
 - WebP blocking is URL-based for now. It is off by default because detecting animated WebP reliably needs deeper byte inspection.
 - First-frame GIF replacement is not implemented yet. The current default is a compact placeholder that preserves the displayed size when possible.
 - Emoji removal changes text and cannot be cleanly restored without reloading the page.
+
+## License
+
+MotionBlock is licensed under the GNU General Public License v3.0. See `LICENSE`.
