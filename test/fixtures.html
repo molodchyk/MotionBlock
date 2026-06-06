@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MotionBlock Fixture</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+
+      body {
+        background: #f4f6f2;
+        color: #182623;
+        margin: 0;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 1060px;
+        padding: 28px 18px 48px;
+      }
+
+      h1 {
+        font-size: 28px;
+        line-height: 1.15;
+        margin: 0 0 8px;
+      }
+
+      p {
+        color: #5a655f;
+        margin: 0 0 18px;
+      }
+
+      section {
+        background: #ffffff;
+        border: 1px solid #dfe5df;
+        border-radius: 8px;
+        margin-top: 16px;
+        padding: 16px;
+      }
+
+      h2 {
+        font-size: 17px;
+        margin: 0 0 12px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      figcaption {
+        color: #5f6c65;
+        font-size: 12px;
+        margin-top: 6px;
+      }
+
+      img,
+      video {
+        background: #e9eee9;
+        border: 1px solid #cbd5ce;
+        border-radius: 6px;
+        box-sizing: border-box;
+        display: block;
+        height: 124px;
+        object-fit: cover;
+        width: 220px;
+      }
+
+      audio {
+        display: block;
+        width: 220px;
+      }
+
+      .css-spinner {
+        animation: spin 1.1s linear infinite;
+        background: conic-gradient(from 0deg, #183b45, #2f7754, #b6463f, #183b45);
+        border-radius: 50%;
+        height: 72px;
+        width: 72px;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>MotionBlock Fixture</h1>
+      <p>Use this page after loading the unpacked extension. Default settings should block GIF/GIF-like motion and autoplay-style looping video, while leaving normal images, audio, and WebP alone.</p>
+
+      <section>
+        <h2>Images</h2>
+        <div class="grid">
+          <figure>
+            <img
+              alt="Inline data GIF"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            <figcaption>Expected default: blocked as GIF.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              alt="Normal PNG image"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=">
+            <figcaption>Expected default: visible.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              alt="Static WebP URL pattern"
+              src="sample-static.webp">
+            <figcaption>Expected default: visible or broken image, not blocked unless WebP is enabled.</figcaption>
+          </figure>
+
+          <figure>
+            <picture>
+              <source srcset="sample-picture.gif 1x, sample-picture@2x.gif 2x">
+              <img alt="Picture source GIF" src="fallback.png">
+            </picture>
+            <figcaption>Expected default: GIF source removed.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>GIF-Like Video</h2>
+        <div class="grid">
+          <figure>
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              src="motion-loop.gifv"
+              width="220"
+              height="124"></video>
+            <figcaption>Expected default: blocked as GIFV/looping video.</figcaption>
+          </figure>
+
+          <figure>
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              data-testid="reddit-gif-loop"
+              src="https://external-preview.redd.it/example.mp4"
+              width="220"
+              height="124"></video>
+            <figcaption>Expected default: blocked by known Reddit/GIF-like heuristic.</figcaption>
+          </figure>
+
+          <figure>
+            <video
+              autoplay
+              controls
+              src="autoplay-news-video.mp4"
+              width="220"
+              height="124"></video>
+            <figcaption>Expected default: autoplay removed, controls remain.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Optional Blocks</h2>
+        <div class="grid">
+          <figure>
+            <audio controls src="sample-audio.mp3"></audio>
+            <figcaption>Expected default: visible unless Audio is enabled.</figcaption>
+          </figure>
+
+          <figure>
+            <div class="css-spinner" aria-label="CSS animation fixture"></div>
+            <figcaption>Expected default: spins unless CSS is enabled or Block motion here is used.</figcaption>
+          </figure>
+
+          <figure>
+            <p>Emoji text: 😀 🎯 ✅ 🔥</p>
+            <img
+              class="emoji"
+              alt="😀"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=">
+            <figcaption>Expected default: visible unless Emoji is enabled.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dynamic Feed Inserts</h2>
+        <div id="dynamicFeed" class="grid"></div>
+      </section>
+    </main>
+
+    <script>
+      window.setTimeout(function () {
+        var feed = document.getElementById("dynamicFeed");
+        var figure = document.createElement("figure");
+        figure.innerHTML = [
+          "<img alt='Late loaded GIF' data-original='late-feed.gif' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=='>",
+          "<figcaption>Expected default: blocked after dynamic insertion.</figcaption>"
+        ].join("");
+        feed.appendChild(figure);
+
+        var videoFigure = document.createElement("figure");
+        videoFigure.innerHTML = [
+          "<video autoplay loop muted playsinline aria-label='Giphy GIF' src='https://media.giphy.com/media/example/giphy.mp4' width='220' height='124'></video>",
+          "<figcaption>Expected default: blocked after dynamic insertion.</figcaption>"
+        ].join("");
+        feed.appendChild(videoFigure);
+      }, 900);
+    </script>
+  </body>
+</html>

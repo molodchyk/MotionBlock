@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MotionBlock Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="top">
+        <div>
+          <h1>MotionBlock</h1>
+          <p>Global media defaults and per-site preferences.</p>
+        </div>
+        <label class="master">
+          <input id="globalEnabled" type="checkbox">
+          <span>Extension active</span>
+        </label>
+      </header>
+
+      <section class="band">
+        <h2>Global Defaults</h2>
+        <div id="globalFeatures" class="global-grid"></div>
+
+        <label class="replacement">
+          <span>Blocked media display</span>
+          <select id="replacementMode">
+            <option value="placeholder">Compact placeholder</option>
+            <option value="hide">Hide element</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="band">
+        <div class="section-heading">
+          <div>
+            <h2>Website Preferences</h2>
+            <p>Use exact hostnames such as reddit.com, discord.com, or news.example.com.</p>
+          </div>
+          <form id="addSiteForm" class="add-site">
+            <input id="newSiteHost" type="text" placeholder="example.com" autocomplete="off">
+            <button type="submit">Add site</button>
+          </form>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr id="siteTableHead"></tr>
+            </thead>
+            <tbody id="siteTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="band">
+        <h2>Backup</h2>
+        <div class="backup-actions">
+          <button id="exportSettings" type="button">Export JSON</button>
+          <button id="importSettings" type="button">Import JSON</button>
+        </div>
+        <textarea id="settingsJson" spellcheck="false" placeholder="Exported settings appear here. Paste JSON here to import."></textarea>
+        <p id="statusLine" class="status-line" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="shared/config.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

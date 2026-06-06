@@ -1,0 +1,163 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #f7f8f5;
+  color: #172522;
+  margin: 0;
+  min-width: 360px;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.popup {
+  padding: 14px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  color: #5c6862;
+  font-size: 12px;
+  margin: 3px 0 0;
+  max-width: 245px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.summary {
+  background: #ffffff;
+  border: 1px solid #dfe5df;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #42504a;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  max-width: none;
+  overflow: visible;
+  padding: 9px 10px;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.status {
+  background: #d9efe5;
+  border: 1px solid #96ceb2;
+  border-radius: 999px;
+  color: #11452f;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 9px;
+}
+
+.status.off {
+  background: #efe3d7;
+  border-color: #d1a981;
+  color: #633813;
+}
+
+.section {
+  background: #ffffff;
+  border: 1px solid #dfe5df;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.quick-actions {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  color: #59645e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.field,
+.feature-row {
+  align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 148px;
+}
+
+.field span,
+.feature-name {
+  font-size: 13px;
+  font-weight: 650;
+}
+
+select {
+  background: #fbfcfa;
+  border: 1px solid #cbd5ce;
+  border-radius: 6px;
+  color: #172522;
+  min-width: 0;
+  padding: 6px 8px;
+}
+
+.feature-list {
+  display: grid;
+  gap: 8px;
+}
+
+.feature-meta {
+  color: #6d756f;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.footer {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+  background: #ffffff;
+  border: 1px solid #cbd5ce;
+  border-radius: 7px;
+  color: #1e2b27;
+  cursor: pointer;
+  min-height: 34px;
+  padding: 7px 10px;
+}
+
+button:hover {
+  background: #edf4f0;
+}
+
+button.primary {
+  background: #183b45;
+  border-color: #183b45;
+  color: #ffffff;
+}
+
+button.primary:hover {
+  background: #245462;
+}

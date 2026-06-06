@@ -1,0 +1,26 @@
+# MotionBlock Test Fixture
+
+Serve the fixture locally:
+
+```powershell
+.\scripts\serve-fixtures.ps1
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8765/fixtures.html
+```
+
+The fixture covers:
+
+- inline GIF images
+- `.gif` and `.gifv` URL patterns
+- WebP URL patterns
+- autoplay video
+- muted looping video
+- known-site GIF-like URLs
+- optional audio/image/emoji/CSS-motion blocking
+- dynamically inserted media
+
+Use the popup on `127.0.0.1` to test per-site allow, block motion here, and reset behavior.

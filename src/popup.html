@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MotionBlock</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <h1>MotionBlock</h1>
+          <p id="siteLabel">Loading site...</p>
+        </div>
+        <span id="statusBadge" class="status">On</span>
+      </header>
+
+      <p id="effectiveSummary" class="summary">Checking active rules...</p>
+
+      <section class="quick-actions">
+        <button id="blockMotionHere" type="button" class="primary">Block motion here</button>
+        <button id="allowSite" type="button">Allow this site</button>
+      </section>
+
+      <section class="section">
+        <label class="field">
+          <span>Current site</span>
+          <select id="siteEnabled">
+            <option value="">Use global setting</option>
+            <option value="true">Always on here</option>
+            <option value="false">Allow all media here</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Site preferences</div>
+        <div id="featureList" class="feature-list"></div>
+      </section>
+
+      <footer class="footer">
+        <button id="resetSite" type="button">Reset site</button>
+        <button id="reloadTab" type="button">Reload</button>
+        <button id="openOptions" type="button" class="primary">Options</button>
+      </footer>
+    </main>
+
+    <script src="shared/config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

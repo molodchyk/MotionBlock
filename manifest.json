@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "MotionBlock: GIF, Animation & Autoplay Blocker",
+  "short_name": "MotionBlock",
+  "description": "Stop looping GIFs, GIFV, animated WebP by URL, and autoplay media with per-site rules.",
+  "version": "0.1.0",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "MotionBlock",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "*://chrome.google.com/webstore/*",
+        "*://chromewebstore.google.com/*"
+      ],
+      "js": [
+        "src/shared/config.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

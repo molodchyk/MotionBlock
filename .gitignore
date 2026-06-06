@@ -1,0 +1,29 @@
+# Generated release artifacts
+dist/
+*.zip
+*.crx
+*.pem
+
+# Dependencies and package manager state
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+
+# Logs and caches
+*.log
+.cache/
+.tmp/
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
