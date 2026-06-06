@@ -3,6 +3,10 @@
   font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 body {
   background: #f7f8f5;
   color: #172522;
@@ -160,4 +164,59 @@ button.primary {
 
 button.primary:hover {
   background: #245462;
+}
+
+html[data-theme="dark"] body {
+  background: #0e1418;
+  color: #edf4f0;
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] .feature-meta {
+  color: #aebbb5;
+}
+
+html[data-theme="dark"] .summary,
+html[data-theme="dark"] .section {
+  background: #151d22;
+  border-color: #2a383f;
+  color: #d9e6df;
+}
+
+html[data-theme="dark"] .section-title {
+  color: #c2d0c9;
+}
+
+html[data-theme="dark"] select {
+  background: #10171b;
+  border-color: #3a4a52;
+  color: #edf4f0;
+}
+
+html[data-theme="dark"] button {
+  background: #10171b;
+  border-color: #3a4a52;
+  color: #edf4f0;
+}
+
+html[data-theme="dark"] button:hover {
+  background: #1b2930;
+}
+
+html[data-theme="dark"] button.primary {
+  background: #2f7754;
+  border-color: #2f7754;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .status {
+  background: #153b2a;
+  border-color: #2f7754;
+  color: #c9f0dc;
+}
+
+html[data-theme="dark"] .status.off {
+  background: #3b2615;
+  border-color: #8c5a2b;
+  color: #f3d5b5;
 }

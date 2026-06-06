@@ -36,6 +36,9 @@ const DNR_FEATURE_RULES = {
   ],
   video: [
     {
+      resourceTypes: ["media"]
+    },
+    {
       regexFilter: "\\.(?:mp4|m4v|webm|mov|m3u8|mpd)(?:$|[?#])",
       resourceTypes: ["media", "xmlhttprequest"]
     }

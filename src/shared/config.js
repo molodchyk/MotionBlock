@@ -2,6 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "motionBlockSettings";
+  const UI_THEME_MODES = ["system", "light", "dark"];
 
   const FEATURE_DEFINITIONS = [
     {
@@ -78,6 +79,7 @@
 
   const DEFAULT_SETTINGS = {
     enabled: true,
+    uiTheme: "system",
     replacementMode: "placeholder",
     features: DEFAULT_FEATURES,
     siteRules: {}
@@ -199,9 +201,11 @@
   function normalizeSettings(settings) {
     const source = isPlainObject(settings) ? settings : {};
     const replacementMode = source.replacementMode === "hide" ? "hide" : "placeholder";
+    const uiTheme = UI_THEME_MODES.indexOf(source.uiTheme) === -1 ? DEFAULT_SETTINGS.uiTheme : source.uiTheme;
 
     return {
       enabled: typeof source.enabled === "boolean" ? source.enabled : DEFAULT_SETTINGS.enabled,
+      uiTheme,
       replacementMode,
       features: normalizeFeatures(source.features, DEFAULT_FEATURES),
       siteRules: normalizeSiteRules(source.siteRules)
@@ -237,12 +241,27 @@
     });
   }
 
+  function applyUiTheme(mode) {
+    if (!root.document || !root.matchMedia) {
+      return;
+    }
+
+    const normalizedMode = UI_THEME_MODES.indexOf(mode) === -1 ? DEFAULT_SETTINGS.uiTheme : mode;
+    const resolvedMode =
+      normalizedMode === "system" && root.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : normalizedMode === "dark" ? "dark" : "light";
+
+    root.document.documentElement.dataset.theme = resolvedMode;
+    root.document.documentElement.dataset.themePreference = normalizedMode;
+  }
+
   root.MotionBlock = {
     STORAGE_KEY,
     FEATURE_DEFINITIONS,
     FEATURE_KEYS,
+    UI_THEME_MODES,
     DEFAULT_FEATURES: clone(DEFAULT_FEATURES),
     DEFAULT_SETTINGS: clone(DEFAULT_SETTINGS),
+    applyUiTheme,
     createEmptySiteRule,
     getEffectiveSettings,
     getFeatureDefinition,

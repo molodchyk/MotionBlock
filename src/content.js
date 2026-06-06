@@ -42,6 +42,9 @@
 
   loadSettings();
   startObserver();
+  document.addEventListener("play", stopBlockedMediaPlayback, true);
+  document.addEventListener("playing", stopBlockedMediaPlayback, true);
+  document.addEventListener("volumechange", stopBlockedMediaPlayback, true);
   window.addEventListener("scroll", scheduleRevealOverlayPositionUpdate, true);
   window.addEventListener("resize", scheduleRevealOverlayPositionUpdate, true);
 
@@ -161,12 +164,48 @@
 
       if (reason && reason.hardBlock) {
         blockMediaElement(element, reason.label);
+      } else if (element.dataset.motionblockBlocked === "true") {
+        enforceBlockedMediaElement(element);
       } else if (reason && reason.disableAutoplay) {
         disableAutoplay(element);
       } else if (element.dataset.motionblockFeature === "media") {
         restoreElement(element);
       }
     });
+  }
+
+  function stopBlockedMediaPlayback(event) {
+    const element = event.target;
+    if (!element || (element.tagName !== "VIDEO" && element.tagName !== "AUDIO")) {
+      return;
+    }
+
+    if (element.dataset.motionblockEnforcing === "true") {
+      return;
+    }
+
+    if (!effectiveSettings.enabled || element.dataset.motionblockUserAllowed === "true") {
+      return;
+    }
+
+    const reason = getMediaBlockReason(element);
+    if (reason && reason.hardBlock) {
+      blockMediaElement(element, reason.label);
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+
+    if (element.tagName === "VIDEO" && effectiveSettings.features.audio) {
+      element.muted = true;
+      element.volume = 0;
+    }
+
+    if (reason && reason.disableAutoplay) {
+      disableAutoplay(element);
+      event.preventDefault();
+      event.stopPropagation();
+    }
   }
 
   function processEmoji(root) {
@@ -367,6 +406,8 @@
 
   function blockMediaElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
+      enforceBlockedMediaElement(element);
+      ensureRevealOverlay(element, element.tagName === "AUDIO" ? "Play blocked audio" : "Play blocked video");
       return;
     }
 
@@ -383,25 +424,57 @@
     element.dataset.motionblockReason = reason;
     element.title = element.title || "Blocked by MotionBlock: " + reason;
 
-    element.pause();
-    element.removeAttribute("autoplay");
-    element.removeAttribute("loop");
-    element.setAttribute("preload", "none");
-
     element.querySelectorAll("source").forEach(function (source) {
       storeOriginalAttribute(source, "src");
       storeOriginalAttribute(source, "srcset");
       source.dataset.motionblockSourceBlocked = "true";
-      source.removeAttribute("src");
-      source.removeAttribute("srcset");
     });
 
-    element.removeAttribute("src");
     element.classList.add(
       effectiveSettings.replacementMode === "hide" ? "motionblock-media-hidden" : "motionblock-media-placeholder"
     );
-    element.load();
+    enforceBlockedMediaElement(element);
     ensureRevealOverlay(element, element.tagName === "AUDIO" ? "Play blocked audio" : "Play blocked video");
+  }
+
+  function enforceBlockedMediaElement(element) {
+    if (element.dataset.motionblockEnforcing === "true") {
+      return;
+    }
+
+    element.dataset.motionblockEnforcing = "true";
+
+    try {
+      element.pause();
+      element.autoplay = false;
+      element.loop = false;
+      element.muted = true;
+      element.volume = 0;
+      element.removeAttribute("autoplay");
+      element.removeAttribute("loop");
+      element.setAttribute("preload", "none");
+
+      if (element.srcObject) {
+        element.srcObject = null;
+      }
+
+      element.querySelectorAll("source").forEach(function (source) {
+        source.dataset.motionblockSourceBlocked = "true";
+        source.removeAttribute("src");
+        source.removeAttribute("srcset");
+      });
+
+      element.removeAttribute("src");
+      if (element.src) {
+        element.src = "";
+      }
+
+      if (typeof element.load === "function") {
+        element.load();
+      }
+    } finally {
+      delete element.dataset.motionblockEnforcing;
+    }
   }
 
   function disableAutoplay(element) {
@@ -451,6 +524,7 @@
     delete element.dataset.motionblockReason;
     delete element.dataset.motionblockAutoplayAdjusted;
     delete element.dataset.motionblockSourceBlocked;
+    delete element.dataset.motionblockEnforcing;
 
     element.style.width = element.dataset.motionblockOriginalStyleWidth || "";
     element.style.height = element.dataset.motionblockOriginalStyleHeight || "";

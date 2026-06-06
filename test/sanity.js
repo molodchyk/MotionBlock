@@ -9,6 +9,7 @@ assert.equal(MB.normalizeHostname("example.com:443"), "example.com");
 
 const defaults = MB.normalizeSettings({});
 assert.equal(defaults.enabled, true);
+assert.equal(defaults.uiTheme, "system");
 assert.equal(defaults.features.gifs, true);
 assert.equal(defaults.features.gifv, true);
 assert.equal(defaults.features.animatedWebp, false);
@@ -16,6 +17,7 @@ assert.equal(defaults.features.images, false);
 
 const settings = MB.normalizeSettings({
   enabled: true,
+  uiTheme: "dark",
   features: {
     gifs: false,
     gifv: false,
@@ -37,6 +39,8 @@ const settings = MB.normalizeSettings({
   }
 });
 
+assert.equal(settings.uiTheme, "dark");
+
 assert.equal(Object.hasOwn(settings.siteRules, "reddit.com"), true);
 assert.equal(Object.hasOwn(settings.siteRules, "www.reddit.com"), false);
 assert.equal(Object.hasOwn(settings.siteRules, "empty.example"), false);
@@ -50,5 +54,8 @@ assert.equal(reddit.features.autoplayVideo, false);
 
 const giphy = MB.getEffectiveSettings(settings, "giphy.com");
 assert.equal(giphy.enabled, false);
+
+const invalidTheme = MB.normalizeSettings({ uiTheme: "purple" });
+assert.equal(invalidTheme.uiTheme, "system");
 
 console.log("settings sanity ok");

@@ -5,6 +5,7 @@
   const globalEnabled = document.getElementById("globalEnabled");
   const globalFeatures = document.getElementById("globalFeatures");
   const replacementMode = document.getElementById("replacementMode");
+  const uiTheme = document.getElementById("uiTheme");
   const addSiteForm = document.getElementById("addSiteForm");
   const newSiteHost = document.getElementById("newSiteHost");
   const siteTableHead = document.getElementById("siteTableHead");
@@ -36,6 +37,12 @@
   replacementMode.addEventListener("change", function () {
     settings.replacementMode = replacementMode.value;
     saveAllSettings("Display mode saved.");
+  });
+
+  uiTheme.addEventListener("change", function () {
+    settings.uiTheme = uiTheme.value;
+    MB.applyUiTheme(settings.uiTheme);
+    saveAllSettings("Theme saved.");
   });
 
   addSiteForm.addEventListener("submit", function (event) {
@@ -107,12 +114,15 @@
     }
 
     settings = MB.normalizeSettings(response.settings);
+    MB.applyUiTheme(settings.uiTheme);
     render();
   }
 
   function render() {
     globalEnabled.checked = settings.enabled;
     replacementMode.value = settings.replacementMode;
+    uiTheme.value = settings.uiTheme;
+    MB.applyUiTheme(settings.uiTheme);
     renderGlobalFeatures();
     renderSiteTable();
   }

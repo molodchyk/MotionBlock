@@ -31,6 +31,7 @@ The popup controls the current site. The options page controls global defaults a
 - DOM cleanup for already-in-page images, video, audio, emoji renderers, and CSS motion.
 - Per-site tri-state preferences: inherit, block/on, allow/off.
 - Settings export and import.
+- System, light, and dark UI theme modes.
 
 ## Planning Docs
 

@@ -22,7 +22,8 @@
 7. Click **Block motion here**.
 8. Reload the page and confirm GIF/GIFV/autoplay/CSS motion are blocked on the fixture.
 9. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
-10. Use **Reset site** and reload.
+10. In Options, switch Interface theme between System, Light, and Dark and confirm popup/options follow the selected mode.
+11. Use **Reset site** and reload.
 
 ## Review-Derived Live Sites
 

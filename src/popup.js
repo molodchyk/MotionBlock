@@ -159,6 +159,7 @@
     }
 
     settings = MB.normalizeSettings(response.settings);
+    MB.applyUiTheme(settings.uiTheme);
     host = response.host || host;
     effective = response.effective || MB.getEffectiveSettings(settings, host);
     setControlsDisabled(false);
