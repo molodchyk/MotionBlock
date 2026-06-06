@@ -215,6 +215,35 @@
     };
   }
 
+  function hasRecognizedSettingsShape(value) {
+    if (!isPlainObject(value)) {
+      return false;
+    }
+
+    return ["enabled", "uiTheme", "showRevealControls", "replacementMode", "features", "siteRules"].some(function (key) {
+      return Object.prototype.hasOwnProperty.call(value, key);
+    });
+  }
+
+  function normalizeSettingsBackupPayload(payload) {
+    const source = isPlainObject(payload) && isPlainObject(payload.settings) ? payload.settings : payload;
+
+    if (!hasRecognizedSettingsShape(source)) {
+      throw new Error("This does not look like a MotionBlock settings backup.");
+    }
+
+    return normalizeSettings(source);
+  }
+
+  function createSettingsBackup(settings) {
+    return {
+      app: "MotionBlock",
+      schemaVersion: 1,
+      exportedAt: new Date().toISOString(),
+      settings: normalizeSettings(settings)
+    };
+  }
+
   function getEffectiveSettings(settings, hostname) {
     const normalized = normalizeSettings(settings);
     const host = normalizeHostname(hostname);
@@ -267,13 +296,16 @@
     DEFAULT_SETTINGS: clone(DEFAULT_SETTINGS),
     applyUiTheme,
     createEmptySiteRule,
+    createSettingsBackup,
     getEffectiveSettings,
     getFeatureDefinition,
     getHostFromUrl,
+    hasRecognizedSettingsShape,
     isEmptySiteRule,
     normalizeFeatures,
     normalizeFeatureOverrides,
     normalizeHostname,
+    normalizeSettingsBackupPayload,
     normalizeSettings,
     normalizeSiteRule
   };

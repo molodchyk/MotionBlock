@@ -12,6 +12,7 @@
   const resetSiteButton = document.getElementById("resetSite");
   const reloadTabButton = document.getElementById("reloadTab");
   const openOptionsButton = document.getElementById("openOptions");
+  const reloadHint = document.getElementById("reloadHint");
 
   let currentTab = null;
   let host = "";
@@ -44,6 +45,7 @@
 
     const response = await sendMessage({ type: "motionblock:resetSiteRule", host });
     applyResponse(response);
+    showReloadHint(response && response.ok);
   });
 
   reloadTabButton.addEventListener("click", function () {
@@ -105,6 +107,7 @@
       row.className = "feature-row";
 
       const nameWrap = document.createElement("span");
+      nameWrap.className = "feature-label";
       const name = document.createElement("span");
       const meta = document.createElement("span");
 
@@ -138,6 +141,7 @@
       rule
     });
     applyResponse(response);
+    showReloadHint(response && response.ok);
 
     if (currentTab && currentTab.id) {
       try {
@@ -202,10 +206,16 @@
     featureList.querySelectorAll("select").forEach(function (select) {
       select.disabled = disabled;
     });
+
+    reloadHint.hidden = true;
   }
 
   function sendMessage(message) {
     return chrome.runtime.sendMessage(message);
+  }
+
+  function showReloadHint(visible) {
+    reloadHint.hidden = !visible;
   }
 
   function getEffectiveSummary() {

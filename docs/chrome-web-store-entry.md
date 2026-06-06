@@ -72,10 +72,6 @@ Used to save global defaults, per-site preferences, blocked media display mode, 
 
 Used to block media requests before they load. This is required for efficient GIF, GIFV, image, video, and audio blocking under Manifest V3.
 
-### activeTab
-
-Used by the popup to read the active tab URL after the user opens the extension popup. This lets MotionBlock show and update preferences for the current website.
-
 ### host permissions for all URLs
 
 Used because users expect media blocking to work across arbitrary websites. MotionBlock applies local rules only and does not transmit browsing data.

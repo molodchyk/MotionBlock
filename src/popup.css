@@ -125,6 +125,15 @@ p {
   font-weight: 650;
 }
 
+.feature-label {
+  display: block;
+  min-width: 0;
+}
+
+.feature-name {
+  display: block;
+}
+
 select {
   background: #fbfcfa;
   border: 1px solid #cbd5ce;
@@ -141,6 +150,7 @@ select {
 
 .feature-meta {
   color: #6d756f;
+  display: block;
   font-size: 11px;
   margin-top: 2px;
 }
@@ -149,6 +159,15 @@ select {
   display: grid;
   gap: 8px;
   grid-template-columns: 1fr 1fr;
+}
+
+.reload-hint {
+  color: #68766f;
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 9px 0 0;
+  max-width: none;
+  white-space: normal;
 }
 
 button {

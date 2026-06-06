@@ -21,13 +21,15 @@
 6. Reload the page and confirm media is allowed.
 7. Click **Block motion here**.
 8. Reload the page and confirm GIF/GIFV/autoplay/CSS motion are blocked on the fixture.
-9. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
-10. In Options, switch Interface theme between System, Light, and Dark and confirm popup/options follow the selected mode.
-11. In Options, confirm **Reveal buttons for blocked media** is off by default. Enable it only when testing click-to-play on simple pages.
-12. Export a JSON backup file, import it back from the file picker, and confirm settings remain intact.
-13. Paste the exported JSON into the textarea, apply it, and confirm settings remain intact.
-14. Click **Refresh from sync** and confirm the options page reloads current settings without changing them.
-15. Use **Reset site** and reload.
+9. Confirm popup feature labels show each media type and its Blocking/Allowed state on separate lines.
+10. Confirm changing a popup preference shows the reload hint.
+11. Set Emoji to **Block here** and confirm emoji text/images and GitHub-style reactions are hidden.
+12. In Options, switch Interface theme between System, Light, and Dark and confirm popup/options follow the selected mode.
+13. In Options, confirm **Reveal buttons for blocked media** is off by default. Enable it only when testing click-to-play on simple pages.
+14. Export a JSON backup file, import it back from the file picker, and confirm settings remain intact.
+15. Paste the exported JSON into the textarea, apply it, and confirm settings remain intact.
+16. Click **Refresh from sync** and confirm the options page reloads current settings without changing them.
+17. Use **Reset site** and reload.
 
 ## Review-Derived Live Sites
 

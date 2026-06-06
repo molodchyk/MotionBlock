@@ -101,7 +101,7 @@
   });
 
   exportSettings.addEventListener("click", function () {
-    const json = JSON.stringify(createBackupPayload(), null, 2);
+    const json = JSON.stringify(MB.createSettingsBackup(settings), null, 2);
     settingsJson.value = json;
     downloadJson(json, createBackupFilename());
     showStatus("Settings exported to a JSON file.");
@@ -315,32 +315,7 @@
     }
 
     const parsed = JSON.parse(text);
-    const candidate = parsed && typeof parsed === "object" && parsed.settings ? parsed.settings : parsed;
-
-    if (!hasRecognizedSettingsShape(candidate)) {
-      throw new Error("this does not look like a MotionBlock settings backup.");
-    }
-
-    return MB.normalizeSettings(candidate);
-  }
-
-  function hasRecognizedSettingsShape(value) {
-    if (!value || typeof value !== "object" || Array.isArray(value)) {
-      return false;
-    }
-
-    return ["enabled", "uiTheme", "showRevealControls", "replacementMode", "features", "siteRules"].some(function (key) {
-      return Object.prototype.hasOwnProperty.call(value, key);
-    });
-  }
-
-  function createBackupPayload() {
-    return {
-      app: "MotionBlock",
-      schemaVersion: 1,
-      exportedAt: new Date().toISOString(),
-      settings: MB.normalizeSettings(settings)
-    };
+    return MB.normalizeSettingsBackupPayload(parsed);
   }
 
   function createBackupFilename() {

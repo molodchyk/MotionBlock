@@ -1,4 +1,6 @@
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
 
 require("../src/shared/config.js");
 
@@ -44,6 +46,15 @@ const settings = MB.normalizeSettings({
 assert.equal(settings.uiTheme, "dark");
 assert.equal(settings.showRevealControls, true);
 
+const backup = MB.createSettingsBackup(settings);
+assert.equal(backup.app, "MotionBlock");
+assert.equal(backup.schemaVersion, 1);
+assert.equal(MB.normalizeSettingsBackupPayload(backup).uiTheme, "dark");
+assert.equal(MB.normalizeSettingsBackupPayload(settings).showRevealControls, true);
+assert.throws(function () {
+  MB.normalizeSettingsBackupPayload({ app: "Other" });
+}, /MotionBlock settings backup/);
+
 assert.equal(Object.hasOwn(settings.siteRules, "reddit.com"), true);
 assert.equal(Object.hasOwn(settings.siteRules, "www.reddit.com"), false);
 assert.equal(Object.hasOwn(settings.siteRules, "empty.example"), false);
@@ -61,5 +72,9 @@ assert.equal(giphy.enabled, false);
 const invalidTheme = MB.normalizeSettings({ uiTheme: "purple" });
 assert.equal(invalidTheme.uiTheme, "system");
 assert.equal(MB.getEffectiveSettings(defaults, "youtube.com").showRevealControls, false);
+
+const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "manifest.json"), "utf8"));
+assert.deepEqual(manifest.permissions.sort(), ["declarativeNetRequest", "storage"]);
+assert.equal(manifest.host_permissions.includes("<all_urls>"), true);
 
 console.log("settings sanity ok");
