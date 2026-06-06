@@ -3,6 +3,7 @@
 
   const STORAGE_KEY = "motionBlockSettings";
   const UI_THEME_MODES = ["system", "light", "dark"];
+  const CONFIGURABLE_PROTOCOLS = ["http:", "https:"];
 
   const FEATURE_DEFINITIONS = [
     {
@@ -124,6 +125,23 @@
     } catch (error) {
       return "";
     }
+  }
+
+  function getConfigurableHostFromUrl(url) {
+    try {
+      const parsed = new URL(url);
+      if (CONFIGURABLE_PROTOCOLS.indexOf(parsed.protocol) === -1) {
+        return "";
+      }
+
+      return normalizeHostname(parsed.hostname);
+    } catch (error) {
+      return "";
+    }
+  }
+
+  function isConfigurableUrl(url) {
+    return Boolean(getConfigurableHostFromUrl(url));
   }
 
   function normalizeFeatures(value, fallback) {
@@ -297,11 +315,13 @@
     applyUiTheme,
     createEmptySiteRule,
     createSettingsBackup,
+    getConfigurableHostFromUrl,
     getEffectiveSettings,
     getFeatureDefinition,
     getHostFromUrl,
     hasRecognizedSettingsShape,
     isEmptySiteRule,
+    isConfigurableUrl,
     normalizeFeatures,
     normalizeFeatureOverrides,
     normalizeHostname,

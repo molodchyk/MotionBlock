@@ -95,6 +95,13 @@ p {
   padding: 10px;
 }
 
+body[data-page-state="unsupported"] .quick-actions,
+body[data-page-state="unsupported"] .section,
+body[data-page-state="unsupported"] .footer,
+body[data-page-state="unsupported"] .reload-hint {
+  display: none;
+}
+
 .quick-actions {
   display: grid;
   gap: 8px;

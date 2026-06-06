@@ -18,6 +18,7 @@
   let host = "";
   let settings = MB.DEFAULT_SETTINGS;
   let effective = MB.getEffectiveSettings(settings, host);
+  let unsupportedPage = false;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -76,11 +77,10 @@
   async function init() {
     const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
     currentTab = tabs[0] || null;
-    host = currentTab ? MB.getHostFromUrl(currentTab.url || "") : "";
+    host = currentTab ? MB.getConfigurableHostFromUrl(currentTab.url || "") : "";
 
     if (!host) {
-      siteLabel.textContent = "This page cannot be configured";
-      setControlsDisabled(true);
+      showUnsupportedPage();
       return;
     }
 
@@ -93,6 +93,8 @@
   }
 
   function render() {
+    unsupportedPage = false;
+    delete document.body.dataset.pageState;
     siteLabel.textContent = host || "Unknown site";
     statusBadge.textContent = effective.enabled ? "On" : "Allowed";
     statusBadge.classList.toggle("off", !effective.enabled);
@@ -210,6 +212,23 @@
     reloadHint.hidden = true;
   }
 
+  function showUnsupportedPage() {
+    unsupportedPage = true;
+    document.body.dataset.pageState = "unsupported";
+    host = "";
+    settings = MB.normalizeSettings(settings);
+    MB.applyUiTheme(settings.uiTheme);
+
+    siteLabel.textContent = "Not a website";
+    statusBadge.textContent = "N/A";
+    statusBadge.classList.add("off");
+    effectiveSummary.textContent = "MotionBlock cannot configure browser, extension, or other protected pages.";
+    siteEnabled.value = "";
+    featureList.innerHTML = "";
+    setControlsDisabled(true);
+    openOptionsButton.disabled = false;
+  }
+
   function sendMessage(message) {
     return chrome.runtime.sendMessage(message);
   }
@@ -219,6 +238,10 @@
   }
 
   function getEffectiveSummary() {
+    if (unsupportedPage) {
+      return "MotionBlock cannot configure browser, extension, or other protected pages.";
+    }
+
     if (!effective.enabled) {
       return "Allowed here: MotionBlock is off for this site.";
     }

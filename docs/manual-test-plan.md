@@ -29,7 +29,8 @@
 14. Export a JSON backup file, import it back from the file picker, and confirm settings remain intact.
 15. Paste the exported JSON into the textarea, apply it, and confirm settings remain intact.
 16. Click **Refresh from sync** and confirm the options page reloads current settings without changing them.
-17. Use **Reset site** and reload.
+17. Open the popup while the Options page or `chrome://extensions` is active and confirm current-site controls are hidden.
+18. Use **Reset site** and reload.
 
 ## Review-Derived Live Sites
 

@@ -92,7 +92,7 @@ async function handleMessage(message) {
 
   if (message.type === "motionblock:getSettingsForUrl") {
     const settings = await getStoredSettings();
-    const host = MB.getHostFromUrl(message.url || "");
+    const host = MB.getConfigurableHostFromUrl(message.url || "");
     return {
       ok: true,
       settings,
@@ -102,7 +102,7 @@ async function handleMessage(message) {
   }
 
   if (message.type === "motionblock:saveSettings") {
-    const settings = MB.normalizeSettings(message.settings);
+    const settings = sanitizeSettingsForStorage(message.settings);
     await rebuildDynamicRules(settings);
     await saveSettings(settings);
     return { ok: true, settings };
@@ -124,7 +124,7 @@ async function handleMessage(message) {
       siteRules[host] = rule;
     }
 
-    const nextSettings = MB.normalizeSettings(Object.assign({}, settings, { siteRules }));
+    const nextSettings = sanitizeSettingsForStorage(Object.assign({}, settings, { siteRules }));
     await rebuildDynamicRules(nextSettings);
     await saveSettings(nextSettings);
 
@@ -145,7 +145,7 @@ async function handleMessage(message) {
       delete siteRules[host];
     }
 
-    const nextSettings = MB.normalizeSettings(Object.assign({}, settings, { siteRules }));
+    const nextSettings = sanitizeSettingsForStorage(Object.assign({}, settings, { siteRules }));
     await rebuildDynamicRules(nextSettings);
     await saveSettings(nextSettings);
 
@@ -175,10 +175,11 @@ async function handleMessage(message) {
 async function initializeSettings() {
   const data = await chrome.storage.sync.get(MB.STORAGE_KEY);
   if (!data[MB.STORAGE_KEY]) {
-    await rebuildDynamicRules(MB.DEFAULT_SETTINGS);
-    await saveSettings(MB.DEFAULT_SETTINGS);
+    const settings = sanitizeSettingsForStorage(MB.DEFAULT_SETTINGS);
+    await rebuildDynamicRules(settings);
+    await saveSettings(settings);
   } else {
-    const settings = MB.normalizeSettings(data[MB.STORAGE_KEY]);
+    const settings = sanitizeSettingsForStorage(data[MB.STORAGE_KEY]);
     await rebuildDynamicRules(settings);
     await saveSettings(settings);
   }
@@ -186,13 +187,24 @@ async function initializeSettings() {
 
 async function getStoredSettings() {
   const data = await chrome.storage.sync.get(MB.STORAGE_KEY);
-  return MB.normalizeSettings(data[MB.STORAGE_KEY]);
+  return sanitizeSettingsForStorage(data[MB.STORAGE_KEY]);
 }
 
 async function saveSettings(settings) {
   await chrome.storage.sync.set({
-    [MB.STORAGE_KEY]: MB.normalizeSettings(settings)
+    [MB.STORAGE_KEY]: sanitizeSettingsForStorage(settings)
   });
+}
+
+function sanitizeSettingsForStorage(settings) {
+  const normalized = MB.normalizeSettings(settings);
+  const ownExtensionHost = MB.normalizeHostname(chrome.runtime && chrome.runtime.id ? chrome.runtime.id : "");
+
+  if (ownExtensionHost && normalized.siteRules[ownExtensionHost]) {
+    delete normalized.siteRules[ownExtensionHost];
+  }
+
+  return normalized;
 }
 
 function rebuildDynamicRules(settingsOverride) {
