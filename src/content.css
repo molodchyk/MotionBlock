@@ -30,8 +30,24 @@ html.motionblock-css-motion-off *::after {
   border-color: rgba(47, 119, 84, 0.72) !important;
 }
 
+.motionblock-media-container-placeholder {
+  background:
+    linear-gradient(135deg, rgba(18, 53, 67, 0.1), rgba(47, 119, 84, 0.18)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(18, 53, 67, 0.1),
+      rgba(18, 53, 67, 0.1) 8px,
+      rgba(255, 255, 255, 0.35) 8px,
+      rgba(255, 255, 255, 0.35) 16px
+    ) !important;
+  box-shadow: inset 0 0 0 1px rgba(18, 53, 67, 0.32) !important;
+  box-sizing: border-box !important;
+}
+
 img.motionblock-media-placeholder {
+  display: inline-block !important;
   opacity: 0.82 !important;
+  visibility: visible !important;
 }
 
 video.motionblock-media-placeholder,

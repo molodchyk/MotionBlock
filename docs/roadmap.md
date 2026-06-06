@@ -11,7 +11,7 @@
 - Store listing draft based on `review-feedback.md`.
 - Local fixture page for repeatable media cases.
 - Popup quick actions for "allow this site" and "block motion here".
-- Temporary click-to-play reveal buttons for blocked media.
+- Opt-in click-to-play reveal buttons for blocked media.
 
 ## Release 0.2
 

@@ -6,6 +6,7 @@
   const globalFeatures = document.getElementById("globalFeatures");
   const replacementMode = document.getElementById("replacementMode");
   const uiTheme = document.getElementById("uiTheme");
+  const showRevealControls = document.getElementById("showRevealControls");
   const addSiteForm = document.getElementById("addSiteForm");
   const newSiteHost = document.getElementById("newSiteHost");
   const siteTableHead = document.getElementById("siteTableHead");
@@ -43,6 +44,11 @@
     settings.uiTheme = uiTheme.value;
     MB.applyUiTheme(settings.uiTheme);
     saveAllSettings("Theme saved.");
+  });
+
+  showRevealControls.addEventListener("change", function () {
+    settings.showRevealControls = showRevealControls.checked;
+    saveAllSettings("Reveal button setting saved.");
   });
 
   addSiteForm.addEventListener("submit", function (event) {
@@ -122,6 +128,7 @@
     globalEnabled.checked = settings.enabled;
     replacementMode.value = settings.replacementMode;
     uiTheme.value = settings.uiTheme;
+    showRevealControls.checked = settings.showRevealControls;
     MB.applyUiTheme(settings.uiTheme);
     renderGlobalFeatures();
     renderSiteTable();

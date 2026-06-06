@@ -35,6 +35,7 @@
   let observer = null;
   let restoreRetryTimer = 0;
   let overlayPositionTimer = 0;
+  const placeholderContainers = new WeakMap();
 
   if (typeof chrome === "undefined" || !chrome.storage || !chrome.storage.sync) {
     return;
@@ -105,6 +106,10 @@
 
   function applyBlocking() {
     updateDocumentClasses();
+
+    if (!effectiveSettings.showRevealControls) {
+      removeAllRevealButtons();
+    }
 
     if (!effectiveSettings.enabled) {
       restoreBlockedElements();
@@ -393,8 +398,9 @@
     if (effectiveSettings.replacementMode === "hide") {
       element.classList.add("motionblock-media-hidden");
     } else {
-      lockDisplayedSize(element);
+      const placeholderSize = lockDisplayedSize(element);
       element.classList.add("motionblock-media-placeholder");
+      applyContainerPlaceholder(element, placeholderSize);
     }
 
     element.removeAttribute("srcset");
@@ -531,6 +537,8 @@
     delete element.dataset.motionblockOriginalStyleWidth;
     delete element.dataset.motionblockOriginalStyleHeight;
 
+    removePlaceholderContainer(element);
+
     if (typeof element.load === "function" && (element.tagName === "VIDEO" || element.tagName === "AUDIO")) {
       element.load();
     }
@@ -539,6 +547,11 @@
   }
 
   function ensureRevealOverlay(element, label) {
+    if (!effectiveSettings.showRevealControls) {
+      removeRevealButton(element);
+      return;
+    }
+
     if (!element.parentNode) {
       return;
     }
@@ -578,6 +591,16 @@
     delete element.dataset.motionblockRevealId;
   }
 
+  function removeAllRevealButtons() {
+    document.querySelectorAll(".motionblock-reveal-button").forEach(function (button) {
+      button.remove();
+    });
+
+    document.querySelectorAll("[data-motionblock-reveal-id]").forEach(function (element) {
+      delete element.dataset.motionblockRevealId;
+    });
+  }
+
   function scheduleRevealOverlayPositionUpdate() {
     if (overlayPositionTimer) {
       return;
@@ -590,6 +613,11 @@
   }
 
   function updateAllRevealOverlayPositions() {
+    if (!effectiveSettings.showRevealControls) {
+      removeAllRevealButtons();
+      return;
+    }
+
     document.querySelectorAll("[data-motionblock-reveal-id]").forEach(updateRevealOverlayPosition);
   }
 
@@ -800,13 +828,129 @@
   }
 
   function lockDisplayedSize(element) {
-    const rect = element.getBoundingClientRect();
-    element.dataset.motionblockOriginalStyleWidth = element.style.width || "";
-    element.dataset.motionblockOriginalStyleHeight = element.style.height || "";
+    const size = getPlaceholderSize(element);
 
-    if (rect.width > 8 && rect.height > 8) {
-      element.style.width = Math.round(rect.width) + "px";
-      element.style.height = Math.round(rect.height) + "px";
+    if (!Object.prototype.hasOwnProperty.call(element.dataset, "motionblockOriginalStyleWidth")) {
+      element.dataset.motionblockOriginalStyleWidth = element.style.width || "";
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(element.dataset, "motionblockOriginalStyleHeight")) {
+      element.dataset.motionblockOriginalStyleHeight = element.style.height || "";
+    }
+
+    if (size && size.width > 8 && size.height > 8) {
+      element.style.width = Math.round(size.width) + "px";
+      element.style.height = Math.round(size.height) + "px";
+    }
+
+    return size;
+  }
+
+  function getPlaceholderSize(element) {
+    const rect = element.getBoundingClientRect();
+    if (isUsablePlaceholderRect(rect)) {
+      return {
+        width: rect.width,
+        height: rect.height,
+        source: "element"
+      };
+    }
+
+    const widthAttribute = parseDimensionAttribute(element.getAttribute("width"));
+    const heightAttribute = parseDimensionAttribute(element.getAttribute("height"));
+    if (widthAttribute > 8 && heightAttribute > 8) {
+      return {
+        width: widthAttribute,
+        height: heightAttribute,
+        source: "attribute"
+      };
+    }
+
+    const container = findPlaceholderContainer(element);
+    if (container) {
+      return {
+        width: container.rect.width,
+        height: container.rect.height,
+        source: "container",
+        container: container.element
+      };
+    }
+
+    return null;
+  }
+
+  function parseDimensionAttribute(value) {
+    const parsed = Number.parseFloat(String(value || "").replace("px", ""));
+    return Number.isFinite(parsed) ? parsed : 0;
+  }
+
+  function findPlaceholderContainer(element) {
+    let container = element.parentElement;
+    let depth = 0;
+
+    while (container && container !== document.body && container !== document.documentElement && depth < 5) {
+      const rect = container.getBoundingClientRect();
+      if (isUsablePlaceholderRect(rect) && isLikelyMediaContainer(container)) {
+        return {
+          element: container,
+          rect
+        };
+      }
+
+      container = container.parentElement;
+      depth += 1;
+    }
+
+    return null;
+  }
+
+  function isUsablePlaceholderRect(rect) {
+    if (!rect || rect.width <= 8 || rect.height <= 8) {
+      return false;
+    }
+
+    const maxWidth = Math.max(320, window.innerWidth * 0.95);
+    const maxHeight = Math.max(240, window.innerHeight * 0.8);
+    return rect.width <= maxWidth && rect.height <= maxHeight;
+  }
+
+  function isLikelyMediaContainer(element) {
+    const metadata = [
+      element.tagName,
+      element.id,
+      getElementClassName(element),
+      element.getAttribute("aria-label"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id")
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    if (/\b(img|image|media|photo|picture|poster|preview|thumb|thumbnail|video|yt-image|ytd-thumbnail)\b/i.test(metadata)) {
+      return true;
+    }
+
+    return element.childElementCount <= 3;
+  }
+
+  function applyContainerPlaceholder(element, size) {
+    if (!size || size.source !== "container" || !size.container) {
+      return;
+    }
+
+    size.container.classList.add("motionblock-media-container-placeholder");
+    placeholderContainers.set(element, size.container);
+  }
+
+  function removePlaceholderContainer(element) {
+    const container = placeholderContainers.get(element);
+    if (!container) {
+      return;
+    }
+
+    placeholderContainers.delete(element);
+    if (!container.querySelector("[data-motionblock-blocked='true'][data-motionblock-feature='image']")) {
+      container.classList.remove("motionblock-media-container-placeholder");
     }
   }
 

@@ -24,6 +24,7 @@ Use it to stop:
 - optional video, audio, images, emoji, and CSS motion
 
 MotionBlock is built around per-site control. You can keep the global defaults conservative, then allow or block specific media types on individual websites from the popup or options page.
+Reveal buttons for blocked media are available as an option, but they are off by default for cleaner blocking on complex sites.
 
 Common uses:
 

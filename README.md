@@ -32,6 +32,7 @@ The popup controls the current site. The options page controls global defaults a
 - Per-site tri-state preferences: inherit, block/on, allow/off.
 - Settings export and import.
 - System, light, and dark UI theme modes.
+- Optional reveal buttons for blocked media. Off by default because complex sites can reuse hidden media surfaces.
 
 ## Planning Docs
 
@@ -63,6 +64,7 @@ node .\test\sanity.js
 
 - WebP blocking is URL-based for now. It is off by default because detecting animated WebP reliably needs deeper byte inspection.
 - First-frame GIF replacement is not implemented yet. The current default is a compact placeholder that preserves the displayed size when possible.
+- Reveal buttons are opt-in. They are useful on simple pages, but broad video/image blocking can produce unreliable click-to-play behavior on complex sites.
 - Emoji removal changes text and cannot be cleanly restored without reloading the page.
 
 ## Support

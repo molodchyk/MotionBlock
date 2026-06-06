@@ -46,7 +46,7 @@ Common uses:
 - allow image-heavy sites while blocking motion elsewhere
 - quickly allow media on sites that need it
 
-The popup controls the current site. The options page manages global defaults, per-site preferences, import/export, blocked media display, and light/dark/system UI theme.
+The popup controls the current site. The options page manages global defaults, per-site preferences, import/export, blocked media display, optional reveal buttons, and light/dark/system UI theme.
 
 MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings stay in Chrome extension storage.
 

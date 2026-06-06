@@ -80,6 +80,7 @@
   const DEFAULT_SETTINGS = {
     enabled: true,
     uiTheme: "system",
+    showRevealControls: false,
     replacementMode: "placeholder",
     features: DEFAULT_FEATURES,
     siteRules: {}
@@ -206,6 +207,8 @@
     return {
       enabled: typeof source.enabled === "boolean" ? source.enabled : DEFAULT_SETTINGS.enabled,
       uiTheme,
+      showRevealControls:
+        typeof source.showRevealControls === "boolean" ? source.showRevealControls : DEFAULT_SETTINGS.showRevealControls,
       replacementMode,
       features: normalizeFeatures(source.features, DEFAULT_FEATURES),
       siteRules: normalizeSiteRules(source.siteRules)
@@ -228,6 +231,7 @@
 
     return {
       enabled: normalized.enabled && !(rule && rule.enabled === false),
+      showRevealControls: normalized.showRevealControls,
       replacementMode: rule && rule.replacementMode ? rule.replacementMode : normalized.replacementMode,
       features,
       host,

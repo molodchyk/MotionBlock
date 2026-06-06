@@ -10,6 +10,7 @@ assert.equal(MB.normalizeHostname("example.com:443"), "example.com");
 const defaults = MB.normalizeSettings({});
 assert.equal(defaults.enabled, true);
 assert.equal(defaults.uiTheme, "system");
+assert.equal(defaults.showRevealControls, false);
 assert.equal(defaults.features.gifs, true);
 assert.equal(defaults.features.gifv, true);
 assert.equal(defaults.features.animatedWebp, false);
@@ -18,6 +19,7 @@ assert.equal(defaults.features.images, false);
 const settings = MB.normalizeSettings({
   enabled: true,
   uiTheme: "dark",
+  showRevealControls: true,
   features: {
     gifs: false,
     gifv: false,
@@ -40,6 +42,7 @@ const settings = MB.normalizeSettings({
 });
 
 assert.equal(settings.uiTheme, "dark");
+assert.equal(settings.showRevealControls, true);
 
 assert.equal(Object.hasOwn(settings.siteRules, "reddit.com"), true);
 assert.equal(Object.hasOwn(settings.siteRules, "www.reddit.com"), false);
@@ -57,5 +60,6 @@ assert.equal(giphy.enabled, false);
 
 const invalidTheme = MB.normalizeSettings({ uiTheme: "purple" });
 assert.equal(invalidTheme.uiTheme, "system");
+assert.equal(MB.getEffectiveSettings(defaults, "youtube.com").showRevealControls, false);
 
 console.log("settings sanity ok");

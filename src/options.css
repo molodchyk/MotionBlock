@@ -109,6 +109,10 @@ p {
   margin-top: 3px;
 }
 
+.single-option {
+  margin-top: 16px;
+}
+
 .replacement {
   align-items: center;
   display: flex;
