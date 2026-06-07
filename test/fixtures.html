@@ -79,6 +79,25 @@
         width: 220px;
       }
 
+      .gif-ui-control {
+        align-items: center;
+        background: #ffffff;
+        border: 1px solid #cbd5ce;
+        border-radius: 6px;
+        color: #182623;
+        display: inline-flex;
+        gap: 8px;
+        min-height: 40px;
+        padding: 0 12px;
+      }
+
+      .gif-ui-control img {
+        background: linear-gradient(135deg, #183b45, #2f7754);
+        border-radius: 4px;
+        height: 22px;
+        width: 22px;
+      }
+
       .css-spinner {
         animation: spin 1.1s linear infinite;
         background: conic-gradient(from 0deg, #183b45, #2f7754, #b6463f, #183b45);
@@ -104,8 +123,8 @@
         <div class="grid">
           <figure>
             <img
-              alt="Inline data GIF"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+              alt="Inline animated GIF"
+              src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHIAACH5BAUKAAAALAAAAAAQABAAAAMxCLrc/jDKSau9OOvNu/9gKI5kaZ5oqq5s675wLM90bd94ru987//AoHBILBqPyKRySAAAOw==">
             <figcaption>Expected default: blocked as GIF.</figcaption>
           </figure>
 
@@ -129,6 +148,16 @@
               <img alt="Picture source GIF" src="fallback.png">
             </picture>
             <figcaption>Expected default: GIF source removed.</figcaption>
+          </figure>
+
+          <figure>
+            <button class="gif-ui-control" type="button">
+              <img
+                alt=""
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+              Static GIF UI control
+            </button>
+            <figcaption>Expected default: button remains usable; spacer GIF is not replaced.</figcaption>
           </figure>
         </div>
       </section>

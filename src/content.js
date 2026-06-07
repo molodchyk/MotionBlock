@@ -324,11 +324,13 @@
       return "image";
     }
 
-    if (features.gifs && urls.some(isGifUrl)) {
+    const gifUrls = urls.filter(isGifUrl);
+    const staticGifUiAsset = gifUrls.length && isLikelyStaticGifUiAsset(element, gifUrls);
+    if (features.gifs && gifUrls.length && !staticGifUiAsset) {
       return "GIF";
     }
 
-    if (features.gifs && looksLikeGifLikeMotion(element, urls)) {
+    if (features.gifs && !staticGifUiAsset && looksLikeGifLikeMotion(element, urls)) {
       return "GIF-like media";
     }
 
@@ -982,6 +984,10 @@
   }
 
   function splitUrlAttribute(value) {
+    if (/^\s*data:/i.test(String(value || ""))) {
+      return [String(value).trim()];
+    }
+
     return String(value)
       .split(",")
       .map(function (part) {
@@ -1010,6 +1016,76 @@
   function isGifUrl(value) {
     const url = normalizeUrl(value);
     return /^data:image\/gif/.test(url) || /\.gif(?:$|[?#])/.test(url) || /[?&]format=gif(?:&|$)/.test(url);
+  }
+
+  function isLikelyStaticGifUiAsset(element, gifUrls) {
+    if (!gifUrls.length) {
+      return false;
+    }
+
+    if (gifUrls.every(isLikelyTransparentGifDataUrl)) {
+      return true;
+    }
+
+    return gifUrls.every(isDataGifUrl) && isLikelyTinyImageElement(element) && isLikelyInterfaceImage(element);
+  }
+
+  function isDataGifUrl(value) {
+    return /^data:image\/gif/i.test(String(value || "").trim());
+  }
+
+  function isLikelyTransparentGifDataUrl(value) {
+    const url = String(value || "")
+      .trim()
+      .replace(/\s+/g, "")
+      .toLowerCase();
+
+    if (!/^data:image\/gif/.test(url)) {
+      return false;
+    }
+
+    if (url.length > 260) {
+      return false;
+    }
+
+    return /base64,r0lgodlhaqab/.test(url) || /base64,r0lgoddhaqab/.test(url);
+  }
+
+  function isLikelyTinyImageElement(element) {
+    const widthAttribute = parseDimensionAttribute(element.getAttribute("width"));
+    const heightAttribute = parseDimensionAttribute(element.getAttribute("height"));
+
+    if (widthAttribute > 0 && heightAttribute > 0 && widthAttribute <= 4 && heightAttribute <= 4) {
+      return true;
+    }
+
+    if (element.naturalWidth > 0 && element.naturalHeight > 0 && element.naturalWidth <= 4 && element.naturalHeight <= 4) {
+      return true;
+    }
+
+    return false;
+  }
+
+  function isLikelyInterfaceImage(element) {
+    if (element.closest("button, [role='button'], [role='checkbox'], [role='menuitem'], [role='tab'], [role='switch'], input, label")) {
+      return true;
+    }
+
+    const metadata = [
+      element.getAttribute("alt"),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("role"),
+      element.getAttribute("data-tooltip"),
+      element.getAttribute("data-tooltip-id"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id"),
+      getElementClassName(element)
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    return /\b(icon|sprite|spacer|transparent|button|checkbox|menu|toolbar|control|nav|navigation)\b/i.test(metadata);
   }
 
   function isGifvUrl(value) {

@@ -12,10 +12,6 @@ const DNR_FEATURE_RULES = {
     {
       regexFilter: "\\.gif(?:$|[?#])",
       resourceTypes: ["image"]
-    },
-    {
-      regexFilter: "^data:image/gif",
-      resourceTypes: ["image"]
     }
   ],
   gifv: [

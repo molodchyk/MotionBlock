@@ -16,6 +16,7 @@ The fixture covers:
 
 - inline GIF images
 - `.gif` and `.gifv` URL patterns
+- static transparent GIF UI spacers that should not be blocked
 - WebP URL patterns
 - autoplay video
 - muted looping video

@@ -41,6 +41,7 @@ MotionBlock decisions:
 - Add per-site rules from the first version.
 - Use compact placeholders that preserve element size when possible.
 - Treat muted looping video as motion, not just as video.
+- Do not treat static transparent GIFs used as interface spacers/icons as distracting GIF content.
 - Add Reddit, Giphy, Steam, Discord, Facebook, and Stocktwits to the manual test list.
 
 ### Stop Animations

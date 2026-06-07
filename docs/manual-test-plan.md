@@ -8,6 +8,7 @@
 4. Confirm defaults:
    - inline GIF is blocked
    - normal PNG remains visible
+   - static GIF spacer inside a UI button remains visible and clickable
    - WebP URL is not blocked by default
    - GIFV video is blocked
    - muted looping Reddit-like video is blocked
@@ -46,6 +47,7 @@ Test these after the local fixture behaves correctly:
 - steamcommunity.com
 - youtube.com hover previews
 - youtube.com image/video placeholders after reload and scroll/lazy-load
+- mail.google.com inbox controls and message-row actions should not become GIF placeholders
 - stocktwits.com
 - flipboard.com
 - weather.com
