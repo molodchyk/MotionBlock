@@ -11,7 +11,9 @@
   const EMOJI_FALLBACK_PATTERN =
     /[#*0-9]\ufe0f?\u20e3|[\u00a9\u00ae\u203c\u2049\u2122\u2139\u2194-\u21aa\u231a-\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\u24c2\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u2600-\u27bf\u2934-\u2935\u2b05-\u2b55\u3030\u303d\u3297\u3299]|\ud83c[\udde6-\uddff]|\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f]|\ud83d[\ude80-\udeff]|\ud83e[\udd00-\uddff]/g;
   const EMOJI_TEXT_ATTRIBUTES = ["alt", "aria-label", "data-reaction-content", "data-reaction-label", "data-title", "data-tooltip", "data-tooltip-text", "placeholder", "title"];
-  const CURRENT_HOST = MB.normalizeHostname(window.location.hostname);
+  const FRAME_HOST = MB.normalizeHostname(window.location.hostname);
+  const SETTINGS_HOST = getSettingsHostForFrame();
+  const CURRENT_HOST = SETTINGS_HOST === FRAME_HOST ? SETTINGS_HOST : [SETTINGS_HOST, FRAME_HOST].filter(Boolean).join(" ");
   const GIF_LIKE_TEXT_PATTERN = /\b(gif|gifv|giphy|tenor|looping|animated)\b/i;
   const GIF_LIKE_URL_PATTERN =
     /(giphy\.com|media\.tenor\.com|tenor\.com|gfycat\.com|redgifs\.com|external-preview\.redd\.it|preview\.redd\.it|\.gifv(?:$|[?#])|[?&](?:format|type)=gifv?(?:&|$)|\/gif[s/]?)/i;
@@ -58,7 +60,7 @@
   ].join(",");
 
   let storedSettings = MB.DEFAULT_SETTINGS;
-  let effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
+  let effectiveSettings = MB.getEffectiveSettings(storedSettings, SETTINGS_HOST);
   let scheduled = false;
   let fullScanPending = true;
   let applyTimer = 0;
@@ -108,8 +110,60 @@
 
   function applySettings(settings) {
     storedSettings = MB.normalizeSettings(settings);
-    effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
+    effectiveSettings = MB.getEffectiveSettings(storedSettings, SETTINGS_HOST);
     runFullBlockingPass();
+  }
+
+  function getSettingsHostForFrame() {
+    if (!isFramedWindow()) {
+      return FRAME_HOST;
+    }
+
+    return getTopAncestorHost() || getReferrerHost() || FRAME_HOST;
+  }
+
+  function isFramedWindow() {
+    try {
+      return window.self !== window.top;
+    } catch (error) {
+      return true;
+    }
+  }
+
+  function getTopAncestorHost() {
+    const ancestorOrigins = getAncestorOrigins();
+
+    for (let index = ancestorOrigins.length - 1; index >= 0; index -= 1) {
+      const host = MB.getConfigurableHostFromUrl(ancestorOrigins[index]);
+      if (host) {
+        return host;
+      }
+    }
+
+    return "";
+  }
+
+  function getAncestorOrigins() {
+    const origins = [];
+
+    try {
+      const ancestorOrigins = window.location && window.location.ancestorOrigins;
+      if (!ancestorOrigins || typeof ancestorOrigins.length !== "number") {
+        return origins;
+      }
+
+      for (let index = 0; index < ancestorOrigins.length; index += 1) {
+        origins.push(String(ancestorOrigins[index] || ""));
+      }
+    } catch (error) {
+      return [];
+    }
+
+    return origins;
+  }
+
+  function getReferrerHost() {
+    return MB.getConfigurableHostFromUrl(document.referrer || "");
   }
 
   function runFullBlockingPass() {
