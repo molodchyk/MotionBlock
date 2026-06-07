@@ -40,6 +40,7 @@ MotionBlock decisions:
 - Do not block WebP by default.
 - Add per-site rules from the first version.
 - Use compact placeholders that preserve element size when possible.
+- Make placeholders visually quiet; users complained when replacements were more distracting than the original media.
 - Treat muted looping video as motion, not just as video.
 - Do not treat static transparent GIFs used as interface spacers/icons as distracting GIF content.
 - Add Reddit, Giphy, Steam, Discord, Facebook, and Stocktwits to the manual test list.
@@ -174,7 +175,7 @@ Decision:
 - Current-site popup.
 - Options page for exact-host rules.
 - Conservative WebP handling.
-- Compact placeholder or hide mode.
+- Quiet compact placeholder or hide mode.
 - Clear privacy posture.
 
 ### High Priority After MVP
