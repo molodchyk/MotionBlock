@@ -45,6 +45,7 @@
 Test these after the local fixture behaves correctly:
 
 - reddit.com
+- reddit.com feed videos inside `shreddit-*` custom elements should stop when Video or Audio is enabled
 - discord.com
 - giphy.com
 - facebook.com

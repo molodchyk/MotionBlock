@@ -37,6 +37,9 @@
   let observer = null;
   let restoreRetryTimer = 0;
   let overlayPositionTimer = 0;
+  let attachShadowPatched = false;
+  const processingRoots = [document];
+  const observedProcessingRoots = new WeakSet();
   const placeholderContainers = new WeakMap();
 
   if (typeof chrome === "undefined" || !chrome.storage || !chrome.storage.sync) {
@@ -78,8 +81,61 @@
   }
 
   function startObserver() {
-    const target = document.documentElement || document;
-    observer = new MutationObserver(scheduleApply);
+    observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        mutation.addedNodes.forEach(discoverShadowRootsFromNode);
+      });
+      scheduleApply();
+    });
+
+    patchAttachShadow();
+    observeProcessingRoot(document);
+    discoverShadowRoots(document);
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", scheduleApply, { once: true });
+    } else {
+      scheduleApply();
+    }
+  }
+
+  function patchAttachShadow() {
+    if (attachShadowPatched || !Element.prototype.attachShadow) {
+      return;
+    }
+
+    const originalAttachShadow = Element.prototype.attachShadow;
+    Element.prototype.attachShadow = function (init) {
+      const shadowRoot = originalAttachShadow.call(this, init);
+
+      if (!init || init.mode === "open") {
+        window.setTimeout(function () {
+          observeProcessingRoot(shadowRoot);
+          scheduleApply();
+        }, 0);
+      }
+
+      return shadowRoot;
+    };
+
+    attachShadowPatched = true;
+  }
+
+  function observeProcessingRoot(root) {
+    if (!root || observedProcessingRoots.has(root)) {
+      return;
+    }
+
+    observedProcessingRoots.add(root);
+
+    if (root !== document) {
+      processingRoots.push(root);
+      root.addEventListener("play", stopBlockedMediaPlayback, true);
+      root.addEventListener("playing", stopBlockedMediaPlayback, true);
+      root.addEventListener("volumechange", stopBlockedMediaPlayback, true);
+    }
+
+    const target = root === document ? document.documentElement || document : root;
     observer.observe(target, {
       attributes: true,
       attributeFilter: ["src", "srcset", "poster", "autoplay", "loop", "muted", "style", "class"],
@@ -87,11 +143,31 @@
       subtree: true
     });
 
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", scheduleApply, { once: true });
-    } else {
-      scheduleApply();
+    discoverShadowRoots(root);
+  }
+
+  function discoverShadowRoots(root) {
+    if (!root || typeof root.querySelectorAll !== "function") {
+      return;
     }
+
+    root.querySelectorAll("*").forEach(function (element) {
+      if (element.shadowRoot) {
+        observeProcessingRoot(element.shadowRoot);
+      }
+    });
+  }
+
+  function discoverShadowRootsFromNode(node) {
+    if (!node || node.nodeType !== Node.ELEMENT_NODE) {
+      return;
+    }
+
+    if (node.shadowRoot) {
+      observeProcessingRoot(node.shadowRoot);
+    }
+
+    discoverShadowRoots(node);
   }
 
   function scheduleApply() {
@@ -119,8 +195,11 @@
       return;
     }
 
-    processImages(document);
-    processMedia(document);
+    discoverShadowRoots(document);
+    getProcessingRoots().forEach(function (root) {
+      processImages(root);
+      processMedia(root);
+    });
 
     if (effectiveSettings.features.emoji) {
       processEmoji(document);
@@ -138,6 +217,24 @@
       "motionblock-css-motion-off",
       enabled && Boolean(effectiveSettings.features.cssMotion)
     );
+  }
+
+  function getProcessingRoots() {
+    return processingRoots.filter(function (root) {
+      return root === document || !root.host || root.host.isConnected;
+    });
+  }
+
+  function queryAllProcessingRoots(selector) {
+    const elements = [];
+
+    getProcessingRoots().forEach(function (root) {
+      root.querySelectorAll(selector).forEach(function (element) {
+        elements.push(element);
+      });
+    });
+
+    return elements;
   }
 
   function processImages(root) {
@@ -597,18 +694,14 @@
   }
 
   function restoreBlockedElements() {
-    document
-      .querySelectorAll("[data-motionblock-blocked='true'], [data-motionblock-autoplay-adjusted='true']")
-      .forEach(restoreElement);
-    document
-      .querySelectorAll("[data-motionblock-source-blocked='true']")
-      .forEach(restoreElement);
+    queryAllProcessingRoots("[data-motionblock-blocked='true'], [data-motionblock-autoplay-adjusted='true']").forEach(
+      restoreElement
+    );
+    queryAllProcessingRoots("[data-motionblock-source-blocked='true']").forEach(restoreElement);
   }
 
   function restoreElementsByFeature(feature) {
-    document
-      .querySelectorAll("[data-motionblock-feature='" + feature + "']")
-      .forEach(restoreElement);
+    queryAllProcessingRoots("[data-motionblock-feature='" + feature + "']").forEach(restoreElement);
   }
 
   function restoreElement(element) {
@@ -698,7 +791,7 @@
       button.remove();
     });
 
-    document.querySelectorAll("[data-motionblock-reveal-id]").forEach(function (element) {
+    queryAllProcessingRoots("[data-motionblock-reveal-id]").forEach(function (element) {
       delete element.dataset.motionblockRevealId;
     });
   }
@@ -720,7 +813,7 @@
       return;
     }
 
-    document.querySelectorAll("[data-motionblock-reveal-id]").forEach(updateRevealOverlayPosition);
+    queryAllProcessingRoots("[data-motionblock-reveal-id]").forEach(updateRevealOverlayPosition);
   }
 
   function updateRevealOverlayPosition(element) {
@@ -803,7 +896,7 @@
   }
 
   function retryRestoredMediaLoads() {
-    const pending = document.querySelectorAll("[data-motionblock-restore-pending='true']");
+    const pending = queryAllProcessingRoots("[data-motionblock-restore-pending='true']");
     let hasPending = false;
 
     pending.forEach(function (element) {

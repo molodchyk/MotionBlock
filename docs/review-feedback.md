@@ -45,6 +45,7 @@ MotionBlock decisions:
 - Infer a reasonable thumbnail placeholder only as a fallback when broad image blocking encounters already-collapsed placeholders.
 - Treat muted looping video as motion, not just as video.
 - Do not treat static transparent GIFs used as interface spacers/icons as distracting GIF content.
+- Scan open shadow roots so custom-element media players, including Reddit's `shreddit-*` components, are covered.
 - Add Reddit, Giphy, Steam, Discord, Facebook, and Stocktwits to the manual test list.
 
 ### Stop Animations
