@@ -41,6 +41,7 @@ MotionBlock decisions:
 - Add per-site rules from the first version.
 - Use compact placeholders that preserve element size when possible.
 - Make placeholders visually quiet; users complained when replacements were more distracting than the original media.
+- Infer a reasonable thumbnail placeholder when broad image blocking causes unloaded gallery images to collapse into slivers.
 - Treat muted looping video as motion, not just as video.
 - Do not treat static transparent GIFs used as interface spacers/icons as distracting GIF content.
 - Add Reddit, Giphy, Steam, Discord, Facebook, and Stocktwits to the manual test list.

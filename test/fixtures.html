@@ -125,6 +125,11 @@
         width: 18px;
       }
 
+      .collapsed-gallery-fixture img {
+        height: 260px;
+        width: 42px;
+      }
+
       .css-spinner {
         animation: spin 1.1s linear infinite;
         background: conic-gradient(from 0deg, #183b45, #2f7754, #b6463f, #183b45);
@@ -201,6 +206,13 @@
               </tbody>
             </table>
             <figcaption>Expected default: tiny GIF UI control is not replaced and no row placeholder appears.</figcaption>
+          </figure>
+
+          <figure class="collapsed-gallery-fixture">
+            <img
+              alt="Collapsed gallery thumbnail"
+              src="sample-collapsed-thumbnail.png">
+            <figcaption>Expected with Images enabled: placeholder infers a thumbnail-sized box instead of keeping a narrow sliver.</figcaption>
           </figure>
         </div>
       </section>

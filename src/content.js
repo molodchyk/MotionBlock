@@ -400,7 +400,7 @@
     if (effectiveSettings.replacementMode === "hide") {
       element.classList.add("motionblock-media-hidden");
     } else {
-      const placeholderSize = lockDisplayedSize(element);
+      const placeholderSize = lockDisplayedSize(element, reason);
       element.classList.add("motionblock-media-placeholder");
       applyContainerPlaceholder(element, placeholderSize);
     }
@@ -829,8 +829,8 @@
     return "motionblockOriginal" + attributeName.charAt(0).toUpperCase() + attributeName.slice(1);
   }
 
-  function lockDisplayedSize(element) {
-    const size = getPlaceholderSize(element);
+  function lockDisplayedSize(element, reason) {
+    const size = getPlaceholderSize(element, reason);
 
     if (!Object.prototype.hasOwnProperty.call(element.dataset, "motionblockOriginalStyleWidth")) {
       element.dataset.motionblockOriginalStyleWidth = element.style.width || "";
@@ -848,8 +848,13 @@
     return size;
   }
 
-  function getPlaceholderSize(element) {
+  function getPlaceholderSize(element, reason) {
     const rect = element.getBoundingClientRect();
+    const inferredSize = getInferredCollapsedImagePlaceholderSize(element, reason, rect);
+    if (inferredSize) {
+      return inferredSize;
+    }
+
     if (isUsablePlaceholderRect(rect)) {
       return {
         width: rect.width,
@@ -879,6 +884,43 @@
     }
 
     return null;
+  }
+
+  function getInferredCollapsedImagePlaceholderSize(element, reason, rect) {
+    if (reason !== "image" || !isUsablePlaceholderRect(rect) || isLikelyInterfaceImage(element)) {
+      return null;
+    }
+
+    if (element.naturalWidth > 0 && element.naturalHeight > 0) {
+      return null;
+    }
+
+    const aspectRatio = rect.width / rect.height;
+    if (rect.height >= 96 && rect.width <= 80 && aspectRatio < 0.35) {
+      return {
+        width: clampNumber(rect.height, 120, getMaximumInferredPlaceholderWidth()),
+        height: rect.height,
+        source: "inferred"
+      };
+    }
+
+    if (rect.width >= 96 && rect.height <= 80 && aspectRatio > 2.8) {
+      return {
+        width: rect.width,
+        height: clampNumber(rect.width * 0.75, 90, 320),
+        source: "inferred"
+      };
+    }
+
+    return null;
+  }
+
+  function getMaximumInferredPlaceholderWidth() {
+    return Math.min(420, Math.max(180, window.innerWidth * 0.35));
+  }
+
+  function clampNumber(value, min, max) {
+    return Math.min(max, Math.max(min, value));
   }
 
   function parseDimensionAttribute(value) {

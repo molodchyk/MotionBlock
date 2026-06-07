@@ -10,6 +10,7 @@
    - normal PNG remains visible
    - static GIF spacer inside a UI button remains visible and clickable
    - tiny GIF interface control inside the table-row fixture remains visible and does not turn the row into a placeholder
+   - collapsed gallery thumbnail fixture becomes a normal thumbnail-sized placeholder when Images is enabled
    - WebP URL is not blocked by default
    - GIFV video is blocked
    - muted looping Reddit-like video is blocked
