@@ -53,7 +53,7 @@
       group: "broad",
       label: "All images",
       shortLabel: "Images",
-      description: "Block image requests and remove image elements. Use per-site allow rules for image-heavy sites."
+      description: "Replace image elements in the page. Use per-site allow rules for image-heavy sites."
     },
     {
       key: "emoji",

@@ -378,6 +378,8 @@
 
   function blockImageElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
+      refreshImagePlaceholder(element);
+      ensureRevealOverlay(element, "Show blocked image");
       return;
     }
 
@@ -410,6 +412,17 @@
     element.setAttribute("src", PLACEHOLDER_SRC);
     element.setAttribute("alt", "Blocked " + reason);
     ensureRevealOverlay(element, "Show blocked image");
+  }
+
+  function refreshImagePlaceholder(element) {
+    if (effectiveSettings.replacementMode === "hide" || element.tagName.toLowerCase() === "source") {
+      return;
+    }
+
+    const reason = element.dataset.motionblockReason || "image";
+    const placeholderSize = lockDisplayedSize(element, reason);
+    element.classList.add("motionblock-media-placeholder");
+    applyContainerPlaceholder(element, placeholderSize);
   }
 
   function blockMediaElement(element, reason) {
@@ -891,14 +904,10 @@
       return null;
     }
 
-    if (element.naturalWidth > 0 && element.naturalHeight > 0) {
-      return null;
-    }
-
     const aspectRatio = rect.width / rect.height;
     if (rect.height >= 96 && rect.width <= 80 && aspectRatio < 0.35) {
       return {
-        width: clampNumber(rect.height, 120, getMaximumInferredPlaceholderWidth()),
+        width: inferWidthFromHeight(element, rect.height),
         height: rect.height,
         source: "inferred"
       };
@@ -907,12 +916,32 @@
     if (rect.width >= 96 && rect.height <= 80 && aspectRatio > 2.8) {
       return {
         width: rect.width,
-        height: clampNumber(rect.width * 0.75, 90, 320),
+        height: inferHeightFromWidth(element, rect.width),
         source: "inferred"
       };
     }
 
     return null;
+  }
+
+  function inferWidthFromHeight(element, height) {
+    const naturalRatio = getUsableNaturalAspectRatio(element);
+    const estimatedWidth = naturalRatio ? height * naturalRatio : height;
+    return clampNumber(estimatedWidth, 120, getMaximumInferredPlaceholderWidth());
+  }
+
+  function inferHeightFromWidth(element, width) {
+    const naturalRatio = getUsableNaturalAspectRatio(element);
+    const estimatedHeight = naturalRatio ? width / naturalRatio : width * 0.75;
+    return clampNumber(estimatedHeight, 90, 320);
+  }
+
+  function getUsableNaturalAspectRatio(element) {
+    if (element.naturalWidth <= 1 || element.naturalHeight <= 1) {
+      return 0;
+    }
+
+    return clampNumber(element.naturalWidth / element.naturalHeight, 0.25, 4);
   }
 
   function getMaximumInferredPlaceholderWidth() {

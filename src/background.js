@@ -38,11 +38,6 @@ const DNR_FEATURE_RULES = {
       regexFilter: "\\.(?:mp3|m4a|aac|ogg|oga|wav|flac)(?:$|[?#])",
       resourceTypes: ["media"]
     }
-  ],
-  images: [
-    {
-      resourceTypes: ["image"]
-    }
   ]
 };
 

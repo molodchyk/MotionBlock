@@ -27,7 +27,7 @@ The popup controls the current site. The options page controls global defaults a
 
 ## Current MVP
 
-- DOM-aware GIF blocking that avoids tiny interface GIFs, plus network blocking for GIFV, WebP URL patterns, broad image, broad video, and audio settings.
+- DOM-aware GIF and image blocking that avoids tiny interface GIFs, plus network blocking for GIFV, WebP URL patterns, broad video, and audio settings.
 - DOM cleanup for already-in-page images, video, audio, emoji renderers, and CSS motion.
 - Per-site tri-state preferences: inherit, block/on, allow/off.
 - Settings export/import with JSON backup files.
@@ -68,6 +68,7 @@ node .\test\sanity.js
 - Reveal buttons are opt-in. They are useful on simple pages, but broad video/image blocking can produce unreliable click-to-play behavior on complex sites.
 - Emoji removal changes text and cannot be cleanly restored without reloading the page.
 - GIF image blocking is DOM-aware instead of a blanket `.gif` network rule, because many sites still use static GIFs as tiny interface controls.
+- Broad image blocking is DOM-aware instead of a blanket image request rule, because image galleries often need loaded dimensions to keep their layout.
 
 ## Support
 

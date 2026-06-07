@@ -6,7 +6,7 @@ Used to save global defaults, per-site preferences, replacement mode, UI theme, 
 
 ## `declarativeNetRequest`
 
-Used to block selected media requests before they load. This is required for efficient GIFV, image, video, and audio blocking under Manifest V3. Plain GIF image elements are handled in the page so tiny static GIF interface controls are not broken by a blanket request rule.
+Used to block selected media requests before they load. This is required for efficient GIFV, WebP URL-pattern, video, and audio blocking under Manifest V3. Plain GIF and broad image elements are handled in the page so static interface controls and image-gallery layouts are not broken by blanket request rules.
 
 ## `<all_urls>`
 
