@@ -12,6 +12,23 @@
   const BROAD_IMAGE_BLOCK_TIMEOUT_MS = 2500;
   const BROAD_IMAGE_SETTLE_DELAY_MS = 120;
   const MEDIA_ATTRIBUTE_FILTER = ["src", "srcset", "poster", "autoplay", "loop", "muted"];
+  const MEDIA_ENFORCEMENT_EVENTS = ["loadstart", "loadedmetadata", "canplay", "play", "playing", "volumechange"];
+  const FULL_SCAN_SETTLE_DELAYS_MS = [180, 700, 1800];
+  const CUSTOM_MEDIA_HOST_SELECTOR = [
+    "[autoplay]",
+    "[loop]",
+    "[gif]",
+    "[data-hls-url]",
+    "[data-media-id]",
+    "[data-video-id]",
+    "[src*='.gifv' i]",
+    "[src*='.m3u8' i]",
+    "[src*='.mp4' i]",
+    "[src*='.webm' i]"
+  ].join(",");
+  const MEDIA_HOST_TEXT_PATTERN = /\b(video|player|media|gif|gifv|animation|stream|embed|audio|sound|music|podcast)\b/i;
+  const VIDEO_HOST_TEXT_PATTERN = /\b(video|player|media|gif|gifv|animation|stream|embed)\b/i;
+  const AUDIO_HOST_TEXT_PATTERN = /\b(audio|sound|music|podcast|player|media|stream|embed)\b/i;
   const EMOJI_UI_SELECTORS = [
     "img.emoji",
     "img.twemoji",
@@ -42,6 +59,7 @@
   let restoreRetryTimer = 0;
   let overlayPositionTimer = 0;
   let attachShadowPatched = false;
+  let settlingFullScanTimers = [];
   const processingRoots = [document];
   const dirtyRoots = new Set([document]);
   const observedProcessingRoots = new WeakSet();
@@ -53,17 +71,13 @@
 
   loadSettings();
   startObserver();
-  document.addEventListener("play", stopBlockedMediaPlayback, true);
-  document.addEventListener("playing", stopBlockedMediaPlayback, true);
-  document.addEventListener("volumechange", stopBlockedMediaPlayback, true);
+  addMediaEnforcementListeners(document);
   window.addEventListener("scroll", scheduleRevealOverlayPositionUpdate, true);
   window.addEventListener("resize", scheduleRevealOverlayPositionUpdate, true);
 
   chrome.storage.onChanged.addListener(function (changes, areaName) {
     if (areaName === "sync" && changes[MB.STORAGE_KEY]) {
-      storedSettings = MB.normalizeSettings(changes[MB.STORAGE_KEY].newValue);
-      effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
-      scheduleApply({ full: true });
+      applySettings(changes[MB.STORAGE_KEY].newValue);
     }
   });
 
@@ -80,10 +94,29 @@
 
   async function loadSettings() {
     const data = await chrome.storage.sync.get(MB.STORAGE_KEY);
-    storedSettings = MB.normalizeSettings(data[MB.STORAGE_KEY]);
+    applySettings(data[MB.STORAGE_KEY]);
+  }
+
+  function applySettings(settings) {
+    storedSettings = MB.normalizeSettings(settings);
     effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
+    runFullBlockingPass();
+  }
+
+  function runFullBlockingPass() {
+    cancelScheduledApply();
     markFullScan();
     applyBlocking();
+    scheduleSettlingFullScans();
+  }
+
+  function cancelScheduledApply() {
+    if (applyTimer) {
+      window.clearTimeout(applyTimer);
+      applyTimer = 0;
+    }
+
+    scheduled = false;
   }
 
   function startObserver() {
@@ -146,9 +179,7 @@
 
     if (root !== document) {
       processingRoots.push(root);
-      root.addEventListener("play", stopBlockedMediaPlayback, true);
-      root.addEventListener("playing", stopBlockedMediaPlayback, true);
-      root.addEventListener("volumechange", stopBlockedMediaPlayback, true);
+      addMediaEnforcementListeners(root);
     }
 
     markDirtyRoot(root);
@@ -231,6 +262,10 @@
   }
 
   function applyBlocking() {
+    if (fullScanPending) {
+      discoverAllProcessingRoots();
+    }
+
     const work = consumeScheduledWork();
     const roots = work.roots;
 
@@ -266,6 +301,51 @@
     }
 
     updateAllRevealOverlayPositions();
+  }
+
+  function scheduleSettlingFullScans() {
+    clearSettlingFullScans();
+
+    if (!shouldRunSettlingFullScans()) {
+      return;
+    }
+
+    settlingFullScanTimers = FULL_SCAN_SETTLE_DELAYS_MS.map(function (delay) {
+      return window.setTimeout(function () {
+        markFullScan();
+        applyBlocking();
+      }, delay);
+    });
+  }
+
+  function clearSettlingFullScans() {
+    settlingFullScanTimers.forEach(function (timer) {
+      window.clearTimeout(timer);
+    });
+    settlingFullScanTimers = [];
+  }
+
+  function shouldRunSettlingFullScans() {
+    if (!effectiveSettings.enabled) {
+      return false;
+    }
+
+    return (
+      shouldInspectImages() ||
+      shouldInspectMedia() ||
+      Boolean(effectiveSettings.features.emoji) ||
+      Boolean(effectiveSettings.features.cssMotion)
+    );
+  }
+
+  function addMediaEnforcementListeners(root) {
+    MEDIA_ENFORCEMENT_EVENTS.forEach(function (eventName) {
+      root.addEventListener(eventName, stopBlockedMediaPlayback, true);
+    });
+  }
+
+  function discoverAllProcessingRoots() {
+    getProcessingRoots().forEach(discoverShadowRoots);
   }
 
   function updateDocumentClasses() {
@@ -370,14 +450,52 @@
 
       if (reason && reason.hardBlock) {
         blockMediaElement(element, reason.label);
-      } else if (element.dataset.motionblockBlocked === "true") {
-        enforceBlockedMediaElement(element);
       } else if (reason && reason.disableAutoplay) {
+        if (element.dataset.motionblockFeature === "media") {
+          restoreElement(element);
+        }
         disableAutoplay(element);
       } else if (element.dataset.motionblockFeature === "media") {
         restoreElement(element);
+      } else if (element.dataset.motionblockBlocked === "true") {
+        enforceBlockedMediaElement(element);
       }
     });
+
+    processCustomMediaHosts(root);
+  }
+
+  function processCustomMediaHosts(root) {
+    const candidates = [];
+
+    root.querySelectorAll(CUSTOM_MEDIA_HOST_SELECTOR).forEach(function (element) {
+      candidates.push(element);
+    });
+
+    root.querySelectorAll("source[src], source[srcset]").forEach(function (source) {
+      const host = findCustomMediaHost(source);
+      if (host) {
+        candidates.push(host);
+      }
+    });
+
+    uniqueElements(candidates).forEach(processCustomMediaHost);
+  }
+
+  function processCustomMediaHost(element) {
+    if (element.dataset.motionblockUserAllowed === "true" || isNativeMediaElement(element)) {
+      return;
+    }
+
+    const reason = getCustomMediaHostBlockReason(element);
+
+    if (reason && reason.hardBlock) {
+      blockCustomMediaHostElement(element, reason.label);
+    } else if (element.dataset.motionblockFeature === "media" && element.dataset.motionblockCustomHost === "true") {
+      restoreElement(element);
+    } else if (element.dataset.motionblockBlocked === "true" && element.dataset.motionblockCustomHost === "true") {
+      enforceBlockedCustomMediaHostElement(element);
+    }
   }
 
   function stopBlockedMediaPlayback(event) {
@@ -582,6 +700,113 @@
     return null;
   }
 
+  function getCustomMediaHostBlockReason(element) {
+    if (!isLikelyCustomMediaHost(element)) {
+      return null;
+    }
+
+    const features = effectiveSettings.features;
+    const urls = collectElementUrls(element);
+    const metadata = getCustomMediaHostMetadata(element);
+    const explicitGifHost = element.hasAttribute("gif");
+    const autoplayOrLooping = element.hasAttribute("autoplay") || element.hasAttribute("loop") || explicitGifHost;
+    const videoLike = VIDEO_HOST_TEXT_PATTERN.test(metadata) || urls.some(isVideoUrl);
+    const audioLike = AUDIO_HOST_TEXT_PATTERN.test(metadata) || urls.some(isAudioUrl);
+    const gifLike =
+      explicitGifHost ||
+      urls.some(isGifvUrl) ||
+      looksLikeGifLikeMotion(element, urls) ||
+      GIF_LIKE_TEXT_PATTERN.test(metadata) ||
+      /\b(gif|gifv|animation)\b/i.test(metadata);
+
+    if (features.gifv && urls.some(isGifvUrl)) {
+      return { hardBlock: true, label: "GIFV" };
+    }
+
+    if (features.gifs && explicitGifHost) {
+      return { hardBlock: true, label: "GIF-like media" };
+    }
+
+    if ((features.gifv || features.gifs) && gifLike && autoplayOrLooping) {
+      return { hardBlock: true, label: "GIF-like media" };
+    }
+
+    if (features.autoplayVideo && autoplayOrLooping && videoLike) {
+      return { hardBlock: true, label: "autoplay video" };
+    }
+
+    if (features.video && videoLike) {
+      return { hardBlock: true, label: "video" };
+    }
+
+    if (features.audio && audioLike) {
+      return { hardBlock: true, label: "audio" };
+    }
+
+    return null;
+  }
+
+  function isNativeMediaElement(element) {
+    return element.tagName === "VIDEO" || element.tagName === "AUDIO";
+  }
+
+  function isLikelyCustomMediaHost(element) {
+    if (!element || !element.isConnected || element.closest(".motionblock-reveal-button")) {
+      return false;
+    }
+
+    const tag = element.tagName.toLowerCase();
+    if (tag === "img" || tag === "picture" || tag === "source" || tag === "track") {
+      return false;
+    }
+
+    const metadata = getCustomMediaHostMetadata(element);
+    const urls = collectElementUrls(element);
+    const hasMediaName = MEDIA_HOST_TEXT_PATTERN.test(metadata);
+    const customElement = tag.indexOf("-") !== -1;
+    const hasMediaUrl = urls.some(isVideoUrl) || urls.some(isAudioUrl) || urls.some(isGifvUrl);
+    const hasMediaChild = Boolean(element.querySelector("source[src], source[srcset], video, audio"));
+
+    return hasMediaName && (customElement || element.hasAttribute("autoplay") || element.hasAttribute("loop") || hasMediaUrl || hasMediaChild);
+  }
+
+  function getCustomMediaHostMetadata(element) {
+    return [
+      element.tagName,
+      element.id,
+      getElementClassName(element),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("role"),
+      element.getAttribute("slot"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id"),
+      element.getAttribute("data-media-id"),
+      element.getAttribute("data-video-id"),
+      element.getAttribute("data-hls-url"),
+      element.getAttribute("src"),
+      element.hasAttribute("gif") ? "gif" : ""
+    ]
+      .filter(Boolean)
+      .join(" ");
+  }
+
+  function findCustomMediaHost(element) {
+    let current = element.parentElement;
+    let depth = 0;
+
+    while (current && current !== document.body && current !== document.documentElement && depth < 5) {
+      if (!isNativeMediaElement(current) && isLikelyCustomMediaHost(current)) {
+        return current;
+      }
+
+      current = current.parentElement;
+      depth += 1;
+    }
+
+    return null;
+  }
+
   function blockImageElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
       refreshImagePlaceholder(element);
@@ -719,7 +944,9 @@
     storeOriginalAttribute(element, "preload");
     storeOriginalAttribute(element, "autoplay");
     storeOriginalAttribute(element, "loop");
+    storeOriginalAttribute(element, "muted");
     storeOriginalAttribute(element, "title");
+    storeOriginalMediaState(element);
 
     element.dataset.motionblockBlocked = "true";
     element.dataset.motionblockFeature = "media";
@@ -737,6 +964,35 @@
     );
     enforceBlockedMediaElement(element);
     ensureRevealOverlay(element, element.tagName === "AUDIO" ? "Play blocked audio" : "Play blocked video");
+  }
+
+  function blockCustomMediaHostElement(element, reason) {
+    if (element.dataset.motionblockBlocked === "true") {
+      enforceBlockedCustomMediaHostElement(element);
+      ensureRevealOverlay(element, "Play blocked media");
+      return;
+    }
+
+    storeOriginalAttribute(element, "autoplay");
+    storeOriginalAttribute(element, "loop");
+    storeOriginalAttribute(element, "src");
+    storeOriginalAttribute(element, "poster");
+    storeOriginalAttribute(element, "preload");
+    storeOriginalAttribute(element, "muted");
+    storeOriginalAttribute(element, "title");
+    storeOriginalMediaState(element);
+
+    element.dataset.motionblockBlocked = "true";
+    element.dataset.motionblockFeature = "media";
+    element.dataset.motionblockCustomHost = "true";
+    element.dataset.motionblockReason = reason;
+    element.title = element.title || "Blocked by MotionBlock: " + reason;
+
+    element.classList.add(
+      effectiveSettings.replacementMode === "hide" ? "motionblock-media-hidden" : "motionblock-media-placeholder"
+    );
+    enforceBlockedCustomMediaHostElement(element);
+    ensureRevealOverlay(element, "Play blocked media");
   }
 
   function enforceBlockedMediaElement(element) {
@@ -779,6 +1035,65 @@
     }
   }
 
+  function enforceBlockedCustomMediaHostElement(element) {
+    if (element.dataset.motionblockEnforcing === "true") {
+      return;
+    }
+
+    element.dataset.motionblockEnforcing = "true";
+
+    try {
+      element.removeAttribute("autoplay");
+      element.removeAttribute("loop");
+      element.setAttribute("preload", "none");
+
+      element.querySelectorAll("source").forEach(function (source) {
+        storeOriginalAttribute(source, "src");
+        storeOriginalAttribute(source, "srcset");
+        source.dataset.motionblockSourceBlocked = "true";
+        source.removeAttribute("src");
+        source.removeAttribute("srcset");
+      });
+
+      element.removeAttribute("src");
+      setMediaPropertyIfPresent(element, "src", "");
+      setMediaPropertyIfPresent(element, "autoplay", false);
+      setMediaPropertyIfPresent(element, "loop", false);
+      setMediaPropertyIfPresent(element, "muted", true);
+      setMediaPropertyIfPresent(element, "volume", 0);
+      callMediaMethodIfPresent(element, "pause");
+      callMediaMethodIfPresent(element, "stop");
+      callMediaMethodIfPresent(element, "pauseVideo");
+      callMediaMethodIfPresent(element, "stopVideo");
+
+      if (element.shadowRoot) {
+        processMedia(element.shadowRoot);
+      }
+    } finally {
+      delete element.dataset.motionblockEnforcing;
+    }
+  }
+
+  function setMediaPropertyIfPresent(element, propertyName, value) {
+    try {
+      if (propertyName in element) {
+        element[propertyName] = value;
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
+  function callMediaMethodIfPresent(element, methodName) {
+    try {
+      if (typeof element[methodName] === "function") {
+        element[methodName]();
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
   function disableAutoplay(element) {
     if (element.dataset.motionblockAutoplayAdjusted === "true") {
       return;
@@ -805,6 +1120,9 @@
   }
 
   function restoreElement(element) {
+    const restoresMediaSources =
+      element.tagName === "VIDEO" || element.tagName === "AUDIO" || element.dataset.motionblockCustomHost === "true";
+
     removeRevealButton(element);
     restoreOriginalAttribute(element, "alt");
     restoreOriginalAttribute(element, "src");
@@ -814,11 +1132,14 @@
     restoreOriginalAttribute(element, "preload");
     restoreOriginalAttribute(element, "autoplay");
     restoreOriginalAttribute(element, "loop");
+    restoreOriginalAttribute(element, "muted");
     restoreOriginalAttribute(element, "title");
+    restoreOriginalMediaState(element);
 
     element.classList.remove("motionblock-media-placeholder", "motionblock-media-hidden", "motionblock-image-pending");
     delete element.dataset.motionblockBlocked;
     delete element.dataset.motionblockFeature;
+    delete element.dataset.motionblockCustomHost;
     delete element.dataset.motionblockReason;
     delete element.dataset.motionblockAutoplayAdjusted;
     delete element.dataset.motionblockSourceBlocked;
@@ -833,6 +1154,10 @@
     delete element.dataset.motionblockOriginalStyleHeight;
 
     removePlaceholderContainer(element);
+
+    if (restoresMediaSources) {
+      element.querySelectorAll("[data-motionblock-source-blocked='true']").forEach(restoreElement);
+    }
 
     if (typeof element.load === "function" && (element.tagName === "VIDEO" || element.tagName === "AUDIO")) {
       element.load();
@@ -1108,6 +1433,46 @@
     element.dataset[key] = element.hasAttribute(attributeName) ? element.getAttribute(attributeName) : "";
   }
 
+  function storeOriginalMediaState(element) {
+    storeOriginalMediaProperty(element, "autoplay");
+    storeOriginalMediaProperty(element, "loop");
+    storeOriginalMediaProperty(element, "muted");
+    storeOriginalMediaProperty(element, "volume");
+  }
+
+  function storeOriginalMediaProperty(element, propertyName) {
+    const key = getOriginalMediaPropertyKey(propertyName);
+    if (!(propertyName in element) || Object.prototype.hasOwnProperty.call(element.dataset, key)) {
+      return;
+    }
+
+    const value = element[propertyName];
+    element.dataset[key] = typeof value === "number" ? String(value) : value ? "true" : "false";
+  }
+
+  function restoreOriginalMediaState(element) {
+    restoreOriginalMediaProperty(element, "autoplay", "boolean");
+    restoreOriginalMediaProperty(element, "loop", "boolean");
+    restoreOriginalMediaProperty(element, "muted", "boolean");
+    restoreOriginalMediaProperty(element, "volume", "number");
+  }
+
+  function restoreOriginalMediaProperty(element, propertyName, type) {
+    const key = getOriginalMediaPropertyKey(propertyName);
+    if (!(propertyName in element) || !Object.prototype.hasOwnProperty.call(element.dataset, key)) {
+      return;
+    }
+
+    try {
+      const value = element.dataset[key];
+      element[propertyName] = type === "number" ? Number(value) : value === "true";
+    } catch (error) {
+      return;
+    } finally {
+      delete element.dataset[key];
+    }
+  }
+
   function restoreOriginalAttribute(element, attributeName) {
     const key = getOriginalAttributeKey(attributeName);
     if (!Object.prototype.hasOwnProperty.call(element.dataset, key)) {
@@ -1125,6 +1490,10 @@
 
   function getOriginalAttributeKey(attributeName) {
     return "motionblockOriginal" + attributeName.charAt(0).toUpperCase() + attributeName.slice(1);
+  }
+
+  function getOriginalMediaPropertyKey(propertyName) {
+    return "motionblockOriginalMedia" + propertyName.charAt(0).toUpperCase() + propertyName.slice(1);
   }
 
   function lockDisplayedSize(element, reason) {
@@ -1473,6 +1842,16 @@
   function isWebpUrl(value) {
     const url = normalizeUrl(value);
     return /^data:image\/webp/.test(url) || /\.webp(?:$|[?#])/.test(url);
+  }
+
+  function isVideoUrl(value) {
+    const url = normalizeUrl(value);
+    return /\.(?:mp4|m4v|webm|mov|m3u8|mpd)(?:$|[?#])/.test(url) || /v\.redd\.it|redgifs\.com/.test(url);
+  }
+
+  function isAudioUrl(value) {
+    const url = normalizeUrl(value);
+    return /\.(?:mp3|m4a|aac|ogg|oga|wav|flac)(?:$|[?#])/.test(url);
   }
 
   function looksLikeGifLikeMotion(element, urls) {
