@@ -6,6 +6,8 @@ const RULE_ID_END = 1299;
 const TEMP_ALLOW_RULE_ID_START = 910000;
 const TEMP_ALLOW_RULE_ID_END = 910199;
 let rulesUpdateQueue = Promise.resolve();
+const tabStats = new Map();
+const tabMainUrls = new Map();
 
 const DNR_FEATURE_RULES = {
   gifv: [
@@ -65,9 +67,27 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   return true;
 });
 
-async function handleMessage(message) {
+chrome.tabs.onRemoved.addListener(function (tabId) {
+  tabStats.delete(tabId);
+  tabMainUrls.delete(tabId);
+});
+
+async function handleMessage(message, sender) {
   if (!message || typeof message.type !== "string") {
     return { ok: false, error: "Missing message type." };
+  }
+
+  if (message.type === "motionblock:statsUpdated") {
+    updateTabStats(message.stats, sender);
+    return { ok: true };
+  }
+
+  if (message.type === "motionblock:getTabStats") {
+    const tabId = Number(message.tabId);
+    return {
+      ok: true,
+      stats: aggregateTabStats(tabId)
+    };
   }
 
   if (message.type === "motionblock:getSettings") {
@@ -179,6 +199,97 @@ async function saveSettings(settings) {
   await chrome.storage.sync.set({
     [MB.STORAGE_KEY]: sanitizeSettingsForStorage(settings)
   });
+}
+
+function updateTabStats(stats, sender) {
+  if (!sender || !sender.tab || typeof sender.tab.id !== "number") {
+    return;
+  }
+
+  const tabId = sender.tab.id;
+  const frameId = typeof sender.frameId === "number" ? sender.frameId : 0;
+  const senderUrl = sender.url || "";
+  const mainUrl = sender.tab.url || (frameId === 0 ? senderUrl : "");
+
+  if (mainUrl && tabMainUrls.get(tabId) !== mainUrl) {
+    tabStats.delete(tabId);
+    tabMainUrls.set(tabId, mainUrl);
+  }
+
+  if (!tabStats.has(tabId)) {
+    tabStats.set(tabId, new Map());
+  }
+
+  const frameStats = tabStats.get(tabId);
+  frameStats.set(getFrameStatsKey(sender), {
+    stats: sanitizeBlockStats(stats),
+    frameId,
+    url: senderUrl,
+    updatedAt: Date.now()
+  });
+}
+
+function aggregateTabStats(tabId) {
+  const aggregate = createEmptyBlockStats();
+  const frameStats = tabStats.get(tabId);
+
+  if (!frameStats) {
+    return {
+      byFeature: aggregate,
+      total: 0,
+      frames: 0
+    };
+  }
+
+  let frames = 0;
+  frameStats.forEach(function (entry) {
+    frames += 1;
+    MB.FEATURE_KEYS.forEach(function (key) {
+      aggregate[key] += Number(entry.stats.byFeature[key] || 0);
+    });
+  });
+
+  return {
+    byFeature: aggregate,
+    total: sumStats(aggregate),
+    frames
+  };
+}
+
+function getFrameStatsKey(sender) {
+  const frameId = typeof sender.frameId === "number" ? sender.frameId : 0;
+  const documentId = sender.documentId || "";
+  const url = sender.url || "";
+  return frameId + ":" + (documentId || url);
+}
+
+function sanitizeBlockStats(stats) {
+  const source = stats && typeof stats === "object" ? stats.byFeature || {} : {};
+  const byFeature = createEmptyBlockStats();
+
+  MB.FEATURE_KEYS.forEach(function (key) {
+    const value = Number(source[key] || 0);
+    byFeature[key] = Number.isFinite(value) && value > 0 ? Math.floor(value) : 0;
+  });
+
+  return {
+    byFeature,
+    total: sumStats(byFeature)
+  };
+}
+
+function createEmptyBlockStats() {
+  const stats = {};
+  MB.FEATURE_KEYS.forEach(function (key) {
+    stats[key] = 0;
+  });
+  return stats;
+}
+
+function sumStats(stats) {
+  return MB.FEATURE_KEYS.reduce(function (sum, key) {
+    return sum + Number(stats[key] || 0);
+  }, 0);
 }
 
 function sanitizeSettingsForStorage(settings) {

@@ -8,6 +8,7 @@
   const siteEnabled = document.getElementById("siteEnabled");
   const siteRuleNote = document.getElementById("siteRuleNote");
   const featureList = document.getElementById("featureList");
+  const statsTotal = document.getElementById("statsTotal");
   const blockMotionHereButton = document.getElementById("blockMotionHere");
   const allowSiteButton = document.getElementById("allowSite");
   const resetSiteButton = document.getElementById("resetSite");
@@ -19,9 +20,20 @@
   let host = "";
   let settings = MB.DEFAULT_SETTINGS;
   let effective = MB.getEffectiveSettings(settings, host);
+  let tabStats = createEmptyTabStats();
+  let statsRefreshTimer = 0;
+  let statsRefreshInterval = 0;
   let unsupportedPage = false;
 
   document.addEventListener("DOMContentLoaded", init);
+  window.addEventListener("unload", function () {
+    if (statsRefreshTimer) {
+      window.clearTimeout(statsRefreshTimer);
+    }
+    if (statsRefreshInterval) {
+      window.clearInterval(statsRefreshInterval);
+    }
+  });
 
   siteEnabled.addEventListener("change", function () {
     const rule = getCurrentRule();
@@ -91,6 +103,8 @@
     });
 
     applyResponse(response);
+    refreshStats();
+    statsRefreshInterval = window.setInterval(refreshStats, 1200);
   }
 
   function render() {
@@ -133,6 +147,7 @@
     });
 
     resetSiteButton.disabled = !hasSiteRule();
+    renderStats();
   }
 
   function createFeatureRow(feature, rule) {
@@ -152,6 +167,11 @@
     nameWrap.appendChild(name);
     nameWrap.appendChild(meta);
 
+    const count = document.createElement("span");
+    count.className = "feature-count";
+    count.dataset.featureCount = feature.key;
+    count.textContent = "0";
+
     const select = document.createElement("select");
     select.dataset.feature = feature.key;
     select.innerHTML = [
@@ -162,6 +182,7 @@
     select.value = formatTriState(rule.features[feature.key]);
 
     row.appendChild(nameWrap);
+    row.appendChild(count);
     row.appendChild(select);
     return row;
   }
@@ -174,6 +195,7 @@
     });
     applyResponse(response);
     showReloadHint(response && response.ok);
+    scheduleStatsRefresh();
 
     if (currentTab && currentTab.id) {
       try {
@@ -256,6 +278,8 @@
     siteEnabled.value = "";
     siteRuleNote.textContent = "";
     featureList.innerHTML = "";
+    tabStats = createEmptyTabStats();
+    renderStats();
     setControlsDisabled(true);
     openOptionsButton.disabled = false;
   }
@@ -266,6 +290,86 @@
 
   function showReloadHint(visible) {
     reloadHint.hidden = !visible;
+  }
+
+  async function refreshStats() {
+    if (!currentTab || typeof currentTab.id !== "number" || unsupportedPage) {
+      tabStats = createEmptyTabStats();
+      renderStats();
+      return;
+    }
+
+    try {
+      const response = await sendMessage({
+        type: "motionblock:getTabStats",
+        tabId: currentTab.id
+      });
+      if (response && response.ok) {
+        tabStats = normalizeTabStats(response.stats);
+        renderStats();
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
+  function scheduleStatsRefresh() {
+    if (statsRefreshTimer) {
+      window.clearTimeout(statsRefreshTimer);
+    }
+
+    statsRefreshTimer = window.setTimeout(function () {
+      statsRefreshTimer = 0;
+      refreshStats();
+    }, 350);
+  }
+
+  function renderStats() {
+    const total = Math.max(0, Number(tabStats.total || 0));
+    statsTotal.textContent = total + " blocked";
+    statsTotal.classList.toggle("empty", total === 0);
+
+    featureList.querySelectorAll("[data-feature-count]").forEach(function (countNode) {
+      const featureKey = countNode.dataset.featureCount;
+      const value = getVisibleFeatureCount(featureKey);
+      countNode.textContent = String(value);
+      countNode.classList.toggle("empty", value === 0);
+    });
+  }
+
+  function getVisibleFeatureCount(featureKey) {
+    if (!tabStats || !tabStats.byFeature) {
+      return 0;
+    }
+
+    return Math.max(0, Number(tabStats.byFeature[featureKey] || 0));
+  }
+
+  function normalizeTabStats(stats) {
+    const source = stats && typeof stats === "object" ? stats.byFeature || {} : {};
+    const normalized = createEmptyTabStats();
+
+    MB.FEATURE_KEYS.forEach(function (key) {
+      const value = Number(source[key] || 0);
+      normalized.byFeature[key] = Number.isFinite(value) && value > 0 ? Math.floor(value) : 0;
+    });
+
+    normalized.total = MB.FEATURE_KEYS.reduce(function (sum, key) {
+      return sum + normalized.byFeature[key];
+    }, 0);
+    return normalized;
+  }
+
+  function createEmptyTabStats() {
+    const byFeature = {};
+    MB.FEATURE_KEYS.forEach(function (key) {
+      byFeature[key] = 0;
+    });
+
+    return {
+      byFeature,
+      total: 0
+    };
   }
 
   function getEffectiveSummary() {

@@ -23,6 +23,11 @@
   const MEDIA_ATTRIBUTE_FILTER = ["src", "srcset", "poster", "autoplay", "loop", "muted"];
   const MEDIA_ENFORCEMENT_EVENTS = ["loadstart", "loadedmetadata", "canplay", "play", "playing", "volumechange"];
   const FULL_SCAN_SETTLE_DELAYS_MS = [180, 700, 1800];
+  const STATS_UPDATE_DEBOUNCE_MS = 150;
+  const MEDIA_STAT_DATA_KEY = "motionblockMediaStatFeature";
+  const EMOJI_ELEMENT_STAT_DATA_KEY = "motionblockEmojiElementCounted";
+  const EMOJI_TEXT_STAT_DATA_KEY = "motionblockEmojiTextCount";
+  const EMOJI_ATTRIBUTE_STAT_DATA_KEY = "motionblockEmojiAttributeCount";
   const CUSTOM_MEDIA_HOST_SELECTOR = [
     "[autoplay]",
     "[loop]",
@@ -67,14 +72,19 @@
   let observer = null;
   let restoreRetryTimer = 0;
   let overlayPositionTimer = 0;
+  let statsUpdateTimer = 0;
+  let lastStatsSignature = "";
   let attachShadowPatched = false;
   let settlingFullScanTimers = [];
+  const blockStats = createEmptyBlockStats();
   const processingRoots = [document];
   const dirtyRoots = new Set([document]);
   const observedProcessingRoots = new WeakSet();
   const placeholderContainers = new WeakMap();
   const emojiTextOriginals = new WeakMap();
+  const emojiTextBlockCounts = new WeakMap();
   const emojiAttributeOriginals = new WeakMap();
+  const emojiAttributeBlockCounts = new WeakMap();
 
   if (typeof chrome === "undefined" || !chrome.storage || !chrome.storage.sync) {
     return;
@@ -95,12 +105,24 @@
   chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     if (message && message.type === "motionblock:applyNow") {
       loadSettings().then(function () {
-        sendResponse({ ok: true });
+        sendStatsUpdate({ force: true });
+        sendResponse({ ok: true, stats: getBlockStatsSnapshot() });
       });
       return true;
     }
 
+    if (message && message.type === "motionblock:getStats") {
+      sendStatsUpdate({ force: true });
+      sendResponse({ ok: true, stats: getBlockStatsSnapshot() });
+      return false;
+    }
+
     return false;
+  });
+
+  window.addEventListener("pagehide", function () {
+    resetBlockStats();
+    sendStatsUpdate({ force: true, immediate: true });
   });
 
   async function loadSettings() {
@@ -166,6 +188,278 @@
     return MB.getConfigurableHostFromUrl(document.referrer || "");
   }
 
+  function createEmptyBlockStats() {
+    const stats = {};
+    MB.FEATURE_KEYS.forEach(function (key) {
+      stats[key] = 0;
+    });
+    return stats;
+  }
+
+  function getBlockStatsSnapshot() {
+    const byFeature = {};
+    let total = 0;
+
+    MB.FEATURE_KEYS.forEach(function (key) {
+      const value = Math.max(0, Number(blockStats[key] || 0));
+      byFeature[key] = value;
+      total += value;
+    });
+
+    return {
+      byFeature,
+      total,
+      frameHost: FRAME_HOST,
+      settingsHost: SETTINGS_HOST,
+      url: window.location.href
+    };
+  }
+
+  function resetBlockStats() {
+    MB.FEATURE_KEYS.forEach(function (key) {
+      blockStats[key] = 0;
+    });
+  }
+
+  function markMediaStat(element, featureKey) {
+    if (!element || !featureKey || MB.FEATURE_KEYS.indexOf(featureKey) === -1) {
+      return;
+    }
+
+    const previous = element.dataset[MEDIA_STAT_DATA_KEY] || "";
+    if (previous === featureKey) {
+      return;
+    }
+
+    if (previous) {
+      adjustBlockStat(previous, -1);
+    }
+
+    element.dataset[MEDIA_STAT_DATA_KEY] = featureKey;
+    adjustBlockStat(featureKey, 1);
+  }
+
+  function unmarkMediaStat(element) {
+    if (!element || !element.dataset) {
+      return;
+    }
+
+    const previous = element.dataset[MEDIA_STAT_DATA_KEY] || "";
+    if (previous) {
+      adjustBlockStat(previous, -1);
+      delete element.dataset[MEDIA_STAT_DATA_KEY];
+    }
+  }
+
+  function markEmojiElementStat(element) {
+    if (!element || element.dataset[EMOJI_ELEMENT_STAT_DATA_KEY] === "true") {
+      return;
+    }
+
+    element.dataset[EMOJI_ELEMENT_STAT_DATA_KEY] = "true";
+    adjustBlockStat("emoji", 1);
+  }
+
+  function unmarkEmojiElementStat(element) {
+    if (!element || !element.dataset || element.dataset[EMOJI_ELEMENT_STAT_DATA_KEY] !== "true") {
+      return;
+    }
+
+    delete element.dataset[EMOJI_ELEMENT_STAT_DATA_KEY];
+    adjustBlockStat("emoji", -1);
+  }
+
+  function incrementElementNumericStat(element, dataKey, amount) {
+    if (!element || !amount) {
+      return;
+    }
+
+    const next = Math.max(0, Number(element.dataset[dataKey] || "0") + amount);
+    if (next) {
+      element.dataset[dataKey] = String(next);
+    } else {
+      delete element.dataset[dataKey];
+    }
+  }
+
+  function consumeElementNumericStat(element, dataKey) {
+    if (!element || !element.dataset) {
+      return 0;
+    }
+
+    const value = Math.max(0, Number(element.dataset[dataKey] || "0"));
+    if (value) {
+      delete element.dataset[dataKey];
+    }
+    return value;
+  }
+
+  function decrementElementNumericStat(element, dataKey, amount) {
+    if (!element || !amount) {
+      return;
+    }
+
+    const next = Math.max(0, Number(element.dataset[dataKey] || "0") - amount);
+    if (next) {
+      element.dataset[dataKey] = String(next);
+    } else {
+      delete element.dataset[dataKey];
+    }
+  }
+
+  function adjustBlockStat(featureKey, delta) {
+    if (MB.FEATURE_KEYS.indexOf(featureKey) === -1 || !delta) {
+      return;
+    }
+
+    blockStats[featureKey] = Math.max(0, Number(blockStats[featureKey] || 0) + delta);
+    scheduleStatsUpdate();
+  }
+
+  function scheduleStatsUpdate() {
+    if (statsUpdateTimer) {
+      window.clearTimeout(statsUpdateTimer);
+    }
+
+    statsUpdateTimer = window.setTimeout(function () {
+      statsUpdateTimer = 0;
+      sendStatsUpdate();
+    }, STATS_UPDATE_DEBOUNCE_MS);
+  }
+
+  function sendStatsUpdate(options) {
+    const force = Boolean(options && options.force);
+    const immediate = Boolean(options && options.immediate);
+
+    if (immediate && statsUpdateTimer) {
+      window.clearTimeout(statsUpdateTimer);
+      statsUpdateTimer = 0;
+    }
+
+    const snapshot = getBlockStatsSnapshot();
+    const signature = JSON.stringify(snapshot.byFeature) + ":" + snapshot.total;
+    if (!force && signature === lastStatsSignature) {
+      return;
+    }
+
+    lastStatsSignature = signature;
+
+    try {
+      const result = chrome.runtime.sendMessage({
+        type: "motionblock:statsUpdated",
+        stats: snapshot
+      });
+      if (result && typeof result.catch === "function") {
+        result.catch(function () {});
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
+  function cleanupRemovedNodeStats(node) {
+    if (!node || node.nodeType !== Node.ELEMENT_NODE) {
+      if (node && node.nodeType === Node.TEXT_NODE && emojiTextBlockCounts.has(node)) {
+        const count = Number(emojiTextBlockCounts.get(node) || 0);
+        adjustBlockStat("emoji", -count);
+        emojiTextBlockCounts.delete(node);
+        emojiTextOriginals.delete(node);
+      }
+
+      if (node && node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+        cleanupRemovedSubtreeStats(node);
+      }
+      return;
+    }
+
+    cleanupElementStats(node);
+    cleanupRemovedSubtreeStats(node);
+  }
+
+  function cleanupRemovedSubtreeStats(root) {
+    if (!root || !root.querySelectorAll) {
+      return;
+    }
+
+    root
+      .querySelectorAll(
+        "[data-" +
+          toDataAttributeName(MEDIA_STAT_DATA_KEY) +
+          "], [data-" +
+          toDataAttributeName(EMOJI_ELEMENT_STAT_DATA_KEY) +
+          "], [data-" +
+          toDataAttributeName(EMOJI_TEXT_STAT_DATA_KEY) +
+          "], [data-" +
+          toDataAttributeName(EMOJI_ATTRIBUTE_STAT_DATA_KEY) +
+          "]"
+      )
+      .forEach(cleanupElementStats);
+  }
+
+  function cleanupElementStats(element) {
+    unmarkMediaStat(element);
+    unmarkEmojiElementStat(element);
+
+    const emojiTextCount = consumeElementNumericStat(element, EMOJI_TEXT_STAT_DATA_KEY);
+    const emojiAttributeCount = consumeElementNumericStat(element, EMOJI_ATTRIBUTE_STAT_DATA_KEY);
+    if (emojiTextCount || emojiAttributeCount) {
+      adjustBlockStat("emoji", -(emojiTextCount + emojiAttributeCount));
+    }
+  }
+
+  function toDataAttributeName(dataKey) {
+    return String(dataKey).replace(/[A-Z]/g, function (letter) {
+      return "-" + letter.toLowerCase();
+    });
+  }
+
+  function getImageStatFeature(reason) {
+    const normalized = String(reason || "").toLowerCase();
+
+    if (normalized === "image") {
+      return "images";
+    }
+    if (normalized === "gifv") {
+      return "gifv";
+    }
+    if (normalized === "webp") {
+      return "animatedWebp";
+    }
+    if (normalized.indexOf("gif") !== -1) {
+      return "gifs";
+    }
+
+    return "images";
+  }
+
+  function getMediaStatFeature(reason, element) {
+    const normalized = String(reason || "").toLowerCase();
+    const tag = element && element.tagName ? element.tagName.toLowerCase() : "";
+
+    if (normalized === "gifv") {
+      return "gifv";
+    }
+    if (normalized.indexOf("gif") !== -1) {
+      return "gifs";
+    }
+    if (normalized.indexOf("audio") !== -1 || tag === "audio") {
+      return "audio";
+    }
+    if (normalized.indexOf("autoplay") !== -1 || normalized.indexOf("looping") !== -1) {
+      return "autoplayVideo";
+    }
+    if (normalized.indexOf("video") !== -1 || tag === "video") {
+      return "video";
+    }
+
+    return "video";
+  }
+
+  function countEmojiMatches(value) {
+    const matches = String(value || "").match(createEmojiRegex());
+    return matches ? matches.length : 0;
+  }
+
   function runFullBlockingPass() {
     cancelScheduledApply();
     markFullScan();
@@ -189,6 +483,7 @@
 
         if (mutation.type === "childList") {
           mutation.addedNodes.forEach(discoverShadowRootsFromNode);
+          mutation.removedNodes.forEach(cleanupRemovedNodeStats);
         }
       });
       scheduleApply();
@@ -655,12 +950,19 @@
     }
 
     nodes.forEach(function (textNode) {
-      emojiTextOriginals.set(textNode, textNode.nodeValue);
+      if (!emojiTextOriginals.has(textNode)) {
+        const count = countEmojiMatches(textNode.nodeValue);
+        emojiTextOriginals.set(textNode, textNode.nodeValue);
+        emojiTextBlockCounts.set(textNode, count);
+        incrementElementNumericStat(textNode.parentElement, EMOJI_TEXT_STAT_DATA_KEY, count);
+        adjustBlockStat("emoji", count);
+      }
       textNode.nodeValue = stripEmoji(textNode.nodeValue);
     });
   }
 
   function hideEmojiElement(element) {
+    markEmojiElementStat(element);
     element.classList.add("motionblock-emoji-hidden");
     if (element.tagName === "IMG") {
       element.classList.add("motionblock-emoji-image");
@@ -674,6 +976,7 @@
     }
 
     scope.querySelectorAll(".motionblock-emoji-hidden, .motionblock-emoji-image").forEach(function (element) {
+      unmarkEmojiElementStat(element);
       element.classList.remove("motionblock-emoji-hidden", "motionblock-emoji-image");
     });
 
@@ -750,6 +1053,19 @@
       emojiAttributeOriginals.set(element, originals);
     }
 
+    if (!Object.prototype.hasOwnProperty.call(originals, attributeName)) {
+      let counts = emojiAttributeBlockCounts.get(element);
+      if (!counts) {
+        counts = {};
+        emojiAttributeBlockCounts.set(element, counts);
+      }
+
+      const count = countEmojiMatches(value);
+      counts[attributeName] = count;
+      incrementElementNumericStat(element, EMOJI_ATTRIBUTE_STAT_DATA_KEY, count);
+      adjustBlockStat("emoji", count);
+    }
+
     originals[attributeName] = value;
   }
 
@@ -763,6 +1079,17 @@
       Object.keys(originals).forEach(function (attributeName) {
         element.setAttribute(attributeName, originals[attributeName]);
       });
+
+      const counts = emojiAttributeBlockCounts.get(element);
+      if (counts) {
+        const total = Object.keys(counts).reduce(function (sum, attributeName) {
+          return sum + Number(counts[attributeName] || 0);
+        }, 0);
+        decrementElementNumericStat(element, EMOJI_ATTRIBUTE_STAT_DATA_KEY, total);
+        adjustBlockStat("emoji", -total);
+        emojiAttributeBlockCounts.delete(element);
+      }
+
       emojiAttributeOriginals.delete(element);
     });
   }
@@ -773,8 +1100,12 @@
 
     while (node) {
       if (emojiTextOriginals.has(node)) {
+        const count = Number(emojiTextBlockCounts.get(node) || 0);
+        decrementElementNumericStat(node.parentElement, EMOJI_TEXT_STAT_DATA_KEY, count);
+        adjustBlockStat("emoji", -count);
         node.nodeValue = emojiTextOriginals.get(node);
         emojiTextOriginals.delete(node);
+        emojiTextBlockCounts.delete(node);
       }
 
       node = walker.nextNode();
@@ -960,6 +1291,7 @@
 
   function blockImageElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
+      markMediaStat(element, getImageStatFeature(reason || element.dataset.motionblockReason));
       refreshImagePlaceholder(element);
       ensureRevealOverlay(element, "Show blocked image");
       return;
@@ -974,6 +1306,7 @@
     element.dataset.motionblockBlocked = "true";
     element.dataset.motionblockFeature = "image";
     element.dataset.motionblockReason = reason;
+    markMediaStat(element, getImageStatFeature(reason));
     element.title = element.title || "Blocked by MotionBlock: " + reason;
     clearPendingImageBlock(element);
 
@@ -1084,6 +1417,7 @@
 
   function blockMediaElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
+      markMediaStat(element, getMediaStatFeature(reason || element.dataset.motionblockReason, element));
       enforceBlockedMediaElement(element);
       ensureRevealOverlay(element, element.tagName === "AUDIO" ? "Play blocked audio" : "Play blocked video");
       return;
@@ -1102,6 +1436,7 @@
     element.dataset.motionblockBlocked = "true";
     element.dataset.motionblockFeature = "media";
     element.dataset.motionblockReason = reason;
+    markMediaStat(element, getMediaStatFeature(reason, element));
     element.title = element.title || "Blocked by MotionBlock: " + reason;
 
     element.querySelectorAll("source").forEach(function (source) {
@@ -1119,6 +1454,7 @@
 
   function blockCustomMediaHostElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
+      markMediaStat(element, getMediaStatFeature(reason || element.dataset.motionblockReason, element));
       enforceBlockedCustomMediaHostElement(element);
       ensureRevealOverlay(element, "Play blocked media");
       return;
@@ -1137,6 +1473,7 @@
     element.dataset.motionblockFeature = "media";
     element.dataset.motionblockCustomHost = "true";
     element.dataset.motionblockReason = reason;
+    markMediaStat(element, getMediaStatFeature(reason, element));
     element.title = element.title || "Blocked by MotionBlock: " + reason;
 
     element.classList.add(
@@ -1247,12 +1584,14 @@
 
   function disableAutoplay(element) {
     if (element.dataset.motionblockAutoplayAdjusted === "true") {
+      markMediaStat(element, "autoplayVideo");
       return;
     }
 
     storeOriginalAttribute(element, "autoplay");
     storeOriginalAttribute(element, "preload");
     element.dataset.motionblockAutoplayAdjusted = "true";
+    markMediaStat(element, "autoplayVideo");
     element.removeAttribute("autoplay");
     element.autoplay = false;
     element.setAttribute("preload", "metadata");
@@ -1275,6 +1614,7 @@
       element.tagName === "VIDEO" || element.tagName === "AUDIO" || element.dataset.motionblockCustomHost === "true";
 
     removeRevealButton(element);
+    unmarkMediaStat(element);
     restoreOriginalAttribute(element, "alt");
     restoreOriginalAttribute(element, "src");
     restoreOriginalAttribute(element, "srcset");
