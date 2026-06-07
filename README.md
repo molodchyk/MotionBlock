@@ -66,7 +66,7 @@ node .\test\sanity.js
 - WebP blocking is URL-based for now. It is off by default because detecting animated WebP reliably needs deeper byte inspection.
 - First-frame GIF replacement is not implemented yet. The current default is a compact placeholder that preserves the displayed size when possible.
 - Reveal buttons are opt-in. They are useful on simple pages, but broad video/image blocking can produce unreliable click-to-play behavior on complex sites.
-- Emoji removal changes text and cannot be cleanly restored without reloading the page.
+- Emoji removal restores same-page text and common text attributes while the original nodes remain. A reload can still be needed when a site re-renders text internally.
 - GIF image blocking is DOM-aware instead of a blanket `.gif` network rule, because many sites still use static GIFs as tiny interface controls.
 - Broad image blocking is DOM-aware instead of a blanket image request rule, because image galleries often need loaded dimensions to keep their layout.
 
