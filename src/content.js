@@ -35,6 +35,7 @@
   const MEDIA_ENFORCEMENT_EVENTS = ["loadstart", "loadedmetadata", "canplay", "play", "playing", "volumechange"];
   const FULL_SCAN_SETTLE_DELAYS_MS = [180, 700, 1800];
   const STATS_UPDATE_DEBOUNCE_MS = 150;
+  const CSS_BACKGROUND_SCAN_LIMIT = 160;
   const MEDIA_STAT_DATA_KEY = "motionblockMediaStatFeature";
   const MEDIA_UNCOUNTED_DATA_KEY = "motionblockMediaUncounted";
   const EMOJI_ELEMENT_STAT_DATA_KEY = "motionblockEmojiElementCounted";
@@ -42,7 +43,7 @@
   const EMOJI_ATTRIBUTE_STAT_DATA_KEY = "motionblockEmojiAttributeCount";
   const CSS_BACKGROUND_DATA_KEY = "motionblockCssBackground";
   const CSS_BACKGROUND_SELECTOR = [
-    "[style*='background' i]",
+    "[style*='url(' i]",
     "[data-bg]",
     "[data-background]",
     "[data-background-image]"
@@ -830,15 +831,31 @@
       candidates.push(root);
     }
 
-    root.querySelectorAll(CSS_BACKGROUND_SELECTOR).forEach(function (element) {
-      candidates.push(element);
-    });
+    root
+      .querySelectorAll(CSS_BACKGROUND_SELECTOR + ", [data-" + toDataAttributeName(CSS_BACKGROUND_DATA_KEY) + "='true']")
+      .forEach(function (element) {
+        candidates.push(element);
+      });
 
-    uniqueElements(candidates).forEach(processCssBackgroundImage);
+    processCssBackgroundImageBatch(uniqueElements(candidates), 0);
+  }
+
+  function processCssBackgroundImageBatch(elements, startIndex) {
+    const endIndex = Math.min(elements.length, startIndex + CSS_BACKGROUND_SCAN_LIMIT);
+
+    for (let index = startIndex; index < endIndex; index += 1) {
+      processCssBackgroundImage(elements[index]);
+    }
+
+    if (endIndex < elements.length) {
+      window.setTimeout(function () {
+        processCssBackgroundImageBatch(elements, endIndex);
+      }, 0);
+    }
   }
 
   function processCssBackgroundImage(element) {
-    if (element.dataset.motionblockUserAllowed === "true" || element.closest(".motionblock-reveal-button")) {
+    if (!element.isConnected || element.dataset.motionblockUserAllowed === "true" || element.closest(".motionblock-reveal-button")) {
       return;
     }
 

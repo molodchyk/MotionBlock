@@ -11,7 +11,8 @@ body {
   background: #f7f8f5;
   color: #172522;
   margin: 0;
-  min-width: 380px;
+  min-height: 620px;
+  min-width: 420px;
 }
 
 button,
@@ -20,6 +21,8 @@ select {
 }
 
 .popup {
+  box-sizing: border-box;
+  min-height: 620px;
   padding: 14px;
 }
 
