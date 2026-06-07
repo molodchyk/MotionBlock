@@ -20,14 +20,33 @@
   const APPLY_DEBOUNCE_MS = 120;
   const BROAD_IMAGE_BLOCK_TIMEOUT_MS = 2500;
   const BROAD_IMAGE_SETTLE_DELAY_MS = 120;
-  const MEDIA_ATTRIBUTE_FILTER = ["src", "srcset", "poster", "autoplay", "loop", "muted"];
+  const MEDIA_ATTRIBUTE_FILTER = [
+    "src",
+    "srcset",
+    "poster",
+    "autoplay",
+    "loop",
+    "muted",
+    "style",
+    "data-bg",
+    "data-background",
+    "data-background-image"
+  ];
   const MEDIA_ENFORCEMENT_EVENTS = ["loadstart", "loadedmetadata", "canplay", "play", "playing", "volumechange"];
   const FULL_SCAN_SETTLE_DELAYS_MS = [180, 700, 1800];
   const STATS_UPDATE_DEBOUNCE_MS = 150;
   const MEDIA_STAT_DATA_KEY = "motionblockMediaStatFeature";
+  const MEDIA_UNCOUNTED_DATA_KEY = "motionblockMediaUncounted";
   const EMOJI_ELEMENT_STAT_DATA_KEY = "motionblockEmojiElementCounted";
   const EMOJI_TEXT_STAT_DATA_KEY = "motionblockEmojiTextCount";
   const EMOJI_ATTRIBUTE_STAT_DATA_KEY = "motionblockEmojiAttributeCount";
+  const CSS_BACKGROUND_DATA_KEY = "motionblockCssBackground";
+  const CSS_BACKGROUND_SELECTOR = [
+    "[style*='background' i]",
+    "[data-bg]",
+    "[data-background]",
+    "[data-background-image]"
+  ].join(",");
   const CUSTOM_MEDIA_HOST_SELECTOR = [
     "[autoplay]",
     "[loop]",
@@ -385,6 +404,10 @@
       .querySelectorAll(
         "[data-" +
           toDataAttributeName(MEDIA_STAT_DATA_KEY) +
+          "], [data-" +
+          toDataAttributeName(MEDIA_UNCOUNTED_DATA_KEY) +
+          "], [data-" +
+          toDataAttributeName(CSS_BACKGROUND_DATA_KEY) +
           "], [data-" +
           toDataAttributeName(EMOJI_ELEMENT_STAT_DATA_KEY) +
           "], [data-" +
@@ -796,6 +819,36 @@
         clearPendingImageBlock(element);
       }
     });
+
+    processCssBackgroundImages(root);
+  }
+
+  function processCssBackgroundImages(root) {
+    const candidates = [];
+
+    if (root.nodeType === Node.ELEMENT_NODE && root.matches(CSS_BACKGROUND_SELECTOR)) {
+      candidates.push(root);
+    }
+
+    root.querySelectorAll(CSS_BACKGROUND_SELECTOR).forEach(function (element) {
+      candidates.push(element);
+    });
+
+    uniqueElements(candidates).forEach(processCssBackgroundImage);
+  }
+
+  function processCssBackgroundImage(element) {
+    if (element.dataset.motionblockUserAllowed === "true" || element.closest(".motionblock-reveal-button")) {
+      return;
+    }
+
+    const reason = getCssBackgroundBlockReason(element);
+
+    if (reason) {
+      blockCssBackgroundElement(element, reason);
+    } else if (element.dataset[CSS_BACKGROUND_DATA_KEY] === "true") {
+      restoreElement(element);
+    }
   }
 
   function processMedia(root) {
@@ -1151,6 +1204,37 @@
     return "";
   }
 
+  function getCssBackgroundBlockReason(element) {
+    const features = effectiveSettings.features;
+    const urls = collectCssBackgroundUrls(element);
+
+    if (!urls.length || isLikelyInterfaceBackgroundElement(element)) {
+      return "";
+    }
+
+    if (features.images) {
+      return "image";
+    }
+
+    if (features.gifs && urls.some(isGifUrl)) {
+      return "GIF";
+    }
+
+    if (features.gifv && urls.some(isGifvUrl)) {
+      return "GIFV";
+    }
+
+    if (features.animatedWebp && urls.some(isWebpUrl)) {
+      return "WebP";
+    }
+
+    if (features.gifs && looksLikeGifLikeMotion(element, urls)) {
+      return "GIF-like media";
+    }
+
+    return "";
+  }
+
   function getMediaBlockReason(element) {
     const tag = element.tagName.toLowerCase();
     const features = effectiveSettings.features;
@@ -1291,11 +1375,17 @@
 
   function blockImageElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
-      markMediaStat(element, getImageStatFeature(reason || element.dataset.motionblockReason));
-      refreshImagePlaceholder(element);
-      ensureRevealOverlay(element, "Show blocked image");
+      if (element.dataset[MEDIA_UNCOUNTED_DATA_KEY] !== "true") {
+        markMediaStat(element, getImageStatFeature(reason || element.dataset.motionblockReason));
+        ensureRevealOverlay(element, "Show blocked image");
+        refreshImagePlaceholder(element);
+      } else {
+        removeRevealButton(element);
+      }
       return;
     }
+
+    const hiddenAccessibilityImage = isLikelyHiddenAccessibilityImage(element);
 
     storeOriginalAttribute(element, "alt");
     storeOriginalAttribute(element, "src");
@@ -1306,7 +1396,11 @@
     element.dataset.motionblockBlocked = "true";
     element.dataset.motionblockFeature = "image";
     element.dataset.motionblockReason = reason;
-    markMediaStat(element, getImageStatFeature(reason));
+    if (hiddenAccessibilityImage) {
+      element.dataset[MEDIA_UNCOUNTED_DATA_KEY] = "true";
+    } else {
+      markMediaStat(element, getImageStatFeature(reason));
+    }
     element.title = element.title || "Blocked by MotionBlock: " + reason;
     clearPendingImageBlock(element);
 
@@ -1315,7 +1409,7 @@
       return;
     }
 
-    if (effectiveSettings.replacementMode === "hide") {
+    if (hiddenAccessibilityImage || effectiveSettings.replacementMode === "hide") {
       element.classList.add("motionblock-media-hidden");
     } else {
       const placeholderSize = lockDisplayedSize(element, reason);
@@ -1327,7 +1421,33 @@
     element.removeAttribute("sizes");
     element.setAttribute("src", PLACEHOLDER_SRC);
     element.setAttribute("alt", "Blocked " + reason);
-    ensureRevealOverlay(element, "Show blocked image");
+    if (!hiddenAccessibilityImage) {
+      ensureRevealOverlay(element, "Show blocked image");
+    }
+  }
+
+  function blockCssBackgroundElement(element, reason) {
+    if (element.dataset.motionblockBlocked === "true") {
+      if (element.dataset[CSS_BACKGROUND_DATA_KEY] === "true") {
+        markMediaStat(element, getImageStatFeature(reason || element.dataset.motionblockReason));
+        return;
+      }
+
+      return;
+    }
+
+    storeOriginalStyleProperty(element, "backgroundImage");
+
+    element.dataset.motionblockBlocked = "true";
+    element.dataset.motionblockFeature = "image";
+    element.dataset.motionblockReason = reason;
+    element.dataset[CSS_BACKGROUND_DATA_KEY] = "true";
+    markMediaStat(element, getImageStatFeature(reason));
+
+    element.classList.add(
+      effectiveSettings.replacementMode === "hide" ? "motionblock-background-hidden" : "motionblock-background-placeholder"
+    );
+    element.style.setProperty("background-image", "none", "important");
   }
 
   function shouldDeferBroadImageBlock(element, reason) {
@@ -1625,13 +1745,22 @@
     restoreOriginalAttribute(element, "loop");
     restoreOriginalAttribute(element, "muted");
     restoreOriginalAttribute(element, "title");
+    restoreOriginalStyleProperty(element, "backgroundImage");
     restoreOriginalMediaState(element);
 
-    element.classList.remove("motionblock-media-placeholder", "motionblock-media-hidden", "motionblock-image-pending");
+    element.classList.remove(
+      "motionblock-media-placeholder",
+      "motionblock-media-hidden",
+      "motionblock-image-pending",
+      "motionblock-background-placeholder",
+      "motionblock-background-hidden"
+    );
     delete element.dataset.motionblockBlocked;
     delete element.dataset.motionblockFeature;
     delete element.dataset.motionblockCustomHost;
     delete element.dataset.motionblockReason;
+    delete element.dataset[CSS_BACKGROUND_DATA_KEY];
+    delete element.dataset[MEDIA_UNCOUNTED_DATA_KEY];
     delete element.dataset.motionblockAutoplayAdjusted;
     delete element.dataset.motionblockSourceBlocked;
     delete element.dataset.motionblockEnforcing;
@@ -1979,12 +2108,55 @@
     delete element.dataset[key];
   }
 
+  function storeOriginalStyleProperty(element, propertyName) {
+    const key = getOriginalStylePropertyKey(propertyName);
+    const priorityKey = key + "Priority";
+    if (Object.prototype.hasOwnProperty.call(element.dataset, key)) {
+      return;
+    }
+
+    const cssPropertyName = camelCaseToCssPropertyName(propertyName);
+    element.dataset[key] = element.style[propertyName] || "";
+    element.dataset[priorityKey] = element.style.getPropertyPriority(cssPropertyName) || "";
+  }
+
+  function restoreOriginalStyleProperty(element, propertyName) {
+    const key = getOriginalStylePropertyKey(propertyName);
+    const priorityKey = key + "Priority";
+    if (!Object.prototype.hasOwnProperty.call(element.dataset, key)) {
+      return;
+    }
+
+    const cssPropertyName = camelCaseToCssPropertyName(propertyName);
+    const value = element.dataset[key];
+    const priority = element.dataset[priorityKey] || "";
+
+    if (value) {
+      element.style.setProperty(cssPropertyName, value, priority);
+    } else {
+      element.style.removeProperty(cssPropertyName);
+    }
+
+    delete element.dataset[key];
+    delete element.dataset[priorityKey];
+  }
+
   function getOriginalAttributeKey(attributeName) {
     return "motionblockOriginal" + attributeName.charAt(0).toUpperCase() + attributeName.slice(1);
   }
 
   function getOriginalMediaPropertyKey(propertyName) {
     return "motionblockOriginalMedia" + propertyName.charAt(0).toUpperCase() + propertyName.slice(1);
+  }
+
+  function getOriginalStylePropertyKey(propertyName) {
+    return "motionblockOriginalStyle" + propertyName.charAt(0).toUpperCase() + propertyName.slice(1);
+  }
+
+  function camelCaseToCssPropertyName(propertyName) {
+    return String(propertyName).replace(/[A-Z]/g, function (letter) {
+      return "-" + letter.toLowerCase();
+    });
   }
 
   function lockDisplayedSize(element, reason) {
@@ -2211,6 +2383,53 @@
     return urls;
   }
 
+  function collectCssBackgroundUrls(element) {
+    const values = [];
+
+    ["data-bg", "data-background", "data-background-image"].forEach(function (attributeName) {
+      const value = element.getAttribute(attributeName);
+      if (value) {
+        values.push(value);
+      }
+    });
+
+    if (element.style) {
+      values.push(element.style.backgroundImage || "");
+      values.push(element.style.background || "");
+    }
+
+    const originalBackgroundImage = element.dataset[getOriginalStylePropertyKey("backgroundImage")];
+    if (originalBackgroundImage) {
+      values.push(originalBackgroundImage);
+    }
+
+    try {
+      const style = window.getComputedStyle(element);
+      values.push(style.backgroundImage || "");
+    } catch (error) {
+      return uniqueElements(values.flatMap(extractCssUrls));
+    }
+
+    return uniqueElements(values.flatMap(extractCssUrls));
+  }
+
+  function extractCssUrls(value) {
+    const urls = [];
+    const text = String(value || "");
+    const pattern = /url\(\s*(?:"([^"]*)"|'([^']*)'|([^)]*?))\s*\)/gi;
+    let match = pattern.exec(text);
+
+    while (match) {
+      const url = (match[1] || match[2] || match[3] || "").trim();
+      if (url) {
+        urls.push(url);
+      }
+      match = pattern.exec(text);
+    }
+
+    return urls;
+  }
+
   function splitUrlAttribute(value) {
     if (/^\s*data:/i.test(String(value || ""))) {
       return [String(value).trim()];
@@ -2323,6 +2542,103 @@
       .join(" ");
 
     return /\b(icon|sprite|spacer|transparent|button|checkbox|menu|toolbar|control|nav|navigation)\b/i.test(metadata);
+  }
+
+  function isLikelyInterfaceBackgroundElement(element) {
+    if (
+      element.closest(
+        "button, [role='button'], [role='checkbox'], [role='menuitem'], [role='tab'], [role='switch'], input, label"
+      )
+    ) {
+      return true;
+    }
+
+    const rect = element.getBoundingClientRect();
+    if (!rect || rect.width <= 0 || rect.height <= 0) {
+      return true;
+    }
+
+    if (rect.width <= 48 && rect.height <= 48) {
+      return true;
+    }
+
+    const metadata = [
+      element.tagName,
+      element.id,
+      getElementClassName(element),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("role"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id")
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    if (/\b(icon|sprite|spacer|transparent|button|checkbox|menu|toolbar|control|nav|navigation)\b/i.test(metadata)) {
+      return rect.width <= 96 && rect.height <= 96;
+    }
+
+    return false;
+  }
+
+  function isLikelyHiddenAccessibilityImage(element) {
+    if (!element || element.tagName.toLowerCase() !== "img") {
+      return false;
+    }
+
+    let style;
+    try {
+      style = window.getComputedStyle(element);
+    } catch (error) {
+      return false;
+    }
+
+    const opacity = Number.parseFloat(style.opacity || "1");
+    const zIndex = Number.parseInt(style.zIndex || "0", 10);
+    const hiddenByPaint = opacity <= 0.05 || (Number.isFinite(zIndex) && zIndex < 0);
+
+    if (!hiddenByPaint || style.position !== "absolute") {
+      return false;
+    }
+
+    return hasNearbyCssBackgroundWithSameUrl(element, collectElementUrls(element));
+  }
+
+  function hasNearbyCssBackgroundWithSameUrl(element, urls) {
+    const normalizedUrls = urls.map(normalizeComparableUrl).filter(Boolean);
+    if (!normalizedUrls.length || !element.parentElement) {
+      return false;
+    }
+
+    const candidates = [];
+    let current = element.parentElement;
+    let depth = 0;
+
+    while (current && current !== document.body && current !== document.documentElement && depth < 4) {
+      candidates.push(current);
+      Array.prototype.forEach.call(current.children || [], function (child) {
+        if (child !== element) {
+          candidates.push(child);
+        }
+      });
+      current = current.parentElement;
+      depth += 1;
+    }
+
+    return candidates.some(function (candidate) {
+      return collectCssBackgroundUrls(candidate).some(function (backgroundUrl) {
+        return normalizedUrls.indexOf(normalizeComparableUrl(backgroundUrl)) !== -1;
+      });
+    });
+  }
+
+  function normalizeComparableUrl(value) {
+    try {
+      return new URL(String(value || ""), document.baseURI).href;
+    } catch (error) {
+      return String(value || "").trim();
+    }
   }
 
   function isGifvUrl(value) {
