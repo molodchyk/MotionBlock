@@ -11,7 +11,7 @@
       group: "motion",
       label: "GIF images",
       shortLabel: "GIFs",
-      description: "Block .gif image requests and GIF data URLs before they animate."
+      description: "Replace GIF image elements in the page while leaving tiny interface GIFs alone."
     },
     {
       key: "gifv",

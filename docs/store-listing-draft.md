@@ -38,7 +38,7 @@ MotionBlock does not collect analytics, send browsing data to a server, or use r
 
 ## Troubleshooting Copy
 
-If media is still visible after installing or changing settings, reload the page. Some websites load media dynamically or convert GIFs into short video files, so MotionBlock uses both request blocking and page cleanup.
+If media is still visible after installing or changing settings, reload the page. Some websites load media dynamically or convert GIFs into short video files, so MotionBlock uses both selective request blocking and page cleanup.
 
 Chrome does not allow extensions to modify browser-internal pages, the Chrome Web Store, or some protected pages.
 

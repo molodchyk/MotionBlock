@@ -917,6 +917,7 @@
   }
 
   function isLikelyMediaContainer(element) {
+    const tag = element.tagName.toLowerCase();
     const metadata = [
       element.tagName,
       element.id,
@@ -932,7 +933,11 @@
       return true;
     }
 
-    return element.childElementCount <= 3;
+    if (!/^(a|div|figure|span)$/.test(tag)) {
+      return false;
+    }
+
+    return element.childElementCount <= 2 && !(element.textContent || "").trim();
   }
 
   function applyContainerPlaceholder(element, size) {
@@ -945,7 +950,7 @@
   }
 
   function removePlaceholderContainer(element) {
-    const container = placeholderContainers.get(element);
+    const container = placeholderContainers.get(element) || element.closest(".motionblock-media-container-placeholder");
     if (!container) {
       return;
     }
@@ -1027,11 +1032,11 @@
       return true;
     }
 
-    return gifUrls.every(isDataGifUrl) && isLikelyTinyImageElement(element) && isLikelyInterfaceImage(element);
-  }
+    if (!isLikelyInterfaceImage(element)) {
+      return false;
+    }
 
-  function isDataGifUrl(value) {
-    return /^data:image\/gif/i.test(String(value || "").trim());
+    return isLikelyTinyImageElement(element) || isLikelySmallDisplayedImage(element);
   }
 
   function isLikelyTransparentGifDataUrl(value) {
@@ -1064,6 +1069,15 @@
     }
 
     return false;
+  }
+
+  function isLikelySmallDisplayedImage(element) {
+    const rect = element.getBoundingClientRect();
+    if (!rect || rect.width <= 0 || rect.height <= 0) {
+      return false;
+    }
+
+    return rect.width <= 48 && rect.height <= 48;
   }
 
   function isLikelyInterfaceImage(element) {

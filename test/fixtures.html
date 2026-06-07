@@ -98,6 +98,33 @@
         width: 22px;
       }
 
+      .mail-row-fixture table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .mail-row-fixture td {
+        border-bottom: 1px solid #dfe5df;
+        height: 40px;
+        padding: 0 8px;
+      }
+
+      .mail-row-fixture [role="button"] {
+        align-items: center;
+        display: inline-flex;
+        height: 24px;
+        justify-content: center;
+        width: 24px;
+      }
+
+      .mail-row-fixture img {
+        background: #ffffff;
+        border: 0;
+        border-radius: 0;
+        height: 18px;
+        width: 18px;
+      }
+
       .css-spinner {
         animation: spin 1.1s linear infinite;
         background: conic-gradient(from 0deg, #183b45, #2f7754, #b6463f, #183b45);
@@ -158,6 +185,22 @@
               Static GIF UI control
             </button>
             <figcaption>Expected default: button remains usable; spacer GIF is not replaced.</figcaption>
+          </figure>
+
+          <figure class="mail-row-fixture">
+            <table aria-label="Inbox fixture">
+              <tbody>
+                <tr>
+                  <td>
+                    <span role="button" aria-label="Not starred" data-tooltip="Not starred">
+                      <img alt="Not starred" src="images/ui-control-v42.gif">
+                    </span>
+                  </td>
+                  <td>Message row with a tiny GIF interface control</td>
+                </tr>
+              </tbody>
+            </table>
+            <figcaption>Expected default: tiny GIF UI control is not replaced and no row placeholder appears.</figcaption>
           </figure>
         </div>
       </section>

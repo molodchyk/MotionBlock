@@ -70,7 +70,7 @@ Used to save global defaults, per-site preferences, blocked media display mode, 
 
 ### declarativeNetRequest
 
-Used to block media requests before they load. This is required for efficient GIF, GIFV, image, video, and audio blocking under Manifest V3.
+Used to block selected media requests before they load. This is required for efficient GIFV, image, video, and audio blocking under Manifest V3. Plain GIF image elements are handled in the page so tiny static GIF interface controls are not broken by a blanket request rule.
 
 ### host permissions for all URLs
 
@@ -99,7 +99,7 @@ Upload the generated ZIP from `dist/`.
 
 ## Troubleshooting Copy
 
-If media is still visible after installing or changing settings, reload the page. Some websites load media dynamically or convert GIFs into short video files, so MotionBlock uses both request blocking and page cleanup.
+If media is still visible after installing or changing settings, reload the page. Some websites load media dynamically or convert GIFs into short video files, so MotionBlock uses both selective request blocking and page cleanup.
 
 Chrome does not allow extensions to modify browser-internal pages, the Chrome Web Store, or some protected pages.
 

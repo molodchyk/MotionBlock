@@ -8,12 +8,6 @@ const TEMP_ALLOW_RULE_ID_END = 910199;
 let rulesUpdateQueue = Promise.resolve();
 
 const DNR_FEATURE_RULES = {
-  gifs: [
-    {
-      regexFilter: "\\.gif(?:$|[?#])",
-      resourceTypes: ["image"]
-    }
-  ],
   gifv: [
     {
       regexFilter: "\\.gifv(?:$|[?#])",

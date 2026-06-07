@@ -165,7 +165,7 @@ Decision:
 
 ### Must Have For MVP
 
-- Block GIF URL patterns.
+- Block GIF image elements without blanket network blocking that breaks static UI GIFs.
 - Block GIFV URL patterns.
 - Pause or block autoplay video.
 - Detect and block muted looping video used as GIF replacement.
@@ -230,6 +230,7 @@ Avoid overpromising:
 - Do not claim every possible animation is blocked.
 - Explain that some sites convert GIFs into short videos.
 - Explain that animated WebP detection is conservative.
+- Explain that GIF blocking is page-aware so static GIF interface controls are less likely to break.
 
 Support and troubleshooting should include:
 

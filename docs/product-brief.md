@@ -25,6 +25,7 @@ MotionBlock blocks looping GIFs, GIFV, animated WebP URL patterns, and autoplay-
 - Current-site controls live in the popup.
 - Website rules live in options.
 - Compact placeholders avoid the "replacement image is bigger than the original" complaint.
+- GIF blocking is page-aware so tiny static GIF interface controls are not treated like distracting animation.
 - Autoplay video and muted looping video are treated as motion, not only as media files.
 
 ## Store search terms to support

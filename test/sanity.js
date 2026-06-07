@@ -91,4 +91,8 @@ const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "manifest
 assert.deepEqual(manifest.permissions.sort(), ["declarativeNetRequest", "storage"]);
 assert.equal(manifest.host_permissions.includes("<all_urls>"), true);
 
+const background = fs.readFileSync(path.join(__dirname, "..", "src", "background.js"), "utf8");
+assert.equal(background.includes('regexFilter: "\\\\.gif(?:$|[?#])"'), false);
+assert.equal(background.includes("cleardot"), false);
+
 console.log("settings sanity ok");

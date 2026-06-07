@@ -17,6 +17,7 @@ The fixture covers:
 - inline GIF images
 - `.gif` and `.gifv` URL patterns
 - static transparent GIF UI spacers that should not be blocked
+- tiny GIF interface controls inside table rows that should not create row placeholders
 - WebP URL patterns
 - autoplay video
 - muted looping video
