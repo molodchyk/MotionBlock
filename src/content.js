@@ -8,6 +8,8 @@
   const GIF_LIKE_TEXT_PATTERN = /\b(gif|gifv|giphy|tenor|looping|animated)\b/i;
   const GIF_LIKE_URL_PATTERN =
     /(giphy\.com|media\.tenor\.com|tenor\.com|gfycat\.com|redgifs\.com|external-preview\.redd\.it|preview\.redd\.it|\.gifv(?:$|[?#])|[?&](?:format|type)=gifv?(?:&|$)|\/gif[s/]?)/i;
+  const BROAD_IMAGE_BLOCK_TIMEOUT_MS = 2500;
+  const BROAD_IMAGE_SETTLE_DELAY_MS = 120;
   const EMOJI_UI_SELECTORS = [
     "img.emoji",
     "img.twemoji",
@@ -152,9 +154,16 @@
       const reason = getImageBlockReason(element);
 
       if (reason) {
+        if (shouldDeferBroadImageBlock(element, reason)) {
+          deferBroadImageBlock(element, reason);
+          return;
+        }
+
         blockImageElement(element, reason);
       } else if (element.dataset.motionblockFeature === "image") {
         restoreElement(element);
+      } else if (element.dataset.motionblockPendingImageBlock === "true") {
+        clearPendingImageBlock(element);
       }
     });
   }
@@ -393,6 +402,7 @@
     element.dataset.motionblockFeature = "image";
     element.dataset.motionblockReason = reason;
     element.title = element.title || "Blocked by MotionBlock: " + reason;
+    clearPendingImageBlock(element);
 
     if (element.tagName.toLowerCase() === "source") {
       element.removeAttribute("srcset");
@@ -412,6 +422,80 @@
     element.setAttribute("src", PLACEHOLDER_SRC);
     element.setAttribute("alt", "Blocked " + reason);
     ensureRevealOverlay(element, "Show blocked image");
+  }
+
+  function shouldDeferBroadImageBlock(element, reason) {
+    if (reason !== "image" || element.dataset.motionblockBlocked === "true") {
+      return false;
+    }
+
+    if (element.tagName.toLowerCase() === "source") {
+      const image = element.closest("picture") ? element.closest("picture").querySelector("img") : null;
+      return Boolean(image && image.dataset.motionblockBlocked !== "true");
+    }
+
+    if (element.tagName.toLowerCase() !== "img") {
+      return false;
+    }
+
+    return !isBroadImageReadyForBlocking(element) && !hasPendingImageBlockTimedOut(element);
+  }
+
+  function deferBroadImageBlock(element, reason) {
+    if (element.tagName.toLowerCase() === "source") {
+      return;
+    }
+
+    if (element.dataset.motionblockPendingImageBlock !== "true") {
+      element.dataset.motionblockPendingImageBlock = "true";
+      element.dataset.motionblockPendingImageReason = reason;
+      element.dataset.motionblockPendingImageStarted = String(Date.now());
+      element.classList.add("motionblock-image-pending");
+      element.addEventListener("load", handlePendingImageLoad, { once: true });
+      element.addEventListener("error", handlePendingImageLoad, { once: true });
+    }
+
+    schedulePendingImageBlock(element, BROAD_IMAGE_SETTLE_DELAY_MS);
+    schedulePendingImageBlock(element, BROAD_IMAGE_BLOCK_TIMEOUT_MS);
+  }
+
+  function handlePendingImageLoad(event) {
+    schedulePendingImageBlock(event.currentTarget, BROAD_IMAGE_SETTLE_DELAY_MS);
+  }
+
+  function schedulePendingImageBlock(element, delay) {
+    window.setTimeout(function () {
+      if (!element.isConnected || element.dataset.motionblockPendingImageBlock !== "true") {
+        return;
+      }
+
+      if (!effectiveSettings.enabled || !effectiveSettings.features.images) {
+        clearPendingImageBlock(element);
+        return;
+      }
+
+      if (!isBroadImageReadyForBlocking(element) && !hasPendingImageBlockTimedOut(element)) {
+        return;
+      }
+
+      blockImageElement(element, element.dataset.motionblockPendingImageReason || "image");
+    }, delay);
+  }
+
+  function isBroadImageReadyForBlocking(element) {
+    return element.complete && element.naturalWidth > 1 && element.naturalHeight > 1;
+  }
+
+  function hasPendingImageBlockTimedOut(element) {
+    const started = Number(element.dataset.motionblockPendingImageStarted || "0");
+    return started > 0 && Date.now() - started >= BROAD_IMAGE_BLOCK_TIMEOUT_MS;
+  }
+
+  function clearPendingImageBlock(element) {
+    element.classList.remove("motionblock-image-pending");
+    delete element.dataset.motionblockPendingImageBlock;
+    delete element.dataset.motionblockPendingImageReason;
+    delete element.dataset.motionblockPendingImageStarted;
   }
 
   function refreshImagePlaceholder(element) {
@@ -539,13 +623,16 @@
     restoreOriginalAttribute(element, "loop");
     restoreOriginalAttribute(element, "title");
 
-    element.classList.remove("motionblock-media-placeholder", "motionblock-media-hidden");
+    element.classList.remove("motionblock-media-placeholder", "motionblock-media-hidden", "motionblock-image-pending");
     delete element.dataset.motionblockBlocked;
     delete element.dataset.motionblockFeature;
     delete element.dataset.motionblockReason;
     delete element.dataset.motionblockAutoplayAdjusted;
     delete element.dataset.motionblockSourceBlocked;
     delete element.dataset.motionblockEnforcing;
+    delete element.dataset.motionblockPendingImageBlock;
+    delete element.dataset.motionblockPendingImageReason;
+    delete element.dataset.motionblockPendingImageStarted;
 
     element.style.width = element.dataset.motionblockOriginalStyleWidth || "";
     element.style.height = element.dataset.motionblockOriginalStyleHeight || "";
@@ -904,8 +991,7 @@
       return null;
     }
 
-    const aspectRatio = rect.width / rect.height;
-    if (rect.height >= 96 && rect.width <= 80 && aspectRatio < 0.35) {
+    if (isCollapsedTallRect(rect)) {
       return {
         width: inferWidthFromHeight(element, rect.height),
         height: rect.height,
@@ -913,7 +999,7 @@
       };
     }
 
-    if (rect.width >= 96 && rect.height <= 80 && aspectRatio > 2.8) {
+    if (isCollapsedWideRect(rect)) {
       return {
         width: rect.width,
         height: inferHeightFromWidth(element, rect.width),
@@ -922,6 +1008,14 @@
     }
 
     return null;
+  }
+
+  function isCollapsedTallRect(rect) {
+    return rect.height >= 96 && rect.width <= 80 && rect.width / rect.height < 0.35;
+  }
+
+  function isCollapsedWideRect(rect) {
+    return rect.width >= 96 && rect.height <= 80 && rect.width / rect.height > 2.8;
   }
 
   function inferWidthFromHeight(element, height) {

@@ -11,6 +11,7 @@
    - static GIF spacer inside a UI button remains visible and clickable
    - tiny GIF interface control inside the table-row fixture remains visible and does not turn the row into a placeholder
    - collapsed gallery thumbnail fixture becomes a normal thumbnail-sized placeholder when Images is enabled
+   - varied loaded images keep varied placeholder dimensions when Images is enabled
    - WebP URL is not blocked by default
    - GIFV video is blocked
    - muted looping Reddit-like video is blocked
@@ -50,7 +51,7 @@ Test these after the local fixture behaves correctly:
 - steamcommunity.com
 - youtube.com hover previews
 - youtube.com image/video placeholders after reload and scroll/lazy-load
-- google.com image search with Images enabled should show calm placeholders and stable layout
+- google.com image search with Images enabled should show calm placeholders that keep the page's varied masonry layout, not uniform invented squares
 - mail.google.com inbox controls and message-row actions should not become GIF placeholders, even when Gmail uses static GIF UI sprites
 - stocktwits.com
 - flipboard.com

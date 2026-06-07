@@ -29,6 +29,10 @@ html.motionblock-css-motion-off *::after {
   box-sizing: border-box !important;
 }
 
+.motionblock-image-pending {
+  visibility: hidden !important;
+}
+
 img.motionblock-media-placeholder {
   display: inline-block !important;
   opacity: 0.72 !important;
