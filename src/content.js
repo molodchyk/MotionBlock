@@ -8,8 +8,10 @@
   const GIF_LIKE_TEXT_PATTERN = /\b(gif|gifv|giphy|tenor|looping|animated)\b/i;
   const GIF_LIKE_URL_PATTERN =
     /(giphy\.com|media\.tenor\.com|tenor\.com|gfycat\.com|redgifs\.com|external-preview\.redd\.it|preview\.redd\.it|\.gifv(?:$|[?#])|[?&](?:format|type)=gifv?(?:&|$)|\/gif[s/]?)/i;
+  const APPLY_DEBOUNCE_MS = 120;
   const BROAD_IMAGE_BLOCK_TIMEOUT_MS = 2500;
   const BROAD_IMAGE_SETTLE_DELAY_MS = 120;
+  const MEDIA_ATTRIBUTE_FILTER = ["src", "srcset", "poster", "autoplay", "loop", "muted"];
   const EMOJI_UI_SELECTORS = [
     "img.emoji",
     "img.twemoji",
@@ -34,11 +36,14 @@
   let storedSettings = MB.DEFAULT_SETTINGS;
   let effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
   let scheduled = false;
+  let fullScanPending = true;
+  let applyTimer = 0;
   let observer = null;
   let restoreRetryTimer = 0;
   let overlayPositionTimer = 0;
   let attachShadowPatched = false;
   const processingRoots = [document];
+  const dirtyRoots = new Set([document]);
   const observedProcessingRoots = new WeakSet();
   const placeholderContainers = new WeakMap();
 
@@ -58,7 +63,7 @@
     if (areaName === "sync" && changes[MB.STORAGE_KEY]) {
       storedSettings = MB.normalizeSettings(changes[MB.STORAGE_KEY].newValue);
       effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
-      scheduleApply();
+      scheduleApply({ full: true });
     }
   });
 
@@ -77,13 +82,18 @@
     const data = await chrome.storage.sync.get(MB.STORAGE_KEY);
     storedSettings = MB.normalizeSettings(data[MB.STORAGE_KEY]);
     effectiveSettings = MB.getEffectiveSettings(storedSettings, window.location.hostname);
+    markFullScan();
     applyBlocking();
   }
 
   function startObserver() {
     observer = new MutationObserver(function (mutations) {
       mutations.forEach(function (mutation) {
-        mutation.addedNodes.forEach(discoverShadowRootsFromNode);
+        markDirtyRoot(getMutationRoot(mutation));
+
+        if (mutation.type === "childList") {
+          mutation.addedNodes.forEach(discoverShadowRootsFromNode);
+        }
       });
       scheduleApply();
     });
@@ -93,9 +103,15 @@
     discoverShadowRoots(document);
 
     if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", scheduleApply, { once: true });
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          scheduleApply({ full: true });
+        },
+        { once: true }
+      );
     } else {
-      scheduleApply();
+      scheduleApply({ full: true });
     }
   }
 
@@ -111,7 +127,7 @@
       if (!init || init.mode === "open") {
         window.setTimeout(function () {
           observeProcessingRoot(shadowRoot);
-          scheduleApply();
+          scheduleApply({ root: shadowRoot });
         }, 0);
       }
 
@@ -135,10 +151,12 @@
       root.addEventListener("volumechange", stopBlockedMediaPlayback, true);
     }
 
+    markDirtyRoot(root);
+
     const target = root === document ? document.documentElement || document : root;
     observer.observe(target, {
       attributes: true,
-      attributeFilter: ["src", "srcset", "poster", "autoplay", "loop", "muted", "style", "class"],
+      attributeFilter: MEDIA_ATTRIBUTE_FILTER,
       childList: true,
       subtree: true
     });
@@ -170,19 +188,52 @@
     discoverShadowRoots(node);
   }
 
-  function scheduleApply() {
+  function getMutationRoot(mutation) {
+    const target = mutation && mutation.target;
+    if (target && typeof target.getRootNode === "function") {
+      return normalizeProcessingRoot(target.getRootNode());
+    }
+
+    return document;
+  }
+
+  function normalizeProcessingRoot(root) {
+    return root && (root.nodeType === Node.DOCUMENT_NODE || root.nodeType === Node.DOCUMENT_FRAGMENT_NODE) ? root : document;
+  }
+
+  function markDirtyRoot(root) {
+    dirtyRoots.add(normalizeProcessingRoot(root));
+  }
+
+  function markFullScan() {
+    fullScanPending = true;
+    dirtyRoots.clear();
+    dirtyRoots.add(document);
+  }
+
+  function scheduleApply(options) {
+    if (options && options.full) {
+      markFullScan();
+    } else if (options && options.root) {
+      markDirtyRoot(options.root);
+    }
+
     if (scheduled) {
       return;
     }
 
     scheduled = true;
-    window.requestAnimationFrame(function () {
+    applyTimer = window.setTimeout(function () {
+      applyTimer = 0;
       scheduled = false;
       applyBlocking();
-    });
+    }, APPLY_DEBOUNCE_MS);
   }
 
   function applyBlocking() {
+    const work = consumeScheduledWork();
+    const roots = work.roots;
+
     updateDocumentClasses();
 
     if (!effectiveSettings.showRevealControls) {
@@ -190,25 +241,31 @@
     }
 
     if (!effectiveSettings.enabled) {
-      restoreBlockedElements();
-      scheduleRestoredMediaRetry(80);
+      if (work.full) {
+        restoreBlockedElements();
+      }
       return;
     }
 
-    discoverShadowRoots(document);
-    getProcessingRoots().forEach(function (root) {
-      processImages(root);
-      processMedia(root);
-    });
+    if (shouldInspectImages()) {
+      roots.forEach(processImages);
+    } else if (work.full) {
+      restoreElementsByFeature("image");
+    }
 
-    if (effectiveSettings.features.emoji) {
+    if (shouldInspectMedia()) {
+      roots.forEach(processMedia);
+    } else if (work.full) {
+      restoreElementsByFeature("media");
+    }
+
+    if (effectiveSettings.features.emoji && (work.full || roots.indexOf(document) !== -1)) {
       processEmoji(document);
-    } else {
+    } else if (!effectiveSettings.features.emoji && work.full) {
       restoreEmojiElements(document);
     }
 
     updateAllRevealOverlayPositions();
-    scheduleRestoredMediaRetry(80);
   }
 
   function updateDocumentClasses() {
@@ -223,6 +280,44 @@
     return processingRoots.filter(function (root) {
       return root === document || !root.host || root.host.isConnected;
     });
+  }
+
+  function consumeScheduledWork() {
+    const full = fullScanPending;
+    const activeRoots = getProcessingRoots();
+    let roots;
+
+    if (full) {
+      roots = activeRoots;
+    } else {
+      roots = Array.from(dirtyRoots)
+        .map(normalizeProcessingRoot)
+        .filter(function (root) {
+          return activeRoots.indexOf(root) !== -1;
+        });
+    }
+
+    dirtyRoots.clear();
+    fullScanPending = false;
+
+    return {
+      full,
+      roots: uniqueElements(roots)
+    };
+  }
+
+  function uniqueElements(elements) {
+    const seen = new Set();
+    const result = [];
+
+    elements.forEach(function (element) {
+      if (!seen.has(element)) {
+        seen.add(element);
+        result.push(element);
+      }
+    });
+
+    return result;
   }
 
   function queryAllProcessingRoots(selector) {
@@ -420,6 +515,11 @@
   function shouldInspectImages() {
     const features = effectiveSettings.features;
     return features.images || features.gifs || features.gifv || features.animatedWebp;
+  }
+
+  function shouldInspectMedia() {
+    const features = effectiveSettings.features;
+    return features.video || features.audio || features.autoplayVideo || features.gifv || features.gifs;
   }
 
   function getImageBlockReason(element) {
@@ -787,7 +887,12 @@
   }
 
   function removeAllRevealButtons() {
-    document.querySelectorAll(".motionblock-reveal-button").forEach(function (button) {
+    const buttons = document.querySelectorAll(".motionblock-reveal-button");
+    if (!buttons.length) {
+      return;
+    }
+
+    buttons.forEach(function (button) {
       button.remove();
     });
 

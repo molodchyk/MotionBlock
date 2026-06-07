@@ -46,6 +46,7 @@ MotionBlock decisions:
 - Treat muted looping video as motion, not just as video.
 - Do not treat static transparent GIFs used as interface spacers/icons as distracting GIF content.
 - Scan open shadow roots so custom-element media players, including Reddit's `shreddit-*` components, are covered.
+- Keep shadow-root scanning debounced and scoped to changed roots so dynamic feeds do not become laggy.
 - Add Reddit, Giphy, Steam, Discord, Facebook, and Stocktwits to the manual test list.
 
 ### Stop Animations

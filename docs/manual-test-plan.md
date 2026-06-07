@@ -46,6 +46,7 @@ Test these after the local fixture behaves correctly:
 
 - reddit.com
 - reddit.com feed videos inside `shreddit-*` custom elements should stop when Video or Audio is enabled
+- reddit.com should remain responsive while scrolling the feed with Video and Audio enabled
 - discord.com
 - giphy.com
 - facebook.com
