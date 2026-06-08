@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing
 
 $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
-$OutputDirectory = Join-Path $Root "assets\store"
+$OutputDirectory = Join-Path $Root "store-assets\promo"
 if (-not (Test-Path -LiteralPath $OutputDirectory)) {
   New-Item -ItemType Directory -Path $OutputDirectory | Out-Null
 }
@@ -197,7 +197,7 @@ function Draw-SmallPromo {
   Draw-Text $Graphics "Per-site controls" $SmallFont $Text 50 184 170 28
   Draw-Text $Graphics "GIFV + video previews" $SmallFont $Text 50 214 210 28
 
-  Save-Promo $Bitmap "cws-small-promo-440x280.png"
+  Save-Promo $Bitmap "small-promo-440x280.png"
 
   $SmallFont.Dispose()
   $BodyFont.Dispose()
@@ -248,7 +248,7 @@ function Draw-MarqueePromo {
   $Graphics.DrawLine($PlaceholderLine, 940, 388, 1170, 388)
   $Graphics.FillRectangle($Accent, 930, 424, 210, 6)
 
-  Save-Promo $Bitmap "cws-marquee-promo-1400x560.png"
+  Save-Promo $Bitmap "marquee-promo-1400x560.png"
 
   $CardFont.Dispose()
   $PillFont.Dispose()

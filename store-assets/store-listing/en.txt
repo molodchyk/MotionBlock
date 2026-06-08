@@ -1,0 +1,29 @@
+MotionBlock is a GIF blocker and animation stopper for busy web pages. It blocks distracting motion before it gets in your way.
+
+Use MotionBlock to stop:
+
+Looping GIF images.
+GIFV links.
+Short muted videos used like GIFs.
+Autoplay video and hover previews.
+Optional animated WebP URL patterns.
+Optional video, audio, images, emoji, and CSS motion.
+
+MotionBlock is built around per-site control. Keep conservative global defaults, then allow or block specific media types on individual websites from the popup or options page.
+
+Common uses:
+
+Stop distracting animations while reading.
+Reduce autoplay video noise.
+Save bandwidth from unnecessary media.
+Block YouTube-style hover previews.
+Calm Reddit, Giphy, social feeds, and news pages that convert GIFs into short videos.
+Allow image-heavy sites while blocking motion elsewhere.
+Quickly allow media on sites that need it.
+
+The popup controls the current site. The options page manages global defaults, per-site preferences, JSON backup import/export, Chrome-profile settings sync, blocked media display, optional reveal buttons, and light/dark/system UI theme.
+
+MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings are stored in Chrome extension sync storage and may sync through Chrome if the user has Chrome extension sync enabled.
+
+MotionBlock is open source:
+https://github.com/molodchyk/MotionBlock

@@ -22,22 +22,42 @@ if (Test-Path -LiteralPath $ZipPath) {
 $Temp = Join-Path $Dist ("motionblock-build-" + [guid]::NewGuid().ToString("n"))
 New-Item -ItemType Directory -Path $Temp | Out-Null
 
+function Copy-PackageItem {
+  param([string]$RelativePath)
+
+  $source = Join-Path $Root $RelativePath
+  if (-not (Test-Path -LiteralPath $source)) {
+    throw "Required package input is missing: $RelativePath"
+  }
+
+  $target = Join-Path $Temp $RelativePath
+  $targetDirectory = Split-Path -Path $target -Parent
+  if (-not (Test-Path -LiteralPath $targetDirectory)) {
+    New-Item -ItemType Directory -Path $targetDirectory | Out-Null
+  }
+
+  Copy-Item -LiteralPath $source -Destination $target -Recurse -Force
+}
+
 try {
-  $ExcludedDirectories = @("\dist\", "\.git\")
-  Get-ChildItem -LiteralPath $Root -Recurse -File |
-    Where-Object {
-      $path = $_.FullName
-      -not ($ExcludedDirectories | Where-Object { $path.Contains($_) })
-    } |
-    ForEach-Object {
-      $relative = $_.FullName.Substring($Root.Path.Length).TrimStart("\")
-      $target = Join-Path $Temp $relative
-      $targetDirectory = Split-Path -Path $target -Parent
-      if (-not (Test-Path -LiteralPath $targetDirectory)) {
-        New-Item -ItemType Directory -Path $targetDirectory | Out-Null
-      }
-      Copy-Item -LiteralPath $_.FullName -Destination $target
-    }
+  $PackageInputs = @(
+    "manifest.json",
+    "assets\icons",
+    "src\background.js",
+    "src\content.css",
+    "src\content.js",
+    "src\options.css",
+    "src\options.html",
+    "src\options.js",
+    "src\popup.css",
+    "src\popup.html",
+    "src\popup.js",
+    "src\shared"
+  )
+
+  foreach ($item in $PackageInputs) {
+    Copy-PackageItem -RelativePath $item
+  }
 
   Compress-Archive -Path (Join-Path $Temp "*") -DestinationPath $ZipPath
   Write-Host "Created $ZipPath"

@@ -51,6 +51,10 @@ The popup controls the current site. The options page manages global defaults, p
 
 MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings are stored in Chrome extension sync storage and may sync through Chrome if the user has Chrome extension sync enabled.
 
+Source file for the detailed description:
+
+`store-assets/store-listing/en.txt`
+
 ## Support URL
 
 https://github.com/molodchyk/MotionBlock/issues
@@ -85,8 +89,9 @@ MotionBlock reads page media elements only to apply the user's selected blocking
 
 ## Promo Assets
 
-- Small promo tile: `assets/store/cws-small-promo-440x280.png`
-- Marquee promo tile: `assets/store/cws-marquee-promo-1400x560.png`
+- Small promo tile: `store-assets/promo/small-promo-440x280.png`
+- Marquee promo tile: `store-assets/promo/marquee-promo-1400x560.png`
+- Screenshots folder: `store-assets/screenshots/`
 
 ## Package
 

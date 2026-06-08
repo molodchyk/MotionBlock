@@ -44,6 +44,9 @@ The popup controls the current site. The options page controls global defaults a
 - `docs/chrome-web-store-entry.md` contains copy-paste Chrome Web Store fields.
 - `docs/permissions.md` explains requested extension permissions.
 - `docs/manual-test-plan.md` lists local and live-site test targets.
+- `store-assets/store-listing/en.txt` contains the Store listing long description.
+- `store-assets/promo/` contains Chrome Web Store promotional tiles.
+- `store-assets/screenshots/` is reserved for final Store screenshots.
 
 ## Local Fixture
 
