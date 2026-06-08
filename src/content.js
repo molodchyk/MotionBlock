@@ -50,17 +50,86 @@
     "[data-background]",
     "[data-background-image]"
   ].join(",");
+  const MEDIA_METADATA_ATTRIBUTES = [
+    "alt",
+    "aria-label",
+    "title",
+    "role",
+    "slot",
+    "type",
+    "post-type",
+    "media-type",
+    "data-testid",
+    "data-test-id",
+    "data-media-id",
+    "data-video-id",
+    "data-hls-url",
+    "data-post-type",
+    "data-media-type",
+    "data-media-kind",
+    "data-content-type",
+    "data-mime-type",
+    "data-url",
+    "data-src",
+    "data-media-url",
+    "data-video-url",
+    "data-gif-url",
+    "href",
+    "src"
+  ];
+  const MEDIA_URL_ATTRIBUTES = [
+    "src",
+    "srcset",
+    "poster",
+    "href",
+    "data-src",
+    "data-original",
+    "data-lazy-src",
+    "data-url",
+    "data-media-url",
+    "data-video-url",
+    "data-gif-url",
+    "data-hls-url",
+    "data-mp4",
+    "data-webm"
+  ];
   const CUSTOM_MEDIA_HOST_SELECTOR = [
+    "[data-motionblock-custom-host='true']",
     "[autoplay]",
     "[loop]",
     "[gif]",
+    "[post-type]",
+    "[media-type]",
     "[data-hls-url]",
     "[data-media-id]",
     "[data-video-id]",
+    "[data-post-type]",
+    "[data-media-type]",
+    "[data-media-kind]",
+    "[data-content-type]",
+    "[data-mime-type]",
+    "[data-url*='.gif' i]",
+    "[data-url*='.gifv' i]",
+    "[data-url*='.mp4' i]",
+    "[data-url*='.webm' i]",
+    "[data-media-url*='.gif' i]",
+    "[data-media-url*='.gifv' i]",
+    "[data-media-url*='.mp4' i]",
+    "[data-media-url*='.webm' i]",
+    "[data-video-url]",
+    "[data-gif-url]",
+    "[data-src*='.gif' i]",
+    "[data-src*='.gifv' i]",
+    "[data-src*='.mp4' i]",
+    "[data-src*='.webm' i]",
     "[src*='.gifv' i]",
     "[src*='.m3u8' i]",
     "[src*='.mp4' i]",
-    "[src*='.webm' i]"
+    "[src*='.webm' i]",
+    "[href*='.gif' i]",
+    "[href*='.gifv' i]",
+    "[href*='.mp4' i]",
+    "[href*='.webm' i]"
   ].join(",");
   const MEDIA_HOST_TEXT_PATTERN = /\b(video|player|media|gif|gifv|animation|stream|embed|audio|sound|music|podcast)\b/i;
   const VIDEO_HOST_TEXT_PATTERN = /\b(video|player|media|gif|gifv|animation|stream|embed)\b/i;
@@ -739,6 +808,10 @@
   }
 
   function updateDocumentClasses() {
+    if (!document.documentElement) {
+      return;
+    }
+
     const enabled = Boolean(effectiveSettings.enabled);
     document.documentElement.classList.toggle(
       "motionblock-css-motion-off",
@@ -1283,7 +1356,7 @@
       return { hardBlock: true, label: "audio" };
     }
 
-    if (tag === "video" && features.autoplayVideo && gifLikeVideo) {
+    if (tag === "video" && gifLikeVideo) {
       return { hardBlock: true, label: "looping video" };
     }
 
@@ -1302,7 +1375,7 @@
     const features = effectiveSettings.features;
     const urls = collectElementUrls(element);
     const metadata = getCustomMediaHostMetadata(element);
-    const explicitGifHost = element.hasAttribute("gif");
+    const explicitGifHost = hasExplicitGifMarker(metadata, urls);
     const autoplayOrLooping = element.hasAttribute("autoplay") || element.hasAttribute("loop") || explicitGifHost;
     const videoLike = VIDEO_HOST_TEXT_PATTERN.test(metadata) || urls.some(isVideoUrl);
     const audioLike = AUDIO_HOST_TEXT_PATTERN.test(metadata) || urls.some(isAudioUrl);
@@ -1340,6 +1413,14 @@
     return null;
   }
 
+  function hasExplicitGifMarker(metadata, urls) {
+    if (/\b(gif|gifv|image\/gif)\b/i.test(metadata)) {
+      return true;
+    }
+
+    return urls.some(isGifUrl) || urls.some(isGifvUrl);
+  }
+
   function isNativeMediaElement(element) {
     return element.tagName === "VIDEO" || element.tagName === "AUDIO";
   }
@@ -1357,32 +1438,38 @@
     const metadata = getCustomMediaHostMetadata(element);
     const urls = collectElementUrls(element);
     const hasMediaName = MEDIA_HOST_TEXT_PATTERN.test(metadata);
+    const hasMediaMarker = hasExplicitMediaTypeMarker(metadata);
     const customElement = tag.indexOf("-") !== -1;
     const hasMediaUrl = urls.some(isVideoUrl) || urls.some(isAudioUrl) || urls.some(isGifvUrl);
     const hasMediaChild = Boolean(element.querySelector("source[src], source[srcset], video, audio"));
 
-    return hasMediaName && (customElement || element.hasAttribute("autoplay") || element.hasAttribute("loop") || hasMediaUrl || hasMediaChild);
+    if (!(hasMediaName || hasMediaMarker)) {
+      return false;
+    }
+
+    if (isLikelyBroadContentContainer(element) && hasMediaChild) {
+      return false;
+    }
+
+    return customElement || element.hasAttribute("autoplay") || element.hasAttribute("loop") || hasMediaUrl || hasMediaChild;
   }
 
   function getCustomMediaHostMetadata(element) {
-    return [
-      element.tagName,
-      element.id,
-      getElementClassName(element),
-      element.getAttribute("aria-label"),
-      element.getAttribute("title"),
-      element.getAttribute("role"),
-      element.getAttribute("slot"),
-      element.getAttribute("data-testid"),
-      element.getAttribute("data-test-id"),
-      element.getAttribute("data-media-id"),
-      element.getAttribute("data-video-id"),
-      element.getAttribute("data-hls-url"),
-      element.getAttribute("src"),
-      element.hasAttribute("gif") ? "gif" : ""
-    ]
-      .filter(Boolean)
-      .join(" ");
+    return collectElementMetadata(element).join(" ");
+  }
+
+  function hasExplicitMediaTypeMarker(metadata) {
+    return /\b(gif|gifv|video|audio|media|image\/gif|video\/[a-z0-9.+-]+|audio\/[a-z0-9.+-]+)\b/i.test(metadata);
+  }
+
+  function isLikelyBroadContentContainer(element) {
+    const tag = element.tagName.toLowerCase();
+    const metadata = collectElementMetadata(element).join(" ");
+
+    return (
+      tag === "article" ||
+      /\b(post|article|comment|feed|thread|conversation|timeline)\b/i.test(metadata)
+    );
   }
 
   function findCustomMediaHost(element) {
@@ -2510,7 +2597,7 @@
 
   function collectElementUrls(element) {
     const urls = [];
-    ["src", "srcset", "poster", "data-src", "data-original", "data-lazy-src"].forEach(function (attributeName) {
+    MEDIA_URL_ATTRIBUTES.forEach(function (attributeName) {
       const value = element.getAttribute(attributeName);
       if (value) {
         urls.push.apply(urls, splitUrlAttribute(value));
@@ -2538,6 +2625,55 @@
     });
 
     return urls;
+  }
+
+  function collectElementMetadata(element) {
+    const values = [
+      element.tagName,
+      element.id,
+      getElementClassName(element),
+      element.hasAttribute && element.hasAttribute("gif") ? "gif" : ""
+    ];
+
+    MEDIA_METADATA_ATTRIBUTES.forEach(function (attributeName) {
+      const value = element.getAttribute(attributeName);
+      if (value) {
+        values.push(value);
+      }
+    });
+
+    return values.filter(Boolean);
+  }
+
+  function getMediaContextMetadata(element, maxDepth) {
+    const values = [];
+    let current = element;
+    let depth = 0;
+
+    while (current && depth <= maxDepth) {
+      if (current.nodeType === Node.ELEMENT_NODE) {
+        values.push.apply(values, collectElementMetadata(current));
+        current = getComposedParentElement(current);
+        depth += 1;
+      } else {
+        break;
+      }
+    }
+
+    return values.join(" ");
+  }
+
+  function getComposedParentElement(element) {
+    if (element.parentElement) {
+      return element.parentElement;
+    }
+
+    if (typeof element.getRootNode !== "function") {
+      return null;
+    }
+
+    const root = element.getRootNode();
+    return root && root.host && root.host.nodeType === Node.ELEMENT_NODE ? root.host : null;
   }
 
   function collectCssBackgroundUrls(element) {
@@ -2845,18 +2981,7 @@
   }
 
   function looksLikeGifLikeMotion(element, urls) {
-    const metadata = [
-      CURRENT_HOST,
-      element.id,
-      getElementClassName(element),
-      element.getAttribute("alt"),
-      element.getAttribute("aria-label"),
-      element.getAttribute("title"),
-      element.getAttribute("data-testid"),
-      element.getAttribute("data-test-id")
-    ]
-      .filter(Boolean)
-      .join(" ");
+    const metadata = [CURRENT_HOST, getMediaContextMetadata(element, 8)].filter(Boolean).join(" ");
 
     if (GIF_LIKE_TEXT_PATTERN.test(metadata)) {
       return true;
