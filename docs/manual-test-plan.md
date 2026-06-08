@@ -1,5 +1,7 @@
 # Manual Test Plan
 
+For repeated pre-release runs, use `docs/qa-checklist.md` as the detailed site-by-site checklist and run log.
+
 ## Local Fixture
 
 1. Load MotionBlock unpacked from the project root.
