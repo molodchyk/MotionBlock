@@ -38,6 +38,7 @@
   const CSS_BACKGROUND_SCAN_LIMIT = 160;
   const MEDIA_STAT_DATA_KEY = "motionblockMediaStatFeature";
   const MEDIA_UNCOUNTED_DATA_KEY = "motionblockMediaUncounted";
+  const AUDIO_ADJUSTED_DATA_KEY = "motionblockAudioAdjusted";
   const EMOJI_ELEMENT_STAT_DATA_KEY = "motionblockEmojiElementCounted";
   const EMOJI_TEXT_STAT_DATA_KEY = "motionblockEmojiTextCount";
   const EMOJI_ATTRIBUTE_STAT_DATA_KEY = "motionblockEmojiAttributeCount";
@@ -410,6 +411,8 @@
           "], [data-" +
           toDataAttributeName(CSS_BACKGROUND_DATA_KEY) +
           "], [data-" +
+          toDataAttributeName(AUDIO_ADJUSTED_DATA_KEY) +
+          "], [data-" +
           toDataAttributeName(EMOJI_ELEMENT_STAT_DATA_KEY) +
           "], [data-" +
           toDataAttributeName(EMOJI_TEXT_STAT_DATA_KEY) +
@@ -674,6 +677,7 @@
       roots.forEach(processMedia);
     } else if (work.full) {
       restoreElementsByFeature("media");
+      restoreAudioAdjustedElements();
     }
 
     if (effectiveSettings.features.emoji) {
@@ -883,10 +887,14 @@
           restoreElement(element);
         }
         disableAutoplay(element);
+        syncVideoAudioBlocking(element);
       } else if (element.dataset.motionblockFeature === "media") {
         restoreElement(element);
+        syncVideoAudioBlocking(element);
       } else if (element.dataset.motionblockBlocked === "true") {
         enforceBlockedMediaElement(element);
+      } else {
+        syncVideoAudioBlocking(element);
       }
     });
 
@@ -949,8 +957,7 @@
     }
 
     if (element.tagName === "VIDEO" && effectiveSettings.features.audio) {
-      element.muted = true;
-      element.volume = 0;
+      blockVideoAudioElement(element);
     }
 
     if (reason && reason.disableAutoplay) {
@@ -1699,6 +1706,62 @@
     }
   }
 
+  function syncVideoAudioBlocking(element) {
+    if (!element || element.tagName !== "VIDEO") {
+      return;
+    }
+
+    if (effectiveSettings.enabled && effectiveSettings.features.audio && element.dataset.motionblockBlocked !== "true") {
+      blockVideoAudioElement(element);
+    } else if (element.dataset[AUDIO_ADJUSTED_DATA_KEY] === "true" && element.dataset.motionblockBlocked !== "true") {
+      restoreVideoAudioElement(element);
+    }
+  }
+
+  function blockVideoAudioElement(element) {
+    if (!element || element.tagName !== "VIDEO") {
+      return;
+    }
+
+    if (element.dataset[AUDIO_ADJUSTED_DATA_KEY] !== "true") {
+      storeOriginalAttribute(element, "muted");
+      storeOriginalMediaProperty(element, "muted");
+      storeOriginalMediaProperty(element, "volume");
+      element.dataset[AUDIO_ADJUSTED_DATA_KEY] = "true";
+      markMediaStat(element, "audio");
+    } else {
+      markMediaStat(element, "audio");
+    }
+
+    if (element.dataset.motionblockEnforcing === "true") {
+      return;
+    }
+
+    element.dataset.motionblockEnforcing = "true";
+
+    try {
+      element.muted = true;
+      element.volume = 0;
+      element.setAttribute("muted", "");
+    } catch (error) {
+      return;
+    } finally {
+      delete element.dataset.motionblockEnforcing;
+    }
+  }
+
+  function restoreVideoAudioElement(element) {
+    if (!element || element.dataset[AUDIO_ADJUSTED_DATA_KEY] !== "true") {
+      return;
+    }
+
+    unmarkMediaStat(element);
+    restoreOriginalAttribute(element, "muted");
+    restoreOriginalMediaProperty(element, "muted", "boolean");
+    restoreOriginalMediaProperty(element, "volume", "number");
+    delete element.dataset[AUDIO_ADJUSTED_DATA_KEY];
+  }
+
   function setMediaPropertyIfPresent(element, propertyName, value) {
     try {
       if (propertyName in element) {
@@ -1736,14 +1799,20 @@
   }
 
   function restoreBlockedElements() {
-    queryAllProcessingRoots("[data-motionblock-blocked='true'], [data-motionblock-autoplay-adjusted='true']").forEach(
-      restoreElement
-    );
+    queryAllProcessingRoots(
+      "[data-motionblock-blocked='true'], [data-motionblock-autoplay-adjusted='true'], [data-" +
+        toDataAttributeName(AUDIO_ADJUSTED_DATA_KEY) +
+        "='true']"
+    ).forEach(restoreElement);
     queryAllProcessingRoots("[data-motionblock-source-blocked='true']").forEach(restoreElement);
   }
 
   function restoreElementsByFeature(feature) {
     queryAllProcessingRoots("[data-motionblock-feature='" + feature + "']").forEach(restoreElement);
+  }
+
+  function restoreAudioAdjustedElements() {
+    queryAllProcessingRoots("[data-" + toDataAttributeName(AUDIO_ADJUSTED_DATA_KEY) + "='true']").forEach(restoreElement);
   }
 
   function restoreElement(element) {
@@ -1779,6 +1848,7 @@
     delete element.dataset[CSS_BACKGROUND_DATA_KEY];
     delete element.dataset[MEDIA_UNCOUNTED_DATA_KEY];
     delete element.dataset.motionblockAutoplayAdjusted;
+    delete element.dataset[AUDIO_ADJUSTED_DATA_KEY];
     delete element.dataset.motionblockSourceBlocked;
     delete element.dataset.motionblockEnforcing;
     delete element.dataset.motionblockPendingImageBlock;
