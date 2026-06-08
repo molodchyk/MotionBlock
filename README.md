@@ -42,6 +42,7 @@ The popup controls the current site. The options page controls global defaults a
 - `docs/roadmap.md` tracks likely release order.
 - `docs/store-listing-draft.md` contains initial Chrome Web Store copy.
 - `docs/chrome-web-store-entry.md` contains copy-paste Chrome Web Store fields.
+- `docs/chrome-web-store-privacy-form.md` contains StorePilot-ready privacy form fields.
 - `docs/permissions.md` explains requested extension permissions.
 - `docs/manual-test-plan.md` lists local and live-site test targets.
 - `store-assets/store-listing/en.txt` contains the Store listing long description.

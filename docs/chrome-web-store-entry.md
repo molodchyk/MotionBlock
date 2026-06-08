@@ -67,6 +67,10 @@ https://github.com/molodchyk/MotionBlock
 
 https://github.com/molodchyk/MotionBlock/blob/main/PRIVACY.md
 
+For the Chrome Web Store privacy form, use:
+
+`docs/chrome-web-store-privacy-form.md`
+
 ## Permissions Justification
 
 ### storage
