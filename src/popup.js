@@ -48,7 +48,11 @@
     }
 
     const rule = getCurrentRule();
-    rule.features[select.dataset.feature] = parseTriState(select.value);
+    const value = parseTriState(select.value);
+    rule.features[select.dataset.feature] = value;
+    if (value === true && rule.enabled === false) {
+      rule.enabled = true;
+    }
     saveSiteRule(rule);
   });
 

@@ -107,6 +107,7 @@
   const emojiTextBlockCounts = new WeakMap();
   const emojiAttributeOriginals = new WeakMap();
   const emojiAttributeBlockCounts = new WeakMap();
+  const mediaRuntimeOriginals = new WeakMap();
 
   if (typeof chrome === "undefined" || !chrome.storage || !chrome.storage.sync) {
     return;
@@ -1282,11 +1283,11 @@
       return { hardBlock: true, label: "audio" };
     }
 
-    if (tag === "video" && features.autoplayVideo && (gifLikeVideo || loopingMutedVideo)) {
+    if (tag === "video" && features.autoplayVideo && gifLikeVideo) {
       return { hardBlock: true, label: "looping video" };
     }
 
-    if (tag === "video" && features.autoplayVideo && autoplayVideo) {
+    if (tag === "video" && features.autoplayVideo && (loopingMutedVideo || autoplayVideo)) {
       return { disableAutoplay: true, label: "autoplay video" };
     }
 
@@ -1581,6 +1582,7 @@
     storeOriginalAttribute(element, "muted");
     storeOriginalAttribute(element, "title");
     storeOriginalMediaState(element);
+    storeOriginalMediaRuntimeState(element);
 
     element.dataset.motionblockBlocked = "true";
     element.dataset.motionblockFeature = "media";
@@ -1588,15 +1590,8 @@
     markMediaStat(element, getMediaStatFeature(reason, element));
     element.title = element.title || "Blocked by MotionBlock: " + reason;
 
-    element.querySelectorAll("source").forEach(function (source) {
-      storeOriginalAttribute(source, "src");
-      storeOriginalAttribute(source, "srcset");
-      source.dataset.motionblockSourceBlocked = "true";
-    });
-
-    element.classList.add(
-      effectiveSettings.replacementMode === "hide" ? "motionblock-media-hidden" : "motionblock-media-placeholder"
-    );
+    lockDisplayedSize(element, reason);
+    element.classList.add("motionblock-media-hidden");
     enforceBlockedMediaElement(element);
     ensureRevealOverlay(element, element.tagName === "AUDIO" ? "Play blocked audio" : "Play blocked video");
   }
@@ -1617,6 +1612,7 @@
     storeOriginalAttribute(element, "muted");
     storeOriginalAttribute(element, "title");
     storeOriginalMediaState(element);
+    storeOriginalMediaRuntimeState(element);
 
     element.dataset.motionblockBlocked = "true";
     element.dataset.motionblockFeature = "media";
@@ -1648,25 +1644,6 @@
       element.removeAttribute("autoplay");
       element.removeAttribute("loop");
       element.setAttribute("preload", "none");
-
-      if (element.srcObject) {
-        element.srcObject = null;
-      }
-
-      element.querySelectorAll("source").forEach(function (source) {
-        source.dataset.motionblockSourceBlocked = "true";
-        source.removeAttribute("src");
-        source.removeAttribute("srcset");
-      });
-
-      element.removeAttribute("src");
-      if (element.src) {
-        element.src = "";
-      }
-
-      if (typeof element.load === "function") {
-        element.load();
-      }
     } finally {
       delete element.dataset.motionblockEnforcing;
     }
@@ -1687,12 +1664,14 @@
       element.querySelectorAll("source").forEach(function (source) {
         storeOriginalAttribute(source, "src");
         storeOriginalAttribute(source, "srcset");
+        storeOriginalMediaRuntimeProperty(source, "src");
         source.dataset.motionblockSourceBlocked = "true";
         source.removeAttribute("src");
         source.removeAttribute("srcset");
       });
 
       element.removeAttribute("src");
+      element.dataset.motionblockSourcesCleared = "true";
       setMediaPropertyIfPresent(element, "src", "");
       setMediaPropertyIfPresent(element, "autoplay", false);
       setMediaPropertyIfPresent(element, "loop", false);
@@ -1823,6 +1802,7 @@
   function restoreElement(element) {
     const restoresMediaSources =
       element.tagName === "VIDEO" || element.tagName === "AUDIO" || element.dataset.motionblockCustomHost === "true";
+    const reloadsRestoredMedia = shouldReloadRestoredMediaElement(element);
 
     removeRevealButton(element);
     unmarkMediaStat(element);
@@ -1837,6 +1817,7 @@
     restoreOriginalAttribute(element, "muted");
     restoreOriginalAttribute(element, "title");
     restoreOriginalStyleProperty(element, "backgroundImage");
+    restoreOriginalMediaRuntimeState(element);
     restoreOriginalMediaState(element);
 
     element.classList.remove(
@@ -1860,6 +1841,7 @@
     delete element.dataset.motionblockPendingImageBlock;
     delete element.dataset.motionblockPendingImageReason;
     delete element.dataset.motionblockPendingImageStarted;
+    delete element.dataset.motionblockSourcesCleared;
 
     element.style.width = element.dataset.motionblockOriginalStyleWidth || "";
     element.style.height = element.dataset.motionblockOriginalStyleHeight || "";
@@ -1872,11 +1854,35 @@
       element.querySelectorAll("[data-motionblock-source-blocked='true']").forEach(restoreElement);
     }
 
-    if (typeof element.load === "function" && (element.tagName === "VIDEO" || element.tagName === "AUDIO")) {
+    if (reloadsRestoredMedia && typeof element.load === "function" && (element.tagName === "VIDEO" || element.tagName === "AUDIO")) {
       element.load();
     }
 
-    markForLoadRetry(element);
+    if ((element.tagName !== "VIDEO" && element.tagName !== "AUDIO") || reloadsRestoredMedia) {
+      markForLoadRetry(element);
+    }
+  }
+
+  function shouldReloadRestoredMediaElement(element) {
+    const tag = element.tagName;
+    if (tag !== "VIDEO" && tag !== "AUDIO") {
+      return false;
+    }
+
+    if (element.dataset.motionblockSourcesCleared === "true") {
+      return true;
+    }
+
+    const originalSrcKey = getOriginalAttributeKey("src");
+    if (
+      Object.prototype.hasOwnProperty.call(element.dataset, originalSrcKey) &&
+      element.dataset[originalSrcKey] &&
+      !element.hasAttribute("src")
+    ) {
+      return true;
+    }
+
+    return Boolean(element.querySelector("[data-motionblock-source-blocked='true']"));
   }
 
   function ensureRevealOverlay(element, label) {
@@ -2153,6 +2159,33 @@
     storeOriginalMediaProperty(element, "volume");
   }
 
+  function storeOriginalMediaRuntimeState(element) {
+    storeOriginalMediaRuntimeProperty(element, "src");
+    storeOriginalMediaRuntimeProperty(element, "srcObject");
+  }
+
+  function storeOriginalMediaRuntimeProperty(element, propertyName) {
+    if (!element || !(propertyName in element)) {
+      return;
+    }
+
+    let originals = mediaRuntimeOriginals.get(element);
+    if (!originals) {
+      originals = {};
+      mediaRuntimeOriginals.set(element, originals);
+    }
+
+    if (Object.prototype.hasOwnProperty.call(originals, propertyName)) {
+      return;
+    }
+
+    try {
+      originals[propertyName] = element[propertyName];
+    } catch (error) {
+      originals[propertyName] = null;
+    }
+  }
+
   function storeOriginalMediaProperty(element, propertyName) {
     const key = getOriginalMediaPropertyKey(propertyName);
     if (!(propertyName in element) || Object.prototype.hasOwnProperty.call(element.dataset, key)) {
@@ -2168,6 +2201,32 @@
     restoreOriginalMediaProperty(element, "loop", "boolean");
     restoreOriginalMediaProperty(element, "muted", "boolean");
     restoreOriginalMediaProperty(element, "volume", "number");
+  }
+
+  function restoreOriginalMediaRuntimeState(element) {
+    const originals = mediaRuntimeOriginals.get(element);
+    if (!originals) {
+      return;
+    }
+
+    restoreOriginalMediaRuntimeProperty(element, originals, "srcObject");
+    if (!originals.srcObject) {
+      restoreOriginalMediaRuntimeProperty(element, originals, "src");
+    }
+
+    mediaRuntimeOriginals.delete(element);
+  }
+
+  function restoreOriginalMediaRuntimeProperty(element, originals, propertyName) {
+    if (!(propertyName in element) || !Object.prototype.hasOwnProperty.call(originals, propertyName)) {
+      return;
+    }
+
+    try {
+      element[propertyName] = originals[propertyName];
+    } catch (error) {
+      return;
+    }
   }
 
   function restoreOriginalMediaProperty(element, propertyName, type) {
@@ -2467,6 +2526,11 @@
 
     if (element.currentSrc) {
       urls.push(element.currentSrc);
+    }
+
+    const runtimeOriginals = mediaRuntimeOriginals.get(element);
+    if (runtimeOriginals && runtimeOriginals.src) {
+      urls.push(runtimeOriginals.src);
     }
 
     element.querySelectorAll("source").forEach(function (source) {
