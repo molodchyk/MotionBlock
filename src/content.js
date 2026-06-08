@@ -36,6 +36,7 @@
   ];
   const MEDIA_ENFORCEMENT_EVENTS = ["loadstart", "loadedmetadata", "canplay", "play", "playing", "volumechange"];
   const FULL_SCAN_SETTLE_DELAYS_MS = [180, 700, 1800];
+  const SETTINGS_TRANSITION_SCAN_DELAYS_MS = [80, 240, 600, 1200, 2500, 4000];
   const STATS_UPDATE_DEBOUNCE_MS = 150;
   const CSS_BACKGROUND_SCAN_LIMIT = 160;
   const MEDIA_STAT_DATA_KEY = "motionblockMediaStatFeature";
@@ -52,86 +53,17 @@
     "[data-background]",
     "[data-background-image]"
   ].join(",");
-  const MEDIA_METADATA_ATTRIBUTES = [
-    "alt",
-    "aria-label",
-    "title",
-    "role",
-    "slot",
-    "type",
-    "post-type",
-    "media-type",
-    "data-testid",
-    "data-test-id",
-    "data-media-id",
-    "data-video-id",
-    "data-hls-url",
-    "data-post-type",
-    "data-media-type",
-    "data-media-kind",
-    "data-content-type",
-    "data-mime-type",
-    "data-url",
-    "data-src",
-    "data-media-url",
-    "data-video-url",
-    "data-gif-url",
-    "href",
-    "src"
-  ];
-  const MEDIA_URL_ATTRIBUTES = [
-    "src",
-    "srcset",
-    "poster",
-    "href",
-    "data-src",
-    "data-original",
-    "data-lazy-src",
-    "data-url",
-    "data-media-url",
-    "data-video-url",
-    "data-gif-url",
-    "data-hls-url",
-    "data-mp4",
-    "data-webm"
-  ];
   const CUSTOM_MEDIA_HOST_SELECTOR = [
-    "[data-motionblock-custom-host='true']",
     "[autoplay]",
     "[loop]",
     "[gif]",
-    "[post-type]",
-    "[media-type]",
     "[data-hls-url]",
     "[data-media-id]",
     "[data-video-id]",
-    "[data-post-type]",
-    "[data-media-type]",
-    "[data-media-kind]",
-    "[data-content-type]",
-    "[data-mime-type]",
-    "[data-url*='.gif' i]",
-    "[data-url*='.gifv' i]",
-    "[data-url*='.mp4' i]",
-    "[data-url*='.webm' i]",
-    "[data-media-url*='.gif' i]",
-    "[data-media-url*='.gifv' i]",
-    "[data-media-url*='.mp4' i]",
-    "[data-media-url*='.webm' i]",
-    "[data-video-url]",
-    "[data-gif-url]",
-    "[data-src*='.gif' i]",
-    "[data-src*='.gifv' i]",
-    "[data-src*='.mp4' i]",
-    "[data-src*='.webm' i]",
     "[src*='.gifv' i]",
     "[src*='.m3u8' i]",
     "[src*='.mp4' i]",
-    "[src*='.webm' i]",
-    "[href*='.gif' i]",
-    "[href*='.gifv' i]",
-    "[href*='.mp4' i]",
-    "[href*='.webm' i]"
+    "[src*='.webm' i]"
   ].join(",");
   const MEDIA_HOST_TEXT_PATTERN = /\b(video|player|media|gif|gifv|animation|stream|embed|audio|sound|music|podcast)\b/i;
   const VIDEO_HOST_TEXT_PATTERN = /\b(video|player|media|gif|gifv|animation|stream|embed)\b/i;
@@ -169,6 +101,8 @@
   let lastStatsSignature = "";
   let attachShadowPatched = false;
   let settlingFullScanTimers = [];
+  let settingsTransitionId = 0;
+  let settingsTransitionTimers = [];
   const blockStats = createEmptyBlockStats();
   const processingRoots = [document];
   const dirtyRoots = new Set([document]);
@@ -228,6 +162,7 @@
     storedSettings = MB.normalizeSettings(settings);
     effectiveSettings = MB.getEffectiveSettings(storedSettings, SETTINGS_HOST);
     runFullBlockingPass();
+    scheduleSettingsTransitionScans();
   }
 
   function getSettingsHostForFrame() {
@@ -799,6 +734,31 @@
     );
   }
 
+  function scheduleSettingsTransitionScans() {
+    clearSettingsTransitionScans();
+
+    const transitionId = settingsTransitionId + 1;
+    settingsTransitionId = transitionId;
+
+    settingsTransitionTimers = SETTINGS_TRANSITION_SCAN_DELAYS_MS.map(function (delay) {
+      return window.setTimeout(function () {
+        if (settingsTransitionId !== transitionId) {
+          return;
+        }
+
+        markFullScan();
+        applyBlocking();
+      }, delay);
+    });
+  }
+
+  function clearSettingsTransitionScans() {
+    settingsTransitionTimers.forEach(function (timer) {
+      window.clearTimeout(timer);
+    });
+    settingsTransitionTimers = [];
+  }
+
   function addMediaEnforcementListeners(root) {
     MEDIA_ENFORCEMENT_EVENTS.forEach(function (eventName) {
       root.addEventListener(eventName, stopBlockedMediaPlayback, true);
@@ -1358,7 +1318,7 @@
       return { hardBlock: true, label: "audio" };
     }
 
-    if (tag === "video" && gifLikeVideo) {
+    if (tag === "video" && features.autoplayVideo && gifLikeVideo) {
       return { hardBlock: true, label: "looping video" };
     }
 
@@ -1377,7 +1337,7 @@
     const features = effectiveSettings.features;
     const urls = collectElementUrls(element);
     const metadata = getCustomMediaHostMetadata(element);
-    const explicitGifHost = hasExplicitGifMarker(metadata, urls);
+    const explicitGifHost = element.hasAttribute("gif");
     const autoplayOrLooping = element.hasAttribute("autoplay") || element.hasAttribute("loop") || explicitGifHost;
     const videoLike = VIDEO_HOST_TEXT_PATTERN.test(metadata) || urls.some(isVideoUrl);
     const audioLike = AUDIO_HOST_TEXT_PATTERN.test(metadata) || urls.some(isAudioUrl);
@@ -1415,18 +1375,6 @@
     return null;
   }
 
-  function hasExplicitGifMarker(metadata, urls) {
-    if (hasExplicitGifMetadata(metadata)) {
-      return true;
-    }
-
-    return urls.some(isGifUrl) || urls.some(isGifvUrl);
-  }
-
-  function hasExplicitGifMetadata(metadata) {
-    return /\b(gif|gifv|giphy|tenor|looping|animated|image\/gif)\b/i.test(metadata);
-  }
-
   function isNativeMediaElement(element) {
     return element.tagName === "VIDEO" || element.tagName === "AUDIO";
   }
@@ -1444,38 +1392,32 @@
     const metadata = getCustomMediaHostMetadata(element);
     const urls = collectElementUrls(element);
     const hasMediaName = MEDIA_HOST_TEXT_PATTERN.test(metadata);
-    const hasMediaMarker = hasExplicitMediaTypeMarker(metadata);
     const customElement = tag.indexOf("-") !== -1;
     const hasMediaUrl = urls.some(isVideoUrl) || urls.some(isAudioUrl) || urls.some(isGifvUrl);
     const hasMediaChild = Boolean(element.querySelector("source[src], source[srcset], video, audio"));
 
-    if (!(hasMediaName || hasMediaMarker)) {
-      return false;
-    }
-
-    if (isLikelyBroadContentContainer(element) && hasMediaChild) {
-      return false;
-    }
-
-    return customElement || element.hasAttribute("autoplay") || element.hasAttribute("loop") || hasMediaUrl || hasMediaChild;
+    return hasMediaName && (customElement || element.hasAttribute("autoplay") || element.hasAttribute("loop") || hasMediaUrl || hasMediaChild);
   }
 
   function getCustomMediaHostMetadata(element) {
-    return collectElementMetadata(element).join(" ");
-  }
-
-  function hasExplicitMediaTypeMarker(metadata) {
-    return /\b(gif|gifv|video|audio|media|image\/gif|video\/[a-z0-9.+-]+|audio\/[a-z0-9.+-]+)\b/i.test(metadata);
-  }
-
-  function isLikelyBroadContentContainer(element) {
-    const tag = element.tagName.toLowerCase();
-    const metadata = collectElementMetadata(element).join(" ");
-
-    return (
-      tag === "article" ||
-      /\b(post|article|comment|feed|thread|conversation|timeline)\b/i.test(metadata)
-    );
+    return [
+      element.tagName,
+      element.id,
+      getElementClassName(element),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("role"),
+      element.getAttribute("slot"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id"),
+      element.getAttribute("data-media-id"),
+      element.getAttribute("data-video-id"),
+      element.getAttribute("data-hls-url"),
+      element.getAttribute("src"),
+      element.hasAttribute("gif") ? "gif" : ""
+    ]
+      .filter(Boolean)
+      .join(" ");
   }
 
   function findCustomMediaHost(element) {
@@ -2603,7 +2545,7 @@
 
   function collectElementUrls(element) {
     const urls = [];
-    MEDIA_URL_ATTRIBUTES.forEach(function (attributeName) {
+    ["src", "srcset", "poster", "data-src", "data-original", "data-lazy-src"].forEach(function (attributeName) {
       const value = element.getAttribute(attributeName);
       if (value) {
         urls.push.apply(urls, splitUrlAttribute(value));
@@ -2631,55 +2573,6 @@
     });
 
     return urls;
-  }
-
-  function collectElementMetadata(element) {
-    const values = [
-      element.tagName,
-      element.id,
-      getElementClassName(element),
-      element.hasAttribute && element.hasAttribute("gif") ? "gif" : ""
-    ];
-
-    MEDIA_METADATA_ATTRIBUTES.forEach(function (attributeName) {
-      const value = element.getAttribute(attributeName);
-      if (value) {
-        values.push(value);
-      }
-    });
-
-    return values.filter(Boolean);
-  }
-
-  function getMediaContextMetadata(element, maxDepth) {
-    const values = [];
-    let current = element;
-    let depth = 0;
-
-    while (current && depth <= maxDepth) {
-      if (current.nodeType === Node.ELEMENT_NODE) {
-        values.push.apply(values, collectElementMetadata(current));
-        current = getComposedParentElement(current);
-        depth += 1;
-      } else {
-        break;
-      }
-    }
-
-    return values.join(" ");
-  }
-
-  function getComposedParentElement(element) {
-    if (element.parentElement) {
-      return element.parentElement;
-    }
-
-    if (typeof element.getRootNode !== "function") {
-      return null;
-    }
-
-    const root = element.getRootNode();
-    return root && root.host && root.host.nodeType === Node.ELEMENT_NODE ? root.host : null;
   }
 
   function collectCssBackgroundUrls(element) {
@@ -2987,21 +2880,41 @@
   }
 
   function looksLikeGifLikeImage(element, urls) {
-    const metadata = getMediaContextMetadata(element, 5);
-    if (hasExplicitGifMetadata(metadata)) {
+    const metadata = [
+      element.id,
+      getElementClassName(element),
+      element.getAttribute("alt"),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id")
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    if (GIF_LIKE_TEXT_PATTERN.test(metadata)) {
       return true;
     }
 
-    return urls.some(isGifLikeImageUrl);
-  }
-
-  function isGifLikeImageUrl(value) {
-    const url = normalizeUrl(value);
-    return GIF_LIKE_IMAGE_URL_PATTERN.test(url);
+    return urls.some(function (value) {
+      const url = normalizeUrl(value);
+      return GIF_LIKE_IMAGE_URL_PATTERN.test(url);
+    });
   }
 
   function looksLikeGifLikeMotion(element, urls) {
-    const metadata = [CURRENT_HOST, getMediaContextMetadata(element, 8)].filter(Boolean).join(" ");
+    const metadata = [
+      CURRENT_HOST,
+      element.id,
+      getElementClassName(element),
+      element.getAttribute("alt"),
+      element.getAttribute("aria-label"),
+      element.getAttribute("title"),
+      element.getAttribute("data-testid"),
+      element.getAttribute("data-test-id")
+    ]
+      .filter(Boolean)
+      .join(" ");
 
     if (GIF_LIKE_TEXT_PATTERN.test(metadata)) {
       return true;
