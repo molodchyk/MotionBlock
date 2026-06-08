@@ -4,15 +4,15 @@ For Chrome Web Store copy-paste fields, use `docs/chrome-web-store-entry.md`.
 
 ## Title
 
-MotionBlock: GIF, Animation & Autoplay Blocker
+MotionBlock: GIF Blocker & Animation Stopper
 
 ## Short Description
 
-Stop looping GIFs, GIFV, animated WebP URL patterns, and autoplay media with per-site rules.
+Stop GIFs, GIFV, autoplay video, hover previews, and distracting motion with per-site controls.
 
 ## Full Description
 
-MotionBlock helps make busy pages calmer by blocking distracting motion before it gets in your way.
+MotionBlock is a GIF blocker and animation stopper for busy pages. It blocks distracting motion before it gets in your way.
 
 Use it to stop:
 
@@ -31,6 +31,8 @@ Common uses:
 - stop distracting animations while reading
 - reduce autoplay video noise
 - save bandwidth from unnecessary media
+- block YouTube-style hover previews
+- calm Reddit, Giphy, social feeds, and news pages that convert GIFs into short videos
 - allow image-heavy sites while blocking motion elsewhere
 - quickly allow media on sites that need it
 

@@ -4,7 +4,7 @@ MotionBlock is a Chrome Manifest V3 extension for blocking distracting motion fi
 
 Working store title:
 
-> MotionBlock: GIF, Animation & Autoplay Blocker
+> MotionBlock: GIF Blocker & Animation Stopper
 
 ## Why this shape
 

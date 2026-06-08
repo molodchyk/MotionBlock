@@ -162,7 +162,7 @@ Users repeatedly use these words:
 
 Decision:
 
-- Store title should carry the search terms: **MotionBlock: GIF, Animation & Autoplay Blocker**.
+- Store title should carry the search terms: **MotionBlock: GIF Blocker & Animation Stopper**.
 - Brand should be short: **MotionBlock**.
 - Avoid leading with "MediaBlock" because it is broader, less searchable for the core pain, and more likely to collide with existing names.
 

@@ -4,7 +4,7 @@
 
 Primary recommendation:
 
-**MotionBlock: GIF, Animation & Autoplay Blocker**
+**MotionBlock: GIF Blocker & Animation Stopper**
 
 Short brand:
 
@@ -16,7 +16,7 @@ Stop distracting motion on web pages without turning the extension into a compli
 
 ## Initial promise
 
-MotionBlock blocks looping GIFs, GIFV, animated WebP URL patterns, and autoplay-like video. Users can allow or block each media type globally or per website.
+MotionBlock blocks looping GIFs, GIFV, animated WebP URL patterns, hover previews, and autoplay-like video. Users can allow or block each media type globally or per website.
 
 ## Differentiators
 

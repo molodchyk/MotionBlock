@@ -4,11 +4,11 @@ Copy-paste fields for the first public listing.
 
 ## Extension Name
 
-MotionBlock: GIF, Animation & Autoplay Blocker
+MotionBlock: GIF Blocker & Animation Stopper
 
 ## Summary
 
-Stop looping GIFs, GIFV, autoplay video, and distracting motion with global and per-site controls.
+Stop GIFs, GIFV, autoplay video, hover previews, and distracting motion with per-site controls.
 
 ## Category
 
@@ -24,7 +24,7 @@ English
 
 ## Detailed Description
 
-MotionBlock helps make busy web pages calmer by blocking distracting motion before it gets in your way.
+MotionBlock is a GIF blocker and animation stopper for busy web pages. It blocks distracting motion before it gets in your way.
 
 Use MotionBlock to stop:
 
@@ -43,6 +43,7 @@ Common uses:
 - reduce autoplay video noise
 - save bandwidth from unnecessary media
 - block YouTube-style hover previews
+- calm Reddit, Giphy, social feeds, and news pages that convert GIFs into short videos
 - allow image-heavy sites while blocking motion elsewhere
 - quickly allow media on sites that need it
 

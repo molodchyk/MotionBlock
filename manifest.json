@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "MotionBlock: GIF, Animation & Autoplay Blocker",
+  "name": "MotionBlock: GIF Blocker & Animation Stopper",
   "short_name": "MotionBlock",
-  "description": "Stop looping GIFs, GIFV, animated WebP by URL, and autoplay media with per-site rules.",
+  "description": "Stop GIFs, GIFV, autoplay video, hover previews, and distracting motion with per-site controls.",
   "version": "1.0.0",
   "permissions": [
     "storage",
