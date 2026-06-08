@@ -43,6 +43,7 @@
   const EMOJI_TEXT_STAT_DATA_KEY = "motionblockEmojiTextCount";
   const EMOJI_ATTRIBUTE_STAT_DATA_KEY = "motionblockEmojiAttributeCount";
   const CSS_BACKGROUND_DATA_KEY = "motionblockCssBackground";
+  const CSS_BACKGROUND_URLS_DATA_KEY = "motionblockCssBackgroundUrls";
   const CSS_BACKGROUND_SELECTOR = [
     "[style*='url(' i]",
     "[data-bg]",
@@ -410,6 +411,8 @@
           toDataAttributeName(MEDIA_UNCOUNTED_DATA_KEY) +
           "], [data-" +
           toDataAttributeName(CSS_BACKGROUND_DATA_KEY) +
+          "], [data-" +
+          toDataAttributeName(CSS_BACKGROUND_URLS_DATA_KEY) +
           "], [data-" +
           toDataAttributeName(AUDIO_ADJUSTED_DATA_KEY) +
           "], [data-" +
@@ -1453,6 +1456,7 @@
   function blockCssBackgroundElement(element, reason) {
     if (element.dataset.motionblockBlocked === "true") {
       if (element.dataset[CSS_BACKGROUND_DATA_KEY] === "true") {
+        rememberCssBackgroundUrls(element, collectCssBackgroundUrls(element));
         markMediaStat(element, getImageStatFeature(reason || element.dataset.motionblockReason));
         return;
       }
@@ -1466,6 +1470,7 @@
     element.dataset.motionblockFeature = "image";
     element.dataset.motionblockReason = reason;
     element.dataset[CSS_BACKGROUND_DATA_KEY] = "true";
+    rememberCssBackgroundUrls(element, collectCssBackgroundUrls(element));
     markMediaStat(element, getImageStatFeature(reason));
 
     element.classList.add(
@@ -1846,6 +1851,7 @@
     delete element.dataset.motionblockCustomHost;
     delete element.dataset.motionblockReason;
     delete element.dataset[CSS_BACKGROUND_DATA_KEY];
+    delete element.dataset[CSS_BACKGROUND_URLS_DATA_KEY];
     delete element.dataset[MEDIA_UNCOUNTED_DATA_KEY];
     delete element.dataset.motionblockAutoplayAdjusted;
     delete element.dataset[AUDIO_ADJUSTED_DATA_KEY];
@@ -2472,6 +2478,7 @@
 
   function collectCssBackgroundUrls(element) {
     const values = [];
+    const urls = [];
 
     ["data-bg", "data-background", "data-background-image"].forEach(function (attributeName) {
       const value = element.getAttribute(attributeName);
@@ -2485,19 +2492,44 @@
       values.push(element.style.background || "");
     }
 
+    values.push(element.getAttribute("style") || "");
+
     const originalBackgroundImage = element.dataset[getOriginalStylePropertyKey("backgroundImage")];
     if (originalBackgroundImage) {
       values.push(originalBackgroundImage);
+    }
+
+    const storedBackgroundUrls = element.dataset[CSS_BACKGROUND_URLS_DATA_KEY];
+    if (storedBackgroundUrls) {
+      urls.push.apply(
+        urls,
+        storedBackgroundUrls
+          .split(/\n+/)
+          .map(function (url) {
+            return url.trim();
+          })
+          .filter(Boolean)
+      );
     }
 
     try {
       const style = window.getComputedStyle(element);
       values.push(style.backgroundImage || "");
     } catch (error) {
-      return uniqueElements(values.flatMap(extractCssUrls));
+      urls.push.apply(urls, values.flatMap(extractCssUrls));
+      return uniqueElements(urls);
     }
 
-    return uniqueElements(values.flatMap(extractCssUrls));
+    urls.push.apply(urls, values.flatMap(extractCssUrls));
+    return uniqueElements(urls);
+  }
+
+  function rememberCssBackgroundUrls(element, urls) {
+    const normalized = uniqueElements((urls || []).map(normalizeComparableUrl).filter(Boolean)).slice(0, 16);
+
+    if (normalized.length) {
+      element.dataset[CSS_BACKGROUND_URLS_DATA_KEY] = normalized.join("\n");
+    }
   }
 
   function extractCssUrls(value) {
