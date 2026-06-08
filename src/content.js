@@ -17,6 +17,8 @@
   const GIF_LIKE_TEXT_PATTERN = /\b(gif|gifv|giphy|tenor|looping|animated)\b/i;
   const GIF_LIKE_URL_PATTERN =
     /(giphy\.com|media\.tenor\.com|tenor\.com|gfycat\.com|redgifs\.com|external-preview\.redd\.it|preview\.redd\.it|\.gifv(?:$|[?#])|[?&](?:format|type)=gifv?(?:&|$)|\/gif[s/]?)/i;
+  const GIF_LIKE_IMAGE_URL_PATTERN =
+    /(giphy\.com|media\.tenor\.com|tenor\.com|gfycat\.com|redgifs\.com|\.gifv(?:$|[?#])|[?&](?:format|type)=gifv?(?:&|$)|\/gif[s/]?)/i;
   const APPLY_DEBOUNCE_MS = 120;
   const BROAD_IMAGE_BLOCK_TIMEOUT_MS = 2500;
   const BROAD_IMAGE_SETTLE_DELAY_MS = 120;
@@ -1290,7 +1292,7 @@
       return "GIF";
     }
 
-    if (features.gifs && !staticGifUiAsset && looksLikeGifLikeMotion(element, urls)) {
+    if (features.gifs && !staticGifUiAsset && looksLikeGifLikeImage(element, urls)) {
       return "GIF-like media";
     }
 
@@ -1329,7 +1331,7 @@
       return "WebP";
     }
 
-    if (features.gifs && looksLikeGifLikeMotion(element, urls)) {
+    if (features.gifs && looksLikeGifLikeImage(element, urls)) {
       return "GIF-like media";
     }
 
@@ -1414,11 +1416,15 @@
   }
 
   function hasExplicitGifMarker(metadata, urls) {
-    if (/\b(gif|gifv|image\/gif)\b/i.test(metadata)) {
+    if (hasExplicitGifMetadata(metadata)) {
       return true;
     }
 
     return urls.some(isGifUrl) || urls.some(isGifvUrl);
+  }
+
+  function hasExplicitGifMetadata(metadata) {
+    return /\b(gif|gifv|giphy|tenor|looping|animated|image\/gif)\b/i.test(metadata);
   }
 
   function isNativeMediaElement(element) {
@@ -2978,6 +2984,20 @@
   function isAudioUrl(value) {
     const url = normalizeUrl(value);
     return /\.(?:mp3|m4a|aac|ogg|oga|wav|flac)(?:$|[?#])/.test(url);
+  }
+
+  function looksLikeGifLikeImage(element, urls) {
+    const metadata = getMediaContextMetadata(element, 5);
+    if (hasExplicitGifMetadata(metadata)) {
+      return true;
+    }
+
+    return urls.some(isGifLikeImageUrl);
+  }
+
+  function isGifLikeImageUrl(value) {
+    const url = normalizeUrl(value);
+    return GIF_LIKE_IMAGE_URL_PATTERN.test(url);
   }
 
   function looksLikeGifLikeMotion(element, urls) {
