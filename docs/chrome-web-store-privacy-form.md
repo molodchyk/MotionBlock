@@ -14,7 +14,7 @@ permission.declarativeNetRequest:
 The extension uses declarativeNetRequest to block selected media requests before they load when the user enables network-level media blockers such as GIFV, WebP URL patterns, video, or audio. This improves reliability and bandwidth use under Manifest V3 without inspecting or sending requests to a remote server. Rules are generated locally from the user's current MotionBlock settings.
 
 host_permission:
-MotionBlock needs broad host access because users expect GIF, autoplay, video, audio, image, emoji, and CSS motion controls to work on arbitrary websites. Content scripts inspect page media elements, media URLs, CSS background media, and emoji text locally so the selected blocking rules can be applied and restored on matching pages. MotionBlock does not transmit page content or browsing data to any developer-operated server.
+MotionBlock needs broad host access because users expect GIF, autoplay, video, audio, image, emoji, and CSS motion controls to work automatically on arbitrary websites. Content scripts run at document_start to inspect page media elements, media URLs, CSS background media, and emoji text locally before distracting media starts moving. activeTab is not sufficient because it only grants temporary access after a user gesture and would not protect pages opened later or media loaded before the popup is clicked. A fixed site list is not sufficient because users configure their own per-site rules. MotionBlock does not transmit page content or browsing data to any developer-operated server.
 
 remote_code:
 No. MotionBlock does not use remote JavaScript or WebAssembly code. All extension code is included in the packaged extension.
