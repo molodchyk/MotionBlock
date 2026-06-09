@@ -3,6 +3,7 @@ dist/
 *.zip
 *.crx
 *.pem
+store-assets/screenshots/source/
 
 # Dependencies and package manager state
 node_modules/

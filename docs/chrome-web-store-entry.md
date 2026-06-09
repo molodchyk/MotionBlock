@@ -96,6 +96,11 @@ MotionBlock reads page media elements only to apply the user's selected blocking
 - Small promo tile: `store-assets/promo/small-promo-440x280.png`
 - Marquee promo tile: `store-assets/promo/marquee-promo-1400x560.png`
 - Screenshots folder: `store-assets/screenshots/`
+- Screenshot 1: `store-assets/screenshots/01-popup-current-site-controls.png`
+- Screenshot 2: `store-assets/screenshots/02-options-global-defaults.png`
+- Screenshot 3: `store-assets/screenshots/03-per-site-preferences.png`
+- Screenshot 4: `store-assets/screenshots/04-blocked-media-placeholders.png`
+- Screenshot 5: `store-assets/screenshots/05-import-export-sync-theme.png`
 
 ## Package
 

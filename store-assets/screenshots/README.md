@@ -40,4 +40,12 @@ Minimum viable upload if short on time:
 2. `02-options-global-defaults.png`
 3. `04-blocked-media-placeholders.png`
 
-Keep final screenshots in this folder.
+Current release-ready files:
+
+- `01-popup-current-site-controls.png`
+- `02-options-global-defaults.png`
+- `03-per-site-preferences.png`
+- `04-blocked-media-placeholders.png`
+- `05-import-export-sync-theme.png`
+
+Keep final screenshots in this folder. Raw source captures belong in `source/`, which is ignored so uncensored or browser-chrome-heavy captures are not committed accidentally.
