@@ -16,6 +16,9 @@ The extension uses declarativeNetRequest to block selected media requests before
 host_permission:
 MotionBlock needs broad host access because users expect GIF, autoplay, video, audio, image, emoji, and CSS motion controls to work automatically on arbitrary websites. Content scripts run at document_start to inspect page media elements, Web Audio behavior, media URLs, CSS background media, audio-like request paths, and emoji text locally before distracting media starts moving. activeTab is not sufficient because it only grants temporary access after a user gesture and would not protect pages opened later or media loaded before the popup is clicked. A fixed site list is not sufficient because users configure their own per-site rules. MotionBlock does not transmit page content or browsing data to any developer-operated server.
 
+optional_uninstall_feedback:
+After uninstalling the Chrome version, Chrome may open an optional post-uninstall feedback page at https://molodchyk.com/motionblock/uninstall/. The extension includes only generic source, version, and Chrome UI language parameters. It does not include user identifiers, browsing data, page content, extension settings, per-site rules, local counters, media URLs, diagnostics, or copied logs. Feedback submission is voluntary and is intended to be processed by Formspree.
+
 remote_code:
 no
 
@@ -80,3 +83,4 @@ Current privacy position:
 - User data is not used for unrelated purposes.
 - User data is not used for creditworthiness or lending.
 - MotionBlock does not use analytics, remote configuration, tracking pixels, external accounts, or developer-operated sync servers.
+- MotionBlock may open an optional uninstall feedback page with only source, version, and UI-language parameters; the form is voluntary and should be disclosed separately from extension-collected data.

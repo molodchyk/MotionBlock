@@ -16,4 +16,10 @@ MotionBlock uses these permissions:
 
 MotionBlock does not make developer-operated network requests. All executable extension code is packaged with the extension. It does not use remote JavaScript, WebAssembly, analytics, ads, tracking, or remote code.
 
+## Optional Uninstall Feedback
+
+After uninstalling the Chrome version, Chrome may open an optional feedback page at `https://molodchyk.com/motionblock/uninstall/`. The extension sets only generic URL parameters for `source=chrome`, the extension version, and the Chrome UI language. It does not send user identifiers, browsing data, page content, settings, per-site rules, counters, media URLs, diagnostics, or copied logs.
+
+Submitting the feedback form is voluntary. The form is intended to be processed by Formspree and should not include personal data unless the user chooses to provide it.
+
 The use of information received from Chrome APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.

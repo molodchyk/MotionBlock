@@ -102,6 +102,8 @@ MotionBlock stores global defaults, per-site rules, display mode, reveal-button 
 
 MotionBlock does not collect analytics, send browsing data to a developer server, use remote rule lists, or run remote code. See `PRIVACY.md` and `docs/permissions.md`.
 
+After uninstalling the Chrome version, Chrome may open an optional feedback page at `https://molodchyk.com/motionblock/uninstall/`. The extension passes only generic `source`, `version`, and UI-language parameters to that page.
+
 ## Localization
 
 The extension UI, manifest metadata, and Chrome Web Store detailed description are localized for the 66 locales tracked in `docs/localization.md`. Locale files live in `_locales/<locale>/messages.json`; StorePilot-ready listing files live in `store-assets/store-listing/<locale>.txt`.

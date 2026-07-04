@@ -6,6 +6,7 @@ importScripts(
   "features/block-stats/background/tab-stats.js",
   "features/diagnostics/shared/url-sanitizer.js",
   "features/diagnostics/background/diagnostics-store.js",
+  "features/uninstall-feedback/background/uninstall-feedback.js",
   "app/background/message-router.js"
 );
 
@@ -14,6 +15,7 @@ const NETWORK_RULES = globalThis.MotionBlockNetworkRules;
 const TAB_STATS = globalThis.MotionBlockTabStats.createTabStatsStore(MB.FEATURE_KEYS);
 const DIAGNOSTICS = globalThis.MotionBlockDiagnosticsStore.createDiagnosticsStore();
 const SETTINGS_STORAGE = globalThis.MotionBlockSettingsStorage.createSettingsStorage(chrome, MB);
+const UNINSTALL_FEEDBACK = globalThis.MotionBlockUninstallFeedback;
 const handleMessage = globalThis.MotionBlockMessageRouter.createMessageRouter({
   addTemporaryAllowRules,
   config: MB,
@@ -28,6 +30,10 @@ const RULE_ID_END = 1299;
 const TEMP_ALLOW_RULE_ID_START = 910000;
 const TEMP_ALLOW_RULE_ID_END = 910199;
 let rulesUpdateQueue = Promise.resolve();
+
+UNINSTALL_FEEDBACK.configureUninstallFeedback(chrome).catch(function () {
+  return undefined;
+});
 
 chrome.runtime.onInstalled.addListener(function () {
   initializeSettings().then(rebuildDynamicRules);

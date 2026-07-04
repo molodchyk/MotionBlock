@@ -7,6 +7,7 @@ require("../src/platform/chrome/settings-storage.js");
 require("../src/features/network-blocking/background/dynamic-rules.js");
 require("../src/features/block-stats/background/tab-stats.js");
 require("../src/features/block-stats/content/block-stats.js");
+require("../src/features/uninstall-feedback/background/uninstall-feedback.js");
 require("../src/features/emoji-blocking/content/emoji.js");
 require("../src/features/media-blocking/content/url-utils.js");
 require("../src/features/media-blocking/content/element-inspection.js");
@@ -31,6 +32,7 @@ const mediaOriginalState = globalThis.MotionBlockMediaOriginalState;
 const messageRouter = globalThis.MotionBlockMessageRouter;
 const frameContext = globalThis.MotionBlockFrameContext;
 const popupView = globalThis.MotionBlockPopupView;
+const uninstallFeedback = globalThis.MotionBlockUninstallFeedback;
 
 assert.equal(MB.normalizeHostname("https://www.Reddit.com/r/test"), "reddit.com");
 assert.equal(MB.normalizeHostname("example.com:443"), "example.com");
@@ -149,6 +151,25 @@ assert.equal(background.includes("DNR_FEATURE_RULES"), false);
 assert.equal(background.includes("const tabStats = new Map"), false);
 assert.equal(background.includes("chrome.storage.sync.get"), false);
 assert.equal(background.includes("chrome.runtime.onMessage.addListener"), true);
+assert.equal(background.includes("features/uninstall-feedback/background/uninstall-feedback.js"), true);
+
+const uninstallUrl = new URL(uninstallFeedback.getUninstallFeedbackUrl({
+  i18n: {
+    getUILanguage() {
+      return "de";
+    }
+  },
+  runtime: {
+    getManifest() {
+      return { version: "1.0.1" };
+    }
+  }
+}));
+assert.equal(uninstallUrl.origin + uninstallUrl.pathname, "https://molodchyk.com/motionblock/uninstall/");
+assert.equal(uninstallUrl.searchParams.get("source"), "chrome");
+assert.equal(uninstallUrl.searchParams.get("version"), "1.0.1");
+assert.equal(uninstallUrl.searchParams.get("lang"), "de");
+assert.equal(Array.from(uninstallUrl.searchParams.keys()).sort().join(","), "lang,source,version");
 
 assert.deepEqual(mediaClassifier.splitUrlAttribute("a.jpg 1x, b.webp 2x"), ["a.jpg", "b.webp"]);
 assert.deepEqual(mediaClassifier.extractCssUrls('url("https://example.com/a.gif") linear-gradient(red, blue) url(/b.webp)'), [

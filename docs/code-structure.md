@@ -33,6 +33,7 @@ The target architecture is feature-first modules with thin runtime entries, pure
 - `src/features/diagnostics/page/media-audio-guard.js`: main-world guard for native media `muted` and `volume` setters while audio blocking is active.
 - `src/features/diagnostics/page/audio-probe.js`: main-world audio probe for page-owned `AudioContext`, media `play`, `fetch`, and `XMLHttpRequest` audio behavior. It has no Chrome API access and communicates with the isolated content script through bounded `postMessage` events.
 - `src/features/diagnostics/shared/url-sanitizer.js`: shared diagnostics URL sanitization and URL summary helpers used by content and background diagnostics.
+- `src/features/uninstall-feedback/background/uninstall-feedback.js`: background-only Chrome uninstall feedback URL construction and registration. The URL includes only source, version, and UI-language parameters.
 - `src/features/emoji-blocking/content/emoji.js`: emoji UI detection, emoji text/attribute stripping, restore behavior, and emoji count helpers.
 - `src/features/media-blocking/content/classifier.js`: media URL collection, media-like host detection, media/image block reason classification, and request URL normalization.
 - `src/features/media-blocking/content/custom-hosts.js`: custom element/media-host detection and block-reason classification.

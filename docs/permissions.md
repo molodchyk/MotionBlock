@@ -15,3 +15,5 @@ Used because users expect media blocking to work across arbitrary websites. Moti
 ## Privacy Position
 
 MotionBlock does not collect analytics, browse history, page content, or remote telemetry. Per-site rules are stored as hostnames in Chrome extension sync storage. If Chrome sync is enabled for extensions, Chrome may sync those settings between the user's Chrome installations. Optional diagnostics keep a bounded per-tab report in extension memory for user-initiated copying from the popup. MotionBlock does not operate its own sync server.
+
+Chrome may open the optional uninstall feedback page at `https://molodchyk.com/motionblock/uninstall/` after the extension is removed. The uninstall URL is limited to `source=chrome`, extension version, and Chrome UI language parameters, and does not include browsing data, page content, settings, counters, media URLs, diagnostics, or identifiers.

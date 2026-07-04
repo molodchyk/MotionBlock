@@ -2,6 +2,9 @@
 
 ## 1.0.1 - 2026-07-04
 
+- Added an optional Chrome post-uninstall feedback page hook at `https://molodchyk.com/motionblock/uninstall/`.
+- Kept uninstall feedback URL parameters limited to source, extension version, and Chrome UI language.
+- Documented the optional feedback flow in the privacy policy, permissions notes, and Chrome Web Store privacy form.
 - Fixed native-video audio blocking so YouTube-style video playback can continue while audio is forced silent with both `muted=true` and `volume=0`.
 - Added a main-world native media audio guard that records when pages try to unmute video or raise volume while audio blocking is active.
 - Improved popup and CLI diagnostics so copied logs identify native media, Web Audio, audio request paths, repeated video muting, and non-zero-volume mute failures.

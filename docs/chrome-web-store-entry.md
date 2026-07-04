@@ -80,7 +80,7 @@ For the Chrome Web Store privacy form, use:
 
 ### storage
 
-Used to save global defaults, per-site preferences, blocked media display mode, UI theme, and reveal-button preference in Chrome extension sync storage.
+Used to save global defaults, per-site preferences, blocked media display mode, UI theme, reveal-button preference, and advanced diagnostics preference in Chrome extension sync storage.
 
 ### declarativeNetRequest
 
@@ -92,9 +92,11 @@ Used because users expect media blocking to work across arbitrary websites. Moti
 
 ## Data Disclosure
 
-MotionBlock does not collect, sell, transmit, or analyze personal data. It does not use analytics, remote configuration, tracking pixels, external accounts, or developer-operated sync servers.
+MotionBlock does not collect, sell, transmit, or analyze personal data from extension activity. It does not use analytics, remote configuration, tracking pixels, external accounts, or developer-operated sync servers.
 
-MotionBlock reads page media elements only to apply the user's selected blocking rules. Per-site preferences are stored as hostnames in Chrome extension sync storage.
+MotionBlock reads page media elements, media URLs, CSS background media, Web Audio behavior, and emoji text only to apply the user's selected blocking rules locally. Per-site preferences are stored as hostnames in Chrome extension sync storage. Optional diagnostics remain in extension memory and are shown only for user-initiated copying from the popup.
+
+After uninstalling the Chrome version, Chrome may open an optional feedback page at `https://molodchyk.com/motionblock/uninstall/`. The uninstall URL includes only `source=chrome`, the extension version, and the Chrome UI language. Feedback submission is voluntary and intended to be processed by Formspree.
 
 ## Promo Assets
 

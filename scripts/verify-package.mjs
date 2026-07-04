@@ -53,6 +53,7 @@ try {
   assertExists("src/features/diagnostics/background/diagnostics-store.js");
   assertExists("src/features/diagnostics/content/audio-bridge.js");
   assertExists("src/features/diagnostics/content/diagnostics.js");
+  assertExists("src/features/uninstall-feedback/background/uninstall-feedback.js");
   assertExists("src/features/emoji-blocking/content/emoji.js");
   assertExists("src/features/media-blocking/content/url-utils.js");
   assertExists("src/features/media-blocking/content/element-inspection.js");
