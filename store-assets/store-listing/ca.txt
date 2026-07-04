@@ -1,0 +1,31 @@
+Bloqueja GIFs que distreuen, GIFV, reprodueix automàticament vídeos, previsualitza i moviments de pàgina abans que et molestin.
+
+Utilitza MotionBlock per aturar:
+
+Bucle GIF imatges.
+GIFV enllaços.
+Vídeos curts i silenciats utilitzats com GIFs.
+Reprodueix automàticament el vídeo i les previsualitzacions del cursor.
+Patrons d'URL animats WebP opcionals.
+Vídeo, àudio, imatges, emojis i moviment CSS opcionals.
+
+MotionBlock està construït al voltant del control per lloc. Mantingues els predeterminats globals conservadors i després permet o bloqueja tipus específics de mitjans en llocs web individuals des de la finestra emergent o la pàgina d'opcions. Les configuracions es mantenen a l'emmagatzematge de sincronització d'extensió Chrome i poden sincronitzar-se a través de Chrome si l'usuari té la sincronització d'extensió activada.
+
+Usos comuns:
+
+Deixa de distreure les animacions mentre llegeixes.
+Redueix el soroll de vídeo de reproducció automàtica.
+Estalvia amplada de banda de mitjans innecessaris.
+Avançaments flotants a l'estil YouTube blocs.
+Calm Reddit, Giphy, xarxes socials i pàgines de notícies que converteixen GIFs en vídeos curts.
+Permet llocs amb molta imatge mentre bloqueges el moviment en altres llocs.
+Permetre ràpidament els mitjans als llocs que ho necessiten.
+
+La finestra emergent controla el lloc actual. La pàgina d'opcions gestiona els valors per defecte globals, preferències per lloc, JSON importació/exportació de còpia de seguretat, la visualització de mitjans bloquejats, botons opcionals de revelació i el tema de la interfície de llum/foscor/sistema.
+
+Chrome no permet que les extensions modifiquin pàgines internes del navegador, la Chrome Web Store ni algunes pàgines protegides. Si els mitjans encara són visibles després d'instal·lar o canviar la configuració, recarrega la pàgina.
+
+MotionBlock no recull anàlisis, no envia dades de navegació a un servidor ni utilitza llistes remotes de regles.
+
+Codi obert sota la llicència GPL-3.0:
+https://github.com/molodchyk/MotionBlock

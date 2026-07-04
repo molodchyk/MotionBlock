@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock GIF ব্লকার এবং অ্যানিমেশন স্টপার"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "প্রতি সাইট নিয়ন্ত্রণের সাথে GIFs, GIFV, অটোপ্লে ভিডিও, হোভার প্রিভিউ এবং বিভ্রান্তিকর গতি বন্ধ করুন।"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock বিকল্প"
+  },
+  "siteLoading": {
+    "message": "সাইট লোড হচ্ছে..."
+  },
+  "optionsButton": {
+    "message": "বিকল্পগুলি"
+  },
+  "statusOnInitial": {
+    "message": "চালু"
+  },
+  "checkingActiveRules": {
+    "message": "সক্রিয় বিধি পরীক্ষা করা হচ্ছে..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ অবরুদ্ধ করা হয়েছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "ব্লক মোশন এখানে"
+  },
+  "allowThisSite": {
+    "message": "এই সাইটটিকে অনুমতি দিন"
+  },
+  "siteMode": {
+    "message": "সাইট মোড"
+  },
+  "followGlobalDefaults": {
+    "message": "গ্লোবাল ডিফল্টগুলি অনুসরণ করুন"
+  },
+  "blockOnThisSite": {
+    "message": "এই সাইটে ব্লক করুন"
+  },
+  "allowThisSiteOption": {
+    "message": "এই সাইটটিকে অনুমতি দিন"
+  },
+  "siteMediaControls": {
+    "message": "সাইট মিডিয়া নিয়ন্ত্রণ"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "ডায়াগনস্টিকস"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock ডায়াগনস্টিক লগ"
+  },
+  "copyDiagnostics": {
+    "message": "লগ অনুলিপি করুন"
+  },
+  "refreshDiagnostics": {
+    "message": "রিফ্রেশ করুন"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ ডায়াগোনস্টিক ঘটনাবলী রেকর্ড করা হয়েছে।",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "এখনও কোনও ডায়াগনস্টিক নেই। এই ট্যাবটি পুনরায় লোড করুন, সমস্যাটি পুনরুত্পাদন করুন তারপর এই প্যানেলটি রিফ্রেশ করুন।"
+  },
+  "diagnosticsRefreshed": {
+    "message": "ডায়াগনস্টিকগুলি রিফ্রেশ করা হয়েছে।"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "ডায়াগনস্টিকগুলি রিফ্রেশ করা যায়নি।"
+  },
+  "diagnosticsCopied": {
+    "message": "ডায়াগনস্টিকগুলি অনুলিপি করা হয়েছে।"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "ডায়াগনস্টিকগুলি অনুলিপি করা যায়নি।"
+  },
+  "resetSite": {
+    "message": "সাইট রিসেট করুন"
+  },
+  "reloadTab": {
+    "message": "পুনরায় লোড করুন"
+  },
+  "reloadHint": {
+    "message": "ইতিমধ্যে অবরুদ্ধ বা লোড করা মিডিয়ার জন্য পুনরায় লোডের প্রয়োজন হতে পারে।"
+  },
+  "unknownSite": {
+    "message": "অচেনা সাইট"
+  },
+  "statusBlocking": {
+    "message": "ব্লক করা হচ্ছে"
+  },
+  "statusAllowed": {
+    "message": "অনুমোদিত"
+  },
+  "couldNotLoadSettings": {
+    "message": "সেটিংস লোড করা যায়নি"
+  },
+  "notAWebsite": {
+    "message": "কোন ওয়েবসাইট নয়"
+  },
+  "statusNotApplicable": {
+    "message": "এন / এ"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ব্রাউজার, এক্সটেনশন বা অন্যান্য সুরক্ষিত পৃষ্ঠাগুলি কনফিগার করতে পারে না।"
+  },
+  "selectUseGlobal": {
+    "message": "গ্লোবাল ব্যবহার করুন"
+  },
+  "selectBlockHere": {
+    "message": "এখানে ব্লক করুন"
+  },
+  "selectAllowHere": {
+    "message": "এখানে অনুমতি দিন"
+  },
+  "summaryAllowed": {
+    "message": "এই সাইটটি অনুমোদিত।MotionBlock এখানে মিডিয়া ব্লক করছে না।"
+  },
+  "summaryActiveNoCategories": {
+    "message": "এখানে সক্রিয়, কিন্তু বর্তমানে কোনও মিডিয়া বিভাগ অবরুদ্ধ নেই।"
+  },
+  "summaryBlockingFeatures": {
+    "message": "এই সাইটে $FEATURES$ ব্লক করা হচ্ছে।",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "এই সাইটের জন্য MotionBlock সমস্ত নিয়ম বন্ধ রয়েছে।"
+  },
+  "siteRuleOwnSettings": {
+    "message": "এই সাইটটি তার নিজস্ব MotionBlock সেটিংস ব্যবহার করে।"
+  },
+  "siteRuleOverrides": {
+    "message": "এই সাইটটি মিডিয়া-নির্দিষ্ট ওভাররাইড সহ বিশ্বব্যাপী অবস্থা অনুসরণ করে।"
+  },
+  "siteRuleDefaults": {
+    "message": "এই সাইটটি আপনার বিশ্বব্যাপী ডিফল্ট অনুসরণ করে।"
+  },
+  "featureMetaInactive": {
+    "message": "সাইট অনুমোদিত থাকাকালীন নিষ্ক্রিয়"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "ওভাররাইড: ব্লক করা"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "ওভাররাইড: অনুমোদিত"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "গ্লোবাল: ব্লকিং"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "গ্লোবাল: অনুমোদিত"
+  },
+  "optionsIntro": {
+    "message": "গ্লোবাল মিডিয়া ডিফল্ট এবং প্রতি সাইট পছন্দ।"
+  },
+  "extensionActive": {
+    "message": "এক্সটেনশন সক্রিয়"
+  },
+  "globalDefaultsHeading": {
+    "message": "গ্লোবাল ডিফল্ট"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF-এর মতো ভিডিও এবং অটোপ্লে দিয়ে শুরু করুন। যখন কোনও সাইটের কঠোর মিডিয়া নিয়ন্ত্রণের প্রয়োজন হয় তখনই ব্রড ব্লকার ব্যবহার করুন।"
+  },
+  "restoreRecommended": {
+    "message": "পুনরুদ্ধার প্রস্তাবিত পুনরুদ্ধার"
+  },
+  "blockedMediaDisplay": {
+    "message": "অবরুদ্ধ মিডিয়া ডিসপ্লে"
+  },
+  "replacementPlaceholder": {
+    "message": "কমপ্যাক্ট প্লেসহোল্ডার"
+  },
+  "replacementHide": {
+    "message": "উপাদান লুকান"
+  },
+  "interfaceTheme": {
+    "message": "ইন্টারফেস থিম"
+  },
+  "themeSystem": {
+    "message": "সিস্টেম"
+  },
+  "themeLight": {
+    "message": "আলো"
+  },
+  "themeDark": {
+    "message": "অন্ধকার"
+  },
+  "revealControlsTitle": {
+    "message": "অবরুদ্ধ মিডিয়ার জন্য বোতামগুলি প্রকাশ করুন"
+  },
+  "revealControlsDescription": {
+    "message": "অবরুদ্ধ মিডিয়াতে ক্লিক-টু-প্লে/শো বোতামগুলি দেখান। ডিফল্টরূপে বন্ধ কারণ কিছু সাইট লুকানো মিডিয়া পৃষ্ঠতলগুলি পুনরায় ব্যবহার করে।"
+  },
+  "diagnosticsTitle": {
+    "message": "অ্যাডভান্সড ডায়াগনস্টিকস"
+  },
+  "diagnosticsDescription": {
+    "message": "আপনি কোনও অবরোধের সমস্যা পুনরুত্পাদন করার সময় পপআপে একটি অনুলিপিযোগ্য প্রতি ট্যাব ডায়াগোনস্টিক লগ দেখান।"
+  },
+  "websitePreferencesHeading": {
+    "message": "ওয়েবসাইটের পছন্দগুলি"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com বা news.example.com এর মতো সঠিক হোস্টনাম ব্যবহার করুন।"
+  },
+  "addSite": {
+    "message": "সাইট যোগ করুন"
+  },
+  "backupHeading": {
+    "message": "ব্যাকআপ"
+  },
+  "backupIntro": {
+    "message": "সেটিংস Chrome সিঙ্ক স্টোরেজে সঞ্চিত হয়। এক্সটেনশনগুলির জন্য Chrome সিঙ্ক সক্ষম থাকলে, তারা আপনার Chrome প্রোফাইল অনুসরণ করতে পারে।"
+  },
+  "exportJson": {
+    "message": "রফতানি JSON"
+  },
+  "importFile": {
+    "message": "ফাইল আমদানি করুন"
+  },
+  "applyPastedJson": {
+    "message": "প্রতিলেপন করা JSON প্রয়োগ করুন"
+  },
+  "refreshFromSync": {
+    "message": "সিঙ্ক থেকে রিফ্রেশ করুন"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "রপ্তানী পূর্বরূপ এখানে উপস্থিত হয়। আপনি একটি MotionBlock JSON ব্যাকআপ পেস্ট করতে পারেন এবং এটি প্রয়োগ করতে পারেন।"
+  },
+  "globalStatusSaved": {
+    "message": "গ্লোবাল স্ট্যাটাস সংরক্ষণ করা হয়েছে।"
+  },
+  "globalDefaultsSaved": {
+    "message": "গ্লোবাল ডিফল্টগুলি সংরক্ষিত হয়েছে।"
+  },
+  "displayModeSaved": {
+    "message": "ডিসপ্লে মোড সংরক্ষিত হয়েছে।"
+  },
+  "themeSaved": {
+    "message": "থিম সংরক্ষণ করা হয়েছে।"
+  },
+  "revealSettingSaved": {
+    "message": "প্রকাশ বোতাম সেটিং সংরক্ষণ করা হয়েছে।"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "ডায়াগনস্টিক সেটিং সংরক্ষিত হয়েছে।"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "প্রস্তাবিত ডিফল্টগুলি পুনরুদ্ধার করা হয়েছে।"
+  },
+  "enterValidHostname": {
+    "message": "একটি বৈধ হোস্টনাম লিখুন।"
+  },
+  "siteAdded": {
+    "message": "সাইট যোগ করা হয়েছে।"
+  },
+  "siteRuleSaved": {
+    "message": "সাইটের নিয়ম সংরক্ষিত হয়েছে।"
+  },
+  "siteRemoved": {
+    "message": "সাইট মুছে ফেলা হয়েছে।"
+  },
+  "settingsExported": {
+    "message": "সেটিংস একটি JSON ফাইলে রপ্তানী করা হয়েছে।"
+  },
+  "settingsImportedFromFile": {
+    "message": "ফাইল থেকে সেটিংস আমদানি করা হয়েছে।"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "প্রতিলেপন করা JSON থেকে সেটিংস আমদানি করা হয়েছে।"
+  },
+  "settingsRefreshed": {
+    "message": "Chrome সিঙ্ক থেকে সেটিংস রিফ্রেশ হয়েছে।"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "সেটিংস লোড করা যায়নি।"
+  },
+  "defaultOn": {
+    "message": "ডিফল্ট চালু"
+  },
+  "defaultOff": {
+    "message": "ডিফল্ট বন্ধ"
+  },
+  "noWebsitePreferences": {
+    "message": "এখনও কোনও ওয়েবসাইটের পছন্দ নেই।"
+  },
+  "removeSite": {
+    "message": "অপসারণ করুন"
+  },
+  "siteTableSite": {
+    "message": "সাইট"
+  },
+  "siteTableActive": {
+    "message": "সক্রিয়"
+  },
+  "selectInherit": {
+    "message": "উত্তরাধিকার সূত্রে"
+  },
+  "selectBlock": {
+    "message": "ব্লক"
+  },
+  "selectAllow": {
+    "message": "অনুমতি দিন"
+  },
+  "selectOn": {
+    "message": "চালু"
+  },
+  "selectOff": {
+    "message": "বন্ধ"
+  },
+  "saveFailed": {
+    "message": "সংরক্ষণ ব্যর্থ হয়েছে।"
+  },
+  "importFailed": {
+    "message": "আমদানি ব্যর্থ হয়েছে: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "একটি JSON ফাইল চয়ন করুন বা প্রথমে একটি ব্যাকআপ প্রতিলেপন করুন।"
+  },
+  "invalidJson": {
+    "message": "অবৈধ JSON।"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "এটি কোনও MotionBlock সেটিংস ব্যাকআপের মতো দেখাচ্ছে না।"
+  },
+  "errorMissingMessageType": {
+    "message": "অনুপস্থিত বার্তার ধরন।"
+  },
+  "errorMissingSiteHostname": {
+    "message": "অনুপস্থিত সাইট হোস্টনেম।"
+  },
+  "errorUnknownMessageType": {
+    "message": "অজানা বার্তার ধরন।"
+  },
+  "featureGifsLabel": {
+    "message": "GIF চিত্র"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "ক্ষুদ্র ইন্টারফেসকে একা GIFs রেখে পৃষ্ঠায় GIF চিত্রের উপাদানগুলি প্রতিস্থাপন করুন।"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV এবং GIF-এর মতো ভিডিও URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": ".gifv URL এবং ভিডিও উপাদানগুলি ব্লক করুন যা লুপিং GIFs এর মতো আচরণ করে।"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL প্যাটার্ন"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp চিত্র URLগুলি অবরোধ করুন। ডিফল্টরূপে বন্ধ কারণ অনেক WebP চিত্র অ্যানিমেটেড নয়।"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "অটোপ্লে এবং লুপিং ভিডিও"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "অটোপ্লে"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "ভিডিওতে বিরাম দিন এবং অ্যানিমেশন হিসাবে ব্যবহৃত নীরব লুপিং ভিডিও অপসারণ করুন।"
+  },
+  "featureVideoLabel": {
+    "message": "সকল ভিডিও"
+  },
+  "featureVideoShortLabel": {
+    "message": "ভিডিও"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 ভিডিও এবং সাধারণ ভিডিও ফাইলের অনুরোধগুলি অবরোধ করুন।"
+  },
+  "featureAudioLabel": {
+    "message": "অডিও"
+  },
+  "featureAudioShortLabel": {
+    "message": "অডিও"
+  },
+  "featureAudioDescription": {
+    "message": "অডিও উপাদান এবং সাধারণ অডিও ফাইলের অনুরোধগুলি অবরোধ করুন।"
+  },
+  "featureImagesLabel": {
+    "message": "সকল চিত্র"
+  },
+  "featureImagesShortLabel": {
+    "message": "চিত্র"
+  },
+  "featureImagesDescription": {
+    "message": "পৃষ্ঠায় চিত্রের উপাদানগুলি প্রতিস্থাপন করুন। চিত্র-ভারী সাইটগুলির জন্য প্রতি সাইটের অনুমতি নিয়ম ব্যবহার করুন।"
+  },
+  "featureEmojiLabel": {
+    "message": "ইমোজি পাঠ্য এবং ইমোজি চিত্রগুলি"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ইমোজি"
+  },
+  "featureEmojiDescription": {
+    "message": "ইমোজি অক্ষর এবং সাধারণ ইমোজি চিত্র রেন্ডারারগুলি অপসারণ করুন। ডিফল্টরূপে বন্ধ কারণ এটি পাঠ্য পরিবর্তন করে।"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS অ্যানিমেশন এবং ট্রানজিশন"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS অ্যানিমেশন, স্থানান্তর এবং মসৃণ স্ক্রোলিং অক্ষম করুন।"
+  },
+  "featureGroupMotionLabel": {
+    "message": "মোশন ব্লকিং"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF-এর মতো ভিডিওগুলি, অটোপ্লে এবং পৃষ্ঠার গতির জন্য প্রস্তাবিত ডিফল্ট।"
+  },
+  "featureGroupBroadLabel": {
+    "message": "ব্রড মিডিয়া ব্লকার"
+  },
+  "featureGroupBroadDescription": {
+    "message": "চিত্র, ভিডিও, অডিও, WebP ইউআরএল এবং ইমোজির জন্য পাওয়ার-ইউজার নিয়ন্ত্রণ। এগুলো কিছু সাইট পরিবর্তন বা ভেঙে ফেলতে পারে।"
+  },
+  "contentShowBlockedImage": {
+    "message": "অবরুদ্ধ চিত্র দেখান"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "অবরুদ্ধ অডিও প্লে করুন"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "অবরুদ্ধ ভিডিও প্লে করুন"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "অবরুদ্ধ মিডিয়া প্লে করুন"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock দ্বারা অবরুদ্ধ: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "অবরুদ্ধ $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF ধরনের মিডিয়া"
+  },
+  "contentReasonVideo": {
+    "message": "ভিডিও"
+  },
+  "contentReasonAudio": {
+    "message": "অডিও"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "লুপিং ভিডিও"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ভিডিও অটোপ্লে করুন"
+  },
+  "contentReasonImage": {
+    "message": "চিত্র"
+  },
+  "contentReasonMedia": {
+    "message": "মিডিয়া"
+  }
+}

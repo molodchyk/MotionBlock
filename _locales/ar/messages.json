@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: مانع GIF وموقف الرسوم المتحركة"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "إيقاف GIFs، GIFV، تشغيل الفيديو تلقائيا، معاينات التحميض (الهويم)، والحركة المشتتة مع التحكم في كل موقع."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "خيارات MotionBlock"
+  },
+  "siteLoading": {
+    "message": "موقع التحميل..."
+  },
+  "optionsButton": {
+    "message": "الخيارات"
+  },
+  "statusOnInitial": {
+    "message": "شغلوا"
+  },
+  "checkingActiveRules": {
+    "message": "التحقق من القواعد النشطة..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ تم حجبها",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "حركة الكتلة هنا"
+  },
+  "allowThisSite": {
+    "message": "السماح بهذا الموقع"
+  },
+  "siteMode": {
+    "message": "وضع الموقع"
+  },
+  "followGlobalDefaults": {
+    "message": "اتباع الافتراضيات العالمية"
+  },
+  "blockOnThisSite": {
+    "message": "حظر على هذا الموقع"
+  },
+  "allowThisSiteOption": {
+    "message": "السماح بهذا الموقع"
+  },
+  "siteMediaControls": {
+    "message": "ضوابط الوسائط في الموقع"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "التشخيصات"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "سجل التشخيص MotionBlock"
+  },
+  "copyDiagnostics": {
+    "message": "سجل النسخ"
+  },
+  "refreshDiagnostics": {
+    "message": "تحديث"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ الأحداث التشخيصية المسجلة.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "لا توجد فحوصات تشخيصية حتى الآن. أعد تحميل هذا التبويب، ثم أعد ظهور المشكلة، ثم قم بتحديث هذه اللوحة."
+  },
+  "diagnosticsRefreshed": {
+    "message": "تم تحديث التشخيصات."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "لم أتمكن من تحديث التشخيصات."
+  },
+  "diagnosticsCopied": {
+    "message": "تم نسخ التشخيصات."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "لم أتمكن من نسخ التشخيصات."
+  },
+  "resetSite": {
+    "message": "إعادة ضبط الموقع"
+  },
+  "reloadTab": {
+    "message": "إعادة التعبئة"
+  },
+  "reloadHint": {
+    "message": "قد تكون هناك حاجة لإعادة التحميل للوسائط التي تم حظرها أو تحميلها بالفعل."
+  },
+  "unknownSite": {
+    "message": "الموقع غير معروف"
+  },
+  "statusBlocking": {
+    "message": "الحجب"
+  },
+  "statusAllowed": {
+    "message": "مسموح به"
+  },
+  "couldNotLoadSettings": {
+    "message": "لم أتمكن من تحميل الإعدادات"
+  },
+  "notAWebsite": {
+    "message": "ليس موقعا إلكترونيا"
+  },
+  "statusNotApplicable": {
+    "message": "لا يوجد"
+  },
+  "unsupportedPageSummary": {
+    "message": "لا يمكن MotionBlock تكوين المتصفح أو الإضافة أو الصفحات المحمية الأخرى."
+  },
+  "selectUseGlobal": {
+    "message": "الاستخدام العالمي"
+  },
+  "selectBlockHere": {
+    "message": "الحظر هنا"
+  },
+  "selectAllowHere": {
+    "message": "اسمح لي هنا"
+  },
+  "summaryAllowed": {
+    "message": "هذا الموقع مسموح به. MotionBlock لا يمنع الإعلام هنا."
+  },
+  "summaryActiveNoCategories": {
+    "message": "نشط هنا، لكن لا توجد فئات إعلامية محجوبة حاليا."
+  },
+  "summaryBlockingFeatures": {
+    "message": "حجب $FEATURES$ على هذا الموقع.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "جميع MotionBlock القواعد غير صحيحة لهذا الموقع."
+  },
+  "siteRuleOwnSettings": {
+    "message": "يستخدم هذا الموقع إعدادات MotionBlock خاصة به."
+  },
+  "siteRuleOverrides": {
+    "message": "يتبع هذا الموقع مكانة عالمية مع تجاوزات خاصة بالوسائط."
+  },
+  "siteRuleDefaults": {
+    "message": "هذا الموقع يتبع إعدادات الإعداد العامة الخاصة بك."
+  },
+  "featureMetaInactive": {
+    "message": "غير نشط طالما يسمح بالموقع"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "التجاوز: الحظر"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "تجاوز الجهاز: مسموح"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "عالمي: الحجب"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "عالمي: مسموح"
+  },
+  "optionsIntro": {
+    "message": "إعدادات الإعداد الافتراضي للوسائط العالمية وتفضيلات كل موقع."
+  },
+  "extensionActive": {
+    "message": "الامتداد نشط"
+  },
+  "globalDefaultsHeading": {
+    "message": "التخلف عن السداد العالمي"
+  },
+  "globalDefaultsIntro": {
+    "message": "ابدأ بالفيديو GIFs، والفيديو GIF يشبه، والتشغيل التلقائي. استخدم الحواجز الواسعة فقط عندما يحتاج الموقع إلى رقابة إعلامية أكثر صرامة."
+  },
+  "restoreRecommended": {
+    "message": "موصى باستعادة"
+  },
+  "blockedMediaDisplay": {
+    "message": "عرض الوسائط المحجوبة"
+  },
+  "replacementPlaceholder": {
+    "message": "المفتاح المؤقت المدمج"
+  },
+  "replacementHide": {
+    "message": "عنصر الاختباء"
+  },
+  "interfaceTheme": {
+    "message": "موضوع الواجهة"
+  },
+  "themeSystem": {
+    "message": "النظام"
+  },
+  "themeLight": {
+    "message": "الضوء"
+  },
+  "themeDark": {
+    "message": "دارك"
+  },
+  "revealControlsTitle": {
+    "message": "أزرار الكشف عن الوسائط المحجوبة"
+  },
+  "revealControlsDescription": {
+    "message": "أزرار عرض النقر للتشغيل/العرض على الوسائط المحجوبة. هذا غير فعال بشكل افتراضي لأن بعض المواقع تعيد استخدام أسطح الوسائط المخفية."
+  },
+  "diagnosticsTitle": {
+    "message": "التشخيصات المتقدمة"
+  },
+  "diagnosticsDescription": {
+    "message": "عرض سجل تشخيصي قابل للنسخ لكل تبويب في النافذة المنبثقة أثناء إعادة إنتاج مشكلة الحجب."
+  },
+  "websitePreferencesHeading": {
+    "message": "تفضيلات الموقع الإلكتروني"
+  },
+  "websitePreferencesIntro": {
+    "message": "استخدم أسماء مضيفين دقيقة مثل reddit.com، discord.com، أو news.example.com."
+  },
+  "addSite": {
+    "message": "إضافة الموقع"
+  },
+  "backupHeading": {
+    "message": "النسخ الاحتياطي"
+  },
+  "backupIntro": {
+    "message": "يتم تخزين الإعدادات في تخزين Chrome المزامنة. إذا كان Chrome المزامنة مفعلة للإضافات، يمكنهم متابعة ملفك الشخصي Chrome."
+  },
+  "exportJson": {
+    "message": "تصدير JSON"
+  },
+  "importFile": {
+    "message": "استيراد ملف"
+  },
+  "applyPastedJson": {
+    "message": "ضع JSON الملصق"
+  },
+  "refreshFromSync": {
+    "message": "تحديث من التزامن"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "يظهر معاينة التصدير هنا. يمكنك أيضا لصق نسخة احتياطية MotionBlock JSON وتطبيقها."
+  },
+  "globalStatusSaved": {
+    "message": "تم حفظ الوضع العالمي."
+  },
+  "globalDefaultsSaved": {
+    "message": "تم حفظ التخلفات عن السداد العالمية."
+  },
+  "displayModeSaved": {
+    "message": "تم حفظ وضع العرض."
+  },
+  "themeSaved": {
+    "message": "تم حفظ الموضوع."
+  },
+  "revealSettingSaved": {
+    "message": "تم حفظ إعداد زر الكشف (Clar)."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "تم حفظ إعداد التشخيص."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "تم استعادة الإعدادات الافتراضية الموصى بها."
+  },
+  "enterValidHostname": {
+    "message": "أدخل اسم مضيف صالح."
+  },
+  "siteAdded": {
+    "message": "أضيف الموقع."
+  },
+  "siteRuleSaved": {
+    "message": "تم حفظ قاعدة الموقع."
+  },
+  "siteRemoved": {
+    "message": "تم حذف الموقع."
+  },
+  "settingsExported": {
+    "message": "تم تصدير الإعدادات إلى ملف JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "الإعدادات المستوردة من الملف."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "الإعدادات المستوردة من JSON اللصق."
+  },
+  "settingsRefreshed": {
+    "message": "تم تحديث الإعدادات من Chrome المزامنة."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "لم أتمكن من تحميل الإعدادات."
+  },
+  "defaultOn": {
+    "message": "الافتراضي"
+  },
+  "defaultOff": {
+    "message": "إيقاف افتراضي"
+  },
+  "noWebsitePreferences": {
+    "message": "لا توجد تفضيلات للموقع الإلكتروني حتى الآن."
+  },
+  "removeSite": {
+    "message": "إزالة"
+  },
+  "siteTableSite": {
+    "message": "الموقع"
+  },
+  "siteTableActive": {
+    "message": "نشط"
+  },
+  "selectInherit": {
+    "message": "الوراثة"
+  },
+  "selectBlock": {
+    "message": "الكتلة"
+  },
+  "selectAllow": {
+    "message": "السماح"
+  },
+  "selectOn": {
+    "message": "شغلوا"
+  },
+  "selectOff": {
+    "message": "انطلق"
+  },
+  "saveFailed": {
+    "message": "فشل الحفظ."
+  },
+  "importFailed": {
+    "message": "فشل الاستيراد: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "اختر ملف JSON أو الصق نسخة احتياطية أولا."
+  },
+  "invalidJson": {
+    "message": "JSON غير صالح."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "هذا لا يبدو كنسخة احتياطية من إعدادات MotionBlock."
+  },
+  "errorMissingMessageType": {
+    "message": "نوع الرسالة مفقود."
+  },
+  "errorMissingSiteHostname": {
+    "message": "اسم المضيف مفقود للموقع."
+  },
+  "errorUnknownMessageType": {
+    "message": "نوع الرسالة غير معروف."
+  },
+  "featureGifsLabel": {
+    "message": "GIF الصور"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "استبدل عناصر الصورة GIF في الصفحة مع ترك GIFs الواجهة الصغيرة كما هي."
+  },
+  "featureGifvLabel": {
+    "message": "روابط الفيديو GIFV و GIF المشابهة"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "قم بحجب روابط .gifv وعناصر الفيديو التي تتصرف كتكرار GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP أنماط الروابط"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "حظر روابط صور .webp. هذا غير فعال بشكل افتراضي لأن العديد من صور WebP غير متحركة."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "التشغيل التلقائي وتكرار الفيديو"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "التشغيل التلقائي"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "أوقف تشغيل الفيديو التلقائي وقم بإزالة الفيديو المتكرر الصامت المستخدم كرسوم متحركة."
+  },
+  "featureVideoLabel": {
+    "message": "جميع الفيديوهات"
+  },
+  "featureVideoShortLabel": {
+    "message": "الفيديو"
+  },
+  "featureVideoDescription": {
+    "message": "حجب HTML5 الفيديو وطلبات ملفات الفيديو الشائعة."
+  },
+  "featureAudioLabel": {
+    "message": "الصوت"
+  },
+  "featureAudioShortLabel": {
+    "message": "الصوت"
+  },
+  "featureAudioDescription": {
+    "message": "حجب عناصر الصوت وطلبات ملفات الصوت الشائعة."
+  },
+  "featureImagesLabel": {
+    "message": "جميع الصور"
+  },
+  "featureImagesShortLabel": {
+    "message": "الصور"
+  },
+  "featureImagesDescription": {
+    "message": "استبدل عناصر الصورة في الصفحة. استخدم قواعد السماح لكل موقع للمواقع التي تعتمد على الكثير من الصور."
+  },
+  "featureEmojiLabel": {
+    "message": "نص الإيموجي وصور الإيموجي"
+  },
+  "featureEmojiShortLabel": {
+    "message": "الإيموجي"
+  },
+  "featureEmojiDescription": {
+    "message": "قم بإزالة رموز الإيموجي وبرامج عرض الصور الشائعة للرموز التعبيرية. هذا غير فعال بشكل افتراضي لأنه يغير النص."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS الرسوم المتحركة والانتقالات"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "قم بتعطيل CSS الحركات والانتقالات والتمرير السلس."
+  },
+  "featureGroupMotionLabel": {
+    "message": "حجب الحركة"
+  },
+  "featureGroupMotionDescription": {
+    "message": "الإعدادات الافتراضية الموصى بها لمقاطع الفيديو GIFs و GIF المشابهة، والتشغيل التلقائي، وحركة الصفحات."
+  },
+  "featureGroupBroadLabel": {
+    "message": "حاجب الوسائط الواسعة"
+  },
+  "featureGroupBroadDescription": {
+    "message": "تحكم المستخدم المحترف للصور، الفيديو، الصوت، روابط WebP، والرموز التعبيرية. هذه يمكن أن تغير أو تتلف بعض المواقع."
+  },
+  "contentShowBlockedImage": {
+    "message": "عرض الصورة المحجوبة"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "شغل الصوت المحجب"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "شغل الفيديو المحظور"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "تشغيل الوسائط المحجوبة"
+  },
+  "contentBlockedByTitle": {
+    "message": "تم الحظر من قبل MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "تم حظر $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "وسائط شبيهة ب GIF"
+  },
+  "contentReasonVideo": {
+    "message": "الفيديو"
+  },
+  "contentReasonAudio": {
+    "message": "الصوت"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "الفيديو المتكرر"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "فيديو التشغيل التلقائي"
+  },
+  "contentReasonImage": {
+    "message": "صورة"
+  },
+  "contentReasonMedia": {
+    "message": "الإعلام"
+  }
+}

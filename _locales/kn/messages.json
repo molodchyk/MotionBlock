@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF ಬ್ಲಾಕರ್ ಮತ್ತು ಅನಿಮೇಷನ್ ಸ್ಟಾಪರ್"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "ಪ್ರತಿ-ಸೈಟ್ ನಿಯಂತ್ರಣಗಳೊಂದಿಗೆ GIFs, GIFV, ಆಟೋಪ್ಲೇ ವೀಡಿಯೊ, ಹೋವರ್ ಪೂರ್ವವೀಕ್ಷಣೆಗಳು ಮತ್ತು ವಿಚಲಿತಗೊಳಿಸುವ ಚಲನೆಯನ್ನು ನಿಲ್ಲಿಸಿ."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock ಆಯ್ಕೆಗಳು"
+  },
+  "siteLoading": {
+    "message": "ಸೈಟ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ..."
+  },
+  "optionsButton": {
+    "message": "ಆಯ್ಕೆಗಳು"
+  },
+  "statusOnInitial": {
+    "message": "ಆನ್"
+  },
+  "checkingActiveRules": {
+    "message": "ಸಕ್ರಿಯ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "ಇಲ್ಲಿ ಚಲನೆಯನ್ನು ನಿರ್ಬಂಧಿಸಿ"
+  },
+  "allowThisSite": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಅನುಮತಿಸು"
+  },
+  "siteMode": {
+    "message": "ಸೈಟ್ ಮೋಡ್"
+  },
+  "followGlobalDefaults": {
+    "message": "ಜಾಗತಿಕ ಡೀಫಾಲ್ಟ್ ಗಳನ್ನು ಅನುಸರಿಸಿ"
+  },
+  "blockOnThisSite": {
+    "message": "ಈ ಸೈಟ್ ನಲ್ಲಿ ನಿರ್ಬಂಧಿಸಿ"
+  },
+  "allowThisSiteOption": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಅನುಮತಿಸು"
+  },
+  "siteMediaControls": {
+    "message": "ಸೈಟ್ ಮಾಧ್ಯಮ ನಿಯಂತ್ರಣಗಳು"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "ರೋಗನಿರ್ಣಯ"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಲಾಗ್"
+  },
+  "copyDiagnostics": {
+    "message": "ಲಾಗ್ ನಕಲಿಸಿ"
+  },
+  "refreshDiagnostics": {
+    "message": "ತಾಜಾ ಮಾಡಿ"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ ರೋಗಪತ್ತೆ ಘಟನೆಗಳನ್ನು ದಾಖಲಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "ಇನ್ನೂ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಇಲ್ಲ. ಈ ಟ್ಯಾಬ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ, ಸಮಸ್ಯೆಯನ್ನು ಪುನರುತ್ಪಾದಿಸಿ, ನಂತರ ಈ ಫಲಕವನ್ನು ತಾಜಾಗೊಳಿಸಿ."
+  },
+  "diagnosticsRefreshed": {
+    "message": "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ರಿಫ್ರೆಶ್ ಆಗಿದೆ."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಅನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
+  "diagnosticsCopied": {
+    "message": "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಅನ್ನು ನಕಲು ಮಾಡಲಾಗಿದೆ."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಅನ್ನು ನಕಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
+  "resetSite": {
+    "message": "ಸೈಟ್ ಮರುಹೊಂದಿಸಿ"
+  },
+  "reloadTab": {
+    "message": "ಮರುಲೋಡ್ ಮಾಡಿ"
+  },
+  "reloadHint": {
+    "message": "ಈಗಾಗಲೇ ನಿರ್ಬಂಧಿಸಲಾದ ಅಥವಾ ಲೋಡ್ ಮಾಡಲಾದ ಮಾಧ್ಯಮಕ್ಕೆ ರೀಲೋಡ್ ಅಗತ್ಯವಾಗಬಹುದು."
+  },
+  "unknownSite": {
+    "message": "ಅಜ್ಞಾತ ಸೈಟ್"
+  },
+  "statusBlocking": {
+    "message": "ನಿರ್ಬಂಧಿಸಲಾಗುತ್ತಿದೆ"
+  },
+  "statusAllowed": {
+    "message": "ಅನುಮತಿಸಲಾಗಿದೆ"
+  },
+  "couldNotLoadSettings": {
+    "message": "ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+  },
+  "notAWebsite": {
+    "message": "ವೆಬ್ ಸೈಟ್ ಅಲ್ಲ"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ಬ್ರೌಸರ್, ವಿಸ್ತರಣೆ, ಅಥವಾ ಇತರ ಸಂರಕ್ಷಿತ ಪುಟಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "selectUseGlobal": {
+    "message": "ಜಾಗತಿಕ ಬಳಕೆ ಮಾಡಿ"
+  },
+  "selectBlockHere": {
+    "message": "ಇಲ್ಲಿ ನಿರ್ಬಂಧಿಸಿ"
+  },
+  "selectAllowHere": {
+    "message": "ಇಲ್ಲಿ ಅನುಮತಿಸು"
+  },
+  "summaryAllowed": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಅನುಮತಿಸಲಾಗಿದೆ. MotionBlock ಇಲ್ಲಿ ಮಾಧ್ಯಮಗಳನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತಿಲ್ಲ."
+  },
+  "summaryActiveNoCategories": {
+    "message": "ಇಲ್ಲಿ ಸಕ್ರಿಯವಾಗಿದೆ, ಆದರೆ ಪ್ರಸ್ತುತ ಯಾವುದೇ ಮಾಧ್ಯಮ ವರ್ಗಗಳನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿಲ್ಲ."
+  },
+  "summaryBlockingFeatures": {
+    "message": "ಈ ಸೈಟ್ ನಲ್ಲಿ $FEATURES$ ನಿರ್ಬಂಧಿಸಲಾಗುತ್ತಿದೆ.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "ಈ ಸೈಟ್ ಗಾಗಿ ಎಲ್ಲಾ MotionBlock ನಿಯಮಗಳು ಆಫ್ ಆಗಿವೆ."
+  },
+  "siteRuleOwnSettings": {
+    "message": "ಈ ಸೈಟ್ ತನ್ನದೇ ಆದ MotionBlock ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಬಳಸುತ್ತದೆ."
+  },
+  "siteRuleOverrides": {
+    "message": "ಈ ಸೈಟ್ ಮಾಧ್ಯಮ-ನಿರ್ದಿಷ್ಟ ಅತಿಕ್ರಮಣಗಳೊಂದಿಗೆ ಜಾಗತಿಕ ಸ್ಥಿತಿಯನ್ನು ಅನುಸರಿಸುತ್ತದೆ."
+  },
+  "siteRuleDefaults": {
+    "message": "ಈ ಸೈಟ್ ನಿಮ್ಮ ಜಾಗತಿಕ ಡೀಫಾಲ್ಟ್ ಗಳನ್ನು ಅನುಸರಿಸುತ್ತದೆ."
+  },
+  "featureMetaInactive": {
+    "message": "ಸೈಟ್ ಅನ್ನು ಅನುಮತಿಸಿದಾಗ ನಿಷ್ಕ್ರಿಯ"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "ಅತಿಕ್ರಮಣ: ನಿರ್ಬಂಧಿಸುವಿಕೆ"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "ಅತಿಕ್ರಮಣ: ಅನುಮತಿಸಲಾಗಿದೆ"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "ಜಾಗತಿಕ: ನಿರ್ಬಂಧಿಸುವಿಕೆ"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "ಜಾಗತಿಕ: ಅನುಮತಿಸಲಾಗಿದೆ"
+  },
+  "optionsIntro": {
+    "message": "ಜಾಗತಿಕ ಮಾಧ್ಯಮ ಡೀಫಾಲ್ಟ್ ಗಳು ಮತ್ತು ಪ್ರತಿ-ಸೈಟ್ ಆದ್ಯತೆಗಳು."
+  },
+  "extensionActive": {
+    "message": "ವಿಸ್ತರಣೆ ಸಕ್ರಿಯ"
+  },
+  "globalDefaultsHeading": {
+    "message": "ಜಾಗತಿಕ ಡೀಫಾಲ್ಟ್ ಗಳು"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF ತರಹದ ವೀಡಿಯೊ ಮತ್ತು ಸ್ವಯಂ ಪ್ಲೇಯೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಿ. ಸೈಟ್ ಗೆ ಕಟ್ಟುನಿಟ್ಟಾದ ಮಾಧ್ಯಮ ನಿಯಂತ್ರಣದ ಅಗತ್ಯವಿದ್ದಾಗ ಮಾತ್ರ ಬ್ರಾಡ್ ಬ್ಲಾಕರ್ ಗಳನ್ನು ಬಳಸಿ."
+  },
+  "restoreRecommended": {
+    "message": "ಶಿಫಾರಸು ಮಾಡಲಾದ ಪುನಃಸ್ಥಾಪನೆ"
+  },
+  "blockedMediaDisplay": {
+    "message": "ನಿರ್ಬಂಧಿತ ಮಾಧ್ಯಮ ಪ್ರದರ್ಶನ"
+  },
+  "replacementPlaceholder": {
+    "message": "ಕಾಂಪ್ಯಾಕ್ಟ್ ಪ್ಲೇಸ್ ಹೋಲ್ಡರ್"
+  },
+  "replacementHide": {
+    "message": "ಅಂಶವನ್ನು ಮರೆಮಾಡಿ"
+  },
+  "interfaceTheme": {
+    "message": "ಇಂಟರ್ಫೇಸ್ ಥೀಮ್"
+  },
+  "themeSystem": {
+    "message": "ಸಿಸ್ಟಂ"
+  },
+  "themeLight": {
+    "message": "ಬೆಳಕು"
+  },
+  "themeDark": {
+    "message": "ಗಾಢ"
+  },
+  "revealControlsTitle": {
+    "message": "ನಿರ್ಬಂಧಿತ ಮಾಧ್ಯಮಕ್ಕಾಗಿ ಬಟನ್ ಗಳನ್ನು ಬಹಿರಂಗಪಡಿಸಿ"
+  },
+  "revealControlsDescription": {
+    "message": "ನಿರ್ಬಂಧಿತ ಮಾಧ್ಯಮದಲ್ಲಿ ಕ್ಲಿಕ್-ಟು-ಪ್ಲೇ/ತೋರಿಸು ಬಟನ್ ಗಳನ್ನು ತೋರಿಸು. ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಆಫ್ ಏಕೆಂದರೆ ಕೆಲವು ಸೈಟ್ ಗಳು ಗುಪ್ತ ಮಾಧ್ಯಮ ಮೇಲ್ಮೈಗಳನ್ನು ಮರುಬಳಕೆ ಮಾಡುತ್ತವೆ."
+  },
+  "diagnosticsTitle": {
+    "message": "ಸುಧಾರಿತ ರೋಗನಿರ್ಣಯ"
+  },
+  "diagnosticsDescription": {
+    "message": "ನೀವು ನಿರ್ಬಂಧಿಸುವ ಸಮಸ್ಯೆಯನ್ನು ಪುನರುತ್ಪಾದಿಸುವಾಗ ಪಾಪ್ ಅಪ್ ನಲ್ಲಿ ನಕಲಿಸಬಹುದಾದ ಪ್ರತಿ-ಟ್ಯಾಬ್ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಲಾಗ್ ಅನ್ನು ತೋರಿಸಿ."
+  },
+  "websitePreferencesHeading": {
+    "message": "ವೆಬ್ ಸೈಟ್ ಆದ್ಯತೆಗಳು"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com, ಅಥವಾ news.example.com ನಂತಹ ನಿಖರವಾದ ಹೋಸ್ಟ್ ಹೆಸರುಗಳನ್ನು ಬಳಸಿ."
+  },
+  "addSite": {
+    "message": "ಸೈಟ್ ಸೇರಿಸಿ"
+  },
+  "backupHeading": {
+    "message": "ಬ್ಯಾಕಪ್"
+  },
+  "backupIntro": {
+    "message": "ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು Chrome ಸಿಂಕ್ ಸಂಗ್ರಹಣೆಯಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ವಿಸ್ತರಣೆಗಳಿಗಾಗಿ Chrome ಸಿಂಕ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಅವರು ನಿಮ್ಮ Chrome ಪ್ರೊಫೈಲ್ ಅನ್ನು ಅನುಸರಿಸಬಹುದು."
+  },
+  "exportJson": {
+    "message": "ರಫ್ತು JSON"
+  },
+  "importFile": {
+    "message": "ಫೈಲ್ ಆಮದು ಮಾಡಿ"
+  },
+  "applyPastedJson": {
+    "message": "ಅಂಟಿಸಿದ JSON ಅನ್ವಯಿಸಿ"
+  },
+  "refreshFromSync": {
+    "message": "ಸಿಂಕ್ ನಿಂದ ರಿಫ್ರೆಶ್ ಮಾಡಿ"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ರಫ್ತು ಪೂರ್ವವೀಕ್ಷಣೆ ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ. ನೀವು MotionBlock JSON ಬ್ಯಾಕಪ್ ಅನ್ನು ಅಂಟಿಸಿ ಅದನ್ನು ಅನ್ವಯಿಸಬಹುದು."
+  },
+  "globalStatusSaved": {
+    "message": "ಜಾಗತಿಕ ಸ್ಥಾನಮಾನ ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "globalDefaultsSaved": {
+    "message": "ಜಾಗತಿಕ ಡೀಫಾಲ್ಟ್ ಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "displayModeSaved": {
+    "message": "ಪ್ರದರ್ಶನ ಮೋಡ್ ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "themeSaved": {
+    "message": "ಥೀಮ್ ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "revealSettingSaved": {
+    "message": "ಬಟನ್ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಬಹಿರಂಗಪಡಿಸಿ ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಸೆಟ್ಟಿಂಗ್ ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "ಶಿಫಾರಸು ಮಾಡಲಾದ ಡೀಫಾಲ್ಟ್ ಗಳನ್ನು ಪುನಃಸ್ಥಾಪಿಸಲಾಗಿದೆ."
+  },
+  "enterValidHostname": {
+    "message": "ಮಾನ್ಯ ಹೋಸ್ಟ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
+  },
+  "siteAdded": {
+    "message": "ಸೈಟ್ ಸೇರಿಸಲಾಗಿದೆ."
+  },
+  "siteRuleSaved": {
+    "message": "ಸೈಟ್ ನಿಯಮವನ್ನು ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "siteRemoved": {
+    "message": "ಸೈಟ್ ತೆಗೆದುಹಾಕಲಾಗಿದೆ."
+  },
+  "settingsExported": {
+    "message": "JSON ಫೈಲ್ ಗೆ ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ರಫ್ತು ಮಾಡಲಾಗಿದೆ."
+  },
+  "settingsImportedFromFile": {
+    "message": "ಫೈಲ್ ನಿಂದ ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಆಮದು ಮಾಡಲಾಗಿದೆ."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "ಅಂಟಿಸಲಾದ JSON ನಿಂದ ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಆಮದು ಮಾಡಲಾಗಿದೆ."
+  },
+  "settingsRefreshed": {
+    "message": "Chrome ಸಿಂಕ್ ನಿಂದ ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಲಾಗಿದೆ."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
+  "defaultOn": {
+    "message": "ಡೀಫಾಲ್ಟ್ ಆನ್"
+  },
+  "defaultOff": {
+    "message": "ಡೀಫಾಲ್ಟ್ ಆಫ್"
+  },
+  "noWebsitePreferences": {
+    "message": "ಇನ್ನೂ ವೆಬ್ ಸೈಟ್ ಆದ್ಯತೆಗಳಿಲ್ಲ."
+  },
+  "removeSite": {
+    "message": "ತೆಗೆದುಹಾಕಿ"
+  },
+  "siteTableSite": {
+    "message": "ಸೈಟ್"
+  },
+  "siteTableActive": {
+    "message": "ಸಕ್ರಿಯ"
+  },
+  "selectInherit": {
+    "message": "ಆನುವಂಶಿಕತೆ"
+  },
+  "selectBlock": {
+    "message": "ಬ್ಲಾಕ್"
+  },
+  "selectAllow": {
+    "message": "ಅನುಮತಿಸು"
+  },
+  "selectOn": {
+    "message": "ಆನ್"
+  },
+  "selectOff": {
+    "message": "ಆಫ್"
+  },
+  "saveFailed": {
+    "message": "ಉಳಿಸಲು ವಿಫಲವಾಗಿದೆ."
+  },
+  "importFailed": {
+    "message": "ಆಮದು ವಿಫಲವಾಗಿದೆ: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON ಫೈಲ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ ಅಥವಾ ಮೊದಲು ಬ್ಯಾಕಪ್ ಅನ್ನು ಅಂಟಿಸಿ."
+  },
+  "invalidJson": {
+    "message": "ಅಮಾನ್ಯ JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "ಇದು MotionBlock ಸೆಟ್ಟಿಂಗ್ ಬ್ಯಾಕಪ್ ನಂತೆ ಕಾಣುತ್ತಿಲ್ಲ."
+  },
+  "errorMissingMessageType": {
+    "message": "ಸಂದೇಶ ಪ್ರಕಾರ ಕಾಣೆಯಾಗಿದೆ."
+  },
+  "errorMissingSiteHostname": {
+    "message": "ಸೈಟ್ ಹೋಸ್ಟ್ ಹೆಸರು ಕಾಣೆಯಾಗಿದೆ."
+  },
+  "errorUnknownMessageType": {
+    "message": "ಅಜ್ಞಾತ ಸಂದೇಶ ಪ್ರಕಾರ."
+  },
+  "featureGifsLabel": {
+    "message": "GIF ಚಿತ್ರಗಳು"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "ಪುಟದಲ್ಲಿ GIF ಇಮೇಜ್ ಅಂಶಗಳನ್ನು ಬದಲಾಯಿಸಿ, ಸಣ್ಣ ಇಂಟರ್ಫೇಸ್ ಅನ್ನು GIFs ಮಾತ್ರ ಬಿಡಿ."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV ಮತ್ತು GIF-ತರಹದ ವೀಡಿಯೊ URL ಗಳು"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "ಲೂಪಿಂಗ್ GIFs ನಂತೆ ವರ್ತಿಸುವ .gifv URL ಗಳು ಮತ್ತು ವೀಡಿಯೊ ಅಂಶಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL ಮಾದರಿಗಳು"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp ಇಮೇಜ್ URL ಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ. ಡೀಫಾಲ್ಟ್ ಆಗಿ ಆಫ್ ಏಕೆಂದರೆ ಅನೇಕ WebP ಚಿತ್ರಗಳು ಅನಿಮೇಟೆಡ್ ಆಗಿಲ್ಲ."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ಆಟೋಪ್ಲೇ ಮತ್ತು ಲೂಪಿಂಗ್ ವೀಡಿಯೊ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ಸ್ವಯಂ ಪ್ಲೇ"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "ವೀಡಿಯೊವನ್ನು ಸ್ವಯಂಚಾಲನೆಯನ್ನು ವಿರಾಮಗೊಳಿಸಿ ಮತ್ತು ಅನಿಮೇಷನ್ ಆಗಿ ಬಳಸಲಾದ ಮ್ಯೂಟ್ ಲೂಪಿಂಗ್ ವೀಡಿಯೊವನ್ನು ತೆಗೆದುಹಾಕಿ."
+  },
+  "featureVideoLabel": {
+    "message": "ಎಲ್ಲಾ ವೀಡಿಯೊ"
+  },
+  "featureVideoShortLabel": {
+    "message": "ವೀಡಿಯೊ"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 ವೀಡಿಯೊ ಮತ್ತು ಸಾಮಾನ್ಯ ವೀಡಿಯೊ ಫೈಲ್ ವಿನಂತಿಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ."
+  },
+  "featureAudioLabel": {
+    "message": "ಆಡಿಯೋ"
+  },
+  "featureAudioShortLabel": {
+    "message": "ಆಡಿಯೋ"
+  },
+  "featureAudioDescription": {
+    "message": "ಆಡಿಯೋ ಅಂಶಗಳು ಮತ್ತು ಸಾಮಾನ್ಯ ಆಡಿಯೋ ಫೈಲ್ ವಿನಂತಿಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ."
+  },
+  "featureImagesLabel": {
+    "message": "ಎಲ್ಲಾ ಇಮೇಜ್ ಗಳು"
+  },
+  "featureImagesShortLabel": {
+    "message": "ಚಿತ್ರಗಳು"
+  },
+  "featureImagesDescription": {
+    "message": "ಪುಟದಲ್ಲಿ ಇಮೇಜ್ ಅಂಶಗಳನ್ನು ಬದಲಾಯಿಸಿ. ಚಿತ್ರ-ಭಾರವಾದ ಸೈಟ್ಗಳಿಗೆ ಪ್ರತಿ-ಸೈಟ್ ಅನುಮತಿ ನಿಯಮಗಳನ್ನು ಬಳಸಿ."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji ಪಠ್ಯ ಮತ್ತು emoji ಇಮೇಜ್ ಗಳು"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "emoji ಅಕ್ಷರಗಳು ಮತ್ತು ಸಾಮಾನ್ಯ emoji ಇಮೇಜ್ ರೆಂಡರರ್ ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ. ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಆಫ್ ಏಕೆಂದರೆ ಇದು ಪಠ್ಯವನ್ನು ಬದಲಿಸುತ್ತದೆ."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS ಅನಿಮೇಷನ್ ಮತ್ತು ಪರಿವರ್ತನೆಗಳು"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS ಅನಿಮೇಷನ್ ಗಳು, ಪರಿವರ್ತನೆಗಳು, ಮತ್ತು ನಯವಾದ ಸ್ಕ್ರೋಲಿಂಗ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ."
+  },
+  "featureGroupMotionLabel": {
+    "message": "ಚಲನೆ ನಿರ್ಬಂಧಿಸುವಿಕೆ"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF-ತರಹದ ವೀಡಿಯೊಗಳು, ಸ್ವಯಂ ಪ್ಲೇ, ಮತ್ತು ಪುಟ ಚಲನೆಗಾಗಿ ಶಿಫಾರಸು ಮಾಡಲಾದ ಡೀಫಾಲ್ಟ್ ಗಳು."
+  },
+  "featureGroupBroadLabel": {
+    "message": "ಬ್ರಾಡ್ ಮೀಡಿಯಾ ಬ್ಲಾಕರ್ ಗಳು"
+  },
+  "featureGroupBroadDescription": {
+    "message": "ಚಿತ್ರಗಳು, ವೀಡಿಯೊ, ಆಡಿಯೋ, WebP URL ಗಳು ಮತ್ತು emoji ಗಾಗಿ ಪವರ್-ಬಳಕೆದಾರ ನಿಯಂತ್ರಣಗಳು. ಇವುಗಳು ಕೆಲವು ಸೈಟ್ ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು ಅಥವಾ ಮುರಿಯಬಹುದು."
+  },
+  "contentShowBlockedImage": {
+    "message": "ನಿರ್ಬಂಧಿತ ಇಮೇಜ್ ತೋರಿಸು"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "ನಿರ್ಬಂಧಿತ ಆಡಿಯೋವನ್ನು ಪ್ಲೇ ಮಾಡಿ"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "ನಿರ್ಬಂಧಿತ ವೀಡಿಯೊವನ್ನು ಪ್ಲೇ ಮಾಡಿ"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "ನಿರ್ಬಂಧಿತ ಮಾಧ್ಯಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"
+  },
+  "contentBlockedByTitle": {
+    "message": "ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "ನಿರ್ಬಂಧಿಸಲಾದ $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF ತರಹದ ಮಾಧ್ಯಮ"
+  },
+  "contentReasonVideo": {
+    "message": "ವೀಡಿಯೊ"
+  },
+  "contentReasonAudio": {
+    "message": "ಆಡಿಯೋ"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ಲೂಪಿಂಗ್ ವೀಡಿಯೊ"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ವೀಡಿಯೊವನ್ನು ಸ್ವಯಂ ಪ್ಲೇ ಮಾಡಿ"
+  },
+  "contentReasonImage": {
+    "message": "ಚಿತ್ರ"
+  },
+  "contentReasonMedia": {
+    "message": "ಮಾಧ್ಯಮ"
+  }
+}

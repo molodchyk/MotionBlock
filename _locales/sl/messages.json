@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Blokator in Zaustavitev animacije"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Ustavite GIFs, GIFV, samodejno predvajanje videa, predoglede z lebdenjem in moteče gibanje z uporabo kontrol za posamezno lokacijo."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Možnosti"
+  },
+  "siteLoading": {
+    "message": "Nakladalna lokacija..."
+  },
+  "optionsButton": {
+    "message": "Možnosti"
+  },
+  "statusOnInitial": {
+    "message": "Na"
+  },
+  "checkingActiveRules": {
+    "message": "Preverjam aktivna pravila..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ blokiran",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokiraj gibanje tukaj"
+  },
+  "allowThisSite": {
+    "message": "Dovolite to stran"
+  },
+  "siteMode": {
+    "message": "Način lokacije"
+  },
+  "followGlobalDefaults": {
+    "message": "Sledenje globalnim privzetim vrednostim"
+  },
+  "blockOnThisSite": {
+    "message": "Blok na tej strani"
+  },
+  "allowThisSiteOption": {
+    "message": "Dovolite to stran"
+  },
+  "siteMediaControls": {
+    "message": "Nadzor medijev na lokaciji"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostični dnevnik"
+  },
+  "copyDiagnostics": {
+    "message": "Dnevnik kopiranja"
+  },
+  "refreshDiagnostics": {
+    "message": "Osveži"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ zabeleženi diagnostični dogodki.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Še ni diagnostike. Naloži ta zavihek, ponovi težavo in nato osveži ta panel."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostika osvežena."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Diagnostike ni bilo mogoče osvežiti."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostika kopirana."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Diagnostike nisem mogel kopirati."
+  },
+  "resetSite": {
+    "message": "Ponastavitev lokacije"
+  },
+  "reloadTab": {
+    "message": "Ponovno polnjenje"
+  },
+  "reloadHint": {
+    "message": "Za medije, ki so bili že blokirani ali naloženi, je morda potrebna ponovna nalaga."
+  },
+  "unknownSite": {
+    "message": "Neznana lokacija"
+  },
+  "statusBlocking": {
+    "message": "Blokiranje"
+  },
+  "statusAllowed": {
+    "message": "Dovoljeno"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nastavitev ni bilo mogoče naložiti"
+  },
+  "notAWebsite": {
+    "message": "Ni spletna stran"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ni mogoče konfigurirati brskalnika, razširitve ali drugih zaščitenih strani."
+  },
+  "selectUseGlobal": {
+    "message": "Uporabite globalno"
+  },
+  "selectBlockHere": {
+    "message": "Blok tukaj"
+  },
+  "selectAllowHere": {
+    "message": "Dovoli tukaj"
+  },
+  "summaryAllowed": {
+    "message": "Ta stran je dovoljena. MotionBlock tukaj ne blokira medijev."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktivni tukaj, vendar trenutno nobena medijska kategorija ni blokirana."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blokiram $FEATURES$ na tej strani.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Vsa MotionBlock pravila na tej strani ne veljajo."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Ta stran uporablja svoje MotionBlock nastavitve."
+  },
+  "siteRuleOverrides": {
+    "message": "Ta stran sledi globalnemu statusu z medijsko specifičnimi preglasitvami."
+  },
+  "siteRuleDefaults": {
+    "message": "Ta stran sledi vašim globalnim privzetim nastavitvem."
+  },
+  "featureMetaInactive": {
+    "message": "Neaktiven, dokler je lokacija dovoljena"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Preklic: blokiranje"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Preglasitev: dovoljena"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globalno: blokiranje"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globalno: dovoljeno"
+  },
+  "optionsIntro": {
+    "message": "Globalne medijske privzete nastavitve in nastavitve za posamezne lokacije."
+  },
+  "extensionActive": {
+    "message": "Razširitev aktivna"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globalne neplačila"
+  },
+  "globalDefaultsIntro": {
+    "message": "Začni z GIFs, videom podobnim GIF in samodejnim predvajanjem. Široke blokatorje uporabljajte le, kadar stran potrebuje strožji nadzor nad mediji."
+  },
+  "restoreRecommended": {
+    "message": "Priporočam obnovitev"
+  },
+  "blockedMediaDisplay": {
+    "message": "Prikaz zaprtih medijev"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompaktni nadomestek"
+  },
+  "replacementHide": {
+    "message": "Element skrivanja"
+  },
+  "interfaceTheme": {
+    "message": "Tema vmesnika"
+  },
+  "themeSystem": {
+    "message": "Sistem"
+  },
+  "themeLight": {
+    "message": "Svetloba"
+  },
+  "themeDark": {
+    "message": "Dark"
+  },
+  "revealControlsTitle": {
+    "message": "Gumbi za razkritje za blokirane medije"
+  },
+  "revealControlsDescription": {
+    "message": "Prikaži gumbe za klik za predvajanje/prikaz na blokiranih medijih. Privzeto izklopljeno, ker nekatere strani ponovno uporabljajo skrite medijske površine."
+  },
+  "diagnosticsTitle": {
+    "message": "Napredna diagnostika"
+  },
+  "diagnosticsDescription": {
+    "message": "V pojavnem oknu pokažite diagnostični dnevnik, ki ga je mogoče kopirati za vsak zavihek, medtem ko reproducirate težavo z blokado."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preference spletne strani"
+  },
+  "websitePreferencesIntro": {
+    "message": "Uporabite natančna imena gostiteljev, kot so reddit.com, discord.com ali news.example.com."
+  },
+  "addSite": {
+    "message": "Dodaj spletno stran"
+  },
+  "backupHeading": {
+    "message": "Varnostna kopija"
+  },
+  "backupIntro": {
+    "message": "Nastavitve so shranjene v Chrome sinhronizacijski pomnilnik. Če je sinhronizacija Chrome omogočena za razširitve, lahko sledijo vašemu Chrome profilu."
+  },
+  "exportJson": {
+    "message": "Izvozni JSON"
+  },
+  "importFile": {
+    "message": "Uvozna datoteka"
+  },
+  "applyPastedJson": {
+    "message": "Nanesite prilepljene JSON"
+  },
+  "refreshFromSync": {
+    "message": "Osvežitev iz sinhronizacije"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Predogled izvoza je prikazan tukaj. Lahko tudi prilepiš varnostno kopijo MotionBlock JSON in jo uporabiš."
+  },
+  "globalStatusSaved": {
+    "message": "Globalni status rešen."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globalne neplačane vrednosti so shranjene."
+  },
+  "displayModeSaved": {
+    "message": "Način prikaza shranjen."
+  },
+  "themeSaved": {
+    "message": "Tema shranjena."
+  },
+  "revealSettingSaved": {
+    "message": "Nastavitev gumba za razkritje je shranjena."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Nastavitev diagnostike shranjena."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Priporočene privzete nastavitve so bile obnovljene."
+  },
+  "enterValidHostname": {
+    "message": "Vnesite veljavno ime gostitelja."
+  },
+  "siteAdded": {
+    "message": "Dodana stran."
+  },
+  "siteRuleSaved": {
+    "message": "Pravilo strani shranjeno."
+  },
+  "siteRemoved": {
+    "message": "Stran odstranjena."
+  },
+  "settingsExported": {
+    "message": "Nastavitve, izvožene v JSON datoteko."
+  },
+  "settingsImportedFromFile": {
+    "message": "Nastavitve, uvožene iz datoteke."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Nastavitve, uvožene iz prilepljenih JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Nastavitve osvežene iz Chrome sinhronizacije."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nastavitev ni bilo mogoče naložiti."
+  },
+  "defaultOn": {
+    "message": "Privzeto vklopljeno"
+  },
+  "defaultOff": {
+    "message": "Izklop"
+  },
+  "noWebsitePreferences": {
+    "message": "Še ni nastavitev spletne strani."
+  },
+  "removeSite": {
+    "message": "Odstranite"
+  },
+  "siteTableSite": {
+    "message": "Lokacija"
+  },
+  "siteTableActive": {
+    "message": "Aktivni"
+  },
+  "selectInherit": {
+    "message": "Dedovanje"
+  },
+  "selectBlock": {
+    "message": "Blok"
+  },
+  "selectAllow": {
+    "message": "Dovoli"
+  },
+  "selectOn": {
+    "message": "Na"
+  },
+  "selectOff": {
+    "message": "Izklopljeno"
+  },
+  "saveFailed": {
+    "message": "Shranjevanje ni uspelo."
+  },
+  "importFailed": {
+    "message": "Uvoz ni uspel: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Najprej izberite JSON datoteko ali prilepite varnostno kopijo."
+  },
+  "invalidJson": {
+    "message": "neveljavno JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "To ne izgleda kot varnostna kopija MotionBlock nastavitev."
+  },
+  "errorMissingMessageType": {
+    "message": "Manjkajoča vrsta sporočila."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Manjkajoče ime gostitelja strani."
+  },
+  "errorUnknownMessageType": {
+    "message": "Neznana vrsta sporočila."
+  },
+  "featureGifsLabel": {
+    "message": "GIFs like"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Zamenjajte GIFs likovne elemente na strani, medtem ko pustite majhne GIFs vmesnika nespremenjene."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV in GIF podobni URL-ji videov"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokirajte .gifv URL-je in video elemente, ki se obnašajo kot ponavljajoče GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP vzorci URL-jev"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokirajte URL-je slik .webp. Privzeto je izklopljeno, ker veliko WebP slik ni animiranih."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Samodejno predvajanje in zankanje videa"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Samodejno predvajanje"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Ustavi samodejno predvajanje videa in odstrani utišani zankasti video, ki se uporablja kot animacija."
+  },
+  "featureVideoLabel": {
+    "message": "Vse video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Blokirajte HTML5 video in pogoste video datoteke."
+  },
+  "featureAudioLabel": {
+    "message": "Zvok"
+  },
+  "featureAudioShortLabel": {
+    "message": "Zvok"
+  },
+  "featureAudioDescription": {
+    "message": "Blokirajte zvočne elemente in pogoste zahteve za zvočne datoteke."
+  },
+  "featureImagesLabel": {
+    "message": "Vse slike"
+  },
+  "featureImagesShortLabel": {
+    "message": "Slike"
+  },
+  "featureImagesDescription": {
+    "message": "Zamenjajte slikovne elemente na strani. Uporabite pravila za dovoljenje po lokaciji za strani z veliko slikami."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji besedila in slike emojijev"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Odstranite znake emojijev in običajne upodabljalnike slik emojijev. Privzeto izklopljeno, ker spremeni besedilo."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animacija in prehodi"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Onemogoči CSS animacije, prehode in gladko pomikanje."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Blokiranje gibanja"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Priporočene privzete nastavitve za GIFs, videe podobne GIF, samodejno predvajanje in gibanje strani."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Široki medijski blokatorji"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Napredni uporabniki nadzorujejo slike, video, zvok, WebP URL-je in emojije. To lahko spremeni ali pokvari nekatere strani."
+  },
+  "contentShowBlockedImage": {
+    "message": "Prikaži blokirano sliko"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Predvajaj blokirani zvok"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Predvajaj blokirani video"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Predvajaj blokirane medije"
+  },
+  "contentBlockedByTitle": {
+    "message": "Blokirano s strani MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Blokirana $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-podobni mediji"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Zvok"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Zankasti video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "samodejno predvajanje videa"
+  },
+  "contentReasonImage": {
+    "message": "Slika"
+  },
+  "contentReasonMedia": {
+    "message": "Mediji"
+  }
+}

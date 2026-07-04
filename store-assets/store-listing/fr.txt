@@ -1,0 +1,31 @@
+Bloquez les GIFs distrayantes, les GIFV, la lecture automatique des vidéos, les aperçus de survol et les mouvements de page avant qu’ils ne vous gênent.
+
+Utilisez MotionBlock pour arrêter :
+
+En boucle GIF images.
+GIFV liens.
+Courtes vidéos coupées utilisées comme GIFs.
+Lecture automatique de la vidéo et aperçus en survol.
+Motifs d’URL animés WebP optionnels.
+Vidéo, audio, images, emojis et CSS en option.
+
+MotionBlock est construit autour du contrôle par site. Conservez les paramètres par défaut globaux conservateurs, puis autorisez ou bloquez certains types de médias sur des sites web individuels depuis la fenêtre contextuelle ou la page d’options. Les paramètres restent dans Chrome stockage de synchronisation des extensions et peuvent se synchroniser via Chrome si l’utilisateur a activé la synchronisation des extensions.
+
+Utilisations courantes :
+
+Arrêtez les animations qui distraient pendant la lecture.
+Réduisez le bruit de lecture automatique des vidéos.
+Économisez de la bande passante contre des médias inutiles.
+Aperçu survolant à la YouTube de blocs.
+Calmez Reddit, Giphy, réseaux sociaux et pages d’actualités qui GIFs transforment en courtes vidéos.
+Autoriser des sites très visuels tout en bloquant le mouvement ailleurs.
+Autorisez rapidement les médias sur les sites qui en ont besoin.
+
+La fenêtre contextuelle contrôle le site actuel. La page des options gère les paramètres par défaut globaux, les préférences par site, l’import/export de sauvegarde JSON, l’affichage des médias bloqués, les boutons de révélation optionnels, et le thème de l’interface claire/sombre/système.
+
+Chrome n’autorise pas les extensions à modifier les pages internes du navigateur, le Chrome Web Store, ni certaines pages protégées. Si les médias sont encore visibles après l’installation ou la modification des paramètres, rechargez la page.
+
+MotionBlock ne collecte pas d’analyses, n’envoie pas de données de navigation à un serveur, ni n’utilise de listes de règles distantes.
+
+Open source sous licence GPL-3.0:
+https://github.com/molodchyk/MotionBlock

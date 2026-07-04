@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF بلاکر و انیمیشن استاپر"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs را متوقف کنید، GIFV کنید، ویدیو را به صورت خودکار پخش کنید، پیش نمایش های معلق و حرکت های حواس پرت کن را با کنترل های هر سایت."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "گزینه های MotionBlock"
+  },
+  "siteLoading": {
+    "message": "محل بارگذاری..."
+  },
+  "optionsButton": {
+    "message": "گزینه ها"
+  },
+  "statusOnInitial": {
+    "message": "روشن است"
+  },
+  "checkingActiveRules": {
+    "message": "بررسی قوانین فعال..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ مسدود شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "حرکت بلوک اینجا"
+  },
+  "allowThisSite": {
+    "message": "اجازه دهید این سایت"
+  },
+  "siteMode": {
+    "message": "حالت سایت"
+  },
+  "followGlobalDefaults": {
+    "message": "دنبال کردن نکول های جهانی"
+  },
+  "blockOnThisSite": {
+    "message": "مسدود کردن در این سایت"
+  },
+  "allowThisSiteOption": {
+    "message": "اجازه دهید این سایت"
+  },
+  "siteMediaControls": {
+    "message": "کنترل های رسانه ای سایت"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "تشخیص ها"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock لاگ تشخیصی"
+  },
+  "copyDiagnostics": {
+    "message": "گزارش کپی"
+  },
+  "refreshDiagnostics": {
+    "message": "تازه سازی"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ رویدادهای تشخیصی ثبت شده اند.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "هنوز تشخیص داده نشده. این تب را دوباره بارگذاری کنید، مشکل را بازتولید کنید و سپس این پنل را تازه سازی کنید."
+  },
+  "diagnosticsRefreshed": {
+    "message": "تشخیص ها تازه شد."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "نتوانستم تشخیص ها را تازه کنم."
+  },
+  "diagnosticsCopied": {
+    "message": "تشخیص ها کپی شد."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "نتوانستم تشخیص ها را کپی کنم."
+  },
+  "resetSite": {
+    "message": "بازنشانی سایت"
+  },
+  "reloadTab": {
+    "message": "بارگذاری مجدد"
+  },
+  "reloadHint": {
+    "message": "ممکن است برای رسانه هایی که قبلا مسدود یا بارگذاری شده اند، نیاز به بارگذاری مجدد باشد."
+  },
+  "unknownSite": {
+    "message": "محل ناشناخته"
+  },
+  "statusBlocking": {
+    "message": "مسدودسازی"
+  },
+  "statusAllowed": {
+    "message": "مجاز"
+  },
+  "couldNotLoadSettings": {
+    "message": "نتوانستم تنظیمات را بارگذاری کنم"
+  },
+  "notAWebsite": {
+    "message": "نه یک وب سایت"
+  },
+  "statusNotApplicable": {
+    "message": "نامشخص."
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock نمی تواند مرورگر، افزونه یا سایر صفحات محافظت شده را پیکربندی کند."
+  },
+  "selectUseGlobal": {
+    "message": "استفاده سراسری"
+  },
+  "selectBlockHere": {
+    "message": "اینجا بلاک کن"
+  },
+  "selectAllowHere": {
+    "message": "اجازه دهید اینجا"
+  },
+  "summaryAllowed": {
+    "message": "این سایت مجاز است. MotionBlock اینجا رسانه ها را مسدود نمی کند."
+  },
+  "summaryActiveNoCategories": {
+    "message": "در اینجا فعال است، اما در حال حاضر هیچ دسته بندی رسانه ای مسدود نشده است."
+  },
+  "summaryBlockingFeatures": {
+    "message": "مسدود کردن $FEATURES$ در این سایت.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "تمام قوانین MotionBlock این سایت غیرقابل قبول است."
+  },
+  "siteRuleOwnSettings": {
+    "message": "این سایت از تنظیمات MotionBlock مخصوص به خود استفاده می کند."
+  },
+  "siteRuleOverrides": {
+    "message": "این سایت دارای جایگاه جهانی با محدودیت های خاص رسانه ای است."
+  },
+  "siteRuleDefaults": {
+    "message": "این سایت پیش فرض های جهانی شما را دنبال می کند."
+  },
+  "featureMetaInactive": {
+    "message": "غیرفعال در حالی که سایت مجاز است"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "لغزش: مسدود کردن"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "لغو قانون: مجاز"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "جهانی: مسدودسازی"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "جهانی: مجاز"
+  },
+  "optionsIntro": {
+    "message": "پیش فرض های رسانه ای جهانی و ترجیحات هر سایت."
+  },
+  "extensionActive": {
+    "message": "گسترش فعال"
+  },
+  "globalDefaultsHeading": {
+    "message": "نکول های جهانی"
+  },
+  "globalDefaultsIntro": {
+    "message": "با GIFs، ویدیوی GIF لایک شروع کنید و به صورت خودکار پخش کنید. فقط زمانی از بلاکرهای گسترده استفاده کنید که سایت نیاز به کنترل رسانه ای سخت گیرانه تری داشته باشد."
+  },
+  "restoreRecommended": {
+    "message": "بازگردانی توصیه می شود"
+  },
+  "blockedMediaDisplay": {
+    "message": "نمایش رسانه مسدود شده"
+  },
+  "replacementPlaceholder": {
+    "message": "جایگزین فشرده"
+  },
+  "replacementHide": {
+    "message": "عنصر پنهان کردن"
+  },
+  "interfaceTheme": {
+    "message": "تم رابط کاربری"
+  },
+  "themeSystem": {
+    "message": "سیستم"
+  },
+  "themeLight": {
+    "message": "نور"
+  },
+  "themeDark": {
+    "message": "تاریک"
+  },
+  "revealControlsTitle": {
+    "message": "دکمه های آشکارسازی برای رسانه های مسدود شده"
+  },
+  "revealControlsDescription": {
+    "message": "نمایش دکمه های کلیک برای پخش/نمایش روی رسانه های مسدود شده. به طور پیش فرض خاموش است چون بعضی سایت ها از صفحات رسانه مخفی دوباره استفاده می کنند."
+  },
+  "diagnosticsTitle": {
+    "message": "تشخیص پیشرفته"
+  },
+  "diagnosticsDescription": {
+    "message": "یک لاگ تشخیصی قابل کپی در هر تب را در پنجره پاپ آپ نمایش دهید در حالی که مشکل مسدودسازی را بازتولید می کنید."
+  },
+  "websitePreferencesHeading": {
+    "message": "ترجیحات وب سایت"
+  },
+  "websitePreferencesIntro": {
+    "message": "از نام های میزبان دقیق مثل reddit.com، discord.com یا news.example.com استفاده کنید."
+  },
+  "addSite": {
+    "message": "افزودن سایت"
+  },
+  "backupHeading": {
+    "message": "پشتیبان"
+  },
+  "backupIntro": {
+    "message": "تنظیمات در فضای ذخیره سازی همگام سازی Chrome ذخیره می شوند. اگر Chrome همگام سازی برای افزونه ها فعال باشد، آن ها می توانند پروفایل Chrome شما را دنبال کنند."
+  },
+  "exportJson": {
+    "message": "صادرات JSON"
+  },
+  "importFile": {
+    "message": "فایل وارد کنید"
+  },
+  "applyPastedJson": {
+    "message": "چسباندن JSON"
+  },
+  "refreshFromSync": {
+    "message": "تازه سازی از همگام سازی"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "پیش نمایش صادرات در اینجا آمده است. همچنین می توانید یک نسخه پشتیبان MotionBlock JSON بچسبانید و اعمال کنید."
+  },
+  "globalStatusSaved": {
+    "message": "وضعیت جهانی حفظ شد."
+  },
+  "globalDefaultsSaved": {
+    "message": "نکول های جهانی ذخیره شدند."
+  },
+  "displayModeSaved": {
+    "message": "حالت نمایش ذخیره شد."
+  },
+  "themeSaved": {
+    "message": "تم ذخیره شد."
+  },
+  "revealSettingSaved": {
+    "message": "تنظیم دکمه آشکارسازی ذخیره شد."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "تنظیمات تشخیصی ذخیره شد."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "پیش فرض های پیشنهادی بازگردانده شدند."
+  },
+  "enterValidHostname": {
+    "message": "یک نام میزبان معتبر وارد کنید."
+  },
+  "siteAdded": {
+    "message": "سایت اضافه شد."
+  },
+  "siteRuleSaved": {
+    "message": "قانون سایت ذخیره شد."
+  },
+  "siteRemoved": {
+    "message": "سایت حذف شد."
+  },
+  "settingsExported": {
+    "message": "تنظیمات به یک فایل JSON صادر می شوند."
+  },
+  "settingsImportedFromFile": {
+    "message": "تنظیمات وارد شده از فایل."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "تنظیماتی که از JSON چسبانده شده وارد شده اند."
+  },
+  "settingsRefreshed": {
+    "message": "تنظیمات از Chrome همگام سازی به روزرسانی شد."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "نتوانستم تنظیمات را بارگذاری کنم."
+  },
+  "defaultOn": {
+    "message": "انصراف در"
+  },
+  "defaultOff": {
+    "message": "خاموش شدن پیش فرض"
+  },
+  "noWebsitePreferences": {
+    "message": "هنوز هیچ ترجیحی از وب سایت ندارم."
+  },
+  "removeSite": {
+    "message": "حذف"
+  },
+  "siteTableSite": {
+    "message": "محوطه"
+  },
+  "siteTableActive": {
+    "message": "فعال"
+  },
+  "selectInherit": {
+    "message": "ارث بردن"
+  },
+  "selectBlock": {
+    "message": "بلوک"
+  },
+  "selectAllow": {
+    "message": "اجازه دهید"
+  },
+  "selectOn": {
+    "message": "روشن است"
+  },
+  "selectOff": {
+    "message": "خاموش"
+  },
+  "saveFailed": {
+    "message": "ذخیره سازی ناموفق بود."
+  },
+  "importFailed": {
+    "message": "وارد کردن ناموفق: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "یک فایل JSON انتخاب کنید یا ابتدا یک نسخه پشتیبان پیست کنید."
+  },
+  "invalidJson": {
+    "message": "JSON نامعتبر."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "این به نظر نمی رسد نسخه پشتیبان تنظیمات MotionBlock باشد."
+  },
+  "errorMissingMessageType": {
+    "message": "نوع پیام گم شده."
+  },
+  "errorMissingSiteHostname": {
+    "message": "نام میزبان سایت مفقود است."
+  },
+  "errorUnknownMessageType": {
+    "message": "نوع پیام نامعلوم."
+  },
+  "featureGifsLabel": {
+    "message": "تصاویر GIF"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "GIF عنصر تصویر را در صفحه جایگزین کنید و GIFs رابط کوچک را دست نخورده بگذارید."
+  },
+  "featureGifvLabel": {
+    "message": "آدرس های ویدیویی GIFV و GIF مانند"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "آدرس های .gifv و عناصر ویدیویی که مثل لوپ GIFs رفتار می کنند را مسدود کنید."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP الگوهای URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "آدرس های تصاویر .webp را مسدود کنید. به طور پیش فرض خاموش است چون بسیاری از تصاویر WebP انیمیشن نیستند."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "پخش خودکار و ویدئوی حلقه ای"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "پخش خودکار"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "پخش خودکار ویدیو را متوقف کنید و ویدیوی بی صدا و حلقه ای که به عنوان انیمیشن استفاده می شود را حذف کنید."
+  },
+  "featureVideoLabel": {
+    "message": "تمام ویدئوها"
+  },
+  "featureVideoShortLabel": {
+    "message": "ویدئو"
+  },
+  "featureVideoDescription": {
+    "message": "درخواست های فایل ویدیویی HTML5 و فایل های رایج را مسدود کنید."
+  },
+  "featureAudioLabel": {
+    "message": "صدا"
+  },
+  "featureAudioShortLabel": {
+    "message": "صدا"
+  },
+  "featureAudioDescription": {
+    "message": "عناصر صوتی بلوک و درخواست های رایج فایل صوتی."
+  },
+  "featureImagesLabel": {
+    "message": "تمام تصاویر"
+  },
+  "featureImagesShortLabel": {
+    "message": "تصاویر"
+  },
+  "featureImagesDescription": {
+    "message": "عناصر تصویر را در صفحه جایگزین کنید. برای سایت های پر از تصویر، از قوانین اجازه هر سایت استفاده کنید."
+  },
+  "featureEmojiLabel": {
+    "message": "متن ایموجی و تصاویر ایموجی"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ایموجی"
+  },
+  "featureEmojiDescription": {
+    "message": "کاراکترهای ایموجی و رندررهای رایج ایموجی را حذف کنید. به طور پیش فرض خاموش است چون متن را تغییر می دهد."
+  },
+  "featureCssMotionLabel": {
+    "message": "انیمیشن CSS و انتقال ها"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "انیمیشن ها، انتقال ها و اسکرول روان CSS را غیرفعال کنید."
+  },
+  "featureGroupMotionLabel": {
+    "message": "مسدودسازی حرکت"
+  },
+  "featureGroupMotionDescription": {
+    "message": "پیش فرض های پیشنهادی برای ویدیوهای GIFs، GIF مانند، پخش خودکار و حرکت صفحه."
+  },
+  "featureGroupBroadLabel": {
+    "message": "مسدودکننده های رسانه ای گسترده"
+  },
+  "featureGroupBroadDescription": {
+    "message": "کنترل های کاربر حرفه ای برای تصاویر، ویدئو، صدا، آدرس های اینترنتی WebP و ایموجی ها. این ها می توانند برخی سایت ها را تغییر دهند یا خراب کنند."
+  },
+  "contentShowBlockedImage": {
+    "message": "نمایش تصویر مسدود شده"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "پخش صدای مسدود شده"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "پخش ویدئوی مسدود شده"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "پخش رسانه های مسدود شده"
+  },
+  "contentBlockedByTitle": {
+    "message": "مسدود شده توسط MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "مسدود $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "رسانه های شبیه GIF"
+  },
+  "contentReasonVideo": {
+    "message": "ویدئو"
+  },
+  "contentReasonAudio": {
+    "message": "صدا"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ویدئوی حلقه ای"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ویدئوی پخش خودکار"
+  },
+  "contentReasonImage": {
+    "message": "تصویر"
+  },
+  "contentReasonMedia": {
+    "message": "رسانه ها"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Trình chặn GIF & Dừng hoạt ảnh"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Dừng GIFs, GIFV, tự động phát video, di chuột trướcview và chuyển động gây mất tập trung bằng các điều khiển trên mỗi trang web."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Tùy chọn"
+  },
+  "siteLoading": {
+    "message": "Đang tải trang web..."
+  },
+  "optionsButton": {
+    "message": "Tùy chọn"
+  },
+  "statusOnInitial": {
+    "message": "Bật"
+  },
+  "checkingActiveRules": {
+    "message": "Kiểm tra các quy tắc đang hoạt động..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ bị chặn",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Chặn chuyển động tại đây"
+  },
+  "allowThisSite": {
+    "message": "Cho phép trang web này"
+  },
+  "siteMode": {
+    "message": "Chế độ trang web"
+  },
+  "followGlobalDefaults": {
+    "message": "Tuân theo mặc định chung"
+  },
+  "blockOnThisSite": {
+    "message": "Chặn trên trang web này"
+  },
+  "allowThisSiteOption": {
+    "message": "Cho phép trang web này"
+  },
+  "siteMediaControls": {
+    "message": "Kiểm soát phương tiện trang web"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Chẩn đoán"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "Nhật ký chẩn đoán MotionBlock"
+  },
+  "copyDiagnostics": {
+    "message": "Sao chép nhật ký"
+  },
+  "refreshDiagnostics": {
+    "message": "Làm mới"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ sự kiện chẩn đoán được ghi lại.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Chưa có chẩn đoán. Tải lại tab này, tái tạo sự cố, sau đó làm mới bảng điều khiển này."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Chẩn đoán được làm mới."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Không thể làm mới chẩn đoán."
+  },
+  "diagnosticsCopied": {
+    "message": "Chẩn đoán được sao chép."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Không thể sao chép chẩn đoán."
+  },
+  "resetSite": {
+    "message": "Đặt lại trang web"
+  },
+  "reloadTab": {
+    "message": "Tải lại"
+  },
+  "reloadHint": {
+    "message": "Có thể cần tải lại cho phương tiện đã bị chặn hoặc tải."
+  },
+  "unknownSite": {
+    "message": "Địa điểm không xác định"
+  },
+  "statusBlocking": {
+    "message": "Chặn"
+  },
+  "statusAllowed": {
+    "message": "Được phép"
+  },
+  "couldNotLoadSettings": {
+    "message": "Không thể tải cài đặt"
+  },
+  "notAWebsite": {
+    "message": "Không phải là trang web"
+  },
+  "statusNotApplicable": {
+    "message": "Không có"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock không thể định cấu hình trình duyệt, tiện ích mở rộng hoặc các trang được bảo vệ khác."
+  },
+  "selectUseGlobal": {
+    "message": "Sử dụng toàn cầu"
+  },
+  "selectBlockHere": {
+    "message": "Chặn ở đây"
+  },
+  "selectAllowHere": {
+    "message": "Cho phép ở đây"
+  },
+  "summaryAllowed": {
+    "message": "Trang web này được phép. MotionBlock không chặn phương tiện truyền thông ở đây."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Hoạt động ở đây, nhưng hiện không có danh mục phương tiện nào bị chặn."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Chặn $FEATURES$ trên trang web này.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Tất cả các quy tắc MotionBlock đều bị tắt cho trang web này."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Trang web này sử dụng cài đặt MotionBlock riêng."
+  },
+  "siteRuleOverrides": {
+    "message": "Trang web này tuân theo trạng thái toàn cầu với các thông tin ghi đè dành riêng cho phương tiện."
+  },
+  "siteRuleDefaults": {
+    "message": "Trang web này tuân theo mặc định chung của bạn."
+  },
+  "featureMetaInactive": {
+    "message": "Không hoạt động trong khi trang web được phép"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Ghi đè: chặn"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Ghi đè: được phép"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Toàn cầu: chặn"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Toàn cầu: được phép"
+  },
+  "optionsIntro": {
+    "message": "Mặc định phương tiện toàn cầu và tùy chọn cho mỗi trang web."
+  },
+  "extensionActive": {
+    "message": "Tiện ích mở rộng đang hoạt động"
+  },
+  "globalDefaultsHeading": {
+    "message": "Mặc định toàn cầu"
+  },
+  "globalDefaultsIntro": {
+    "message": "Bắt đầu với GIFs, video giống GIF và tự động phát. Chỉ sử dụng trình chặn rộng khi trang web cần kiểm soát phương tiện truyền thông chặt chẽ hơn."
+  },
+  "restoreRecommended": {
+    "message": "Khôi phục khuyến nghị"
+  },
+  "blockedMediaDisplay": {
+    "message": "Hiển thị phương tiện bị chặn"
+  },
+  "replacementPlaceholder": {
+    "message": "Trình giữ chỗ nhỏ gọn"
+  },
+  "replacementHide": {
+    "message": "Ẩn phần tử"
+  },
+  "interfaceTheme": {
+    "message": "Chủ đề giao diện"
+  },
+  "themeSystem": {
+    "message": "Hệ thống"
+  },
+  "themeLight": {
+    "message": "Ánh sáng"
+  },
+  "themeDark": {
+    "message": "Tối"
+  },
+  "revealControlsTitle": {
+    "message": "Hiển thị các nút cho phương tiện bị chặn"
+  },
+  "revealControlsDescription": {
+    "message": "Hiển thị các nút nhấp để phát/hiển thị trên phương tiện bị chặn. Tắt theo mặc định vì một số trang web sử dụng lại các bề mặt phương tiện ẩn."
+  },
+  "diagnosticsTitle": {
+    "message": "Chẩn đoán nâng cao"
+  },
+  "diagnosticsDescription": {
+    "message": "Hiển thị nhật ký chẩn đoán có thể sao chép cho mỗi tab trong cửa sổ bật lên trong khi bạn tái tạo sự cố chặn."
+  },
+  "websitePreferencesHeading": {
+    "message": "Tùy chọn trang web"
+  },
+  "websitePreferencesIntro": {
+    "message": "Sử dụng tên máy chủ chính xác như reddit.com, discord.com hoặc news.example.com."
+  },
+  "addSite": {
+    "message": "Thêm trang web"
+  },
+  "backupHeading": {
+    "message": "Sao lưu"
+  },
+  "backupIntro": {
+    "message": "Cài đặt được lưu trữ trong bộ nhớ đồng bộ Chrome. Nếu Chrome đồng bộ hóa được bật cho tiện ích, chúng có thể theo dõi hồ sơ Chrome của bạn."
+  },
+  "exportJson": {
+    "message": "Xuất JSON"
+  },
+  "importFile": {
+    "message": "Nhập tệp"
+  },
+  "applyPastedJson": {
+    "message": "Áp dụng JSON dán"
+  },
+  "refreshFromSync": {
+    "message": "Làm mới từ đồng bộ hóa"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Bản xem trước xuất xuất hiện ở đây. Bạn cũng có thể dán bản sao lưu MotionBlock JSON và áp dụng bản sao lưu đó."
+  },
+  "globalStatusSaved": {
+    "message": "Đã lưu trạng thái toàn cầu."
+  },
+  "globalDefaultsSaved": {
+    "message": "Các giá trị mặc định chung đã lưu."
+  },
+  "displayModeSaved": {
+    "message": "Chế độ hiển thị đã lưu."
+  },
+  "themeSaved": {
+    "message": "Chủ đề đã lưu."
+  },
+  "revealSettingSaved": {
+    "message": "Tiết lộ cài đặt nút đã lưu."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Cài đặt chẩn đoán đã lưu."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Các giá trị mặc định được đề xuất đã được khôi phục."
+  },
+  "enterValidHostname": {
+    "message": "Nhập tên máy chủ hợp lệ."
+  },
+  "siteAdded": {
+    "message": "Trang web được thêm vào."
+  },
+  "siteRuleSaved": {
+    "message": "Quy tắc trang web đã lưu."
+  },
+  "siteRemoved": {
+    "message": "Trang web đã bị xóa."
+  },
+  "settingsExported": {
+    "message": "Cài đặt được xuất sang tệp JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Cài đặt được nhập từ tệp."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Cài đặt được nhập từ JSON đã dán."
+  },
+  "settingsRefreshed": {
+    "message": "Cài đặt được làm mới từ Chrome đồng bộ hóa."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Không thể tải cài đặt."
+  },
+  "defaultOn": {
+    "message": "Mặc định trên"
+  },
+  "defaultOff": {
+    "message": "Mặc định tắt"
+  },
+  "noWebsitePreferences": {
+    "message": "Chưa có tùy chọn trang web."
+  },
+  "removeSite": {
+    "message": "Loại bỏ"
+  },
+  "siteTableSite": {
+    "message": "Địa điểm"
+  },
+  "siteTableActive": {
+    "message": "Hoạt động"
+  },
+  "selectInherit": {
+    "message": "Kế thừa"
+  },
+  "selectBlock": {
+    "message": "Khối"
+  },
+  "selectAllow": {
+    "message": "Cho phép"
+  },
+  "selectOn": {
+    "message": "Bật"
+  },
+  "selectOff": {
+    "message": "tắt"
+  },
+  "saveFailed": {
+    "message": "Lưu không thành công."
+  },
+  "importFailed": {
+    "message": "Nhập không thành công: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Chọn tệp JSON hoặc dán bản sao lưu trước."
+  },
+  "invalidJson": {
+    "message": "JSON không hợp lệ."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Điều này không giống như một bản sao lưu cài đặt MotionBlock."
+  },
+  "errorMissingMessageType": {
+    "message": "Thiếu loại thư."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Thiếu tên máy chủ của trang web."
+  },
+  "errorUnknownMessageType": {
+    "message": "Loại tin nhắn không xác định."
+  },
+  "featureGifsLabel": {
+    "message": "GIF hình ảnh"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Thay thế GIF phần tử hình ảnh trong trang trong khi để yên GIFs giao diện nhỏ."
+  },
+  "featureGifvLabel": {
+    "message": "URL video GIFV và giống GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Chặn URL .gifv và các thành phần video hoạt động giống như GIFs lặp lại."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP mẫu URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Chặn URL hình ảnh .webp. Tắt theo mặc định vì nhiều hình ảnh WebP không hoạt hình."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Tự động phát và lặp lại video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Tự động phát"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Tạm dừng video tự động phát và xóa video lặp lại bị tắt tiếng được sử dụng làm hoạt ảnh."
+  },
+  "featureVideoLabel": {
+    "message": "Tất cả video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Băng hình"
+  },
+  "featureVideoDescription": {
+    "message": "Chặn HTML5 yêu cầu tệp video và video phổ biến."
+  },
+  "featureAudioLabel": {
+    "message": "Âm thanh"
+  },
+  "featureAudioShortLabel": {
+    "message": "Âm thanh"
+  },
+  "featureAudioDescription": {
+    "message": "Chặn các yếu tố âm thanh và yêu cầu tệp âm thanh phổ biến."
+  },
+  "featureImagesLabel": {
+    "message": "Tất cả hình ảnh"
+  },
+  "featureImagesShortLabel": {
+    "message": "Hình ảnh"
+  },
+  "featureImagesDescription": {
+    "message": "Thay thế các thành phần hình ảnh trong trang. Sử dụng quy tắc cho phép trên mỗi trang web cho các trang web nhiều hình ảnh."
+  },
+  "featureEmojiLabel": {
+    "message": "Văn bản biểu tượng cảm xúc và hình ảnh biểu tượng cảm xúc"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Biểu tượng cảm xúc"
+  },
+  "featureEmojiDescription": {
+    "message": "Xóa các ký tự biểu tượng cảm xúc và trình kết xuất hình ảnh biểu tượng cảm xúc phổ biến. Tắt theo mặc định vì nó thay đổi văn bản."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS hoạt ảnh và chuyển tiếp"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Tắt hoạt ảnh CSS, chuyển tiếp và cuộn mượt mà."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Chặn chuyển động"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Các giá trị mặc định được đề xuất cho video GIFs, giống GIF, tự động phát và chuyển động trang."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Trình chặn phương tiện rộng"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Kiểm soát thành thạo người dùng đối với hình ảnh, video, âm thanh, URL WebP và biểu tượng cảm xúc. Những điều này có thể thay đổi hoặc phá vỡ một số trang web."
+  },
+  "contentShowBlockedImage": {
+    "message": "Hiển thị hình ảnh bị chặn"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Phát âm thanh bị chặn"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Phát video bị chặn"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Phát phương tiện bị chặn"
+  },
+  "contentBlockedByTitle": {
+    "message": "Bị chặn bởi MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "$REASON$ bị chặn",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Phương tiện giống GIF"
+  },
+  "contentReasonVideo": {
+    "message": "Băng hình"
+  },
+  "contentReasonAudio": {
+    "message": "Âm thanh"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Lặp lại video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Tự động phát video"
+  },
+  "contentReasonImage": {
+    "message": "Hình Ảnh"
+  },
+  "contentReasonMedia": {
+    "message": "Phương tiện truyền thông"
+  }
+}

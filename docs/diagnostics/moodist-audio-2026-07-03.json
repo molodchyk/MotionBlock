@@ -1,0 +1,420 @@
+{
+  "app": "MotionBlock",
+  "generatedAt": "2026-07-03T12:55:39.214Z",
+  "page": {
+    "host": "moodist.mvze.net",
+    "status": "blocking"
+  },
+  "effectiveSettings": {
+    "diagnosticsEnabled": true,
+    "enabled": true,
+    "features": {
+      "gifs": true,
+      "gifv": true,
+      "animatedWebp": false,
+      "autoplayVideo": true,
+      "video": false,
+      "audio": true,
+      "images": false,
+      "emoji": false,
+      "cssMotion": false
+    },
+    "replacementMode": "placeholder",
+    "showRevealControls": false
+  },
+  "tabStats": {
+    "byFeature": {
+      "gifs": 0,
+      "gifv": 0,
+      "animatedWebp": 0,
+      "autoplayVideo": 0,
+      "video": 0,
+      "audio": 1,
+      "images": 0,
+      "emoji": 0,
+      "cssMotion": 0
+    },
+    "total": 1
+  },
+  "diagnostics": {
+    "capturedAt": "2026-07-03T12:55:39.213Z",
+    "entries": [
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "frameHost": "moodist.mvze.net",
+          "pageUrl": "https://moodist.mvze.net/",
+          "settingsHost": "moodist.mvze.net"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T12:55:25.419Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "moodist.mvze.net",
+          "pageUrl": "https://moodist.mvze.net/",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "moodist.mvze.net",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T12:55:25.419Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "audioElements": 1,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T12:55:25.421Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "action": "hard-block",
+          "reason": {
+            "disableAutoplay": false,
+            "hardBlock": true,
+            "label": "audio"
+          },
+          "audioAdjusted": false,
+          "blocked": true,
+          "feature": "media",
+          "mediaReason": "audio",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": false,
+            "networkState": 1,
+            "paused": true,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0
+          },
+          "tag": "audio",
+          "urls": [
+            {
+              "extension": "wav",
+              "host": "moodist.mvze.net",
+              "pathLength": 19,
+              "scheme": "https"
+            },
+            {
+              "extension": "wav",
+              "host": "moodist.mvze.net",
+              "pathLength": 19,
+              "scheme": "https"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.decision",
+        "sequence": 3,
+        "time": "2026-07-03T12:55:25.421Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 4,
+        "time": "2026-07-03T12:55:25.422Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "audioElements": 1,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 5,
+        "time": "2026-07-03T12:55:27.227Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "action": "hard-block",
+          "reason": {
+            "disableAutoplay": false,
+            "hardBlock": true,
+            "label": "audio"
+          },
+          "audioAdjusted": false,
+          "blocked": true,
+          "feature": "media",
+          "mediaReason": "audio",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": false,
+            "networkState": 1,
+            "paused": true,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0
+          },
+          "tag": "audio",
+          "urls": [
+            {
+              "extension": "wav",
+              "host": "moodist.mvze.net",
+              "pathLength": 19,
+              "scheme": "https"
+            },
+            {
+              "extension": "wav",
+              "host": "moodist.mvze.net",
+              "pathLength": 19,
+              "scheme": "https"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.decision",
+        "sequence": 6,
+        "time": "2026-07-03T12:55:27.228Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 7,
+        "time": "2026-07-03T12:55:27.228Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "audioElements": 1,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 8,
+        "time": "2026-07-03T12:55:29.426Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "action": "hard-block",
+          "reason": {
+            "disableAutoplay": false,
+            "hardBlock": true,
+            "label": "audio"
+          },
+          "audioAdjusted": false,
+          "blocked": true,
+          "feature": "media",
+          "mediaReason": "audio",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": false,
+            "networkState": 1,
+            "paused": true,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0
+          },
+          "tag": "audio",
+          "urls": [
+            {
+              "extension": "wav",
+              "host": "moodist.mvze.net",
+              "pathLength": 19,
+              "scheme": "https"
+            },
+            {
+              "extension": "wav",
+              "host": "moodist.mvze.net",
+              "pathLength": 19,
+              "scheme": "https"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.decision",
+        "sequence": 9,
+        "time": "2026-07-03T12:55:29.426Z"
+      },
+      {
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "settingsHost": "moodist.mvze.net",
+        "url": "https://moodist.mvze.net/",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 10,
+        "time": "2026-07-03T12:55:29.426Z"
+      }
+    ],
+    "entryCount": 11,
+    "frames": [
+      {
+        "entryCount": 11,
+        "frameHost": "moodist.mvze.net",
+        "frameId": 0,
+        "readyState": "complete",
+        "settingsHost": "moodist.mvze.net",
+        "updatedAt": "2026-07-03T12:55:39.212Z",
+        "url": "https://moodist.mvze.net/"
+      }
+    ],
+    "tabId": 1237705214
+  }
+}

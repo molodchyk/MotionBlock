@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF අවහිර කරන්නා සහ සජීවිකරණ නැවතුම්කරු"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs නවත්වන්න, GIFV, ස්වයංක් රීයව වීඩියෝව, සැරිසරන පෙරදසුන, සහ එක් එක් වෙබ් අඩවියේ පාලනයන් සමඟ අවධානය වෙනතකට යොමු කිරීමේ යෝජනාව."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock විකල්ප"
+  },
+  "siteLoading": {
+    "message": "වෙබ් අඩවිය පූරණය වෙමින් පවතී..."
+  },
+  "optionsButton": {
+    "message": "විකල්ප"
+  },
+  "statusOnInitial": {
+    "message": "ඔන්"
+  },
+  "checkingActiveRules": {
+    "message": "සක් රීය නීති පරීක්ෂා කරනවා..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ අවහිර කර ඇත",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "මෙහි අවහිර කිරීමේ චලනය"
+  },
+  "allowThisSite": {
+    "message": "මෙම වෙබ් අඩවියට ඉඩ දෙන්න"
+  },
+  "siteMode": {
+    "message": "වෙබ් අඩවිය මාදිලිය"
+  },
+  "followGlobalDefaults": {
+    "message": "ගෝලීය පෙරනිමි අනුගමනය කරන්න"
+  },
+  "blockOnThisSite": {
+    "message": "මෙම වෙබ් අඩවියේ වාරණය කරන්න"
+  },
+  "allowThisSiteOption": {
+    "message": "මෙම වෙබ් අඩවියට ඉඩ දෙන්න"
+  },
+  "siteMediaControls": {
+    "message": "වෙබ් අඩවිය මාධ්ය පාලනය"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "රෝග විනිශ්චය"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock රෝග විනිශ්චය ලඝු-සටහන"
+  },
+  "copyDiagnostics": {
+    "message": "පිටපත් ලඝු-සටහන"
+  },
+  "refreshDiagnostics": {
+    "message": "නැවුම් කරන්න"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "රෝග විනිශ්චය සිදුවීම් $COUNT$ වාර්තා කර ඇත.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "තවම රෝග විනිශ්චය නැහැ. මෙම ටැබය නැවත පූරණය කරන්න, ගැටළුව ප් රතිනිෂ්පාදනය කරන්න, ඉන්පසු මෙම පුවරුව නැවුම් කරන්න."
+  },
+  "diagnosticsRefreshed": {
+    "message": "රෝග විනිශ්චය ප් රබෝධමත් විය."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "රෝග විනිශ්චය නැවුම් කළ නොහැකි විය."
+  },
+  "diagnosticsCopied": {
+    "message": "රෝග විනිශ්චය පිටපත් කර ඇත."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "රෝග විනිශ්චය පිටපත් කළ නොහැක."
+  },
+  "resetSite": {
+    "message": "වෙබ් අඩවිය යළි පිහිටුවන්න"
+  },
+  "reloadTab": {
+    "message": "නැවත පූරණය කරන්න"
+  },
+  "reloadHint": {
+    "message": "දැනටමත් අවහිර කර ඇති හෝ පටවා ඇති මාධ් ය සඳහා නැවත පූරණය කිරීම අවශ් ය විය හැකිය."
+  },
+  "unknownSite": {
+    "message": "නොදන්නා වෙබ් අඩවිය"
+  },
+  "statusBlocking": {
+    "message": "අවහිර කිරීම"
+  },
+  "statusAllowed": {
+    "message": "අවසර දී ඇත"
+  },
+  "couldNotLoadSettings": {
+    "message": "සැකසුම් පූරණය කල නොහැක"
+  },
+  "notAWebsite": {
+    "message": "වෙබ් අඩවියක් නොවේ"
+  },
+  "statusNotApplicable": {
+    "message": "N / A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock බ්රව්සරය, දිගුව හෝ වෙනත් ආරක්ෂිත පිටු වින්යාස කළ නොහැක."
+  },
+  "selectUseGlobal": {
+    "message": "ගෝලීය භාවිත කරන්න"
+  },
+  "selectBlockHere": {
+    "message": "මෙතැනින් අවහිර කරන්න"
+  },
+  "selectAllowHere": {
+    "message": "මෙතනට ඉඩ දෙන්න"
+  },
+  "summaryAllowed": {
+    "message": "මෙම වෙබ් අඩවියට අවසර ඇත. MotionBlock මෙතැනදී මාධ් ය අවහිර කරන්නේ නැහැ."
+  },
+  "summaryActiveNoCategories": {
+    "message": "මෙහි සක් රීය, නමුත් දැනට මාධ් ය ප් රවර්ග අවහිර කර නොමැත."
+  },
+  "summaryBlockingFeatures": {
+    "message": "මෙම වෙබ් අඩවියේ $FEATURES$ අවහිර කරනවා.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "MotionBlock සියලුම නීති මෙම වෙබ් අඩවිය සඳහා ක් රියා විරහිත කර ඇත."
+  },
+  "siteRuleOwnSettings": {
+    "message": "මෙම වෙබ් අඩවිය තමන්ගේම MotionBlock සැකසුම් භාවිතා කරයි."
+  },
+  "siteRuleOverrides": {
+    "message": "මෙම වෙබ් අඩවිය මාධ් ය-විශේෂිත අභිබවා යාම සමඟ ගෝලීය තත්ත්වය අනුගමනය කරයි."
+  },
+  "siteRuleDefaults": {
+    "message": "මෙම වෙබ් අඩවිය ඔබගේ ගෝලීය පෙරනිමි අනුගමනය කරයි."
+  },
+  "featureMetaInactive": {
+    "message": "වෙබ් අඩවියට අවසර දී ඇති අතර අක් රීය"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "අභිබවා යන්න: අවහිර කිරීම"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "අභිබවා යන්න: අවසර"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "ගෝලීය: අවහිර කිරීම"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "ගෝලීය: අවසර"
+  },
+  "optionsIntro": {
+    "message": "ගෝලීය මාධ්ය පෙරනිමි සහ එක් වෙබ් අඩවියේ මනාපයන්."
+  },
+  "extensionActive": {
+    "message": "දිගුව සක්රීය"
+  },
+  "globalDefaultsHeading": {
+    "message": "ගෝලීය පෙරනිමි"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF වැනි වීඩියෝව සහ ස්වයංක් රීයව ආරම්භ කරන්න. වෙබ් අඩවියකට දැඩි මාධ් ය පාලනයක් අවශ් ය වූ විට පමණක් පුළුල් අවහිර කරන්නන් භාවිතා කරන්න."
+  },
+  "restoreRecommended": {
+    "message": "නිර්දේශිත යථා තත්වයට පත් කිරීම"
+  },
+  "blockedMediaDisplay": {
+    "message": "අවහිර මාධ්ය ප්රදර්ශනය"
+  },
+  "replacementPlaceholder": {
+    "message": "සංයුක්ත placehold"
+  },
+  "replacementHide": {
+    "message": "මූලද්රව්යය සඟවන්න"
+  },
+  "interfaceTheme": {
+    "message": "අතුරුමුහුණත තේමාව"
+  },
+  "themeSystem": {
+    "message": "පද්ධතිය"
+  },
+  "themeLight": {
+    "message": "ආලෝකය"
+  },
+  "themeDark": {
+    "message": "අඳුරු"
+  },
+  "revealControlsTitle": {
+    "message": "අවහිර කරන ලද මාධ් ය සඳහා බොත්තම් හෙළි කරන්න"
+  },
+  "revealControlsDescription": {
+    "message": "අවහිර කරන ලද මාධ් යවල ක්ලික් කිරීමට-ක්ලේ / පෙන්වන්න බොත්තම් පෙන්වන්න. සමහර වෙබ් අඩවි සැඟවුණු මාධ් ය මතුපිට නැවත භාවිතා කරන බැවින් පෙරනිමියෙන් ක් රියා විරහිත වේ."
+  },
+  "diagnosticsTitle": {
+    "message": "උසස් රෝග විනිශ්චය"
+  },
+  "diagnosticsDescription": {
+    "message": "ඔබ අවහිර කිරීමේ ගැටළුවක් ප් රතිනිෂ්පාදනය කරන අතරතුර උත්පතනයේ පිටපත් කළ හැකි එක් ටැබ් රෝග විනිශ්චය ලඝු-සටහනක් පෙන්වන්න."
+  },
+  "websitePreferencesHeading": {
+    "message": "වෙබ් අඩවි මනාපයන්"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com හෝ news.example.com වැනි නිශ්චිත ධාරක නාම භාවිතා කරන්න."
+  },
+  "addSite": {
+    "message": "වෙබ් අඩවිය එකතු කරන්න"
+  },
+  "backupHeading": {
+    "message": "උපස්ථ"
+  },
+  "backupIntro": {
+    "message": "සැකසුම් Chrome සමමුහුර්ත ගබඩාවේ ගබඩා කර ඇත. දීර්ඝ කිරීම් සඳහා Chrome සමමුහුර්ත සක් රීය කර ඇත්නම්, ඔවුන්ට ඔබගේ Chrome පැතිකඩ අනුගමනය කළ හැකිය."
+  },
+  "exportJson": {
+    "message": "අපනයන JSON"
+  },
+  "importFile": {
+    "message": "ගොනුව ආයාත කරන්න"
+  },
+  "applyPastedJson": {
+    "message": "අලවන ලද JSON යොදන්න"
+  },
+  "refreshFromSync": {
+    "message": "සමමුහුර්තයෙන් නැවුම් කරන්න"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "අපනයන පෙරදසුන මෙහි දිස්වේ. ඔබට MotionBlock JSON උපස්ථයක් අලවා එය යෙදිය හැකිය."
+  },
+  "globalStatusSaved": {
+    "message": "ගෝලීය තත්ත්වය සුරැකී ඇත."
+  },
+  "globalDefaultsSaved": {
+    "message": "ගෝලීය පැහැර හැරීම් සුරකින ලදි."
+  },
+  "displayModeSaved": {
+    "message": "දර්ශන මාදිලිය සුරකින ලදි."
+  },
+  "themeSaved": {
+    "message": "තේමාව සුරකින ලදි."
+  },
+  "revealSettingSaved": {
+    "message": "හෙළි බොත්තම් සැකසුම සුරකින ලදි."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "රෝග විනිශ්චය සැකසුම සුරකියි."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "නිර්දේශිත පැහැර හැරීම් ප් රතිෂ්ඨාපනය කරන ලදී."
+  },
+  "enterValidHostname": {
+    "message": "වලංගු ධාරක නාමයක් ඇතුලත් කරන්න."
+  },
+  "siteAdded": {
+    "message": "වෙබ් අඩවිය එකතු කරන ලදී."
+  },
+  "siteRuleSaved": {
+    "message": "අඩවි නීතිය සුරකින ලදි."
+  },
+  "siteRemoved": {
+    "message": "වෙබ් අඩවිය ඉවත් කර ඇත."
+  },
+  "settingsExported": {
+    "message": "සැකසුම් JSON ගොනුවකට අපනයනය කරන ලදී."
+  },
+  "settingsImportedFromFile": {
+    "message": "සැකසුම් ගොනුවෙන් ආනයනය කරන ලදි."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "සැකසුම් අලවන ලද JSON වෙතින් ආනයනය කරන ලදි."
+  },
+  "settingsRefreshed": {
+    "message": "සැකසුම් Chrome සමමුහුර්ත වෙතින් ප් රබෝධමත් කර ඇත."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "සැකසුම් පූරණය කල නොහැක."
+  },
+  "defaultOn": {
+    "message": "පෙරනිමි සක් රිය"
+  },
+  "defaultOff": {
+    "message": "පෙරනිමි අක් රිය කරන්න"
+  },
+  "noWebsitePreferences": {
+    "message": "වෙබ් අඩවියේ මනාපයන් තවමත් නැත."
+  },
+  "removeSite": {
+    "message": "ඉවත් කරන්න"
+  },
+  "siteTableSite": {
+    "message": "වෙබ් අඩවිය"
+  },
+  "siteTableActive": {
+    "message": "සක් රීය"
+  },
+  "selectInherit": {
+    "message": "උරුමය"
+  },
+  "selectBlock": {
+    "message": "වාරණ"
+  },
+  "selectAllow": {
+    "message": "ඉඩ දෙන්න"
+  },
+  "selectOn": {
+    "message": "ඔන්"
+  },
+  "selectOff": {
+    "message": "ඕෆ් කරන්න"
+  },
+  "saveFailed": {
+    "message": "සුරැකීම අසාර්ථක විය."
+  },
+  "importFailed": {
+    "message": "ආයාත අසාර්ථකයි: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON ගොනුවක් තෝරන්න හෝ පළමුව උපස්ථයක් අලවන්න."
+  },
+  "invalidJson": {
+    "message": "අවලංගු JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "මෙය MotionBlock සැකසුම් උපස්ථයක් ලෙස නොපෙනේ."
+  },
+  "errorMissingMessageType": {
+    "message": "පණිවුඩ වර්ගය අතුරුදහන් විය."
+  },
+  "errorMissingSiteHostname": {
+    "message": "අඩවි ධාරක නාමය අතුරුදහන් විය."
+  },
+  "errorUnknownMessageType": {
+    "message": "නොදන්නා පණිවුඩ වර්ගය."
+  },
+  "featureGifsLabel": {
+    "message": "GIF ඡායාරූප"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "කුඩා අතුරුමුහුණත GIFs පමණක් ඉතිරි කරන අතරතුර පිටුවේ GIF රූප අංග ප්රතිස්ථාපනය කරන්න."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV සහ GIF වැනි වීඩියෝ URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "වාරණ .gifv URLs සහ GIFs ලූපින් ලෙස හැසිරෙන වීඩියෝ මූලද්රව්ය."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL රටා"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp රූප URL අවහිර කරන්න. බොහෝ WebP රූප සජීවිකරණ නොමැති නිසා පෙරනිමියෙන් අක්රිය කරන්න."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ස්වයංක්රීයව සහ ලූපිං වීඩියෝ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ස්වයංක් රීයව ක් රීඩා කිරීම"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "ස්වයංක් රීයව වීඩියෝව විරාමයක් සහ සජීවීකරණය ලෙස භාවිතා නිශ්ශබ්ද ලූප් වීඩියෝ ඉවත් කරන්න."
+  },
+  "featureVideoLabel": {
+    "message": "සියලුම වීඩියෝ"
+  },
+  "featureVideoShortLabel": {
+    "message": "වීඩියෝ"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 වීඩියෝ සහ පොදු වීඩියෝ ගොනු ඉල්ලීම් අවහිර කරන්න."
+  },
+  "featureAudioLabel": {
+    "message": "ශ් රව් ය උපකරණ"
+  },
+  "featureAudioShortLabel": {
+    "message": "ශ් රව් ය උපකරණ"
+  },
+  "featureAudioDescription": {
+    "message": "ශ්රව්ය මූලද්රව්ය සහ පොදු ශ්රව්ය ගොනු ඉල්ලීම් අවහිර කරන්න."
+  },
+  "featureImagesLabel": {
+    "message": "සියළුම ඡායාරූප"
+  },
+  "featureImagesShortLabel": {
+    "message": "ඡායාරූප"
+  },
+  "featureImagesDescription": {
+    "message": "පිටුවේ රූප මූලද්රව්ය ප්රතිස්ථාපනය කරන්න. රූප-බර අඩවි සඳහා එක් වෙබ් අඩවියකට ඉඩ දීමේ නීති භාවිතා කරන්න."
+  },
+  "featureEmojiLabel": {
+    "message": "ඉමොජි පෙළ සහ ඉමොජි රූප"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ඉමොජි"
+  },
+  "featureEmojiDescription": {
+    "message": "ඉමොජි අක්ෂර සහ පොදු ඉමොජි රූප විදැහුම් කරන්නන් ඉවත් කරන්න. එය පෙළ වෙනස් නිසා පෙරනිමියෙන් අක්රිය."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS සජීවීකරණය සහ සංක්රාන්තිය"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS සජීවිකරණය, සංක් රාන්ති සහ සුමට අනුචලනය අක් රීය කරන්න."
+  },
+  "featureGroupMotionLabel": {
+    "message": "යෝජනාව අවහිර කිරීම"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF වැනි වීඩියෝ, ස්වයංක් රීයව සහ පිටු චලනය සඳහා නිර්දේශිත පෙරනිමි."
+  },
+  "featureGroupBroadLabel": {
+    "message": "පුළුල් මාධ්ය අවහිර කරන්නන්"
+  },
+  "featureGroupBroadDescription": {
+    "message": "රූප, වීඩියෝ, ශ්රව්ය, WebP URL සහ ඉමොජි සඳහා බල පරිශීලක පාලනය. මේවා සමහර වෙබ් අඩවි වෙනස් කිරීමට හෝ බිඳ දැමිය හැකිය."
+  },
+  "contentShowBlockedImage": {
+    "message": "වාරණය කරන ලද රූපය පෙන්වන්න"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "අවහිර කරන ලද ශ් රව් ය වාදනය කරන්න"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "අවහිර කරන ලද වීඩියෝව වාදනය කරන්න"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "අවහිර කරන ලද මාධ් ය වාදනය කරන්න"
+  },
+  "contentBlockedByTitle": {
+    "message": "විසින් අවහිර කරන ලදි MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "අවහිර කරන ලද $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF වැනි මාධ් ය"
+  },
+  "contentReasonVideo": {
+    "message": "වීඩියෝ"
+  },
+  "contentReasonAudio": {
+    "message": "ශ් රව් ය"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ලූපිං වීඩියෝව"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ස්වයංක් රීයව වීඩියෝව"
+  },
+  "contentReasonImage": {
+    "message": "රූපය"
+  },
+  "contentReasonMedia": {
+    "message": "මාධ් ය"
+  }
+}

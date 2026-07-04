@@ -1,0 +1,31 @@
+Bloķējiet traucējošus GIFs, GIFV, automātisko videoklipu, kursora priekšskatījumus un lapas kustību, pirms tie traucē jums.
+
+Izmantojiet MotionBlock, lai apturētu:
+
+Cilpas GIF attēliem.
+GIFV saites.
+Īsi izslēgti videoklipi, piemēram, GIFs.
+Automātiski atskaņojiet video un novietojiet kursora priekšskatījumus.
+Neobligātie animētie WebP URL modeļi.
+Papildu video, audio, attēli, emocijzīmes un CSS kustību.
+
+MotionBlock ir balstīta uz katras vietas kontroli. Saglabājiet konservatīvus globālos noklusējumus, pēc tam atļaujiet vai bloķējiet noteiktus multivides veidus atsevišķās vietnēs uznirstošajā logā vai opciju lapā. Iestatījumi paliek Chrome paplašinājumu sinhronizācijas krātuvē un var tikt sinhronizēti, izmantojot Chrome, ja lietotājam ir iespējota paplašinājumu sinhronizācija.
+
+Bieži lietojumi:
+
+Pārtrauciet traucējošas animācijas lasīšanas laikā.
+Samaziniet automātiskās atskaņošanas video troksni.
+Ietaupiet joslas platumu no nevajadzīgiem medijiem.
+Bloķēt YouTube stila kursora priekšskatījumus.
+Nomieriniet Reddit, Giphy, sociālās plūsmas un ziņu lapas, kas GIFs pārvērš īsos videoklipos.
+Atļaujiet vietnes ar lielu attēlu, vienlaikus bloķējot kustību citur.
+Ātri atļaujiet multividi vietnēs, kurās tas ir nepieciešams.
+
+Uznirstošais logs kontrolē pašreizējo vietni. Opciju lapā tiek pārvaldīti globālie noklusējumi, vietnes preferences, JSON dublējuma importēšana / eksportēšana, bloķēta multivides displejs, izvēles atklāšanas pogas un gaišs / tumšs / sistēmas lietotāja interfeisa dizains.
+
+Chrome neļauj paplašinājumiem modificēt pārlūkprogrammas iekšējās lapas, Chrome interneta veikalu vai dažas aizsargātas lapas. Ja multivide joprojām ir redzama pēc iestatījumu instalēšanas vai maiņas, atkārtoti ielādējiet lapu.
+
+MotionBlock neapkopo analīzi, nesūta pārlūkošanas datus uz serveri un neizmanto attālos kārtulu sarakstus.
+
+Atvērtais kods saskaņā ar GPL-3.0 licenci:
+https://github.com/molodchyk/MotionBlock

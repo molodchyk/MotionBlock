@@ -1,0 +1,31 @@
+Chalg'ituvchi GIFs, GIFV, avtomatik ko'rish, oldindan ko'rishlar va sahifa harakatini to'sib qo'ying, ular sizga to'sqinlik qilmasidan oldin.
+
+To'xtash uchun MotionBlock ishlating:
+
+Tasvirlarni GIF aylantiryapman.
+GIFV havolalar.
+Qisqa, jim videolar, masalan, GIFs.
+Videoni avtomatik ijro etish va hover oldindan ko'rishlar.
+Ixtiyoriy animatsiyalangan WebP URL naqshlari.
+Ixtiyoriy video, audio, tasvirlar, emoji va CSS harakati.
+
+MotionBlock har bir joyda nazorat asosida qurilgan. Konservativ global standartlarni saqlang, so'ngra har bir veb-saytda ma'lum media turlariga popup yoki options sahifasidan ruxsat bering yoki bloklang. Sozlamalar kengaytma sinxronizatsiya xotirasida Chrome qoladi va foydalanuvchida extension sync yoqilgan bo'lsa, Chrome orqali sinxronlashishi mumkin.
+
+Keng tarqalgan qo'llanilishlar:
+
+O'qish paytida chalg'ituvchi animatsiyalarni to'xtating.
+Avtomatik video shovqinini kamaytiring.
+Keraksiz media orqali tarmoqli kenglikni tejaymiz.
+Blok YouTube uslubidagi havoda ko'rsatiladigan ko'rishlar.
+Tinch Reddit, Giphy, ijtimoiy tarmoqlar va GIFs qisqa videolarga aylantiradigan yangiliklar sahifalari.
+Tasvir ko'p bo'lgan joylarga ruxsat bering, boshqa joylarda harakatni to'sib qo'ying.
+Tezda mediani kerak bo'lgan saytlarga kiritishga ruxsat bering.
+
+Popup joriy saytni boshqaradi. Opsiyalar sahifasi global defaultlar, sayt bo'yicha sozlamalar, zaxira import/JSON eksport, bloklangan media ko'rinishi, ixtiyoriy ochish tugmalari va yorug'lik/qorong'ulik/tizim interfeysi mavzusini boshqaradi.
+
+Chrome kengaytmalarga brauzer ichidagi sahifalarni, Chrome Web Store'ni yoki ba'zi himoyalangan sahifalarni o'zgartirishga ruxsat bermaydi. Agar media o'rnatilgandan yoki sozlamalarni o'zgartirgandan keyin ko'rinib turgan bo'lsa, sahifani qayta yuklang.
+
+MotionBlock tahlil yig'maydi, brauzer ma'lumotlarini serverga yubormaydi yoki masofaviy qoidalar ro'yxatidan foydalanmaydi.
+
+GPL-3.0 litsenziyasi ostida ochiq manba:
+https://github.com/molodchyk/MotionBlock

@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock：GIF 阻挡器与动画止音器"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "通过每个站点的控制，停止 GIFs、 GIFV、自动播放视频、悬停预览和分散注意力的动作。"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock 选项"
+  },
+  "siteLoading": {
+    "message": "加载地点......"
+  },
+  "optionsButton": {
+    "message": "选项"
+  },
+  "statusOnInitial": {
+    "message": "关于"
+  },
+  "checkingActiveRules": {
+    "message": "查看当前规则......"
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ 被封锁了",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "这里有阻挡动议"
+  },
+  "allowThisSite": {
+    "message": "允许本网站"
+  },
+  "siteMode": {
+    "message": "站点模式"
+  },
+  "followGlobalDefaults": {
+    "message": "遵循全局默认值"
+  },
+  "blockOnThisSite": {
+    "message": "本站封锁"
+  },
+  "allowThisSiteOption": {
+    "message": "允许本网站"
+  },
+  "siteMediaControls": {
+    "message": "站点媒体控制"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "诊断"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock 诊断日志"
+  },
+  "copyDiagnostics": {
+    "message": "复制日志"
+  },
+  "refreshDiagnostics": {
+    "message": "刷新"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ 记录的诊断事件。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "还没有诊断结果。重新加载这个标签页，重现问题，然后刷新这个面板。"
+  },
+  "diagnosticsRefreshed": {
+    "message": "诊断系统刷新。"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "无法刷新诊断。"
+  },
+  "diagnosticsCopied": {
+    "message": "诊断已复制。"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "无法复制诊断。"
+  },
+  "resetSite": {
+    "message": "重置站点"
+  },
+  "reloadTab": {
+    "message": "重新装填"
+  },
+  "reloadHint": {
+    "message": "对于已经被阻挡或加载的媒体，可能需要重新加载。"
+  },
+  "unknownSite": {
+    "message": "未知地点"
+  },
+  "statusBlocking": {
+    "message": "阻挡"
+  },
+  "statusAllowed": {
+    "message": "允许"
+  },
+  "couldNotLoadSettings": {
+    "message": "无法加载设置"
+  },
+  "notAWebsite": {
+    "message": "不是网站"
+  },
+  "statusNotApplicable": {
+    "message": "无"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock 无法配置浏览器、扩展或其他受保护页面。"
+  },
+  "selectUseGlobal": {
+    "message": "全局使用"
+  },
+  "selectBlockHere": {
+    "message": "在这里封锁"
+  },
+  "selectAllowHere": {
+    "message": "允许这里"
+  },
+  "summaryAllowed": {
+    "message": "本网站是允许的。 MotionBlock 并没有在这里屏蔽媒体。"
+  },
+  "summaryActiveNoCategories": {
+    "message": "活跃于此，但目前没有被屏蔽的媒体类别。"
+  },
+  "summaryBlockingFeatures": {
+    "message": "在本网站上屏蔽 $FEATURES$。",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "本站 MotionBlock 所有规则均已关闭。"
+  },
+  "siteRuleOwnSettings": {
+    "message": "本网站使用自有的 MotionBlock 设置。"
+  },
+  "siteRuleOverrides": {
+    "message": "本网站保持全球状态，并对媒体进行特定覆盖。"
+  },
+  "siteRuleDefaults": {
+    "message": "本网站关注您的全局默认值。"
+  },
+  "featureMetaInactive": {
+    "message": "允许网站时不活跃"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "覆盖：阻挡"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "覆盖：允许"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "全局：阻塞"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "全局：允许"
+  },
+  "optionsIntro": {
+    "message": "全局媒体默认设置和各站点偏好设置。"
+  },
+  "extensionActive": {
+    "message": "扩展激活"
+  },
+  "globalDefaultsHeading": {
+    "message": "全局违约"
+  },
+  "globalDefaultsIntro": {
+    "message": "从 GIFs、 GIF 类视频和自动播放开始。只有当网站需要更严格的媒体控制时，才使用广泛屏蔽。"
+  },
+  "restoreRecommended": {
+    "message": "推荐恢复"
+  },
+  "blockedMediaDisplay": {
+    "message": "屏蔽媒体显示"
+  },
+  "replacementPlaceholder": {
+    "message": "紧凑占位符"
+  },
+  "replacementHide": {
+    "message": "隐藏元素"
+  },
+  "interfaceTheme": {
+    "message": "界面主题"
+  },
+  "themeSystem": {
+    "message": "系统"
+  },
+  "themeLight": {
+    "message": "光"
+  },
+  "themeDark": {
+    "message": "黑暗"
+  },
+  "revealControlsTitle": {
+    "message": "屏蔽媒体的揭示按钮"
+  },
+  "revealControlsDescription": {
+    "message": "在被屏蔽的媒体上显示点击播放/显示按钮。默认关闭，因为有些网站会重复使用隐藏的媒体表面。"
+  },
+  "diagnosticsTitle": {
+    "message": "高级诊断"
+  },
+  "diagnosticsDescription": {
+    "message": "在弹窗中显示可复制的每个标签页诊断日志，同时重现阻塞问题。"
+  },
+  "websitePreferencesHeading": {
+    "message": "网站偏好"
+  },
+  "websitePreferencesIntro": {
+    "message": "使用精确的主机名，如 reddit.com、 discord.com 或 news.example.com。"
+  },
+  "addSite": {
+    "message": "添加网站"
+  },
+  "backupHeading": {
+    "message": "备份"
+  },
+  "backupIntro": {
+    "message": "设置存储在 Chrome 同步存储中。如果 Chrome 扩展启用了同步，他们可以跟踪你的 Chrome 配置文件。"
+  },
+  "exportJson": {
+    "message": "出口 JSON"
+  },
+  "importFile": {
+    "message": "导入文件"
+  },
+  "applyPastedJson": {
+    "message": "粘贴粘贴的 JSON"
+  },
+  "refreshFromSync": {
+    "message": "同步刷新"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "导出预览在这里。你也可以粘贴 MotionBlock JSON 备份并应用。"
+  },
+  "globalStatusSaved": {
+    "message": "全球状态已保全。"
+  },
+  "globalDefaultsSaved": {
+    "message": "全局默认值已保存。"
+  },
+  "displayModeSaved": {
+    "message": "显示模式已保存。"
+  },
+  "themeSaved": {
+    "message": "主题保存。"
+  },
+  "revealSettingSaved": {
+    "message": "已保存按钮设置。"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "诊断设置已保存。"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "推荐默认值已恢复。"
+  },
+  "enterValidHostname": {
+    "message": "输入一个有效的主机名。"
+  },
+  "siteAdded": {
+    "message": "网站补充。"
+  },
+  "siteRuleSaved": {
+    "message": "网站规则已保存。"
+  },
+  "siteRemoved": {
+    "message": "网站已移除。"
+  },
+  "settingsExported": {
+    "message": "设置导出为 JSON 文件。"
+  },
+  "settingsImportedFromFile": {
+    "message": "设置已从文件导入。"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "设置是从粘贴 JSON 导入的。"
+  },
+  "settingsRefreshed": {
+    "message": "设置已从 Chrome 同步中刷新。"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "无法加载设置。"
+  },
+  "defaultOn": {
+    "message": "默认启用"
+  },
+  "defaultOff": {
+    "message": "默认关闭"
+  },
+  "noWebsitePreferences": {
+    "message": "目前还没有网站偏好。"
+  },
+  "removeSite": {
+    "message": "删除"
+  },
+  "siteTableSite": {
+    "message": "遗址"
+  },
+  "siteTableActive": {
+    "message": "活跃"
+  },
+  "selectInherit": {
+    "message": "继承"
+  },
+  "selectBlock": {
+    "message": "区块"
+  },
+  "selectAllow": {
+    "message": "允许"
+  },
+  "selectOn": {
+    "message": "关于"
+  },
+  "selectOff": {
+    "message": "关掉"
+  },
+  "saveFailed": {
+    "message": "存档失败。"
+  },
+  "importFailed": {
+    "message": "导入失败：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "选择一个 JSON 文件或先粘贴备份。"
+  },
+  "invalidJson": {
+    "message": "无效 JSON。"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "这看起来不像是 MotionBlock 设置备份。"
+  },
+  "errorMissingMessageType": {
+    "message": "缺少消息类型。"
+  },
+  "errorMissingSiteHostname": {
+    "message": "缺少站点主机名。"
+  },
+  "errorUnknownMessageType": {
+    "message": "消息类型不明。"
+  },
+  "featureGifsLabel": {
+    "message": "GIF 图片"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "替换页面中的 GIF 图像元素，同时保持界面 GIFs。"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV 类和 GIF 类视频URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "屏蔽那些表现得像循环 GIFs 的.gifv网址和视频元素。"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL 模式"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "屏蔽 .webp 图片 URL。默认关闭，因为很多 WebP 图片没有动画。"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "自动播放与循环视频"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "自动播放"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "暂停自动播放视频，并移除用作动画的静音循环视频。"
+  },
+  "featureVideoLabel": {
+    "message": "所有视频"
+  },
+  "featureVideoShortLabel": {
+    "message": "视频"
+  },
+  "featureVideoDescription": {
+    "message": "屏蔽 HTML5 视频和常见视频文件请求。"
+  },
+  "featureAudioLabel": {
+    "message": "音频"
+  },
+  "featureAudioShortLabel": {
+    "message": "音频"
+  },
+  "featureAudioDescription": {
+    "message": "屏蔽音频元素和常见音频文件请求。"
+  },
+  "featureImagesLabel": {
+    "message": "所有图片"
+  },
+  "featureImagesShortLabel": {
+    "message": "图片"
+  },
+  "featureImagesDescription": {
+    "message": "替换页面中的图像元素。对于图片密集的网站，使用按站点允许规则。"
+  },
+  "featureEmojiLabel": {
+    "message": "表情文字和表情图片"
+  },
+  "featureEmojiShortLabel": {
+    "message": "表情符号"
+  },
+  "featureEmojiDescription": {
+    "message": "移除表情符号字符和常见表情符号图像渲染器。默认关闭，因为会改变文本。"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS 动画与过渡"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "关闭 CSS 动画、过渡和平滑滚动。"
+  },
+  "featureGroupMotionLabel": {
+    "message": "动作阻挡"
+  },
+  "featureGroupMotionDescription": {
+    "message": "推荐 GIFs、类 GIF 视频、自动播放和页面动态的默认设置。"
+  },
+  "featureGroupBroadLabel": {
+    "message": "广泛媒体屏蔽器"
+  },
+  "featureGroupBroadDescription": {
+    "message": "高级用户控制图片、视频、音频、 WebP URL和表情符号。这些可能会改变或破坏某些网站。"
+  },
+  "contentShowBlockedImage": {
+    "message": "显示被阻挡的图像"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "播放阻塞音频"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "播放屏蔽视频"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "播放被屏蔽的媒体"
+  },
+  "contentBlockedByTitle": {
+    "message": "被 MotionBlock 封锁：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "被封锁 $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "类 GIF 媒体"
+  },
+  "contentReasonVideo": {
+    "message": "视频"
+  },
+  "contentReasonAudio": {
+    "message": "音频"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "循环视频"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "自动播放视频"
+  },
+  "contentReasonImage": {
+    "message": "图片"
+  },
+  "contentReasonMedia": {
+    "message": "媒体"
+  }
+}

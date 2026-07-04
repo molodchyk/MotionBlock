@@ -1,0 +1,31 @@
+Blokirajte moteče GIFs, GIFV, samodejno predvajanje videa, predoglede z miško in gibanje strani, preden vam začnejo motiti.
+
+Uporabite MotionBlock za ustavitev:
+
+Zanke GIFs like.
+GIFV povezave.
+Kratki utišani videi, uporabljeni kot GIFs.
+Samodejno predvajanje videa in predogledi z miško.
+Opcijski animirani vzorci WebP URL-jev.
+Izbirni video, avdio, slike, emojiji in CSS gibanje.
+
+MotionBlock temelji na nadzoru po lokaciji. Ohranite konservativne globalne privzete nastavitve, nato pa dovolite ali blokirajte določene vrste medijev na posameznih spletnih straneh iz pojavnega okna ali strani z možnostmi. Nastavitve ostanejo v Chrome razširitvi sinhronizacije in se lahko sinhronizirajo preko Chrome, če ima uporabnik omogočeno sinhronizacijo razširitve.
+
+Pogoste uporabe:
+
+Prenehajte z motečimi animacijami med branjem.
+Zmanjšajte šum samodejnega predvajanja videa.
+Prihranite pasovno širino pred nepotrebnim medijem.
+Blokiraj YouTube predoglede v slogu lebdenja.
+Umirite Reddit, Giphy, družbena omrežja in novičarske strani, ki GIFs pretvorijo v kratke videoposnetke.
+Dovolite strani, kjer je veliko slik, medtem ko drugje blokirajte gibanje.
+Hitro dovolite medije na straneh, kjer je to potrebno.
+
+Pojavno okno nadzoruje trenutno stran. Stran z nastavitvami upravlja globalne privzete nastavitve, nastavitve za posamezno lokacijo, JSON uvoz/izvoz varnostnih kopij, prikaz blokiranih medijev, neobvezne gumbe za razkritje ter temo svetlega/temnega/sistemskega vmesnika.
+
+Chrome ne dovoljuje razširitev za spreminjanje strani znotraj brskalnika, Chrome spletne trgovine ali nekaterih zaščitenih strani. Če je medij še vedno viden po namestitvi ali spremembi nastavitev, ponovno naloži stran.
+
+MotionBlock ne zbira analitike, ne pošilja podatkov o brskanju na strežnik in ne uporablja oddaljenih seznamov pravil.
+
+Odprta koda pod licenco GPL-3.0:
+https://github.com/molodchyk/MotionBlock

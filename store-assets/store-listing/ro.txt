@@ -1,0 +1,31 @@
+Blochează GIFs, GIFV, redarea automată a videoclipului, previzualizările și mișcarea paginii înainte să stea în calea ta.
+
+Folosește MotionBlock pentru a opri:
+
+Repetă imagini GIF.
+GIFV linkuri.
+Videoclipuri scurte și mute folosite ca GIFs.
+Redarea automată a videoclipului și previzualizările cu hover.
+Modele opționale animate WebP URL.
+Video opțional, audio, imagini, emoji și CSS mișcare.
+
+MotionBlock este construit în jurul controlului pe locație. Păstrează implicitele globale conservatoare, apoi permite sau blochează anumite tipuri de media pe site-uri individuale din popup-ul sau pagina de opțiuni. Setările rămân în stocarea de sincronizare a extensiei Chrome și pot sincroniza prin Chrome dacă utilizatorul are sincronizarea extensiei activată.
+
+Utilizări comune:
+
+Nu mai distrage animațiile în timp ce citești.
+Reduci zgomotul video de redare automată.
+Economisește lățime de bandă față de media inutilă.
+Previzualizări hover în stil block YouTube.
+Calm Reddit, Giphy, rețele sociale și pagini de știri care transformă GIFs în videoclipuri scurte.
+Permite site-uri cu multe imagini, blocând mișcarea în alte părți.
+Permite rapid media pe site-urile care au nevoie de asta.
+
+Fereastra pop-up controlează site-ul curent. Pagina de opțiuni gestionează setările implicite globale, preferințele pe site, importul/export JSON backup, afișarea media blocată, butoane opționale de dezvăluire și tema interfeței lumină/întuneric/sistem.
+
+Chrome nu permite extensiilor să modifice pagini interne browserului, Chrome Web Store sau unele pagini protejate. Dacă media este încă vizibilă după instalare sau schimbarea setărilor, reîncarcă pagina.
+
+MotionBlock nu colectează analize, nu trimite date de navigare către un server și nu folosește liste de reguli la distanță.
+
+Open source sub licența GPL-3.0:
+https://github.com/molodchyk/MotionBlock

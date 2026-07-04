@@ -1,0 +1,31 @@
+Blockiere ablenkende GIFs, GIFV, spiele Videos automatisch ab, hover Vorschauen und Page-Bewegungen, bevor sie dir im Weg stehen.
+
+Nutzen Sie MotionBlock, um aufzuhören:
+
+Wiederholung GIF Bilder.
+GIFV Links.
+Kurze, stummgeschaltete Videos werden wie GIFs verwendet.
+Autoplay-Video- und Hover-Vorschauen.
+Optionale animierte WebP URL-Muster.
+Optionales Video, Audio, Bilder, Emoji und CSS Bewegung.
+
+MotionBlock basiert auf der Kontrolle pro Standort. Behalten Sie konservative globale Standardeinstellungen bei und lassen Sie dann bestimmte Medientypen auf einzelnen Websites über das Popup oder die Optionsseite aus zu. Die Einstellungen bleiben im Speicher Chrome Erweiterungs-Synchronisation und können über Chrome synchronisieren, wenn der Benutzer die Erweiterungssynchronisation aktiviert hat.
+
+Häufige Verwendungen:
+
+Hören Sie auf, beim Lesen ablenkende Animationen zu machen.
+Reduziere Autoplay-Video-Rauschen.
+Sparen Sie Bandbreite vor unnötigen Medien.
+Blocke YouTube-ähnliche Hover-Vorschauen.
+Ruhige Reddit, Giphy, soziale Feeds und Nachrichtenseiten, die GIFs in kurze Videos umwandeln.
+Erlauben Sie bildlastige Seiten und blockieren Sie Bewegungen an anderer Stelle.
+Lassen Sie schnell Medien auf Seiten zu, die sie benötigen.
+
+Das Popup steuert die aktuelle Seite. Die Optionsseite verwaltet globale Standardeinstellungen, Standortpräferenzen, JSON Backup-Import/-Export, blockierte Medienanzeige, optionale Offenbarungsbuttons sowie das Hell/Dunkel-/System-UI-Thema.
+
+Chrome erlaubt keine Erweiterungen, browserinterne Seiten, den Chrome Web Store oder einige geschützte Seiten zu verändern. Wenn nach der Installation oder Änderung der Einstellungen noch Medien sichtbar sind, lade die Seite neu.
+
+MotionBlock sammelt keine Analysen, sendet keine Browsing-Daten an einen Server und nutzt keine entfernten Regellisten.
+
+Open Source unter der GPL-3.0-Lizenz:
+https://github.com/molodchyk/MotionBlock

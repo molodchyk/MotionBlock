@@ -1,0 +1,31 @@
+Sekat GIFs yang mengganggu, GIFV, video automain, pratonton tuding dan gerakan halaman sebelum ia menghalang anda.
+
+Gunakan MotionBlock untuk menghentikan:
+
+Gelung imej GIF.
+GIFV pautan.
+Video pendek yang disenyapkan digunakan seperti GIFs.
+Automainkan video dan pratonton tuding.
+Corak URL WebP animasi pilihan.
+Video, audio, imej, emoji dan gerakan CSS pilihan.
+
+MotionBlock dibina berdasarkan kawalan setiap tapak. Kekalkan lalai global konservatif, kemudian benarkan atau sekat jenis media tertentu pada tapak web individu daripada halaman pop timbul atau pilihan. Tetapan kekal dalam storan penyegerakan sambungan Chrome dan boleh disegerakkan melalui Chrome jika pengguna telah mendayakan penyegerakan sambungan.
+
+Kegunaan biasa:
+
+Hentikan animasi yang mengganggu semasa membaca.
+Kurangkan bunyi video autoplay.
+Jimat lebar jalur daripada media yang tidak perlu.
+Sekat pratonton hover gaya YouTube.
+Tenangkan Reddit, Giphy, suapan sosial dan halaman berita yang menukar GIFs kepada video pendek.
+Benarkan tapak yang berat imej sambil menyekat gerakan di tempat lain.
+Benarkan media dengan cepat di tapak yang memerlukannya.
+
+Pop timbul mengawal tapak semasa. Halaman pilihan menguruskan lalai global, keutamaan setiap tapak, import/eksport sandaran JSON, paparan media yang disekat, butang dedahkan pilihan dan tema UI terang/gelap/sistem.
+
+Chrome tidak membenarkan sambungan untuk mengubah suai halaman dalaman penyemak imbas, Gedung Web Chrome atau beberapa halaman yang dilindungi. Jika media masih kelihatan selepas memasang atau menukar tetapan, muatkan semula halaman.
+
+MotionBlock tidak mengumpul analisis, menghantar data penyemakan imbas ke pelayan atau menggunakan senarai peraturan jauh.
+
+Sumber terbuka di bawah lesen GPL-3.0:
+https://github.com/molodchyk/MotionBlock

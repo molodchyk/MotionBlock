@@ -1,0 +1,31 @@
+Zablokuj rozpraszające GIFs, GIFV, automatyczne odtwarzanie wideo, podglądy i ruch strony, zanim staną ci na drodze.
+
+Użyj MotionBlock, aby przestać:
+
+Zapętlanie GIF obrazów.
+GIFV linki.
+Krótkie, wyciszone filmy używane jak GIFs.
+Automatyczne odtwarzanie wideo i podglądy najechania.
+Opcjonalne animowane wzory WebP URL.
+Opcjonalne wideo, audio, obrazy, emotikony i CSS ruchu.
+
+MotionBlock opiera się na kontroli pojedynczej lokalizacji. Zachowaj konserwatywne globalne domyślne ustawienia, a następnie pozwól lub zablokuj konkretne typy mediów na poszczególnych stronach z wyskakującego okienka lub opcji na stronie. Ustawienia pozostają w Chrome pamięci synchronizacji rozszerzenia i mogą się synchronizować przez Chrome, jeśli użytkownik ma włączoną synchronizację rozszerzenia.
+
+Typowe zastosowania:
+
+Przestań rozpraszać animacje podczas czytania.
+Zmniejsz szumy autoodtwarzania wideo.
+Oszczędzaj przepustowość przed zbędnymi nośnikami.
+Zablokuj podglądy w stylu YouTube kursorem.
+Spokojne Reddit, Giphy, kanały społecznościowe i strony z wiadomościami, które zamieniają GIFs w krótkie filmy.
+Pozwól na strony z dużą ilością obrazów, blokując ruch w innych miejscach.
+Szybko pozwól na media na stronach, które tego potrzebują.
+
+Popup kontroluje aktualną stronę. Strona opcji zarządza globalnymi domyślnymi ustawieniami, preferencjami dla każdej witryny, JSON importem/eksportem kopii zapasowej, zablokowanym wyświetlaniem multimediów, opcjonalnymi przyciskami ujawniania oraz motywem interfejsu światłego/ciemnego/systemowego.
+
+Chrome nie pozwala rozszerzeniom na modyfikację stron wewnętrznych przeglądarki, Chrome Web Store ani niektórych chronionych stron. Jeśli media są nadal widoczne po instalacji lub zmianie ustawień, załaduj stronę ponownie.
+
+MotionBlock nie zbiera analiz, nie przesyła danych przeglądania do serwera ani nie korzysta ze zdalnych list reguł.
+
+Open source na licencji GPL-3.0:
+https://github.com/molodchyk/MotionBlock

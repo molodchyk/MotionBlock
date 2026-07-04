@@ -1,0 +1,23 @@
+{
+  "name": "motionblock",
+  "version": "1.0.1",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "scripts": {
+    "generate:locales": "node scripts/locales/generate-locales.mjs",
+    "generate:locales:live": "node scripts/locales/generate-locales.mjs --live",
+    "repair:locales": "node scripts/locales/repair-locale-tokens.mjs",
+    "analyze:diagnostics": "node scripts/diagnostics/analyze-log.mjs",
+    "test": "node test/sanity.js && node test/diagnostics.js && node test/locales.js",
+    "audit:file-sizes": "node scripts/audit-file-sizes.mjs",
+    "audit:folder-density": "node scripts/audit-folder-density.mjs",
+    "verify:architecture": "npm run audit:file-sizes && npm run audit:folder-density",
+    "verify:manifest": "node scripts/verify-manifest.mjs",
+    "verify:imports": "node scripts/verify-imports.mjs",
+    "verify:locales": "node scripts/locales/verify-locales.mjs",
+    "package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
+    "verify:package": "node scripts/verify-package.mjs",
+    "verify:release": "node scripts/verify-release.mjs"
+  }
+}

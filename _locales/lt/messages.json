@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF blokatorius ir animacijos kamštis"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Sustabdykite GIFs, GIFV, automatiškai paleiskite vaizdo įrašą, užveskite pelės žymeklį ir blaškykite judesį naudodami valdiklius kiekvienoje vietoje."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock parinktys"
+  },
+  "siteLoading": {
+    "message": "Įkeliama svetainė..."
+  },
+  "optionsButton": {
+    "message": "Parinktys"
+  },
+  "statusOnInitial": {
+    "message": "Įjungta"
+  },
+  "checkingActiveRules": {
+    "message": "Tikrinamos aktyvios taisyklės..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ užblokuota",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokuoti judesį čia"
+  },
+  "allowThisSite": {
+    "message": "Leisti šią svetainę"
+  },
+  "siteMode": {
+    "message": "Svetainės režimas"
+  },
+  "followGlobalDefaults": {
+    "message": "Laikykitės visuotinių numatytųjų nustatymų"
+  },
+  "blockOnThisSite": {
+    "message": "Blokuoti šioje svetainėje"
+  },
+  "allowThisSiteOption": {
+    "message": "Leisti šią svetainę"
+  },
+  "siteMediaControls": {
+    "message": "Svetainės medijos valdikliai"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostikos žurnalas"
+  },
+  "copyDiagnostics": {
+    "message": "Kopijuoti žurnalą"
+  },
+  "refreshDiagnostics": {
+    "message": "Atnaujinti"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ užregistruoti diagnostiniai įvykiai.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Diagnostikos dar nėra. Iš naujo įkelkite šį skirtuką, pakartokite problemą, tada atnaujinkite šį skydelį."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostika atnaujinta."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Nepavyko atnaujinti diagnostikos."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostika nukopijuota."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Nepavyko nukopijuoti diagnostikos."
+  },
+  "resetSite": {
+    "message": "Iš naujo nustatyti svetainę"
+  },
+  "reloadTab": {
+    "message": "Įkelti iš naujo"
+  },
+  "reloadHint": {
+    "message": "Gali prireikti iš naujo įkelti laikmenas, kurios jau buvo užblokuotos arba įkeltos."
+  },
+  "unknownSite": {
+    "message": "Nežinoma vieta"
+  },
+  "statusBlocking": {
+    "message": "Blokavimas"
+  },
+  "statusAllowed": {
+    "message": "Leidžiama"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nepavyko įkelti parametrų"
+  },
+  "notAWebsite": {
+    "message": "Ne svetainė"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock negalite konfigūruoti naršyklės, plėtinio ar kitų apsaugotų puslapių."
+  },
+  "selectUseGlobal": {
+    "message": "Naudoti visuotinį"
+  },
+  "selectBlockHere": {
+    "message": "Blokuoti čia"
+  },
+  "selectAllowHere": {
+    "message": "Leisti čia"
+  },
+  "summaryAllowed": {
+    "message": "Ši svetainė leidžiama. MotionBlock čia neblokuoja žiniasklaidos."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Čia aktyvus, bet šiuo metu neužblokuotos jokios medijos kategorijos."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Šios svetainės $FEATURES$ blokavimas.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Visos MotionBlock taisyklės yra išjungtos šioje svetainėje."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Ši svetainė naudoja savo MotionBlock nustatymus."
+  },
+  "siteRuleOverrides": {
+    "message": "Ši svetainė atitinka visuotinę būseną su konkrečios medijos perrašymais."
+  },
+  "siteRuleDefaults": {
+    "message": "Ši svetainė atitinka jūsų visuotinius numatytuosius nustatymus."
+  },
+  "featureMetaInactive": {
+    "message": "Neaktyvus, kol svetainė leidžiama"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Nepaisyti: blokavimas"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Perrašyti: leidžiama"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Visuotinis: blokavimas"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Visuotinis: leidžiamas"
+  },
+  "optionsIntro": {
+    "message": "Visuotinės medijos numatytosios nuostatos ir svetainės nuostatos."
+  },
+  "extensionActive": {
+    "message": "Plėtinys aktyvus"
+  },
+  "globalDefaultsHeading": {
+    "message": "Visuotiniai numatytieji nustatymai"
+  },
+  "globalDefaultsIntro": {
+    "message": "Pradėkite nuo GIFs, GIF tipo vaizdo įrašų ir automatinio paleidimo. Naudokite plačius blokatorius tik tada, kai svetainei reikia griežtesnės medijos kontrolės."
+  },
+  "restoreRecommended": {
+    "message": "Atkurti rekomenduojama"
+  },
+  "blockedMediaDisplay": {
+    "message": "Užblokuotas medijos rodymas"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompaktiškas vietos rezervavimo ženklas"
+  },
+  "replacementHide": {
+    "message": "Slėpti elementą"
+  },
+  "interfaceTheme": {
+    "message": "Sąsajos tema"
+  },
+  "themeSystem": {
+    "message": "Sistema"
+  },
+  "themeLight": {
+    "message": "Šviesa"
+  },
+  "themeDark": {
+    "message": "Tamsus"
+  },
+  "revealControlsTitle": {
+    "message": "Užblokuotos medijos mygtukų atskleidimas"
+  },
+  "revealControlsDescription": {
+    "message": "Rodyti mygtukus užblokuotoje laikmenoje. Išjungta pagal numatytuosius nustatymus, nes kai kurios svetainės pakartotinai naudoja paslėptus medijos paviršius."
+  },
+  "diagnosticsTitle": {
+    "message": "Išplėstinė diagnostika"
+  },
+  "diagnosticsDescription": {
+    "message": "Rodyti kopijuojamą kiekvieno skirtuko diagnostikos žurnalą iššokančiajame lange, kol atkuriate blokavimo problemą."
+  },
+  "websitePreferencesHeading": {
+    "message": "Svetainės nuostatos"
+  },
+  "websitePreferencesIntro": {
+    "message": "Naudokite tikslius pagrindinio kompiuterio pavadinimus, pvz., reddit.com, discord.com arba news.example.com."
+  },
+  "addSite": {
+    "message": "Pridėti svetainę"
+  },
+  "backupHeading": {
+    "message": "Atsarginė kopija"
+  },
+  "backupIntro": {
+    "message": "Nustatymai saugomi Chrome sinchronizavimo saugykloje. Jei plėtiniams įgalintas Chrome sinchronizavimas, jie gali sekti jūsų Chrome profilį."
+  },
+  "exportJson": {
+    "message": "Eksportuoti JSON"
+  },
+  "importFile": {
+    "message": "Importuoti failą"
+  },
+  "applyPastedJson": {
+    "message": "Užtepkite įklijuotą JSON"
+  },
+  "refreshFromSync": {
+    "message": "Atnaujinti iš sinchronizavimo"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Čia rodoma eksportavimo peržiūra. Taip pat galite įklijuoti MotionBlock JSON atsarginę kopiją ir ją pritaikyti."
+  },
+  "globalStatusSaved": {
+    "message": "Išsaugotas visuotinis statusas."
+  },
+  "globalDefaultsSaved": {
+    "message": "Įrašyti visuotiniai numatytieji nustatymai."
+  },
+  "displayModeSaved": {
+    "message": "Ekrano režimas išsaugotas."
+  },
+  "themeSaved": {
+    "message": "Tema išsaugota."
+  },
+  "revealSettingSaved": {
+    "message": "Atskleidimo mygtuko nustatymas išsaugotas."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostikos nustatymas išsaugotas."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Rekomenduojami numatytieji nustatymai atkurti."
+  },
+  "enterValidHostname": {
+    "message": "Įveskite leistiną pagrindinio kompiuterio vardą."
+  },
+  "siteAdded": {
+    "message": "Svetainė pridėta."
+  },
+  "siteRuleSaved": {
+    "message": "Svetainės taisyklė įrašyta."
+  },
+  "siteRemoved": {
+    "message": "Svetainė pašalinta."
+  },
+  "settingsExported": {
+    "message": "Parametrai eksportuoti į JSON failą."
+  },
+  "settingsImportedFromFile": {
+    "message": "Iš failo importuoti parametrai."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Nustatymai, importuoti iš įklijuotų JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Parametrai atnaujinti iš Chrome sinchronizavimo."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nepavyko įkelti parametrų."
+  },
+  "defaultOn": {
+    "message": "Numatytasis įjungtas"
+  },
+  "defaultOff": {
+    "message": "Numatytasis išjungimas"
+  },
+  "noWebsitePreferences": {
+    "message": "Svetainės nuostatų dar nėra."
+  },
+  "removeSite": {
+    "message": "Pašalinti"
+  },
+  "siteTableSite": {
+    "message": "Svetainė"
+  },
+  "siteTableActive": {
+    "message": "Aktyvus"
+  },
+  "selectInherit": {
+    "message": "Paveldėti"
+  },
+  "selectBlock": {
+    "message": "Blokuoti"
+  },
+  "selectAllow": {
+    "message": "Leisti"
+  },
+  "selectOn": {
+    "message": "Įjungta"
+  },
+  "selectOff": {
+    "message": "Išjungta"
+  },
+  "saveFailed": {
+    "message": "Įrašyti nepavyko."
+  },
+  "importFailed": {
+    "message": "Importuoti nepavyko: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Pasirinkite JSON failą arba pirmiausia įklijuokite atsarginę kopiją."
+  },
+  "invalidJson": {
+    "message": "Neleistinas JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Tai neatrodo kaip MotionBlock nustatymų atsarginė kopija."
+  },
+  "errorMissingMessageType": {
+    "message": "Trūksta pranešimo tipo."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Trūksta svetainės pagrindinio kompiuterio pavadinimo."
+  },
+  "errorUnknownMessageType": {
+    "message": "Nežinomas pranešimo tipas."
+  },
+  "featureGifsLabel": {
+    "message": "GIF vaizdai"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Pakeiskite GIF vaizdo elementus puslapyje, palikdami mažyčius sąsajos GIFs ramybėje."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV ir GIF tipo vaizdo įrašų URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokuokite .gifv URL ir vaizdo įrašų elementus, kurie veikia kaip cikliniai GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL šablonai"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokuoti .webp vaizdo URL. Pagal numatytuosius nustatymus išjungta, nes daugelis WebP vaizdų nėra animuoti."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Automatinis vaizdo įrašų paleidimas ir ciklas"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Automatinis paleidimas"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Pristabdykite automatinį vaizdo įrašo paleidimą ir pašalinkite nutildytą ciklinį vaizdo įrašą, naudojamą kaip animaciją."
+  },
+  "featureVideoLabel": {
+    "message": "Visas vaizdo įrašas"
+  },
+  "featureVideoShortLabel": {
+    "message": "Vaizdo įrašas"
+  },
+  "featureVideoDescription": {
+    "message": "Blokuoti HTML5 vaizdo įrašų ir įprastų vaizdo failų užklausas."
+  },
+  "featureAudioLabel": {
+    "message": "Garsas"
+  },
+  "featureAudioShortLabel": {
+    "message": "Garsas"
+  },
+  "featureAudioDescription": {
+    "message": "Blokuoti garso elementus ir įprastas garso failų užklausas."
+  },
+  "featureImagesLabel": {
+    "message": "Visi vaizdai"
+  },
+  "featureImagesShortLabel": {
+    "message": "Vaizdai"
+  },
+  "featureImagesDescription": {
+    "message": "Pakeiskite vaizdo elementus puslapyje. Naudokite svetainės leidimo taisykles daug vaizdų turinčioms svetainėms."
+  },
+  "featureEmojiLabel": {
+    "message": "Jaustukų tekstas ir jaustukų vaizdai"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Jaustukai"
+  },
+  "featureEmojiDescription": {
+    "message": "Pašalinkite jaustukų simbolius ir įprastus jaustukų vaizdų braižytuvus. Pagal numatytuosius nustatymus išjungta, nes keičia tekstą."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animacija ir perėjimai"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Išjunkite CSS animacijas, perėjimus ir sklandų slinkimą."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Judesio blokavimas"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Rekomenduojami GIFs, GIF tipo vaizdo įrašų, automatinio paleidimo ir puslapio judėjimo numatytieji nustatymai."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Plačios medijos blokatoriai"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Patyrusio vartotojo valdikliai, skirti vaizdams, vaizdo įrašams, garsui, WebP URL ir jaustukams. Tai gali pakeisti arba sugadinti kai kurias svetaines."
+  },
+  "contentShowBlockedImage": {
+    "message": "Rodyti užblokuotą vaizdą"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Leisti užblokuotą garsą"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Leisti užblokuotą vaizdo įrašą"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Leisti užblokuotą laikmeną"
+  },
+  "contentBlockedByTitle": {
+    "message": "Užblokavo MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Užblokuotas $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF tipo laikmena"
+  },
+  "contentReasonVideo": {
+    "message": "Vaizdo įrašas"
+  },
+  "contentReasonAudio": {
+    "message": "Garsas"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Vaizdo įrašo ciklas"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Automatinis vaizdo įrašo paleidimas"
+  },
+  "contentReasonImage": {
+    "message": "paveikslėlis"
+  },
+  "contentReasonMedia": {
+    "message": "Žiniasklaida"
+  }
+}

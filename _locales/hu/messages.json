@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Blocker és Animation Stopper"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Stop GIFs, GIFV, automatikus videólejátszás, lebegtető előnézetek és figyelemelterelés mozgása helyszínenkénti vezérléssel."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock lehetőségek"
+  },
+  "siteLoading": {
+    "message": "Betöltési hely..."
+  },
+  "optionsButton": {
+    "message": "Lehetőségek"
+  },
+  "statusOnInitial": {
+    "message": "Onnan"
+  },
+  "checkingActiveRules": {
+    "message": "Ellenőrzöm az aktív szabályokat..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ blokkolva",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokkolás itt"
+  },
+  "allowThisSite": {
+    "message": "Engedélyezd ezt az oldalt"
+  },
+  "siteMode": {
+    "message": "Helyszín mód"
+  },
+  "followGlobalDefaults": {
+    "message": "Kövesse a globális alapértelmezéseket"
+  },
+  "blockOnThisSite": {
+    "message": "Blokkolás ezen az oldalon"
+  },
+  "allowThisSiteOption": {
+    "message": "Engedélyezd ezt az oldalt"
+  },
+  "siteMediaControls": {
+    "message": "Oldalmédia vezérlés"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnosztika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnosztikai napló"
+  },
+  "copyDiagnostics": {
+    "message": "Másolás naplója"
+  },
+  "refreshDiagnostics": {
+    "message": "Frissítés"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diagnosztikai eseményeket rögzítenek.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Még nincs diagnosztika. Töltsd be ezt a fület, ismételd meg a problémát, majd frissítsd ezt a panelt."
+  },
+  "diagnosticsRefreshed": {
+    "message": "A diagnosztika felfrissült."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Nem tudtam frissíteni a diagnózist."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnosztika másolva."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Nem tudtam diagnosztikát másolni."
+  },
+  "resetSite": {
+    "message": "Visszaállított oldal"
+  },
+  "reloadTab": {
+    "message": "Újratöltés"
+  },
+  "reloadHint": {
+    "message": "Újratöltésre lehet szükség olyan médiák esetében, amelyek már blokkolták vagy betöltöttek."
+  },
+  "unknownSite": {
+    "message": "Ismeretlen helyszín"
+  },
+  "statusBlocking": {
+    "message": "Blokkolás"
+  },
+  "statusAllowed": {
+    "message": "Engedélyezett"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nem tudtam betölteni a beállításokat"
+  },
+  "notAWebsite": {
+    "message": "Nem weboldal"
+  },
+  "statusNotApplicable": {
+    "message": "Nincs"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock nem tudja konfigurálni böngészőt, bővítményt vagy más védett oldalakat."
+  },
+  "selectUseGlobal": {
+    "message": "Globális használat"
+  },
+  "selectBlockHere": {
+    "message": "Blokkolj itt"
+  },
+  "selectAllowHere": {
+    "message": "Engedd meg itt"
+  },
+  "summaryAllowed": {
+    "message": "Ez az oldal engedélyezett. MotionBlock nem blokkolja a médiát itt."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktív itt van, de jelenleg nincs semmilyen médiakategória letiltva."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blokkolom $FEATURES$ ezen az oldalon.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Minden MotionBlock szabály nincs ezen az oldalon."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Ez az oldal saját MotionBlock beállításokat használ."
+  },
+  "siteRuleOverrides": {
+    "message": "Ez az oldal globális státuszt követ médiaspecifikus felülbírálásokkal."
+  },
+  "siteRuleDefaults": {
+    "message": "Ez az oldal követi a globális alapértelmezéseit."
+  },
+  "featureMetaInactive": {
+    "message": "Inaktív, amíg a helyszín engedélyezett"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Felülírás: blokkolás"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Felülírás: engedélyezett"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: blokkolás"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Global: engedélyezett"
+  },
+  "optionsIntro": {
+    "message": "Globális média alapértelmezések és weboldalonkénti preferenciák."
+  },
+  "extensionActive": {
+    "message": "Kiterjesztés aktív"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globális alapértelmezett rendszerek"
+  },
+  "globalDefaultsIntro": {
+    "message": "Kezdd GIFs, GIF-szerű videóval, és automatikus lejátszással. Széles körű blokkolókat csak akkor használjunk, ha egy oldalnak szigorúbb médiakontrollra van szüksége."
+  },
+  "restoreRecommended": {
+    "message": "Ajánlott helyreállítás"
+  },
+  "blockedMediaDisplay": {
+    "message": "Blokkolt média megjelenítés"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompakt helymeghatározó"
+  },
+  "replacementHide": {
+    "message": "Rejtő elem"
+  },
+  "interfaceTheme": {
+    "message": "Interfész téma"
+  },
+  "themeSystem": {
+    "message": "Rendszer"
+  },
+  "themeLight": {
+    "message": "Fény"
+  },
+  "themeDark": {
+    "message": "Sötét"
+  },
+  "revealControlsTitle": {
+    "message": "Lezárt médiumok felfedése"
+  },
+  "revealControlsDescription": {
+    "message": "Mutasd be a kattintás-lejátszás/megjelenítés gombokat blokkolt médián. Alapértelmezettben kikapcsolva, mert egyes oldalak újrahasználják a rejtett médiafelületeket."
+  },
+  "diagnosticsTitle": {
+    "message": "Fejlett diagnosztika"
+  },
+  "diagnosticsDescription": {
+    "message": "Mutasson egy kopolható, fülenként diagnosztikai naplót a felugró ablakban, miközben blokkolási problémát reprodukálsz."
+  },
+  "websitePreferencesHeading": {
+    "message": "Weboldal beállításai"
+  },
+  "websitePreferencesIntro": {
+    "message": "Használj pontos hostneveket, mint reddit.com, discord.com vagy news.example.com."
+  },
+  "addSite": {
+    "message": "Oldal hozzáadása"
+  },
+  "backupHeading": {
+    "message": "Tartalék"
+  },
+  "backupIntro": {
+    "message": "A beállítások Chrome szinkron tárolóban vannak tárolva. Ha Chrome szinkronizáció engedélyezve van a bővítményekhez, követhetik a Chrome profilodat."
+  },
+  "exportJson": {
+    "message": "Export JSON"
+  },
+  "importFile": {
+    "message": "Fájl importálása"
+  },
+  "applyPastedJson": {
+    "message": "Felvitd a ragasztót JSON"
+  },
+  "refreshFromSync": {
+    "message": "Frissítés a szinkronból"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Az export előnézet itt található. Be is illeszthetsz egy MotionBlock JSON biztonsági mentést és alkalmazhatod."
+  },
+  "globalStatusSaved": {
+    "message": "Globális státusz mentve megmentve."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globális alapértelmezett értékek mentve."
+  },
+  "displayModeSaved": {
+    "message": "Megjelenítési mód mentve van."
+  },
+  "themeSaved": {
+    "message": "A téma mentve."
+  },
+  "revealSettingSaved": {
+    "message": "A megjelenítés gomb beállítása mentve van."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnosztikai beállítás mentve van."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Ajánlott alapértelmezett beállítások visszaállítva."
+  },
+  "enterValidHostname": {
+    "message": "Írj be egy érvényes hosztnevet"
+  },
+  "siteAdded": {
+    "message": "Oldal hozzáadva."
+  },
+  "siteRuleSaved": {
+    "message": "A helyszín szabálya mentve."
+  },
+  "siteRemoved": {
+    "message": "A helyszín eltávolítása."
+  },
+  "settingsExported": {
+    "message": "Beállítások exportálva egy JSON fájlba."
+  },
+  "settingsImportedFromFile": {
+    "message": "Beállítások fájlból importálva."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Beállítások beillesztett JSON-ből importáltak."
+  },
+  "settingsRefreshed": {
+    "message": "A beállítások frissültek Chrome szinkronizálásból."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nem tudtam betölteni a beállításokat."
+  },
+  "defaultOn": {
+    "message": "Alapértelmezett beállítás"
+  },
+  "defaultOff": {
+    "message": "Alapértelmezett kikapcsolás"
+  },
+  "noWebsitePreferences": {
+    "message": "Még nincs weboldal preferenciája."
+  },
+  "removeSite": {
+    "message": "Távolítsd el"
+  },
+  "siteTableSite": {
+    "message": "Helyszín"
+  },
+  "siteTableActive": {
+    "message": "Aktív"
+  },
+  "selectInherit": {
+    "message": "Öröklés"
+  },
+  "selectBlock": {
+    "message": "Blokk"
+  },
+  "selectAllow": {
+    "message": "Engedd meg"
+  },
+  "selectOn": {
+    "message": "Onnan"
+  },
+  "selectOff": {
+    "message": "Le"
+  },
+  "saveFailed": {
+    "message": "A mentés sikertelen."
+  },
+  "importFailed": {
+    "message": "Az import sikertelen: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Válassz egy JSON fájlt, vagy először beilleszts egy biztonsági mentést."
+  },
+  "invalidJson": {
+    "message": "Érvénytelen JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Ez nem úgy tűnik, mintha MotionBlock beállítási mentés lenne."
+  },
+  "errorMissingMessageType": {
+    "message": "Hiányzó üzenettípus."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Hiányzik az oldal hászneve."
+  },
+  "errorUnknownMessageType": {
+    "message": "Ismeretlen üzenettípus."
+  },
+  "featureGifsLabel": {
+    "message": "GIF képek"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Cseréld ki GIF képelemeket az oldalon, miközben a kis felületet GIFs hagyd békén."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV és GIF-szerű videó URL-ek"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokkold le a .gifv URL-eket és azokat a videóelemeket, amelyek úgy viselkednek, mintha GIFs loopolnának."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-minták"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Tiltsd le a .webp kép URL-eket. Alapértelmezés szerint kikapcsolva, mert sok WebP kép nem animált."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Automatikus lejátszás és videó hurcolása"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Automatikus lejátszás"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Állítsd meg az automatikus lejátszási videót, és távolítsd el az animációként használt tomboló ismétlő videót."
+  },
+  "featureVideoLabel": {
+    "message": "Minden videó"
+  },
+  "featureVideoShortLabel": {
+    "message": "Videó"
+  },
+  "featureVideoDescription": {
+    "message": "Blokkold HTML5 videót és gyakori videófájlkéréseket."
+  },
+  "featureAudioLabel": {
+    "message": "Hang"
+  },
+  "featureAudioShortLabel": {
+    "message": "Hang"
+  },
+  "featureAudioDescription": {
+    "message": "Blokkolja a hangelemeket és a gyakori hangfájlkéréseket."
+  },
+  "featureImagesLabel": {
+    "message": "Minden kép"
+  },
+  "featureImagesShortLabel": {
+    "message": "Képek"
+  },
+  "featureImagesDescription": {
+    "message": "Cseréld le a képelemeket az oldalon. Használj oldalonkénti szabályokat képekkel gazdag oldalakhoz."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji szöveg és emoji képek"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Távolítsa el az emoji karaktereket és a gyakori emoji képmegjelenítőket. Alapértelmezettben kikapcsolva, mert megváltoztatja a szöveget."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animáció és átmenetek"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Kapcsold ki CSS animációkat, átmeneteket és sima görgetést."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Mozgásblokkolás"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Ajánlott alapértelmezések GIFs, GIF-szerű videók, automatikus lejátszás és oldalmozgás esetén."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Széles médiablokkolók"
+  },
+  "featureGroupBroadDescription": {
+    "message": "A poweruser vezérlők képek, videók, hang, WebP URL-ek és emojik esetén. Ezek egyes oldalakat megváltoztathatnak vagy tönkretehetnek."
+  },
+  "contentShowBlockedImage": {
+    "message": "Blokkolt kép megjelenítése"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Lejátszani a blokkolt hangot"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Lejátszani a blokkolt videót"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Játssz blokkolt média"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock által blokkolva: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Blokkolva $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-szerű média"
+  },
+  "contentReasonVideo": {
+    "message": "Videó"
+  },
+  "contentReasonAudio": {
+    "message": "Hang"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Videó ismétlő"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Automatikus lejátszás videó"
+  },
+  "contentReasonImage": {
+    "message": "Kép"
+  },
+  "contentReasonMedia": {
+    "message": "Média"
+  }
+}

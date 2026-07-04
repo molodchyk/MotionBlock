@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Blokeatzailea eta Animazio Geldiarazlea"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Gelditu GIFs, GIFV, bideoa automatikoki erreproduzitu, aurrebistak eta mugimendu distraktorea gune bakoitzeko kontrolekin."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Aukerak"
+  },
+  "siteLoading": {
+    "message": "Kargatzeko gunea..."
+  },
+  "optionsButton": {
+    "message": "Aukerak"
+  },
+  "statusOnInitial": {
+    "message": "On"
+  },
+  "checkingActiveRules": {
+    "message": "Arau aktiboak egiaztatzen..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ blokeatuta",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Bloke mugimendua hemen"
+  },
+  "allowThisSite": {
+    "message": "Gune hau onartu"
+  },
+  "siteMode": {
+    "message": "Gune modua"
+  },
+  "followGlobalDefaults": {
+    "message": "Jarraitu lehenetsitako lehenetsi globalak"
+  },
+  "blockOnThisSite": {
+    "message": "Blokeoa gune honetan"
+  },
+  "allowThisSiteOption": {
+    "message": "Gune hau onartu"
+  },
+  "siteMediaControls": {
+    "message": "Gunearen hedabideen kontrolak"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostikoak"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostiko egunkaria"
+  },
+  "copyDiagnostics": {
+    "message": "Kopiatu egunkaria"
+  },
+  "refreshDiagnostics": {
+    "message": "Berritzea"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diagnostiko gertaerak erregistratuak.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Oraindik ez diagnostikorik. Fitxa hau berriro kargatu, arazoa erreproduzitu, eta panel hau freskatu."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostikoak berritu dira."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Ez dut diagnostikoak berritu ahal izan."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostikoak kopiatuta."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Ez nuen diagnostikoak kopiatu ahal izan."
+  },
+  "resetSite": {
+    "message": "Berrezarri gunea"
+  },
+  "reloadTab": {
+    "message": "Kargatu berriro"
+  },
+  "reloadHint": {
+    "message": "Berriro kargatzea beharrezkoa izan daiteke dagoeneko blokeatuta edo kargatuta zegoen medioetan."
+  },
+  "unknownSite": {
+    "message": "Ezezaguna den gunea"
+  },
+  "statusBlocking": {
+    "message": "Blokeoa"
+  },
+  "statusAllowed": {
+    "message": "Onartua"
+  },
+  "couldNotLoadSettings": {
+    "message": "Ezarpenak ezin izan ziren kargatu"
+  },
+  "notAWebsite": {
+    "message": "Ez da webgune bat"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ezin du nabigatzailea, luzapena edo bestelako orrialde babestuak konfiguratu."
+  },
+  "selectUseGlobal": {
+    "message": "Erabili globala"
+  },
+  "selectBlockHere": {
+    "message": "Blokeatu hemen"
+  },
+  "selectAllowHere": {
+    "message": "Hemen utzi."
+  },
+  "summaryAllowed": {
+    "message": "Gune hau onartzen da. MotionBlock ez du hedabideak blokeatzen hemen."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktibo nago, baina une honetan ez hedabide kategoriarik blokeatuta."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Gune honetan $FEATURES$ blokeatzen.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "MotionBlock arau guztiak desagertuta daude gune honetan."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Gune honek bere MotionBlock ezarpen propioak erabiltzen ditu."
+  },
+  "siteRuleOverrides": {
+    "message": "Gune honek egoera globala jarraitzen du, hedabideen araberako gainidazpenekin."
+  },
+  "siteRuleDefaults": {
+    "message": "Gune honek zure lehenetsi globalak jarraitzen ditu."
+  },
+  "featureMetaInactive": {
+    "message": "Inaktiboa gunea baimenduta dagoenean"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Gainidaztea: blokeoa"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Gainidaztea: onartua"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: blokeoa"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globala: onartua"
+  },
+  "optionsIntro": {
+    "message": "Mundu mailako media lehenetsiak eta webgune bakoitzeko lehentasunak."
+  },
+  "extensionActive": {
+    "message": "Hedapena aktiboa"
+  },
+  "globalDefaultsHeading": {
+    "message": "Lehenetsi Globalak"
+  },
+  "globalDefaultsIntro": {
+    "message": "Hasi GIFs, GIF antzeko bideoarekin eta autoplayarekin. Blokeatzaile zabalak erabili soilik gune batek hedabideen kontrol zorrotzagoa behar duenean."
+  },
+  "restoreRecommended": {
+    "message": "Berreskuratzea gomendatzen da"
+  },
+  "blockedMediaDisplay": {
+    "message": "Blokeatutako media pantaila"
+  },
+  "replacementPlaceholder": {
+    "message": "Ordezko konpaktua"
+  },
+  "replacementHide": {
+    "message": "Ezkutatu elementua"
+  },
+  "interfaceTheme": {
+    "message": "Interfazearen gaia"
+  },
+  "themeSystem": {
+    "message": "Sistema"
+  },
+  "themeLight": {
+    "message": "Argia"
+  },
+  "themeDark": {
+    "message": "Iluna"
+  },
+  "revealControlsTitle": {
+    "message": "Blokeatutako hedabideetarako botoiak agerian utzi"
+  },
+  "revealControlsDescription": {
+    "message": "Erakutsi klik jolasteko/erakusteko botoiak blokeatutako medioetan. Lehenetsita desegokia da, zenbait guneek ezkutuko media gainazalak berrerabiltzen dituztelako."
+  },
+  "diagnosticsTitle": {
+    "message": "Diagnostiko aurreratuak"
+  },
+  "diagnosticsDescription": {
+    "message": "Erakutsi fitxa bakoitzeko diagnostiko log bat popup-ean blokeatze arazo bat erreproduzitzen duzun bitartean."
+  },
+  "websitePreferencesHeading": {
+    "message": "Webguneen Lehentasunak"
+  },
+  "websitePreferencesIntro": {
+    "message": "Erabili izen zehatzak reddit.com, discord.com edo news.example.com."
+  },
+  "addSite": {
+    "message": "Gehitu gunea"
+  },
+  "backupHeading": {
+    "message": "Babesa"
+  },
+  "backupIntro": {
+    "message": "Ezarpenak Chrome biltegiratze sinkronikoan gordetzen dira. Chrome sinkronizazioa luzapenentzat gaituta badago, zure Chrome profila jarraitu dezakete."
+  },
+  "exportJson": {
+    "message": "Esportazio JSON"
+  },
+  "importFile": {
+    "message": "Inportazio fitxategia"
+  },
+  "applyPastedJson": {
+    "message": "Aplikatu itsatsi JSON"
+  },
+  "refreshFromSync": {
+    "message": "Sinkronizaziotik freskatzea"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Esportazioaren aurrebista hemen agertzen da. Babeskopia MotionBlock JSON bat itsatsi eta aplikatu dezakezu."
+  },
+  "globalStatusSaved": {
+    "message": "Egoera globala gordeta."
+  },
+  "globalDefaultsSaved": {
+    "message": "Lehenetsitako lehenetsi globalak."
+  },
+  "displayModeSaved": {
+    "message": "Pantaila modua gordeta."
+  },
+  "themeSaved": {
+    "message": "Gaia gordeta."
+  },
+  "revealSettingSaved": {
+    "message": "Agerian uzteko botoia gordeta."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostiko ezarpena gordeta."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Gomendatutako lehenetsiak berreskuratuta."
+  },
+  "enterValidHostname": {
+    "message": "Sartu ostalari izen baliodun bat."
+  },
+  "siteAdded": {
+    "message": "Gunea gehitu da."
+  },
+  "siteRuleSaved": {
+    "message": "Gune araua gordeta."
+  },
+  "siteRemoved": {
+    "message": "Gunea kenduta."
+  },
+  "settingsExported": {
+    "message": "Ezarpenak JSON fitxategi batera esportatzen dira."
+  },
+  "settingsImportedFromFile": {
+    "message": "Fitxategitik inportatutako ezarpenak."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Ezarpenak itsatsitako JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Ezarpenak Chrome sinkronizaziotik freskatu dira."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Ezarpenak ezin izan ditut kargatu."
+  },
+  "defaultOn": {
+    "message": "Lehenetsia piztuta"
+  },
+  "defaultOff": {
+    "message": "Lehenetsia itzalita"
+  },
+  "noWebsitePreferences": {
+    "message": "Oraindik ez webgune lehentasunik."
+  },
+  "removeSite": {
+    "message": "Kendu"
+  },
+  "siteTableSite": {
+    "message": "Gunea"
+  },
+  "siteTableActive": {
+    "message": "Aktibo"
+  },
+  "selectInherit": {
+    "message": "Ondorengoa"
+  },
+  "selectBlock": {
+    "message": "Blokea"
+  },
+  "selectAllow": {
+    "message": "Baimena"
+  },
+  "selectOn": {
+    "message": "On"
+  },
+  "selectOff": {
+    "message": "Itzali"
+  },
+  "saveFailed": {
+    "message": "Gordetzea huts egin du."
+  },
+  "importFailed": {
+    "message": "Inportazioa huts egin du: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Aukeratu JSON fitxategi bat edo itsatsi babeskopia bat lehenik."
+  },
+  "invalidJson": {
+    "message": "baliogabea JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Ez dirudi MotionBlock ezarpenen babeskopia bat."
+  },
+  "errorMissingMessageType": {
+    "message": "Mezu mota falta da."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Gunearen ostalariaren izena falta da."
+  },
+  "errorUnknownMessageType": {
+    "message": "Mezu mota ezezaguna."
+  },
+  "featureGifsLabel": {
+    "message": "GIF irudiak"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Orrialdeko irudi elementu GIF ordezkatu, interfaze txikia GIFs utzita."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV eta GIF antzeko bideo URLak"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokeatu .gifv URLak eta bideo elementuak, looping moduan jokatzen GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL patroien"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokeatu .webp irudi URLak. Lehenetsita desegokia da, irudi WebP asko ez baitira animatuak."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Autoplay eta bideoaren zikloa"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Autoplay"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Gelditu auto-play bideoa eta kendu animazio gisa erabiltzen den looping bideo isildua."
+  },
+  "featureVideoLabel": {
+    "message": "Bideo guztiak"
+  },
+  "featureVideoShortLabel": {
+    "message": "Bideoa"
+  },
+  "featureVideoDescription": {
+    "message": "Blokeatu bideo HTML5 eta ohiko bideo fitxategi eskaerak."
+  },
+  "featureAudioLabel": {
+    "message": "Audioa"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audioa"
+  },
+  "featureAudioDescription": {
+    "message": "Blokeatu audio elementuak eta audio fitxategi ohiko eskaerak."
+  },
+  "featureImagesLabel": {
+    "message": "Irudi guztiak"
+  },
+  "featureImagesShortLabel": {
+    "message": "Irudiak"
+  },
+  "featureImagesDescription": {
+    "message": "Ordezkatu orrialdeko irudi elementuak. Erabili webgune bakoitzeko baimen arauak irudi asko dituzten guneetan."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji testua eta emoji irudiak"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emojiak"
+  },
+  "featureEmojiDescription": {
+    "message": "Kendu emoji karaktereak eta ohiko emoji irudi erreproduzitzaileak. Lehenetsita desaktibatuta, testua aldatzen duelako."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animazioa eta trantsizioak"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Desgaitu CSS animazioak, trantsizioak eta desplazamendu leuna."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Mugimendu-blokeoa"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Gomendatutako lehenetsiak GIFs, GIF antzeko bideoetarako, autoplay eta orrialde mugimenduetarako."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Hedabideen blokeatzaile zabalak"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Erabiltzaile aurreratuek irudiak, bideoak, audioa, WebP URLak eta emojiak kontrolatzen dituzte. Hauek gune batzuk aldatu edo apurtu ditzakete."
+  },
+  "contentShowBlockedImage": {
+    "message": "Blokeatutako irudia erakutsi"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Blokeatutako audioa erreproduzitu"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Bideo blokeatua erreproduzitu"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Erreproduzitu blokeatutako hedabideak"
+  },
+  "contentBlockedByTitle": {
+    "message": "Blokeatu MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Blokeatutako $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF antzeko hedabideak"
+  },
+  "contentReasonVideo": {
+    "message": "Bideoa"
+  },
+  "contentReasonAudio": {
+    "message": "Audioa"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Bideo loop-a"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Autoplay bideoa"
+  },
+  "contentReasonImage": {
+    "message": "Irudia"
+  },
+  "contentReasonMedia": {
+    "message": "Komunikabideak"
+  }
+}

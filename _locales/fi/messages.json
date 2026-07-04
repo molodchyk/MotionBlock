@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF-esto ja animaation pysäyttäjä"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Pysäytä GIFs, GIFV, toista videota automaattisesti, leijuta esikatselut ja häiritsevä liike paikkakohtaisilla ohjauksilla."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Vaihtoehdot"
+  },
+  "siteLoading": {
+    "message": "Latauspaikka..."
+  },
+  "optionsButton": {
+    "message": "Vaihtoehdot"
+  },
+  "statusOnInitial": {
+    "message": "Päällä"
+  },
+  "checkingActiveRules": {
+    "message": "Tarkistan aktiiviset säännöt..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ estetty",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokkausliike täällä"
+  },
+  "allowThisSite": {
+    "message": "Salli tämä sivusto"
+  },
+  "siteMode": {
+    "message": "Paikkatila"
+  },
+  "followGlobalDefaults": {
+    "message": "Seuraa globaaleja oletusarvoja"
+  },
+  "blockOnThisSite": {
+    "message": "Estä tällä sivustolla"
+  },
+  "allowThisSiteOption": {
+    "message": "Salli tämä sivusto"
+  },
+  "siteMediaControls": {
+    "message": "Sivuston mediakontrollit"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostiikka"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostiikkaloki"
+  },
+  "copyDiagnostics": {
+    "message": "Kopioi loki"
+  },
+  "refreshDiagnostics": {
+    "message": "Päivitä"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diagnostiset tapahtumat tallennettu.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Ei vielä diagnostiikkaa. Lataa tämä välilehti uudelleen, toista ongelma ja päivitä sitten tämä paneeli."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostiikka virkistynyt."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "En saanut diagnostiikkaa päivitykseen."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostiikka kopioitu."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "En pystynyt kopioimaan diagnostiikkaa."
+  },
+  "resetSite": {
+    "message": "Sivuston nollaus"
+  },
+  "reloadTab": {
+    "message": "Lataa uudelleen"
+  },
+  "reloadHint": {
+    "message": "Uudelleenlataus saattaa olla tarpeen medialle, joka on jo estetty tai ladattu."
+  },
+  "unknownSite": {
+    "message": "Tuntematon paikka"
+  },
+  "statusBlocking": {
+    "message": "Blokkaus"
+  },
+  "statusAllowed": {
+    "message": "Sallittu"
+  },
+  "couldNotLoadSettings": {
+    "message": "Asetuksia ei voitu ladata"
+  },
+  "notAWebsite": {
+    "message": "Ei verkkosivusto"
+  },
+  "statusNotApplicable": {
+    "message": "Ei lainkaan"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ei voi määrittää selainta, laajennusta tai muita suojattuja sivuja."
+  },
+  "selectUseGlobal": {
+    "message": "Käytä globaalia"
+  },
+  "selectBlockHere": {
+    "message": "Estä tämä"
+  },
+  "selectAllowHere": {
+    "message": "Salli tänne"
+  },
+  "summaryAllowed": {
+    "message": "Tämä sivusto on sallittu. MotionBlock ei estä mediaa tässä."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktiivinen täällä, mutta tällä hetkellä ei ole estettyä mediakategoriaa."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Estän $FEATURES$ tällä sivustolla.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Kaikki MotionBlock säännöt ovat pois tällä sivustolla."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Tämä sivusto käyttää omia MotionBlock-asetuksiaan."
+  },
+  "siteRuleOverrides": {
+    "message": "Tämä sivusto noudattaa globaalia asemaa mediakohtaisilla ohituksilla."
+  },
+  "siteRuleDefaults": {
+    "message": "Tämä sivusto noudattaa globaaleja oletusasetuksiasi."
+  },
+  "featureMetaInactive": {
+    "message": "Passiivinen niin kauan kuin sivusto on sallittu"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Ohitus: blokkaus"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Ohitus: sallittu"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globaali: blokkaus"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globaali: sallittu"
+  },
+  "optionsIntro": {
+    "message": "Globaalit median oletusasetukset ja sivustokohtaiset asetukset."
+  },
+  "extensionActive": {
+    "message": "Laajennus aktiivinen"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globaalit oletukset"
+  },
+  "globalDefaultsIntro": {
+    "message": "Aloita GIFs, GIF-tyyppisellä videolla ja automaattitoistolla. Käytä laajoja estotyökaluja vain, kun sivusto tarvitsee tiukempaa mediakontrollia."
+  },
+  "restoreRecommended": {
+    "message": "Suositeltava palautus"
+  },
+  "blockedMediaDisplay": {
+    "message": "Estetty medianäyttö"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompakti paikkamerkki"
+  },
+  "replacementHide": {
+    "message": "Piilo-elementti"
+  },
+  "interfaceTheme": {
+    "message": "Käyttöliittymäteema"
+  },
+  "themeSystem": {
+    "message": "Järjestelmä"
+  },
+  "themeLight": {
+    "message": "Valo"
+  },
+  "themeDark": {
+    "message": "Pimeä"
+  },
+  "revealControlsTitle": {
+    "message": "Paljastuspainikkeet estettyihin medioihin"
+  },
+  "revealControlsDescription": {
+    "message": "Näytä click-toisto/näytä -painikkeet estetyillä medioilla. Oletuksena pois päältä, koska jotkut sivustot käyttävät piilotettuja mediapintoja uudelleen."
+  },
+  "diagnosticsTitle": {
+    "message": "Edistynyt diagnostiikka"
+  },
+  "diagnosticsDescription": {
+    "message": "Näytä kopioitava per tab-diagnostiikkaloki ponnahdusikkunassa samalla kun toistat esto-ongelman."
+  },
+  "websitePreferencesHeading": {
+    "message": "Verkkosivuston asetukset"
+  },
+  "websitePreferencesIntro": {
+    "message": "Käytä tarkkoja isäntänimiä, kuten reddit.com, discord.com tai news.example.com."
+  },
+  "addSite": {
+    "message": "Lisää sivusto"
+  },
+  "backupHeading": {
+    "message": "Varajärjestelmä"
+  },
+  "backupIntro": {
+    "message": "Asetukset tallennetaan Chrome synkronointimuistiin. Jos Chrome synkronointi on käytössä laajennuksille, he voivat seurata Chrome profiiliasi."
+  },
+  "exportJson": {
+    "message": "Vienti JSON"
+  },
+  "importFile": {
+    "message": "Tiedoston tuonti"
+  },
+  "applyPastedJson": {
+    "message": "Levitä liimattuja JSON"
+  },
+  "refreshFromSync": {
+    "message": "Päivitä synkronoinnista"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Vientiesikatselu löytyy täältä. Voit myös liittää MotionBlock JSON-varmuuskopion ja ottaa sen käyttöön."
+  },
+  "globalStatusSaved": {
+    "message": "Globaali tila tallennettu."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globaalit maksuhäiriöt tallennettu."
+  },
+  "displayModeSaved": {
+    "message": "Näyttötila tallennettu."
+  },
+  "themeSaved": {
+    "message": "Teema tallennettu."
+  },
+  "revealSettingSaved": {
+    "message": "Paljasta-painikkeen asetus tallentui."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostiikka-asetus tallennettu."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Suositellut oletusasetukset palautettu."
+  },
+  "enterValidHostname": {
+    "message": "Syötä kelvollinen isäntänimi."
+  },
+  "siteAdded": {
+    "message": "Sivusto lisätty."
+  },
+  "siteRuleSaved": {
+    "message": "Sivuston sääntö tallennettu."
+  },
+  "siteRemoved": {
+    "message": "Sivusto poistettu."
+  },
+  "settingsExported": {
+    "message": "Asetukset vietiin JSON-tiedostoon."
+  },
+  "settingsImportedFromFile": {
+    "message": "Asetukset tuotiin tiedostosta."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Asetukset tuotiin liitetystä JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Asetukset päivitetty Chrome synkronoinnista."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Asetuksia ei voinut ladata."
+  },
+  "defaultOn": {
+    "message": "Oletus päällä"
+  },
+  "defaultOff": {
+    "message": "Oletus pois päältä"
+  },
+  "noWebsitePreferences": {
+    "message": "Ei vielä verkkosivun asetuksia."
+  },
+  "removeSite": {
+    "message": "Poista"
+  },
+  "siteTableSite": {
+    "message": "Sijainti"
+  },
+  "siteTableActive": {
+    "message": "Aktiivinen"
+  },
+  "selectInherit": {
+    "message": "Perity"
+  },
+  "selectBlock": {
+    "message": "Lohko"
+  },
+  "selectAllow": {
+    "message": "Salli"
+  },
+  "selectOn": {
+    "message": "Päällä"
+  },
+  "selectOff": {
+    "message": "Pois päältä"
+  },
+  "saveFailed": {
+    "message": "Tallennus epäonnistui."
+  },
+  "importFailed": {
+    "message": "Tuonti epäonnistui: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Valitse ensin JSON-tiedosto tai liitä varmuuskopio."
+  },
+  "invalidJson": {
+    "message": "virheellinen JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Tämä ei vaikuta MotionBlock asetuksista varmuuskopiolta."
+  },
+  "errorMissingMessageType": {
+    "message": "Puuttuva viestityyppi."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Sivuston isäntänimi puuttuu."
+  },
+  "errorUnknownMessageType": {
+    "message": "Tuntematon viestityyppi."
+  },
+  "featureGifsLabel": {
+    "message": "GIF kuvat"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Korvaa GIF kuvaelementit sivulla jättäen pienen käyttöliittymän GIFs rauhaan."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV- ja GIF-tyyppiset videon URL-osoitteet"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Estä .gifv-URL-osoitteet ja videon elementit, jotka käyttäytyvät kuin toistuvat GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-kuviot"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Estä .webp-kuvien URL-osoitteet. Oletuksena pois päältä, koska monet WebP kuvat eivät ole animoituja."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Automaattinen toisto ja videon toistuminen"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Automaattitoisto"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Keskeytä automaattinen toisto ja poista animaatioksi käytetty mykistetty silmukka video."
+  },
+  "featureVideoLabel": {
+    "message": "Kaikki video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Estä HTML5 video ja yleiset videotiedostopyynnöt."
+  },
+  "featureAudioLabel": {
+    "message": "Ääni"
+  },
+  "featureAudioShortLabel": {
+    "message": "Ääni"
+  },
+  "featureAudioDescription": {
+    "message": "Estä äänielementit ja yleiset äänitiedostopyynnöt."
+  },
+  "featureImagesLabel": {
+    "message": "Kaikki kuvat"
+  },
+  "featureImagesShortLabel": {
+    "message": "Kuvat"
+  },
+  "featureImagesDescription": {
+    "message": "Korvaa kuvaelementit sivulla. Käytä sivustokohtaisia sallimissääntöjä kuvapainotteisille sivustoille."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji-teksti ja emojikuvat"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Poista emoji-merkit ja yleiset emojikuvanrenderöijät. Oletuksena pois päältä, koska se muuttaa tekstiä."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animaatio ja siirtymät"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Poista käytöstä CSS animaatiot, siirtymät ja sulava vieritys."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Liikkeen esto"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Suositellut oletusasetukset GIFs, GIF-tyyppisille videoille, automaattitoistolla ja sivun liikkeelle."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Laajat mediablokit"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Tehokäyttäjän ohjaukset kuville, videoille, äänelle, WebP URL-osoitteille ja emojille. Nämä voivat muuttaa tai rikkoa joitakin sivustoja."
+  },
+  "contentShowBlockedImage": {
+    "message": "Näytä estetty kuva"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Toista estetty ääni"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Toista estetty video"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Toista estettyä mediaa"
+  },
+  "contentBlockedByTitle": {
+    "message": "Estetty MotionBlock:n toimesta: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Estetty $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-tyyppinen media"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Ääni"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Toistuva video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Automaattinen toisto video"
+  },
+  "contentReasonImage": {
+    "message": "Kuva"
+  },
+  "contentReasonMedia": {
+    "message": "Media"
+  }
+}

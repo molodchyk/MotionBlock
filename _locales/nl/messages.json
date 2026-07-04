@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Blocker & Animatiestopper"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Stop GIFs, GIFV, automatisch video afspelen, hover-previews en afleidende beweging met bediening per site."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Opties"
+  },
+  "siteLoading": {
+    "message": "Laadplaats..."
+  },
+  "optionsButton": {
+    "message": "Opties"
+  },
+  "statusOnInitial": {
+    "message": "Op"
+  },
+  "checkingActiveRules": {
+    "message": "Actieve regels controleren..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ geblokkeerd",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokkeer hier een beweging"
+  },
+  "allowThisSite": {
+    "message": "Sta deze site toe"
+  },
+  "siteMode": {
+    "message": "Sitemodus"
+  },
+  "followGlobalDefaults": {
+    "message": "Volg wereldwijde defaults"
+  },
+  "blockOnThisSite": {
+    "message": "Blokkade op deze site"
+  },
+  "allowThisSiteOption": {
+    "message": "Sta deze site toe"
+  },
+  "siteMediaControls": {
+    "message": "Locatiemediacontroles"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostiek"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostisch logboek"
+  },
+  "copyDiagnostics": {
+    "message": "Kopieer logboek"
+  },
+  "refreshDiagnostics": {
+    "message": "Verversen"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diagnostische gebeurtenissen geregistreerd.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Nog geen diagnostiek. Laad dit tabblad opnieuw, reproduceer het probleem en ververs dan dit paneel."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostiek ververst."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Kon de diagnose niet verversen."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostiek gekopieerd."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Kon de diagnose niet kopiëren."
+  },
+  "resetSite": {
+    "message": "Reset site"
+  },
+  "reloadTab": {
+    "message": "Herladen"
+  },
+  "reloadHint": {
+    "message": "Herladen kan nodig zijn voor media die al geblokkeerd of geladen waren."
+  },
+  "unknownSite": {
+    "message": "Onbekende locatie"
+  },
+  "statusBlocking": {
+    "message": "Blokkeren"
+  },
+  "statusAllowed": {
+    "message": "Toegestaan"
+  },
+  "couldNotLoadSettings": {
+    "message": "Instellingen konden niet laden"
+  },
+  "notAWebsite": {
+    "message": "Geen website"
+  },
+  "statusNotApplicable": {
+    "message": "N.v.t."
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock kan browser-, extensie- of andere beschermde pagina's niet configureren."
+  },
+  "selectUseGlobal": {
+    "message": "Gebruik globaal"
+  },
+  "selectBlockHere": {
+    "message": "Blok hier"
+  },
+  "selectAllowHere": {
+    "message": "Laat het toe"
+  },
+  "summaryAllowed": {
+    "message": "Deze site is toegestaan. MotionBlock blokkeert hier geen media."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Hier actief aanwezig, maar er zijn momenteel geen mediacategorieën geblokkeerd."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blokkeer $FEATURES$ op deze site.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Alle MotionBlock regels zijn niet meer op deze site."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Deze site gebruikt zijn eigen MotionBlock instellingen."
+  },
+  "siteRuleOverrides": {
+    "message": "Deze site volgt de wereldwijde status met media-specifieke overrides."
+  },
+  "siteRuleDefaults": {
+    "message": "Deze site volgt je globale standaardinstellingen."
+  },
+  "featureMetaInactive": {
+    "message": "Inactief terwijl site is toegestaan"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Override: blokkeren"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Override: toegestaan"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globaal: blokkeren"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globaal: toegestaan"
+  },
+  "optionsIntro": {
+    "message": "Standaardinstellingen voor globale media en voorkeuren per site."
+  },
+  "extensionActive": {
+    "message": "Uitbreiding actief"
+  },
+  "globalDefaultsHeading": {
+    "message": "Wereldwijde wanbetalingen"
+  },
+  "globalDefaultsIntro": {
+    "message": "Begin met GIFs, GIF-achtige video, en autoplay. Gebruik alleen brede blokkades wanneer een site strengere mediacontrole nodig heeft."
+  },
+  "restoreRecommended": {
+    "message": "Herstel aanbevolen"
+  },
+  "blockedMediaDisplay": {
+    "message": "Geblokkeerde mediaweergave"
+  },
+  "replacementPlaceholder": {
+    "message": "Compacte plaatsvervanger"
+  },
+  "replacementHide": {
+    "message": "Verbergelement"
+  },
+  "interfaceTheme": {
+    "message": "Interfacethema"
+  },
+  "themeSystem": {
+    "message": "Systeem"
+  },
+  "themeLight": {
+    "message": "Licht"
+  },
+  "themeDark": {
+    "message": "Donker"
+  },
+  "revealControlsTitle": {
+    "message": "Onthullingsknoppen voor geblokkeerde media"
+  },
+  "revealControlsDescription": {
+    "message": "Toon klik-om-te-afspelen/tonen knoppen op geblokkeerde media. Standaard uitgeschakeld omdat sommige sites verborgen mediaoppervlakken hergebruiken."
+  },
+  "diagnosticsTitle": {
+    "message": "Geavanceerde diagnostiek"
+  },
+  "diagnosticsDescription": {
+    "message": "Toon een kopieerbaar diagnostisch logboek per tabblad in de pop-up terwijl je een blokkeringsprobleem reproduceert."
+  },
+  "websitePreferencesHeading": {
+    "message": "Websitevoorkeuren"
+  },
+  "websitePreferencesIntro": {
+    "message": "Gebruik exacte hostnamen zoals reddit.com, discord.com of news.example.com."
+  },
+  "addSite": {
+    "message": "Site toevoegen"
+  },
+  "backupHeading": {
+    "message": "Backup"
+  },
+  "backupIntro": {
+    "message": "Instellingen worden opgeslagen in Chrome sync-opslag. Als Chrome synchronisatie is ingeschakeld voor extensies, kunnen ze je Chrome profiel volgen."
+  },
+  "exportJson": {
+    "message": "Export JSON"
+  },
+  "importFile": {
+    "message": "Bestand importeren"
+  },
+  "applyPastedJson": {
+    "message": "Pas geplakte JSON"
+  },
+  "refreshFromSync": {
+    "message": "Ververs van sync"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "De exportpreview verschijnt hier. Je kunt ook een MotionBlock JSON back-up plakken en toepassen."
+  },
+  "globalStatusSaved": {
+    "message": "Globale status gered."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globale standaardinstellingen opgeslagen."
+  },
+  "displayModeSaved": {
+    "message": "Weergavemodus opgeslagen."
+  },
+  "themeSaved": {
+    "message": "Thema opgeslagen."
+  },
+  "revealSettingSaved": {
+    "message": "Knop onthullen opgeslagen."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostische instelling opgeslagen."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Aanbevolen standaardinstellingen hersteld."
+  },
+  "enterValidHostname": {
+    "message": "Voer een geldige hostnaam in."
+  },
+  "siteAdded": {
+    "message": "Locatie toegevoegd."
+  },
+  "siteRuleSaved": {
+    "message": "Siteregel opgeslagen."
+  },
+  "siteRemoved": {
+    "message": "Locatie verwijderd."
+  },
+  "settingsExported": {
+    "message": "Instellingen geëxporteerd naar een JSON bestand."
+  },
+  "settingsImportedFromFile": {
+    "message": "Instellingen geïmporteerd uit het bestand."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Instellingen geïmporteerd van geplakte JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Instellingen vernieuwd vanuit Chrome sync."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Instellingen konden niet laden."
+  },
+  "defaultOn": {
+    "message": "Standaard aan"
+  },
+  "defaultOff": {
+    "message": "Standaard uit"
+  },
+  "noWebsitePreferences": {
+    "message": "Nog geen websitevoorkeuren."
+  },
+  "removeSite": {
+    "message": "Verwijder"
+  },
+  "siteTableSite": {
+    "message": "Locatie"
+  },
+  "siteTableActive": {
+    "message": "Actief"
+  },
+  "selectInherit": {
+    "message": "Erven"
+  },
+  "selectBlock": {
+    "message": "Blok"
+  },
+  "selectAllow": {
+    "message": "Sta toe"
+  },
+  "selectOn": {
+    "message": "Op"
+  },
+  "selectOff": {
+    "message": "Off"
+  },
+  "saveFailed": {
+    "message": "Save-werk mislukt."
+  },
+  "importFailed": {
+    "message": "Import mislukt: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Kies eerst een JSON bestand of plak een back-up."
+  },
+  "invalidJson": {
+    "message": "Ongeldig JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Dit lijkt niet op een MotionBlock instellingen-back-up."
+  },
+  "errorMissingMessageType": {
+    "message": "Ontbrekend berichttype."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Hostnaam van de site ontbreekt."
+  },
+  "errorUnknownMessageType": {
+    "message": "Onbekend type bericht."
+  },
+  "featureGifsLabel": {
+    "message": "GIF afbeeldingen"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Vervang GIF afbeeldingselementen op de pagina terwijl je kleine interface GIFs laat rusten."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV en GIF-achtige video-URL's"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokkeer .gifv-URL's en video-elementen die zich gedragen als een looping GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-patronen"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokkeer .webp afbeeldings-URL's. Standaard uitgeschakeld omdat veel WebP afbeeldingen niet geanimeerd zijn."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Autoplay en herhalende video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Autoplay"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Pauzeer automatisch afspelen van video en verwijder gedempte herhalende video die als animatie wordt gebruikt."
+  },
+  "featureVideoLabel": {
+    "message": "Alle video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Blokkeer HTML5 video- en veelvoorkomende videobestandsverzoeken."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Blokkeer audio-elementen en veelvoorkomende verzoeken voor audiobestanden."
+  },
+  "featureImagesLabel": {
+    "message": "Alle afbeeldingen"
+  },
+  "featureImagesShortLabel": {
+    "message": "Afbeeldingen"
+  },
+  "featureImagesDescription": {
+    "message": "Vervang afbeeldingselementen op de pagina. Gebruik per-site toelaatregels voor sites met veel afbeeldingen."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji-tekst en emoji-afbeeldingen"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Verwijder emoji-tekens en veelvoorkomende emoji-afbeeldingsrenderers. Standaard uitgeschakeld omdat het tekst verandert."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animatie en overgangen"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Schakel CSS animaties, overgangen en vloeiend scrollen uit."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Bewegingsblokkering"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Aanbevolen standaardinstellingen voor GIFs, GIF-achtige video's, autoplay en paginabeweging."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Brede mediablokkers"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Power-user bedient afbeeldingen, video, audio, WebP URL's en emoji's. Deze kunnen sommige sites veranderen of breken."
+  },
+  "contentShowBlockedImage": {
+    "message": "Toon geblokkeerde afbeelding"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Speel geblokkeerde audio af"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Speel geblokkeerde video af"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Speel geblokkeerde media af"
+  },
+  "contentBlockedByTitle": {
+    "message": "Geblokkeerd door MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Geblokkeerd $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-achtige media"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Looping video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Autoplay video"
+  },
+  "contentReasonImage": {
+    "message": "Afbeelding"
+  },
+  "contentReasonMedia": {
+    "message": "Media"
+  }
+}

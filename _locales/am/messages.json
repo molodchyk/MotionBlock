@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock GIF አግድ & አኒሜሽን ማቆሚያ"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs፣GIFV፣ ቪዲዮን በራስ-አጫውት፣ ቅድመ እይታዎችን ያንዣብቡ እና ትኩረትን የሚከፋፍል እንቅስቃሴን በእያንዳንዱ ጣቢያ መቆጣጠሪያዎች ያቁሙ።"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock አማራጮች"
+  },
+  "siteLoading": {
+    "message": "ጣቢያውን በመጫን ላይ..."
+  },
+  "optionsButton": {
+    "message": "አማራጮች"
+  },
+  "statusOnInitial": {
+    "message": "በርቷል"
+  },
+  "checkingActiveRules": {
+    "message": "ንቁ ደንቦችን በመፈተሽ ላይ..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ ታግዷል",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "እንቅስቃሴን እዚህ አግድ"
+  },
+  "allowThisSite": {
+    "message": "ይህን ጣቢያ ፍቀድ"
+  },
+  "siteMode": {
+    "message": "የጣቢያ ሁነታ"
+  },
+  "followGlobalDefaults": {
+    "message": "ዓለም አቀፍ ነባሪዎችን ይከተሉ"
+  },
+  "blockOnThisSite": {
+    "message": "በዚህ ጣቢያ ላይ አግድ"
+  },
+  "allowThisSiteOption": {
+    "message": "ይህን ጣቢያ ፍቀድ"
+  },
+  "siteMediaControls": {
+    "message": "የጣቢያ ሚዲያ መቆጣጠሪያዎች"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "ምርመራዎች"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock የምርመራ ምዝግብ ማስታወሻ"
+  },
+  "copyDiagnostics": {
+    "message": "ምዝግብ ማስታወሻ ቅዳ"
+  },
+  "refreshDiagnostics": {
+    "message": "አዝናና"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ የምርመራ ክስተቶች ተመዝግበዋል.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "እስካሁን ምንም ምርመራዎች የሉም. ይህን ትር እንደገና ይጫኑ፣ ችግሩን እንደገና ማባዛት እና ይህን ፓነል ያድሱት።"
+  },
+  "diagnosticsRefreshed": {
+    "message": "ምርመራዎች ታድሰዋል."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "ምርመራዎችን ማደስ አልተቻለም።"
+  },
+  "diagnosticsCopied": {
+    "message": "ምርመራዎች ተገልብጠዋል."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "ምርመራዎችን መቅዳት አልተቻለም።"
+  },
+  "resetSite": {
+    "message": "ጣቢያ ዳግም አስጀምር"
+  },
+  "reloadTab": {
+    "message": "ዳግም ጫን"
+  },
+  "reloadHint": {
+    "message": "አስቀድሞ ለታገደ ወይም ለተጫነ ሚዲያ እንደገና መጫን ሊያስፈልግ ይችላል።"
+  },
+  "unknownSite": {
+    "message": "ያልታወቀ ጣቢያ"
+  },
+  "statusBlocking": {
+    "message": "ማገድ"
+  },
+  "statusAllowed": {
+    "message": "ተፈቅዷል"
+  },
+  "couldNotLoadSettings": {
+    "message": "ማሰናጃዎችን መጫን አልተቻለም"
+  },
+  "notAWebsite": {
+    "message": "ድር ጣቢያ አይደለም"
+  },
+  "statusNotApplicable": {
+    "message": "N / A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock አሳሽ፣ ቅጥያ ወይም ሌሎች የተጠበቁ ገጾችን ማዋቀር አይችልም።"
+  },
+  "selectUseGlobal": {
+    "message": "አለምአቀፍ ተጠቀም"
+  },
+  "selectBlockHere": {
+    "message": "እዚህ አግድ"
+  },
+  "selectAllowHere": {
+    "message": "እዚህ ፍቀድ"
+  },
+  "summaryAllowed": {
+    "message": "ይህ ጣቢያ ተፈቅዶለታል. MotionBlock እዚህ ሚዲያን እየከለከለ አይደለም።"
+  },
+  "summaryActiveNoCategories": {
+    "message": "እዚህ ንቁ፣ ግን በአሁኑ ጊዜ ምንም የሚዲያ ምድቦች አልታገዱም።"
+  },
+  "summaryBlockingFeatures": {
+    "message": "በዚህ ጣቢያ ላይ $FEATURES$ ማገድ።",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "ሁሉም MotionBlock ህጎች ለዚህ ጣቢያ ጠፍተዋል."
+  },
+  "siteRuleOwnSettings": {
+    "message": "ይህ ጣቢያ የራሱን MotionBlock ቅንብሮች ይጠቀማል።"
+  },
+  "siteRuleOverrides": {
+    "message": "ይህ ድረ-ገጽ በሚዲያ-ተኮር መሻር ዓለም አቀፋዊ ሁኔታን ይከተላል።"
+  },
+  "siteRuleDefaults": {
+    "message": "ይህ ጣቢያ የእርስዎን ዓለም አቀፍ ነባሪዎች ይከተላል።"
+  },
+  "featureMetaInactive": {
+    "message": "ጣቢያው በሚፈቀድበት ጊዜ እንቅስቃሴ-አልባ"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "መሻር ማገድ"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "መሻር ተፈቅዷል"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "ዓለም አቀፋዊ ማገድ"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "ዓለም አቀፋዊ ተፈቅዷል"
+  },
+  "optionsIntro": {
+    "message": "የአለምአቀፍ ሚዲያ ነባሪዎች እና የጣቢያ ምርጫዎች።"
+  },
+  "extensionActive": {
+    "message": "ቅጥያ ገባሪ"
+  },
+  "globalDefaultsHeading": {
+    "message": "አለምአቀፍ ነባሪዎች"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs፣GIF በሚመስል ቪዲዮ እና በራስ-አጫውት ይጀምሩ። አንድ ጣቢያ ጥብቅ የሚዲያ ቁጥጥር ሲፈልግ ብቻ ሰፊ አጋጆችን ይጠቀሙ።"
+  },
+  "restoreRecommended": {
+    "message": "ወደነበረበት ይመልሱ የሚመከር"
+  },
+  "blockedMediaDisplay": {
+    "message": "የታገደ የሚዲያ ማሳያ"
+  },
+  "replacementPlaceholder": {
+    "message": "የታመቀ ቦታ ያዥ"
+  },
+  "replacementHide": {
+    "message": "ኤለመንት ደብቅ"
+  },
+  "interfaceTheme": {
+    "message": "በይነገጽ ጭብጥ"
+  },
+  "themeSystem": {
+    "message": "ስርዓት"
+  },
+  "themeLight": {
+    "message": "ብርሃን"
+  },
+  "themeDark": {
+    "message": "የጠቆረ"
+  },
+  "revealControlsTitle": {
+    "message": "ለታገደ ሚዲያ ቁልፎችን ይግለጹ"
+  },
+  "revealControlsDescription": {
+    "message": "በታገዱ ሚዲያዎች ላይ ለመጫወት/ለማሳየት ጠቅ ያድርጉ ቁልፎችን አሳይ። አንዳንድ ጣቢያዎች የተደበቁ የሚዲያ ገጽታዎችን እንደገና ስለሚጠቀሙ በነባሪነት ጠፍቷል።"
+  },
+  "diagnosticsTitle": {
+    "message": "የላቀ ምርመራዎች"
+  },
+  "diagnosticsDescription": {
+    "message": "የማገድ ችግርን በሚደግሙበት ጊዜ በብቅ ባዩ ውስጥ ሊገለበጥ የሚችል የምርመራ ምዝግብ ማስታወሻ በብቅ ባዩ ውስጥ አሳይ።"
+  },
+  "websitePreferencesHeading": {
+    "message": "የድር ጣቢያ ምርጫዎች"
+  },
+  "websitePreferencesIntro": {
+    "message": "እንደ reddit.com፣discord.com ወይም news.example.com ያሉ ትክክለኛ የአስተናጋጅ ስሞችን ይጠቀሙ።"
+  },
+  "addSite": {
+    "message": "ጣቢያ ያክሉ"
+  },
+  "backupHeading": {
+    "message": "ምትኬ"
+  },
+  "backupIntro": {
+    "message": "ቅንብሮች Chrome በማመሳሰል ማከማቻ ውስጥ ተከማችተዋል።Chrome ማመሳሰል ለቅጥያዎች ከነቃ፣ የእርስዎን Chrome መገለጫ መከተል ይችላሉ።"
+  },
+  "exportJson": {
+    "message": "ወደ ውጪ ላክ JSON"
+  },
+  "importFile": {
+    "message": "ፋይል ማምጫ"
+  },
+  "applyPastedJson": {
+    "message": "የተለጠፈውን JSON ይተግብሩ"
+  },
+  "refreshFromSync": {
+    "message": "ከማመሳሰል አድስ"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ወደ ውጪ መላክ ቅድመ እይታ እዚህ ይታያል። እንዲሁም MotionBlock JSON ምትኬን መለጠፍ እና መተግበር ይችላሉ።"
+  },
+  "globalStatusSaved": {
+    "message": "ዓለም አቀፍ ደረጃ ተቀምጧል።"
+  },
+  "globalDefaultsSaved": {
+    "message": "ዓለም አቀፍ ነባሪዎች ተቀምጠዋል።"
+  },
+  "displayModeSaved": {
+    "message": "የማሳያ ሁነታ ተቀምጧል።"
+  },
+  "themeSaved": {
+    "message": "ጭብጥ ተቀምጧል."
+  },
+  "revealSettingSaved": {
+    "message": "የተቀመጠውን የአዝራር ቅንብር ይግለጡ።"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "የምርመራ ቅንብር ተቀምጧል።"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "የሚመከሩ ነባሪዎች ወደነበሩበት ተመልሰዋል።"
+  },
+  "enterValidHostname": {
+    "message": "የሚሰራ የአስተናጋጅ ስም ያስገቡ።"
+  },
+  "siteAdded": {
+    "message": "ጣቢያው ታክሏል።"
+  },
+  "siteRuleSaved": {
+    "message": "የጣቢያ ደንብ ተቀምጧል።"
+  },
+  "siteRemoved": {
+    "message": "ጣቢያ ተወግዷል።"
+  },
+  "settingsExported": {
+    "message": "ቅንብሮች ወደ JSON ፋይል ተልከዋል።"
+  },
+  "settingsImportedFromFile": {
+    "message": "ከፋይል የመጡ ቅንብሮች።"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "ከተለጠፈ JSON የመጡ ቅንብሮች።"
+  },
+  "settingsRefreshed": {
+    "message": "ቅንብሮች ከ Chrome ማመሳሰል ታድሰዋል።"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "ቅንብሮችን መጫን አልተቻለም።"
+  },
+  "defaultOn": {
+    "message": "ነባሪ በርቷል"
+  },
+  "defaultOff": {
+    "message": "ነባር ጠፍቷል"
+  },
+  "noWebsitePreferences": {
+    "message": "ምንም የድር ጣቢያ ምርጫዎች የሉም።"
+  },
+  "removeSite": {
+    "message": "አስወግድ"
+  },
+  "siteTableSite": {
+    "message": "ድር ጣቢያ"
+  },
+  "siteTableActive": {
+    "message": "ገቢር"
+  },
+  "selectInherit": {
+    "message": "ውርስ"
+  },
+  "selectBlock": {
+    "message": "አግድ"
+  },
+  "selectAllow": {
+    "message": "ፍቀድ"
+  },
+  "selectOn": {
+    "message": "በርቷል"
+  },
+  "selectOff": {
+    "message": "ጠፍቷል"
+  },
+  "saveFailed": {
+    "message": "ማስቀመጥ አልተሳካም።"
+  },
+  "importFailed": {
+    "message": "ማስመጣት አልተሳካም $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON ፋይል ይምረጡ ወይም መጀመሪያ ምትኬ ይለጥፉ።"
+  },
+  "invalidJson": {
+    "message": "ልክ ያልሆነ JSON።"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "ይህ MotionBlock ቅንጅቶች ምትኬ አይመስልም።"
+  },
+  "errorMissingMessageType": {
+    "message": "የጎደለ የመልእክት አይነት።"
+  },
+  "errorMissingSiteHostname": {
+    "message": "የጣቢያ አስተናጋጅ ስም ይጎድላል።"
+  },
+  "errorUnknownMessageType": {
+    "message": "ያልታወቀ የመልእክት አይነት።"
+  },
+  "featureGifsLabel": {
+    "message": "GIF ምስሎች"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "ትንሹን በይነገጽ GIFs ብቻውን በመተው በገጹ ውስጥ ያሉትን GIF የምስል ክፍሎችን ይተኩ።"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV እና GIF የሚመስሉ የቪዲዮ ዩአርኤሎች"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "እንደ looping GIFs የሚመስሉ .gifv ዩአርኤሎችን እና የቪዲዮ ክፍሎችን አግድ።"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP የዩአርኤል ቅጦች"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp ምስል ዩአርኤሎችን አግድ። በነባሪነት ጠፍቷል ምክንያቱም ብዙ WebP ምስሎች አኒሜሽን አይደሉም።"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ቪዲዮን በራስ-አጫውት እና በማዞር ላይ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ራስ-አጫውት"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "ቪዲዮን በራስ-አጫውት ለአፍታ ያቁሙ እና እንደ አኒሜሽን ጥቅም ላይ የሚውለውን ድምጸ-ከል የተደረገ ቪዲዮን ያስወግዱ።"
+  },
+  "featureVideoLabel": {
+    "message": "ሁሉም ቪዲዮ"
+  },
+  "featureVideoShortLabel": {
+    "message": "የመጽሐፍ ዓይነት ዝርዝር"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 ቪዲዮ እና የተለመዱ የቪዲዮ ፋይል ጥያቄዎችን አግድ።"
+  },
+  "featureAudioLabel": {
+    "message": "ኦዲዮ"
+  },
+  "featureAudioShortLabel": {
+    "message": "ኦዲዮ"
+  },
+  "featureAudioDescription": {
+    "message": "የድምጽ ክፍሎችን እና የተለመዱ የድምጽ ፋይል ጥያቄዎችን አግድ።"
+  },
+  "featureImagesLabel": {
+    "message": "ሁሉም ምስሎች"
+  },
+  "featureImagesShortLabel": {
+    "message": "ምስሎች"
+  },
+  "featureImagesDescription": {
+    "message": "በገጹ ውስጥ የምስል አካላትን ይተኩ። ለምስል-ከባድ ጣቢያዎች በእያንዳንዱ ጣቢያ የፍቀድ ደንቦችን ይጠቀሙ።"
+  },
+  "featureEmojiLabel": {
+    "message": "ስሜት ገላጭ ምስል ጽሑፍ እና ስሜት ገላጭ ምስሎች"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ስሜት ገላጭ ምስል"
+  },
+  "featureEmojiDescription": {
+    "message": "የኢሞጂ ቁምፊዎችን እና የተለመዱ የኢሞጂ ምስል አቅራቢዎችን ያስወግዱ። ጽሑፉን ስለሚቀይር በነባሪነት ጠፍቷል።"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS እንቅስቃሴ እና ሽግግሮች"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS እነማዎችን፣ ሽግግሮችን እና ለስላሳ ማሸብለልን ያሰናክሉ።"
+  },
+  "featureGroupMotionLabel": {
+    "message": "እንቅስቃሴን ማገድ"
+  },
+  "featureGroupMotionDescription": {
+    "message": "ለ GIFs፣GIF መሰል ቪዲዮዎች፣ ራስ-አጫውት እና የገጽ እንቅስቃሴ የሚመከሩ ነባሪዎች።"
+  },
+  "featureGroupBroadLabel": {
+    "message": "ሰፊ የሚዲያ አጋጆች"
+  },
+  "featureGroupBroadDescription": {
+    "message": "ለምስሎች፣ ቪዲዮ፣ ኦዲዮ፣WebP ዩአርኤሎች እና ስሜት ገላጭ ምስሎች የኃይል ተጠቃሚ መቆጣጠሪያዎች። እነዚህ አንዳንድ ጣቢያዎችን ሊለውጡ ወይም ሊሰብሩ ይችላሉ።"
+  },
+  "contentShowBlockedImage": {
+    "message": "የታገደውን ምስል አሳይ"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "የታገደ ድምጽ ያጫውቱ"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "የታገደ ቪዲዮ አጫውት።"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "የታገደ ሚዲያ ያጫውቱ"
+  },
+  "contentBlockedByTitle": {
+    "message": "ታግዷል MotionBlock $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "የታገደ $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF የሚመስሉ ሚዲያዎች"
+  },
+  "contentReasonVideo": {
+    "message": "የመጽሐፍ ዓይነት መልዕክት"
+  },
+  "contentReasonAudio": {
+    "message": "ኦዲዮ"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ቪዲዮ ማዞር"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ቪዲዮን በራስ-አጫውት"
+  },
+  "contentReasonImage": {
+    "message": "ምስል"
+  },
+  "contentReasonMedia": {
+    "message": "ሚዲያ"
+  }
+}

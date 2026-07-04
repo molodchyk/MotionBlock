@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF bloķētājs un animācijas aizbāznis"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Apturiet GIFs, GIFV, automātiski atskaņojiet video, virzīšanas priekšskatījumus un traucējošas kustības, izmantojot vietnes vadīklas."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock opcijas"
+  },
+  "siteLoading": {
+    "message": "Tiek ielādēta vietne..."
+  },
+  "optionsButton": {
+    "message": "Opcijas"
+  },
+  "statusOnInitial": {
+    "message": "Ieslēgts"
+  },
+  "checkingActiveRules": {
+    "message": "Aktīvo kārtulu pārbaude..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ bloķēts",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Bloķēt kustību šeit"
+  },
+  "allowThisSite": {
+    "message": "Atļaut šo vietni"
+  },
+  "siteMode": {
+    "message": "Vietnes režīms"
+  },
+  "followGlobalDefaults": {
+    "message": "Globālo noklusējuma noteikumu ievērošana"
+  },
+  "blockOnThisSite": {
+    "message": "Bloķēt šajā vietnē"
+  },
+  "allowThisSiteOption": {
+    "message": "Atļaut šo vietni"
+  },
+  "siteMediaControls": {
+    "message": "Vietnes multivides vadīklas"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostikas žurnāls"
+  },
+  "copyDiagnostics": {
+    "message": "Kopēt žurnālu"
+  },
+  "refreshDiagnostics": {
+    "message": "Atsvaidzināt"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ reģistrētie diagnostikas notikumi.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Vēl nav diagnostikas. Atkārtoti ielādējiet šo cilni, atkārtojiet problēmu un pēc tam atsvaidziniet šo paneli."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostika atsvaidzināta."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Nevarēja atsvaidzināt diagnostiku."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostika kopēta."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Nevarēja kopēt diagnostiku."
+  },
+  "resetSite": {
+    "message": "Atiestatīt vietni"
+  },
+  "reloadTab": {
+    "message": "Pārlādēt"
+  },
+  "reloadHint": {
+    "message": "Atkārtota ielāde var būt nepieciešama datu nesējiem, kas jau bija bloķēti vai ielādēti."
+  },
+  "unknownSite": {
+    "message": "Nezināma vieta"
+  },
+  "statusBlocking": {
+    "message": "Bloķēšana"
+  },
+  "statusAllowed": {
+    "message": "Atļauts"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nevarēja ielādēt iestatījumus"
+  },
+  "notAWebsite": {
+    "message": "Nav vietne"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock nevar konfigurēt pārlūkprogrammu, paplašinājumu vai citas aizsargātas lapas."
+  },
+  "selectUseGlobal": {
+    "message": "Izmantojiet globālu"
+  },
+  "selectBlockHere": {
+    "message": "Bloķēt šeit"
+  },
+  "selectAllowHere": {
+    "message": "Atļaut šeit"
+  },
+  "summaryAllowed": {
+    "message": "Šī vietne ir atļauta. MotionBlock šeit nebloķē medijus."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktīvs šeit, bet neviena multivides kategorija pašlaik nav bloķēta."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Bloķēšanas $FEATURES$ šajā vietnē.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Visi MotionBlock noteikumi šai vietnei ir izslēgti."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Šī vietne izmanto savus MotionBlock iestatījumus."
+  },
+  "siteRuleOverrides": {
+    "message": "Šai vietnei ir globāls statuss ar multivides specifisku ignorēšanu."
+  },
+  "siteRuleDefaults": {
+    "message": "Šī vietne atbilst jūsu globālajiem noklusējumiem."
+  },
+  "featureMetaInactive": {
+    "message": "Neaktīvs, kamēr vietne ir atļauta"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Ignorēšana: bloķēšana"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Ignorēšana: atļauts"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globāls: bloķēšana"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globāls: atļauts"
+  },
+  "optionsIntro": {
+    "message": "Globālie multivides noklusējumi un vietnes preferences."
+  },
+  "extensionActive": {
+    "message": "Paplašinājums aktīvs"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globālie noklusējumi"
+  },
+  "globalDefaultsIntro": {
+    "message": "Sāciet ar GIFs, GIF līdzīgu video un automātisko atskaņošanu. Izmantojiet plašos bloķētājus tikai tad, ja vietnei ir nepieciešama stingrāka multivides kontrole."
+  },
+  "restoreRecommended": {
+    "message": "Atjaunot ieteicams"
+  },
+  "blockedMediaDisplay": {
+    "message": "Bloķēts multivides displejs"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompakts vietturis"
+  },
+  "replacementHide": {
+    "message": "Paslēpt elementu"
+  },
+  "interfaceTheme": {
+    "message": "Interfeisa dizains"
+  },
+  "themeSystem": {
+    "message": "Sistēma"
+  },
+  "themeLight": {
+    "message": "Gaisma"
+  },
+  "themeDark": {
+    "message": "Tumšs"
+  },
+  "revealControlsTitle": {
+    "message": "Bloķēto multivides pogu atklāšana"
+  },
+  "revealControlsDescription": {
+    "message": "Rādīt noklikšķināšanas/rādīšanas pogas bloķētos datu nesējus. Pēc noklusējuma ir izslēgts, jo dažās vietnēs atkārtoti tiek izmantotas slēptās multivides virsmas."
+  },
+  "diagnosticsTitle": {
+    "message": "Uzlabota diagnostika"
+  },
+  "diagnosticsDescription": {
+    "message": "Parādiet kopējamu cilnes diagnostikas žurnālu uznirstošajā logā, kamēr atveidojat bloķēšanas problēmu."
+  },
+  "websitePreferencesHeading": {
+    "message": "Tīmekļa vietnes preferences"
+  },
+  "websitePreferencesIntro": {
+    "message": "Izmantojiet precīzus resursdatoru nosaukumus, piemēram, reddit.com, discord.com vai news.example.com."
+  },
+  "addSite": {
+    "message": "Pievienot vietni"
+  },
+  "backupHeading": {
+    "message": "Dublēšana"
+  },
+  "backupIntro": {
+    "message": "Iestatījumi tiek glabāti Chrome sinhronizācijas krātuvē. Ja paplašinājumiem ir iespējota Chrome sinhronizācija, viņi var sekot jūsu Chrome profilam."
+  },
+  "exportJson": {
+    "message": "Eksporta JSON"
+  },
+  "importFile": {
+    "message": "Importēt failu"
+  },
+  "applyPastedJson": {
+    "message": "Uzklājiet ielīmēto JSON"
+  },
+  "refreshFromSync": {
+    "message": "Atsvaidzināt no sinhronizācijas"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Eksportēšanas priekšskatījums tiek parādīts šeit. Varat arī ielīmēt MotionBlock JSON dublējumu un lietot to."
+  },
+  "globalStatusSaved": {
+    "message": "Saglabāts globālais statuss."
+  },
+  "globalDefaultsSaved": {
+    "message": "Saglabātie globālie noklusējumi."
+  },
+  "displayModeSaved": {
+    "message": "Displeja režīms saglabāts."
+  },
+  "themeSaved": {
+    "message": "Tēma saglabāta."
+  },
+  "revealSettingSaved": {
+    "message": "Atklāšanas pogas iestatījums saglabāts."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostikas iestatījums saglabāts."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Atjaunoti ieteicamie noklusējumi."
+  },
+  "enterValidHostname": {
+    "message": "Ievadiet derīgu resursdatora nosaukumu."
+  },
+  "siteAdded": {
+    "message": "Vietne pievienota."
+  },
+  "siteRuleSaved": {
+    "message": "Vietnes kārtula saglabāta."
+  },
+  "siteRemoved": {
+    "message": "Vietne noņemta."
+  },
+  "settingsExported": {
+    "message": "Iestatījumi, kas eksportēti uz JSON failu."
+  },
+  "settingsImportedFromFile": {
+    "message": "Iestatījumi, kas importēti no faila."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Iestatījumi, kas importēti no ielīmētās JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Iestatījumi tiek atsvaidzināti pēc Chrome sinhronizācijas."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nevarēja ielādēt iestatījumus."
+  },
+  "defaultOn": {
+    "message": "Noklusējums ieslēgts"
+  },
+  "defaultOff": {
+    "message": "Noklusējums izslēgts"
+  },
+  "noWebsitePreferences": {
+    "message": "Vēl nav vietnes preferenču."
+  },
+  "removeSite": {
+    "message": "Noņemt"
+  },
+  "siteTableSite": {
+    "message": "Mājas lapa"
+  },
+  "siteTableActive": {
+    "message": "Aktīvs"
+  },
+  "selectInherit": {
+    "message": "Mantojums"
+  },
+  "selectBlock": {
+    "message": "Bloķēt"
+  },
+  "selectAllow": {
+    "message": "Atļaut"
+  },
+  "selectOn": {
+    "message": "Ieslēgts"
+  },
+  "selectOff": {
+    "message": "Izslēgts"
+  },
+  "saveFailed": {
+    "message": "Saglabāt neizdevās."
+  },
+  "importFailed": {
+    "message": "Importēšana neizdevās: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Izvēlieties JSON failu vai vispirms ielīmējiet dublējumu."
+  },
+  "invalidJson": {
+    "message": "nederīgs JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Tas neizskatās kā MotionBlock iestatījumu dublējums."
+  },
+  "errorMissingMessageType": {
+    "message": "Trūkst ziņojuma veida."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Trūkst vietnes resursdatora nosaukuma."
+  },
+  "errorUnknownMessageType": {
+    "message": "Nezināms ziņojuma tips."
+  },
+  "featureGifsLabel": {
+    "message": "GIF attēli"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Nomainiet GIF attēla elementus lapā, atstājot mazos interfeisa GIFs vienus."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV un GIF līdzīgi videoklipu URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Bloķējiet .gifv URL un videoklipu elementus, kas darbojas kā cilpas GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL modeļus"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Bloķēt .webp attēlu URL. Pēc noklusējuma ir izslēgts, jo daudzi WebP attēli nav animēti."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Automātiskā atskaņošana un video atskaņošana"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Automātiskā atskaņošana"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Pauzējiet videoklipa automātisko atskaņošanu un noņemiet izslēgtu cilpu video, kas tiek izmantots kā animācija."
+  },
+  "featureVideoLabel": {
+    "message": "Visi video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Videoklips"
+  },
+  "featureVideoDescription": {
+    "message": "Bloķējiet HTML5 video un izplatītākos video failu pieprasījumus."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Bloķēt audio elementus un bieži sastopamus audio failu pieprasījumus."
+  },
+  "featureImagesLabel": {
+    "message": "Visi attēli"
+  },
+  "featureImagesShortLabel": {
+    "message": "Attēli"
+  },
+  "featureImagesDescription": {
+    "message": "Aizstāt attēla elementus lapā. Izmantojiet vietnes atļauju kārtulas vietnēm, kurās ir daudz attēlu."
+  },
+  "featureEmojiLabel": {
+    "message": "Emocijzīmju teksts un emocijzīmju attēli"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emocijzīmes"
+  },
+  "featureEmojiDescription": {
+    "message": "Noņemiet emocijzīmju rakstzīmes un parastos emocijzīmju attēlu atveidotājus. Pēc noklusējuma ir izslēgts, jo tiek mainīts teksts."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animācija un pārejas"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Atspējojiet CSS animācijas, pārejas un vienmērīgu ritināšanu."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Kustības bloķēšana"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Ieteicamie noklusējumi GIFs, GIF līdzīgiem videoklipiem, automātiskajai atskaņošanai un lapas kustībai."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Plaši multivides bloķētāji"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Jaudīga lietotāja vadīklas attēliem, video, audio WebP URL un emocijzīmēm. Tie var mainīt vai sabojāt dažas vietnes."
+  },
+  "contentShowBlockedImage": {
+    "message": "Rādīt bloķēto attēlu"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Bloķētā audio atskaņošana"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Bloķētā video atskaņošana"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Bloķētās multivides atskaņošana"
+  },
+  "contentBlockedByTitle": {
+    "message": "Bloķēja MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Bloķēta $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF līdzīgi mediji"
+  },
+  "contentReasonVideo": {
+    "message": "video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Cilpas video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Videoklipa automātiskā atskaņošana"
+  },
+  "contentReasonImage": {
+    "message": "attēls"
+  },
+  "contentReasonMedia": {
+    "message": "plašsaziņas līdzekļi"
+  }
+}

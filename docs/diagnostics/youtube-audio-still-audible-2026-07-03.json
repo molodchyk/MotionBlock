@@ -1,0 +1,6371 @@
+{
+  "app": "MotionBlock",
+  "generatedAt": "2026-07-03T17:42:03.051Z",
+  "page": {
+    "host": "youtube.com",
+    "status": "blocking"
+  },
+  "effectiveSettings": {
+    "diagnosticsEnabled": true,
+    "enabled": true,
+    "features": {
+      "gifs": true,
+      "gifv": true,
+      "animatedWebp": false,
+      "autoplayVideo": true,
+      "video": false,
+      "audio": true,
+      "images": false,
+      "emoji": false,
+      "cssMotion": false
+    },
+    "replacementMode": "placeholder",
+    "showRevealControls": false
+  },
+  "tabStats": {
+    "byFeature": {
+      "gifs": 0,
+      "gifv": 0,
+      "animatedWebp": 0,
+      "autoplayVideo": 0,
+      "video": 0,
+      "audio": 0,
+      "images": 0,
+      "emoji": 0,
+      "cssMotion": 0
+    },
+    "total": 0
+  },
+  "analysis": {
+    "audioBlockingEnabled": true,
+    "howToRead": [
+      "Start with quickRead for likely causes.",
+      "Use featureMatrix to see which blockers were enabled, counted, and evidenced.",
+      "Use implementation to identify whether the site used native media, Web Audio, fetch/XHR, custom hosts, or image paths.",
+      "Use recentSignificantEvents to jump into the raw diagnostics entries below."
+    ],
+    "quickRead": [
+      "Native <video> elements were observed. Audio blocking should mute video audio without pausing video playback.",
+      "Video audio was muted repeatedly. The page may be trying to unmute or replace its video element.",
+      "gifs is enabled, but this capture has no block evidence for that feature.",
+      "gifv is enabled, but this capture has no block evidence for that feature.",
+      "autoplayVideo is enabled, but this capture has no block evidence for that feature."
+    ],
+    "featureMatrix": {
+      "gifs": {
+        "enabled": true,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "gifv": {
+        "enabled": true,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "animatedWebp": {
+        "enabled": false,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "autoplayVideo": {
+        "enabled": true,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "video": {
+        "enabled": false,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "audio": {
+        "enabled": true,
+        "blockedCount": 0,
+        "evidenceEvents": [
+          "media.videoAudioMuted"
+        ]
+      },
+      "images": {
+        "enabled": false,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "emoji": {
+        "enabled": false,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      },
+      "cssMotion": {
+        "enabled": false,
+        "blockedCount": 0,
+        "evidenceEvents": []
+      }
+    },
+    "implementation": {
+      "maxNativeAudioElementsSeen": 0,
+      "maxNativeVideoElementsSeen": 1,
+      "maxNativeMediaElementsSeen": 1,
+      "maxCustomMediaCandidatesSeen": 0,
+      "nativeAudioPlayBlocks": 0,
+      "nativeVideoMuteActions": 34,
+      "pageMediaPlayCalls": 6,
+      "webAudioEvents": 0,
+      "audioFetchEvents": 0,
+      "audioXhrEvents": 0,
+      "imageBlockEvents": 0,
+      "cssBackgroundBlockEvents": 0
+    },
+    "topEventCounts": [
+      {
+        "event": "scan.media",
+        "count": 62
+      },
+      {
+        "event": "scan.customMediaHosts",
+        "count": 60
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "count": 34
+      },
+      {
+        "event": "settings.applied",
+        "count": 22
+      },
+      {
+        "event": "diagnostics.enabled",
+        "count": 10
+      },
+      {
+        "event": "pageAudio.policyApplied",
+        "count": 10
+      },
+      {
+        "event": "pagehide",
+        "count": 7
+      },
+      {
+        "event": "pageAudio.media.playCalled",
+        "count": 6
+      },
+      {
+        "event": "pageAudio.media.audioConstructed",
+        "count": 2
+      }
+    ],
+    "recentSignificantEvents": [
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 156,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 0,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:45.274Z"
+      },
+      {
+        "event": "settings.applied",
+        "frameHost": "",
+        "index": 159,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:45.820Z"
+      },
+      {
+        "event": "settings.applied",
+        "frameHost": "",
+        "index": 163,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:46.566Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 167,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 0,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:47.273Z"
+      },
+      {
+        "event": "pageAudio.policyApplied",
+        "frameHost": "",
+        "index": 169,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:47.278Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 172,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 1,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:47.984Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 173,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:48.125Z"
+      },
+      {
+        "event": "pagehide",
+        "frameHost": "",
+        "index": 176,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:48.651Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 179,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:49.631Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 181,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:54.518Z"
+      },
+      {
+        "event": "settings.applied",
+        "frameHost": "",
+        "index": 186,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:54.865Z"
+      },
+      {
+        "event": "pagehide",
+        "frameHost": "",
+        "index": 189,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:54.881Z"
+      },
+      {
+        "event": "pageAudio.media.playCalled",
+        "frameHost": "youtube.com",
+        "index": 190,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": "video"
+        },
+        "time": "2026-07-03T17:41:55.269Z"
+      },
+      {
+        "event": "settings.applied",
+        "frameHost": "",
+        "index": 192,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:56.085Z"
+      },
+      {
+        "event": "pageAudio.media.playCalled",
+        "frameHost": "youtube.com",
+        "index": 195,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": "video"
+        },
+        "time": "2026-07-03T17:41:56.326Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 197,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:56.722Z"
+      },
+      {
+        "event": "pageAudio.policyApplied",
+        "frameHost": "",
+        "index": 199,
+        "summary": {
+          "action": "",
+          "feature": "",
+          "reason": "",
+          "tag": ""
+        },
+        "time": "2026-07-03T17:41:57.299Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 203,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:41:58.773Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 208,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:42:00.343Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "index": 211,
+        "summary": {
+          "action": "",
+          "feature": "audio",
+          "reason": "",
+          "tag": "video",
+          "media": {
+            "muted": true,
+            "paused": false,
+            "readyState": 4,
+            "volume": 0.7771413187936799
+          }
+        },
+        "time": "2026-07-03T17:42:01.957Z"
+      }
+    ],
+    "recentAudioEvents": [
+      {
+        "event": "pageAudio.policyApplied",
+        "frameHost": "",
+        "time": "2026-07-03T17:41:47.278Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:47.984Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:48.125Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:49.631Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:54.518Z"
+      },
+      {
+        "event": "pageAudio.media.playCalled",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:55.269Z"
+      },
+      {
+        "event": "pageAudio.media.playCalled",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:56.326Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:56.722Z"
+      },
+      {
+        "event": "pageAudio.policyApplied",
+        "frameHost": "",
+        "time": "2026-07-03T17:41:57.299Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:41:58.773Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:42:00.343Z"
+      },
+      {
+        "event": "media.videoAudioMuted",
+        "frameHost": "youtube.com",
+        "time": "2026-07-03T17:42:01.957Z"
+      }
+    ]
+  },
+  "diagnostics": {
+    "capturedAt": "2026-07-03T17:42:03.012Z",
+    "entries": [
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:40:55.015Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "readyState": "loading",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:40:55.016Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:40:55.017Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:40:55.018Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 4,
+        "time": "2026-07-03T17:40:55.214Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 5,
+        "time": "2026-07-03T17:40:56.884Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 6,
+        "time": "2026-07-03T17:40:56.885Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": {
+            "extension": "",
+            "host": "",
+            "pathLength": 60,
+            "scheme": "blob"
+          },
+          "muted": false,
+          "paused": true,
+          "tag": "video",
+          "volume": 0.7771413187936799
+        },
+        "event": "pageAudio.media.playCalled",
+        "sequence": 7,
+        "time": "2026-07-03T17:40:58.362Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 8,
+        "time": "2026-07-03T17:40:58.380Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 9,
+        "time": "2026-07-03T17:40:58.383Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 10,
+        "time": "2026-07-03T17:41:00.764Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 11,
+        "time": "2026-07-03T17:41:00.765Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 12,
+        "time": "2026-07-03T17:41:00.766Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": null,
+          "muted": false,
+          "paused": true,
+          "tag": "audio",
+          "volume": 1
+        },
+        "event": "pageAudio.media.audioConstructed",
+        "sequence": 13,
+        "time": "2026-07-03T17:41:00.979Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:01.827Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "interactive",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:01.827Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:01.828Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:01.829Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 99,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:02.137Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 99,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "interactive",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:02.138Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 99,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:02.139Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 99,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:02.139Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 99,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:02.340Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 14,
+        "time": "2026-07-03T17:41:02.554Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 15,
+        "time": "2026-07-03T17:41:02.555Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 16,
+        "time": "2026-07-03T17:41:02.557Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 1,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 17,
+        "time": "2026-07-03T17:41:03.339Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 18,
+        "time": "2026-07-03T17:41:03.663Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:03.683Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:03.683Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 99,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "pageUrl": "about:"
+        },
+        "event": "pagehide",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:03.698Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 19,
+        "time": "2026-07-03T17:41:07.261Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 20,
+        "time": "2026-07-03T17:41:07.276Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 21,
+        "time": "2026-07-03T17:41:07.279Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:07.591Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:07.592Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:07.593Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:07.593Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "pageUrl": "about:"
+        },
+        "event": "pagehide",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:07.628Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 6,
+        "time": "2026-07-03T17:41:07.742Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 7,
+        "time": "2026-07-03T17:41:07.742Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": {
+            "extension": "",
+            "host": "",
+            "pathLength": 60,
+            "scheme": "blob"
+          },
+          "muted": false,
+          "paused": false,
+          "tag": "video",
+          "volume": 0.7771413187936799
+        },
+        "event": "pageAudio.media.playCalled",
+        "sequence": 22,
+        "time": "2026-07-03T17:41:08.298Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:08.950Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "interactive",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:08.950Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:08.951Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:08.952Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": {
+            "extension": "",
+            "host": "",
+            "pathLength": 60,
+            "scheme": "blob"
+          },
+          "muted": false,
+          "paused": false,
+          "tag": "video",
+          "volume": 0.7771413187936799
+        },
+        "event": "pageAudio.media.playCalled",
+        "sequence": 23,
+        "time": "2026-07-03T17:41:09.136Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 24,
+        "time": "2026-07-03T17:41:09.181Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 25,
+        "time": "2026-07-03T17:41:09.182Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 26,
+        "time": "2026-07-03T17:41:09.185Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:09.630Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 27,
+        "time": "2026-07-03T17:41:10.875Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 28,
+        "time": "2026-07-03T17:41:10.876Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 29,
+        "time": "2026-07-03T17:41:10.882Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:10.915Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 6,
+        "time": "2026-07-03T17:41:10.915Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 30,
+        "time": "2026-07-03T17:41:12.494Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 31,
+        "time": "2026-07-03T17:41:12.495Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 32,
+        "time": "2026-07-03T17:41:12.502Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 7,
+        "time": "2026-07-03T17:41:13.049Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 8,
+        "time": "2026-07-03T17:41:13.049Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 33,
+        "time": "2026-07-03T17:41:14.057Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 34,
+        "time": "2026-07-03T17:41:14.057Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 35,
+        "time": "2026-07-03T17:41:14.065Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 36,
+        "time": "2026-07-03T17:41:15.705Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 37,
+        "time": "2026-07-03T17:41:15.706Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 38,
+        "time": "2026-07-03T17:41:15.712Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 39,
+        "time": "2026-07-03T17:41:17.347Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 40,
+        "time": "2026-07-03T17:41:17.347Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 41,
+        "time": "2026-07-03T17:41:17.352Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 42,
+        "time": "2026-07-03T17:41:18.867Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 43,
+        "time": "2026-07-03T17:41:18.868Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 44,
+        "time": "2026-07-03T17:41:18.870Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 45,
+        "time": "2026-07-03T17:41:20.433Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 46,
+        "time": "2026-07-03T17:41:20.434Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 47,
+        "time": "2026-07-03T17:41:20.438Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 48,
+        "time": "2026-07-03T17:41:21.981Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 49,
+        "time": "2026-07-03T17:41:21.982Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 50,
+        "time": "2026-07-03T17:41:21.988Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 51,
+        "time": "2026-07-03T17:41:23.556Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 52,
+        "time": "2026-07-03T17:41:23.557Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 53,
+        "time": "2026-07-03T17:41:23.560Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 54,
+        "time": "2026-07-03T17:41:25.105Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 55,
+        "time": "2026-07-03T17:41:25.106Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 56,
+        "time": "2026-07-03T17:41:25.110Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 57,
+        "time": "2026-07-03T17:41:26.718Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 58,
+        "time": "2026-07-03T17:41:26.719Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 59,
+        "time": "2026-07-03T17:41:26.725Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {},
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 60,
+        "time": "2026-07-03T17:41:27.196Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 61,
+        "time": "2026-07-03T17:41:27.217Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 62,
+        "time": "2026-07-03T17:41:27.222Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {},
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 8,
+        "time": "2026-07-03T17:41:27.230Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 9,
+        "time": "2026-07-03T17:41:27.231Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 10,
+        "time": "2026-07-03T17:41:27.231Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {},
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 9,
+        "time": "2026-07-03T17:41:27.232Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 10,
+        "time": "2026-07-03T17:41:27.233Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 11,
+        "time": "2026-07-03T17:41:27.233Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioBlocked": false,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 63,
+        "time": "2026-07-03T17:41:27.243Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {},
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 12,
+        "time": "2026-07-03T17:41:27.244Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {},
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 11,
+        "time": "2026-07-03T17:41:27.247Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioBlocked": false,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 13,
+        "time": "2026-07-03T17:41:27.250Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {},
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 64,
+        "time": "2026-07-03T17:41:27.250Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 14,
+        "time": "2026-07-03T17:41:29.057Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 15,
+        "time": "2026-07-03T17:41:29.057Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 12,
+        "time": "2026-07-03T17:41:29.063Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 13,
+        "time": "2026-07-03T17:41:29.063Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 65,
+        "time": "2026-07-03T17:41:29.107Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": false,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 66,
+        "time": "2026-07-03T17:41:29.112Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 67,
+        "time": "2026-07-03T17:41:30.033Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 68,
+        "time": "2026-07-03T17:41:30.045Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 69,
+        "time": "2026-07-03T17:41:30.046Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 70,
+        "time": "2026-07-03T17:41:30.051Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 14,
+        "time": "2026-07-03T17:41:30.060Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 15,
+        "time": "2026-07-03T17:41:30.061Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 16,
+        "time": "2026-07-03T17:41:30.061Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 16,
+        "time": "2026-07-03T17:41:30.062Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 17,
+        "time": "2026-07-03T17:41:30.062Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 18,
+        "time": "2026-07-03T17:41:30.062Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 71,
+        "time": "2026-07-03T17:41:30.069Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 19,
+        "time": "2026-07-03T17:41:30.071Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 17,
+        "time": "2026-07-03T17:41:30.072Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 72,
+        "time": "2026-07-03T17:41:30.074Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 20,
+        "time": "2026-07-03T17:41:30.103Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 73,
+        "time": "2026-07-03T17:41:31.570Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 74,
+        "time": "2026-07-03T17:41:31.571Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 75,
+        "time": "2026-07-03T17:41:31.574Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 21,
+        "time": "2026-07-03T17:41:31.886Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 18,
+        "time": "2026-07-03T17:41:31.887Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 19,
+        "time": "2026-07-03T17:41:31.887Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 22,
+        "time": "2026-07-03T17:41:31.887Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 76,
+        "time": "2026-07-03T17:41:33.167Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 77,
+        "time": "2026-07-03T17:41:33.167Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 78,
+        "time": "2026-07-03T17:41:33.171Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 23,
+        "time": "2026-07-03T17:41:34.089Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 20,
+        "time": "2026-07-03T17:41:34.090Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 21,
+        "time": "2026-07-03T17:41:34.090Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 24,
+        "time": "2026-07-03T17:41:34.090Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "pageUrl": "https://www.youtube.com/watch"
+        },
+        "event": "pagehide",
+        "sequence": 79,
+        "time": "2026-07-03T17:41:36.270Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 101,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "pageUrl": "about:"
+        },
+        "event": "pagehide",
+        "sequence": 25,
+        "time": "2026-07-03T17:41:36.326Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 98,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "pageUrl": "about:"
+        },
+        "event": "pagehide",
+        "sequence": 22,
+        "time": "2026-07-03T17:41:36.366Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:37.008Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "youtube.com",
+          "pageUrl": "https://www.youtube.com/watch",
+          "readyState": "loading",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:37.009Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:37.013Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:37.014Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:37.943Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:40.284Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 6,
+        "time": "2026-07-03T17:41:40.284Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 7,
+        "time": "2026-07-03T17:41:40.749Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": false,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 3,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 8,
+        "time": "2026-07-03T17:41:40.754Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": {
+            "extension": "",
+            "host": "",
+            "pathLength": 60,
+            "scheme": "blob"
+          },
+          "muted": false,
+          "paused": true,
+          "tag": "video",
+          "volume": 0.7771413187936799
+        },
+        "event": "pageAudio.media.playCalled",
+        "sequence": 9,
+        "time": "2026-07-03T17:41:40.789Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 10,
+        "time": "2026-07-03T17:41:40.811Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 11,
+        "time": "2026-07-03T17:41:43.230Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 12,
+        "time": "2026-07-03T17:41:43.231Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 13,
+        "time": "2026-07-03T17:41:43.231Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": null,
+          "muted": false,
+          "paused": true,
+          "tag": "audio",
+          "volume": 1
+        },
+        "event": "pageAudio.media.audioConstructed",
+        "sequence": 14,
+        "time": "2026-07-03T17:41:44.255Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 15,
+        "time": "2026-07-03T17:41:45.273Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 16,
+        "time": "2026-07-03T17:41:45.274Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 17,
+        "time": "2026-07-03T17:41:45.276Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:45.818Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "interactive",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:45.820Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:45.822Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:45.822Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:46.565Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "interactive",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:46.566Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:46.567Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:46.567Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 18,
+        "time": "2026-07-03T17:41:47.272Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 0,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 19,
+        "time": "2026-07-03T17:41:47.273Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 20,
+        "time": "2026-07-03T17:41:47.274Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:47.278Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:47.919Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:47.919Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 1,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 21,
+        "time": "2026-07-03T17:41:47.984Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 22,
+        "time": "2026-07-03T17:41:48.125Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:48.383Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 6,
+        "time": "2026-07-03T17:41:48.383Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 104,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "pageUrl": "about:"
+        },
+        "event": "pagehide",
+        "sequence": 7,
+        "time": "2026-07-03T17:41:48.651Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 23,
+        "time": "2026-07-03T17:41:48.825Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 24,
+        "time": "2026-07-03T17:41:48.827Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 25,
+        "time": "2026-07-03T17:41:49.631Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 26,
+        "time": "2026-07-03T17:41:54.517Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 27,
+        "time": "2026-07-03T17:41:54.518Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 28,
+        "time": "2026-07-03T17:41:54.522Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 6,
+        "time": "2026-07-03T17:41:54.548Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 103,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 7,
+        "time": "2026-07-03T17:41:54.549Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:54.865Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "complete",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:54.865Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:54.866Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:54.867Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "pageUrl": "about:"
+        },
+        "event": "pagehide",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:54.881Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": {
+            "extension": "",
+            "host": "",
+            "pathLength": 60,
+            "scheme": "blob"
+          },
+          "muted": false,
+          "paused": false,
+          "tag": "video",
+          "volume": 0.7771413187936799
+        },
+        "event": "pageAudio.media.playCalled",
+        "sequence": 29,
+        "time": "2026-07-03T17:41:55.269Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "frameHost": "",
+          "pageUrl": "about:",
+          "settingsHost": "youtube.com"
+        },
+        "event": "diagnostics.enabled",
+        "sequence": 0,
+        "time": "2026-07-03T17:41:56.084Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "diagnosticsEnabled": true,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "frameHost": "",
+          "pageUrl": "about:",
+          "readyState": "interactive",
+          "replacementMode": "placeholder",
+          "settingsHost": "youtube.com",
+          "showRevealControls": false,
+          "siteRule": {
+            "enabled": null,
+            "featureOverrides": {
+              "audio": true
+            },
+            "replacementMode": ""
+          }
+        },
+        "event": "settings.applied",
+        "sequence": 1,
+        "time": "2026-07-03T17:41:56.085Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 2,
+        "time": "2026-07-03T17:41:56.087Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 3,
+        "time": "2026-07-03T17:41:56.087Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "currentSrc": {
+            "extension": "",
+            "host": "",
+            "pathLength": 60,
+            "scheme": "blob"
+          },
+          "muted": false,
+          "paused": false,
+          "tag": "video",
+          "volume": 0.7771413187936799
+        },
+        "event": "pageAudio.media.playCalled",
+        "sequence": 30,
+        "time": "2026-07-03T17:41:56.326Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 31,
+        "time": "2026-07-03T17:41:56.721Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 32,
+        "time": "2026-07-03T17:41:56.722Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 33,
+        "time": "2026-07-03T17:41:56.727Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioBlocked": true,
+          "diagnosticsEnabled": true
+        },
+        "event": "pageAudio.policyApplied",
+        "sequence": 4,
+        "time": "2026-07-03T17:41:57.299Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 5,
+        "time": "2026-07-03T17:41:57.946Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 6,
+        "time": "2026-07-03T17:41:57.946Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 34,
+        "time": "2026-07-03T17:41:58.773Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 35,
+        "time": "2026-07-03T17:41:58.773Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 36,
+        "time": "2026-07-03T17:41:58.776Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 0,
+          "videoElements": 0
+        },
+        "event": "scan.media",
+        "sequence": 7,
+        "time": "2026-07-03T17:42:00.121Z"
+      },
+      {
+        "frameHost": "",
+        "frameId": 106,
+        "settingsHost": "youtube.com",
+        "url": "about:",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 8,
+        "time": "2026-07-03T17:42:00.121Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 37,
+        "time": "2026-07-03T17:42:00.342Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 38,
+        "time": "2026-07-03T17:42:00.343Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 39,
+        "time": "2026-07-03T17:42:00.347Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioElements": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "totalElements": 1,
+          "videoElements": 1
+        },
+        "event": "scan.media",
+        "sequence": 40,
+        "time": "2026-07-03T17:42:01.956Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "audioAdjusted": true,
+          "blocked": false,
+          "feature": "audio",
+          "mediaReason": "",
+          "properties": {
+            "autoplay": false,
+            "autoplayAttribute": false,
+            "controls": false,
+            "currentSrc": true,
+            "loop": false,
+            "loopAttribute": false,
+            "muted": true,
+            "mutedAttribute": true,
+            "networkState": 2,
+            "paused": false,
+            "readyState": 4,
+            "sourceChildren": 0,
+            "srcAttribute": true,
+            "volume": 0.7771413187936799
+          },
+          "tag": "video",
+          "urls": [
+            {
+              "innerHost": "www.youtube.com",
+              "scheme": "blob"
+            }
+          ],
+          "userAllowed": false
+        },
+        "event": "media.videoAudioMuted",
+        "sequence": 41,
+        "time": "2026-07-03T17:42:01.957Z"
+      },
+      {
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "settingsHost": "youtube.com",
+        "url": "https://www.youtube.com/watch",
+        "details": {
+          "candidateMatches": 0,
+          "enabled": true,
+          "features": {
+            "gifs": true,
+            "gifv": true,
+            "animatedWebp": false,
+            "autoplayVideo": true,
+            "video": false,
+            "audio": true,
+            "images": false,
+            "emoji": false,
+            "cssMotion": false
+          },
+          "uniqueCandidates": 0
+        },
+        "event": "scan.customMediaHosts",
+        "sequence": 42,
+        "time": "2026-07-03T17:42:01.965Z"
+      }
+    ],
+    "entryCount": 213,
+    "frames": [
+      {
+        "entryCount": 80,
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:36.270Z",
+        "url": "https://www.youtube.com/watch"
+      },
+      {
+        "entryCount": 43,
+        "frameHost": "youtube.com",
+        "frameId": 0,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:42:03.007Z",
+        "url": "https://www.youtube.com/watch"
+      },
+      {
+        "entryCount": 23,
+        "frameHost": "",
+        "frameId": 98,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:36.366Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 6,
+        "frameHost": "",
+        "frameId": 99,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:03.699Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 5,
+        "frameHost": "",
+        "frameId": 101,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:07.628Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 26,
+        "frameHost": "",
+        "frameId": 101,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:36.327Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 8,
+        "frameHost": "",
+        "frameId": 103,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:42:03.006Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 8,
+        "frameHost": "",
+        "frameId": 104,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:48.651Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 5,
+        "frameHost": "",
+        "frameId": 106,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:41:54.881Z",
+        "url": "about:"
+      },
+      {
+        "entryCount": 9,
+        "frameHost": "",
+        "frameId": 106,
+        "readyState": "complete",
+        "settingsHost": "youtube.com",
+        "updatedAt": "2026-07-03T17:42:03.006Z",
+        "url": "about:"
+      }
+    ],
+    "tabId": 1237708179
+  }
+}

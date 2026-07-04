@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Bloquejador i Aturador d'Animació"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Atura GIFs, GIFV, reprodueix vídeo automàticament, previsualitza el cursor i distreu moviments amb controls per lloc."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Opcions"
+  },
+  "siteLoading": {
+    "message": "Lloc de càrrega..."
+  },
+  "optionsButton": {
+    "message": "Opcions"
+  },
+  "statusOnInitial": {
+    "message": "On"
+  },
+  "checkingActiveRules": {
+    "message": "Comprovant les regles actives..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ bloquejat",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Moviment de bloqueig aquí"
+  },
+  "allowThisSite": {
+    "message": "Permeteu aquest lloc"
+  },
+  "siteMode": {
+    "message": "Mode de lloc"
+  },
+  "followGlobalDefaults": {
+    "message": "Segueix els valors globals per defecte"
+  },
+  "blockOnThisSite": {
+    "message": "Bloqueja aquest lloc"
+  },
+  "allowThisSiteOption": {
+    "message": "Permeteu aquest lloc"
+  },
+  "siteMediaControls": {
+    "message": "Controls de mitjans del lloc"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnòstics"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock registre de diagnòstics"
+  },
+  "copyDiagnostics": {
+    "message": "Registre de còpies"
+  },
+  "refreshDiagnostics": {
+    "message": "Refrescar"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ esdeveniments diagnòstics registrats.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Encara no hi ha diagnòstics. Recarrega aquesta pestanya, reprodueix el problema i després actualitza aquest panell."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnòstics actualitzats."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "No s'han pogut actualitzar els diagnòstics."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnòstics copiats."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "No s'han pogut copiar els diagnòstics."
+  },
+  "resetSite": {
+    "message": "Reinici del lloc"
+  },
+  "reloadTab": {
+    "message": "Recarrega"
+  },
+  "reloadHint": {
+    "message": "Pot ser necessari recarregar per a mitjans que ja estaven bloquejats o carregats."
+  },
+  "unknownSite": {
+    "message": "Lloc desconegut"
+  },
+  "statusBlocking": {
+    "message": "Bloqueig"
+  },
+  "statusAllowed": {
+    "message": "Permès"
+  },
+  "couldNotLoadSettings": {
+    "message": "No es podia carregar la configuració"
+  },
+  "notAWebsite": {
+    "message": "No és un lloc web"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock no pot configurar el navegador, l'extensió ni altres pàgines protegides."
+  },
+  "selectUseGlobal": {
+    "message": "Utilitza global"
+  },
+  "selectBlockHere": {
+    "message": "Bloqueja aquí"
+  },
+  "selectAllowHere": {
+    "message": "Permet aquí"
+  },
+  "summaryAllowed": {
+    "message": "Aquest lloc està permès. MotionBlock no està bloquejant els mitjans aquí."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Actiu aquí, però actualment no hi ha cap categoria de mitjans bloquejada."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Bloquejant $FEATURES$ en aquest lloc.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Totes MotionBlock normes estan desactivades en aquest lloc."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Aquest lloc utilitza les seves pròpies MotionBlock configuracions."
+  },
+  "siteRuleOverrides": {
+    "message": "Aquest lloc segueix l'estatus global amb sobreescriptures específiques de mitjans."
+  },
+  "siteRuleDefaults": {
+    "message": "Aquest lloc segueix les teves valoracions globals per defecte."
+  },
+  "featureMetaInactive": {
+    "message": "Inactiu mentre el lloc està permès"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Sobreescriptura: bloqueig"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Override: permès"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: bloqueig"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Global: permès"
+  },
+  "optionsIntro": {
+    "message": "Valors per defecte de mitjans globals i preferències per lloc."
+  },
+  "extensionActive": {
+    "message": "Extensió activa"
+  },
+  "globalDefaultsHeading": {
+    "message": "Impagaments globals"
+  },
+  "globalDefaultsIntro": {
+    "message": "Comença amb un vídeo GIFs, semblant a GIF, i reproducció automàtica. Utilitza bloquejadors amplis només quan un lloc necessita un control mediàtic més estricte."
+  },
+  "restoreRecommended": {
+    "message": "Restauració recomanada"
+  },
+  "blockedMediaDisplay": {
+    "message": "Visualització de mitjans bloquejats"
+  },
+  "replacementPlaceholder": {
+    "message": "Component de posició compacte"
+  },
+  "replacementHide": {
+    "message": "Ocultar element"
+  },
+  "interfaceTheme": {
+    "message": "Tema de la interfície"
+  },
+  "themeSystem": {
+    "message": "Sistema"
+  },
+  "themeLight": {
+    "message": "Llum"
+  },
+  "themeDark": {
+    "message": "Fosc"
+  },
+  "revealControlsTitle": {
+    "message": "Botons de revelació per a mitjans bloquejats"
+  },
+  "revealControlsDescription": {
+    "message": "Mostra els botons de clicar per reproduir/mostrar als mitjans bloquejats. Per defecte està desajustat perquè alguns llocs reutilitzen superfícies de mitjans ocults."
+  },
+  "diagnosticsTitle": {
+    "message": "Diagnòstic avançat"
+  },
+  "diagnosticsDescription": {
+    "message": "Mostra un registre de diagnòstic copiable per pestanya a la finestra emergent mentre reprodueixes un problema de bloqueig."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preferències de llocs web"
+  },
+  "websitePreferencesIntro": {
+    "message": "Utilitza noms d'amfitrió exactes com reddit.com, discord.com o news.example.com."
+  },
+  "addSite": {
+    "message": "Afegeix el lloc"
+  },
+  "backupHeading": {
+    "message": "Suplent"
+  },
+  "backupIntro": {
+    "message": "La configuració s'emmagatzema en Chrome emmagatzematge sincronitzat. Si Chrome sincronització està activada per a extensions, poden seguir el teu perfil Chrome."
+  },
+  "exportJson": {
+    "message": "Exportació JSON"
+  },
+  "importFile": {
+    "message": "Fitxer d'importació"
+  },
+  "applyPastedJson": {
+    "message": "Aplica enganxat JSON"
+  },
+  "refreshFromSync": {
+    "message": "Refrescar des de la sincronització"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "La previsualització d'exportació apareix aquí. També pots enganxar una còpia de seguretat MotionBlock JSON i aplicar-la."
+  },
+  "globalStatusSaved": {
+    "message": "Estat global guardat."
+  },
+  "globalDefaultsSaved": {
+    "message": "Els defaults globals s'han guardat."
+  },
+  "displayModeSaved": {
+    "message": "Mode de visualització desat."
+  },
+  "themeSaved": {
+    "message": "Tema guardat."
+  },
+  "revealSettingSaved": {
+    "message": "Configuració del botó de revelació guardada."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Configuració de diagnòstic guardada."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "S'han restaurat els valors per defecte recomanats."
+  },
+  "enterValidHostname": {
+    "message": "Introdueix un nom d'amfitrió vàlid."
+  },
+  "siteAdded": {
+    "message": "Lloc afegit."
+  },
+  "siteRuleSaved": {
+    "message": "Regla del lloc guardada."
+  },
+  "siteRemoved": {
+    "message": "Lloc eliminat."
+  },
+  "settingsExported": {
+    "message": "Configuració exportada a un fitxer JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Configuració importada d'un fitxer."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Configuració importada de JSON enganxada."
+  },
+  "settingsRefreshed": {
+    "message": "La configuració s'ha actualitzat des de Chrome sincronització."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "No es podia carregar la configuració."
+  },
+  "defaultOn": {
+    "message": "Valor per defecte activat"
+  },
+  "defaultOff": {
+    "message": "Per defecte desactivat"
+  },
+  "noWebsitePreferences": {
+    "message": "Encara no tinc preferències web."
+  },
+  "removeSite": {
+    "message": "Elimina"
+  },
+  "siteTableSite": {
+    "message": "Emplaçament"
+  },
+  "siteTableActive": {
+    "message": "Actiu"
+  },
+  "selectInherit": {
+    "message": "Heretar"
+  },
+  "selectBlock": {
+    "message": "Bloc"
+  },
+  "selectAllow": {
+    "message": "Permís"
+  },
+  "selectOn": {
+    "message": "On"
+  },
+  "selectOff": {
+    "message": "Apagat"
+  },
+  "saveFailed": {
+    "message": "Tirada fallada."
+  },
+  "importFailed": {
+    "message": "Importació fallida: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Tria un fitxer JSON o enganxa una còpia de seguretat primer."
+  },
+  "invalidJson": {
+    "message": "invàlida JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Això no sembla una còpia de seguretat MotionBlock configuració."
+  },
+  "errorMissingMessageType": {
+    "message": "Tipus de missatge perdut."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Nom d'hoste del lloc que falta."
+  },
+  "errorUnknownMessageType": {
+    "message": "Tipus de missatge desconegut."
+  },
+  "featureGifsLabel": {
+    "message": "GIF imatges"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Substitueix GIF elements d'imatge a la pàgina deixant la petita GIFs d'interfície intacta."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV i GIF URLs de vídeo similars"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Bloqueja les URL .gifv i els elements de vídeo que es comportin com GIFs en bucle."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP patrons d'URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Bloqueja les URL d'imatges .webp. Està desactivat per defecte perquè moltes imatges WebP no estan animades."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Reproducció automàtica i vídeo en bucle"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Lectura automàtica"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Pausa el vídeo de reproducció automàtica i elimina el vídeo en bucle silenciat que s'utilitza com a animació."
+  },
+  "featureVideoLabel": {
+    "message": "Tot el vídeo"
+  },
+  "featureVideoShortLabel": {
+    "message": "Vídeo"
+  },
+  "featureVideoDescription": {
+    "message": "Bloqueja HTML5 de vídeo i sol·licituds habituals de fitxers de vídeo."
+  },
+  "featureAudioLabel": {
+    "message": "Àudio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Àudio"
+  },
+  "featureAudioDescription": {
+    "message": "Bloca elements d'àudio i sol·licituds comunes d'arxius d'àudio."
+  },
+  "featureImagesLabel": {
+    "message": "Totes les imatges"
+  },
+  "featureImagesShortLabel": {
+    "message": "Imatges"
+  },
+  "featureImagesDescription": {
+    "message": "Substitueix els elements de la imatge a la pàgina. Utilitza regles de permís per lloc per a llocs amb moltes imatges."
+  },
+  "featureEmojiLabel": {
+    "message": "Text d'emojis i imatges d'emojis"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Elimina els caràcters d'emoji i els renderitzadors d'imatges d'emojis comuns. Està desactivat per defecte perquè canvia el text."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animació i transicions"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Desactiva les animacions de CSS, les transicions i el desplaçament suau."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Bloqueig per moviment"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Predeterminats recomanats per a vídeos GIFs, tipus GIF, reproducció automàtica i moviment de pàgina."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Bloquejadors mediàtics amplis"
+  },
+  "featureGroupBroadDescription": {
+    "message": "L'usuari avançat controla imatges, vídeos, àudio, WebP URLs i emojis. Aquests poden canviar o trencar alguns llocs."
+  },
+  "contentShowBlockedImage": {
+    "message": "Mostra la imatge bloquejada"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Reprodueix àudio bloquejat"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Reprodueix vídeo bloquejat"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Reprodueix contingut multimèdia bloquejat"
+  },
+  "contentBlockedByTitle": {
+    "message": "Bloquejat per MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Bloquejat $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF mitjans similars"
+  },
+  "contentReasonVideo": {
+    "message": "Vídeo"
+  },
+  "contentReasonAudio": {
+    "message": "Àudio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "vídeo en bucle"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Vídeo de reproducció automàtica"
+  },
+  "contentReasonImage": {
+    "message": "Imatge"
+  },
+  "contentReasonMedia": {
+    "message": "Mitjans"
+  }
+}

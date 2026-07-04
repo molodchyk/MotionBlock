@@ -1,0 +1,31 @@
+Blokeeri segavad GIFs, GIFV, automaatse video esitus, hõljuvad eelvaated ja lehekülje liikumine enne, kui need sulle ette jäävad.
+
+Kasuta MotionBlock peatamiseks:
+
+Piltide GIF kordamine.
+GIFV lingid.
+Lühikesi summutatud videoid kasutatakse nagu GIFs.
+Automaatne video esitamine ja hõljuva eelvaated.
+Valikulised animeeritud WebP URL-mustrid.
+Valikuline video, heli, pildid, emotikonid ja CSS liikumine.
+
+MotionBlock on üles ehitatud kohapealsele kontrollile. Hoia konservatiivsed globaalsed vaikeseaded, seejärel luba või blokeeri konkreetseid meediatüüpe üksikutel veebilehtedel hüpikakent või valikute lehelt. Seaded jäävad Chrome laienduse sünkroonimise salvestusse ja võivad sünkroonida Chrome kaudu, kui kasutajal on laienduse sünkroonimine lubatud.
+
+Levinud kasutusviisid:
+
+Lõpeta lugemise ajal segavad animatsioonid.
+Vähenda automaatse esitusvideo müra.
+Säästa ribalaiust tarbetu meedia eest.
+Block YouTube-stiilis hõljuva eelvaated.
+Rahulikud Reddit, Giphy, sotsiaalsed vood ja uudislehed, mis muudavad GIFs lühikesteks videoteks.
+Luba pildirikkaid kohti, blokeerides liikumist mujal.
+Lubage kiiresti meedia saitidel, mis seda vajavad.
+
+Hüpikaken juhib praegust saiti. Valikute leht haldab globaalseid vaikimisi, saidi põhiseid eelistusi, JSON varunduse importi/eksporti, blokeeritud meediakuva, valikulisi avamisnuppe ning valguse/pimeduse/süsteemi kasutajaliidest.
+
+Chrome ei luba laiendustel muuta brauseri sisemisi lehti, Chrome veebipoodi ega mõningaid kaitstud lehti. Kui meedia on pärast paigaldamist või seadete muutmist endiselt nähtav, lae leht uuesti.
+
+MotionBlock ei kogu analüütikat, ei saada sirvimisandmeid serverisse ega kasuta kaugreeglite nimekirju.
+
+Avatud lähtekoodiga GPL-3.0 litsentsi all:
+https://github.com/molodchyk/MotionBlock

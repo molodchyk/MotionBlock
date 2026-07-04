@@ -1,0 +1,31 @@
+Blokir GIFs, GIFV, putar otomatis video, pratinjau kursor, dan gerakan halaman yang mengganggu sebelum menghalangi Anda.
+
+Gunakan MotionBlock untuk menghentikan:
+
+Mengulang gambar GIF.
+GIFV tautan.
+Video pendek yang dibisukan digunakan seperti GIFs.
+Putar otomatis video dan pratinjau kursor.
+Pola URL WebP animasi opsional.
+Video, audio, gambar, emoji, dan gerakan CSS opsional.
+
+MotionBlock dibangun di sekitar kontrol per lokasi. Pertahankan default global yang konservatif, lalu izinkan atau blokir jenis media tertentu di masing-masing situs web dari halaman popup atau opsi. Pengaturan tetap berada di penyimpanan sinkronisasi ekstensi Chrome dan dapat disinkronkan melalui Chrome jika pengguna mengaktifkan sinkronisasi ekstensi.
+
+Penggunaan umum:
+
+Berhenti mengganggukan animasi saat membaca.
+Kurangi kebisingan video putar otomatis.
+Hemat bandwidth dari media yang tidak perlu.
+Blokir pratinjau hover gaya YouTube.
+Tenang Reddit, Giphy, umpan sosial, dan halaman berita yang mengubah GIFs menjadi video pendek.
+Izinkan situs yang banyak gambar sambil memblokir gerakan di tempat lain.
+Izinkan media dengan cepat di situs yang membutuhkannya.
+
+Popup mengontrol situs saat ini. Halaman opsi mengelola default global, preferensi per situs, JSON impor/ekspor cadangan, tampilan media yang diblokir, tombol pengungkapan opsional, dan tema UI terang/gelap/sistem.
+
+Chrome tidak mengizinkan ekstensi untuk memodifikasi halaman internal browser, Chrome Web Store, atau beberapa halaman yang dilindungi. Jika media masih terlihat setelah menginstal atau mengubah pengaturan, muat ulang halaman.
+
+MotionBlock tidak mengumpulkan analitik, mengirim data penjelajahan ke server, atau menggunakan daftar aturan jarak jauh.
+
+Sumber terbuka di bawah lisensi GPL-3.0:
+https://github.com/molodchyk/MotionBlock

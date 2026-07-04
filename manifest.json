@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "MotionBlock: GIF Blocker & Animation Stopper",
-  "short_name": "MotionBlock",
-  "description": "Stop GIFs, GIFV, autoplay video, hover previews, and distracting motion with per-site controls.",
-  "version": "1.0.0",
+  "name": "__MSG_extensionName__",
+  "short_name": "__MSG_extensionShortName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.1",
+  "default_locale": "en",
   "permissions": [
     "storage",
     "declarativeNetRequest"
@@ -15,7 +16,7 @@
     "service_worker": "src/background.js"
   },
   "action": {
-    "default_title": "MotionBlock",
+    "default_title": "__MSG_actionDefaultTitle__",
     "default_popup": "src/popup.html",
     "default_icon": {
       "16": "assets/icons/icon-16.png",
@@ -44,7 +45,42 @@
         "*://chromewebstore.google.com/*"
       ],
       "js": [
+        "src/features/diagnostics/page/media-audio-guard.js",
+        "src/features/diagnostics/page/audio-probe.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "*://chrome.google.com/webstore/*",
+        "*://chromewebstore.google.com/*"
+      ],
+      "js": [
+        "src/shared/i18n.js",
         "src/shared/config.js",
+        "src/app/content/frame-context.js",
+        "src/app/content/runtime.js",
+        "src/app/content/scanner.js",
+        "src/features/block-stats/content/block-stats.js",
+        "src/features/diagnostics/shared/url-sanitizer.js",
+        "src/features/diagnostics/content/diagnostics.js",
+        "src/features/diagnostics/content/audio-bridge.js",
+        "src/features/emoji-blocking/content/emoji.js",
+        "src/features/media-blocking/content/url-utils.js",
+        "src/features/media-blocking/content/element-inspection.js",
+        "src/features/media-blocking/content/custom-hosts.js",
+        "src/features/media-blocking/content/classifier.js",
+        "src/features/media-blocking/content/original-state.js",
+        "src/features/media-blocking/content/reveal-controls.js",
+        "src/features/media-blocking/content/effects.js",
+        "src/features/media-blocking/content/restore.js",
+        "src/app/content/controller.js",
         "src/content.js"
       ],
       "css": [

@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF బ్లాకర్ & యానిమేషన్ స్టాపర్"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "ప్రతి సైట్ నియంత్రణలతో GIFs, GIFV, ఆటోప్లే వీడియో, హోవర్ ప్రివ్యూలు మరియు పరధ్యాన కదలికలను ఆపివేయండి."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock ఎంపికలు"
+  },
+  "siteLoading": {
+    "message": "సైట్ లోడ్ అవుతోంది..."
+  },
+  "optionsButton": {
+    "message": "ఎంపికలు"
+  },
+  "statusOnInitial": {
+    "message": "ఆన్ లో"
+  },
+  "checkingActiveRules": {
+    "message": "క్రియాశీల నియమాలను తనిఖీ చేస్తోంది..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ నిరోధించబడింది",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "ఇక్కడ కదలికను నిరోధించండి"
+  },
+  "allowThisSite": {
+    "message": "ఈ సైట్ ను అనుమతించు"
+  },
+  "siteMode": {
+    "message": "సైట్ మోడ్"
+  },
+  "followGlobalDefaults": {
+    "message": "గ్లోబల్ డిఫాల్ట్ లను అనుసరించండి"
+  },
+  "blockOnThisSite": {
+    "message": "ఈ సైట్ లో బ్లాక్ చేయండి"
+  },
+  "allowThisSiteOption": {
+    "message": "ఈ సైట్ ను అనుమతించు"
+  },
+  "siteMediaControls": {
+    "message": "సైట్ మీడియా నియంత్రణలు"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "డయాగ్నస్టిక్స్"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock డయాగ్నోస్టిక్స్ లాగ్"
+  },
+  "copyDiagnostics": {
+    "message": "లాగ్ ను కాపీ చేయండి"
+  },
+  "refreshDiagnostics": {
+    "message": "రిఫ్రెష్ చేయండి"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ రోగనిర్ధారణ ఈవెంట్ లు రికార్డ్ చేయబడ్డాయి.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "ఇంకా డయాగ్నస్టిక్స్ లేవు. ఈ ట్యాబ్ ను తిరిగి లోడ్ చేసి, సమస్యను పునరుత్పత్తి చేసి, ఆపై ఈ ప్యానెల్ ను రీఫ్రెష్ చేయండి."
+  },
+  "diagnosticsRefreshed": {
+    "message": "డయాగ్నస్టిక్స్ రిఫ్రెష్ అయ్యాయి."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "డయగ్నాస్టిక్స్ ను రిఫ్రెష్ చేయలేకపోయింది."
+  },
+  "diagnosticsCopied": {
+    "message": "డయాగ్నస్టిక్స్ కాపీ చేయబడ్డాయి."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "డయగ్నాస్టిక్స్ ను కాపీ చేయలేకపోయింది."
+  },
+  "resetSite": {
+    "message": "సైట్ ను రీసెట్ చేయండి"
+  },
+  "reloadTab": {
+    "message": "రీలోడ్ చేయండి"
+  },
+  "reloadHint": {
+    "message": "ఇప్పటికే బ్లాక్ చేయబడిన లేదా లోడ్ చేయబడిన మీడియా కోసం రీలోడ్ అవసరం కావచ్చు."
+  },
+  "unknownSite": {
+    "message": "తెలియని సైట్"
+  },
+  "statusBlocking": {
+    "message": "నిరోధించడం"
+  },
+  "statusAllowed": {
+    "message": "అనుమతించబడింది"
+  },
+  "couldNotLoadSettings": {
+    "message": "సెట్టింగ్ లను లోడ్ చేయడం సాధ్యం కాలేదు"
+  },
+  "notAWebsite": {
+    "message": "వెబ్ సైట్ కాదు"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock బ్రౌజర్, పొడిగింపు లేదా ఇతర రక్షిత పేజీలను కాన్ఫిగర్ చేయలేరు."
+  },
+  "selectUseGlobal": {
+    "message": "గ్లోబల్ ను ఉపయోగించండి"
+  },
+  "selectBlockHere": {
+    "message": "ఇక్కడ నిరోధించండి"
+  },
+  "selectAllowHere": {
+    "message": "ఇక్కడ అనుమతించండి"
+  },
+  "summaryAllowed": {
+    "message": "ఈ సైట్ అనుమతించబడుతుంది. MotionBlock ఇక్కడ మీడియాను బ్లాక్ చేయడం లేదు."
+  },
+  "summaryActiveNoCategories": {
+    "message": "ఇక్కడ యాక్టివ్ గా ఉంది, కానీ ప్రస్తుతం మీడియా వర్గాలు ఏవీ నిరోధించబడలేదు."
+  },
+  "summaryBlockingFeatures": {
+    "message": "ఈ సైట్ లో $FEATURES$ బ్లాక్ చేస్తోంది.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "ఈ సైట్ కోసం అన్ని MotionBlock నియమాలు ఆఫ్ చేయబడ్డాయి."
+  },
+  "siteRuleOwnSettings": {
+    "message": "ఈ సైట్ దాని స్వంత MotionBlock సెట్టింగ్ లను ఉపయోగిస్తుంది."
+  },
+  "siteRuleOverrides": {
+    "message": "ఈ సైట్ మీడియా-నిర్దిష్ట ఓవర్ రైడ్ లతో ప్రపంచ స్థితిని అనుసరిస్తుంది."
+  },
+  "siteRuleDefaults": {
+    "message": "ఈ సైట్ మీ గ్లోబల్ డిఫాల్ట్ లను అనుసరిస్తుంది."
+  },
+  "featureMetaInactive": {
+    "message": "సైట్ అనుమతించబడినప్పుడు ఇన్ యాక్టివ్"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "ఓవర్ రైడ్: నిరోధించడం"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "ఓవర్ రైడ్: అనుమతించబడింది"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "గ్లోబల్: బ్లాకింగ్"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "గ్లోబల్: అనుమతించబడింది"
+  },
+  "optionsIntro": {
+    "message": "గ్లోబల్ మీడియా డిఫాల్ట్ లు మరియు ప్రతి సైట్ ప్రాధాన్యతలు."
+  },
+  "extensionActive": {
+    "message": "పొడిగింపు యాక్టివ్ గా ఉంది"
+  },
+  "globalDefaultsHeading": {
+    "message": "గ్లోబల్ డిఫాల్ట్ లు"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF లాంటి వీడియోతో ప్రారంభించండి మరియు స్వయంచాలకంగా ప్లే చేయండి. ఒక సైట్ కు కఠినమైన మీడియా నియంత్రణ అవసరమైనప్పుడు మాత్రమే బ్రాడ్ బ్లాకర్ లను ఉపయోగించండి."
+  },
+  "restoreRecommended": {
+    "message": "పునరుద్ధరించడానికి సిఫార్సు చేయబడింది"
+  },
+  "blockedMediaDisplay": {
+    "message": "నిరోధించబడిన మీడియా ప్రదర్శన"
+  },
+  "replacementPlaceholder": {
+    "message": "కాంపాక్ట్ ప్లేస్ హోల్డర్"
+  },
+  "replacementHide": {
+    "message": "మూలకం దాచు"
+  },
+  "interfaceTheme": {
+    "message": "ఇంటర్ ఫేస్ థీమ్"
+  },
+  "themeSystem": {
+    "message": "సిస్టం"
+  },
+  "themeLight": {
+    "message": "కాంతి"
+  },
+  "themeDark": {
+    "message": "చీకటి"
+  },
+  "revealControlsTitle": {
+    "message": "బ్లాక్ చేయబడ్డ మీడియా కొరకు బటన్ లను బహిర్గతం చేయండి"
+  },
+  "revealControlsDescription": {
+    "message": "బ్లాక్ చేయబడిన మీడియాలో క్లిక్-టు-ప్లే/షో బటన్లను చూపించండి. కొన్ని సైట్ లు దాచిన మీడియా ఉపరితలాలను తిరిగి ఉపయోగిస్తాయి కనుక డిఫాల్ట్ గా ఆఫ్ చేయబడతాయి."
+  },
+  "diagnosticsTitle": {
+    "message": "అధునాతన డయాగ్నస్టిక్స్"
+  },
+  "diagnosticsDescription": {
+    "message": "మీరు నిరోధిత సమస్యను పునరుత్పత్తి చేస్తున్నప్పుడు పాప్ అప్ లో కాపీ చేయగల ప్రతి ట్యాబ్ డయాగ్నొస్టిక్ లాగ్ ను చూపండి."
+  },
+  "websitePreferencesHeading": {
+    "message": "వెబ్ సైట్ ప్రాధాన్యతలు"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com లేదా news.example.com వంటి ఖచ్చితమైన హోస్ట్ పేర్లను ఉపయోగించండి."
+  },
+  "addSite": {
+    "message": "సైట్ ను జోడించండి"
+  },
+  "backupHeading": {
+    "message": "బ్యాకప్"
+  },
+  "backupIntro": {
+    "message": "సెట్టింగ్ లు Chrome సమకాలీకరణ నిల్వలో నిల్వ చేయబడతాయి. పొడిగింపుల కోసం Chrome సమకాలీకరణ ప్రారంభించబడితే, వారు మీ Chrome ప్రొఫైల్ ను అనుసరించవచ్చు."
+  },
+  "exportJson": {
+    "message": "ఎగుమతి JSON"
+  },
+  "importFile": {
+    "message": "ఫైలు దిగుమతి చేయి"
+  },
+  "applyPastedJson": {
+    "message": "పేస్ట్ చేసిన JSON అప్లై చేయండి"
+  },
+  "refreshFromSync": {
+    "message": "సమకాలీకరణ నుండి రిఫ్రెష్ చేయండి"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ఎక్స్ పోర్ట్ ప్రివ్యూ ఇక్కడ కనిపిస్తుంది. మీరు MotionBlock JSON బ్యాకప్ ను కూడా అతికించి వర్తింపజేయవచ్చు."
+  },
+  "globalStatusSaved": {
+    "message": "గ్లోబల్ స్టేటస్ సేవ్ చేయబడింది."
+  },
+  "globalDefaultsSaved": {
+    "message": "గ్లోబల్ డిఫాల్ట్ లు సేవ్ చేయబడ్డాయి."
+  },
+  "displayModeSaved": {
+    "message": "ప్రదర్శన మోడ్ సేవ్ చేయబడింది."
+  },
+  "themeSaved": {
+    "message": "థీమ్ సేవ్ చేయబడింది."
+  },
+  "revealSettingSaved": {
+    "message": "బటన్ సెట్టింగ్ ను బహిర్గతం చేయి సేవ్ చేయబడింది."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "డయాగ్నోస్టిక్స్ సెట్టింగ్ సేవ్ చేయబడింది."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "సిఫార్సు చేసిన డిఫాల్ట్ లు పునరుద్ధరించబడ్డాయి."
+  },
+  "enterValidHostname": {
+    "message": "చెల్లుబాటు అయ్యే హోస్ట్ పేరును నమోదు చేయండి."
+  },
+  "siteAdded": {
+    "message": "సైట్ జోడించబడింది."
+  },
+  "siteRuleSaved": {
+    "message": "సైట్ నియమం సేవ్ చేయబడింది."
+  },
+  "siteRemoved": {
+    "message": "సైట్ తొలగించబడింది."
+  },
+  "settingsExported": {
+    "message": "సెట్టింగ్ లు JSON ఫైల్ కు ఎగుమతి చేయబడ్డాయి."
+  },
+  "settingsImportedFromFile": {
+    "message": "ఫైల్ నుండి సెట్టింగ్ లు దిగుమతి చేయబడ్డాయి."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "అతికించిన JSON నుండి సెట్టింగ్ లు దిగుమతి చేయబడ్డాయి."
+  },
+  "settingsRefreshed": {
+    "message": "Chrome సమకాలీకరణ నుండి సెట్టింగ్ లు రీఫ్రెష్ చేయబడ్డాయి."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "సెట్టింగ్ లను లోడ్ చేయలేకపోయింది."
+  },
+  "defaultOn": {
+    "message": "డిఫాల్ట్ ఆన్"
+  },
+  "defaultOff": {
+    "message": "డిఫాల్ట్ ఆఫ్"
+  },
+  "noWebsitePreferences": {
+    "message": "ఇంకా వెబ్ సైట్ ప్రాధాన్యతలు లేవు."
+  },
+  "removeSite": {
+    "message": "తీసివేయి"
+  },
+  "siteTableSite": {
+    "message": "సైట్"
+  },
+  "siteTableActive": {
+    "message": "యాక్టివ్"
+  },
+  "selectInherit": {
+    "message": "వారసత్వంగా"
+  },
+  "selectBlock": {
+    "message": "బ్లాక్"
+  },
+  "selectAllow": {
+    "message": "అనుమతించు"
+  },
+  "selectOn": {
+    "message": "ఆన్ లో"
+  },
+  "selectOff": {
+    "message": "ఆఫ్"
+  },
+  "saveFailed": {
+    "message": "సేవ్ విఫలమైంది."
+  },
+  "importFailed": {
+    "message": "దిగుమతి విఫలమైంది: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON ఫైల్ ను ఎంచుకోండి లేదా మొదట బ్యాకప్ ను అతికించండి."
+  },
+  "invalidJson": {
+    "message": "చెల్లని JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "ఇది MotionBlock సెట్టింగ్స్ బ్యాకప్ లాగా కనిపించడం లేదు."
+  },
+  "errorMissingMessageType": {
+    "message": "మిస్సింగ్ సందేశ రకం."
+  },
+  "errorMissingSiteHostname": {
+    "message": "మిస్సింగ్ సైట్ హోస్ట్ పేరు."
+  },
+  "errorUnknownMessageType": {
+    "message": "తెలియని సందేశ రకం."
+  },
+  "featureGifsLabel": {
+    "message": "GIF చిత్రాలు"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "చిన్న ఇంటర్ఫేస్ GIFs ఒంటరిగా విడిచిపెట్టేటప్పుడు పేజీలోని GIF ఇమేజ్ ఎలిమెంట్లను భర్తీ చేయండి."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV మరియు GIF లాంటి వీడియో URLలు"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "లూపింగ్ GIFs వలే ప్రవర్తించే .gifv URLలు మరియు వీడియో ఎలిమెంట్లను బ్లాక్ చేయండి."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL నమూనాలు"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp చిత్ర URLలను నిరోధించండి. అనేక WebP ఇమేజ్లు యానిమేట్ చేయబడనందున డిఫాల్ట్ గా ఆఫ్ చేయబడతాయి."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ఆటోప్లే మరియు లూపింగ్ వీడియో"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ఆటోప్లే"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "వీడియోను స్వయంచాలకంగా ప్లే చేయిని పాజ్ చేయండి మరియు యానిమేషన్ వలె ఉపయోగించిన మ్యూట్ లూపింగ్ వీడియోను తీసివేయండి."
+  },
+  "featureVideoLabel": {
+    "message": "అన్ని వీడియోలు"
+  },
+  "featureVideoShortLabel": {
+    "message": "వీడియో"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 వీడియో మరియు సాధారణ వీడియో ఫైల్ అభ్యర్థనలను నిరోధించండి."
+  },
+  "featureAudioLabel": {
+    "message": "ఆడియో"
+  },
+  "featureAudioShortLabel": {
+    "message": "ఆడియో"
+  },
+  "featureAudioDescription": {
+    "message": "ఆడియో ఎలిమెంట్లు మరియు సాధారణ ఆడియో ఫైల్ అభ్యర్థనలను నిరోధించండి."
+  },
+  "featureImagesLabel": {
+    "message": "అన్ని చిత్రాలు"
+  },
+  "featureImagesShortLabel": {
+    "message": "చిత్రాలు"
+  },
+  "featureImagesDescription": {
+    "message": "పేజీలో ఇమేజ్ ఎలిమెంట్లను భర్తీ చేయండి. ఇమేజ్-హెవీ సైట్ల కోసం ప్రతి సైట్ అనుమతి నియమాలను ఉపయోగించండి."
+  },
+  "featureEmojiLabel": {
+    "message": "ఎమోజీ టెక్ట్స్ మరియు ఎమోజీ ఇమేజ్ లు"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ఎమోజీ"
+  },
+  "featureEmojiDescription": {
+    "message": "ఎమోజీ క్యారెక్టర్లు మరియు సాధారణ ఎమోజీ ఇమేజ్ రెండరర్ లను తీసివేయండి. డిఫాల్ట్ గా ఆఫ్ అవుతుంది ఎందుకంటే ఇది టెక్స్ట్ ను మారుస్తుంది."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS యానిమేషన్ మరియు ట్రాన్సిషన్స్"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS యానిమేషన్ లు, పరివర్తనలు మరియు మృదువైన స్క్రోలింగ్ ను నిలిపివేయండి."
+  },
+  "featureGroupMotionLabel": {
+    "message": "మోషన్ బ్లాకింగ్"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF-లాంటి వీడియోలు, స్వయంచాలకంగా ప్లే మరియు పేజీ కదలిక కోసం సిఫార్సు చేసిన డిఫాల్ట్ లు."
+  },
+  "featureGroupBroadLabel": {
+    "message": "బ్రాడ్ మీడియా బ్లాకర్స్"
+  },
+  "featureGroupBroadDescription": {
+    "message": "చిత్రాలు, వీడియో, ఆడియో, WebP URLలు మరియు ఎమోజీల కోసం పవర్-యూజర్ నియంత్రణలు. ఇవి కొన్ని సైట్లను మార్చవచ్చు లేదా విచ్ఛిన్నం చేయవచ్చు."
+  },
+  "contentShowBlockedImage": {
+    "message": "నిరోధించబడిన చిత్రాన్ని చూపు"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "నిరోధించబడిన ఆడియోను ప్లే చేయండి"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "నిరోధించబడిన వీడియోను ప్లే చేయండి"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "నిరోధించబడిన మీడియాను ప్లే చేయండి"
+  },
+  "contentBlockedByTitle": {
+    "message": "ద్వారా నిరోధించబడింది MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "నిరోధించబడిన $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF లాంటి మీడియా"
+  },
+  "contentReasonVideo": {
+    "message": "వీడియో"
+  },
+  "contentReasonAudio": {
+    "message": "ఆడియో"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "లూపింగ్ వీడియో"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "వీడియోను స్వయంచాలకంగా ప్లే చేయండి"
+  },
+  "contentReasonImage": {
+    "message": "చిత్రం"
+  },
+  "contentReasonMedia": {
+    "message": "మీడియా"
+  }
+}

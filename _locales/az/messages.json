@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Bloklayıcı və Animasiya Dayandırıcı"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Stop GIFs, GIFV, videonu avtomatik oynatmaq, hover önizləmələri və hər sayt üzrə idarəetmə ilə diqqəti yayındıran hərəkət."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Seçimlər"
+  },
+  "siteLoading": {
+    "message": "Yükləmə sahəsi..."
+  },
+  "optionsButton": {
+    "message": "Seçimlər"
+  },
+  "statusOnInitial": {
+    "message": "Açıq"
+  },
+  "checkingActiveRules": {
+    "message": "Aktiv qaydaları yoxlayıram..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ bloklandı",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Burada blok hərəkəti"
+  },
+  "allowThisSite": {
+    "message": "Bu sayta icazə verin"
+  },
+  "siteMode": {
+    "message": "Sayt rejimi"
+  },
+  "followGlobalDefaults": {
+    "message": "Qlobal defaultları izləyin"
+  },
+  "blockOnThisSite": {
+    "message": "Bu saytda blok"
+  },
+  "allowThisSiteOption": {
+    "message": "Bu sayta icazə verin"
+  },
+  "siteMediaControls": {
+    "message": "Sayt media nəzarətləri"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diaqnostika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diaqnostika jurnalı"
+  },
+  "copyDiagnostics": {
+    "message": "Qeydi kopyalayın"
+  },
+  "refreshDiagnostics": {
+    "message": "Yeniləmə"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diaqnostik hadisələr qeydə alındı.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Hələ diaqnostika yoxdur. Bu tabı yenidən yükləyin, problemi təkrarlayın, sonra bu paneli yeniləyin."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diaqnostika yeniləndi."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Diaqnostika yenilənə bilmədi."
+  },
+  "diagnosticsCopied": {
+    "message": "Diaqnostika kopyalandı."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Diaqnostikanı kopyalaya bilmədim."
+  },
+  "resetSite": {
+    "message": "Saytı sıfırlayın"
+  },
+  "reloadTab": {
+    "message": "Yenidən yükləmə"
+  },
+  "reloadHint": {
+    "message": "Artıq bloklanmış və ya yüklənmiş media üçün yenidən yükləmə lazım ola bilər."
+  },
+  "unknownSite": {
+    "message": "Naməlum yer"
+  },
+  "statusBlocking": {
+    "message": "Bloklama"
+  },
+  "statusAllowed": {
+    "message": "İcazə verilir"
+  },
+  "couldNotLoadSettings": {
+    "message": "Parametrləri yükləmək mümkün olmadı"
+  },
+  "notAWebsite": {
+    "message": "Vebsayt deyil"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock brauzeri, əlavəni və ya digər qorunan səhifələri konfiqurasiya edə bilmir."
+  },
+  "selectUseGlobal": {
+    "message": "Qlobal istifadə"
+  },
+  "selectBlockHere": {
+    "message": "Burada blok"
+  },
+  "selectAllowHere": {
+    "message": "İcazə verin"
+  },
+  "summaryAllowed": {
+    "message": "Bu sayt icazəlidir. MotionBlock burada medianı bloklamır."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Burada aktivdir, amma hazırda heç bir media kateqoriyası bloklanmayıb."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Bu saytda $FEATURES$ bloklayıram.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Bu sayt üçün bütün MotionBlock qaydalar ləğv olunub."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Bu sayt öz MotionBlock parametrlərindən istifadə edir."
+  },
+  "siteRuleOverrides": {
+    "message": "Bu sayt mediaya xas override-larla qlobal statusa malikdir."
+  },
+  "siteRuleDefaults": {
+    "message": "Bu sayt sizin qlobal standartlarınızı izləyir."
+  },
+  "featureMetaInactive": {
+    "message": "Sayt icazəli olduqda qeyri-aktiv"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Override: bloklama"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Override: icazə verilir"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Qlobal: bloklama"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Qlobal: icazə verilir"
+  },
+  "optionsIntro": {
+    "message": "Qlobal media standartları və sayt üzrə seçimlər."
+  },
+  "extensionActive": {
+    "message": "Genişlənmə aktivdir"
+  },
+  "globalDefaultsHeading": {
+    "message": "Qlobal Defoltlar"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF tipli video və avtomatik oynatma ilə başlayın. Geniş bloklayıcılardan yalnız sayt daha sərt media nəzarətinə ehtiyac duyduqda istifadə edin."
+  },
+  "restoreRecommended": {
+    "message": "Bərpa tövsiyə olunur"
+  },
+  "blockedMediaDisplay": {
+    "message": "Bloklanmış media ekranı"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompakt yer tutucu"
+  },
+  "replacementHide": {
+    "message": "Elementi gizlət"
+  },
+  "interfaceTheme": {
+    "message": "İnterfeys mövzusu"
+  },
+  "themeSystem": {
+    "message": "Sistem"
+  },
+  "themeLight": {
+    "message": "İşıq"
+  },
+  "themeDark": {
+    "message": "Qaranlıq"
+  },
+  "revealControlsTitle": {
+    "message": "Bloklanmış media üçün açıqlama düymələri"
+  },
+  "revealControlsDescription": {
+    "message": "Bloklanmış mediada oynatmaq üçün kliklə/göstər düymələrini göstər. Standart olaraq söndürülür, çünki bəzi saytlar gizli media səthlərini təkrar istifadə edir."
+  },
+  "diagnosticsTitle": {
+    "message": "İrəli diaqnostika"
+  },
+  "diagnosticsDescription": {
+    "message": "Bloklama problemini təkrarlayarkən popup-da kopyalana bilən hər tab diaqnostika logunu göstərin."
+  },
+  "websitePreferencesHeading": {
+    "message": "Vebsayt Seçimləri"
+  },
+  "websitePreferencesIntro": {
+    "message": "Dəqiq host adlarından istifadə edin, məsələn reddit.com, discord.com və ya news.example.com."
+  },
+  "addSite": {
+    "message": "Sayt əlavə et"
+  },
+  "backupHeading": {
+    "message": "Ehtiyat qüvvə"
+  },
+  "backupIntro": {
+    "message": "Parametrlər Chrome sinxronizasiya yaddaşında saxlanılır. Əgər Chrome sinxronizasiya əlavələr üçün aktivdirsə, onlar Chrome profilinizi izləyə bilərlər."
+  },
+  "exportJson": {
+    "message": "İxrac JSON"
+  },
+  "importFile": {
+    "message": "Faylın idxalı"
+  },
+  "applyPastedJson": {
+    "message": "Yapışdırılmış JSON"
+  },
+  "refreshFromSync": {
+    "message": "Sinxronizasiyadan yeniləmə"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "İxrac önizləməsi burada görünür. Həmçinin, MotionBlock JSON ehtiyat nüsxəsini yapışdırıb tətbiq edə bilərsiniz."
+  },
+  "globalStatusSaved": {
+    "message": "Qlobal status saxlanıldı."
+  },
+  "globalDefaultsSaved": {
+    "message": "Qlobal defaultlar yadda saxlanıldı."
+  },
+  "displayModeSaved": {
+    "message": "Ekran rejimi yadda saxlanıldı."
+  },
+  "themeSaved": {
+    "message": "Mövzu saxlanıldı."
+  },
+  "revealSettingSaved": {
+    "message": "Göstər düyməsi ayarı yadda saxlanıldı."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diaqnostika parametrləri yadda saxlanıldı."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Tövsiyə olunan defaultlar bərpa olundu."
+  },
+  "enterValidHostname": {
+    "message": "Etibarlı host adı daxil edin."
+  },
+  "siteAdded": {
+    "message": "Sayt əlavə olundu."
+  },
+  "siteRuleSaved": {
+    "message": "Sayt qaydası saxlanıldı."
+  },
+  "siteRemoved": {
+    "message": "Sayt silindi."
+  },
+  "settingsExported": {
+    "message": "Parametrlər JSON faylına ixrac edildi."
+  },
+  "settingsImportedFromFile": {
+    "message": "Fayldan idxal olunan parametrlər."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Yapışdırılmış JSON-dən idxal edilmiş ayarlar."
+  },
+  "settingsRefreshed": {
+    "message": "Parametrlər sinxronizasiyadan Chrome yeniləndi."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Parametrləri yükləmək mümkün olmadı."
+  },
+  "defaultOn": {
+    "message": "Standart aktiv"
+  },
+  "defaultOff": {
+    "message": "Defolt söndürülməsi"
+  },
+  "noWebsitePreferences": {
+    "message": "Hələ vebsayt seçimləri yoxdur."
+  },
+  "removeSite": {
+    "message": "Çıxar"
+  },
+  "siteTableSite": {
+    "message": "Sahə"
+  },
+  "siteTableActive": {
+    "message": "Aktiv"
+  },
+  "selectInherit": {
+    "message": "İrs"
+  },
+  "selectBlock": {
+    "message": "Blok"
+  },
+  "selectAllow": {
+    "message": "İcazə verin"
+  },
+  "selectOn": {
+    "message": "Açıq"
+  },
+  "selectOff": {
+    "message": "Söndür"
+  },
+  "saveFailed": {
+    "message": "Yaddaş uğursuz oldu."
+  },
+  "importFailed": {
+    "message": "İdxal uğursuz oldu: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Əvvəlcə JSON faylı seçin və ya ehtiyat nüsxəsini yapışdırın."
+  },
+  "invalidJson": {
+    "message": "etibarsız JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Bu, MotionBlock ayarlarının ehtiyat nüsxəsi kimi görünmür."
+  },
+  "errorMissingMessageType": {
+    "message": "Mesajın itkin tipi."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Saytın host adı itib."
+  },
+  "errorUnknownMessageType": {
+    "message": "Naməlum mesaj tipi."
+  },
+  "featureGifsLabel": {
+    "message": "GIF şəkillər"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Səhifədəki GIF şəkil elementlərini əvəz edin, kiçik interfeys GIFs isə toxunulmazdır."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV və GIF tipli video URL-lər"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": ".gifv URL-lərini və loop GIFs kimi davranan video elementlərini bloklayın."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL nümunələri"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp şəkil URL-lərini bloklayın. Standart olaraq söndürülür, çünki bir çox WebP şəkilləri animasiya olunmur."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Avtomatik oynatma və videonun dövr etməsi"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Avtomatik oynatma"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Videonu avtomatik oynatma dayandırın və animasiya kimi istifadə olunan səssiz dövr edən videonu silin."
+  },
+  "featureVideoLabel": {
+    "message": "Bütün video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Video HTML5 və ümumi video fayl sorğularını bloklayın."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Audio elementləri və ümumi audio fayl sorğularını bloklayın."
+  },
+  "featureImagesLabel": {
+    "message": "Bütün şəkillər"
+  },
+  "featureImagesShortLabel": {
+    "message": "Şəkillər"
+  },
+  "featureImagesDescription": {
+    "message": "Səhifədəki şəkil elementlərini dəyişdirin. Şəkil çox olan saytlar üçün sayt başına icazə qaydalarından istifadə edin."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji mətn və emoji şəkilləri"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Emoji simvollarını və ümumi emoji şəkil render edənləri silin. Standart olaraq söndürülür, çünki mətn dəyişir."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animasiya və keçidlər"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS animasiyalarını, keçidləri və hamar sürüşdürməni deaktiv edin."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Hərəkət bloklama"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF tipli videolar, avtomatik oynatma və səhifə hərəkəti üçün tövsiyə olunan standartlar."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Geniş media bloklayıcıları"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Şəkillər, video, audio, WebP URL-lər və emojilər üçün güclü istifadəçi nəzarətləri. Bunlar bəzi saytları dəyişə və ya poza bilər."
+  },
+  "contentShowBlockedImage": {
+    "message": "Bloklanmış şəkli göstər"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Bloklanmış səsi oynat"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Bloklanmış videonu oynat"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Bloklanmış medianı oynat"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock tərəfindən bloklanan: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Bloklanmış $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF kimi media"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Dövr edən video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Avtomatik oynatma videosu"
+  },
+  "contentReasonImage": {
+    "message": "Şəkil"
+  },
+  "contentReasonMedia": {
+    "message": "Media"
+  }
+}

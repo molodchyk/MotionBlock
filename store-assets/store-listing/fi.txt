@@ -1,0 +1,31 @@
+Estä häiritsevät GIFs, GIFV, automaattisesti toistavat videot, hover-esikatselut ja sivujen liikkeet ennen kuin ne tulevat tielle.
+
+Käytä MotionBlock pysäyttääksesi:
+
+Toistellaan GIF kuvia.
+GIFV linkit.
+Lyhyitä mykistyneitä videoita käytetään kuten GIFs.
+Automaattinen videon toisto ja hover-esikatselut.
+Valinnaiset animoidut WebP URL-kuviot.
+Valinnainen video, ääni, kuvat, emojit ja CSS liike.
+
+MotionBlock perustuu paikkakohtaiseen ohjaukseen. Pidä konservatiiviset globaalit oletukset ja salli tai estä tietyt mediatyypit yksittäisillä verkkosivuilla ponnahdusikkunasta tai asetuksista. Asetukset pysyvät Chrome laajennuksen synkronointimuistissa ja voivat synkronoida Chrome kautta, jos käyttäjällä on laajennussynkronointi käytössä.
+
+Yleiset käyttötarkoitukset:
+
+Lopeta häiritsevät animaatiot lukiessa.
+Vähennä automaattisen toiston videokohinaa.
+Säästä kaistanleveyttä tarpeettomasta mediasta.
+Block YouTube-tyyliset hover-esikatselut.
+Rauhalliset Reddit, Giphy, sosiaaliset syötteet ja uutissivut, jotka muuttavat GIFs lyhyiksi videoiksi.
+Salli kuvapainotteiset paikat ja estää liikkuminen muualla.
+Salli nopeasti media sivustoille, jotka sitä tarvitsevat.
+
+Ponnahdusikkuna ohjaa nykyistä sivustoa. Vaihtoehtosivu hallinnoi globaaleja oletusasetuksia, sivustokohtaisia asetuksia, JSON varmuuskopiointi/vientiä, estettyä medianäyttöä, valinnaisia paljastuspainikkeita sekä valo/pimeää/järjestelmäkäyttöliittymän teemaa.
+
+Chrome ei salli laajennuksia muokata selaimen sisäisiä sivuja, Chrome Web Storea tai joitakin suojattuja sivuja. Jos media näkyy edelleen asennuksen tai asetusten muuttamisen jälkeen, lataa sivu uudelleen.
+
+MotionBlock ei kerää analytiikkaa, lähetä selaustietoja palvelimelle tai käytä etäsääntölistoja.
+
+Avoin lähdekoodi GPL-3.0-lisenssillä:
+https://github.com/molodchyk/MotionBlock

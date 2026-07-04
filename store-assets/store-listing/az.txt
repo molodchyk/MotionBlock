@@ -1,0 +1,31 @@
+Diqqəti yayındıran GIFs, GIFV, avtomatik oynatma videosu, ön baxışlar və səhifə hərəkətini bloklayın ki, onlar yolunuza çıxmasın.
+
+Dayandırmaq üçün MotionBlock istifadə edin:
+
+Şəkilləri dövrə GIF.
+GIFV linklər.
+Qısa, səssiz videolar GIFs kimi istifadə olunur.
+Videonu avtomatik oynatmaq və hover önizləmələri.
+İstəyə bağlı animasiyalı WebP URL nümunələri.
+İstəyə bağlı video, audio, şəkillər, emojilər və CSS hərəkət.
+
+MotionBlock hər məntəqəyə nəzarət üzərində qurulub. Konservativ qlobal standartları saxlayın, sonra popup və ya seçimlər səhifəsində fərdi saytlarda müəyyən media növlərinə icazə verin və ya bloklayın. Parametrlər əlavə sinxronizasiya yaddaşında Chrome qalır və istifadəçi extension sync aktivdirsə, Chrome boyunca sinxronizasiya edə bilər.
+
+Ümumi istifadələr:
+
+Oxuyarkən diqqəti yayındıran animasiyaları dayandırın.
+Avtomatik oynatma video səs-küyünü azaldın.
+Lazımsız mediadan bant genişliyinə qənaət edin.
+Block YouTube tərzi hover önizləmələri.
+Sakit Reddit, Giphy, sosial lentlər və GIFs qısa videolara çevirən xəbər səhifələri.
+Şəkil ağırlıqlı saytlara icazə verin, başqa yerlərdə hərəkəti bloklayın.
+Medianı ehtiyacı olan saytlara tez buraxın.
+
+Popup cari saytı idarə edir. Seçimlər səhifəsi qlobal standartları, sayt üçün seçimləri, ehtiyat nüsxə idxal/JSON ixrac, bloklanmış media ekranı, istəyə bağlı açılış düymələrini və işıq/qaranlıq/sistem istifadəçi interfeysi mövzusunu idarə edir.
+
+Chrome uzantıların brauzer daxili səhifələrini, Chrome Veb Mağazasını və bəzi qorunan səhifələri dəyişdirməsinə icazə vermir. Əgər media quraşdırdıqdan və ya parametrləri dəyişdikdən sonra hələ də görünürsə, səhifəni yenidən yükləyin.
+
+MotionBlock analitika toplamır, brauzer məlumatlarını serverə göndərmir və ya uzaq qayda siyahılarından istifadə etmir.
+
+GPL-3.0 lisenziyası altında açıq mənbə:
+https://github.com/molodchyk/MotionBlock

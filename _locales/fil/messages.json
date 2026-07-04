@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Tagaharang ng GIF at Pampahinto ng Animasyon"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Itigil ang GIFs, GIFV, autoplay ng video, hover preview, at nakakagambala na paggalaw gamit ang mga kontrol sa bawat site."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Mga Pagpipilian"
+  },
+  "siteLoading": {
+    "message": "Email Address *"
+  },
+  "optionsButton": {
+    "message": "Mga Pagpipilian"
+  },
+  "statusOnInitial": {
+    "message": "Sa"
+  },
+  "checkingActiveRules": {
+    "message": "Suriin ang mga aktibong panuntunan ..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ hinarang",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "I-block ang paggalaw dito"
+  },
+  "allowThisSite": {
+    "message": "Pahintulutan ang site na ito"
+  },
+  "siteMode": {
+    "message": "Mode ng site"
+  },
+  "followGlobalDefaults": {
+    "message": "Sundin ang mga pandaigdigang default"
+  },
+  "blockOnThisSite": {
+    "message": "I-block ang site na ito"
+  },
+  "allowThisSiteOption": {
+    "message": "Pahintulutan ang site na ito"
+  },
+  "siteMediaControls": {
+    "message": "Mga kontrol sa media ng site"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Mga Diagnostic"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock Diagnostic log"
+  },
+  "copyDiagnostics": {
+    "message": "Email Address *"
+  },
+  "refreshDiagnostics": {
+    "message": "I-refresh"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ mga diagnostic na pangyayari naitala.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Wala pang mga diagnostic. I-reload ang tab na ito, kopyahin ang isyu, pagkatapos ay i-refresh ang panel na ito."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Na-refresh ang mga diagnostic."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Hindi ma-refresh ang mga diagnostic."
+  },
+  "diagnosticsCopied": {
+    "message": "Kinopya ang mga diagnostic."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Hindi makopya ang mga diagnostic."
+  },
+  "resetSite": {
+    "message": "I-reset ang site"
+  },
+  "reloadTab": {
+    "message": "Email Address *"
+  },
+  "reloadHint": {
+    "message": "Maaaring kailanganin ang pag-reload para sa media na naka-block o na-load na."
+  },
+  "unknownSite": {
+    "message": "Email Address *"
+  },
+  "statusBlocking": {
+    "message": "Pagharang"
+  },
+  "statusAllowed": {
+    "message": "Pinahihintulutan"
+  },
+  "couldNotLoadSettings": {
+    "message": "Hindi mai-load ang mga setting"
+  },
+  "notAWebsite": {
+    "message": "Hindi isang website"
+  },
+  "statusNotApplicable": {
+    "message": "N / A"
+  },
+  "unsupportedPageSummary": {
+    "message": "Hindi MotionBlock maaaring i-configure ang browser, extension, o iba pang mga protektadong pahina."
+  },
+  "selectUseGlobal": {
+    "message": "Gumamit ng pandaigdigang"
+  },
+  "selectBlockHere": {
+    "message": "I-block dito"
+  },
+  "selectAllowHere": {
+    "message": "Payagan dito"
+  },
+  "summaryAllowed": {
+    "message": "Pinapayagan ang site na ito. Hindi MotionBlock hinaharang ang media dito."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktibo dito, ngunit walang mga kategorya ng media na kasalukuyang naka-block."
+  },
+  "summaryBlockingFeatures": {
+    "message": "I-block $FEATURES$ sa site na ito.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Ang lahat ng MotionBlock mga patakaran ay naka-off para sa site na ito."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Ang site na ito ay gumagamit ng sarili nitong mga setting ng MotionBlock."
+  },
+  "siteRuleOverrides": {
+    "message": "Ang site na ito ay sumusunod sa pandaigdigang katayuan na may mga override na tukoy sa media."
+  },
+  "siteRuleDefaults": {
+    "message": "Sinusundan ng site na ito ang iyong mga pandaigdigang default."
+  },
+  "featureMetaInactive": {
+    "message": "Hindi aktibo habang pinapayagan ang site"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "I-override: pagharang"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Pagpawalang-bisa: pinahihintulutan"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Pandaigdigan: pagharang"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Pandaigdigan: pinapayagan"
+  },
+  "optionsIntro": {
+    "message": "Mga default na pandaigdigang media at mga kagustuhan sa bawat site."
+  },
+  "extensionActive": {
+    "message": "Aktibo ang extension"
+  },
+  "globalDefaultsHeading": {
+    "message": "Mga Pandaigdigang Default"
+  },
+  "globalDefaultsIntro": {
+    "message": "Magsimula sa GIFs, GIF-tulad ng video, at autoplay. Gumamit lamang ng mga malawak na blocker kapag ang isang site ay nangangailangan ng mas mahigpit na kontrol sa media."
+  },
+  "restoreRecommended": {
+    "message": "Inirerekumenda ang Pagpapanumbalik"
+  },
+  "blockedMediaDisplay": {
+    "message": "Naka-block na pagpapakita ng media"
+  },
+  "replacementPlaceholder": {
+    "message": "Siksik na placeholder"
+  },
+  "replacementHide": {
+    "message": "Itago ang elemento"
+  },
+  "interfaceTheme": {
+    "message": "Tema ng interface"
+  },
+  "themeSystem": {
+    "message": "Sistema"
+  },
+  "themeLight": {
+    "message": "Liwanag"
+  },
+  "themeDark": {
+    "message": "Madilim"
+  },
+  "revealControlsTitle": {
+    "message": "Ibunyag ang mga pindutan para sa naka-block na media"
+  },
+  "revealControlsDescription": {
+    "message": "Ipakita ang mga pindutan ng click-to-play/show sa naka-block na media. Naka-off bilang default dahil ang ilang mga site ay muling gumagamit ng mga nakatagong ibabaw ng media."
+  },
+  "diagnosticsTitle": {
+    "message": "Advanced na mga diagnostic"
+  },
+  "diagnosticsDescription": {
+    "message": "Ipakita ang isang kopyahin na diagnostic log sa bawat tab sa popup habang nagpaparami ka ng isang problema sa pagharang."
+  },
+  "websitePreferencesHeading": {
+    "message": "Mga Kagustuhan sa Website"
+  },
+  "websitePreferencesIntro": {
+    "message": "Gumamit ng eksaktong mga hostname tulad ng reddit.com, discord.com, o news.example.com."
+  },
+  "addSite": {
+    "message": "Email Address *"
+  },
+  "backupHeading": {
+    "message": "Email Address *"
+  },
+  "backupIntro": {
+    "message": "Ang mga setting ay naka-imbak sa Chrome imbakan ng pag-sync. Kung pinagana Chrome pag-sync para sa mga extension, maaari nilang sundin ang iyong Chrome profile."
+  },
+  "exportJson": {
+    "message": "I-export ang JSON"
+  },
+  "importFile": {
+    "message": "Email Address *"
+  },
+  "applyPastedJson": {
+    "message": "Mag-apply ng naka-paste na JSON"
+  },
+  "refreshFromSync": {
+    "message": "I-refresh mula sa pag-sync"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Lumilitaw ang preview ng pag-export dito. Maaari mo ring i-paste ang isang backup ng MotionBlock JSON at ilapat ito."
+  },
+  "globalStatusSaved": {
+    "message": "Nai-save ang pandaigdigang katayuan."
+  },
+  "globalDefaultsSaved": {
+    "message": "Nai-save ang mga pandaigdigang default."
+  },
+  "displayModeSaved": {
+    "message": "Nai-save ang mode ng pagpapakita."
+  },
+  "themeSaved": {
+    "message": "Nai-save ang tema."
+  },
+  "revealSettingSaved": {
+    "message": "I-save ang setting ng pindutan ng pagbubunyag."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Nai-save ang setting ng diagnostic."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Naibalik ang mga inirerekomendang default."
+  },
+  "enterValidHostname": {
+    "message": "Magpasok ng wastong hostname."
+  },
+  "siteAdded": {
+    "message": "Idinagdag ang site."
+  },
+  "siteRuleSaved": {
+    "message": "Nai-save ang panuntunan ng site."
+  },
+  "siteRemoved": {
+    "message": "Inalis ang site."
+  },
+  "settingsExported": {
+    "message": "Mga setting na na-export sa isang JSON file."
+  },
+  "settingsImportedFromFile": {
+    "message": "Mga setting na na-import mula sa file."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Mga setting na na-import mula sa naka-paste na JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Na-refresh ang mga setting mula sa Chrome pag-sync."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Hindi makapag-load ng mga setting."
+  },
+  "defaultOn": {
+    "message": "Default sa"
+  },
+  "defaultOff": {
+    "message": "Default off"
+  },
+  "noWebsitePreferences": {
+    "message": "Wala pang mga kagustuhan sa website."
+  },
+  "removeSite": {
+    "message": "Alisin"
+  },
+  "siteTableSite": {
+    "message": "Email Address *"
+  },
+  "siteTableActive": {
+    "message": "Aktibo"
+  },
+  "selectInherit": {
+    "message": "Magmana"
+  },
+  "selectBlock": {
+    "message": "I-block"
+  },
+  "selectAllow": {
+    "message": "Pahintulutan"
+  },
+  "selectOn": {
+    "message": "Sa"
+  },
+  "selectOff": {
+    "message": "Off"
+  },
+  "saveFailed": {
+    "message": "Nabigo ang pag-save."
+  },
+  "importFailed": {
+    "message": "Nabigo ang pag-import: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Pumili ng isang JSON file o i-paste muna ang isang backup."
+  },
+  "invalidJson": {
+    "message": "hindi wastong JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Hindi ito mukhang isang backup ng MotionBlock setting."
+  },
+  "errorMissingMessageType": {
+    "message": "Nawawalang uri ng mensahe."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Nawawalang hostname ng site."
+  },
+  "errorUnknownMessageType": {
+    "message": "Hindi kilalang uri ng mensahe."
+  },
+  "featureGifsLabel": {
+    "message": "GIF mga imahe"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Palitan GIF mga elemento ng imahe sa pahina habang iniiwan ang maliit na interface GIFs nag-iisa."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV at GIF-tulad ng mga URL ng video"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "I-block ang mga .gifv URL at mga elemento ng video na kumikilos tulad ng pag-loop GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP mga pattern ng URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "I-block ang mga URL ng imahe ng .webp. Off sa pamamagitan ng default dahil maraming WebP mga imahe ay hindi animated."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Autoplay at pag-loop ng video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Autoplay"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "I-pause ang autoplay ng video at alisin ang naka-mute na looping video na ginamit bilang animation."
+  },
+  "featureVideoLabel": {
+    "message": "Lahat ng video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "I-block HTML5 mga kahilingan sa video at karaniwang mga file ng video."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "I-block ang mga elemento ng audio at karaniwang mga kahilingan sa audio file."
+  },
+  "featureImagesLabel": {
+    "message": "Lahat ng mga imahe"
+  },
+  "featureImagesShortLabel": {
+    "message": "Mga Larawan"
+  },
+  "featureImagesDescription": {
+    "message": "Palitan ang mga elemento ng imahe sa pahina. Gumamit ng mga panuntunan sa pagpapahintulot sa bawat site para sa mga site na mabigat sa imahe."
+  },
+  "featureEmojiLabel": {
+    "message": "Mga imahe ng teksto ng emoji at emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Alisin ang mga character na emoji at karaniwang mga renderer ng imahe ng emoji. Off sa pamamagitan ng default dahil binabago nito ang teksto."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animation at mga transisyon"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Huwag paganahin ang mga animation ng CSS, transition, at makinis na pag-scroll."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Pag-block ng paggalaw"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Inirerekumendang mga default para sa GIFs, mga video na tulad ng GIF, autoplay, at paggalaw ng pahina."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Malawak na media blockers"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Mga kontrol ng power-user para sa mga imahe, video, audio, WebP URL, at emoji. Maaari itong baguhin o masira ang ilang mga site."
+  },
+  "contentShowBlockedImage": {
+    "message": "Ipakita ang naka-block na imahe"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "I-play ang naka-block na audio"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "I-play ang naka-block na video"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "I-play ang naka-block na media"
+  },
+  "contentBlockedByTitle": {
+    "message": "ang napili ng mga taga-hanga: MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Hinarang $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-tulad ng media"
+  },
+  "contentReasonVideo": {
+    "message": "video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Pag-ikot ng Video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Awtomatikong i-play ang video"
+  },
+  "contentReasonImage": {
+    "message": "imahe"
+  },
+  "contentReasonMedia": {
+    "message": "media"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Αποκλεισμός GIF και διακοπή κινούμενων εικόνων"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Σταματήστε GIFs, GIFV, αυτόματη αναπαραγωγή βίντεο, προεπισκοπήσεις αιώρησης και κίνηση που αποσπά την προσοχή με στοιχεία ελέγχου ανά τοποθεσία."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Επιλογές"
+  },
+  "siteLoading": {
+    "message": "Φόρτωση τοποθεσίας..."
+  },
+  "optionsButton": {
+    "message": "Επιλογές"
+  },
+  "statusOnInitial": {
+    "message": "Στις"
+  },
+  "checkingActiveRules": {
+    "message": "Έλεγχος ενεργών κανόνων..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ μπλοκαρισμένο",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Αποκλεισμός κίνησης εδώ"
+  },
+  "allowThisSite": {
+    "message": "Να επιτρέπεται αυτός ο ιστότοπος"
+  },
+  "siteMode": {
+    "message": "Λειτουργία τοποθεσίας"
+  },
+  "followGlobalDefaults": {
+    "message": "Ακολουθήστε τις καθολικές προεπιλογές"
+  },
+  "blockOnThisSite": {
+    "message": "Αποκλεισμός σε αυτόν τον ιστότοπο"
+  },
+  "allowThisSiteOption": {
+    "message": "Να επιτρέπεται αυτός ο ιστότοπος"
+  },
+  "siteMediaControls": {
+    "message": "Στοιχεία ελέγχου πολυμέσων τοποθεσίας"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Διαγνωστικά"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock αρχείο καταγραφής διαγνωστικών"
+  },
+  "copyDiagnostics": {
+    "message": "Αντιγραφή αρχείου καταγραφής"
+  },
+  "refreshDiagnostics": {
+    "message": "Ανανέωση"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ διαγνωστικά συμβάντα που καταγράφηκαν.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Δεν υπάρχουν ακόμη διαγνωστικά. Φορτώστε ξανά αυτήν την καρτέλα, αναπαραγάγετε το πρόβλημα και, στη συνέχεια, ανανεώστε αυτόν τον πίνακα."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Τα διαγνωστικά ανανεώθηκαν."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Δεν ήταν δυνατή η ανανέωση των διαγνωστικών."
+  },
+  "diagnosticsCopied": {
+    "message": "Τα διαγνωστικά αντιγράφηκαν."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Δεν ήταν δυνατή η αντιγραφή διαγνωστικών."
+  },
+  "resetSite": {
+    "message": "Επαναφορά ιστότοπου"
+  },
+  "reloadTab": {
+    "message": "Επαναφόρτωση"
+  },
+  "reloadHint": {
+    "message": "Μπορεί να χρειαστεί επαναφόρτωση για μέσα που έχουν ήδη αποκλειστεί ή φορτωθεί."
+  },
+  "unknownSite": {
+    "message": "Άγνωστη τοποθεσία"
+  },
+  "statusBlocking": {
+    "message": "Αποκλεισμός"
+  },
+  "statusAllowed": {
+    "message": "Επιτρέπεται"
+  },
+  "couldNotLoadSettings": {
+    "message": "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων"
+  },
+  "notAWebsite": {
+    "message": "Δεν είναι ιστότοπος"
+  },
+  "statusNotApplicable": {
+    "message": "Δ/Υ"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock δεν μπορούν να διαμορφώσουν το πρόγραμμα περιήγησης, την επέκταση ή άλλες προστατευμένες σελίδες."
+  },
+  "selectUseGlobal": {
+    "message": "Χρήση καθολικού"
+  },
+  "selectBlockHere": {
+    "message": "Αποκλεισμός εδώ"
+  },
+  "selectAllowHere": {
+    "message": "Επιτρέψτε εδώ"
+  },
+  "summaryAllowed": {
+    "message": "Αυτός ο ιστότοπος επιτρέπεται. MotionBlock δεν μπλοκάρει τα μέσα εδώ."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Ενεργό εδώ, αλλά καμία κατηγορία πολυμέσων δεν είναι προς το παρόν αποκλεισμένη."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Αποκλεισμός $FEATURES$ σε αυτόν τον ιστότοπο.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Όλοι οι κανόνες MotionBlock είναι απενεργοποιημένοι για αυτόν τον ιστότοπο."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Αυτός ο ιστότοπος χρησιμοποιεί τις δικές του ρυθμίσεις MotionBlock."
+  },
+  "siteRuleOverrides": {
+    "message": "Αυτός ο ιστότοπος ακολουθεί την παγκόσμια κατάσταση με παρακάμψεις για συγκεκριμένα μέσα."
+  },
+  "siteRuleDefaults": {
+    "message": "Αυτός ο ιστότοπος ακολουθεί τις καθολικές προεπιλογές σας."
+  },
+  "featureMetaInactive": {
+    "message": "Ανενεργός όσο επιτρέπεται ο ιστότοπος"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Παράκαμψη: αποκλεισμός"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Παράκαμψη: επιτρέπεται"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Παγκόσμια: αποκλεισμός"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Παγκόσμια: επιτρέπεται"
+  },
+  "optionsIntro": {
+    "message": "Καθολικές προεπιλογές πολυμέσων και προτιμήσεις ανά τοποθεσία."
+  },
+  "extensionActive": {
+    "message": "Η επέκταση είναι ενεργή"
+  },
+  "globalDefaultsHeading": {
+    "message": "Καθολικές προεπιλογές"
+  },
+  "globalDefaultsIntro": {
+    "message": "Ξεκινήστε με GIFs, βίντεο που μοιάζει με GIF και αυτόματη αναπαραγωγή. Χρησιμοποιήστε ευρείς αποκλεισμούς μόνο όταν ένας ιστότοπος χρειάζεται αυστηρότερο έλεγχο πολυμέσων."
+  },
+  "restoreRecommended": {
+    "message": "Συνιστάται επαναφορά"
+  },
+  "blockedMediaDisplay": {
+    "message": "Αποκλεισμένη εμφάνιση πολυμέσων"
+  },
+  "replacementPlaceholder": {
+    "message": "Συμπαγές σύμβολο κράτησης θέσης"
+  },
+  "replacementHide": {
+    "message": "Απόκρυψη στοιχείου"
+  },
+  "interfaceTheme": {
+    "message": "Θέμα διεπαφής"
+  },
+  "themeSystem": {
+    "message": "Σύστημα"
+  },
+  "themeLight": {
+    "message": "Φως"
+  },
+  "themeDark": {
+    "message": "Σκοτάδι"
+  },
+  "revealControlsTitle": {
+    "message": "Κουμπιά αποκάλυψης για αποκλεισμένα μέσα"
+  },
+  "revealControlsDescription": {
+    "message": "Εμφάνιση κουμπιών κλικ για αναπαραγωγή/εμφάνιση σε αποκλεισμένα μέσα. Απενεργοποιημένο από προεπιλογή, επειδή ορισμένοι ιστότοποι επαναχρησιμοποιούν κρυφές επιφάνειες πολυμέσων."
+  },
+  "diagnosticsTitle": {
+    "message": "Προηγμένα διαγνωστικά"
+  },
+  "diagnosticsDescription": {
+    "message": "Εμφανίστε ένα διαγνωστικό αρχείο καταγραφής με δυνατότητα αντιγραφής ανά καρτέλα στο αναδυόμενο παράθυρο ενώ αναπαράγετε ένα πρόβλημα αποκλεισμού."
+  },
+  "websitePreferencesHeading": {
+    "message": "Προτιμήσεις ιστότοπου"
+  },
+  "websitePreferencesIntro": {
+    "message": "Χρησιμοποιήστε ακριβή ονόματα κεντρικών υπολογιστών όπως reddit.com, discord.com ή news.example.com."
+  },
+  "addSite": {
+    "message": "Προσθήκη τοποθεσίας"
+  },
+  "backupHeading": {
+    "message": "Εφεδρικός"
+  },
+  "backupIntro": {
+    "message": "Οι ρυθμίσεις αποθηκεύονται σε Chrome χώρο αποθήκευσης συγχρονισμού. Εάν Chrome συγχρονισμός είναι ενεργοποιημένος για επεκτάσεις, μπορούν να ακολουθήσουν το προφίλ Chrome σας."
+  },
+  "exportJson": {
+    "message": "Εξαγωγή JSON"
+  },
+  "importFile": {
+    "message": "Εισαγωγή αρχείου"
+  },
+  "applyPastedJson": {
+    "message": "Εφαρμογή επικολλημένων JSON"
+  },
+  "refreshFromSync": {
+    "message": "Ανανέωση από συγχρονισμό"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Η προεπισκόπηση εξαγωγής εμφανίζεται εδώ. Μπορείτε επίσης να επικολλήσετε ένα MotionBlock JSON αντίγραφο ασφαλείας και να το εφαρμόσετε."
+  },
+  "globalStatusSaved": {
+    "message": "Η παγκόσμια κατάσταση αποθηκεύτηκε."
+  },
+  "globalDefaultsSaved": {
+    "message": "Οι καθολικές προεπιλογές αποθηκεύτηκαν."
+  },
+  "displayModeSaved": {
+    "message": "Η λειτουργία προβολής αποθηκεύτηκε."
+  },
+  "themeSaved": {
+    "message": "Το θέμα αποθηκεύτηκε."
+  },
+  "revealSettingSaved": {
+    "message": "Η ρύθμιση του κουμπιού Reveal αποθηκεύτηκε."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Η ρύθμιση διαγνωστικών αποθηκεύτηκε."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Αποκαταστάθηκαν οι προτεινόμενες προεπιλογές."
+  },
+  "enterValidHostname": {
+    "message": "Εισαγάγετε ένα έγκυρο όνομα κεντρικού υπολογιστή."
+  },
+  "siteAdded": {
+    "message": "Προστέθηκε ιστότοπος."
+  },
+  "siteRuleSaved": {
+    "message": "Ο κανόνας τοποθεσίας αποθηκεύτηκε."
+  },
+  "siteRemoved": {
+    "message": "Ο ιστότοπος αφαιρέθηκε."
+  },
+  "settingsExported": {
+    "message": "Ρυθμίσεις που εξάγονται σε αρχείο JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Ρυθμίσεις που εισάγονται από το αρχείο."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Ρυθμίσεις που εισάγονται από επικολλημένα JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Οι ρυθμίσεις ανανεώθηκαν από Chrome συγχρονισμό."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων."
+  },
+  "defaultOn": {
+    "message": "Προεπιλογή ενεργοποιημένη"
+  },
+  "defaultOff": {
+    "message": "Προεπιλογή απενεργοποιημένη"
+  },
+  "noWebsitePreferences": {
+    "message": "Δεν υπάρχουν ακόμη προτιμήσεις ιστότοπου."
+  },
+  "removeSite": {
+    "message": "Αφαίρεση"
+  },
+  "siteTableSite": {
+    "message": "Ιστοσελίδα"
+  },
+  "siteTableActive": {
+    "message": "Ενεργός"
+  },
+  "selectInherit": {
+    "message": "Κληρονομώ"
+  },
+  "selectBlock": {
+    "message": "Μπλοκ"
+  },
+  "selectAllow": {
+    "message": "Επιτρέψτε"
+  },
+  "selectOn": {
+    "message": "Στις"
+  },
+  "selectOff": {
+    "message": "Εκτός"
+  },
+  "saveFailed": {
+    "message": "Η αποθήκευση απέτυχε."
+  },
+  "importFailed": {
+    "message": "Η εισαγωγή απέτυχε: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Επιλέξτε ένα αρχείο JSON ή επικολλήστε πρώτα ένα αντίγραφο ασφαλείας."
+  },
+  "invalidJson": {
+    "message": "άκυρη JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Αυτό δεν μοιάζει με αντίγραφο ασφαλείας MotionBlock ρυθμίσεων."
+  },
+  "errorMissingMessageType": {
+    "message": "Λείπει ο τύπος μηνύματος."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Λείπει το όνομα κεντρικού υπολογιστή του ιστότοπου."
+  },
+  "errorUnknownMessageType": {
+    "message": "Άγνωστος τύπος μηνύματος."
+  },
+  "featureGifsLabel": {
+    "message": "GIF εικόνες"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Αντικαταστήστε GIF στοιχεία εικόνας στη σελίδα, αφήνοντας τη μικροσκοπική διεπαφή GIFs μόνη της."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV και διευθύνσεις URL βίντεο που μοιάζουν με GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Αποκλείστε διευθύνσεις URL .gifv και στοιχεία βίντεο που συμπεριφέρονται σαν επαναλαμβανόμενα GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP μοτίβα URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Αποκλεισμός διευθύνσεων URL εικόνων .webp. Απενεργοποιημένο από προεπιλογή επειδή πολλές WebP εικόνες δεν είναι κινούμενες."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Αυτόματη αναπαραγωγή και επανάληψη βίντεο"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Αυτόματο παιχνίδι"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Παύση αυτόματης αναπαραγωγής βίντεο και κατάργηση βίντεο σε σίγαση που χρησιμοποιείται ως κινούμενη εικόνα."
+  },
+  "featureVideoLabel": {
+    "message": "Όλα τα βίντεο"
+  },
+  "featureVideoShortLabel": {
+    "message": "Βίντεο"
+  },
+  "featureVideoDescription": {
+    "message": "Αποκλεισμός HTML5 αιτημάτων βίντεο και συνηθισμένων αρχείων βίντεο."
+  },
+  "featureAudioLabel": {
+    "message": "Ήχος"
+  },
+  "featureAudioShortLabel": {
+    "message": "Ήχος"
+  },
+  "featureAudioDescription": {
+    "message": "Αποκλεισμός στοιχείων ήχου και κοινών αιτημάτων αρχείων ήχου."
+  },
+  "featureImagesLabel": {
+    "message": "Όλες οι εικόνες"
+  },
+  "featureImagesShortLabel": {
+    "message": "εικόνες"
+  },
+  "featureImagesDescription": {
+    "message": "Αντικαταστήστε τα στοιχεία εικόνας στη σελίδα. Χρησιμοποιήστε κανόνες αποδοχής ανά τοποθεσία για ιστότοπους με μεγάλο όγκο εικόνας."
+  },
+  "featureEmojiLabel": {
+    "message": "Κείμενο emoji και εικόνες emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Καταργήστε χαρακτήρες emoji και κοινούς αποδότες εικόνων emoji. Απενεργοποιημένο από προεπιλογή, επειδή αλλάζει κείμενο."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS κινούμενα σχέδια και μεταβάσεις"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Απενεργοποιήστε CSS κινούμενα σχέδια, μεταβάσεις και ομαλή κύλιση."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Μπλοκάρισμα κίνησης"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Προτεινόμενες προεπιλογές για GIFs, βίντεο που μοιάζουν με GIF, αυτόματη αναπαραγωγή και κίνηση σελίδας."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Ευρείς αποκλειστές μέσων ενημέρωσης"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Στοιχεία ελέγχου ισχυρού χρήστη για εικόνες, βίντεο, ήχο, διευθύνσεις URL WebP και emoji. Αυτά μπορεί να αλλάξουν ή να καταστρέψουν ορισμένους ιστότοπους."
+  },
+  "contentShowBlockedImage": {
+    "message": "Εμφάνιση μπλοκαρισμένης εικόνας"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Αναπαραγωγή αποκλεισμένου ήχου"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Αναπαραγωγή αποκλεισμένου βίντεο"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Αναπαραγωγή αποκλεισμένων πολυμέσων"
+  },
+  "contentBlockedByTitle": {
+    "message": "Αποκλεισμός από MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Αποκλεισμένη $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Μέσα τύπου GIF"
+  },
+  "contentReasonVideo": {
+    "message": "βίντεο"
+  },
+  "contentReasonAudio": {
+    "message": "Ήχος"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Επαναλαμβανόμενο βίντεο"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Αυτόματη αναπαραγωγή βίντεο"
+  },
+  "contentReasonImage": {
+    "message": "Εικόνα"
+  },
+  "contentReasonMedia": {
+    "message": "Μέσα"
+  }
+}

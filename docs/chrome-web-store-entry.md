@@ -24,32 +24,37 @@ English
 
 ## Detailed Description
 
-MotionBlock is a GIF blocker and animation stopper for busy web pages. It blocks distracting motion before it gets in your way.
+Block distracting GIFs, GIFV, autoplay video, hover previews, and page motion before they get in your way.
 
 Use MotionBlock to stop:
 
-- looping GIF images
-- GIFV links
-- short muted videos used like GIFs
-- autoplay video and hover previews
-- optional animated WebP URL patterns
-- optional video, audio, images, emoji, and CSS motion
+Looping GIF images.
+GIFV links.
+Short muted videos used like GIFs.
+Autoplay video and hover previews.
+Optional animated WebP URL patterns.
+Optional video, audio, images, emoji, and CSS motion.
 
-MotionBlock is built around per-site control. Keep conservative global defaults, then allow or block specific media types on individual websites from the popup or options page.
+MotionBlock is built around per-site control. Keep conservative global defaults, then allow or block specific media types on individual websites from the popup or options page. Settings stay in Chrome extension sync storage and may sync through Chrome if the user has extension sync enabled.
 
 Common uses:
 
-- stop distracting animations while reading
-- reduce autoplay video noise
-- save bandwidth from unnecessary media
-- block YouTube-style hover previews
-- calm Reddit, Giphy, social feeds, and news pages that convert GIFs into short videos
-- allow image-heavy sites while blocking motion elsewhere
-- quickly allow media on sites that need it
+Stop distracting animations while reading.
+Reduce autoplay video noise.
+Save bandwidth from unnecessary media.
+Block YouTube-style hover previews.
+Calm Reddit, Giphy, social feeds, and news pages that convert GIFs into short videos.
+Allow image-heavy sites while blocking motion elsewhere.
+Quickly allow media on sites that need it.
 
-The popup controls the current site. The options page manages global defaults, per-site preferences, JSON backup import/export, Chrome-profile settings sync, blocked media display, optional reveal buttons, and light/dark/system UI theme.
+The popup controls the current site. The options page manages global defaults, per-site preferences, JSON backup import/export, blocked media display, optional reveal buttons, and light/dark/system UI theme.
 
-MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists. Settings are stored in Chrome extension sync storage and may sync through Chrome if the user has Chrome extension sync enabled.
+Chrome does not allow extensions to modify browser-internal pages, the Chrome Web Store, or some protected pages. If media is still visible after installing or changing settings, reload the page.
+
+MotionBlock does not collect analytics, send browsing data to a server, or use remote rule lists.
+
+Open source under the GPL-3.0 license:
+https://github.com/molodchyk/MotionBlock
 
 Source file for the detailed description:
 

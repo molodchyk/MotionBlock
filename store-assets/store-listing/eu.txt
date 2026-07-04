@@ -1,0 +1,31 @@
+Blokeatu GIFs distraitzaileak, GIFV, bideoa automatikoki erreproduzitu, aurrebistak eta orrialdearen mugimendua oztopatu aurretik.
+
+Erabili MotionBlock gelditzeko:
+
+Irudi GIF bueltaka.
+GIFV estekak.
+Bideo labur eta isilduak erabiltzen GIFs.
+Bideoa automatikoki erreproduzitu eta aurreikuspenak pasatuz.
+Animazio WebP URL patroien aukera.
+Bideoa, audioa, irudiak, emojiak eta CSS mugimendua.
+
+MotionBlock gune bakoitzeko kontrolaren inguruan eraikia. Mantendu lehenetsi global kontserbadoreak, eta gero baimendu edo blokeatu hedabide mota zehatzak webgune indibidualetan popup edo aukeren orrialdetik. Ezarpenak luzapen sinkronizazio biltegian geratzen Chrome eta erabiltzaileak luzapenaren sinkronizazioa gaituta badu, Chrome bidez sinkronizatu daitezke.
+
+Ohiko erabilerak:
+
+Utzi irakurtzen ari zaren bitartean animazio distraitzaileak.
+Murriztu autoplay bideoaren zarata.
+Banda zabalera aurreztu beharrezko medioetatik.
+Bloke YouTube estiloko aurreikuspenak.
+Lasai Reddit, Giphy, sare sozialetako jarioak eta albiste orriak, GIFs bideo labur bihurtzen dituztenak.
+Irudi asko dituzten guneak onartu, mugimendua beste leku batzuetan blokeatuz.
+Azkar baimendu media behar duten guneetan.
+
+Pop-up-ak egungo gunea kontrolatzen du. Aukeren orriak lehenetsitako orokorrak, gune bakoitzeko JSON lehentasunak, babeskopia inportazioa/esportazioa, blokeatutako multimedia bistaratzea, agerpen botoi aukerakoak eta argi/ilun/sistema UI gaia kudeatzen ditu.
+
+Chrome ez du baimentzen luzapenek nabigatzailearen barneko orriak, Chrome Web Store edo babestutako orrialde batzuk aldatzea. Media oraindik ikusgai badago instalatu edo ezarpenak aldatu ondoren, berriro kargatu orria.
+
+MotionBlock ez du analitika biltzen, ez du nabigazio datuak zerbitzari batera bidaltzen, ezta urruneko arau zerrendak erabiltzen.
+
+Iturburu irekia GPL-3.0 lizentziapean:
+https://github.com/molodchyk/MotionBlock

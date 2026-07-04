@@ -5,82 +5,88 @@
   const UI_THEME_MODES = ["system", "light", "dark"];
   const CONFIGURABLE_PROTOCOLS = ["http:", "https:"];
 
+  function t(key, fallback) {
+    return root.MotionBlockI18n && typeof root.MotionBlockI18n.t === "function"
+      ? root.MotionBlockI18n.t(key, undefined, fallback)
+      : fallback;
+  }
+
   const FEATURE_DEFINITIONS = [
     {
       key: "gifs",
       group: "motion",
-      label: "GIF images",
-      shortLabel: "GIFs",
-      description: "Replace GIF image elements in the page while leaving tiny interface GIFs alone."
+      label: t("featureGifsLabel", "GIF images"),
+      shortLabel: t("featureGifsShortLabel", "GIFs"),
+      description: t("featureGifsDescription", "Replace GIF image elements in the page while leaving tiny interface GIFs alone.")
     },
     {
       key: "gifv",
       group: "motion",
-      label: "GIFV and GIF-like video URLs",
-      shortLabel: "GIFV",
-      description: "Block .gifv URLs and video elements that behave like looping GIFs."
+      label: t("featureGifvLabel", "GIFV and GIF-like video URLs"),
+      shortLabel: t("featureGifvShortLabel", "GIFV"),
+      description: t("featureGifvDescription", "Block .gifv URLs and video elements that behave like looping GIFs.")
     },
     {
       key: "animatedWebp",
       group: "broad",
-      label: "WebP URL patterns",
-      shortLabel: "WebP",
-      description: "Block .webp image URLs. Off by default because many WebP images are not animated."
+      label: t("featureAnimatedWebpLabel", "WebP URL patterns"),
+      shortLabel: t("featureAnimatedWebpShortLabel", "WebP"),
+      description: t("featureAnimatedWebpDescription", "Block .webp image URLs. Off by default because many WebP images are not animated.")
     },
     {
       key: "autoplayVideo",
       group: "motion",
-      label: "Autoplay and looping video",
-      shortLabel: "Autoplay",
-      description: "Pause autoplay video and remove muted looping video used as animation."
+      label: t("featureAutoplayVideoLabel", "Autoplay and looping video"),
+      shortLabel: t("featureAutoplayVideoShortLabel", "Autoplay"),
+      description: t("featureAutoplayVideoDescription", "Pause autoplay video and remove muted looping video used as animation.")
     },
     {
       key: "video",
       group: "broad",
-      label: "All video",
-      shortLabel: "Video",
-      description: "Block HTML5 video and common video file requests."
+      label: t("featureVideoLabel", "All video"),
+      shortLabel: t("featureVideoShortLabel", "Video"),
+      description: t("featureVideoDescription", "Block HTML5 video and common video file requests.")
     },
     {
       key: "audio",
       group: "broad",
-      label: "Audio",
-      shortLabel: "Audio",
-      description: "Block audio elements and common audio file requests."
+      label: t("featureAudioLabel", "Audio"),
+      shortLabel: t("featureAudioShortLabel", "Audio"),
+      description: t("featureAudioDescription", "Block audio elements and common audio file requests.")
     },
     {
       key: "images",
       group: "broad",
-      label: "All images",
-      shortLabel: "Images",
-      description: "Replace image elements in the page. Use per-site allow rules for image-heavy sites."
+      label: t("featureImagesLabel", "All images"),
+      shortLabel: t("featureImagesShortLabel", "Images"),
+      description: t("featureImagesDescription", "Replace image elements in the page. Use per-site allow rules for image-heavy sites.")
     },
     {
       key: "emoji",
       group: "broad",
-      label: "Emoji text and emoji images",
-      shortLabel: "Emoji",
-      description: "Remove emoji characters and common emoji image renderers. Off by default because it changes text."
+      label: t("featureEmojiLabel", "Emoji text and emoji images"),
+      shortLabel: t("featureEmojiShortLabel", "Emoji"),
+      description: t("featureEmojiDescription", "Remove emoji characters and common emoji image renderers. Off by default because it changes text.")
     },
     {
       key: "cssMotion",
       group: "motion",
-      label: "CSS animation and transitions",
-      shortLabel: "CSS",
-      description: "Disable CSS animations, transitions, and smooth scrolling."
+      label: t("featureCssMotionLabel", "CSS animation and transitions"),
+      shortLabel: t("featureCssMotionShortLabel", "CSS"),
+      description: t("featureCssMotionDescription", "Disable CSS animations, transitions, and smooth scrolling.")
     }
   ];
 
   const FEATURE_GROUPS = [
     {
       key: "motion",
-      label: "Motion blocking",
-      description: "Recommended defaults for GIFs, GIF-like videos, autoplay, and page motion."
+      label: t("featureGroupMotionLabel", "Motion blocking"),
+      description: t("featureGroupMotionDescription", "Recommended defaults for GIFs, GIF-like videos, autoplay, and page motion.")
     },
     {
       key: "broad",
-      label: "Broad media blockers",
-      description: "Power-user controls for images, video, audio, WebP URLs, and emoji. These can change or break some sites."
+      label: t("featureGroupBroadLabel", "Broad media blockers"),
+      description: t("featureGroupBroadDescription", "Power-user controls for images, video, audio, WebP URLs, and emoji. These can change or break some sites.")
     }
   ];
 
@@ -102,6 +108,7 @@
 
   const DEFAULT_SETTINGS = {
     enabled: true,
+    diagnosticsEnabled: false,
     uiTheme: "system",
     showRevealControls: false,
     replacementMode: "placeholder",
@@ -246,6 +253,8 @@
 
     return {
       enabled: typeof source.enabled === "boolean" ? source.enabled : DEFAULT_SETTINGS.enabled,
+      diagnosticsEnabled:
+        typeof source.diagnosticsEnabled === "boolean" ? source.diagnosticsEnabled : DEFAULT_SETTINGS.diagnosticsEnabled,
       uiTheme,
       showRevealControls:
         typeof source.showRevealControls === "boolean" ? source.showRevealControls : DEFAULT_SETTINGS.showRevealControls,
@@ -260,16 +269,18 @@
       return false;
     }
 
-    return ["enabled", "uiTheme", "showRevealControls", "replacementMode", "features", "siteRules"].some(function (key) {
-      return Object.prototype.hasOwnProperty.call(value, key);
-    });
+    return ["enabled", "diagnosticsEnabled", "uiTheme", "showRevealControls", "replacementMode", "features", "siteRules"].some(
+      function (key) {
+        return Object.prototype.hasOwnProperty.call(value, key);
+      }
+    );
   }
 
   function normalizeSettingsBackupPayload(payload) {
     const source = isPlainObject(payload) && isPlainObject(payload.settings) ? payload.settings : payload;
 
     if (!hasRecognizedSettingsShape(source)) {
-      throw new Error("This does not look like a MotionBlock settings backup.");
+      throw new Error(t("errorInvalidSettingsBackup", "This does not look like a MotionBlock settings backup."));
     }
 
     return normalizeSettings(source);
@@ -300,6 +311,7 @@
 
     return {
       enabled: normalized.enabled && !(rule && rule.enabled === false),
+      diagnosticsEnabled: normalized.diagnosticsEnabled,
       showRevealControls: normalized.showRevealControls,
       replacementMode: rule && rule.replacementMode ? rule.replacementMode : normalized.replacementMode,
       features,

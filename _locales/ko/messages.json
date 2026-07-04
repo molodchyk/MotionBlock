@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF 블로커 및 애니메이션 스톱퍼"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "각 사이트별 컨트롤로 GIFs, GIFV, 자동 재생 영상, 호버 미리보기, 산만한 움직임 방지 등을 지원합니다."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock 옵션"
+  },
+  "siteLoading": {
+    "message": "로딩 지점..."
+  },
+  "optionsButton": {
+    "message": "옵션"
+  },
+  "statusOnInitial": {
+    "message": "계속"
+  },
+  "checkingActiveRules": {
+    "message": "활성 규칙 확인 중..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ 차단됨",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "여기서 블록 모션"
+  },
+  "allowThisSite": {
+    "message": "이 사이트를 허용하세요"
+  },
+  "siteMode": {
+    "message": "사이트 모드"
+  },
+  "followGlobalDefaults": {
+    "message": "글로벌 기본값을 따르세요"
+  },
+  "blockOnThisSite": {
+    "message": "이 사이트에서 차단"
+  },
+  "allowThisSiteOption": {
+    "message": "이 사이트를 허용하세요"
+  },
+  "siteMediaControls": {
+    "message": "사이트 미디어 제어"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "진단"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock 진단 기록"
+  },
+  "copyDiagnostics": {
+    "message": "로그 복사"
+  },
+  "refreshDiagnostics": {
+    "message": "새로고침"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ 진단 사건이 기록되었습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "아직 진단은 안 나왔어. 이 탭을 다시 불러오고 문제를 재현한 후 이 패널을 새로고침하세요."
+  },
+  "diagnosticsRefreshed": {
+    "message": "진단 시스템이 새로워졌다."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "진단 파일을 새로고침할 수 없었어요."
+  },
+  "diagnosticsCopied": {
+    "message": "진단 복사 완료."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "진단 파일을 복사할 수 없었어요."
+  },
+  "resetSite": {
+    "message": "리셋 사이트"
+  },
+  "reloadTab": {
+    "message": "재장전"
+  },
+  "reloadHint": {
+    "message": "이미 차단되거나 로드된 미디어에 대해서는 재장전이 필요할 수 있습니다."
+  },
+  "unknownSite": {
+    "message": "미상의 장소"
+  },
+  "statusBlocking": {
+    "message": "블로킹"
+  },
+  "statusAllowed": {
+    "message": "허용됨"
+  },
+  "couldNotLoadSettings": {
+    "message": "설정을 불러올 수 없었어요"
+  },
+  "notAWebsite": {
+    "message": "웹사이트가 아니야"
+  },
+  "statusNotApplicable": {
+    "message": "해당 없음"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock 브라우저, 확장 프로그램 또는 기타 보호된 페이지를 설정할 수 없습니다."
+  },
+  "selectUseGlobal": {
+    "message": "글로벌 사용"
+  },
+  "selectBlockHere": {
+    "message": "여기서 막으세요"
+  },
+  "selectAllowHere": {
+    "message": "여기 허락해 주세요"
+  },
+  "summaryAllowed": {
+    "message": "이 사이트는 허용됩니다. MotionBlock 여기서 미디어를 차단하는 게 아닙니다."
+  },
+  "summaryActiveNoCategories": {
+    "message": "현재 차단된 미디어 카테고리는 없습니다."
+  },
+  "summaryBlockingFeatures": {
+    "message": "이 사이트에서 $FEATURES$ 차단 중입니다.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "이 사이트에서는 MotionBlock 모든 규칙이 해제되었습니다."
+  },
+  "siteRuleOwnSettings": {
+    "message": "이 사이트는 자체 MotionBlock 설정을 사용합니다."
+  },
+  "siteRuleOverrides": {
+    "message": "이 사이트는 미디어 특화 권한이 있는 글로벌 상태를 따릅니다."
+  },
+  "siteRuleDefaults": {
+    "message": "이 사이트는 귀하의 글로벌 디폴트를 추적합니다."
+  },
+  "featureMetaInactive": {
+    "message": "사이트가 허용되는 동안 비활성 상태입니다"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "오버라이드: 차단"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "오버라이드: 허용"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "전역: 차단"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "글로벌: 허용"
+  },
+  "optionsIntro": {
+    "message": "글로벌 미디어 기본값과 사이트별 선호도."
+  },
+  "extensionActive": {
+    "message": "확장 활성화"
+  },
+  "globalDefaultsHeading": {
+    "message": "글로벌 디폴트"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF 같은 영상, 그리고 자동 재생부터 시작하세요. 사이트가 더 엄격한 미디어 통제가 필요할 때만 광범위한 차단기를 사용하세요."
+  },
+  "restoreRecommended": {
+    "message": "복원 권장"
+  },
+  "blockedMediaDisplay": {
+    "message": "차단된 미디어 디스플레이"
+  },
+  "replacementPlaceholder": {
+    "message": "컴팩트 자리 표시자"
+  },
+  "replacementHide": {
+    "message": "숨기기 요소"
+  },
+  "interfaceTheme": {
+    "message": "인터페이스 테마"
+  },
+  "themeSystem": {
+    "message": "시스템"
+  },
+  "themeLight": {
+    "message": "빛"
+  },
+  "themeDark": {
+    "message": "어두운"
+  },
+  "revealControlsTitle": {
+    "message": "차단된 미디어의 버튼 공개"
+  },
+  "revealControlsDescription": {
+    "message": "차단된 미디어에 클릭 투 플레이/쇼 버튼을 표시하세요. 기본적으로 꺼진 이유는 일부 사이트가 숨겨진 미디어 표면을 재사용하기 때문입니다."
+  },
+  "diagnosticsTitle": {
+    "message": "고급 진단"
+  },
+  "diagnosticsDescription": {
+    "message": "차단 문제를 재현하는 동안 팝업에 각 탭별로 복사 가능한 진단 로그를 보여주세요."
+  },
+  "websitePreferencesHeading": {
+    "message": "웹사이트 선호도"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com, news.example.com 같은 정확한 호스트 이름을 사용하세요."
+  },
+  "addSite": {
+    "message": "사이트 추가"
+  },
+  "backupHeading": {
+    "message": "백업"
+  },
+  "backupIntro": {
+    "message": "설정은 Chrome 동기화 저장소에 저장됩니다. 확장 프로그램에서 동기화 Chrome 활성화되어 있다면, 그들은 당신의 Chrome 프로필을 팔로우할 수 있습니다."
+  },
+  "exportJson": {
+    "message": "수출 JSON"
+  },
+  "importFile": {
+    "message": "가져오기 파일"
+  },
+  "applyPastedJson": {
+    "message": "붙인 JSON"
+  },
+  "refreshFromSync": {
+    "message": "동기화에서 새로고침"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "내보내기 미리보기는 여기에서 확인할 수 있습니다. MotionBlock JSON 백업을 붙여넣고 적용할 수도 있습니다."
+  },
+  "globalStatusSaved": {
+    "message": "글로벌 상태 보존."
+  },
+  "globalDefaultsSaved": {
+    "message": "글로벌 디폴트 저장."
+  },
+  "displayModeSaved": {
+    "message": "디스플레이 모드 저장됨."
+  },
+  "themeSaved": {
+    "message": "테마 저장됨."
+  },
+  "revealSettingSaved": {
+    "message": "저장된 버튼 설정 공개."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "진단 설정 저장됨."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "권장 기본값이 복원되었습니다."
+  },
+  "enterValidHostname": {
+    "message": "유효한 호스트네임을 입력하세요."
+  },
+  "siteAdded": {
+    "message": "사이트 추가."
+  },
+  "siteRuleSaved": {
+    "message": "사이트 규칙이 저장되었습니다."
+  },
+  "siteRemoved": {
+    "message": "사이트 삭제."
+  },
+  "settingsExported": {
+    "message": "설정이 JSON 파일로 내보내졌습니다."
+  },
+  "settingsImportedFromFile": {
+    "message": "설정은 파일에서 가져왔습니다."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "붙여넣은 JSON 에서 설정이 가져왔습니다."
+  },
+  "settingsRefreshed": {
+    "message": "동기화 Chrome 설정이 새로고침되었습니다."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "설정이 불러올 수 없었어요."
+  },
+  "defaultOn": {
+    "message": "기본 켜짐"
+  },
+  "defaultOff": {
+    "message": "기본 꺼짐"
+  },
+  "noWebsitePreferences": {
+    "message": "아직 웹사이트 선호도는 없습니다."
+  },
+  "removeSite": {
+    "message": "제거"
+  },
+  "siteTableSite": {
+    "message": "부지"
+  },
+  "siteTableActive": {
+    "message": "활성"
+  },
+  "selectInherit": {
+    "message": "상속"
+  },
+  "selectBlock": {
+    "message": "블록"
+  },
+  "selectAllow": {
+    "message": "허락해"
+  },
+  "selectOn": {
+    "message": "계속"
+  },
+  "selectOff": {
+    "message": "꺼"
+  },
+  "saveFailed": {
+    "message": "저장 실패."
+  },
+  "importFailed": {
+    "message": "가져오기 실패: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON 파일을 선택하거나 먼저 백업을 붙여넣으세요."
+  },
+  "invalidJson": {
+    "message": "무효 JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "이건 MotionBlock 설정 백업처럼 보이지 않습니다."
+  },
+  "errorMissingMessageType": {
+    "message": "메시지 유형이 누락되었습니다."
+  },
+  "errorMissingSiteHostname": {
+    "message": "사이트 호스트네임이 누락되었습니다."
+  },
+  "errorUnknownMessageType": {
+    "message": "알 수 없는 메시지 유형."
+  },
+  "featureGifsLabel": {
+    "message": "GIF 이미지"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "페이지 내 GIF 이미지 요소를 교체하고 작은 인터페이스 GIFs 은 그대로 두세요."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV 및 GIF 유사한 동영상 URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "반복되는 GIFs 처럼 행동하는 .gifv URL과 동영상 요소를 차단하세요."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL 패턴"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp 이미지 URL을 차단하세요. 기본적으로 꺼져 있는데, 많은 WebP 이미지가 애니메이션이 안 되어 있기 때문입니다."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "자동 재생 및 비디오 반복"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "자동 재생"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "자동 재생 영상을 일시정지하고 애니메이션으로 사용되는 뮤트된 반복 영상을 제거하세요."
+  },
+  "featureVideoLabel": {
+    "message": "모든 영상"
+  },
+  "featureVideoShortLabel": {
+    "message": "비디오"
+  },
+  "featureVideoDescription": {
+    "message": "영상 및 일반적인 동영상 파일 요청을 차단 HTML5."
+  },
+  "featureAudioLabel": {
+    "message": "오디오"
+  },
+  "featureAudioShortLabel": {
+    "message": "오디오"
+  },
+  "featureAudioDescription": {
+    "message": "오디오 요소와 일반적인 오디오 파일 요청을 차단하세요."
+  },
+  "featureImagesLabel": {
+    "message": "모든 이미지"
+  },
+  "featureImagesShortLabel": {
+    "message": "이미지"
+  },
+  "featureImagesDescription": {
+    "message": "페이지 내 이미지 요소를 교체하세요. 이미지 중심 사이트에는 사이트별 허용 규칙을 사용하세요."
+  },
+  "featureEmojiLabel": {
+    "message": "이모지 텍스트와 이모지 이미지"
+  },
+  "featureEmojiShortLabel": {
+    "message": "이모지"
+  },
+  "featureEmojiDescription": {
+    "message": "이모지 캐릭터와 일반적인 이모지 이미지 렌더러를 제거하세요. 텍스트가 바뀌기 때문에 기본적으로 꺼져 있습니다."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS 애니메이션 및 전환"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS 애니메이션, 전환, 부드러운 스크롤을 비활성화하세요."
+  },
+  "featureGroupMotionLabel": {
+    "message": "모션 차단"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF 같은 동영상, 자동 재생, 페이지 움직임에 대한 권장 기본값입니다."
+  },
+  "featureGroupBroadLabel": {
+    "message": "광범위한 미디어 차단기"
+  },
+  "featureGroupBroadDescription": {
+    "message": "이미지, 비디오, 오디오, WebP URL, 이모지에 대한 파워유저 컨트롤. 이런 현상은 일부 사이트를 변경하거나 망가뜨릴 수 있습니다."
+  },
+  "contentShowBlockedImage": {
+    "message": "차단된 이미지 보기"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "차단된 오디오 재생"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "차단된 영상 재생"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "차단된 미디어 재생"
+  },
+  "contentBlockedByTitle": {
+    "message": "차단됨: MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "차단된 $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF 같은 미디어"
+  },
+  "contentReasonVideo": {
+    "message": "비디오"
+  },
+  "contentReasonAudio": {
+    "message": "오디오"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "비디오 반복 재생"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "자동 재생 비디오"
+  },
+  "contentReasonImage": {
+    "message": "이미지"
+  },
+  "contentReasonMedia": {
+    "message": "미디어"
+  }
+}

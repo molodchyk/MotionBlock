@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF ਬਲੌਕਰ ਅਤੇ ਐਨੀਮੇਸ਼ਨ ਸਟੌਪਰ"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "ਪ੍ਰਤੀ ਸਾਈਟ ਕੰਟਰੋਲ ਨਾਲ GIFs, GIFV, ਆਟੋਪਲੇ ਵੀਡੀਓ, ਹੋਵਰ ਪੂਰਵਦਰਸ਼ਨ ਅਤੇ ਧਿਆਨ ਭਟਕਾਉਣ ਵਾਲੀ ਗਤੀ ਨੂੰ ਰੋਕੋ।"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock ਵਿਕਲਪ"
+  },
+  "siteLoading": {
+    "message": "ਸਾਈਟ ਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ..."
+  },
+  "optionsButton": {
+    "message": "ਵਿਕਲਪ"
+  },
+  "statusOnInitial": {
+    "message": "ਚਾਲੂ"
+  },
+  "checkingActiveRules": {
+    "message": "ਕਿਰਿਆਸ਼ੀਲ ਨਿਯਮਾਂ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ..."
+  },
+  "statsBlockedCount": {
+    "message": "ਬਲੌਕ $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "ਇੱਥੇ ਬਲੌਕ ਮੋਸ਼ਨ"
+  },
+  "allowThisSite": {
+    "message": "ਇਸ ਸਾਈਟ ਨੂੰ ਇਜਾਜ਼ਤ ਦਿਓ"
+  },
+  "siteMode": {
+    "message": "ਸਾਈਟ ਮੋਡ"
+  },
+  "followGlobalDefaults": {
+    "message": "ਗਲੋਬਲ ਡਿਫਾਲਟਾਂ ਦਾ ਅਨੁਸਰਣ ਕਰੋ"
+  },
+  "blockOnThisSite": {
+    "message": "ਇਸ ਸਾਈਟ 'ਤੇ ਬਲੌਕ ਕਰੋ"
+  },
+  "allowThisSiteOption": {
+    "message": "ਇਸ ਸਾਈਟ ਨੂੰ ਇਜਾਜ਼ਤ ਦਿਓ"
+  },
+  "siteMediaControls": {
+    "message": "ਸਾਈਟ ਮੀਡੀਆ ਕੰਟਰੋਲ"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "ਡਾਇਗਨੌਸਟਿਕਸ"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock ਡਾਇਗਨੌਸਟਿਕਸ ਲੌਗ"
+  },
+  "copyDiagnostics": {
+    "message": "ਲੌਗ ਕਾਪੀ ਕਰੋ"
+  },
+  "refreshDiagnostics": {
+    "message": "ਤਾਜ਼ਾ ਕਰੋ"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ ਨਿਦਾਨਕ ਘਟਨਾਵਾਂ ਰਿਕਾਰਡ ਕੀਤੀਆਂ ਗਈਆਂ।",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "ਅਜੇ ਤੱਕ ਕੋਈ ਡਾਇਗਨੌਸਟਿਕਸ ਨਹੀਂ ਹੈ. ਇਸ ਟੈਬ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰੋ, ਸਮੱਸਿਆ ਨੂੰ ਮੁੜ-ਪੇਸ਼ ਕਰੋ, ਫੇਰ ਇਸ ਪੈਨਲ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ।"
+  },
+  "diagnosticsRefreshed": {
+    "message": "ਡਾਇਗਨੌਸਟਿਕਸ ਤਾਜ਼ਗੀ ਪ੍ਰਾਪਤ ਕੀਤੀ."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "ਤਸ਼ਖੀਸ ਨੂੰ ਤਾਜ਼ਾ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+  },
+  "diagnosticsCopied": {
+    "message": "ਡਾਇਗਨੌਸਟਿਕਸ ਦੀ ਨਕਲ ਕੀਤੀ ਗਈ."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "ਤਸ਼ਖੀਸ ਦੀ ਨਕਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
+  },
+  "resetSite": {
+    "message": "ਸਾਈਟ ਨੂੰ ਰੀਸੈੱਟ ਕਰੋ"
+  },
+  "reloadTab": {
+    "message": "ਰੀਲੋਡ"
+  },
+  "reloadHint": {
+    "message": "ਪਹਿਲਾਂ ਹੀ ਬਲੌਕ ਕੀਤੇ ਜਾਂ ਲੋਡ ਕੀਤੇ ਮੀਡੀਆ ਲਈ ਰੀਲੋਡ ਦੀ ਲੋੜ ਪੈ ਸਕਦੀ ਹੈ।"
+  },
+  "unknownSite": {
+    "message": "ਅਣਜਾਣ ਸਾਈਟ"
+  },
+  "statusBlocking": {
+    "message": "ਬਲੌਕ ਕਰਨਾ"
+  },
+  "statusAllowed": {
+    "message": "ਇਜਾਜ਼ਤ ਦਿੱਤੀ ਗਈ"
+  },
+  "couldNotLoadSettings": {
+    "message": "ਸੈਟਿੰਗਾਂ ਲੋਡ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕੀਆਂ"
+  },
+  "notAWebsite": {
+    "message": "ਕੋਈ ਵੈਬਸਾਈਟ ਨਹੀਂ"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ਬ੍ਰਾਊਜ਼ਰ, ਐਕਸਟੈਂਸ਼ਨ, ਜਾਂ ਹੋਰ ਸੁਰੱਖਿਅਤ ਪੰਨਿਆਂ ਨੂੰ ਕੌਨਫਿਗਰ ਨਹੀਂ ਕਰ ਸਕਦਾ।"
+  },
+  "selectUseGlobal": {
+    "message": "ਗਲੋਬਲ ਦੀ ਵਰਤੋਂ ਕਰੋ"
+  },
+  "selectBlockHere": {
+    "message": "ਇੱਥੇ ਬਲੌਕ ਕਰੋ"
+  },
+  "selectAllowHere": {
+    "message": "ਇੱਥੇ ਇਜਾਜ਼ਤ ਦਿਓ"
+  },
+  "summaryAllowed": {
+    "message": "ਇਸ ਸਾਈਟ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।MotionBlock ਇੱਥੇ ਮੀਡੀਆ ਨੂੰ ਬਲੌਕ ਨਹੀਂ ਕਰ ਰਿਹਾ।"
+  },
+  "summaryActiveNoCategories": {
+    "message": "ਇੱਥੇ ਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਪਰ ਇਸ ਵੇਲੇ ਕੋਈ ਵੀ ਮੀਡੀਆ ਸ਼੍ਰੇਣੀਆਂ ਨੂੰ ਬਲੌਕ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ।"
+  },
+  "summaryBlockingFeatures": {
+    "message": "ਇਸ ਸਾਈਟ 'ਤੇ $FEATURES$ ਨੂੰ ਬਲੌਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "ਇਸ ਸਾਈਟ ਲਈ MotionBlock ਸਾਰੇ ਨਿਯਮ ਬੰਦ ਹਨ."
+  },
+  "siteRuleOwnSettings": {
+    "message": "ਇਹ ਸਾਈਟ ਆਪਣੀਆਂ MotionBlock ਸੈਟਿੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦੀ ਹੈ."
+  },
+  "siteRuleOverrides": {
+    "message": "ਇਹ ਸਾਈਟ ਮੀਡੀਆ-ਵਿਸ਼ੇਸ਼ ਓਵਰਰਾਈਡਾਂ ਦੇ ਨਾਲ ਗਲੋਬਲ ਸਥਿਤੀ ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ."
+  },
+  "siteRuleDefaults": {
+    "message": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਗਲੋਬਲ ਡਿਫਾਲਟ ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ।"
+  },
+  "featureMetaInactive": {
+    "message": "ਜਦੋਂ ਤੱਕ ਸਾਈਟ ਦੀ ਆਗਿਆ ਹੈ"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "ਓਵਰਰਾਈਡ: ਬਲੌਕ ਕਰਨਾ"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "ਓਵਰਰਾਈਡ: ਆਗਿਆ ਹੈ"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "ਗਲੋਬਲ: ਬਲੌਕਿੰਗ"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "ਗਲੋਬਲ: ਆਗਿਆ ਹੈ"
+  },
+  "optionsIntro": {
+    "message": "ਗਲੋਬਲ ਮੀਡੀਆ ਡਿਫਾਲਟ ਅਤੇ ਪ੍ਰਤੀ ਸਾਈਟ ਤਰਜੀਹਾਂ."
+  },
+  "extensionActive": {
+    "message": "ਐਕਸਟੈਂਸ਼ਨ ਕਿਰਿਆਸ਼ੀਲ ਹੈ"
+  },
+  "globalDefaultsHeading": {
+    "message": "ਗਲੋਬਲ ਡਿਫਾਲਟ"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF ਵਰਗੀ ਵੀਡੀਓ ਅਤੇ ਆਟੋਪਲੇ ਨਾਲ ਸ਼ੁਰੂਆਤ ਕਰੋ। ਬ੍ਰੌਡ ਬਲੌਕਰਾਂ ਦੀ ਵਰਤੋਂ ਸਿਰਫ ਉਦੋਂ ਕਰੋ ਜਦੋਂ ਕਿਸੇ ਸਾਈਟ ਨੂੰ ਸਖਤ ਮੀਡੀਆ ਨਿਯੰਤਰਣ ਦੀ ਜ਼ਰੂਰਤ ਹੁੰਦੀ ਹੈ."
+  },
+  "restoreRecommended": {
+    "message": "ਸਿਫਾਰਸ਼ ਕੀਤੀ ਮੁੜ-ਬਹਾਲ ਕਰੋ"
+  },
+  "blockedMediaDisplay": {
+    "message": "ਬਲੌਕ ਕੀਤਾ ਮੀਡੀਆ ਡਿਸਪਲੇ"
+  },
+  "replacementPlaceholder": {
+    "message": "ਕੰਪੈਕਟ ਪਲੇਸਹੋਲਡਰ"
+  },
+  "replacementHide": {
+    "message": "ਐਲੀਮੈਂਟ ਨੂੰ ਛੁਪਾਓ"
+  },
+  "interfaceTheme": {
+    "message": "ਇੰਟਰਫੇਸ ਥੀਮ"
+  },
+  "themeSystem": {
+    "message": "ਸਿਸਟਮ"
+  },
+  "themeLight": {
+    "message": "ਰੋਸ਼ਨੀ"
+  },
+  "themeDark": {
+    "message": "ਹਨੇਰਾ"
+  },
+  "revealControlsTitle": {
+    "message": "ਬਲੌਕ ਕੀਤੇ ਮੀਡੀਆ ਲਈ ਬਟਨਾਂ ਦਾ ਖੁਲਾਸਾ ਕਰੋ"
+  },
+  "revealControlsDescription": {
+    "message": "ਬਲੌਕ ਕੀਤੇ ਮੀਡੀਆ 'ਤੇ ਕਲਿੱਕ-ਟੂ-ਪਲੇ/ਸ਼ੋਅ ਬਟਨ ਦਿਖਾਓ। ਮੂਲ ਰੂਪ ਵਿੱਚ ਬੰਦ ਕਿਉਂਕਿ ਕੁਝ ਸਾਈਟਾਂ ਲੁਕੀਆਂ ਮੀਡੀਆ ਸਤਹਾਂ ਦੀ ਮੁੜ ਵਰਤੋਂ ਕਰਦੀਆਂ ਹਨ।"
+  },
+  "diagnosticsTitle": {
+    "message": "ਐਡਵਾਂਸਡ ਡਾਇਗਨੌਸਟਿਕਸ"
+  },
+  "diagnosticsDescription": {
+    "message": "ਜਦੋਂ ਤੁਸੀਂ ਬਲੌਕਿੰਗ ਸਮੱਸਿਆ ਨੂੰ ਦੁਬਾਰਾ ਪੈਦਾ ਕਰਦੇ ਹੋ ਤਾਂ ਪੌਪਅਪ ਵਿੱਚ ਇੱਕ ਕਾਪੀ ਕਰਨ ਯੋਗ ਪ੍ਰਤੀ-ਟੈਬ ਡਾਇਗਨੌਸਟਿਕ ਲੌਗ ਦਿਖਾਓ."
+  },
+  "websitePreferencesHeading": {
+    "message": "ਵੈੱਬਸਾਈਟ ਤਰਜੀਹਾਂ"
+  },
+  "websitePreferencesIntro": {
+    "message": "ਸਹੀ ਹੋਸਟਨਾਮਾਂ ਜਿਵੇਂ ਕਿ reddit.com, discord.com, ਜਾਂ news.example.com ਦੀ ਵਰਤੋਂ ਕਰੋ।"
+  },
+  "addSite": {
+    "message": "ਸਾਈਟ ਸ਼ਾਮਲ ਕਰੋ"
+  },
+  "backupHeading": {
+    "message": "ਬੈਕਅਪ"
+  },
+  "backupIntro": {
+    "message": "ਸੈਟਿੰਗਾਂ Chrome ਸਿੰਕ ਸਟੋਰੇਜ ਵਿੱਚ ਸਟੋਰ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ। ਜੇਕਰ ਐਕਸਟੈਂਸ਼ਨਾਂ ਲਈ Chrome ਸਿੰਕ ਸਮਰੱਥ ਹੈ, ਤਾਂ ਉਹ ਤੁਹਾਡੇ Chrome ਪ੍ਰੋਫਾਈਲ ਦਾ ਅਨੁਸਰਣ ਕਰ ਸਕਦੇ ਹਨ।"
+  },
+  "exportJson": {
+    "message": "ਨਿਰਯਾਤ JSON"
+  },
+  "importFile": {
+    "message": "ਫਾਇਲ ਆਯਾਤ ਕਰੋ"
+  },
+  "applyPastedJson": {
+    "message": "ਪੇਸਟਡ JSON ਲਗਾਓ"
+  },
+  "refreshFromSync": {
+    "message": "ਸਿੰਕ ਤੋਂ ਤਾਜ਼ਾ ਕਰੋ"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ਨਿਰਯਾਤ ਪੂਰਵਦਰਸ਼ਨ ਇੱਥੇ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ। ਤੁਸੀਂ MotionBlock JSON ਬੈਕਅਪ ਵੀ ਪੇਸਟ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਇਸ ਨੂੰ ਲਾਗੂ ਕਰ ਸਕਦੇ ਹੋ।"
+  },
+  "globalStatusSaved": {
+    "message": "ਗਲੋਬਲ ਸਥਿਤੀ ਸੁਰੱਖਿਅਤ ਕੀਤੀ ਗਈ।"
+  },
+  "globalDefaultsSaved": {
+    "message": "ਗਲੋਬਲ ਡਿਫਾਲਟ ਸੁਰੱਖਿਅਤ ਕੀਤੇ ਗਏ।"
+  },
+  "displayModeSaved": {
+    "message": "ਡਿਸਪਲੇ ਮੋਡ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ।"
+  },
+  "themeSaved": {
+    "message": "ਥੀਮ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ."
+  },
+  "revealSettingSaved": {
+    "message": "ਬਟਨ ਸੈਟਿੰਗ ਦਾ ਖੁਲਾਸਾ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ ਹੈ।"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "ਡਾਇਗਨੌਸਟਿਕਸ ਸੈਟਿੰਗ ਸੁਰੱਖਿਅਤ ਕੀਤੀ ਗਈ।"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "ਸਿਫ਼ਾਰਸ਼ ਕੀਤੇ ਡਿਫੌਲਟਾਂ ਨੂੰ ਮੁੜ-ਬਹਾਲ ਕੀਤਾ ਗਿਆ।"
+  },
+  "enterValidHostname": {
+    "message": "ਇੱਕ ਵੈਧ ਮੇਜ਼ਬਾਨ ਨਾਮ ਦਰਜ ਕਰੋ।"
+  },
+  "siteAdded": {
+    "message": "ਸਾਈਟ ਸ਼ਾਮਲ ਕੀਤੀ ਗਈ."
+  },
+  "siteRuleSaved": {
+    "message": "ਸਾਈਟ ਨਿਯਮ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ।"
+  },
+  "siteRemoved": {
+    "message": "ਸਾਈਟ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ."
+  },
+  "settingsExported": {
+    "message": "ਸੈਟਿੰਗਾਂ ਨੂੰ JSON ਫ਼ਾਈਲ ਵਿੱਚ ਨਿਰਯਾਤ ਕੀਤਾ ਗਿਆ ਹੈ।"
+  },
+  "settingsImportedFromFile": {
+    "message": "ਸੈਟਿੰਗਾਂ ਫ਼ਾਈਲ ਤੋਂ ਆਯਾਤ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ।"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "ਪੇਸਟ ਕੀਤੇ JSON ਤੋਂ ਸੈਟਿੰਗਾਂ ਆਯਾਤ ਕੀਤੀਆਂ ਗਈਆਂ।"
+  },
+  "settingsRefreshed": {
+    "message": "ਸੈਟਿੰਗਾਂ ਨੂੰ Chrome ਸਿੰਕ ਤੋਂ ਤਾਜ਼ਾ ਕੀਤਾ ਗਿਆ ਹੈ।"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "ਸੈਟਿੰਗਾਂ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+  },
+  "defaultOn": {
+    "message": "ਡਿਫਾਲਟ ਚਾਲੂ"
+  },
+  "defaultOff": {
+    "message": "ਡਿਫਾਲਟ ਬੰਦ"
+  },
+  "noWebsitePreferences": {
+    "message": "ਅਜੇ ਕੋਈ ਵੈੱਬਸਾਈਟ ਤਰਜੀਹਾਂ ਨਹੀਂ ਹਨ।"
+  },
+  "removeSite": {
+    "message": "ਹਟਾਓ"
+  },
+  "siteTableSite": {
+    "message": "ਸਾਈਟ"
+  },
+  "siteTableActive": {
+    "message": "ਕਿਰਿਆਸ਼ੀਲ"
+  },
+  "selectInherit": {
+    "message": "ਵਿਰਾਸਤ"
+  },
+  "selectBlock": {
+    "message": "ਬਲੌਕ ਕਰੋ"
+  },
+  "selectAllow": {
+    "message": "ਇਜਾਜ਼ਤ ਦਿਓ"
+  },
+  "selectOn": {
+    "message": "ਚਾਲੂ"
+  },
+  "selectOff": {
+    "message": "ਬੰਦ"
+  },
+  "saveFailed": {
+    "message": "ਸੁਰੱਖਿਅਤ ਕਰਨਾ ਅਸਫਲ ਰਿਹਾ।"
+  },
+  "importFailed": {
+    "message": "ਆਯਾਤ ਅਸਫਲ ਰਿਹਾ: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON ਫ਼ਾਈਲ ਚੁਣੋ ਜਾਂ ਪਹਿਲਾਂ ਬੈਕਅੱਪ ਪੇਸਟ ਕਰੋ।"
+  },
+  "invalidJson": {
+    "message": "ਅਵੈਧ JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "ਇਹ MotionBlock ਸੈਟਿੰਗਾਂ ਬੈਕਅੱਪ ਵਰਗਾ ਨਹੀਂ ਜਾਪਦਾ।"
+  },
+  "errorMissingMessageType": {
+    "message": "ਗੁੰਮ ਹੋਏ ਸੁਨੇਹੇ ਦੀ ਕਿਸਮ।"
+  },
+  "errorMissingSiteHostname": {
+    "message": "ਗੁੰਮ ਸਾਈਟ ਮੇਜ਼ਬਾਨ ਨਾਮ ।"
+  },
+  "errorUnknownMessageType": {
+    "message": "ਅਗਿਆਤ ਸੁਨੇਹੇ ਦੀ ਕਿਸਮ।"
+  },
+  "featureGifsLabel": {
+    "message": "GIF ਚਿੱਤਰ"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "ਛੋਟੇ ਇੰਟਰ GIFs ਫੇਸ ਨੂੰ ਇਕੱਲੇ ਛੱਡਦੇ ਹੋਏ ਪੰਨੇ ਵਿੱਚ GIF ਚਿੱਤਰ ਤੱਤਾਂ ਨੂੰ ਬਦਲੋ।"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV ਅਤੇ GIF ਵਰਗੇ ਵੀਡੀਓ URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": ".gifv URLs ਅਤੇ ਵੀਡੀਓ ਤੱਤਾਂ ਨੂੰ ਬਲੌਕ ਕਰੋ ਜੋ ਲੂਪਿੰਗ GIFs ਵਾਂਗ ਵਿਵਹਾਰ ਕਰਦੇ ਹਨ।"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL ਪੈਟਰਨ"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp ਚਿੱਤਰ URLs ਨੂੰ ਬਲੌਕ ਕਰੋ। ਮੂਲ ਰੂਪ ਵਿੱਚ ਬੰਦ ਕਿਉਂਕਿ ਬਹੁਤ ਸਾਰੇ WebP ਚਿੱਤਰ ਐਨੀਮੇਟਡ ਨਹੀਂ ਹਨ."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ਆਟੋਪਲੇ ਅਤੇ ਲੂਪਿੰਗ ਵੀਡੀਓ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ਆਟੋਪਲੇ"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "ਵੀਡੀਓ ਨੂੰ ਆਟੋਪਲੇ ਕਰਨ ਨੂੰ ਰੋਕੋ ਅਤੇ ਐਨੀਮੇਸ਼ਨ ਵਜੋਂ ਵਰਤੀ ਗਈ ਮਿਊਟ ਲੂਪਿੰਗ ਵੀਡੀਓ ਨੂੰ ਹਟਾਓ।"
+  },
+  "featureVideoLabel": {
+    "message": "ਸਾਰੀ ਵੀਡੀਓ"
+  },
+  "featureVideoShortLabel": {
+    "message": "ਵੀਡੀਓ"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 ਵੀਡੀਓ ਅਤੇ ਆਮ ਵੀਡੀਓ ਫ਼ਾਈਲ ਬੇਨਤੀਆਂ ਨੂੰ ਬਲੌਕ ਕਰੋ।"
+  },
+  "featureAudioLabel": {
+    "message": "ਆਡੀਓ"
+  },
+  "featureAudioShortLabel": {
+    "message": "ਆਡੀਓ"
+  },
+  "featureAudioDescription": {
+    "message": "ਆਡੀਓ ਐਲੀਮੈਂਟਸ ਅਤੇ ਆਮ ਆਡੀਓ ਫ਼ਾਈਲ ਬੇਨਤੀਆਂ ਨੂੰ ਬਲੌਕ ਕਰੋ।"
+  },
+  "featureImagesLabel": {
+    "message": "ਸਭ ਚਿੱਤਰ"
+  },
+  "featureImagesShortLabel": {
+    "message": "ਚਿੱਤਰ"
+  },
+  "featureImagesDescription": {
+    "message": "ਪੰਨੇ ਵਿੱਚ ਚਿੱਤਰ ਤੱਤਾਂ ਨੂੰ ਬਦਲੋ। ਚਿੱਤਰ-ਭਾਰੀ ਸਾਈਟਾਂ ਲਈ ਪ੍ਰਤੀ ਸਾਈਟ ਆਗਿਆ ਦੇ ਨਿਯਮਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ."
+  },
+  "featureEmojiLabel": {
+    "message": "ਇਮੋਜੀ ਟੈਕਸਟ ਅਤੇ ਇਮੋਜੀ ਚਿੱਤਰ"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ਇਮੋਜੀ"
+  },
+  "featureEmojiDescription": {
+    "message": "ਇਮੋਜੀ ਅੱਖਰ ਅਤੇ ਆਮ ਇਮੋਜੀ ਚਿੱਤਰ ਰੈਂਡਰਰਾਂ ਨੂੰ ਹਟਾਓ। ਡਿਫੌਲਟ ਤੌਰ 'ਤੇ ਬੰਦ ਹੈ ਕਿਉਂਕਿ ਇਹ ਟੈਕਸਟ ਨੂੰ ਬਦਲਦਾ ਹੈ."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS ਐਨੀਮੇਸ਼ਨ ਅਤੇ ਪਰਿਵਰਤਨ"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS ਐਨੀਮੇਸ਼ਨਾਂ, ਤਬਦੀਲੀਆਂ ਅਤੇ ਨਿਰਵਿਘਨ ਸਕ੍ਰੌਲਿੰਗ ਨੂੰ ਅਸਮਰੱਥ ਕਰੋ।"
+  },
+  "featureGroupMotionLabel": {
+    "message": "ਮੋਸ਼ਨ ਬਲੌਕਿੰਗ"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF-ਵਰਗੇ ਵੀਡੀਓ, ਆਟੋਪਲੇਅ ਅਤੇ ਪੇਜ ਮੋਸ਼ਨ ਲਈ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੇ ਡਿਫੌਲਟ।"
+  },
+  "featureGroupBroadLabel": {
+    "message": "ਵਿਆਪਕ ਮੀਡੀਆ ਬਲੌਕਰ"
+  },
+  "featureGroupBroadDescription": {
+    "message": "ਚਿੱਤਰਾਂ, ਵੀਡੀਓ, ਆਡੀਓ, WebP URLs, ਅਤੇ ਇਮੋਜੀ ਲਈ ਪਾਵਰ-ਯੂਜ਼ਰ ਕੰਟਰੋਲ. ਇਹ ਕੁਝ ਸਾਈਟਾਂ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹਨ ਜਾਂ ਤੋੜ ਸਕਦੇ ਹਨ."
+  },
+  "contentShowBlockedImage": {
+    "message": "ਬਲੌਕ ਕੀਤਾ ਚਿੱਤਰ ਦਿਖਾਓ"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "ਬਲੌਕ ਕੀਤੀ ਆਡੀਓ ਚਲਾਓ"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "ਬਲੌਕ ਕੀਤੀ ਵੀਡੀਓ ਚਲਾਓ"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "ਬਲੌਕ ਕੀਤੇ ਮੀਡੀਆ ਨੂੰ ਚਲਾਓ"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock ਦੁਆਰਾ ਬਲੌਕ ਕੀਤਾ ਗਿਆ: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "ਬਲੌਕ ਕੀਤਾ $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF ਵਰਗਾ ਮੀਡੀਆ"
+  },
+  "contentReasonVideo": {
+    "message": "ਵੀਡੀਓ"
+  },
+  "contentReasonAudio": {
+    "message": "ਆਡੀਓ"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ਲੂਪਿੰਗ ਵੀਡੀਓ"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ਆਟੋਪਲੇ ਵੀਡੀਓ"
+  },
+  "contentReasonImage": {
+    "message": "ਚਿੱਤਰ"
+  },
+  "contentReasonMedia": {
+    "message": "ਮੀਡੀਆ"
+  }
+}

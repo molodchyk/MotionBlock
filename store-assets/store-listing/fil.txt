@@ -1,0 +1,31 @@
+I-block ang nakakagambala na GIFs, GIFV, autoplay video, hover preview, at paggalaw ng pahina bago sila makasagabal sa iyo.
+
+Gamitin ang MotionBlock upang ihinto ang:
+
+I-click ang GIF mga larawan.
+GIFV mga link.
+Maikling naka-mute na mga video na ginamit tulad ng GIFs.
+I-autoplay ang video at hover preview.
+Opsyonal na animated WebP mga pattern ng URL.
+Opsyonal na video, audio, mga imahe, emoji, at paggalaw ng CSS.
+
+MotionBlock ay binuo sa paligid ng kontrol ng bawat site. Panatilihin ang mga konserbatibong pandaigdigang default, pagkatapos ay payagan o harangan ang mga tukoy na uri ng media sa mga indibidwal na website mula sa popup o pahina ng mga pagpipilian. Ang mga setting ay mananatili sa imbakan ng pag-sync ng Chrome extension at maaaring mag-sync sa pamamagitan ng Chrome kung pinagana ng user ang pag-sync ng extension.
+
+Karaniwang gamit:
+
+Itigil ang nakakagambala na mga animation habang nagbabasa.
+Bawasan ang autoplay ng ingay ng video.
+I-save ang bandwidth mula sa hindi kinakailangang media.
+I-block ang mga preview ng hover YouTube-style.
+Kalmado Reddit, Giphy, social feed, at mga pahina ng balita na nagko-convert GIFs sa maikling video.
+Payagan ang mga site na mabigat sa imahe habang hinaharangan ang paggalaw sa ibang lugar.
+Mabilis na payagan ang media sa mga site na nangangailangan nito.
+
+Kinokontrol ng popup ang kasalukuyang site. Ang pahina ng mga pagpipilian ay namamahala sa mga pandaigdigang default, mga kagustuhan sa bawat site, JSON backup na pag-import / pag-export, naka-block na pagpapakita ng media, opsyonal na mga pindutan ng pagbubunyag, at ilaw / madilim / system na tema ng UI.
+
+Hindi pinapayagan ng Chrome ang mga extension na baguhin ang mga panloob na pahina ng browser, ang Chrome Web Store, o ilang mga protektadong pahina. Kung nakikita pa rin ang media pagkatapos i-install o baguhin ang mga setting, i-reload ang pahina.
+
+Hindi MotionBlock nangongolekta ng analytics, nagpapadala ng data ng pagba-browse sa isang server, o gumagamit ng mga listahan ng malayuang panuntunan.
+
+Bukas na mapagkukunan sa ilalim ng lisensya ng GPL-3.0:
+https://github.com/molodchyk/MotionBlock

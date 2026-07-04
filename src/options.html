@@ -1,56 +1,64 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MotionBlock Options</title>
+    <title data-i18n="optionsTitle">MotionBlock Options</title>
     <link rel="stylesheet" href="options.css">
   </head>
   <body>
     <main class="page">
       <header class="top">
         <div>
-          <h1>MotionBlock</h1>
-          <p>Global media defaults and per-site preferences.</p>
+          <h1 data-i18n="extensionShortName">MotionBlock</h1>
+          <p data-i18n="optionsIntro">Global media defaults and per-site preferences.</p>
         </div>
         <label class="master">
           <input id="globalEnabled" type="checkbox">
-          <span>Extension active</span>
+          <span data-i18n="extensionActive">Extension active</span>
         </label>
       </header>
 
       <section class="band">
         <div class="section-heading compact-heading">
           <div>
-            <h2>Global Defaults</h2>
-            <p>Start with GIFs, GIF-like video, and autoplay. Use broad blockers only when a site needs stricter media control.</p>
+            <h2 data-i18n="globalDefaultsHeading">Global Defaults</h2>
+            <p data-i18n="globalDefaultsIntro">Start with GIFs, GIF-like video, and autoplay. Use broad blockers only when a site needs stricter media control.</p>
           </div>
-          <button id="restoreRecommended" class="secondary" type="button">Restore recommended</button>
+          <button id="restoreRecommended" class="secondary" type="button" data-i18n="restoreRecommended">Restore recommended</button>
         </div>
         <div id="globalFeatures" class="global-grid"></div>
 
         <label class="replacement">
-          <span>Blocked media display</span>
+          <span data-i18n="blockedMediaDisplay">Blocked media display</span>
           <select id="replacementMode">
-            <option value="placeholder">Compact placeholder</option>
-            <option value="hide">Hide element</option>
+            <option value="placeholder" data-i18n="replacementPlaceholder">Compact placeholder</option>
+            <option value="hide" data-i18n="replacementHide">Hide element</option>
           </select>
         </label>
 
         <label class="replacement">
-          <span>Interface theme</span>
+          <span data-i18n="interfaceTheme">Interface theme</span>
           <select id="uiTheme">
-            <option value="system">System</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
+            <option value="system" data-i18n="themeSystem">System</option>
+            <option value="light" data-i18n="themeLight">Light</option>
+            <option value="dark" data-i18n="themeDark">Dark</option>
           </select>
         </label>
 
         <label class="feature-toggle single-option">
           <input id="showRevealControls" type="checkbox">
           <span>
-            <strong>Reveal buttons for blocked media</strong>
-            <span>Show click-to-play/show buttons on blocked media. Off by default because some sites reuse hidden media surfaces.</span>
+            <strong data-i18n="revealControlsTitle">Reveal buttons for blocked media</strong>
+            <span data-i18n="revealControlsDescription">Show click-to-play/show buttons on blocked media. Off by default because some sites reuse hidden media surfaces.</span>
+          </span>
+        </label>
+
+        <label class="feature-toggle single-option">
+          <input id="diagnosticsEnabled" type="checkbox">
+          <span>
+            <strong data-i18n="diagnosticsTitle">Advanced diagnostics</strong>
+            <span data-i18n="diagnosticsDescription">Show a copyable per-tab diagnostic log in the popup while you reproduce a blocking problem.</span>
           </span>
         </label>
       </section>
@@ -58,12 +66,12 @@
       <section class="band">
         <div class="section-heading">
           <div>
-            <h2>Website Preferences</h2>
-            <p>Use exact hostnames such as reddit.com, discord.com, or news.example.com.</p>
+            <h2 data-i18n="websitePreferencesHeading">Website Preferences</h2>
+            <p data-i18n="websitePreferencesIntro">Use exact hostnames such as reddit.com, discord.com, or news.example.com.</p>
           </div>
           <form id="addSiteForm" class="add-site">
             <input id="newSiteHost" type="text" placeholder="example.com" autocomplete="off">
-            <button type="submit">Add site</button>
+            <button type="submit" data-i18n="addSite">Add site</button>
           </form>
         </div>
 
@@ -78,21 +86,23 @@
       </section>
 
       <section class="band">
-        <h2>Backup</h2>
-        <p>Settings are stored in Chrome sync storage. If Chrome sync is enabled for extensions, they can follow your Chrome profile.</p>
+        <h2 data-i18n="backupHeading">Backup</h2>
+        <p data-i18n="backupIntro">Settings are stored in Chrome sync storage. If Chrome sync is enabled for extensions, they can follow your Chrome profile.</p>
         <div class="backup-actions">
-          <button id="exportSettings" type="button">Export JSON</button>
-          <button id="importSettings" type="button">Import file</button>
-          <button id="applyPastedSettings" class="secondary" type="button">Apply pasted JSON</button>
-          <button id="refreshSettings" class="secondary" type="button">Refresh from sync</button>
+          <button id="exportSettings" type="button" data-i18n="exportJson">Export JSON</button>
+          <button id="importSettings" type="button" data-i18n="importFile">Import file</button>
+          <button id="applyPastedSettings" class="secondary" type="button" data-i18n="applyPastedJson">Apply pasted JSON</button>
+          <button id="refreshSettings" class="secondary" type="button" data-i18n="refreshFromSync">Refresh from sync</button>
         </div>
         <input id="importSettingsFile" class="visually-hidden" type="file" accept="application/json,.json">
-        <textarea id="settingsJson" spellcheck="false" placeholder="Export preview appears here. You can also paste a MotionBlock JSON backup and apply it."></textarea>
+        <textarea id="settingsJson" spellcheck="false" placeholder="Export preview appears here. You can also paste a MotionBlock JSON backup and apply it." data-i18n-placeholder="settingsJsonPlaceholder"></textarea>
         <p id="statusLine" class="status-line" aria-live="polite"></p>
       </section>
     </main>
 
+    <script src="shared/i18n.js"></script>
     <script src="shared/config.js"></script>
+    <script src="app/options/controller.js"></script>
     <script src="options.js"></script>
   </body>
 </html>

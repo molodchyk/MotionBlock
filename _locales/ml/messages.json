@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF ബ്ലോക്കർ & ആനിമേഷൻ സ്റ്റോപ്പർ"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs, GIFV, ഓട്ടോപ്ലേ വീഡിയോ, ഹോവർ പ്രിവ്യൂകൾ, ഓരോ സൈറ്റ് നിയന്ത്രണങ്ങളും ഉപയോഗിച്ച് ശ്രദ്ധ തിരിക്കുന്ന ചലനം എന്നിവ നിർത്തുക."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock ഓപ്ഷനുകൾ"
+  },
+  "siteLoading": {
+    "message": "സൈറ്റ് ലോഡുചെയ്യുന്നു..."
+  },
+  "optionsButton": {
+    "message": "ഓപ്ഷനുകൾ"
+  },
+  "statusOnInitial": {
+    "message": "ഓൺ"
+  },
+  "checkingActiveRules": {
+    "message": "സജീവ നിയമങ്ങൾ പരിശോധിക്കുന്നു..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ തടഞ്ഞു",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "ഇവിടെ ബ്ലോക്ക് മോഷൻ"
+  },
+  "allowThisSite": {
+    "message": "ഈ സൈറ്റ് അനുവദിക്കുക"
+  },
+  "siteMode": {
+    "message": "സൈറ്റ് മോഡ്"
+  },
+  "followGlobalDefaults": {
+    "message": "ആഗോള സ്ഥിരസ്ഥിതികൾ പിന്തുടരുക"
+  },
+  "blockOnThisSite": {
+    "message": "ഈ സൈറ്റിൽ ബ്ലോക്ക് ചെയ്യുക"
+  },
+  "allowThisSiteOption": {
+    "message": "ഈ സൈറ്റ് അനുവദിക്കുക"
+  },
+  "siteMediaControls": {
+    "message": "സൈറ്റ് മീഡിയ നിയന്ത്രണങ്ങൾ"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "ഡയഗ്നോസ്റ്റിക്സ്"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock ഡയഗ്നോസ്റ്റിക്സ് ലോഗ്"
+  },
+  "copyDiagnostics": {
+    "message": "ലോഗ് പകർത്തുക"
+  },
+  "refreshDiagnostics": {
+    "message": "പുതുക്കുക"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ ഡയഗ്നോസ്റ്റിക് ഇവന്റുകൾ രേഖപ്പെടുത്തിയിട്ടുണ്ട്.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "ഇതുവരെ ഡയഗ്നോസ്റ്റിക്സ് ഇല്ല. ഈ ടാബ് വീണ്ടും ലോഡ് ചെയ്യുക, പ്രശ്നം പുനഃനിർമ്മിക്കുക, തുടർന്ന് ഈ പാനൽ പുതുക്കുക."
+  },
+  "diagnosticsRefreshed": {
+    "message": "ഡയഗ്നോസ്റ്റിക്സ് പുതുക്കി."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "ഡയഗ്നോസ്റ്റിക്സ് പുതുക്കാൻ കഴിഞ്ഞില്ല."
+  },
+  "diagnosticsCopied": {
+    "message": "ഡയഗ്നോസ്റ്റിക്സ് പകർത്തി."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "ഡയഗ്നോസ്റ്റിക്സ് പകർത്താൻ കഴിഞ്ഞില്ല."
+  },
+  "resetSite": {
+    "message": "സൈറ്റ് പുനഃക്രമീകരിക്കുക"
+  },
+  "reloadTab": {
+    "message": "വീണ്ടും ലോഡ് ചെയ്യുക"
+  },
+  "reloadHint": {
+    "message": "ഇതിനകം തടഞ്ഞതോ ലോഡ് ചെയ്തതോ ആയ മീഡിയയ്ക്ക് റീലോഡ് ആവശ്യമായി വന്നേക്കാം."
+  },
+  "unknownSite": {
+    "message": "അജ്ഞാത സൈറ്റ്"
+  },
+  "statusBlocking": {
+    "message": "തടയുന്നു"
+  },
+  "statusAllowed": {
+    "message": "അനുവദനീയമാണ്"
+  },
+  "couldNotLoadSettings": {
+    "message": "ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല"
+  },
+  "notAWebsite": {
+    "message": "ഒരു വെബ് സൈറ്റ് അല്ല"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ബ്രൗസർ, എക്സ്റ്റൻഷൻ അല്ലെങ്കിൽ മറ്റ് സംരക്ഷിത പേജുകൾ കോൺഫിഗർ ചെയ്യാൻ കഴിയില്ല."
+  },
+  "selectUseGlobal": {
+    "message": "ഗ്ലോബൽ ഉപയോഗിക്കുക"
+  },
+  "selectBlockHere": {
+    "message": "ഇവിടെ ബ്ലോക്ക് ചെയ്യുക"
+  },
+  "selectAllowHere": {
+    "message": "ഇങ്ങോട്ട് അനുവദിക്കൂ"
+  },
+  "summaryAllowed": {
+    "message": "ഈ സൈറ്റ് അനുവദനീയമാണ്. MotionBlock ഇവിടെ മാധ്യമങ്ങളെ തടയുന്നില്ല."
+  },
+  "summaryActiveNoCategories": {
+    "message": "ഇവിടെ സജീവമാണ്, എന്നാൽ മാധ്യമ വിഭാഗങ്ങളൊന്നും നിലവിൽ തടഞ്ഞിട്ടില്ല."
+  },
+  "summaryBlockingFeatures": {
+    "message": "ഈ സൈറ്റിൽ $FEATURES$ ബ്ലോക്ക് ചെയ്യുന്നു.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "ഈ സൈറ്റിനായി MotionBlock എല്ലാ നിയമങ്ങളും ഓഫാണ്."
+  },
+  "siteRuleOwnSettings": {
+    "message": "ഈ സൈറ്റ് സ്വന്തമായി MotionBlock ക്രമീകരണങ്ങൾ ഉപയോഗിക്കുന്നു."
+  },
+  "siteRuleOverrides": {
+    "message": "ഈ സൈറ്റ് മീഡിയ-നിർദ്ദിഷ്ട ഓവർറൈഡുകളുമായി ആഗോള നില പിന്തുടരുന്നു."
+  },
+  "siteRuleDefaults": {
+    "message": "ഈ സൈറ്റ് നിങ്ങളുടെ ആഗോള ഡിഫോൾട്ടുകൾ പിന്തുടരുന്നു."
+  },
+  "featureMetaInactive": {
+    "message": "സൈറ്റ് അനുവദനീയമായിരിക്കുമ്പോൾ നിസ്ജീവമാണ്"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "മറികടക്കുക: തടയൽ"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "ഓവർറൈഡ്: അനുവദനീയമാണ്"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "ആഗോള: തടയൽ"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "ആഗോള: അനുവദനീയമാണ്"
+  },
+  "optionsIntro": {
+    "message": "ആഗോള മീഡിയ സ്ഥിരസ്ഥിതികളും ഓരോ സൈറ്റ് മുൻഗണനകളും."
+  },
+  "extensionActive": {
+    "message": "വിസ്തൃതി സജീവമാണ്"
+  },
+  "globalDefaultsHeading": {
+    "message": "ആഗോള സ്ഥിരസ്ഥിതികൾ"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF പോലുള്ള വീഡിയോ, ഓട്ടോപ്ലേ എന്നിവ ഉപയോഗിച്ച് ആരംഭിക്കുക. ഒരു സൈറ്റിന് കർശനമായ മീഡിയ നിയന്ത്രണം ആവശ്യമുള്ളപ്പോൾ മാത്രം ബ്രോഡ് ബ്ലോക്കറുകൾ ഉപയോഗിക്കുക."
+  },
+  "restoreRecommended": {
+    "message": "പുനഃസ്ഥാപിക്കാൻ ശുപാർശ ചെയ്യുന്നു"
+  },
+  "blockedMediaDisplay": {
+    "message": "ബ്ലോക്ക് ചെയ്ത മീഡിയ ഡിസ്പ്ലേ"
+  },
+  "replacementPlaceholder": {
+    "message": "കോംപാക്റ്റ് പ്ലേസ് ഹോൾഡർ"
+  },
+  "replacementHide": {
+    "message": "ഘടകം മറയ്ക്കുക"
+  },
+  "interfaceTheme": {
+    "message": "ഇന്റർഫേസ് തീം"
+  },
+  "themeSystem": {
+    "message": "സിസ്റ്റം"
+  },
+  "themeLight": {
+    "message": "വെളിച്ചം"
+  },
+  "themeDark": {
+    "message": "ഇരുണ്ട"
+  },
+  "revealControlsTitle": {
+    "message": "ബ്ലോക്ക് ചെയ്ത മീഡിയയ്ക്കായുള്ള ബട്ടണുകൾ വെളിപ്പെടുത്തുക"
+  },
+  "revealControlsDescription": {
+    "message": "ബ്ലോക്ക് ചെയ്ത മീഡിയയിൽ ക്ലിക്ക്-ടു-പ്ലേ/ഷോ ബട്ടണുകൾ കാണിക്കുക. ചില സൈറ്റുകൾ മറഞ്ഞിരിക്കുന്ന മീഡിയ ഉപരിതലങ്ങൾ വീണ്ടും ഉപയോഗിക്കുന്നതിനാൽ ഡിഫോൾട്ടായി ഓഫ്."
+  },
+  "diagnosticsTitle": {
+    "message": "അഡ്വാൻസ്ഡ് ഡയഗ്നോസ്റ്റിക്സ്"
+  },
+  "diagnosticsDescription": {
+    "message": "നിങ്ങൾ ഒരു തടയൽ പ്രശ്നം പുനരുൽപ്പാദിപ്പിക്കുമ്പോൾ പോപ്പപ്പിൽ പകർത്താവുന്ന ഓരോ ടാബ് ഡയഗ്നോസ്റ്റിക് ലോഗ് കാണിക്കുക."
+  },
+  "websitePreferencesHeading": {
+    "message": "വെബ് സൈറ്റ് മുൻഗണനകൾ"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com, അല്ലെങ്കിൽ news.example.com പോലുള്ള കൃത്യമായ ഹോസ്റ്റ് നെയിമുകൾ ഉപയോഗിക്കുക."
+  },
+  "addSite": {
+    "message": "സൈറ്റ് ചേർക്കുക"
+  },
+  "backupHeading": {
+    "message": "ബാക്കപ്പ്"
+  },
+  "backupIntro": {
+    "message": "Chrome സമന്വയ സംഭരണത്തിൽ ക്രമീകരണങ്ങൾ സംഭരിച്ചിരിക്കുന്നു. വിപുലീകരണങ്ങൾക്കായി Chrome സമന്വയം പ്രവർത്തനക്ഷമമാക്കിയിട്ടുണ്ടെങ്കിൽ, അവർക്ക് നിങ്ങളുടെ Chrome പ്രൊഫൈൽ പിന്തുടരാൻ കഴിയും."
+  },
+  "exportJson": {
+    "message": "കയറ്റുമതി JSON"
+  },
+  "importFile": {
+    "message": "ഫയല് ഇംപോര് ട്ട് ചെയ്യുക"
+  },
+  "applyPastedJson": {
+    "message": "ഒട്ടിച്ച JSON പ്രയോഗിക്കുക"
+  },
+  "refreshFromSync": {
+    "message": "സമന്വയത്തിൽ നിന്ന് പുതുക്കുക"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "എക്സ്പോർട്ട് പ്രിവ്യൂ ഇവിടെ ദൃശ്യമാകും. നിങ്ങൾക്ക് ഒരു MotionBlock JSON ബാക്കപ്പ് ഒട്ടി പ്രയോഗിക്കാനും കഴിയും."
+  },
+  "globalStatusSaved": {
+    "message": "ആഗോള പദവി സംരക്ഷിക്കപ്പെട്ടു."
+  },
+  "globalDefaultsSaved": {
+    "message": "ആഗോള സ്ഥിരസ്ഥിതികൾ സംരക്ഷിച്ചു."
+  },
+  "displayModeSaved": {
+    "message": "ഡിസ്പ്ലേ മോഡ് സംരക്ഷിച്ചു."
+  },
+  "themeSaved": {
+    "message": "തീം സേവ് ചെയ്തു."
+  },
+  "revealSettingSaved": {
+    "message": "വെളിപ്പെടുത്തുക ബട്ടൺ ക്രമീകരണം സംരക്ഷിച്ചു."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "ഡയഗ്നോസ്റ്റിക്സ് ക്രമീകരണം സംരക്ഷിച്ചു."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "ശുപാർശ ചെയ്യപ്പെടുന്ന സ്ഥിരസ്ഥിതികൾ പുനഃസ്ഥാപിച്ചു."
+  },
+  "enterValidHostname": {
+    "message": "സാധുതയുള്ള ഹോസ്റ്റ്നാമം നൽകുക."
+  },
+  "siteAdded": {
+    "message": "സൈറ്റ് ചേർത്തു."
+  },
+  "siteRuleSaved": {
+    "message": "സൈറ്റ് നിയമം സംരക്ഷിച്ചു."
+  },
+  "siteRemoved": {
+    "message": "സൈറ്റ് നീക്കം ചെയ്തു."
+  },
+  "settingsExported": {
+    "message": "ക്രമീകരണങ്ങൾ ഒരു JSON ഫയലിലേക്ക് എക്സ്പോർട്ട് ചെയ്തു."
+  },
+  "settingsImportedFromFile": {
+    "message": "ഫയലിൽ നിന്ന് ക്രമീകരണങ്ങൾ ഇമ്പോർട്ട് ചെയ്തു."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "ഒട്ടിച്ച JSON-ൽ നിന്ന് ക്രമീകരണം ഇമ്പോർട്ട് ചെയ്തു."
+  },
+  "settingsRefreshed": {
+    "message": "Chrome സമന്വയത്തിൽ നിന്ന് ക്രമീകരണം പുതുക്കി."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല."
+  },
+  "defaultOn": {
+    "message": "ഡിഫോൾട്ട് ഓൺ"
+  },
+  "defaultOff": {
+    "message": "ഡിഫോൾട്ട് ഓഫ്"
+  },
+  "noWebsitePreferences": {
+    "message": "ഇതുവരെ വെബ് സൈറ്റ് മുൻഗണനകളൊന്നുമില്ല."
+  },
+  "removeSite": {
+    "message": "നീക്കം ചെയ്യുക"
+  },
+  "siteTableSite": {
+    "message": "സൈറ്റ്"
+  },
+  "siteTableActive": {
+    "message": "സജീവമാണ്"
+  },
+  "selectInherit": {
+    "message": "അനന്തരാവകാശം"
+  },
+  "selectBlock": {
+    "message": "ബ്ലോക്ക് ചെയ്യുക"
+  },
+  "selectAllow": {
+    "message": "അനുവദിക്കുക"
+  },
+  "selectOn": {
+    "message": "ഓൺ"
+  },
+  "selectOff": {
+    "message": "ഓഫ്"
+  },
+  "saveFailed": {
+    "message": "സംരക്ഷിക്കുന്നത് പരാജയപ്പെട്ടു."
+  },
+  "importFailed": {
+    "message": "ഇംപോര് ട്ട് പരാജയപ്പെട്ടു: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "ഒരു JSON ഫയൽ തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ ആദ്യം ഒരു ബാക്കപ്പ് ഒട്ടിക്കുക."
+  },
+  "invalidJson": {
+    "message": "അസാധുവായ JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "ഇത് ഒരു MotionBlock ക്രമീകരണ ബാക്കപ്പ് പോലെ തോന്നുന്നില്ല."
+  },
+  "errorMissingMessageType": {
+    "message": "സന്ദേശ തരം കാണാനില്ല."
+  },
+  "errorMissingSiteHostname": {
+    "message": "സൈറ്റ് ഹോസ്റ്റിന്റെ പേര് കാണാതായി."
+  },
+  "errorUnknownMessageType": {
+    "message": "അജ്ഞാത സന്ദേശ തരം."
+  },
+  "featureGifsLabel": {
+    "message": "GIF ചിത്രങ്ങൾ"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "ചെറിയ ഇന്റർഫേസ് GIFs ഒറ്റയ്ക്ക് വിടുമ്പോൾ പേജിലെ GIF ഇമേജ് ഘടകങ്ങൾ മാറ്റിസ്ഥാപിക്കുക."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV GIF പോലുള്ള വീഡിയോ URL-കൾ"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "ലൂപ്പിംഗ് GIFs പോലെ പെരുമാറുന്ന .gifv URL-കളും വീഡിയോ ഘടകങ്ങളും തടയുക."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL പാറ്റേണുകൾ"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp ഇമേജ് URL-കൾ തടയുക. പല WebP ഇമേജുകളും ആനിമേറ്റഡ് അല്ലാത്തതിനാൽ ഡിഫോൾട്ടായി ഓഫ് ചെയ്യുക."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ഓട്ടോപ്ലേയും ലൂപ്പിംഗ് വീഡിയോയും"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ഓട്ടോപ്ലേ"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "സ്വയമേവ പ്ലേ വീഡിയോ താൽക്കാലികമായി നിർത്തുക, ആനിമേഷനായി ഉപയോഗിക്കുന്ന നിശബ്ദമാക്കിയ ലൂപ്പിംഗ് വീഡിയോ നീക്കംചെയ്യുക."
+  },
+  "featureVideoLabel": {
+    "message": "എല്ലാ വീഡിയോകളും"
+  },
+  "featureVideoShortLabel": {
+    "message": "വീഡിയോ"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 വീഡിയോയും സാധാരണ വീഡിയോ ഫയൽ അഭ്യർത്ഥനകളും തടയുക."
+  },
+  "featureAudioLabel": {
+    "message": "ഓഡിയോ"
+  },
+  "featureAudioShortLabel": {
+    "message": "ഓഡിയോ"
+  },
+  "featureAudioDescription": {
+    "message": "ഓഡിയോ ഘടകങ്ങളും സാധാരണ ഓഡിയോ ഫയൽ അഭ്യർത്ഥനകളും തടയുക."
+  },
+  "featureImagesLabel": {
+    "message": "എല്ലാ ചിത്രങ്ങളും"
+  },
+  "featureImagesShortLabel": {
+    "message": "ചിത്രങ്ങൾ"
+  },
+  "featureImagesDescription": {
+    "message": "പേജിലെ ഇമേജ് ഘടകങ്ങൾ മാറ്റിസ്ഥാപിക്കുക. ഇമേജ്-ഹെവി സൈറ്റുകൾക്കായി ഓരോ സൈറ്റിലും അനുമതി നിയമങ്ങൾ ഉപയോഗിക്കുക."
+  },
+  "featureEmojiLabel": {
+    "message": "ഇമോജി ടെക്സ്റ്റ്, ഇമോജി ഇമേജുകൾ"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ഇമോജി"
+  },
+  "featureEmojiDescription": {
+    "message": "ഇമോജി പ്രതീകങ്ങളും സാധാരണ ഇമോജി ഇമേജ് റെൻഡററുകളും നീക്കംചെയ്യുക. വാചകം മാറ്റുന്നതിനാൽ ഡിഫോൾട്ടായി ഓഫ്."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS ആനിമേഷനും പരിവർത്തനങ്ങളും"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS ആനിമേഷനുകൾ, പരിവർത്തനങ്ങൾ, സുഗമമായ സ്ക്രോളിംഗ് എന്നിവ അപ്രാപ്തമാക്കുക."
+  },
+  "featureGroupMotionLabel": {
+    "message": "ചലന തടയൽ"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF പോലുള്ള വീഡിയോകൾ, ഓട്ടോപ്ലേ, പേജ് ചലനം എന്നിവയ്ക്കായി ശുപാർശ ചെയ്യപ്പെടുന്ന ഡിഫോൾട്ടുകൾ."
+  },
+  "featureGroupBroadLabel": {
+    "message": "ബ്രോഡ് മീഡിയ ബ്ലോക്കറുകൾ"
+  },
+  "featureGroupBroadDescription": {
+    "message": "ഇമേജുകൾ, വീഡിയോ, ഓഡിയോ, WebP URL-കൾ, ഇമോജി എന്നിവയ്ക്കായുള്ള പവർ-യൂസർ നിയന്ത്രണങ്ങൾ. ഇവ ചില സൈറ്റുകൾ മാറ്റുകയോ തകർക്കുകയോ ചെയ്യാം."
+  },
+  "contentShowBlockedImage": {
+    "message": "തടഞ്ഞ ചിത്രം കാണിക്കുക"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "ബ്ലോക്ക് ചെയ്ത ഓഡിയോ പ്ലേ ചെയ്യുക"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "തടഞ്ഞ വീഡിയോ പ്ലേ ചെയ്യുക"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "ബ്ലോക്ക് ചെയ്ത മീഡിയ പ്ലേ ചെയ്യുക"
+  },
+  "contentBlockedByTitle": {
+    "message": "ബ്ലോക്ക് ചെയ്തത് MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "തടഞ്ഞ $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF പോലുള്ള മാധ്യമങ്ങൾ"
+  },
+  "contentReasonVideo": {
+    "message": "വീഡിയോ"
+  },
+  "contentReasonAudio": {
+    "message": "ഓഡിയോ"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ലൂപ്പിംഗ് വീഡിയോ"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "വീഡിയോ ഓട്ടോപ്ലേ ചെയ്യുക"
+  },
+  "contentReasonImage": {
+    "message": "ചിത്രം"
+  },
+  "contentReasonMedia": {
+    "message": "മാധ്യമങ്ങൾ"
+  }
+}

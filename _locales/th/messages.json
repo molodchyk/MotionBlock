@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: ตัวบล็อก GIF และตัวหยุดแอนิเมชั่น"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "หยุด GIFs GIFV เล่นวิดีโออัตโนมัติ วางเมาส์เหนือตัวอย่าง และการเคลื่อนไหวที่ทําให้เสียสมาธิด้วยการควบคุมต่อไซต์"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "ตัวเลือก MotionBlock"
+  },
+  "siteLoading": {
+    "message": "กําลังโหลดเว็บไซต์..."
+  },
+  "optionsButton": {
+    "message": "ตัวเลือก"
+  },
+  "statusOnInitial": {
+    "message": "เปิด"
+  },
+  "checkingActiveRules": {
+    "message": "กําลังตรวจสอบกฎที่ใช้งานอยู่..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ ถูกบล็อก",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "บล็อกการเคลื่อนไหวที่นี่"
+  },
+  "allowThisSite": {
+    "message": "อนุญาตเว็บไซต์นี้"
+  },
+  "siteMode": {
+    "message": "โหมดไซต์"
+  },
+  "followGlobalDefaults": {
+    "message": "ทําตามค่าเริ่มต้นส่วนกลาง"
+  },
+  "blockOnThisSite": {
+    "message": "บล็อกบนเว็บไซต์นี้"
+  },
+  "allowThisSiteOption": {
+    "message": "อนุญาตเว็บไซต์นี้"
+  },
+  "siteMediaControls": {
+    "message": "การควบคุมสื่อของไซต์"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "การวินิจฉัย"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "บันทึกการวินิจฉัย MotionBlock"
+  },
+  "copyDiagnostics": {
+    "message": "คัดลอกบันทึก"
+  },
+  "refreshDiagnostics": {
+    "message": "รีเฟรช"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ เหตุการณ์การวินิจฉัยที่บันทึกไว้",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "ยังไม่มีการวินิจฉัย โหลดแท็บนี้ซ้ํา ทําซ้ําปัญหา จากนั้นรีเฟรชแผงนี้"
+  },
+  "diagnosticsRefreshed": {
+    "message": "การวินิจฉัยได้รับการรีเฟรช"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "ไม่สามารถรีเฟรชการวินิจฉัย"
+  },
+  "diagnosticsCopied": {
+    "message": "คัดลอกการวินิจฉัย"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "ไม่สามารถคัดลอกการวินิจฉัย"
+  },
+  "resetSite": {
+    "message": "รีเซ็ตเว็บไซต์"
+  },
+  "reloadTab": {
+    "message": "โหลดซ้ํา"
+  },
+  "reloadHint": {
+    "message": "อาจจําเป็นต้องโหลดซ้ําสําหรับสื่อที่ถูกบล็อกหรือโหลดแล้ว"
+  },
+  "unknownSite": {
+    "message": "เว็บไซต์ที่ไม่รู้จัก"
+  },
+  "statusBlocking": {
+    "message": "การบล็อก"
+  },
+  "statusAllowed": {
+    "message": "อนุญาต"
+  },
+  "couldNotLoadSettings": {
+    "message": "โหลดการตั้งค่าไม่ได้"
+  },
+  "notAWebsite": {
+    "message": "ไม่ใช่เว็บไซต์"
+  },
+  "statusNotApplicable": {
+    "message": "ไม่มี"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ไม่สามารถกําหนดค่าเบราว์เซอร์ ส่วนขยาย หรือเพจที่มีการป้องกันอื่นๆ ได้"
+  },
+  "selectUseGlobal": {
+    "message": "ใช้ส่วนกลาง"
+  },
+  "selectBlockHere": {
+    "message": "บล็อกที่นี่"
+  },
+  "selectAllowHere": {
+    "message": "อนุญาตที่นี่"
+  },
+  "summaryAllowed": {
+    "message": "เว็บไซต์นี้ได้รับอนุญาต MotionBlock ไม่ได้ปิดกั้นสื่อที่นี่"
+  },
+  "summaryActiveNoCategories": {
+    "message": "ใช้งานอยู่ที่นี่ แต่ขณะนี้ไม่มีหมวดหมู่สื่อใดถูกบล็อก"
+  },
+  "summaryBlockingFeatures": {
+    "message": "การบล็อก $FEATURES$ บนเว็บไซต์นี้",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "กฎ MotionBlock ทั้งหมดปิดสําหรับไซต์นี้"
+  },
+  "siteRuleOwnSettings": {
+    "message": "ไซต์นี้ใช้การตั้งค่า MotionBlock ของตัวเอง"
+  },
+  "siteRuleOverrides": {
+    "message": "ไซต์นี้เป็นไปตามสถานะส่วนกลางด้วยการแทนที่เฉพาะสื่อ"
+  },
+  "siteRuleDefaults": {
+    "message": "ไซต์นี้เป็นไปตามค่าเริ่มต้นส่วนกลางของคุณ"
+  },
+  "featureMetaInactive": {
+    "message": "ไม่ได้ใช้งานในขณะที่ไซต์ได้รับอนุญาต"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "แทนที่: การบล็อก"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "แทนที่: อนุญาต"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "ส่วนกลาง: การบล็อก"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "ส่วนกลาง: อนุญาต"
+  },
+  "optionsIntro": {
+    "message": "ค่าเริ่มต้นของสื่อส่วนกลางและการกําหนดลักษณะต่อไซต์"
+  },
+  "extensionActive": {
+    "message": "ส่วนขยายทํางานอยู่"
+  },
+  "globalDefaultsHeading": {
+    "message": "ค่าเริ่มต้นส่วนกลาง"
+  },
+  "globalDefaultsIntro": {
+    "message": "เริ่มต้นด้วยวิดีโอ GIFs เหมือน GIF และเล่นอัตโนมัติ ใช้ตัวบล็อกแบบกว้างเฉพาะเมื่อไซต์ต้องการการควบคุมสื่อที่เข้มงวดยิ่งขึ้น"
+  },
+  "restoreRecommended": {
+    "message": "แนะนําให้กู้คืน"
+  },
+  "blockedMediaDisplay": {
+    "message": "การแสดงสื่อที่ถูกบล็อก"
+  },
+  "replacementPlaceholder": {
+    "message": "ตัวยึดตําแหน่งขนาดกะทัดรัด"
+  },
+  "replacementHide": {
+    "message": "ซ่อนองค์ประกอบ"
+  },
+  "interfaceTheme": {
+    "message": "ธีมอินเทอร์เฟซ"
+  },
+  "themeSystem": {
+    "message": "ระบบ"
+  },
+  "themeLight": {
+    "message": "เบา"
+  },
+  "themeDark": {
+    "message": "มืด"
+  },
+  "revealControlsTitle": {
+    "message": "ปุ่มแสดงสําหรับสื่อที่ถูกบล็อก"
+  },
+  "revealControlsDescription": {
+    "message": "แสดงปุ่มคลิกเพื่อเล่น/แสดงบนสื่อที่ถูกบล็อก ปิดตามค่าเริ่มต้นเนื่องจากบางไซต์ใช้พื้นผิวสื่อที่ซ่อนอยู่ซ้ํา"
+  },
+  "diagnosticsTitle": {
+    "message": "การวินิจฉัยขั้นสูง"
+  },
+  "diagnosticsDescription": {
+    "message": "แสดงบันทึกการวินิจฉัยต่อแท็บที่คัดลอกได้ในป๊อปอัปในขณะที่คุณสร้างปัญหาการบล็อกซ้ํา"
+  },
+  "websitePreferencesHeading": {
+    "message": "การตั้งค่าเว็บไซต์"
+  },
+  "websitePreferencesIntro": {
+    "message": "ใช้ชื่อโฮสต์ที่ตรงกัน เช่น reddit.com, discord.com หรือ news.example.com"
+  },
+  "addSite": {
+    "message": "เพิ่มเว็บไซต์"
+  },
+  "backupHeading": {
+    "message": "การสํารองข้อมูล"
+  },
+  "backupIntro": {
+    "message": "การตั้งค่าจะถูกเก็บไว้ในที่เก็บข้อมูล Chrome ซิงค์ หากเปิดใช้การซิงค์ Chrome สําหรับส่วนขยาย ส่วนขยายจะติดตามโปรไฟล์ Chrome ของคุณได้"
+  },
+  "exportJson": {
+    "message": "ส่งออก JSON"
+  },
+  "importFile": {
+    "message": "นําเข้าไฟล์"
+  },
+  "applyPastedJson": {
+    "message": "ใช้ JSON ที่วาง"
+  },
+  "refreshFromSync": {
+    "message": "รีเฟรชจากการซิงค์"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ตัวอย่างการส่งออกจะปรากฏที่นี่ คุณยังสามารถวางข้อมูลสํารอง MotionBlock JSON และนําไปใช้ได้อีกด้วย"
+  },
+  "globalStatusSaved": {
+    "message": "บันทึกสถานะส่วนกลางแล้ว"
+  },
+  "globalDefaultsSaved": {
+    "message": "บันทึกค่าเริ่มต้นส่วนกลาง"
+  },
+  "displayModeSaved": {
+    "message": "บันทึกโหมดการแสดงผล"
+  },
+  "themeSaved": {
+    "message": "บันทึกธีมแล้ว"
+  },
+  "revealSettingSaved": {
+    "message": "แสดงการตั้งค่าปุ่มที่บันทึกไว้"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "บันทึกการตั้งค่าการวินิจฉัย"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "คืนค่าเริ่มต้นที่แนะนํา"
+  },
+  "enterValidHostname": {
+    "message": "ป้อนชื่อโฮสต์ที่ถูกต้อง"
+  },
+  "siteAdded": {
+    "message": "เพิ่มเว็บไซต์"
+  },
+  "siteRuleSaved": {
+    "message": "บันทึกกฎของไซต์แล้ว"
+  },
+  "siteRemoved": {
+    "message": "ลบเว็บไซต์แล้ว"
+  },
+  "settingsExported": {
+    "message": "การตั้งค่าที่ส่งออกไปยังไฟล์ JSON"
+  },
+  "settingsImportedFromFile": {
+    "message": "การตั้งค่าที่นําเข้าจากไฟล์"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "การตั้งค่าที่นําเข้าจาก JSON ที่วาง"
+  },
+  "settingsRefreshed": {
+    "message": "การตั้งค่าที่รีเฟรชจากการซิงค์ Chrome"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "โหลดการตั้งค่าไม่ได้"
+  },
+  "defaultOn": {
+    "message": "ค่าเริ่มต้นบน"
+  },
+  "defaultOff": {
+    "message": "ค่าเริ่มต้นปิด"
+  },
+  "noWebsitePreferences": {
+    "message": "ยังไม่มีการตั้งค่าเว็บไซต์"
+  },
+  "removeSite": {
+    "message": "ลบ"
+  },
+  "siteTableSite": {
+    "message": "เว็บไซต์"
+  },
+  "siteTableActive": {
+    "message": "คล่องแคล่ว"
+  },
+  "selectInherit": {
+    "message": "สืบทอด"
+  },
+  "selectBlock": {
+    "message": "บล็อก"
+  },
+  "selectAllow": {
+    "message": "อนุญาต"
+  },
+  "selectOn": {
+    "message": "เปิด"
+  },
+  "selectOff": {
+    "message": "ปิด"
+  },
+  "saveFailed": {
+    "message": "บันทึกล้มเหลว"
+  },
+  "importFailed": {
+    "message": "นําเข้าล้มเหลว: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "เลือกไฟล์ JSON หรือวางข้อมูลสํารองก่อน"
+  },
+  "invalidJson": {
+    "message": "JSON ไม่ถูกต้อง"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "นี่ดูไม่เหมือนการสํารองข้อมูลการตั้งค่า MotionBlock"
+  },
+  "errorMissingMessageType": {
+    "message": "ไม่มีประเภทข้อความ"
+  },
+  "errorMissingSiteHostname": {
+    "message": "ไม่มีชื่อโฮสต์ของเว็บไซต์"
+  },
+  "errorUnknownMessageType": {
+    "message": "ประเภทข้อความที่ไม่รู้จัก"
+  },
+  "featureGifsLabel": {
+    "message": "GIF ภาพ"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "แทนที่องค์ประกอบรูปภาพ GIF ในหน้าโดยปล่อยให้อินเทอร์เฟซเล็กๆ GIFs อยู่ตามลําพัง"
+  },
+  "featureGifvLabel": {
+    "message": "URL ของวิดีโอที่คล้ายกับ GIFV และ GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "บล็อก URL .gifv และองค์ประกอบวิดีโอที่ทํางานเหมือน GIFs วนซ้ํา"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "รูปแบบ URL WebP"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "บล็อก URL รูปภาพ .webp ปิดโดยค่าเริ่มต้นเนื่องจากภาพ WebP จํานวนมากไม่เคลื่อนไหว"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "เล่นอัตโนมัติและเล่นวนวิดีโอ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "เล่นอัตโนมัติ"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "หยุดวิดีโอเล่นอัตโนมัติชั่วคราวและลบวิดีโอวนซ้ําที่ปิดเสียงที่ใช้เป็นภาพเคลื่อนไหว"
+  },
+  "featureVideoLabel": {
+    "message": "วิดีโอทั้งหมด"
+  },
+  "featureVideoShortLabel": {
+    "message": "วิดีโอ"
+  },
+  "featureVideoDescription": {
+    "message": "บล็อกคําขอไฟล์วิดีโอและไฟล์วิดีโอทั่วไป HTML5"
+  },
+  "featureAudioLabel": {
+    "message": "เสียง"
+  },
+  "featureAudioShortLabel": {
+    "message": "เสียง"
+  },
+  "featureAudioDescription": {
+    "message": "บล็อกองค์ประกอบเสียงและคําขอไฟล์เสียงทั่วไป"
+  },
+  "featureImagesLabel": {
+    "message": "ภาพทั้งหมด"
+  },
+  "featureImagesShortLabel": {
+    "message": "ภาพ"
+  },
+  "featureImagesDescription": {
+    "message": "แทนที่องค์ประกอบรูปภาพในหน้า ใช้กฎการอนุญาตต่อเว็บไซต์สําหรับเว็บไซต์ที่มีรูปภาพมาก"
+  },
+  "featureEmojiLabel": {
+    "message": "ข้อความอีโมจิและรูปภาพอีโมจิ"
+  },
+  "featureEmojiShortLabel": {
+    "message": "อิโมจิ"
+  },
+  "featureEmojiDescription": {
+    "message": "ลบอักขระอีโมจิและตัวแสดงผลภาพอีโมจิทั่วไป ปิดตามค่าเริ่มต้นเนื่องจากจะเปลี่ยนข้อความ"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS ภาพเคลื่อนไหวและการเปลี่ยนภาพ"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "ปิดใช้งานภาพเคลื่อนไหว การเปลี่ยนภาพ และการเลื่อนที่ราบรื่น CSS"
+  },
+  "featureGroupMotionLabel": {
+    "message": "การปิดกั้นการเคลื่อนไหว"
+  },
+  "featureGroupMotionDescription": {
+    "message": "ค่าเริ่มต้นที่แนะนําสําหรับวิดีโอที่เหมือน GIFs GIF การเล่นอัตโนมัติ และการเคลื่อนที่ของหน้าเว็บ"
+  },
+  "featureGroupBroadLabel": {
+    "message": "ตัวบล็อกสื่อในวงกว้าง"
+  },
+  "featureGroupBroadDescription": {
+    "message": "การควบคุมผู้ใช้ระดับสูงสําหรับรูปภาพ วิดีโอ เสียง URL WebP และอีโมจิ สิ่งเหล่านี้สามารถเปลี่ยนแปลงหรือทําลายบางไซต์ได้"
+  },
+  "contentShowBlockedImage": {
+    "message": "แสดงรูปภาพที่ถูกบล็อก"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "เล่นเสียงที่ถูกบล็อก"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "เล่นวิดีโอที่ถูกบล็อก"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "เล่นสื่อที่ถูกบล็อก"
+  },
+  "contentBlockedByTitle": {
+    "message": "บล็อกโดย MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "$REASON$ ที่ถูกบล็อก",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "สื่อที่คล้ายกับ GIF"
+  },
+  "contentReasonVideo": {
+    "message": "วีดีโอ"
+  },
+  "contentReasonAudio": {
+    "message": "เสียง"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "วิดีโอวนซ้ํา"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "เล่นวิดีโออัตโนมัติ"
+  },
+  "contentReasonImage": {
+    "message": "ภาพ"
+  },
+  "contentReasonMedia": {
+    "message": "สื่อ"
+  }
+}

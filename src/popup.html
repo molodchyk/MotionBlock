@@ -1,58 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MotionBlock</title>
+    <title data-i18n="popupTitle">MotionBlock</title>
     <link rel="stylesheet" href="popup.css">
   </head>
   <body>
     <main class="popup">
       <header class="header">
         <div>
-          <h1>MotionBlock</h1>
-          <p id="siteLabel">Loading site...</p>
+          <h1 data-i18n="extensionShortName">MotionBlock</h1>
+          <p id="siteLabel" data-i18n="siteLoading">Loading site...</p>
         </div>
-        <button id="openOptions" type="button" class="options-button">Options</button>
+        <button id="openOptions" type="button" class="options-button" data-i18n="optionsButton">Options</button>
       </header>
 
       <section class="summary" aria-live="polite">
-        <span id="statusBadge" class="status">On</span>
-        <p id="effectiveSummary">Checking active rules...</p>
+        <span id="statusBadge" class="status" data-i18n="statusOnInitial">On</span>
+        <p id="effectiveSummary" data-i18n="checkingActiveRules">Checking active rules...</p>
         <span id="statsTotal" class="stats-total">0 blocked</span>
       </section>
 
       <section class="quick-actions">
-        <button id="blockMotionHere" type="button" class="primary">Block motion here</button>
-        <button id="allowSite" type="button">Allow this site</button>
+        <button id="blockMotionHere" type="button" class="primary" data-i18n="blockMotionHere">Block motion here</button>
+        <button id="allowSite" type="button" data-i18n="allowThisSite">Allow this site</button>
       </section>
 
       <section class="section">
         <label class="field">
-          <span>Site mode</span>
+          <span data-i18n="siteMode">Site mode</span>
           <select id="siteEnabled">
-            <option value="">Follow global defaults</option>
-            <option value="true">Block on this site</option>
-            <option value="false">Allow this site</option>
+            <option value="" data-i18n="followGlobalDefaults">Follow global defaults</option>
+            <option value="true" data-i18n="blockOnThisSite">Block on this site</option>
+            <option value="false" data-i18n="allowThisSiteOption">Allow this site</option>
           </select>
         </label>
         <p id="siteRuleNote" class="site-note"></p>
       </section>
 
       <section class="section">
-        <div class="section-title">Site media controls</div>
+        <div class="section-title" data-i18n="siteMediaControls">Site media controls</div>
         <div id="featureList" class="feature-list"></div>
       </section>
 
+      <section id="diagnosticsPanel" class="section diagnostics-panel" hidden>
+        <div class="section-title" data-i18n="diagnosticsPopupHeading">Diagnostics</div>
+        <p id="diagnosticsSummary" class="diagnostics-summary"></p>
+        <textarea
+          id="diagnosticsLog"
+          readonly
+          spellcheck="false"
+          aria-label="MotionBlock diagnostics log"
+          data-i18n-aria-label="diagnosticsLogAriaLabel"
+        ></textarea>
+        <div class="diagnostics-actions">
+          <button id="copyDiagnostics" type="button" class="primary" data-i18n="copyDiagnostics">Copy log</button>
+          <button id="refreshDiagnostics" type="button" data-i18n="refreshDiagnostics">Refresh</button>
+        </div>
+        <p id="diagnosticsStatus" class="diagnostics-status" aria-live="polite"></p>
+      </section>
+
       <footer class="footer">
-        <button id="resetSite" type="button">Reset site</button>
-        <button id="reloadTab" type="button">Reload</button>
+        <button id="resetSite" type="button" data-i18n="resetSite">Reset site</button>
+        <button id="reloadTab" type="button" data-i18n="reloadTab">Reload</button>
       </footer>
 
-      <p id="reloadHint" class="reload-hint" hidden>Reload may be needed for media that was already blocked or loaded.</p>
+      <p id="reloadHint" class="reload-hint" hidden data-i18n="reloadHint">Reload may be needed for media that was already blocked or loaded.</p>
     </main>
 
+    <script src="shared/i18n.js"></script>
     <script src="shared/config.js"></script>
+    <script src="app/popup/diagnostics-analysis.js"></script>
+    <script src="app/popup/view.js"></script>
+    <script src="app/popup/controller.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>

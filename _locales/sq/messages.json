@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Bllokues dhe Tapa Animacioni"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Ndaloni GIFs, GIFV, luani automatikisht videon, shikoni paraprakisht pezull dhe lëvizje shpërqendruese me kontrollet për faqe."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Opsionet"
+  },
+  "siteLoading": {
+    "message": "Faqja e ngarkimit..."
+  },
+  "optionsButton": {
+    "message": "Opsionet"
+  },
+  "statusOnInitial": {
+    "message": "Në"
+  },
+  "checkingActiveRules": {
+    "message": "Kontrollimi i rregullave aktive..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ bllokuar",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Bllokoni lëvizjen këtu"
+  },
+  "allowThisSite": {
+    "message": "Lejo këtë faqe"
+  },
+  "siteMode": {
+    "message": "Modaliteti i faqes"
+  },
+  "followGlobalDefaults": {
+    "message": "Ndiqni parazgjedhjet globale"
+  },
+  "blockOnThisSite": {
+    "message": "Bllokoni në këtë faqe"
+  },
+  "allowThisSiteOption": {
+    "message": "Lejo këtë faqe"
+  },
+  "siteMediaControls": {
+    "message": "Kontrollet e medias së faqes"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostifikimi"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock regjistri diagnostikues"
+  },
+  "copyDiagnostics": {
+    "message": "Kopjo regjistrin"
+  },
+  "refreshDiagnostics": {
+    "message": "Rifresko"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ ngjarjet diagnostikuese të regjistruara.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Nuk ka ende diagnostikim. Ringarkoni këtë skedë, riprodhoni problemin dhe më pas rifreskoni këtë panel."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostikimi i rifreskuar."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Nuk mund të rifreskonte diagnostikimin."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostifikimi i kopjuar."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Nuk mund të kopjoni diagnostikimin."
+  },
+  "resetSite": {
+    "message": "Rivendosni faqen"
+  },
+  "reloadTab": {
+    "message": "Ringarko"
+  },
+  "reloadHint": {
+    "message": "Mund të nevojitet ringarkim për mediat që tashmë janë bllokuar ose ngarkuar."
+  },
+  "unknownSite": {
+    "message": "Vend i panjohur"
+  },
+  "statusBlocking": {
+    "message": "Bllokimi"
+  },
+  "statusAllowed": {
+    "message": "Lejohet"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nuk mund të ngarkohet cilësimet"
+  },
+  "notAWebsite": {
+    "message": "Jo një faqe interneti"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock nuk mund të konfiguroni shfletuesin, shtesën ose faqe të tjera të mbrojtura."
+  },
+  "selectUseGlobal": {
+    "message": "Përdorni global"
+  },
+  "selectBlockHere": {
+    "message": "Blloko këtu"
+  },
+  "selectAllowHere": {
+    "message": "Lejo këtu"
+  },
+  "summaryAllowed": {
+    "message": "Kjo faqe lejohet. MotionBlock nuk po bllokon mediat këtu."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktive këtu, por asnjë kategori media nuk është aktualisht e bllokuar."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Bllokimi i $FEATURES$ në këtë faqe.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Të gjitha rregullat MotionBlock janë të fikura për këtë faqe."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Kjo faqe përdor cilësimet e veta MotionBlock."
+  },
+  "siteRuleOverrides": {
+    "message": "Kjo faqe ndjek statusin global me anashkalime specifike për mediat."
+  },
+  "siteRuleDefaults": {
+    "message": "Kjo faqe ndjek parazgjedhjet tuaja globale."
+  },
+  "featureMetaInactive": {
+    "message": "Joaktive ndërsa faqja është e lejuar"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Anashkalimi: bllokimi"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Anashkalimi: lejohet"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: bllokimi"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globale: lejohet"
+  },
+  "optionsIntro": {
+    "message": "Parazgjedhjet globale të medias dhe preferencat për faqe."
+  },
+  "extensionActive": {
+    "message": "Zgjerimi aktiv"
+  },
+  "globalDefaultsHeading": {
+    "message": "Parazgjedhjet globale"
+  },
+  "globalDefaultsIntro": {
+    "message": "Filloni me GIFs, video të ngjashme me GIF dhe luajtje automatike. Përdorni bllokues të gjerë vetëm kur një faqe ka nevojë për kontroll më të rreptë të medias."
+  },
+  "restoreRecommended": {
+    "message": "Rivendosja e rekomanduar"
+  },
+  "blockedMediaDisplay": {
+    "message": "Ekrani i bllokuar i mediave"
+  },
+  "replacementPlaceholder": {
+    "message": "Mbajtëse kompakte"
+  },
+  "replacementHide": {
+    "message": "Fsheh elementin"
+  },
+  "interfaceTheme": {
+    "message": "Tema e ndërfaqes"
+  },
+  "themeSystem": {
+    "message": "Sistemi"
+  },
+  "themeLight": {
+    "message": "Drita"
+  },
+  "themeDark": {
+    "message": "Errësirë"
+  },
+  "revealControlsTitle": {
+    "message": "Zbuloni butonat për mediat e bllokuara"
+  },
+  "revealControlsDescription": {
+    "message": "Shfaq butonat e klikimit/shfaqjes në mediat e bllokuara. E fikur si parazgjedhje sepse disa faqe ripërdorin sipërfaqet e fshehura të medias."
+  },
+  "diagnosticsTitle": {
+    "message": "Diagnostikimi i avancuar"
+  },
+  "diagnosticsDescription": {
+    "message": "Shfaqni një regjistër diagnostikues të kopjueshëm për skedë në dritare kërcyese ndërsa riprodhoni një problem bllokimi."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preferencat e faqes në internet"
+  },
+  "websitePreferencesIntro": {
+    "message": "Përdorni emra të saktë hosti si reddit.com, discord.com ose news.example.com."
+  },
+  "addSite": {
+    "message": "Shto faqen"
+  },
+  "backupHeading": {
+    "message": "Rezervimi"
+  },
+  "backupIntro": {
+    "message": "Cilësimet ruhen në Chrome ruajtje të sinkronizimit. Nëse sinkronizimi Chrome është i aktivizuar për shtesat, ata mund të ndjekin profilin tuaj Chrome."
+  },
+  "exportJson": {
+    "message": "Eksportoni JSON"
+  },
+  "importFile": {
+    "message": "Skedari i importit"
+  },
+  "applyPastedJson": {
+    "message": "Aplikoni JSON e ngjitur"
+  },
+  "refreshFromSync": {
+    "message": "Rifresko nga sinkronizimi"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Pamja paraprake e eksportit shfaqet këtu. Ju gjithashtu mund të ngjisni një kopje rezervë MotionBlock JSON dhe ta aplikoni atë."
+  },
+  "globalStatusSaved": {
+    "message": "Statusi global i ruajtur."
+  },
+  "globalDefaultsSaved": {
+    "message": "Parazgjedhjet globale të ruajtura."
+  },
+  "displayModeSaved": {
+    "message": "Modaliteti i ekranit i ruajtur."
+  },
+  "themeSaved": {
+    "message": "Tema e ruajtur."
+  },
+  "revealSettingSaved": {
+    "message": "Zbuloni cilësimet e butonit të ruajtur."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Cilësimi i diagnostikimit u ruajt."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Parazgjedhjet e rekomanduara u rivendosën."
+  },
+  "enterValidHostname": {
+    "message": "Futni një emër hosti të vlefshëm."
+  },
+  "siteAdded": {
+    "message": "Faqja e shtuar."
+  },
+  "siteRuleSaved": {
+    "message": "Rregulli i faqes u ruajt."
+  },
+  "siteRemoved": {
+    "message": "Faqja u hoq."
+  },
+  "settingsExported": {
+    "message": "Cilësimet e eksportuara në një skedar JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Cilësimet e importuara nga skedari."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Cilësimet e importuara nga JSON e ngjitur."
+  },
+  "settingsRefreshed": {
+    "message": "Cilësimet e rifreskohura nga Chrome sync."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nuk mund të ngarkohej cilësimet."
+  },
+  "defaultOn": {
+    "message": "Parazgjedhja e aktivizuar"
+  },
+  "defaultOff": {
+    "message": "Parazgjedhja e fikur"
+  },
+  "noWebsitePreferences": {
+    "message": "Nuk ka ende preferenca në faqen e internetit."
+  },
+  "removeSite": {
+    "message": "Hiq"
+  },
+  "siteTableSite": {
+    "message": "Faqja"
+  },
+  "siteTableActive": {
+    "message": "Aktive"
+  },
+  "selectInherit": {
+    "message": "Trashëgimi"
+  },
+  "selectBlock": {
+    "message": "Bllok"
+  },
+  "selectAllow": {
+    "message": "Lejo"
+  },
+  "selectOn": {
+    "message": "Në"
+  },
+  "selectOff": {
+    "message": "Jashtë"
+  },
+  "saveFailed": {
+    "message": "Ruajtja dështoi."
+  },
+  "importFailed": {
+    "message": "Importi dështoi: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Zgjidhni një skedar JSON ose ngjitni fillimisht një kopje rezervë."
+  },
+  "invalidJson": {
+    "message": "JSON e pavlefshme."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Kjo nuk duket si një kopje rezervë MotionBlock cilësime."
+  },
+  "errorMissingMessageType": {
+    "message": "Mungon lloji i mesazhit."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Mungon emri i hostit të faqes."
+  },
+  "errorUnknownMessageType": {
+    "message": "Lloji i panjohur i mesazhit."
+  },
+  "featureGifsLabel": {
+    "message": "GIF imazhe"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Zëvendësoni elementët e GIF të imazhit në faqe duke lënë GIFs ndërfaqe të vogël të qetë."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV dhe URL-të e videove të ngjashme me GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Bllokoni URL-të .gifv dhe elementët e videos që sillen si lak GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP modelet e URL-ve"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Bllokoni URL-të e imazhit .webp. E fikur si parazgjedhje sepse shumë imazhe të WebP nuk janë të animuara."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Luajtja automatike dhe ciklimi i videos"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Luaj automatikisht"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Ndaloni videon e luajtjes automatike dhe hiqni videon e heshtur të përdorur si animacion."
+  },
+  "featureVideoLabel": {
+    "message": "Të gjitha videot"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Bllokoni HTML5 kërkesa për video dhe skedarë të zakonshëm video."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Bllokoni elementët audio dhe kërkesat e zakonshme të skedarëve audio."
+  },
+  "featureImagesLabel": {
+    "message": "Të gjitha imazhet"
+  },
+  "featureImagesShortLabel": {
+    "message": "Imazhet"
+  },
+  "featureImagesDescription": {
+    "message": "Zëvendësoni elementët e imazhit në faqe. Përdorni rregullat e lejimit për faqe për faqet me imazhe të rënda."
+  },
+  "featureEmojiLabel": {
+    "message": "Teksti emoji dhe imazhet emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Hiqni karakteret emoji dhe paraqitësit e zakonshëm të imazheve emoji. I fikur si parazgjedhje sepse ndryshon tekstin."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animacioni dhe tranzicionet"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Çaktivizoni CSS animacionet, tranzicionet dhe lëvizjen e qetë."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Bllokimi i lëvizjes"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Parazgjedhjet e rekomanduara për video GIFs, të ngjashme me GIF, luajtjen automatike dhe lëvizjen e faqes."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Bllokuesit e gjerë të medias"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Kontrollet e përdoruesve të fuqishëm për imazhe, video, audio, WebP URL-të dhe emoji. Këto mund të ndryshojnë ose prishin disa faqe."
+  },
+  "contentShowBlockedImage": {
+    "message": "Trego imazhin e bllokuar"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Luaj audio të bllokuar"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Luaj video të bllokuar"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Luaj media të bllokuara"
+  },
+  "contentBlockedByTitle": {
+    "message": "Bllokuar nga MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Bllokuar $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF media të ngjashme"
+  },
+  "contentReasonVideo": {
+    "message": "video"
+  },
+  "contentReasonAudio": {
+    "message": "audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "video looping"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Video me luajtje automatike"
+  },
+  "contentReasonImage": {
+    "message": "imazh"
+  },
+  "contentReasonMedia": {
+    "message": "mediat"
+  }
+}

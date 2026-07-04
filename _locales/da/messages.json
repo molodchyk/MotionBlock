@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF-blokering og animationsstopper"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Stop GIFs, GIFV, autoplay video, hoverforhåndsvisninger og forstyrrende bevægelse med kontrol pr. sted."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Muligheder"
+  },
+  "siteLoading": {
+    "message": "Lastningsplads..."
+  },
+  "optionsButton": {
+    "message": "Muligheder"
+  },
+  "statusOnInitial": {
+    "message": "På"
+  },
+  "checkingActiveRules": {
+    "message": "Tjekker aktive regler..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ blokeret",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokbevægelse her"
+  },
+  "allowThisSite": {
+    "message": "Tillad dette site"
+  },
+  "siteMode": {
+    "message": "Sitetilstand"
+  },
+  "followGlobalDefaults": {
+    "message": "Følg globale standardniveauer"
+  },
+  "blockOnThisSite": {
+    "message": "Blokering på denne side"
+  },
+  "allowThisSiteOption": {
+    "message": "Tillad dette site"
+  },
+  "siteMediaControls": {
+    "message": "Mediekontrol på stedet"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostik"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostisk log"
+  },
+  "copyDiagnostics": {
+    "message": "Kopier log"
+  },
+  "refreshDiagnostics": {
+    "message": "Opfrisk"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diagnostiske hændelser registreret.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Ingen diagnosticering endnu. Genindlæs denne fane, genskab problemet, og opdater derefter dette panel."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostikken opdateret."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Kunne ikke opdatere diagnostikken."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostik kopieret."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Kunne ikke kopiere diagnostik."
+  },
+  "resetSite": {
+    "message": "Nulstil side"
+  },
+  "reloadTab": {
+    "message": "Genindlæsning"
+  },
+  "reloadHint": {
+    "message": "Genindlæsning kan være nødvendig for medier, der allerede var blokeret eller indlæst."
+  },
+  "unknownSite": {
+    "message": "Ukendt sted"
+  },
+  "statusBlocking": {
+    "message": "Blokering"
+  },
+  "statusAllowed": {
+    "message": "Tilladt"
+  },
+  "couldNotLoadSettings": {
+    "message": "Kunne ikke indlæse indstillinger"
+  },
+  "notAWebsite": {
+    "message": "Ikke en hjemmeside"
+  },
+  "statusNotApplicable": {
+    "message": "Ikke tilgængeligt"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock kan ikke konfigurere browser-, udvidelses- eller andre beskyttede sider."
+  },
+  "selectUseGlobal": {
+    "message": "Brug global"
+  },
+  "selectBlockHere": {
+    "message": "Blokér her"
+  },
+  "selectAllowHere": {
+    "message": "Tillad her"
+  },
+  "summaryAllowed": {
+    "message": "Dette site er tilladt. MotionBlock blokerer ikke medier her."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktiv her, men ingen mediekategorier er i øjeblikket blokeret."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blokerer $FEATURES$ på dette site.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Alle MotionBlock regler er forkerte for dette site."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Dette site bruger sine egne MotionBlock indstillinger."
+  },
+  "siteRuleOverrides": {
+    "message": "Dette site følger global status med mediespecifikke overstyringer."
+  },
+  "siteRuleDefaults": {
+    "message": "Dette site følger dine globale standardindstillinger."
+  },
+  "featureMetaInactive": {
+    "message": "Inaktiv mens siden er tilladt"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Overstyring: blokering"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Override: tilladt"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: blokering"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globalt: tilladt"
+  },
+  "optionsIntro": {
+    "message": "Globale mediestandardindstillinger og præferencer pr. site."
+  },
+  "extensionActive": {
+    "message": "Udvidelse aktiv"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globale misligholdelser"
+  },
+  "globalDefaultsIntro": {
+    "message": "Start med GIFs, GIF-lignende video, og autoplay. Brug kun brede blokeringer, når et site har brug for strengere mediekontrol."
+  },
+  "restoreRecommended": {
+    "message": "Anbefalet genopretning"
+  },
+  "blockedMediaDisplay": {
+    "message": "Blokeret medievisning"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompakt pladsholder"
+  },
+  "replacementHide": {
+    "message": "Skjul-elementet"
+  },
+  "interfaceTheme": {
+    "message": "Interfacetema"
+  },
+  "themeSystem": {
+    "message": "System"
+  },
+  "themeLight": {
+    "message": "Lys"
+  },
+  "themeDark": {
+    "message": "Mørk"
+  },
+  "revealControlsTitle": {
+    "message": "Afsløringsknapper for blokerede medier"
+  },
+  "revealControlsDescription": {
+    "message": "Vis klik-for-at-afspil/vis-knapper på blokerede medier. Slået fra som standard, fordi nogle sider genbruger skjulte medieoverflader."
+  },
+  "diagnosticsTitle": {
+    "message": "Avanceret diagnostik"
+  },
+  "diagnosticsDescription": {
+    "message": "Vis en kopierbar diagnoselog pr. tab i popup'en, mens du genskaber et blokeringsproblem."
+  },
+  "websitePreferencesHeading": {
+    "message": "Hjemmesidepræferencer"
+  },
+  "websitePreferencesIntro": {
+    "message": "Brug præcise værtsnavne som reddit.com, discord.com eller news.example.com."
+  },
+  "addSite": {
+    "message": "Tilføj side"
+  },
+  "backupHeading": {
+    "message": "Backup"
+  },
+  "backupIntro": {
+    "message": "Indstillinger gemmes i Chrome synkroniseringslager. Hvis Chrome synkronisering er aktiveret for udvidelser, kan de følge din Chrome profil."
+  },
+  "exportJson": {
+    "message": "Eksport JSON"
+  },
+  "importFile": {
+    "message": "Importer fil"
+  },
+  "applyPastedJson": {
+    "message": "Ansøg med indklistret JSON"
+  },
+  "refreshFromSync": {
+    "message": "Opfrisk fra sync"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Eksportforhåndsvisning vises her. Du kan også indsætte en MotionBlock JSON backup og anvende den."
+  },
+  "globalStatusSaved": {
+    "message": "Global status gemt."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globale standardindstillinger gemt."
+  },
+  "displayModeSaved": {
+    "message": "Displaytilstand gemt."
+  },
+  "themeSaved": {
+    "message": "Temaet gemt."
+  },
+  "revealSettingSaved": {
+    "message": "Indstilling af afsløringsknappen gemt."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostikindstilling gemt."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Anbefalede standardindstillinger genoprettet."
+  },
+  "enterValidHostname": {
+    "message": "Indtast et gyldigt værtsnavn."
+  },
+  "siteAdded": {
+    "message": "Side tilføjet."
+  },
+  "siteRuleSaved": {
+    "message": "Sideregel gemt."
+  },
+  "siteRemoved": {
+    "message": "Siden fjernet."
+  },
+  "settingsExported": {
+    "message": "Indstillinger eksporteret til en JSON fil."
+  },
+  "settingsImportedFromFile": {
+    "message": "Indstillinger importeret fra fil."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Indstillinger importeret fra indsat JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Indstillinger opdateret fra Chrome synkronisering."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Kunne ikke indlæse indstillingerne."
+  },
+  "defaultOn": {
+    "message": "Default on"
+  },
+  "defaultOff": {
+    "message": "Default off"
+  },
+  "noWebsitePreferences": {
+    "message": "Ingen hjemmesidepræferencer endnu."
+  },
+  "removeSite": {
+    "message": "Fjern"
+  },
+  "siteTableSite": {
+    "message": "Stedet"
+  },
+  "siteTableActive": {
+    "message": "Aktiv"
+  },
+  "selectInherit": {
+    "message": "Arve"
+  },
+  "selectBlock": {
+    "message": "Blok"
+  },
+  "selectAllow": {
+    "message": "Tillad"
+  },
+  "selectOn": {
+    "message": "På"
+  },
+  "selectOff": {
+    "message": "Slukket"
+  },
+  "saveFailed": {
+    "message": "Gem fejlede."
+  },
+  "importFailed": {
+    "message": "Import mislykkedes: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Vælg en JSON fil eller indsæt en backup først."
+  },
+  "invalidJson": {
+    "message": "Ugyldig JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Dette ligner ikke en MotionBlock indstillingsbackup."
+  },
+  "errorMissingMessageType": {
+    "message": "Manglende beskedtype."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Manglende værtsnavn på siden."
+  },
+  "errorUnknownMessageType": {
+    "message": "Ukendt beskedtype."
+  },
+  "featureGifsLabel": {
+    "message": "GIF billeder"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Erstat GIF billedelementer på siden, mens du lader den lille grænseflade GIFs være i fred."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV og GIF-lignende video-URL'er"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Bloker .gifv URL'er og videoelementer, der opfører sig som loopende GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-mønstre"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokér .webp-billed-URL'er. Slukket som standard, fordi mange WebP billeder ikke er animerede."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Autoplay og looping video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Autoplay"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Sæt autoplay-video på pause og fjern muted, loopende video, der bruges som animation."
+  },
+  "featureVideoLabel": {
+    "message": "Kun video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Blokér HTML5 video- og almindelige videofilanmodninger."
+  },
+  "featureAudioLabel": {
+    "message": "Lyd"
+  },
+  "featureAudioShortLabel": {
+    "message": "Lyd"
+  },
+  "featureAudioDescription": {
+    "message": "Blokér lydelementer og almindelige lydfilanmodninger."
+  },
+  "featureImagesLabel": {
+    "message": "Alle billeder"
+  },
+  "featureImagesShortLabel": {
+    "message": "Billeder"
+  },
+  "featureImagesDescription": {
+    "message": "Erstat billedelementer på siden. Brug tilladelsesregler pr. site for billedtunge sider."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji-tekst og emoji-billeder"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Fjern emoji-tegn og almindelige emoji-billedrenderere. Slukket som standard, fordi det ændrer teksten."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animation og overgange"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Deaktiver CSS animationer, overgange og glidende scrolling."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Bevægelsesblokering"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Anbefalede standardindstillinger for GIFs, GIF-lignende videoer, autoplay og sidebevægelse."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Brede medieblokeringer"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Power-user styrer billeder, video, lyd, WebP URL'er og emoji. Disse kan ændre eller ødelægge nogle sider."
+  },
+  "contentShowBlockedImage": {
+    "message": "Vis blokeret billede"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Afspil blokeret lyd"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Afspil blokeret video"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Afspil blokeret medie"
+  },
+  "contentBlockedByTitle": {
+    "message": "Blokeret af MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Blokerede $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-lignende medier"
+  },
+  "contentReasonVideo": {
+    "message": "video"
+  },
+  "contentReasonAudio": {
+    "message": "Lyd"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "loopende video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Autoplay-video"
+  },
+  "contentReasonImage": {
+    "message": "Billede"
+  },
+  "contentReasonMedia": {
+    "message": "Medier"
+  }
+}

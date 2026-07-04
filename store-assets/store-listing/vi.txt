@@ -1,0 +1,31 @@
+Chặn GIFs gây mất tập trung, GIFV, tự động phát video, xem trước di chuột và chuyển động trang trước khi chúng cản trở bạn.
+
+Sử dụng MotionBlock để dừng:
+
+Lặp lại GIF hình ảnh.
+GIFV liên kết.
+Các video tắt tiếng ngắn được sử dụng như GIFs.
+Tự động phát video và di chuột trướcview.
+Các mẫu URL WebP động tùy chọn.
+Video, âm thanh, hình ảnh, biểu tượng cảm xúc và chuyển động CSS tùy chọn.
+
+MotionBlock được xây dựng dựa trên kiểm soát trên mỗi trang web. Giữ mặc định chung thận trọng, sau đó cho phép hoặc chặn các loại phương tiện cụ thể trên các trang web riêng lẻ từ cửa sổ bật lên hoặc trang tùy chọn. Cài đặt vẫn nằm trong Chrome lưu trữ đồng bộ tiện ích mở rộng và có thể đồng bộ hóa qua Chrome nếu người dùng đã bật đồng bộ hóa tiện ích.
+
+Sử dụng phổ biến:
+
+Ngừng ảnh động gây mất tập trung trong khi đọc.
+Giảm nhiễu video tự động phát.
+Tiết kiệm băng thông từ các phương tiện không cần thiết.
+Chặn bản xem trước di chuột kiểu YouTube.
+Bình tĩnh Reddit, Giphy, nguồn cấp dữ liệu xã hội và trang tin tức chuyển đổi GIFs thành video ngắn.
+Cho phép các trang web nặng hình ảnh trong khi chặn chuyển động ở nơi khác.
+Nhanh chóng cho phép phương tiện trên các trang web cần nó.
+
+Cửa sổ bật lên kiểm soát trang web hiện tại. Trang tùy chọn quản lý mặc định chung, tùy chọn cho mỗi trang web, nhập/xuất JSON sao lưu, hiển thị phương tiện bị chặn, nút hiển thị tùy chọn và giao diện người dùng sáng/tối/hệ thống.
+
+Chrome không cho phép các tiện ích mở rộng sửa đổi các trang nội bộ của trình duyệt, Cửa hàng trực tuyến Chrome hoặc một số trang được bảo vệ. Nếu phương tiện vẫn hiển thị sau khi cài đặt hoặc thay đổi cài đặt, hãy tải lại trang.
+
+MotionBlock không thu thập phân tích, gửi dữ liệu duyệt web đến máy chủ hoặc sử dụng danh sách quy tắc từ xa.
+
+Mã nguồn mở theo giấy phép GPL-3.0:
+https://github.com/molodchyk/MotionBlock

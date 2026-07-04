@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF блокировщик и стопер анимации"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Остановите GIFs, GIFV, автовоспроизведение видео, превью при наведении курсора и отвлекающие движения с помощью управления на каждом сайте."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "Настройки MotionBlock"
+  },
+  "siteLoading": {
+    "message": "Место загрузки..."
+  },
+  "optionsButton": {
+    "message": "Настройки"
+  },
+  "statusOnInitial": {
+    "message": "На"
+  },
+  "checkingActiveRules": {
+    "message": "Проверка активных правил..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ заблокирована",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Блокировать движение здесь"
+  },
+  "allowThisSite": {
+    "message": "Разрешить этот сайт"
+  },
+  "siteMode": {
+    "message": "Режим сайта"
+  },
+  "followGlobalDefaults": {
+    "message": "Следуйте глобальным дефолтам"
+  },
+  "blockOnThisSite": {
+    "message": "Блокировка на этом сайте"
+  },
+  "allowThisSiteOption": {
+    "message": "Разрешить этот сайт"
+  },
+  "siteMediaControls": {
+    "message": "Управление медиа сайта"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Диагностика"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock лог диагностики"
+  },
+  "copyDiagnostics": {
+    "message": "Скопировать журнал"
+  },
+  "refreshDiagnostics": {
+    "message": "Обновить"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "Событий диагностики: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Пока диагностики нет. Перезагрузите эту вкладку, воспроизведите проблему, затем обновите панель."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Диагностика обновлена."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Не удалось обновить диагностику."
+  },
+  "diagnosticsCopied": {
+    "message": "Диагностика скопирована."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Не удалось скопировать диагностику."
+  },
+  "resetSite": {
+    "message": "Сбросить сайт"
+  },
+  "reloadTab": {
+    "message": "Перезагрузить"
+  },
+  "reloadHint": {
+    "message": "Перезагрузка может потребоваться для уже заблокированных или загруженных носителей."
+  },
+  "unknownSite": {
+    "message": "Неизвестное место"
+  },
+  "statusBlocking": {
+    "message": "Блокировка"
+  },
+  "statusAllowed": {
+    "message": "Разрешено"
+  },
+  "couldNotLoadSettings": {
+    "message": "Не удалось загрузить настройки"
+  },
+  "notAWebsite": {
+    "message": "Это не сайт"
+  },
+  "statusNotApplicable": {
+    "message": "Н/Д"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock не может настроить браузер, расширение или другие защищённые страницы."
+  },
+  "selectUseGlobal": {
+    "message": "Глобальные настройки"
+  },
+  "selectBlockHere": {
+    "message": "Блокировать здесь"
+  },
+  "selectAllowHere": {
+    "message": "Разрешить здесь"
+  },
+  "summaryAllowed": {
+    "message": "Этот сайт разрешен. MotionBlock не блокирует медиа здесь."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Активен здесь, но медиа-категории сейчас не заблокированы."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Блокирую $FEATURES$ на этом сайте.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Все MotionBlock правила для этого сайта отменены."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Этот сайт использует собственные MotionBlock настройки."
+  },
+  "siteRuleOverrides": {
+    "message": "Этот сайт придерживается глобального статуса с медиа-специфическими ограничениями."
+  },
+  "siteRuleDefaults": {
+    "message": "Этот сайт следует вашим глобальным стандартам."
+  },
+  "featureMetaInactive": {
+    "message": "Неактивен, пока объект разрешен"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Оверрайд: блокировка"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Отмена: разрешено"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Глобальное: блокировка"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Глобально: разрешено"
+  },
+  "optionsIntro": {
+    "message": "Глобальные медиа-настройки по умолчанию и настройки по сайту."
+  },
+  "extensionActive": {
+    "message": "Активное расширение"
+  },
+  "globalDefaultsHeading": {
+    "message": "Глобальные дефолты"
+  },
+  "globalDefaultsIntro": {
+    "message": "Начните с GIFs, видео, похожего на GIF, и автовоспроизведения. Используйте широкие блокировщики только тогда, когда сайту нужен более строгий контроль над медиа."
+  },
+  "restoreRecommended": {
+    "message": "Рекомендуется восстановление"
+  },
+  "blockedMediaDisplay": {
+    "message": "Блокированное медиа-отображение"
+  },
+  "replacementPlaceholder": {
+    "message": "Компактный заполнитель"
+  },
+  "replacementHide": {
+    "message": "Элемент скрытия"
+  },
+  "interfaceTheme": {
+    "message": "Тема интерфейса"
+  },
+  "themeSystem": {
+    "message": "Система"
+  },
+  "themeLight": {
+    "message": "Свет"
+  },
+  "themeDark": {
+    "message": "Тёмная"
+  },
+  "revealControlsTitle": {
+    "message": "Кнопки раскрытия для заблокированных медиа"
+  },
+  "revealControlsDescription": {
+    "message": "Показывайте кнопки «кликать, чтобы воспроизойти» и показать на заблокированных носителях. По умолчанию это не так, потому что некоторые сайты повторно используют скрытые медиа-поверхности."
+  },
+  "diagnosticsTitle": {
+    "message": "Продвинутая диагностика"
+  },
+  "diagnosticsDescription": {
+    "message": "Показывайте в всплывающем окне копируемый диагностический журнал для каждой вкладки, пока воспроизводите проблему блокировки."
+  },
+  "websitePreferencesHeading": {
+    "message": "Предпочтения сайта"
+  },
+  "websitePreferencesIntro": {
+    "message": "Используйте точные доменные имена, например reddit.com, discord.com или news.example.com."
+  },
+  "addSite": {
+    "message": "Добавить сайт"
+  },
+  "backupHeading": {
+    "message": "Резервное копие"
+  },
+  "backupIntro": {
+    "message": "Настройки хранятся в хранилище Chrome синхронизации. Если Chrome синхронизация включена для расширений, они могут следить за вашим профилем Chrome."
+  },
+  "exportJson": {
+    "message": "Экспорт JSON"
+  },
+  "importFile": {
+    "message": "Импортный файл"
+  },
+  "applyPastedJson": {
+    "message": "Нанесите вставленные JSON"
+  },
+  "refreshFromSync": {
+    "message": "Обновить из синхронизации"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Превью экспорта доступен здесь. Вы также можете вставить MotionBlock JSON резервную копию и применить её."
+  },
+  "globalStatusSaved": {
+    "message": "Глобальный статус сохранен."
+  },
+  "globalDefaultsSaved": {
+    "message": "Глобальные дефолты сохранены."
+  },
+  "displayModeSaved": {
+    "message": "Режим отображения сохранен."
+  },
+  "themeSaved": {
+    "message": "Тема сохранена."
+  },
+  "revealSettingSaved": {
+    "message": "Настройка кнопки раскрытия сохранена."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Параметры диагностики сохранены."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Рекомендованные настройки по умолчанию восстановлены."
+  },
+  "enterValidHostname": {
+    "message": "Введите действительное имя хоста."
+  },
+  "siteAdded": {
+    "message": "Добавлен сайт."
+  },
+  "siteRuleSaved": {
+    "message": "Правило сайта сохранено."
+  },
+  "siteRemoved": {
+    "message": "Сайт удален."
+  },
+  "settingsExported": {
+    "message": "Настройки экспортированы в JSON файл."
+  },
+  "settingsImportedFromFile": {
+    "message": "Настройки импортированы из файла."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Настройки импортированы из вставленных JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Настройки обновлены после Chrome синхронизации."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Не удалось загрузить настройки."
+  },
+  "defaultOn": {
+    "message": "По умолчанию включён"
+  },
+  "defaultOff": {
+    "message": "По умолчанию выключен"
+  },
+  "noWebsitePreferences": {
+    "message": "Пока нет настроек на сайте."
+  },
+  "removeSite": {
+    "message": "Удалить"
+  },
+  "siteTableSite": {
+    "message": "Место"
+  },
+  "siteTableActive": {
+    "message": "Активные"
+  },
+  "selectInherit": {
+    "message": "Наследование"
+  },
+  "selectBlock": {
+    "message": "Блокировать"
+  },
+  "selectAllow": {
+    "message": "Разрешить"
+  },
+  "selectOn": {
+    "message": "На"
+  },
+  "selectOff": {
+    "message": "Выключение"
+  },
+  "saveFailed": {
+    "message": "Сохранение не удалось."
+  },
+  "importFailed": {
+    "message": "Импорт неудачный: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Выберите JSON файл или сначала вставьте резервную копию."
+  },
+  "invalidJson": {
+    "message": "недействительный JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Это не похоже на резервную копию настроек MotionBlock."
+  },
+  "errorMissingMessageType": {
+    "message": "Отсутствующий тип сообщения."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Отсутствует хост сайта."
+  },
+  "errorUnknownMessageType": {
+    "message": "Тип сообщения неизвестен."
+  },
+  "featureGifsLabel": {
+    "message": "GIF изображения"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Замените GIF элементы изображения на странице, оставив при этом маленький интерфейс GIFs без изменений."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV и GIF-похожие URL-адреса видео"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Блокируйте URL .gifv и видеоэлементы, которые ведут себя как цикл GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-шаблоны"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Блокируйте URL изображений .webp. По умолчанию это неправильно, потому что многие WebP изображения не анимированы."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Автовоспроизведение и повторение видео"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Автовоспроизведение"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Поставьте автозапуск видео на паузу и уберите приглушённое повторяющееся видео, используемое как анимация."
+  },
+  "featureVideoLabel": {
+    "message": "Все видео"
+  },
+  "featureVideoShortLabel": {
+    "message": "Видео"
+  },
+  "featureVideoDescription": {
+    "message": "Заблокируйте HTML5 видео и распространённые запросы на видеофайлы."
+  },
+  "featureAudioLabel": {
+    "message": "Аудио"
+  },
+  "featureAudioShortLabel": {
+    "message": "Аудио"
+  },
+  "featureAudioDescription": {
+    "message": "Блокируйте аудиоэлементы и распространённые запросы на аудиофайлы."
+  },
+  "featureImagesLabel": {
+    "message": "Все изображения"
+  },
+  "featureImagesShortLabel": {
+    "message": "Изображения"
+  },
+  "featureImagesDescription": {
+    "message": "Заменить элементы изображения на странице. Используйте правила разрешения по сайту для сайтов с большим количеством изображений."
+  },
+  "featureEmojiLabel": {
+    "message": "Текст эмодзи и изображения эмодзи"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Эмодзи"
+  },
+  "featureEmojiDescription": {
+    "message": "Уберите символы эмодзи и распространённые рендереры смайликов. По умолчанию это выключено, потому что текст меняется."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS анимации и переходы"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Отключите CSS анимации, переходы и плавную прокрутку."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Блокировка движения"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Рекомендуемые настройки по умолчанию для GIFs, видео, похожих на GIF, автовоспроизведения и движения страницы."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Расширенные медиаблокировки"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Управление для продвинутых пользователей для изображений, видео, аудио, URL WebP и эмодзи. Они могут изменить или повредить некоторые сайты."
+  },
+  "contentShowBlockedImage": {
+    "message": "Показать заблокированное изображение"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Воспроизвести заблокированный аудио"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Воспроизвести заблокированное видео"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Воспроизвести заблокированные медиа"
+  },
+  "contentBlockedByTitle": {
+    "message": "Заблокировано MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Заблокировано $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Медиа, похожие на GIF,"
+  },
+  "contentReasonVideo": {
+    "message": "Видео"
+  },
+  "contentReasonAudio": {
+    "message": "Аудио"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Видео с петлями"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Автовоспроизведение видео"
+  },
+  "contentReasonImage": {
+    "message": "Изображение"
+  },
+  "contentReasonMedia": {
+    "message": "СМИ"
+  }
+}

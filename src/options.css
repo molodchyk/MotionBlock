@@ -28,10 +28,15 @@ textarea {
 
 .top,
 .section-heading {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   gap: 18px;
   justify-content: space-between;
+}
+
+.top > div,
+.section-heading > div {
+  min-width: 0;
 }
 
 .compact-heading {
@@ -58,6 +63,7 @@ h2 {
 p {
   color: #647069;
   font-size: 14px;
+  line-height: 1.4;
   margin-top: 4px;
 }
 
@@ -185,6 +191,7 @@ h3 {
 
 .add-site {
   display: flex;
+  flex: 0 0 auto;
   gap: 8px;
 }
 
@@ -230,7 +237,7 @@ button:hover {
 
 table {
   border-collapse: collapse;
-  min-width: 980px;
+  min-width: 1180px;
   width: 100%;
 }
 
@@ -241,6 +248,7 @@ td {
   padding: 8px 6px;
   text-align: left;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 th {
@@ -248,6 +256,17 @@ th {
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: right;
+}
+
+html[dir="rtl"] .add-site,
+html[dir="rtl"] .replacement {
+  direction: rtl;
 }
 
 td.site-host {
@@ -256,8 +275,9 @@ td.site-host {
 }
 
 td select {
-  max-width: 118px;
-  width: 100%;
+  max-width: none;
+  min-width: 124px;
+  width: max-content;
 }
 
 .backup-actions {

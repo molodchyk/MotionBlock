@@ -15,9 +15,7 @@ if (-not (Test-Path -LiteralPath $Dist)) {
 $Manifest = Get-Content -LiteralPath (Join-Path $Root "manifest.json") -Raw | ConvertFrom-Json
 $ZipPath = Join-Path $Dist ("motionblock-" + $Manifest.version + ".zip")
 
-if (Test-Path -LiteralPath $ZipPath) {
-  Remove-Item -LiteralPath $ZipPath -Force
-}
+Get-ChildItem -LiteralPath $Dist -Filter "motionblock-*.zip" -File | Remove-Item -Force
 
 $Temp = Join-Path $Dist ("motionblock-build-" + [guid]::NewGuid().ToString("n"))
 New-Item -ItemType Directory -Path $Temp | Out-Null
@@ -42,7 +40,11 @@ function Copy-PackageItem {
 try {
   $PackageInputs = @(
     "manifest.json",
+    "_locales",
     "assets\icons",
+    "src\app",
+    "src\features",
+    "src\platform",
     "src\background.js",
     "src\content.css",
     "src\content.js",

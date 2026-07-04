@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF ბლოკერი და ანიმაციის საცობი"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "შეაჩერეთ GIFs, GIFV, ვიდეოს ავტომატური დაკვრა, გადახედეთ გადახედვა და ყურადღების გადატანა თითო საიტის კონტროლით."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock პარამეტრები"
+  },
+  "siteLoading": {
+    "message": "საიტის ჩატვირთვა..."
+  },
+  "optionsButton": {
+    "message": "პარამეტრები"
+  },
+  "statusOnInitial": {
+    "message": "ჩართულია"
+  },
+  "checkingActiveRules": {
+    "message": "აქტიური წესების შემოწმება..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ დაბლოკილია",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "დაბლოკეთ მოძრაობა აქ"
+  },
+  "allowThisSite": {
+    "message": "ამ საიტის დაშვება"
+  },
+  "siteMode": {
+    "message": "საიტის რეჟიმი"
+  },
+  "followGlobalDefaults": {
+    "message": "მიჰყევით გლობალურ ნაგულისხმევ წლებს"
+  },
+  "blockOnThisSite": {
+    "message": "დაბლოკეთ ამ საიტზე"
+  },
+  "allowThisSiteOption": {
+    "message": "ამ საიტის დაშვება"
+  },
+  "siteMediaControls": {
+    "message": "საიტის მედია კონტროლი"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "დიაგნოსტიკა"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock დიაგნოსტიკის ჟურნალი"
+  },
+  "copyDiagnostics": {
+    "message": "ჟურნალის კოპირება"
+  },
+  "refreshDiagnostics": {
+    "message": "განახლება"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ დიაგნოსტიკური მოვლენები დაფიქსირდა.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "დიაგნოსტიკა ჯერ არ არის. გადატვირთეთ ეს ჩანართი, აღადგინეთ პრობლემა და შემდეგ განაახლეთ ეს პანელი."
+  },
+  "diagnosticsRefreshed": {
+    "message": "დიაგნოსტიკა განახლდა."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "დიაგნოსტიკის განახლება ვერ მოხერხდა."
+  },
+  "diagnosticsCopied": {
+    "message": "დიაგნოსტიკა კოპირებულია."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "დიაგნოსტიკის კოპირება ვერ მოხერხდა."
+  },
+  "resetSite": {
+    "message": "საიტის გადატვირთვა"
+  },
+  "reloadTab": {
+    "message": "გადატვირთვა"
+  },
+  "reloadHint": {
+    "message": "გადატვირთვა შეიძლება საჭირო გახდეს უკვე დაბლოკილი ან ჩატვირთული მედიისთვის."
+  },
+  "unknownSite": {
+    "message": "უცნობი საიტი"
+  },
+  "statusBlocking": {
+    "message": "დაბლოკვა"
+  },
+  "statusAllowed": {
+    "message": "ნებადართულია"
+  },
+  "couldNotLoadSettings": {
+    "message": "პარამეტრების ჩატვირთვა ვერ მოხერხდა"
+  },
+  "notAWebsite": {
+    "message": "არ არის ვებსაიტი"
+  },
+  "statusNotApplicable": {
+    "message": "N / A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock არ შეუძლია ბრაუზერის, გაფართოების ან სხვა დაცული გვერდების კონფიგურაცია."
+  },
+  "selectUseGlobal": {
+    "message": "გამოიყენეთ გლობალური"
+  },
+  "selectBlockHere": {
+    "message": "დაბლოკეთ აქ"
+  },
+  "selectAllowHere": {
+    "message": "ნება დართეთ აქ"
+  },
+  "summaryAllowed": {
+    "message": "ეს საიტი ნებადართულია. MotionBlock აქ მედიას არ ბლოკავს."
+  },
+  "summaryActiveNoCategories": {
+    "message": "აქ აქტიურია, მაგრამ ამჟამად არცერთი მედია კატეგორია არ არის დაბლოკილი."
+  },
+  "summaryBlockingFeatures": {
+    "message": "დაბლოკვა $FEATURES$ ამ საიტზე.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "ყველა MotionBlock წესი გამორთულია ამ საიტზე."
+  },
+  "siteRuleOwnSettings": {
+    "message": "ეს საიტი იყენებს საკუთარ MotionBlock პარამეტრებს."
+  },
+  "siteRuleOverrides": {
+    "message": "ეს საიტი მიჰყვება გლობალურ სტატუსს მედიის სპეციფიკური გადალახვით."
+  },
+  "siteRuleDefaults": {
+    "message": "ეს საიტი მიჰყვება თქვენს გლობალურ ნაგულისხმევებს."
+  },
+  "featureMetaInactive": {
+    "message": "უმოქმედოა, სანამ საიტი ნებადართულია"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "გადალახვა: დაბლოკვა"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "გადალახვა: ნებადართულია"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "გლობალური: დაბლოკვა"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "გლობალური: ნებადართულია"
+  },
+  "optionsIntro": {
+    "message": "გლობალური მედიის ნაგულისხმევი და თითო საიტის პრეფერენციები."
+  },
+  "extensionActive": {
+    "message": "გაფართოება აქტიურია"
+  },
+  "globalDefaultsHeading": {
+    "message": "გლობალური ნაგულისხმევი"
+  },
+  "globalDefaultsIntro": {
+    "message": "დაიწყეთ GIFs, GIF მსგავსი ვიდეოთი და ავტომატური დაკვრა. გამოიყენეთ ფართო ბლოკატორები მხოლოდ მაშინ, როდესაც საიტს სჭირდება მედიის უფრო მკაცრი კონტროლი."
+  },
+  "restoreRecommended": {
+    "message": "რეკომენდირებული აღდგენა"
+  },
+  "blockedMediaDisplay": {
+    "message": "დაბლოკილი მედიის ჩვენება"
+  },
+  "replacementPlaceholder": {
+    "message": "კომპაქტური ჩანაცვლება"
+  },
+  "replacementHide": {
+    "message": "ელემენტის დამალვა"
+  },
+  "interfaceTheme": {
+    "message": "ინტერფეისის თემა"
+  },
+  "themeSystem": {
+    "message": "სისტემა"
+  },
+  "themeLight": {
+    "message": "სინათლე"
+  },
+  "themeDark": {
+    "message": "მუქი"
+  },
+  "revealControlsTitle": {
+    "message": "დაბლოკილი მედიის ღილაკების გამოვლენა"
+  },
+  "revealControlsDescription": {
+    "message": "აჩვენეთ დაწკაპუნებით დასაკრავად/აჩვენეთ ღილაკები დაბლოკილ მედიაზე. ნაგულისხმევად გამორთულია, რადგან ზოგიერთი საიტი ხელახლა იყენებს ფარულ მედია ზედაპირებს."
+  },
+  "diagnosticsTitle": {
+    "message": "გაფართოებული დიაგნოსტიკა"
+  },
+  "diagnosticsDescription": {
+    "message": "აჩვენეთ კოპირებადი თითო ჩანართის დიაგნოსტიკური ჟურნალი ამომხტარ ფანჯარაში, სანამ დაბლოკვის პრობლემის რეპროდუცირებას ახდენთ."
+  },
+  "websitePreferencesHeading": {
+    "message": "ვებსაიტის პარამეტრები"
+  },
+  "websitePreferencesIntro": {
+    "message": "გამოიყენეთ ზუსტი ჰოსტის სახელები, როგორიცაა reddit.com, discord.com ან news.example.com."
+  },
+  "addSite": {
+    "message": "საიტის დამატება"
+  },
+  "backupHeading": {
+    "message": "სარეზერვო ასლი"
+  },
+  "backupIntro": {
+    "message": "პარამეტრები ინახება Chrome სინქრონიზაციის საცავში. თუ Chrome სინქრონიზაცია ჩართულია გაფართოებებისთვის, მათ შეუძლიათ მიჰყვენ თქვენს Chrome პროფილს."
+  },
+  "exportJson": {
+    "message": "ექსპორტის JSON"
+  },
+  "importFile": {
+    "message": "ფაილის იმპორტი"
+  },
+  "applyPastedJson": {
+    "message": "წაისვით ჩასმული JSON"
+  },
+  "refreshFromSync": {
+    "message": "განახლება სინქრონიზაციადან"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ექსპორტის გადახედვა გამოჩნდება აქ. თქვენ ასევე შეგიძლიათ ჩასვათ MotionBlock JSON სარეზერვო ასლი და გამოიყენოთ იგი."
+  },
+  "globalStatusSaved": {
+    "message": "გლობალური სტატუსი შენახულია."
+  },
+  "globalDefaultsSaved": {
+    "message": "გლობალური ნაგულისხმევები შენახულია."
+  },
+  "displayModeSaved": {
+    "message": "ეკრანის რეჟიმი შენახულია."
+  },
+  "themeSaved": {
+    "message": "თემა შენახულია."
+  },
+  "revealSettingSaved": {
+    "message": "შენახული ღილაკის პარამეტრის გამოვლენა."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "დიაგნოსტიკის პარამეტრი შენახულია."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "რეკომენდებული ნაგულისხმევი პარამეტრები აღდგენილია."
+  },
+  "enterValidHostname": {
+    "message": "შეიყვანეთ სწორი ჰოსტის სახელი."
+  },
+  "siteAdded": {
+    "message": "საიტი დამატებულია."
+  },
+  "siteRuleSaved": {
+    "message": "საიტის წესი შენახულია."
+  },
+  "siteRemoved": {
+    "message": "საიტი ამოღებულია."
+  },
+  "settingsExported": {
+    "message": "პარამეტრები ექსპორტირებულია JSON ფაილში."
+  },
+  "settingsImportedFromFile": {
+    "message": "პარამეტრები იმპორტირებულია ფაილიდან."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "პარამეტრები იმპორტირებულია ჩასმული JSON."
+  },
+  "settingsRefreshed": {
+    "message": "პარამეტრები განახლებულია Chrome სინქრონიზაციიდან."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "პარამეტრების ჩატვირთვა ვერ მოხერხდა."
+  },
+  "defaultOn": {
+    "message": "ნაგულისხმევად ჩართულია"
+  },
+  "defaultOff": {
+    "message": "ნაგულისხმევი გამორთულია"
+  },
+  "noWebsitePreferences": {
+    "message": "ვებსაიტის პრეფერენციები ჯერ არ არის."
+  },
+  "removeSite": {
+    "message": "ამოღება"
+  },
+  "siteTableSite": {
+    "message": "საიტი"
+  },
+  "siteTableActive": {
+    "message": "აქტიური"
+  },
+  "selectInherit": {
+    "message": "მემკვიდრეობა"
+  },
+  "selectBlock": {
+    "message": "ბლოკი"
+  },
+  "selectAllow": {
+    "message": "ნება დართეთ"
+  },
+  "selectOn": {
+    "message": "ჩართულია"
+  },
+  "selectOff": {
+    "message": "გამორთულია"
+  },
+  "saveFailed": {
+    "message": "შენახვა ჩაიშალა."
+  },
+  "importFailed": {
+    "message": "იმპორტი ჩაიშალა: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "ჯერ აირჩიეთ JSON ფაილი ან ჩასვით სარეზერვო ასლი."
+  },
+  "invalidJson": {
+    "message": "არასწორი JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "ეს არ ჰგავს MotionBlock პარამეტრების სარეზერვო ასლს."
+  },
+  "errorMissingMessageType": {
+    "message": "აკლია შეტყობინების ტიპი."
+  },
+  "errorMissingSiteHostname": {
+    "message": "დაკარგული საიტის ჰოსტის სახელი."
+  },
+  "errorUnknownMessageType": {
+    "message": "უცნობი შეტყობინების ტიპი."
+  },
+  "featureGifsLabel": {
+    "message": "GIF სურათი"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "შეცვალეთ სურათის GIF ელემენტი გვერდზე, ხოლო პატარა ინტერფეისის GIFs მარტო დატოვეთ."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV და GIF მსგავსი ვიდეოს URL-ები"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "დაბლოკეთ .gifv URL-ები და ვიდეო ელემენტები, რომლებიც იქცევიან მარყუჟის მსგავსად GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL შაბლონები"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "დაბლოკეთ .webp სურათის URL-ები. ნაგულისხმევად გამორთულია, რადგან ბევრი WebP სურათი არ არის ანიმაციური."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "ვიდეოს ავტომატური დაკვრა და მარყუჟი"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "ავტომატური დაკვრა"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "შეაჩერეთ ვიდეოს ავტომატური დაკვრა და ამოიღეთ მდუმარე მარყუჟის ვიდეო, რომელიც გამოიყენება ანიმაციის სახით."
+  },
+  "featureVideoLabel": {
+    "message": "ყველა ვიდეო"
+  },
+  "featureVideoShortLabel": {
+    "message": "ვიდეო"
+  },
+  "featureVideoDescription": {
+    "message": "დაბლოკეთ HTML5 ვიდეო და საერთო ვიდეო ფაილის მოთხოვნები."
+  },
+  "featureAudioLabel": {
+    "message": "აუდიო"
+  },
+  "featureAudioShortLabel": {
+    "message": "აუდიო"
+  },
+  "featureAudioDescription": {
+    "message": "დაბლოკეთ აუდიო ელემენტები და საერთო აუდიო ფაილის მოთხოვნები."
+  },
+  "featureImagesLabel": {
+    "message": "ყველა სურათი"
+  },
+  "featureImagesShortLabel": {
+    "message": "სურათები"
+  },
+  "featureImagesDescription": {
+    "message": "შეცვალეთ გამოსახულების ელემენტები გვერდზე. გამოიყენეთ თითო საიტის დაშვების წესები გამოსახულების დატვირთული საიტებისთვის."
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji ტექსტი და emoji სურათები"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ემოცია"
+  },
+  "featureEmojiDescription": {
+    "message": "წაშალეთ emoji სიმბოლოები და საერთო emoji გამოსახულების რენდერები. ნაგულისხმევად გამორთულია, რადგან ის ცვლის ტექსტს."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS ანიმაცია და გადასვლები"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "გამორთეთ CSS ანიმაციები, გადასვლები და გლუვი გადახვევა."
+  },
+  "featureGroupMotionLabel": {
+    "message": "მოძრაობის ბლოკირება"
+  },
+  "featureGroupMotionDescription": {
+    "message": "რეკომენდებულია ნაგულისხმევი პარამეტრები GIFs, GIF-ის მსგავსი ვიდეოებისთვის, ავტომატური დაკვრისთვის და გვერდის მოძრაობისთვის."
+  },
+  "featureGroupBroadLabel": {
+    "message": "ფართო მედია ბლოკატორები"
+  },
+  "featureGroupBroadDescription": {
+    "message": "ძლიერი მომხმარებლის კონტროლი სურათების, ვიდეოს, აუდიოს WebP URL-ებისა და emoji-ებისთვის. ამან შეიძლება შეცვალოს ან დაარღვიოს ზოგიერთი საიტი."
+  },
+  "contentShowBlockedImage": {
+    "message": "დაბლოკილი სურათის ჩვენება"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "დაბლოკილი აუდიოს დაკვრა"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "დაბლოკილი ვიდეოს დაკვრა"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "დაბლოკილი მედიის დაკვრა"
+  },
+  "contentBlockedByTitle": {
+    "message": "დაბლოკილია MotionBlock-ის მიერ: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "დაბლოკილია $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF მსგავსი მედია"
+  },
+  "contentReasonVideo": {
+    "message": "ვიდეო"
+  },
+  "contentReasonAudio": {
+    "message": "აუდიო"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "მარყუჟის ვიდეო"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "ვიდეოს ავტომატური დაკვრა"
+  },
+  "contentReasonImage": {
+    "message": "სურათი"
+  },
+  "contentReasonMedia": {
+    "message": "მედია"
+  }
+}

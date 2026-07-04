@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF արգելափակիչ & անիմացիոն կալան"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Դադարեցրեք GIFs, GIFV, ավտոմատ նվագարկեք տեսանյութը, շարժման դիտումները եւ շեղեք շարժումը յուրաքանչյուր կայքի կառավարմամբ:"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock-ի ընտրանքներ"
+  },
+  "siteLoading": {
+    "message": "Բեռնվում է կայքը..."
+  },
+  "optionsButton": {
+    "message": "Ընտրանքներ"
+  },
+  "statusOnInitial": {
+    "message": "On"
+  },
+  "checkingActiveRules": {
+    "message": "Ակտիվ կանոնների ստուգում..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ արգելափակված",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Արգելափակեք շարժումը այստեղ"
+  },
+  "allowThisSite": {
+    "message": "Թույլատրել այս կայքը"
+  },
+  "siteMode": {
+    "message": "Կայքի ռեժիմ"
+  },
+  "followGlobalDefaults": {
+    "message": "Հետեւել գլոբալ լռելյայններին"
+  },
+  "blockOnThisSite": {
+    "message": "Արգելափակել այս կայքում"
+  },
+  "allowThisSiteOption": {
+    "message": "Թույլատրել այս կայքը"
+  },
+  "siteMediaControls": {
+    "message": "Կայքի միջանքի կառավարիչներ"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Ախտորոշում"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock ախտորոշման մատյան"
+  },
+  "copyDiagnostics": {
+    "message": "Պատճենել մատյանը"
+  },
+  "refreshDiagnostics": {
+    "message": "Թարմացնել"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ ախտորոշիչ իրադարձությունները արձանագրված են:",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Ախտորոշում դեռ չկա։ Վերբեռնել այս ներդիրը, վերարտադրել խնդիրը, այնուհետեւ թարմացնել այս վահանակը:"
+  },
+  "diagnosticsRefreshed": {
+    "message": "Ախտորոշումը թարմացվել է։"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Անհնար է թարմացնել ախտորոշումը:"
+  },
+  "diagnosticsCopied": {
+    "message": "Ախտորոշումը պատճենվել է։"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Անհնար է պատճենել ախտորոշումը:"
+  },
+  "resetSite": {
+    "message": "Վերականգնել կայքը"
+  },
+  "reloadTab": {
+    "message": "Վերբեռնել"
+  },
+  "reloadHint": {
+    "message": "Հնարավոր է, որ վերաբեռնում անհրաժեշտ լինի արդեն արգելափակված կամ բեռնված միջանքի համար:"
+  },
+  "unknownSite": {
+    "message": "Անհայտ կայք"
+  },
+  "statusBlocking": {
+    "message": "Արգելափակում"
+  },
+  "statusAllowed": {
+    "message": "Թույլատրվում է"
+  },
+  "couldNotLoadSettings": {
+    "message": "Անհնար է բեռնել կայանքները"
+  },
+  "notAWebsite": {
+    "message": "Ոչ կայք"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock անհնար է կազմաձեւել զննարկիչը, ընդլայնումը կամ պաշտպանված այլ էջերը:"
+  },
+  "selectUseGlobal": {
+    "message": "Օգտագործել գլոբալ"
+  },
+  "selectBlockHere": {
+    "message": "Արգելափակել այստեղ"
+  },
+  "selectAllowHere": {
+    "message": "Թույլատրել այստեղ"
+  },
+  "summaryAllowed": {
+    "message": "Այս կայքը թույլատրված է: MotionBlock այստեղ մեդիա չի արգելափակում։"
+  },
+  "summaryActiveNoCategories": {
+    "message": "Ակտիվ է այստեղ, բայց ներկայումս ոչ մի մեդիա կատեգորիա արգելափակված չէ։"
+  },
+  "summaryBlockingFeatures": {
+    "message": "Արգելափակում $FEATURES$ կայքում",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Բոլոր MotionBlock կանոնները անջատված են այս կայքի համար:"
+  },
+  "siteRuleOwnSettings": {
+    "message": "Այս կայքը օգտագործում է իր MotionBlock կարգավորումները։"
+  },
+  "siteRuleOverrides": {
+    "message": "Այս կայքը հետեւում է գլոբալ կարգավիճակին՝ լրատվամիջոցներին հատուկ գերակշռումներով։"
+  },
+  "siteRuleDefaults": {
+    "message": "Այս կայքը հետեւում է ձեր գլոբալ կարգավորումներին."
+  },
+  "featureMetaInactive": {
+    "message": "Ոչ ակտիվ, քանի դեռ կայքը թույլատրված է"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Գերակշռել՝ արգելափակում"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Գերակշռել՝ թույլատրվում է"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Գլոբալ: արգելափակում"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Գլոբալ: թույլատրվում է"
+  },
+  "optionsIntro": {
+    "message": "Գլոբալ լրատվամիջոցների լռելյայնները եւ կայքի նախապատվությունները:"
+  },
+  "extensionActive": {
+    "message": "Ընդլայնումը ակտիվ է"
+  },
+  "globalDefaultsHeading": {
+    "message": "Գլոբալ լռելյայններ"
+  },
+  "globalDefaultsIntro": {
+    "message": "Սկսեք GIFs, GIF նման տեսանյութից եւ ավտոնվագարկումից: Օգտագործեք լայն արգելափակիչներ միայն այն դեպքում, երբ կայքը կարիք ունի ավելի խիստ լրատվամիջոցների վերահսկողության։"
+  },
+  "restoreRecommended": {
+    "message": "Վերականգնումը խորհուրդ է տրվում"
+  },
+  "blockedMediaDisplay": {
+    "message": "Արգելափակված միջանքի ցուցադրում"
+  },
+  "replacementPlaceholder": {
+    "message": "Կոմպակտ placeholder"
+  },
+  "replacementHide": {
+    "message": "Թաքցնել տարրը"
+  },
+  "interfaceTheme": {
+    "message": "Ինտերֆեյսի տեսաձեւ"
+  },
+  "themeSystem": {
+    "message": "Համակարգ"
+  },
+  "themeLight": {
+    "message": "Լույս"
+  },
+  "themeDark": {
+    "message": "Մութ"
+  },
+  "revealControlsTitle": {
+    "message": "Բացահայտել արգելափակված մեդիայի կոճակները"
+  },
+  "revealControlsDescription": {
+    "message": "Ցուցադրել սեղմեք խաղալու / ցուցադրել կոճակները արգելափակված լրատվամիջոցներում: Անջատված է լռելյայն, քանի որ որոշ կայքեր վերաօգտագործում են թաքնված միջանքի մակերեսները:"
+  },
+  "diagnosticsTitle": {
+    "message": "Ընդլայնված ախտորոշում"
+  },
+  "diagnosticsDescription": {
+    "message": "Ցույց տալ պատճենվող մեկ ներդիրի ախտորոշման մատյան, մինչ դուք վերարտադրում եք արգելափակման խնդիրը:"
+  },
+  "websitePreferencesHeading": {
+    "message": "Կայքի նախապատվություններ"
+  },
+  "websitePreferencesIntro": {
+    "message": "Օգտագործեք ճշգրիտ hostnames, ինչպիսիք են reddit.com, discord.com կամ news.example.com:"
+  },
+  "addSite": {
+    "message": "Ավելացնել կայք"
+  },
+  "backupHeading": {
+    "message": "Պահուստավորում"
+  },
+  "backupIntro": {
+    "message": "Կայանքները պահվում են Chrome հմժմ-ի պահեստում: Եթե Chrome համաժամումը միացված է ընդլայնումների համար, նրանք կարող են հետեւել ձեր Chrome պրոֆիլին:"
+  },
+  "exportJson": {
+    "message": "Արտահանել JSON"
+  },
+  "importFile": {
+    "message": "Ներմուծել նիշք"
+  },
+  "applyPastedJson": {
+    "message": "Դիմել կպցված JSON"
+  },
+  "refreshFromSync": {
+    "message": "Թարմացնել հմժմ-ից"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Արտահանման նախադիտումը ցուցադրվում է այստեղ: Դուք կարող եք նաեւ տեղադրել MotionBlock JSON կրկնօրինակում եւ կիրառել այն:"
+  },
+  "globalStatusSaved": {
+    "message": "Գլոբալ կարգավիճակը պահպանվել է:"
+  },
+  "globalDefaultsSaved": {
+    "message": "Գլոբալ լռելյայն պահվեց:"
+  },
+  "displayModeSaved": {
+    "message": "Ցուցադրման ռեժիմը պահպանված է:"
+  },
+  "themeSaved": {
+    "message": "Տեսաձեւը պահպանվել է։"
+  },
+  "revealSettingSaved": {
+    "message": "Բացահայտել կոճակի կարգավորումը պահպանված:"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Ախտորոշման կայանքը պահված է:"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Առաջարկվող լռելյայնները վերականգնվել են:"
+  },
+  "enterValidHostname": {
+    "message": "Մուտքագրեք վավեր հոսթանուն:"
+  },
+  "siteAdded": {
+    "message": "Կայքը ավելացվել է։"
+  },
+  "siteRuleSaved": {
+    "message": "Կայքի կանոնը պահպանված է:"
+  },
+  "siteRemoved": {
+    "message": "Կայքը հեռացվել է։"
+  },
+  "settingsExported": {
+    "message": "Կայանքներ արտահանված JSON նիշքում:"
+  },
+  "settingsImportedFromFile": {
+    "message": "Նիշքից ներմուծված կայանքներ:"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Տեղադրված կայանքները ներմուծված JSON:"
+  },
+  "settingsRefreshed": {
+    "message": "Կայանքները թարմացվել են Chrome հմժմ-ից:"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Անհնար է բեռնել կայանքները:"
+  },
+  "defaultOn": {
+    "message": "Լռելյայն"
+  },
+  "defaultOff": {
+    "message": "Լռելյայն անջատում"
+  },
+  "noWebsitePreferences": {
+    "message": "Կայքի նախապատվություններ դեռ չկան։"
+  },
+  "removeSite": {
+    "message": "Հեռացնել"
+  },
+  "siteTableSite": {
+    "message": "Կենսագրություն"
+  },
+  "siteTableActive": {
+    "message": "Ակտիվ"
+  },
+  "selectInherit": {
+    "message": "Ժառանգել"
+  },
+  "selectBlock": {
+    "message": "Արգելափակել"
+  },
+  "selectAllow": {
+    "message": "Թույլատրել"
+  },
+  "selectOn": {
+    "message": "On"
+  },
+  "selectOff": {
+    "message": "Անջատված"
+  },
+  "saveFailed": {
+    "message": "Պահպանումը ձախողվեց։"
+  },
+  "importFailed": {
+    "message": "Ներմուծումը ձախողվել է. $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Նախ ընտրեք JSON ֆայլը կամ տեղադրեք պահուստը:"
+  },
+  "invalidJson": {
+    "message": "անվավեր JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Սա նման չէ MotionBlock կարգավորումների պահուստին:"
+  },
+  "errorMissingMessageType": {
+    "message": "Բացակայում է ուղերձի տիպը:"
+  },
+  "errorMissingSiteHostname": {
+    "message": "Բացակայում է կայքի հոստի անունը:"
+  },
+  "errorUnknownMessageType": {
+    "message": "Անհայտ ուղերձի տիպ:"
+  },
+  "featureGifsLabel": {
+    "message": "GIF images"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Փոխարինեք GIF պատկերի տարրերը էջում՝ թողնելով փոքրիկ ինտերֆեյսը GIFs մենակ:"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV եւ GIF-անման վիդեո URL-ներ"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Արգելափակեք .gifv URL-ները եւ վիդեո տարրերը, որոնք վարվում են looping GIFs-ի պես։"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL կաղապարներ"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Արգելափակել .webp պատկերի URL-ները: Անջատված է լռելյայն, քանի որ շատ WebP պատկերներ անիմացիոն չեն:"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Ինքնանվագարկում եւ looping տեսանյութ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Ինքնանվագարկում"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Դադարեցնել ավտոմատ նվագարկման տեսանյութը եւ հեռացնել խեղաթյուրված looping տեսանյութը, որն օգտագործվում է որպես անիմացիա:"
+  },
+  "featureVideoLabel": {
+    "message": "Ամբողջ տեսանյութը"
+  },
+  "featureVideoShortLabel": {
+    "message": "Տեսանյութ"
+  },
+  "featureVideoDescription": {
+    "message": "Արգելափակել HTML5 վիդեո եւ ընդհանուր վիդեո ֆայլի հարցումները:"
+  },
+  "featureAudioLabel": {
+    "message": "Աուդիո"
+  },
+  "featureAudioShortLabel": {
+    "message": "Աուդիո"
+  },
+  "featureAudioDescription": {
+    "message": "Արգելափակել աուդիո տարրերը եւ ընդհանուր աուդիո ֆայլերի հարցումները:"
+  },
+  "featureImagesLabel": {
+    "message": "Բոլոր պատկերները"
+  },
+  "featureImagesShortLabel": {
+    "message": "Պատկերասրահ"
+  },
+  "featureImagesDescription": {
+    "message": "Փոխարինել պատկերի տարրերը էջում: Օգտագործեք յուրաքանչյուր կայքի թույլատրման կանոններ պատկերներով ծանր կայքերի համար։"
+  },
+  "featureEmojiLabel": {
+    "message": "Emoji տեքստ եւ էմոջի պատկերներ"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Էմոջի"
+  },
+  "featureEmojiDescription": {
+    "message": "Հեռացնել emoji կերպարներ եւ ընդհանուր emoji պատկերի renderers. Անջատված է լռելյայնայն, քանի որ այն փոխում է տեքստը:"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS անիմացիա եւ անցումներ"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Անջատեք CSS անիմացիաները, անցումները եւ սահուն ոլորումը:"
+  },
+  "featureGroupMotionLabel": {
+    "message": "Շարժման արգելափակում"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Առաջարկվող լռելյայններ GIFs, GIF նման տեսանյութերի, ինքնանվագարկման եւ էջի շարժման համար:"
+  },
+  "featureGroupBroadLabel": {
+    "message": "Լայն մեդիա արգելափակիչներ"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Հզոր օգտագործողի վերահսկողությունը պատկերների, վիդեո, աուդիո WebP URL-ների եւ էմոջիի համար։ Դրանք կարող են փոխել կամ կոտրել որոշ կայքեր։"
+  },
+  "contentShowBlockedImage": {
+    "message": "Ցուցադրել արգելափակված պատկերը"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Նվագարկել արգելափակված աուդիո"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Խաղալ արգելափակված տեսանյութը"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Նվագարկել արգելափակված մեդիան"
+  },
+  "contentBlockedByTitle": {
+    "message": "Արգելափակվել է MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Արգելափակված $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF նման մեդիա"
+  },
+  "contentReasonVideo": {
+    "message": "Տեսանյութ"
+  },
+  "contentReasonAudio": {
+    "message": "Աուդիո"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "looping տեսանյութ"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Ինքնախաղալ տեսանյութը"
+  },
+  "contentReasonImage": {
+    "message": "Պատկեր"
+  },
+  "contentReasonMedia": {
+    "message": "լրատվամիջոցներ"
+  }
+}

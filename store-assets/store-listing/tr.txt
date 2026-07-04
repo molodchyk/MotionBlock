@@ -1,0 +1,31 @@
+Dikkat dağıtan GIFs, GIFV, otomatik oynatma videosu, önizlemeler ve sayfa hareketini engelle, onlar yolunuza çıkmadan önce.
+
+Durdurmak için MotionBlock kullanın:
+
+Görüntüleri döngüye GIF.
+GIFV bağlantılar.
+Kısa, sessiz videolar kullanılıyor GIFs.
+Videoyu otomatik oynatmak ve havada göstermek önizlemeleri.
+İsteğe bağlı animasyonlu WebP URL desenleri.
+İsteğe bağlı video, ses, görsel, emoji ve CSS hareket.
+
+MotionBlock, her bir site kontrolü üzerine kuruludur. Muhafazakar küresel varsayılanları koruyun, ardından bireysel web sitelerinde açılır pencere veya seçenekler sayfasından belirli medya türlerine izin verin veya engelleyin. Ayarlar Chrome uzantı senkronizasyon depolamasında kalır ve kullanıcı uzantı senkronizasyonu etkinleştirilmişse Chrome üzerinden senkronize olabilir.
+
+Yaygın kullanımlar:
+
+Okurken dikkat dağıtıcı animasyonları bırakın.
+Otomatik oynatma video gürültüsünü azalt.
+Gereksiz medyadan bant genişliğini tasarruf edin.
+Block YouTube tarzı havada gösteren önizlemeler.
+Sakin Reddit, Giphy, sosyal yayınlar ve GIFs kısa videolara dönüştüren haber sayfaları.
+Görüntü ağırlıklı sitelere izin verin ve başka yerlerde hareketi engelleyin.
+Medyaya ihtiyaç duyan sitelere hızlıca izin verin.
+
+Açılır pencere mevcut siteyi kontrol eder. Seçenekler sayfası küresel varsayılanları, site başına tercihleri, JSON yedekleme/dışa aktarma, bloklanmış medya görüntülemesi, isteğe bağlı açılış butonları ve ışık/karanlık/sistem arayüzü temasını yönetir.
+
+Chrome, eklentilerin tarayıcı içi sayfaları, Chrome Web Mağazasını veya bazı korumalı sayfaları değiştirmesine izin vermez. Medya kurulumu veya ayarları değiştirdikten sonra hâlâ görünürse, sayfayı yeniden yükleyin.
+
+MotionBlock analiz toplamaz, tarayıcı verilerini sunucuya göndermez veya uzaktan kural listeleri kullanmaz.
+
+GPL-3.0 lisansı altında açık kaynak:
+https://github.com/molodchyk/MotionBlock

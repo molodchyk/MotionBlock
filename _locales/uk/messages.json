@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF блокер і зупинка анімації"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Зупиніть GIFs, GIFV, автозапуск відео, попередні перегляди курсора та відволікаючий рух за допомогою кожного сайту."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Варіанти"
+  },
+  "siteLoading": {
+    "message": "Місце завантаження..."
+  },
+  "optionsButton": {
+    "message": "Опції"
+  },
+  "statusOnInitial": {
+    "message": "На"
+  },
+  "checkingActiveRules": {
+    "message": "Перевірка активних правил..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ заблоковано",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Блок-моушн тут"
+  },
+  "allowThisSite": {
+    "message": "Дозвольте цей сайт"
+  },
+  "siteMode": {
+    "message": "Режим сайту"
+  },
+  "followGlobalDefaults": {
+    "message": "Дотримуйтесь глобальних дефолтів"
+  },
+  "blockOnThisSite": {
+    "message": "Блокувати на цьому сайті"
+  },
+  "allowThisSiteOption": {
+    "message": "Дозвольте цей сайт"
+  },
+  "siteMediaControls": {
+    "message": "Керування медіа на сайті"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Діагностика"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock журнал діагностики"
+  },
+  "copyDiagnostics": {
+    "message": "Копіювання журналу"
+  },
+  "refreshDiagnostics": {
+    "message": "Оновлення"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ діагностичні події зафіксовані.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Діагностика поки що немає. Перезавантажте цю вкладку, відтворіть проблему, а потім оновіть цю панель."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Діагностика оновлена."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Не вдалося оновити діагностику."
+  },
+  "diagnosticsCopied": {
+    "message": "Діагностика скопійована."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Не вдалося скопіювати діагностику."
+  },
+  "resetSite": {
+    "message": "Скидання сайту"
+  },
+  "reloadTab": {
+    "message": "Перезарядка"
+  },
+  "reloadHint": {
+    "message": "Перезавантаження може знадобитися для медіа, які вже були заблоковані або завантажені."
+  },
+  "unknownSite": {
+    "message": "Невідоме місце"
+  },
+  "statusBlocking": {
+    "message": "Блокування"
+  },
+  "statusAllowed": {
+    "message": "Дозволено"
+  },
+  "couldNotLoadSettings": {
+    "message": "Не вдалося завантажити налаштування"
+  },
+  "notAWebsite": {
+    "message": "Це не сайт"
+  },
+  "statusNotApplicable": {
+    "message": "Н/Д"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock не можу налаштувати браузер, розширення чи інші захищені сторінки."
+  },
+  "selectUseGlobal": {
+    "message": "Використання глобального використання"
+  },
+  "selectBlockHere": {
+    "message": "Блок тут"
+  },
+  "selectAllowHere": {
+    "message": "Дозволь тут"
+  },
+  "summaryAllowed": {
+    "message": "Цей сайт дозволений. MotionBlock не блокує медіа тут."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Активний тут, але наразі медіа-категорії не заблоковані."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Блокування $FEATURES$ на цьому сайті.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Всі MotionBlock правила для цього сайту скасовані."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Цей сайт використовує власні MotionBlock налаштування."
+  },
+  "siteRuleOverrides": {
+    "message": "Цей сайт має глобальний статус із медіаспецифічними перезначеннями."
+  },
+  "siteRuleDefaults": {
+    "message": "Цей сайт відповідає вашим глобальним налаштуванням за замовчуванням."
+  },
+  "featureMetaInactive": {
+    "message": "Неактивне, поки об'єкт дозволений"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Відключення: блокування"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Перевизначення (override): дозволено"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Глобальне: блокування"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Глобально: дозволено"
+  },
+  "optionsIntro": {
+    "message": "Глобальні медіа стандарти та налаштування для кожного сайту."
+  },
+  "extensionActive": {
+    "message": "Активне розширення"
+  },
+  "globalDefaultsHeading": {
+    "message": "Глобальні дефолти"
+  },
+  "globalDefaultsIntro": {
+    "message": "Почни з GIFs, відео, схожого на GIF, і автовідтворення. Використовуйте широкі блокувальники лише тоді, коли сайт потребує суворішого контролю медіа."
+  },
+  "restoreRecommended": {
+    "message": "Рекомендується відновлення"
+  },
+  "blockedMediaDisplay": {
+    "message": "Відображення заблокованих медіа"
+  },
+  "replacementPlaceholder": {
+    "message": "Компактна заміна"
+  },
+  "replacementHide": {
+    "message": "Елемент приховування"
+  },
+  "interfaceTheme": {
+    "message": "Тема інтерфейсу"
+  },
+  "themeSystem": {
+    "message": "Система"
+  },
+  "themeLight": {
+    "message": "Світло"
+  },
+  "themeDark": {
+    "message": "Темний"
+  },
+  "revealControlsTitle": {
+    "message": "Кнопки відкриття для заблокованих медіа"
+  },
+  "revealControlsDescription": {
+    "message": "Показуйте кнопки натискання для відтворення/показу на заблокованих носіях. За замовчуванням це неправильно, бо деякі сайти повторно використовують приховані медіа-поверхні."
+  },
+  "diagnosticsTitle": {
+    "message": "Розширена діагностика"
+  },
+  "diagnosticsDescription": {
+    "message": "Показуйте копіюваний діагностичний журнал для кожної вкладки у спливаючому окні, поки ви відтворюєте проблему блокування."
+  },
+  "websitePreferencesHeading": {
+    "message": "Налаштування вебсайту"
+  },
+  "websitePreferencesIntro": {
+    "message": "Використовуйте точні імена хостів, такі як reddit.com, discord.com або news.example.com."
+  },
+  "addSite": {
+    "message": "Додати сайт"
+  },
+  "backupHeading": {
+    "message": "Резервне копіювання"
+  },
+  "backupIntro": {
+    "message": "Налаштування зберігаються у Chrome синхронізованому сховищі. Якщо Chrome синхронізація увімкнена для розширень, вони можуть слідкувати за вашим профілем Chrome."
+  },
+  "exportJson": {
+    "message": "Експортні JSON"
+  },
+  "importFile": {
+    "message": "Імпортний файл"
+  },
+  "applyPastedJson": {
+    "message": "Нанесіть вставлені JSON"
+  },
+  "refreshFromSync": {
+    "message": "Оновлення з синхронізації"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Попередній перегляд експорту з'являється тут. Ви також можете вставити резервну копію MotionBlock JSON і застосувати її."
+  },
+  "globalStatusSaved": {
+    "message": "Глобальний статус збережено."
+  },
+  "globalDefaultsSaved": {
+    "message": "Глобальні дефолти збережені."
+  },
+  "displayModeSaved": {
+    "message": "Режим відображення збережено."
+  },
+  "themeSaved": {
+    "message": "Тема збережена."
+  },
+  "revealSettingSaved": {
+    "message": "Налаштування кнопки відкриття збережено."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Налаштування діагностики збережено."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Рекомендовані налаштування за замовчуванням відновлені."
+  },
+  "enterValidHostname": {
+    "message": "Введіть дійсне ім'я хоста."
+  },
+  "siteAdded": {
+    "message": "Додано сайт."
+  },
+  "siteRuleSaved": {
+    "message": "Правило сайту збережено."
+  },
+  "siteRemoved": {
+    "message": "Сайт видалено."
+  },
+  "settingsExported": {
+    "message": "Налаштування експортовані у JSON файл."
+  },
+  "settingsImportedFromFile": {
+    "message": "Налаштування імпортовані з файлу."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Налаштування імпортовані з вставленої JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Налаштування оновлені після Chrome синхронізації."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Не вдалося завантажити налаштування."
+  },
+  "defaultOn": {
+    "message": "За замовчуванням увімкнено"
+  },
+  "defaultOff": {
+    "message": "За замовчуванням вимкнено"
+  },
+  "noWebsitePreferences": {
+    "message": "Поки що немає налаштувань на сайті."
+  },
+  "removeSite": {
+    "message": "Видалити"
+  },
+  "siteTableSite": {
+    "message": "Місце"
+  },
+  "siteTableActive": {
+    "message": "Активна діяльність"
+  },
+  "selectInherit": {
+    "message": "Спадок"
+  },
+  "selectBlock": {
+    "message": "Блок"
+  },
+  "selectAllow": {
+    "message": "Дозволь"
+  },
+  "selectOn": {
+    "message": "На"
+  },
+  "selectOff": {
+    "message": "Вимкнено"
+  },
+  "saveFailed": {
+    "message": "Збереження не вдалося."
+  },
+  "importFailed": {
+    "message": "Імпорт не вдався: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Спочатку виберіть JSON файл або вставте резервну копію."
+  },
+  "invalidJson": {
+    "message": "недійсний JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Це не виглядає як резервне копіювання налаштувань MotionBlock."
+  },
+  "errorMissingMessageType": {
+    "message": "Відсутній тип повідомлення."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Відсутня назва хоста сайту."
+  },
+  "errorUnknownMessageType": {
+    "message": "Тип повідомлення невідомий."
+  },
+  "featureGifsLabel": {
+    "message": "GIF зображення"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Замініть GIF елементи зображень на сторінці, залишивши GIFs маленькому інтерфейсі."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV та GIF-подібні URL-адреси відео"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Блокуйте URL .gifv і відеоелементи, які поводяться як цикл GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-патерни"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Блокуйте URL зображень .webp. За замовчуванням це неправильно, бо багато WebP зображень не анімовані."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Автовідтворення та повторення відео"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Автовідтворення"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Призупини автовідтворення відео та видаліть приглушене відео, що повторюється як анімація."
+  },
+  "featureVideoLabel": {
+    "message": "Всі відео"
+  },
+  "featureVideoShortLabel": {
+    "message": "Відео"
+  },
+  "featureVideoDescription": {
+    "message": "Заблокуйте HTML5 відео та поширені запити на відеофайли."
+  },
+  "featureAudioLabel": {
+    "message": "Аудіо"
+  },
+  "featureAudioShortLabel": {
+    "message": "Аудіо"
+  },
+  "featureAudioDescription": {
+    "message": "Блокуйте аудіоелементи та поширені запити на аудіофайли."
+  },
+  "featureImagesLabel": {
+    "message": "Всі зображення"
+  },
+  "featureImagesShortLabel": {
+    "message": "Зображення"
+  },
+  "featureImagesDescription": {
+    "message": "Замініть елементи зображення на сторінці. Використовуйте правила дозволу для сайтів із великою кількістю зображень."
+  },
+  "featureEmojiLabel": {
+    "message": "Текст емодзі та зображення емодзі"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Емодзі"
+  },
+  "featureEmojiDescription": {
+    "message": "Видаліть символи емодзі та поширені рендерери зображень емодзі. За замовчуванням це вимкнено, бо змінюється текст."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS анімація та переходи"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Вимкніть CSS анімації, переходи та плавне прокручування."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Блокування руху"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Рекомендовані стандартні налаштування для GIFs, GIF-подібних відео, автовідтворення та руху сторінки."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Широкі медіаблокери"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Керування для досвідчених користувачів для зображень, відео, аудіо, WebP URL та емодзі. Вони можуть змінити або зламати деякі сайти."
+  },
+  "contentShowBlockedImage": {
+    "message": "Показати заблоковане зображення"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Відтворити заблоковане аудіо"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Відтворити заблоковане відео"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Відтворити заблоковані медіа"
+  },
+  "contentBlockedByTitle": {
+    "message": "Заблоковано MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Заблоковано $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-подібні медіа"
+  },
+  "contentReasonVideo": {
+    "message": "Відео"
+  },
+  "contentReasonAudio": {
+    "message": "Аудіо"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Відео, що зациклюється на петлі"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Автовідтворення відео"
+  },
+  "contentReasonImage": {
+    "message": "Зображення"
+  },
+  "contentReasonMedia": {
+    "message": "Медіа"
+  }
+}

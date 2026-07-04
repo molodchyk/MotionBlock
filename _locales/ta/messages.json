@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF தடுப்பான் மற்றும் அனிமேஷன் ஸ்டாப்பர்"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs, GIFV, தானியங்கு வீடியோ, மிதவை முன்னோட்டங்கள் மற்றும் ஒரு தளக் கட்டுப்பாடுகளுடன் கவனச்சிதறல் இயக்கத்தை நிறுத்தவும்."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock விருப்பங்கள்"
+  },
+  "siteLoading": {
+    "message": "தளத்தை ஏற்றுகிறது..."
+  },
+  "optionsButton": {
+    "message": "விருப்பங்கள்"
+  },
+  "statusOnInitial": {
+    "message": "ஆன்"
+  },
+  "checkingActiveRules": {
+    "message": "செயலில் உள்ள விதிகளை சரிபார்க்கிறது..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ தடுக்கப்பட்டது",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "இங்கே தடுப்பு இயக்கம்"
+  },
+  "allowThisSite": {
+    "message": "இந்த தளத்தை அனுமதி"
+  },
+  "siteMode": {
+    "message": "தள பயன்முறை"
+  },
+  "followGlobalDefaults": {
+    "message": "உலகளாவிய இயல்புநிலைகளைப் பின்பற்றவும்"
+  },
+  "blockOnThisSite": {
+    "message": "இந்த தளத்தில் தடு"
+  },
+  "allowThisSiteOption": {
+    "message": "இந்த தளத்தை அனுமதி"
+  },
+  "siteMediaControls": {
+    "message": "தள மீடியா கட்டுப்பாடுகள்"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "நோய் கண்டறிதல்"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock கண்டறிதல் பதிவு"
+  },
+  "copyDiagnostics": {
+    "message": "பதிவை நகலெடுக்கவும்"
+  },
+  "refreshDiagnostics": {
+    "message": "புதுப்பித்தல்"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ நோயறிதல் நிகழ்வுகள் பதிவு செய்யப்பட்டன.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "இன்னும் நோயறிதல் இல்லை. இந்த தாவலை மீண்டும் ஏற்றவும், சிக்கலை மீண்டும் உருவாக்கவும், பின்னர் இந்த பேனலைப் புதுப்பிக்கவும்."
+  },
+  "diagnosticsRefreshed": {
+    "message": "நோயறிதல் புத்துணர்ச்சி பெற்றது."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "கண்டறிதலைப் புதுப்பிக்க முடியவில்லை."
+  },
+  "diagnosticsCopied": {
+    "message": "கண்டறிதல் நகலெடுக்கப்பட்டது."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "பகுப்பாய்வுகளை நகலெடுக்க இயலவில்லை."
+  },
+  "resetSite": {
+    "message": "தளத்தை மீட்டமைக்கவும்"
+  },
+  "reloadTab": {
+    "message": "மீண்டும் ஏற்றவும்"
+  },
+  "reloadHint": {
+    "message": "ஏற்கனவே தடுக்கப்பட்ட அல்லது ஏற்றப்பட்ட மீடியாவுக்கு ரீலோட் தேவைப்படலாம்."
+  },
+  "unknownSite": {
+    "message": "அறியப்படாத தளம்"
+  },
+  "statusBlocking": {
+    "message": "தடுத்தல்"
+  },
+  "statusAllowed": {
+    "message": "அனுமதிக்கப்பட்டது"
+  },
+  "couldNotLoadSettings": {
+    "message": "அமைப்புகளை ஏற்ற முடியவில்லை"
+  },
+  "notAWebsite": {
+    "message": "இணையதளம் அல்ல"
+  },
+  "statusNotApplicable": {
+    "message": "ச/அ"
+  },
+  "unsupportedPageSummary": {
+    "message": "உலாவி, நீட்டிப்பு அல்லது பிற பாதுகாக்கப்பட்ட பக்கங்களை MotionBlock உள்ளமைக்க முடியாது."
+  },
+  "selectUseGlobal": {
+    "message": "உலகளாவிய பயன்படுத்தவும்"
+  },
+  "selectBlockHere": {
+    "message": "இங்கே தடுக்கவும்"
+  },
+  "selectAllowHere": {
+    "message": "இங்கே அனுமதி"
+  },
+  "summaryAllowed": {
+    "message": "இந்த தளம் அனுமதிக்கப்படுகிறது. MotionBlock இங்கு ஊடகங்களை தடுக்கவில்லை."
+  },
+  "summaryActiveNoCategories": {
+    "message": "இங்கே செயலில் உள்ளது, ஆனால் எந்த மீடியா வகைகளும் தற்போது தடுக்கப்படவில்லை."
+  },
+  "summaryBlockingFeatures": {
+    "message": "இந்த தளத்தில் $FEATURES$ தடுக்கிறது.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "இந்த தளத்திற்கான அனைத்து MotionBlock விதிகளும் முடக்கப்பட்டுள்ளன."
+  },
+  "siteRuleOwnSettings": {
+    "message": "இந்த தளம் அதன் சொந்த MotionBlock அமைப்புகளைப் பயன்படுத்துகிறது."
+  },
+  "siteRuleOverrides": {
+    "message": "இந்த தளம் மீடியா-குறிப்பிட்ட மேலதிக சவாரிகளுடன் உலகளாவிய நிலையைப் பின்பற்றுகிறது."
+  },
+  "siteRuleDefaults": {
+    "message": "இந்த தளம் உங்கள் உலகளாவிய இயல்புநிலைகளைப் பின்பற்றுகிறது."
+  },
+  "featureMetaInactive": {
+    "message": "தளம் அனுமதிக்கப்படும்போது செயலற்றது"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "மேலெழுதி: தடுத்தல்"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "மேலெழுது: அனுமதிக்கப்படுகிறது"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "உலகளாவிய: தடுத்தல்"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "உலகளாவிய: அனுமதிக்கப்படுகிறது"
+  },
+  "optionsIntro": {
+    "message": "உலகளாவிய மீடியா இயல்புநிலைகள் மற்றும் ஒரு தள விருப்பத்தேர்வுகள்."
+  },
+  "extensionActive": {
+    "message": "நீட்டிப்பு செயலில் உள்ளது"
+  },
+  "globalDefaultsHeading": {
+    "message": "உலகளாவிய இயல்புநிலைகள்"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs, GIF போன்ற வீடியோ மற்றும் தானியங்கு இயக்கத்துடன் தொடங்கவும். ஒரு தளத்திற்கு கடுமையான மீடியா கட்டுப்பாடு தேவைப்படும்போது மட்டுமே பரந்த தடுப்பான்களைப் பயன்படுத்தவும்."
+  },
+  "restoreRecommended": {
+    "message": "பரிந்துரைக்கப்பட்ட மீட்டமைப்பு"
+  },
+  "blockedMediaDisplay": {
+    "message": "தடுக்கப்பட்ட மீடியா காட்சி"
+  },
+  "replacementPlaceholder": {
+    "message": "கச்சிதமான பிளேஸ்ஹோல்டர்"
+  },
+  "replacementHide": {
+    "message": "உறுப்பு மறை"
+  },
+  "interfaceTheme": {
+    "message": "இடைமுக தீம்"
+  },
+  "themeSystem": {
+    "message": "கணினி"
+  },
+  "themeLight": {
+    "message": "ஒளி"
+  },
+  "themeDark": {
+    "message": "இருண்ட"
+  },
+  "revealControlsTitle": {
+    "message": "தடுக்கப்பட்ட மீடியாவுக்கான பொத்தான்களை வெளிப்படுத்தவும்"
+  },
+  "revealControlsDescription": {
+    "message": "தடுக்கப்பட்ட மீடியாவில் கிளிக்-டு-ப்ளே/காட்டு பொத்தான்களைக் காட்டு. சில தளங்கள் மறைக்கப்பட்ட மீடியா மேற்பரப்புகளை மீண்டும் பயன்படுத்துவதால் இயல்பாகவே முடக்கப்படும்."
+  },
+  "diagnosticsTitle": {
+    "message": "மேம்பட்ட கண்டறிதல்"
+  },
+  "diagnosticsDescription": {
+    "message": "நீங்கள் ஒரு தடுப்பு சிக்கலை இனப்பெருக்கம் செய்யும் போது பாப்அப்பில் நகலெடுக்கக்கூடிய ஒரு தாவலுக்கான பகுப்பாய்வு பதிவைக் காண்பிக்கவும்."
+  },
+  "websitePreferencesHeading": {
+    "message": "இணையதள விருப்பத்தேர்வுகள்"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com, discord.com அல்லது news.example.com போன்ற சரியான ஹோஸ்ட் பெயர்களைப் பயன்படுத்தவும்."
+  },
+  "addSite": {
+    "message": "தளத்தைச் சேர்க்கவும்"
+  },
+  "backupHeading": {
+    "message": "காப்புப்பிரதி"
+  },
+  "backupIntro": {
+    "message": "அமைப்புகள் Chrome ஒத்திசைவு சேமிப்பகத்தில் சேமிக்கப்படும். நீட்டிப்புகளுக்கு Chrome ஒத்திசைவு இயக்கப்பட்டிருந்தால், அவர்கள் உங்கள் Chrome சுயவிவரத்தைப் பின்தொடரலாம்."
+  },
+  "exportJson": {
+    "message": "ஏற்றுமதி JSON"
+  },
+  "importFile": {
+    "message": "கோப்பு இறக்குமதி"
+  },
+  "applyPastedJson": {
+    "message": "ஒட்டப்பட்ட JSON பயன்படுத்தவும்"
+  },
+  "refreshFromSync": {
+    "message": "ஒத்திசைவிலிருந்து புதுப்பிக்கவும்"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ஏற்றுமதி முன்னோட்டம் இங்கே தோன்றும். நீங்கள் ஒரு MotionBlock JSON காப்புப்பிரதியை ஒட்டி அதைப் பயன்படுத்தலாம்."
+  },
+  "globalStatusSaved": {
+    "message": "உலகளாவிய நிலை சேமிக்கப்பட்டது."
+  },
+  "globalDefaultsSaved": {
+    "message": "உலகளாவிய இயல்புநிலைகள் சேமிக்கப்பட்டன."
+  },
+  "displayModeSaved": {
+    "message": "காட்சி பயன்முறை சேமிக்கப்பட்டது."
+  },
+  "themeSaved": {
+    "message": "தீம் சேமிக்கப்பட்டது."
+  },
+  "revealSettingSaved": {
+    "message": "பொத்தான் அமைப்பை வெளிப்படுத்தவும் சேமிக்கப்பட்டது."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "கண்டறிதல் அமைப்பு சேமிக்கப்பட்டது."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "பரிந்துரைக்கப்பட்ட இயல்புநிலைகள் மீட்டெடுக்கப்பட்டன."
+  },
+  "enterValidHostname": {
+    "message": "செல்லுபடியாகும் புரவலன் பெயரை உள்ளிடவும்."
+  },
+  "siteAdded": {
+    "message": "தளம் சேர்க்கப்பட்டது."
+  },
+  "siteRuleSaved": {
+    "message": "தள விதி சேமிக்கப்பட்டது."
+  },
+  "siteRemoved": {
+    "message": "தளம் அகற்றப்பட்டது."
+  },
+  "settingsExported": {
+    "message": "அமைப்புகள் JSON கோப்பிற்கு ஏற்றுமதி செய்யப்பட்டன."
+  },
+  "settingsImportedFromFile": {
+    "message": "கோப்பில் இருந்து அமைப்புகள் இறக்குமதி செய்யப்பட்டன."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "ஒட்டப்பட்ட JSON இலிருந்து அமைப்புகள் இறக்குமதி செய்யப்பட்டன."
+  },
+  "settingsRefreshed": {
+    "message": "Chrome ஒத்திசைவிலிருந்து அமைப்புகள் புதுப்பிக்கப்பட்டன."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "அமைப்புகளை ஏற்ற இயலவில்லை."
+  },
+  "defaultOn": {
+    "message": "இயல்புநிலை ஆன்"
+  },
+  "defaultOff": {
+    "message": "இயல்புநிலை அணைக்கப்பட்டுள்ளது"
+  },
+  "noWebsitePreferences": {
+    "message": "வலைத்தள விருப்பத்தேர்வுகள் இன்னும் இல்லை."
+  },
+  "removeSite": {
+    "message": "அகற்று"
+  },
+  "siteTableSite": {
+    "message": "தளம்"
+  },
+  "siteTableActive": {
+    "message": "செயலில் உள்ள"
+  },
+  "selectInherit": {
+    "message": "வாரிசு"
+  },
+  "selectBlock": {
+    "message": "தொகுதி"
+  },
+  "selectAllow": {
+    "message": "அனுமதி"
+  },
+  "selectOn": {
+    "message": "ஆன்"
+  },
+  "selectOff": {
+    "message": "ஆஃப்"
+  },
+  "saveFailed": {
+    "message": "சேமி தோல்வியடைந்தது."
+  },
+  "importFailed": {
+    "message": "இறக்குமதி தோல்வியடைந்தது: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON கோப்பைத் தேர்வு செய்யவும் அல்லது முதலில் காப்புப்பிரதியை ஒட்டவும்."
+  },
+  "invalidJson": {
+    "message": "செல்லுபடியாகாத JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "இது MotionBlock அமைப்புகள் காப்புப்பிரதி போல் தெரியவில்லை."
+  },
+  "errorMissingMessageType": {
+    "message": "விடுபட்ட செய்தி வகை."
+  },
+  "errorMissingSiteHostname": {
+    "message": "தள புரவலன் பெயர் காணவில்லை."
+  },
+  "errorUnknownMessageType": {
+    "message": "அறியப்படாத செய்தி வகை."
+  },
+  "featureGifsLabel": {
+    "message": "GIF படங்கள்"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "சிறிய இடைமுகத்தை GIFs தனியாக விட்டுவிடும்போது பக்கத்தில் உள்ள GIF பட கூறுகளை மாற்றவும்."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV மற்றும் GIF போன்ற வீடியோ URLகள்"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "லூப்பிங் GIFs போல செயல்படும் .gifv URLகள் மற்றும் வீடியோ கூறுகளைத் தடுக்கவும்."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL வடிவங்கள்"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp பட URLகளைத் தடுக்கவும். பல WebP படங்கள் அனிமேஷன் செய்யப்படாததால் இயல்பாகவே முடக்கப்படும்."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "தானியங்கு மற்றும் லூப்பிங் வீடியோ"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "தானியங்கு விளையாட்டு"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "வீடியோவை தானாக இயக்கவும் மற்றும் அனிமேஷனாகப் பயன்படுத்தப்படும் முடக்கப்பட்ட லூப்பிங் வீடியோவை அகற்றவும்."
+  },
+  "featureVideoLabel": {
+    "message": "அனைத்து வீடியோ"
+  },
+  "featureVideoShortLabel": {
+    "message": "காணொளி"
+  },
+  "featureVideoDescription": {
+    "message": "HTML5 வீடியோ மற்றும் பொதுவான வீடியோ கோப்பு கோரிக்கைகளைத் தடுக்கவும்."
+  },
+  "featureAudioLabel": {
+    "message": "ஆடியோ"
+  },
+  "featureAudioShortLabel": {
+    "message": "ஆடியோ"
+  },
+  "featureAudioDescription": {
+    "message": "ஆடியோ கூறுகள் மற்றும் பொதுவான ஆடியோ கோப்பு கோரிக்கைகளைத் தடுக்கவும்."
+  },
+  "featureImagesLabel": {
+    "message": "அனைத்து படங்கள்"
+  },
+  "featureImagesShortLabel": {
+    "message": "படங்கள்"
+  },
+  "featureImagesDescription": {
+    "message": "பக்கத்தில் உள்ள பட கூறுகளை மாற்றவும். பட-கனமான தளங்களுக்கான ஒரு தளத்திற்கு அனுமதி விதிகளைப் பயன்படுத்தவும்."
+  },
+  "featureEmojiLabel": {
+    "message": "ஈமோஜி உரை மற்றும் ஈமோஜி படங்கள்"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ஈமோஜி"
+  },
+  "featureEmojiDescription": {
+    "message": "ஈமோஜி எழுத்துக்கள் மற்றும் பொதுவான ஈமோஜி பட ரெண்டரர்களை அகற்றவும். இது உரையை மாற்றுவதால் இயல்பாக முடக்கப்படும்."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS அனிமேஷன் மற்றும் மாற்றங்கள்"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS அனிமேஷன்கள், மாற்றங்கள் மற்றும் மென்மையான ஸ்க்ரோலிங் ஆகியவற்றை முடக்கவும்."
+  },
+  "featureGroupMotionLabel": {
+    "message": "இயக்கத்தைத் தடுத்தல்"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs, GIF போன்ற வீடியோக்கள், தானியங்கு இயக்கம் மற்றும் பக்க இயக்கத்திற்கு பரிந்துரைக்கப்பட்ட இயல்புநிலைகள்."
+  },
+  "featureGroupBroadLabel": {
+    "message": "பரந்த மீடியா தடுப்பான்கள்"
+  },
+  "featureGroupBroadDescription": {
+    "message": "படங்கள், வீடியோ, ஆடியோ, WebP URLகள் மற்றும் ஈமோஜிக்கான பவர்-பயனர் கட்டுப்பாடுகள். இவை சில தளங்களை மாற்றலாம் அல்லது உடைக்கலாம்."
+  },
+  "contentShowBlockedImage": {
+    "message": "தடுக்கப்பட்ட படத்தைக் காட்டு"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "தடுக்கப்பட்ட ஆடியோவை இயக்கவும்"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "தடுக்கப்பட்ட வீடியோவை இயக்கவும்"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "தடுக்கப்பட்ட மீடியாவை இயக்கவும்"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock ஆல் தடுக்கப்பட்டது: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "தடுக்கப்பட்ட $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF போன்ற ஊடகம்"
+  },
+  "contentReasonVideo": {
+    "message": "காணொளி"
+  },
+  "contentReasonAudio": {
+    "message": "ஆடியோ"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "லூப்பிங் வீடியோ"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "வீடியோவை தானாக இயக்கவும்"
+  },
+  "contentReasonImage": {
+    "message": "படம்"
+  },
+  "contentReasonMedia": {
+    "message": "ஊடகம்"
+  }
+}

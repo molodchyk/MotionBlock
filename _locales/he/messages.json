@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: חוסם GIF ועצירת אנימציה"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "עצור GIFs, GIFV, הפעל וידאו אוטומטית, ריחוף ותנועות מסיחות עם בקרות לכל אתר."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "אפשרויות MotionBlock"
+  },
+  "siteLoading": {
+    "message": "אתר טעינה..."
+  },
+  "optionsButton": {
+    "message": "אפשרויות"
+  },
+  "statusOnInitial": {
+    "message": "On"
+  },
+  "checkingActiveRules": {
+    "message": "בודק חוקים פעילים..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ חסום",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "תנועת חסימה כאן"
+  },
+  "allowThisSite": {
+    "message": "אפשר את האתר הזה"
+  },
+  "siteMode": {
+    "message": "מצב אתר"
+  },
+  "followGlobalDefaults": {
+    "message": "עקבו אחרי ברירת מחדל גלובלית"
+  },
+  "blockOnThisSite": {
+    "message": "חסום באתר זה"
+  },
+  "allowThisSiteOption": {
+    "message": "אפשר את האתר הזה"
+  },
+  "siteMediaControls": {
+    "message": "בקרות מדיה באתר"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "אבחון"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock יומן אבחון"
+  },
+  "copyDiagnostics": {
+    "message": "יומן העתק"
+  },
+  "refreshDiagnostics": {
+    "message": "רענון"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ אירועי אבחון שנרשמו.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "עדיין אין אבחון. טען מחדש את הלשונית הזו, שחזר את הבעיה, ואז רענן את הפאנל הזה."
+  },
+  "diagnosticsRefreshed": {
+    "message": "האבחון מחודש."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "לא הצלחתי לרענן את האבחון."
+  },
+  "diagnosticsCopied": {
+    "message": "ההעתקות האבחון."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "לא הצלחתי להעתיק את האבחון."
+  },
+  "resetSite": {
+    "message": "איפוס האתר"
+  },
+  "reloadTab": {
+    "message": "טעינה מחדש"
+  },
+  "reloadHint": {
+    "message": "ייתכן שיהיה צורך בטעינה מחדש עבור מדיה שכבר נחסמה או נטענת."
+  },
+  "unknownSite": {
+    "message": "אתר לא ידוע"
+  },
+  "statusBlocking": {
+    "message": "חסימה"
+  },
+  "statusAllowed": {
+    "message": "מותר"
+  },
+  "couldNotLoadSettings": {
+    "message": "לא הצלחתי לטעון את ההגדרות"
+  },
+  "notAWebsite": {
+    "message": "לא אתר אינטרנט"
+  },
+  "statusNotApplicable": {
+    "message": "לא זמין"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock אינו יכול להגדיר דפדפן, תוסף או דפים מוגנים אחרים."
+  },
+  "selectUseGlobal": {
+    "message": "שימוש גלובלי"
+  },
+  "selectBlockHere": {
+    "message": "חסום כאן"
+  },
+  "selectAllowHere": {
+    "message": "הרשה כאן"
+  },
+  "summaryAllowed": {
+    "message": "האתר הזה מותר. MotionBlock לא חוסם מדיה כאן."
+  },
+  "summaryActiveNoCategories": {
+    "message": "פעיל כאן, אך כרגע אין קטגוריות מדיה חסומות."
+  },
+  "summaryBlockingFeatures": {
+    "message": "חוסם $FEATURES$ באתר הזה.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "כל החוקים MotionBlock לא נכונים באתר הזה."
+  },
+  "siteRuleOwnSettings": {
+    "message": "האתר הזה משתמש בהגדרות MotionBlock משלו."
+  },
+  "siteRuleOverrides": {
+    "message": "אתר זה מחזיק במעמד עולמי עם עקיפות ספציפיות למדיה."
+  },
+  "siteRuleDefaults": {
+    "message": "האתר הזה עוקב אחרי ברירת המחדל הגלובלית שלך."
+  },
+  "featureMetaInactive": {
+    "message": "לא פעיל כל עוד האתר מותר"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "עקיפה: חסימה"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "עקיף: מותר"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "גלובלי: חסימה"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "גלובלי: מותר"
+  },
+  "optionsIntro": {
+    "message": "ברירת מחדל גלובלית למדיה והעדפות לכל אתר."
+  },
+  "extensionActive": {
+    "message": "הרחבה פעילה"
+  },
+  "globalDefaultsHeading": {
+    "message": "חדלות פירעון גלובלית"
+  },
+  "globalDefaultsIntro": {
+    "message": "תתחיל עם GIFs, וידאו GIF דומה, והפעלה אוטומטית. השתמש בחוסמים רחבים רק כאשר אתר זקוק לפיקוח מדיה מחמיר יותר."
+  },
+  "restoreRecommended": {
+    "message": "מומלץ לשחזר"
+  },
+  "blockedMediaDisplay": {
+    "message": "תצוגת מדיה חסומה"
+  },
+  "replacementPlaceholder": {
+    "message": "תחליף קומפקטי"
+  },
+  "replacementHide": {
+    "message": "אלמנט הסתרה"
+  },
+  "interfaceTheme": {
+    "message": "נושא הממשק"
+  },
+  "themeSystem": {
+    "message": "מערכת"
+  },
+  "themeLight": {
+    "message": "אור"
+  },
+  "themeDark": {
+    "message": "חושך"
+  },
+  "revealControlsTitle": {
+    "message": "כפתורי חשיפה למדיה חסומה"
+  },
+  "revealControlsDescription": {
+    "message": "הצג כפתורי לחיצה להפעלה/הצג במדיה חסומה. כבוי כברירת מחדל כי יש אתרים שמשתמשים מחדש במשטחי מדיה נסתרים."
+  },
+  "diagnosticsTitle": {
+    "message": "אבחון מתקדם"
+  },
+  "diagnosticsDescription": {
+    "message": "הצג יומן אבחון שניתן להעתיק לפי טאבים בחלון בזמן שאתה משחזר בעיית חסימה."
+  },
+  "websitePreferencesHeading": {
+    "message": "העדפות אתר אינטרנט"
+  },
+  "websitePreferencesIntro": {
+    "message": "השתמש בשמות מארחים מדויקים כמו reddit.com, discord.com או news.example.com."
+  },
+  "addSite": {
+    "message": "הוסיפו אתר"
+  },
+  "backupHeading": {
+    "message": "גיבוי"
+  },
+  "backupIntro": {
+    "message": "ההגדרות מאוחסנות באחסון הסינכרון Chrome. אם הסנכרון Chrome מופעל לתוספים, הם יכולים לעקוב אחרי הפרופיל Chrome שלך."
+  },
+  "exportJson": {
+    "message": "ייצוא JSON"
+  },
+  "importFile": {
+    "message": "ייבוא קובץ"
+  },
+  "applyPastedJson": {
+    "message": "הדבק JSON"
+  },
+  "refreshFromSync": {
+    "message": "רענון מסינכרון"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "תצוגה מקדימה של ייצוא מופיעה כאן. אפשר גם להדביק גיבוי MotionBlock JSON וליישם אותו."
+  },
+  "globalStatusSaved": {
+    "message": "הסטטוס הגלובלי נשמר."
+  },
+  "globalDefaultsSaved": {
+    "message": "חדלות פירעון גלובליות נשמרו."
+  },
+  "displayModeSaved": {
+    "message": "מצב תצוגה נשמר."
+  },
+  "themeSaved": {
+    "message": "הנושא נשמר."
+  },
+  "revealSettingSaved": {
+    "message": "הגדרת כפתור הגילוי נשמרה."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "הגדרת האבחון נשמרה."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "ברירת המחדל המומלצת שוחזרה."
+  },
+  "enterValidHostname": {
+    "message": "הזן שם מארח תקף."
+  },
+  "siteAdded": {
+    "message": "האתר נוסף."
+  },
+  "siteRuleSaved": {
+    "message": "כלל האתר נשמר."
+  },
+  "siteRemoved": {
+    "message": "האתר הוסר."
+  },
+  "settingsExported": {
+    "message": "ההגדרות יוצאו לקובץ JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "הגדרות מיובאות מהקובץ."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "הגדרות שיובאו מ-JSON מודבק."
+  },
+  "settingsRefreshed": {
+    "message": "ההגדרות רעננו מהסנכרון Chrome."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "לא הצלחתי לטעון הגדרות."
+  },
+  "defaultOn": {
+    "message": "ברירת מחדל"
+  },
+  "defaultOff": {
+    "message": "כבוי ברירת מחדל"
+  },
+  "noWebsitePreferences": {
+    "message": "עדיין אין העדפות באתר."
+  },
+  "removeSite": {
+    "message": "הסרה"
+  },
+  "siteTableSite": {
+    "message": "האתר"
+  },
+  "siteTableActive": {
+    "message": "פעיל"
+  },
+  "selectInherit": {
+    "message": "יורש"
+  },
+  "selectBlock": {
+    "message": "בלוק"
+  },
+  "selectAllow": {
+    "message": "לאפשר"
+  },
+  "selectOn": {
+    "message": "On"
+  },
+  "selectOff": {
+    "message": "כבוי"
+  },
+  "saveFailed": {
+    "message": "שמירה נכשלה."
+  },
+  "importFailed": {
+    "message": "הייבוא נכשל: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "בחר קובץ JSON או הדביק גיבוי קודם."
+  },
+  "invalidJson": {
+    "message": "JSON לא תקף."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "זה לא נראה כמו גיבוי MotionBlock הגדרות."
+  },
+  "errorMissingMessageType": {
+    "message": "טיפוס הודעה חסר."
+  },
+  "errorMissingSiteHostname": {
+    "message": "שם מארח חסר באתר."
+  },
+  "errorUnknownMessageType": {
+    "message": "סוג הודעה לא ידוע."
+  },
+  "featureGifsLabel": {
+    "message": "תמונות GIF"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "החלף GIF אלמנטים בתמונה בדף תוך השארת GIFs הממשק הקטן כפי שהוא."
+  },
+  "featureGifvLabel": {
+    "message": "כתובות וידאו GIFV ודמויות-GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "חסום כתובות .gifv ואלמנטים של וידאו שמתנהגים כמו לופינג GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP דפוסי URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "חסום כתובות URL של תמונות .webp. כבוי כברירת מחדל כי הרבה תמונות WebP אינן מונפשות."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "הפעלה אוטומטית ווידאו בלולאה"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "אוטופליי"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "השהה את ההפעלה האוטומטית של הווידאו והסר וידאו מושתק ששימש כאנימציה."
+  },
+  "featureVideoLabel": {
+    "message": "כל הווידאו"
+  },
+  "featureVideoShortLabel": {
+    "message": "וידאו"
+  },
+  "featureVideoDescription": {
+    "message": "חסום HTML5 בקשות וידאו ובקשות נפוצות לקבצי וידאו."
+  },
+  "featureAudioLabel": {
+    "message": "אודיו"
+  },
+  "featureAudioShortLabel": {
+    "message": "אודיו"
+  },
+  "featureAudioDescription": {
+    "message": "לחסום אלמנטים של אודיו ובקשות נפוצות לקבצי אודיו."
+  },
+  "featureImagesLabel": {
+    "message": "כל התמונות"
+  },
+  "featureImagesShortLabel": {
+    "message": "תמונות"
+  },
+  "featureImagesDescription": {
+    "message": "החלף אלמנטים של תמונה בדף. השתמש בכללי הרשאה לכל אתר לאתרים עם תמונות."
+  },
+  "featureEmojiLabel": {
+    "message": "טקסט אימוג'י ותמונות אימוג'י"
+  },
+  "featureEmojiShortLabel": {
+    "message": "אימוג'י"
+  },
+  "featureEmojiDescription": {
+    "message": "הסר תווים ואימוג'ים ומציגים נפוצים של תמונות אימוג'ים. כבוי כברירת מחדל כי זה משנה טקסט."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS אנימציה ומעברים"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "כבה את האנימציות, המעברים והגלילה החלקה CSS."
+  },
+  "featureGroupMotionLabel": {
+    "message": "חסימת תנועה"
+  },
+  "featureGroupMotionDescription": {
+    "message": "הגדרות ברירת מחדל מומלצות לסרטונים GIFs, דמויי GIF, הפעלה אוטומטית ותנועת עמוד."
+  },
+  "featureGroupBroadLabel": {
+    "message": "חוסמי מדיה רחבים"
+  },
+  "featureGroupBroadDescription": {
+    "message": "שליטה של המשתמש החזק בתמונות, וידאו, אודיו, כתובות URL WebP ואימוג'ים. אלה יכולים לשנות או להרוס אתרים מסוימים."
+  },
+  "contentShowBlockedImage": {
+    "message": "הצג תמונה חסומה"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "נגן אודיו חסום"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "נגן וידאו חסום"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "נגן מדיה חסומה"
+  },
+  "contentBlockedByTitle": {
+    "message": "חסום על ידי MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "חסום $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "מדיה דמוית GIF"
+  },
+  "contentReasonVideo": {
+    "message": "וידאו"
+  },
+  "contentReasonAudio": {
+    "message": "אודיו"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "וידאו בלולאה"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "וידאו הפעלה אוטומטית"
+  },
+  "contentReasonImage": {
+    "message": "תמונה"
+  },
+  "contentReasonMedia": {
+    "message": "מדיה"
+  }
+}

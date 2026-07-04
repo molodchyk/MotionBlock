@@ -1,0 +1,31 @@
+Bllokoni GIFs shpërqendruese, GIFV, videon automatike, shikimet paraprake dhe lëvizjen e faqes përpara se të ju pengojnë.
+
+Përdorni MotionBlock për të ndaluar:
+
+Lakimi i imazheve GIF.
+GIFV lidhje.
+Video të shkurtra të heshtura të përdorura si GIFs.
+Luaj automatikisht video dhe shikime paraprake.
+Modele opsionale të animuara WebP URL.
+Video, audio, imazhe, emoji dhe CSS lëvizje opsionale.
+
+MotionBlock është ndërtuar rreth kontrollit për faqe. Mbani parazgjedhjet globale konservatore, pastaj lejoni ose bllokoni lloje specifike mediash në faqet individuale të internetit nga faqja kërcyese ose opsionet. Cilësimet qëndrojnë në Chrome ruajtje të sinkronizimit të shtesës dhe mund të sinkronizohen përmes Chrome nëse përdoruesi ka të aktivizuar sinkronizimin e shtesës.
+
+Përdorimet e zakonshme:
+
+Ndaloni animacionet shpërqendruese gjatë leximit.
+Zvogëloni zhurmën e videos me luajtje automatike.
+Kurseni gjerësinë e brezit nga mediat e panevojshme.
+Bllokoni pamjet paraprake të stilit YouTube.
+Qetësoni Reddit, Giphy, burimet sociale dhe faqet e lajmeve që konvertojnë GIFs në video të shkurtra.
+Lejoni faqet me imazhe të rënda duke bllokuar lëvizjen diku tjetër.
+Lejoni shpejt mediat në faqet që kanë nevojë për të.
+
+Dritarja kërcyese kontrollon faqen aktuale. Faqja e opsioneve menaxhon parazgjedhjet globale, preferencat për faqe, importin/eksportin e JSON rezervë, shfaqjen e mediave të bllokuara, butonat opsionalë të zbulimit dhe temën e ndërfaqes së lehtë/errësirë/sistemit.
+
+Chrome nuk lejon shtesat të modifikojnë faqet e brendshme të shfletuesit, Chrome Web Store ose disa faqe të mbrojtura. Nëse media është ende e dukshme pas instalimit ose ndryshimit të cilësimeve, ringarkoni faqen.
+
+MotionBlock nuk mbledh analitikë, dërgon të dhëna shfletimi në një server ose përdor lista rregullash në distancë.
+
+Burim i hapur nën licencën GPL-3.0:
+https://github.com/molodchyk/MotionBlock

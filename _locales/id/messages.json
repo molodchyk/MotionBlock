@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Pemblokir GIF & Penghenti Animasi"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Hentikan GIFs, GIFV, putar otomatis video, pratinjau kursor, dan gerakan yang mengganggu dengan kontrol per situs."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Opsi"
+  },
+  "siteLoading": {
+    "message": "Memuat situs..."
+  },
+  "optionsButton": {
+    "message": "Opsi"
+  },
+  "statusOnInitial": {
+    "message": "Aktif"
+  },
+  "checkingActiveRules": {
+    "message": "Memeriksa aturan aktif..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ diblokir",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokir gerakan di sini"
+  },
+  "allowThisSite": {
+    "message": "Izinkan situs ini"
+  },
+  "siteMode": {
+    "message": "Mode situs"
+  },
+  "followGlobalDefaults": {
+    "message": "Ikuti default global"
+  },
+  "blockOnThisSite": {
+    "message": "Blokir di situs ini"
+  },
+  "allowThisSiteOption": {
+    "message": "Izinkan situs ini"
+  },
+  "siteMediaControls": {
+    "message": "Kontrol media situs"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostik"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock log diagnostik"
+  },
+  "copyDiagnostics": {
+    "message": "Salin log"
+  },
+  "refreshDiagnostics": {
+    "message": "Segarkan"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ peristiwa diagnostik yang direkam.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Belum ada diagnostik. Muat ulang tab ini, reproduksi masalah, lalu segarkan panel ini."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostik diperbarui."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Tidak dapat menyegarkan diagnostik."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostik disalin."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Tidak dapat menyalin diagnostik."
+  },
+  "resetSite": {
+    "message": "Setel ulang situs"
+  },
+  "reloadTab": {
+    "message": "Muat ulang"
+  },
+  "reloadHint": {
+    "message": "Muat ulang mungkin diperlukan untuk media yang sudah diblokir atau dimuat."
+  },
+  "unknownSite": {
+    "message": "Situs tidak dikenal"
+  },
+  "statusBlocking": {
+    "message": "Memblokir"
+  },
+  "statusAllowed": {
+    "message": "Diizinkan"
+  },
+  "couldNotLoadSettings": {
+    "message": "Tidak dapat memuat pengaturan"
+  },
+  "notAWebsite": {
+    "message": "Bukan situs web"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock tidak dapat mengonfigurasi browser, ekstensi, atau halaman terlindungi lainnya."
+  },
+  "selectUseGlobal": {
+    "message": "Gunakan global"
+  },
+  "selectBlockHere": {
+    "message": "Blokir di sini"
+  },
+  "selectAllowHere": {
+    "message": "Izinkan di sini"
+  },
+  "summaryAllowed": {
+    "message": "Situs ini diperbolehkan. MotionBlock tidak memblokir media di sini."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktif di sini, tetapi tidak ada kategori media yang saat ini diblokir."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Memblokir $FEATURES$ di situs ini.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Semua aturan MotionBlock tidak sesuai untuk situs ini."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Situs ini menggunakan pengaturan MotionBlock sendiri."
+  },
+  "siteRuleOverrides": {
+    "message": "Situs ini mengikuti status global dengan penggantian khusus media."
+  },
+  "siteRuleDefaults": {
+    "message": "Situs ini mengikuti default global Anda."
+  },
+  "featureMetaInactive": {
+    "message": "Tidak aktif saat situs diizinkan"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Mengganti: memblokir"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Mengganti: diizinkan"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: pemblokiran"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Global: diizinkan"
+  },
+  "optionsIntro": {
+    "message": "Default media global dan preferensi per situs."
+  },
+  "extensionActive": {
+    "message": "Ekstensi aktif"
+  },
+  "globalDefaultsHeading": {
+    "message": "Default Global"
+  },
+  "globalDefaultsIntro": {
+    "message": "Mulailah dengan GIFs, video seperti GIF, dan putar otomatis. Gunakan pemblokir luas hanya jika situs memerlukan kontrol media yang lebih ketat."
+  },
+  "restoreRecommended": {
+    "message": "Pulihkan yang direkomendasikan"
+  },
+  "blockedMediaDisplay": {
+    "message": "Tampilan media yang diblokir"
+  },
+  "replacementPlaceholder": {
+    "message": "Placeholder ringkas"
+  },
+  "replacementHide": {
+    "message": "Sembunyikan elemen"
+  },
+  "interfaceTheme": {
+    "message": "Tema antarmuka"
+  },
+  "themeSystem": {
+    "message": "Sistem"
+  },
+  "themeLight": {
+    "message": "Cahaya"
+  },
+  "themeDark": {
+    "message": "Gelap"
+  },
+  "revealControlsTitle": {
+    "message": "Tombol Terbuka untuk media yang diblokir"
+  },
+  "revealControlsDescription": {
+    "message": "Tampilkan tombol klik-untuk-putar/tampilkan pada media yang diblokir. Nonaktif secara default karena beberapa situs menggunakan kembali permukaan media tersembunyi."
+  },
+  "diagnosticsTitle": {
+    "message": "Diagnostik lanjutan"
+  },
+  "diagnosticsDescription": {
+    "message": "Tampilkan log diagnostik per tab yang dapat disalin di popup saat Anda mereproduksi masalah pemblokiran."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preferensi Situs Web"
+  },
+  "websitePreferencesIntro": {
+    "message": "Gunakan nama host yang tepat seperti reddit.com, discord.com, atau news.example.com."
+  },
+  "addSite": {
+    "message": "Tambahkan situs"
+  },
+  "backupHeading": {
+    "message": "Cadangan"
+  },
+  "backupIntro": {
+    "message": "Pengaturan disimpan dalam penyimpanan sinkronisasi Chrome. Jika sinkronisasi Chrome diaktifkan untuk ekstensi, ekstensi dapat mengikuti profil Chrome Anda."
+  },
+  "exportJson": {
+    "message": "Ekspor JSON"
+  },
+  "importFile": {
+    "message": "Impor file"
+  },
+  "applyPastedJson": {
+    "message": "Terapkan JSON yang ditempelkan"
+  },
+  "refreshFromSync": {
+    "message": "Refresh dari sinkronisasi"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Pratinjau ekspor muncul di sini. Anda juga dapat menempelkan cadangan MotionBlock JSON dan menerapkannya."
+  },
+  "globalStatusSaved": {
+    "message": "Status global disimpan."
+  },
+  "globalDefaultsSaved": {
+    "message": "Default global disimpan."
+  },
+  "displayModeSaved": {
+    "message": "Mode tampilan disimpan."
+  },
+  "themeSaved": {
+    "message": "Tema disimpan."
+  },
+  "revealSettingSaved": {
+    "message": "Pengaturan tombol Terbuka disimpan."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Pengaturan diagnostik disimpan."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Default yang direkomendasikan dipulihkan."
+  },
+  "enterValidHostname": {
+    "message": "Masukkan nama host yang valid."
+  },
+  "siteAdded": {
+    "message": "Situs ditambahkan."
+  },
+  "siteRuleSaved": {
+    "message": "Aturan situs disimpan."
+  },
+  "siteRemoved": {
+    "message": "Situs dihapus."
+  },
+  "settingsExported": {
+    "message": "Pengaturan diekspor ke file JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Pengaturan yang diimpor dari file."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Pengaturan yang diimpor dari JSON yang ditempelkan."
+  },
+  "settingsRefreshed": {
+    "message": "Pengaturan disegarkan dari sinkronisasi Chrome."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Tidak dapat memuat pengaturan."
+  },
+  "defaultOn": {
+    "message": "Default aktif"
+  },
+  "defaultOff": {
+    "message": "Default nonaktif"
+  },
+  "noWebsitePreferences": {
+    "message": "Belum ada preferensi situs web."
+  },
+  "removeSite": {
+    "message": "Hapus"
+  },
+  "siteTableSite": {
+    "message": "Situs"
+  },
+  "siteTableActive": {
+    "message": "Aktif"
+  },
+  "selectInherit": {
+    "message": "Mewarisi"
+  },
+  "selectBlock": {
+    "message": "Blokir"
+  },
+  "selectAllow": {
+    "message": "Izinkan"
+  },
+  "selectOn": {
+    "message": "Aktif"
+  },
+  "selectOff": {
+    "message": "Mati"
+  },
+  "saveFailed": {
+    "message": "Menyimpan gagal."
+  },
+  "importFailed": {
+    "message": "Impor gagal: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Pilih file JSON atau tempel cadangan terlebih dahulu."
+  },
+  "invalidJson": {
+    "message": "JSON tidak valid."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Ini tidak terlihat seperti cadangan pengaturan MotionBlock."
+  },
+  "errorMissingMessageType": {
+    "message": "Jenis pesan tidak ada."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Nama host situs hilang."
+  },
+  "errorUnknownMessageType": {
+    "message": "Jenis pesan tidak dikenal."
+  },
+  "featureGifsLabel": {
+    "message": "GIF gambar"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Ganti elemen gambar GIF di halaman sambil meninggalkan antarmuka kecil GIFs saja."
+  },
+  "featureGifvLabel": {
+    "message": "URL video seperti GIFV dan GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokir URL .gifv dan elemen video yang berperilaku seperti GIFs perulangan."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP pola URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokir URL gambar .webp. Dinonaktifkan secara default karena banyak gambar WebP tidak dianimasikan."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Putar otomatis dan mengulangi video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Putar otomatis"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Jeda video putar otomatis dan hapus video perulangan yang dibisukan yang digunakan sebagai animasi."
+  },
+  "featureVideoLabel": {
+    "message": "Semua video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Videonya"
+  },
+  "featureVideoDescription": {
+    "message": "Blokir HTML5 permintaan file video dan video umum."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Blokir elemen audio dan permintaan file audio umum."
+  },
+  "featureImagesLabel": {
+    "message": "Semua gambar"
+  },
+  "featureImagesShortLabel": {
+    "message": "Gambar"
+  },
+  "featureImagesDescription": {
+    "message": "Ganti elemen gambar di halaman. Gunakan aturan izin per situs untuk situs yang banyak gambar."
+  },
+  "featureEmojiLabel": {
+    "message": "Teks emoji dan gambar emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Hapus karakter emoji dan perender gambar emoji umum. Dinonaktifkan secara default karena mengubah teks."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animasi dan transisi"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Nonaktifkan animasi CSS, transisi, dan pengguliran yang mulus."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Pemblokiran gerakan"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Default yang direkomendasikan untuk video GIFs, seperti GIF, putar otomatis, dan gerakan halaman."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Pemblokir media yang luas"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Kontrol pengguna yang kuat untuk gambar, video, audio, URL WebP, dan emoji. Ini dapat mengubah atau merusak beberapa situs."
+  },
+  "contentShowBlockedImage": {
+    "message": "Tampilkan gambar yang diblokir"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Memutar audio yang diblokir"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Memutar video yang diblokir"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Memutar media yang diblokir"
+  },
+  "contentBlockedByTitle": {
+    "message": "Diblokir oleh MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "$REASON$ yang diblokir",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Media seperti GIF"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "video perulangan"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Putar otomatis video"
+  },
+  "contentReasonImage": {
+    "message": "gambar"
+  },
+  "contentReasonMedia": {
+    "message": "Media"
+  }
+}

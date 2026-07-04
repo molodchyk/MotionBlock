@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Kizuizi cha GIF na Kizuizi cha Uhuishaji"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Acha GIFs, GIFV, kucheza video kiotomatiki, hakikisho la kuelea, na mwendo wa kuvuruga na vidhibiti vya kila tovuti."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Chaguzi"
+  },
+  "siteLoading": {
+    "message": "Inapakia tovuti..."
+  },
+  "optionsButton": {
+    "message": "Chaguzi"
+  },
+  "statusOnInitial": {
+    "message": "Juu ya"
+  },
+  "checkingActiveRules": {
+    "message": "Kuangalia sheria zinazotumika..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ imezuiwa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Zuia mwendo hapa"
+  },
+  "allowThisSite": {
+    "message": "Ruhusu tovuti hii"
+  },
+  "siteMode": {
+    "message": "Hali ya tovuti"
+  },
+  "followGlobalDefaults": {
+    "message": "Fuata chaguo-msingi za kimataifa"
+  },
+  "blockOnThisSite": {
+    "message": "Zuia kwenye wavuti hii"
+  },
+  "allowThisSiteOption": {
+    "message": "Ruhusu tovuti hii"
+  },
+  "siteMediaControls": {
+    "message": "Udhibiti wa media ya tovuti"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Uchunguzi"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock logi ya uchunguzi"
+  },
+  "copyDiagnostics": {
+    "message": "Nakili logi"
+  },
+  "refreshDiagnostics": {
+    "message": "Onyesha upya"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ matukio ya uchunguzi yaliyorekodiwa.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Bado hakuna uchunguzi. Pakia upya kichupo hiki, zalisha suala hilo, kisha onyesha upya paneli hii."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Uchunguzi umeburudishwa."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Haikuweza kuonyesha upya uchunguzi."
+  },
+  "diagnosticsCopied": {
+    "message": "Uchunguzi unakiliwa."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Haikuweza kunakili uchunguzi."
+  },
+  "resetSite": {
+    "message": "Weka upya tovuti"
+  },
+  "reloadTab": {
+    "message": "Pakia upya"
+  },
+  "reloadHint": {
+    "message": "Pakia upya inaweza kuhitajika kwa media ambayo tayari ilikuwa imezuiwa au kupakiwa."
+  },
+  "unknownSite": {
+    "message": "Tovuti isiyojulikana"
+  },
+  "statusBlocking": {
+    "message": "Kuzuia"
+  },
+  "statusAllowed": {
+    "message": "Inaruhusiwa"
+  },
+  "couldNotLoadSettings": {
+    "message": "Haikuweza kupakia mipangilio"
+  },
+  "notAWebsite": {
+    "message": "Sio tovuti"
+  },
+  "statusNotApplicable": {
+    "message": "N / A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock haiwezi kusanidi kivinjari, kiendelezi, au kurasa zingine zilizolindwa."
+  },
+  "selectUseGlobal": {
+    "message": "Tumia kimataifa"
+  },
+  "selectBlockHere": {
+    "message": "Zuia hapa"
+  },
+  "selectAllowHere": {
+    "message": "Ruhusu hapa"
+  },
+  "summaryAllowed": {
+    "message": "Tovuti hii inaruhusiwa. MotionBlock haizuii media hapa."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Inafanya kazi hapa, lakini hakuna kategoria za media ambazo zimezuiwa kwa sasa."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Kuzuia $FEATURES$ kwenye tovuti hii.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Sheria zote MotionBlock zimezimwa kwa wavuti hii."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Tovuti hii hutumia mipangilio yake ya MotionBlock."
+  },
+  "siteRuleOverrides": {
+    "message": "Tovuti hii inafuata hali ya ulimwengu na ubatilishaji maalum wa media."
+  },
+  "siteRuleDefaults": {
+    "message": "Tovuti hii inafuata chaguo-msingi zako za ulimwengu."
+  },
+  "featureMetaInactive": {
+    "message": "Haifanyi kazi wakati tovuti inaruhusiwa"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Kubatilisha: kuzuia"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Kubatilisha: inaruhusiwa"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Kimataifa: kuzuia"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Kimataifa: inaruhusiwa"
+  },
+  "optionsIntro": {
+    "message": "Chaguo-msingi za media za ulimwengu na upendeleo wa kila tovuti."
+  },
+  "extensionActive": {
+    "message": "Ugani unatumika"
+  },
+  "globalDefaultsHeading": {
+    "message": "Chaguo-msingi za Ulimwenguni"
+  },
+  "globalDefaultsIntro": {
+    "message": "Anza na GIFs, video inayofanana na GIF, na ucheze kiotomatiki. Tumia vizuizi vipana tu wakati tovuti inahitaji udhibiti mkali wa media."
+  },
+  "restoreRecommended": {
+    "message": "Rejesha inapendekezwa"
+  },
+  "blockedMediaDisplay": {
+    "message": "Onyesho la media lililozuiwa"
+  },
+  "replacementPlaceholder": {
+    "message": "Kishika nafasi cha kompakt"
+  },
+  "replacementHide": {
+    "message": "Ficha kipengele"
+  },
+  "interfaceTheme": {
+    "message": "Mandhari ya kiolesura"
+  },
+  "themeSystem": {
+    "message": "Mfumo"
+  },
+  "themeLight": {
+    "message": "Mwanga"
+  },
+  "themeDark": {
+    "message": "Giza"
+  },
+  "revealControlsTitle": {
+    "message": "Fichua vitufe vya media iliyozuiwa"
+  },
+  "revealControlsDescription": {
+    "message": "Onyesha vitufe vya kubofya-kucheza/kuonyesha kwenye midia iliyozuiwa. Imezimwa kwa chaguo-msingi kwa sababu tovuti zingine hutumia tena nyuso za media zilizofichwa."
+  },
+  "diagnosticsTitle": {
+    "message": "Uchunguzi wa hali ya juu"
+  },
+  "diagnosticsDescription": {
+    "message": "Onyesha kumbukumbu ya uchunguzi inayoweza kunakiliwa kwa kila kichupo kwenye dirisha ibukizi wakati unazalisha shida ya kuzuia."
+  },
+  "websitePreferencesHeading": {
+    "message": "Mapendeleo ya Tovuti"
+  },
+  "websitePreferencesIntro": {
+    "message": "Tumia majina halisi ya mwenyeji kama vile reddit.com, discord.com, au news.example.com."
+  },
+  "addSite": {
+    "message": "Ongeza tovuti"
+  },
+  "backupHeading": {
+    "message": "Hifadhi nakala"
+  },
+  "backupIntro": {
+    "message": "Mipangilio imehifadhiwa katika hifadhi Chrome ya kusawazisha. Ikiwa usawazishaji Chrome umewezeshwa kwa viendelezi, wanaweza kufuata wasifu wako Chrome."
+  },
+  "exportJson": {
+    "message": "Hamisha JSON"
+  },
+  "importFile": {
+    "message": "Ingiza faili"
+  },
+  "applyPastedJson": {
+    "message": "Omba JSON iliyobandikwa"
+  },
+  "refreshFromSync": {
+    "message": "Onyesha upya kutoka kwa usawazishaji"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Hakikisho la kuuza nje linaonekana hapa. Unaweza pia kubandika nakala rudufu ya MotionBlock JSON na kuitumia."
+  },
+  "globalStatusSaved": {
+    "message": "Hali ya kimataifa imehifadhiwa."
+  },
+  "globalDefaultsSaved": {
+    "message": "Chaguo-msingi za kimataifa zimehifadhiwa."
+  },
+  "displayModeSaved": {
+    "message": "Hali ya kuonyesha imehifadhiwa."
+  },
+  "themeSaved": {
+    "message": "Mandhari yamehifadhiwa."
+  },
+  "revealSettingSaved": {
+    "message": "Fichua mpangilio wa kitufe umehifadhiwa."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Mpangilio wa uchunguzi umehifadhiwa."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Chaguo-msingi zilizopendekezwa zimerejeshwa."
+  },
+  "enterValidHostname": {
+    "message": "Ingiza jina halali la mwenyeji."
+  },
+  "siteAdded": {
+    "message": "Tovuti imeongezwa."
+  },
+  "siteRuleSaved": {
+    "message": "Sheria ya tovuti imehifadhiwa."
+  },
+  "siteRemoved": {
+    "message": "Tovuti imeondolewa."
+  },
+  "settingsExported": {
+    "message": "Mipangilio iliyosafirishwa kwa faili ya JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Mipangilio iliyoingizwa kutoka kwa faili."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Mipangilio iliyoingizwa kutoka kwa JSON iliyobandikwa."
+  },
+  "settingsRefreshed": {
+    "message": "Mipangilio imeonyeshwa upya kutoka kwa usawazishaji Chrome."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Haikuweza kupakia mipangilio."
+  },
+  "defaultOn": {
+    "message": "Chaguo-msingi juu ya"
+  },
+  "defaultOff": {
+    "message": "Chaguo-msingi imezimwa"
+  },
+  "noWebsitePreferences": {
+    "message": "Hakuna mapendeleo ya wavuti bado."
+  },
+  "removeSite": {
+    "message": "Ondoa"
+  },
+  "siteTableSite": {
+    "message": "Tovuti"
+  },
+  "siteTableActive": {
+    "message": "Inatumika"
+  },
+  "selectInherit": {
+    "message": "Kurithi"
+  },
+  "selectBlock": {
+    "message": "Kuzuia"
+  },
+  "selectAllow": {
+    "message": "Ruhusu"
+  },
+  "selectOn": {
+    "message": "Juu ya"
+  },
+  "selectOff": {
+    "message": "Imezimwa"
+  },
+  "saveFailed": {
+    "message": "Hifadhi imeshindwa."
+  },
+  "importFailed": {
+    "message": "Uingizaji umeshindwa: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Chagua faili ya JSON au ubandike nakala rudufu kwanza."
+  },
+  "invalidJson": {
+    "message": "JSON batili."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Hii haionekani kama chelezo ya mipangilio ya MotionBlock."
+  },
+  "errorMissingMessageType": {
+    "message": "Aina ya ujumbe inakosekana."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Jina la mwenyeji wa tovuti linalokosekana."
+  },
+  "errorUnknownMessageType": {
+    "message": "Aina ya ujumbe isiyojulikana."
+  },
+  "featureGifsLabel": {
+    "message": "GIF picha"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Badilisha vipengele GIF vya picha kwenye ukurasa huku ukiacha kiolesura kidogo GIFs peke yake."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV na URL za video zinazofanana na GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Zuia URL za .gifv na vitu vya video ambavyo hufanya kama GIFs ya kitanzi."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP Mifumo ya URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Zuia URL za picha za .webp. Imezimwa kwa chaguo-msingi kwa sababu picha nyingi za WebP hazijahuishwa."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Kucheza kiotomatiki na kuzungusha video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Kucheza kiotomatiki"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Sitisha video ya kucheza kiotomatiki na uondoe video ya kitanzi iliyonyamazishwa inayotumiwa kama uhuishaji."
+  },
+  "featureVideoLabel": {
+    "message": "Video zote"
+  },
+  "featureVideoShortLabel": {
+    "message": "Sehemu"
+  },
+  "featureVideoDescription": {
+    "message": "Zuia maombi HTML5 video na faili za video za kawaida."
+  },
+  "featureAudioLabel": {
+    "message": "Sauti"
+  },
+  "featureAudioShortLabel": {
+    "message": "Sauti"
+  },
+  "featureAudioDescription": {
+    "message": "Zuia vipengele vya sauti na maombi ya kawaida ya faili za sauti."
+  },
+  "featureImagesLabel": {
+    "message": "Picha zote"
+  },
+  "featureImagesShortLabel": {
+    "message": "Picha"
+  },
+  "featureImagesDescription": {
+    "message": "Badilisha vipengele vya picha kwenye ukurasa. Tumia sheria za kuruhusu kwa kila tovuti kwa tovuti nzito za picha."
+  },
+  "featureEmojiLabel": {
+    "message": "Maandishi ya emoji na picha za emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Ondoa herufi za emoji na watoaji wa kawaida wa picha za emoji. Imezimwa kwa chaguo-msingi kwa sababu inabadilisha maandishi."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS uhuishaji na mabadiliko"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Zima uhuishaji CSS, mabadiliko, na kusogeza laini."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Kuzuia mwendo"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Chaguo-msingi zinazopendekezwa kwa GIFs, video zinazofanana na GIF, uchezaji kiotomatiki na mwendo wa ukurasa."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Vizuizi vya media pana"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Vidhibiti vya mtumiaji wa nguvu vya picha, video, sauti, URL za WebP na emoji. Hizi zinaweza kubadilisha au kuvunja tovuti zingine."
+  },
+  "contentShowBlockedImage": {
+    "message": "Onyesha picha iliyozuiwa"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Cheza sauti iliyozuiwa"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Cheza video iliyozuiwa"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Cheza media iliyozuiwa"
+  },
+  "contentBlockedByTitle": {
+    "message": "Imezuiwa na MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Imezuiwa $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Vyombo vya habari vinavyofanana na GIF"
+  },
+  "contentReasonVideo": {
+    "message": "Sehemu"
+  },
+  "contentReasonAudio": {
+    "message": "Sauti"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Video ya kitanzi"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Video ya kucheza kiotomatiki"
+  },
+  "contentReasonImage": {
+    "message": "Picha"
+  },
+  "contentReasonMedia": {
+    "message": "Vyombo vya habari"
+  }
+}

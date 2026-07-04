@@ -12,11 +12,12 @@ body {
   color: #172522;
   margin: 0;
   min-height: 620px;
-  min-width: 420px;
+  min-width: 480px;
 }
 
 button,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -32,6 +33,10 @@ select {
   gap: 12px;
   justify-content: space-between;
   margin-bottom: 12px;
+}
+
+.header > div {
+  min-width: 0;
 }
 
 h1 {
@@ -57,8 +62,9 @@ p {
   border-radius: 8px;
   box-sizing: border-box;
   color: #42504a;
-  display: flex;
+  display: grid;
   gap: 8px;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   line-height: 1.35;
   margin: 0 0 10px;
   max-width: none;
@@ -124,6 +130,15 @@ p {
   font-weight: 700;
 }
 
+html[dir="rtl"] .field,
+html[dir="rtl"] .feature-row {
+  direction: rtl;
+}
+
+html[dir="rtl"] .feature-count {
+  justify-self: start;
+}
+
 .section {
   background: #ffffff;
   border: 1px solid #dfe5df;
@@ -168,14 +183,14 @@ body[data-page-state="unsupported"] .reload-hint {
   align-items: center;
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr 148px;
+  grid-template-columns: minmax(0, 1fr) minmax(164px, 184px);
 }
 
 .feature-row {
   align-items: center;
   display: grid;
   gap: 8px;
-  grid-template-columns: minmax(0, 1fr) 40px 148px;
+  grid-template-columns: minmax(0, 1fr) 40px minmax(148px, 168px);
 }
 
 .field span,
@@ -197,9 +212,27 @@ select {
   background: #fbfcfa;
   border: 1px solid #cbd5ce;
   border-radius: 6px;
+  box-sizing: border-box;
   color: #172522;
   min-width: 0;
   padding: 6px 8px;
+  width: 100%;
+}
+
+textarea {
+  background: #fbfcfa;
+  border: 1px solid #cbd5ce;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #172522;
+  font-family: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  line-height: 1.35;
+  margin-top: 8px;
+  min-height: 118px;
+  padding: 8px;
+  resize: vertical;
+  width: 100%;
 }
 
 .feature-list {
@@ -247,14 +280,40 @@ select {
   white-space: normal;
 }
 
+.diagnostics-summary,
+.diagnostics-status {
+  color: #68766f;
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 0;
+  max-width: none;
+  white-space: normal;
+}
+
+.diagnostics-actions {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+}
+
+.diagnostics-status {
+  margin-top: 7px;
+  min-height: 16px;
+}
+
 button {
   background: #ffffff;
   border: 1px solid #cbd5ce;
   border-radius: 7px;
+  box-sizing: border-box;
   color: #1e2b27;
   cursor: pointer;
+  line-height: 1.2;
   min-height: 34px;
+  overflow-wrap: anywhere;
   padding: 7px 10px;
+  white-space: normal;
 }
 
 button:hover {
@@ -311,7 +370,9 @@ html[data-theme="dark"] .section-title {
 }
 
 html[data-theme="dark"] .site-note,
-html[data-theme="dark"] .feature-group-title {
+html[data-theme="dark"] .feature-group-title,
+html[data-theme="dark"] .diagnostics-summary,
+html[data-theme="dark"] .diagnostics-status {
   color: #aebbb5;
 }
 
@@ -320,6 +381,12 @@ html[data-theme="dark"] .feature-group + .feature-group {
 }
 
 html[data-theme="dark"] select {
+  background: #10171b;
+  border-color: #3a4a52;
+  color: #edf4f0;
+}
+
+html[data-theme="dark"] textarea {
   background: #10171b;
   border-color: #3a4a52;
   color: #edf4f0;

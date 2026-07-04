@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF بلاکر اور اینیمیشن اسٹاپر"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs کو روکیں، GIFV کریں، ویڈیو آٹو پلے کریں، ہوور کے پریویوز ہوں، اور ہر سائٹ کنٹرولز کے ساتھ توجہ ہٹانے والی حرکت۔"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock اختیارات"
+  },
+  "siteLoading": {
+    "message": "لوڈنگ سائٹ..."
+  },
+  "optionsButton": {
+    "message": "اختیارات"
+  },
+  "statusOnInitial": {
+    "message": "آن"
+  },
+  "checkingActiveRules": {
+    "message": "فعال قواعد چیک کر رہا ہوں..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ بلاک کر دیا گیا",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "یہاں بلاک موشن ہے"
+  },
+  "allowThisSite": {
+    "message": "اس سائٹ کی اجازت دیں"
+  },
+  "siteMode": {
+    "message": "سائٹ موڈ"
+  },
+  "followGlobalDefaults": {
+    "message": "عالمی ڈیفالٹس کی پیروی کریں"
+  },
+  "blockOnThisSite": {
+    "message": "اس سائٹ پر بلاک کریں"
+  },
+  "allowThisSiteOption": {
+    "message": "اس سائٹ کی اجازت دیں"
+  },
+  "siteMediaControls": {
+    "message": "سائٹ میڈیا کنٹرولز"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "تشخیص"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock تشخیصی لاگ"
+  },
+  "copyDiagnostics": {
+    "message": "کاپی لاگ"
+  },
+  "refreshDiagnostics": {
+    "message": "ریفریش"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ تشخیصی واقعات ریکارڈ کیے گئے۔",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "ابھی تک کوئی تشخیص نہیں ہوئی۔ اس ٹیب کو دوبارہ لوڈ کریں، مسئلہ دوبارہ پیدا کریں، پھر اس پینل کو ریفریش کریں۔"
+  },
+  "diagnosticsRefreshed": {
+    "message": "تشخیص تازہ ہو گئی۔"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "تشخیص کو ریفریش نہیں کر سکا۔"
+  },
+  "diagnosticsCopied": {
+    "message": "تشخیص کی نقل ہو گئی۔"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "تشخیص کی کاپی نہیں ہو سکی۔"
+  },
+  "resetSite": {
+    "message": "سائٹ کو ری سیٹ کریں"
+  },
+  "reloadTab": {
+    "message": "ری لوڈ"
+  },
+  "reloadHint": {
+    "message": "ایسے میڈیا کے لیے ری لوڈ کی ضرورت ہو سکتی ہے جو پہلے ہی بلاک یا لوڈ ہو چکا ہو۔"
+  },
+  "unknownSite": {
+    "message": "نامعلوم مقام"
+  },
+  "statusBlocking": {
+    "message": "بلاکنگ"
+  },
+  "statusAllowed": {
+    "message": "اجازت"
+  },
+  "couldNotLoadSettings": {
+    "message": "سیٹنگز لوڈ نہیں ہو سکی"
+  },
+  "notAWebsite": {
+    "message": "یہ ویب سائٹ نہیں ہے"
+  },
+  "statusNotApplicable": {
+    "message": "نہیں/جواب"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock براؤزر، ایکسٹینشن یا دیگر محفوظ صفحات کو کنفیگر نہیں کر سکتا۔"
+  },
+  "selectUseGlobal": {
+    "message": "عالمی استعمال"
+  },
+  "selectBlockHere": {
+    "message": "یہاں بلاک کریں"
+  },
+  "selectAllowHere": {
+    "message": "یہاں اجازت دیں"
+  },
+  "summaryAllowed": {
+    "message": "یہ سائٹ اجازت یافتہ ہے۔MotionBlock یہاں میڈیا کو بلاک نہیں کر رہا۔"
+  },
+  "summaryActiveNoCategories": {
+    "message": "یہاں فعال ہے، لیکن اس وقت کوئی میڈیا کیٹیگری بلاک نہیں ہے۔"
+  },
+  "summaryBlockingFeatures": {
+    "message": "اس سائٹ پر $FEATURES$ بلاک کر رہا ہوں۔",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "اس سائٹ کے لیے MotionBlock کے تمام قواعد غلط ہیں۔"
+  },
+  "siteRuleOwnSettings": {
+    "message": "یہ سائٹ اپنی MotionBlock سیٹنگز استعمال کرتی ہے۔"
+  },
+  "siteRuleOverrides": {
+    "message": "یہ سائٹ عالمی حیثیت کے ساتھ میڈیا مخصوص اوور رائیڈز کے ساتھ برقرار ہے۔"
+  },
+  "siteRuleDefaults": {
+    "message": "یہ سائٹ آپ کے عالمی ڈیفالٹس کی پیروی کرتی ہے۔"
+  },
+  "featureMetaInactive": {
+    "message": "جب تک سائٹ کی اجازت ہے، غیر فعال"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "اوور رائیڈ: بلاکنگ"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "اوور رائیڈ: اجازت"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "عالمی: بلاکنگ"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "عالمی: اجازت"
+  },
+  "optionsIntro": {
+    "message": "عالمی میڈیا ڈیفالٹس اور ہر سائٹ کی ترجیحات۔"
+  },
+  "extensionActive": {
+    "message": "ایکسٹینشن ایکٹو"
+  },
+  "globalDefaultsHeading": {
+    "message": "عالمی ڈیفالٹس"
+  },
+  "globalDefaultsIntro": {
+    "message": "GIFs سے شروع کریں، GIF جیسی ویڈیو، اور آٹو پلے کریں۔ براڈ بلاکرز صرف اس وقت استعمال کریں جب سائٹ کو سخت میڈیا کنٹرول کی ضرورت ہو۔"
+  },
+  "restoreRecommended": {
+    "message": "بحالی کی سفارش کی جاتی ہے"
+  },
+  "blockedMediaDisplay": {
+    "message": "بلاکڈ میڈیا ڈسپلے"
+  },
+  "replacementPlaceholder": {
+    "message": "کمپیکٹ پلیس ہولڈر"
+  },
+  "replacementHide": {
+    "message": "ہائڈ ایلیمنٹ"
+  },
+  "interfaceTheme": {
+    "message": "انٹرفیس تھیم"
+  },
+  "themeSystem": {
+    "message": "نظام"
+  },
+  "themeLight": {
+    "message": "روشنی"
+  },
+  "themeDark": {
+    "message": "تاریک"
+  },
+  "revealControlsTitle": {
+    "message": "بلاکڈ میڈیا کے لیے ریویل بٹن"
+  },
+  "revealControlsDescription": {
+    "message": "بلاک میڈیا پر کلک ٹو پلے/شو کے بٹن دکھائیں۔ ڈیفالٹ میں بند ہے کیونکہ کچھ سائٹس چھپی ہوئی میڈیا سطحوں کو دوبارہ استعمال کرتی ہیں۔"
+  },
+  "diagnosticsTitle": {
+    "message": "ایڈوانسڈ ڈائیگناسٹکس"
+  },
+  "diagnosticsDescription": {
+    "message": "جب آپ بلاکنگ کے مسئلے کو دوبارہ پیدا کر رہے ہوں تو پاپ اپ میں ایک کاپی ایبل فی ٹیب ڈائیگناسٹک لاگ دکھائیں۔"
+  },
+  "websitePreferencesHeading": {
+    "message": "ویب سائٹ کی ترجیحات"
+  },
+  "websitePreferencesIntro": {
+    "message": "بالکل درست ہوسٹ نام استعمال کریں جیسے reddit.com، discord.com، یا news.example.com۔"
+  },
+  "addSite": {
+    "message": "سائٹ شامل کریں"
+  },
+  "backupHeading": {
+    "message": "بیک اپ"
+  },
+  "backupIntro": {
+    "message": "سیٹنگز Chrome سنک اسٹوریج میں محفوظ کی جاتی ہیں۔ اگر Chrome ایکسٹینشنز کے لیے سنک فعال ہو تو وہ آپ کے Chrome پروفائل کو فالو کر سکتے ہیں۔"
+  },
+  "exportJson": {
+    "message": "ایکسپورٹ JSON"
+  },
+  "importFile": {
+    "message": "فائل امپورٹ کریں"
+  },
+  "applyPastedJson": {
+    "message": "چسپاں JSON"
+  },
+  "refreshFromSync": {
+    "message": "سنک سے ریفریش کریں"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "ایکسپورٹ پریویو یہاں موجود ہے۔ آپ MotionBlock JSON بیک اپ بھی پیسٹ کر کے لگا سکتے ہیں۔"
+  },
+  "globalStatusSaved": {
+    "message": "عالمی حیثیت محفوظ ہو گئی۔"
+  },
+  "globalDefaultsSaved": {
+    "message": "عالمی ڈیفالٹس محفوظ ہو گئے۔"
+  },
+  "displayModeSaved": {
+    "message": "ڈسپلے موڈ محفوظ ہے۔"
+  },
+  "themeSaved": {
+    "message": "تھیم محفوظ کر لیا گیا۔"
+  },
+  "revealSettingSaved": {
+    "message": "ریویل بٹن سیٹنگ محفوظ ہے۔"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "تشخیصی سیٹنگ محفوظ ہے۔"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "تجویز کردہ ڈیفالٹس بحال کر دیے گئے۔"
+  },
+  "enterValidHostname": {
+    "message": "ایک درست ہوسٹ نیم درج کریں۔"
+  },
+  "siteAdded": {
+    "message": "سائٹ شامل کی گئی۔"
+  },
+  "siteRuleSaved": {
+    "message": "سائٹ کا اصول محفوظ ہے۔"
+  },
+  "siteRemoved": {
+    "message": "سائٹ ہٹا دی گئی۔"
+  },
+  "settingsExported": {
+    "message": "سیٹنگز کو JSON فائل میں ایکسپورٹ کیا گیا۔"
+  },
+  "settingsImportedFromFile": {
+    "message": "سیٹنگز فائل سے امپورٹ کی گئی ہیں۔"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "پیسٹ شدہ JSON سے امپورٹ کی گئی سیٹنگز۔"
+  },
+  "settingsRefreshed": {
+    "message": "سیٹنگز Chrome سنک سے ریفریش ہو گئی ہیں۔"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "سیٹنگز لوڈ نہیں ہو سکی۔"
+  },
+  "defaultOn": {
+    "message": "ڈیفالٹ آن"
+  },
+  "defaultOff": {
+    "message": "ڈیفالٹ آف"
+  },
+  "noWebsitePreferences": {
+    "message": "ابھی تک کوئی ویب سائٹ کی ترجیحات نہیں ہیں۔"
+  },
+  "removeSite": {
+    "message": "ہٹا دیا جائے"
+  },
+  "siteTableSite": {
+    "message": "مقام"
+  },
+  "siteTableActive": {
+    "message": "فعال"
+  },
+  "selectInherit": {
+    "message": "وراثت"
+  },
+  "selectBlock": {
+    "message": "بلاک"
+  },
+  "selectAllow": {
+    "message": "اجازت"
+  },
+  "selectOn": {
+    "message": "آن"
+  },
+  "selectOff": {
+    "message": "بند"
+  },
+  "saveFailed": {
+    "message": "سیو ناکام رہا۔"
+  },
+  "importFailed": {
+    "message": "امپورٹ ناکام: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON فائل منتخب کریں یا پہلے بیک اپ پیسٹ کریں۔"
+  },
+  "invalidJson": {
+    "message": "غیر معتبر JSON۔"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "یہ MotionBlock سیٹنگز بیک اپ نہیں لگتا۔"
+  },
+  "errorMissingMessageType": {
+    "message": "پیغام کی قسم غائب ہے۔"
+  },
+  "errorMissingSiteHostname": {
+    "message": "سائٹ ہوسٹ نام غائب ہے۔"
+  },
+  "errorUnknownMessageType": {
+    "message": "نامعلوم پیغام کی قسم۔"
+  },
+  "featureGifsLabel": {
+    "message": "GIF تصاویر"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "صفحے GIF تصویر کے عناصر کو تبدیل کریں جبکہ چھوٹے انٹرفیس GIFs کو ویسا ہی چھوڑ دیں۔"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV اور GIF جیسے ویڈیو URLs"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": ".gifv URLs اور ویڈیو عناصر کو بلاک کریں جو لوپنگ GIFs کی طرح برتاؤ کرتے ہیں۔"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP یو آر ایل پیٹرنز"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp امیج URLs کو بلاک کریں۔ ڈیفالٹ میں بند ہے کیونکہ بہت سی WebP تصاویر متحرک نہیں ہوتیں۔"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "آٹو پلے اور لوپنگ ویڈیو"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "آٹو پلے"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "ویڈیو آٹو پلے کو روک دیں اور اینیمیشن کے طور پر استعمال ہونے والی میوٹڈ لوپنگ ویڈیو کو ہٹا دیں۔"
+  },
+  "featureVideoLabel": {
+    "message": "تمام ویڈیوز"
+  },
+  "featureVideoShortLabel": {
+    "message": "ویڈیو"
+  },
+  "featureVideoDescription": {
+    "message": "ویڈیو HTML5 اور عام ویڈیو فائل درخواستوں کو بلاک کریں۔"
+  },
+  "featureAudioLabel": {
+    "message": "آڈیو"
+  },
+  "featureAudioShortLabel": {
+    "message": "آڈیو"
+  },
+  "featureAudioDescription": {
+    "message": "آڈیو عناصر اور عام آڈیو فائل درخواستوں کو بلاک کریں۔"
+  },
+  "featureImagesLabel": {
+    "message": "تمام تصاویر"
+  },
+  "featureImagesShortLabel": {
+    "message": "تصاویر"
+  },
+  "featureImagesDescription": {
+    "message": "صفحے میں تصویر کے عناصر کو تبدیل کریں۔ تصاویر والے سائٹس کے لیے ہر سائٹ اجازت کے قواعد استعمال کریں۔"
+  },
+  "featureEmojiLabel": {
+    "message": "ایموجی ٹیکسٹ اور ایموجی تصاویر"
+  },
+  "featureEmojiShortLabel": {
+    "message": "ایموجی"
+  },
+  "featureEmojiDescription": {
+    "message": "ایموجی کریکٹرز اور عام ایموجی امیج رینڈررز کو ہٹا دیں۔ ڈیفالٹ طور پر اس لیے بند ہے کیونکہ یہ ٹیکسٹ تبدیل کرتا ہے۔"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS اینیمیشن اور ٹرانزیشنز"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS اینیمیشنز، ٹرانزیشنز اور ہموار اسکرولنگ کو غیر فعال کریں۔"
+  },
+  "featureGroupMotionLabel": {
+    "message": "موشن بلاکنگ"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs، GIF جیسی ویڈیوز، آٹو پلے، اور پیج موشن کے لیے تجویز کردہ ڈیفالٹس۔"
+  },
+  "featureGroupBroadLabel": {
+    "message": "براڈ میڈیا بلاکرز"
+  },
+  "featureGroupBroadDescription": {
+    "message": "تصاویر، ویڈیو، آڈیو، WebP URLs اور ایموجی کے لیے پاور یوزر کنٹرولز۔ یہ کچھ سائٹس کو بدل یا خراب کر سکتے ہیں۔"
+  },
+  "contentShowBlockedImage": {
+    "message": "بلاکڈ تصویر دکھائیں"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "بلاکڈ آڈیو چلائیں"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "بلاکڈ ویڈیو چلائیں"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "بلاکڈ میڈیا چلائیں"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock کی طرف سے بلاک: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "بلاک $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF نما میڈیا"
+  },
+  "contentReasonVideo": {
+    "message": "ویڈیو"
+  },
+  "contentReasonAudio": {
+    "message": "آڈیو"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "لوپنگ ویڈیو"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "آٹو پلے ویڈیو"
+  },
+  "contentReasonImage": {
+    "message": "تصویر"
+  },
+  "contentReasonMedia": {
+    "message": "میڈیا"
+  }
+}

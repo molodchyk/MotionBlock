@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF ブロッカー&アニメーションストッパー"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "GIFs、 GIFV、動画の自動再生、ホバープレビュー、そしてサイトごとのコントロールで気を散らす動きを止められます。"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock 選択肢"
+  },
+  "siteLoading": {
+    "message": "ロードサイト..."
+  },
+  "optionsButton": {
+    "message": "オプション"
+  },
+  "statusOnInitial": {
+    "message": "オン"
+  },
+  "checkingActiveRules": {
+    "message": "アクティブなルールを確認しています..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ ブロックされた",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "ここでブロックモーションを"
+  },
+  "allowThisSite": {
+    "message": "このサイトを許可してください"
+  },
+  "siteMode": {
+    "message": "サイトモード"
+  },
+  "followGlobalDefaults": {
+    "message": "グローバルデフォルトに従う"
+  },
+  "blockOnThisSite": {
+    "message": "このサイトでのブロック"
+  },
+  "allowThisSiteOption": {
+    "message": "このサイトを許可してください"
+  },
+  "siteMediaControls": {
+    "message": "サイトメディア制御"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "診断"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock 診断ログ"
+  },
+  "copyDiagnostics": {
+    "message": "ログをコピー"
+  },
+  "refreshDiagnostics": {
+    "message": "リフレッシュ"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ 診断イベントが記録されています。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "まだ診断はされていません。このタブを読み込み、問題を再現し、その後このパネルを更新してください。"
+  },
+  "diagnosticsRefreshed": {
+    "message": "診断が更新された。"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "診断を更新できませんでした。"
+  },
+  "diagnosticsCopied": {
+    "message": "診断はコピー済み。"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "診断結果をコピーできませんでした。"
+  },
+  "resetSite": {
+    "message": "リセットサイト"
+  },
+  "reloadTab": {
+    "message": "リロード"
+  },
+  "reloadHint": {
+    "message": "すでにブロックされたりロードされたメディアに対してはリロードが必要になることがあります。"
+  },
+  "unknownSite": {
+    "message": "不明の場所"
+  },
+  "statusBlocking": {
+    "message": "ブロッキング"
+  },
+  "statusAllowed": {
+    "message": "許可されています"
+  },
+  "couldNotLoadSettings": {
+    "message": "設定が読み込めませんでした"
+  },
+  "notAWebsite": {
+    "message": "ウェブサイトではありません"
+  },
+  "statusNotApplicable": {
+    "message": "該当なし"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ブラウザ、拡張機能、その他の保護ページを設定することはできません。"
+  },
+  "selectUseGlobal": {
+    "message": "グローバルを使います"
+  },
+  "selectBlockHere": {
+    "message": "ここでブロックしてください"
+  },
+  "selectAllowHere": {
+    "message": "ここで許可してください"
+  },
+  "summaryAllowed": {
+    "message": "このサイトは許可されています。 MotionBlock ここでメディアをブロックしているわけではありません。"
+  },
+  "summaryActiveNoCategories": {
+    "message": "こちらはアクティブですが、現在ブロックされているメディアカテゴリはありません。"
+  },
+  "summaryBlockingFeatures": {
+    "message": "このサイトで $FEATURES$ をブロックしています。",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "このサイトでは MotionBlock すべてのルールは無効です。"
+  },
+  "siteRuleOwnSettings": {
+    "message": "このサイトは独自の MotionBlock 設定を使用しています。"
+  },
+  "siteRuleOverrides": {
+    "message": "このサイトは、メディア固有のオーバーライドを含み、グローバルステータスを維持。"
+  },
+  "siteRuleDefaults": {
+    "message": "このサイトはあなたのグローバルデフォルトを追っています。"
+  },
+  "featureMetaInactive": {
+    "message": "サイトが許可されている間は非アクティブです"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "オーバーライド:ブロッキング"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "オーバーライド:許可"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "グローバル:ブロッキング"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "グローバル:許可されています"
+  },
+  "optionsIntro": {
+    "message": "グローバルメディアのデフォルトとサイトごとの設定。"
+  },
+  "extensionActive": {
+    "message": "拡張有効"
+  },
+  "globalDefaultsHeading": {
+    "message": "グローバルデフォルト"
+  },
+  "globalDefaultsIntro": {
+    "message": "まずは GIFs、 GIF 風の動画、そして自動再生から始めましょう。より厳しいメディア管理が必要な場合のみ広範なブロッカーを使用してください。"
+  },
+  "restoreRecommended": {
+    "message": "修復推奨"
+  },
+  "blockedMediaDisplay": {
+    "message": "メディア表示の遮断"
+  },
+  "replacementPlaceholder": {
+    "message": "コンパクトプレースホルダー"
+  },
+  "replacementHide": {
+    "message": "隠れ要素"
+  },
+  "interfaceTheme": {
+    "message": "インターフェーステーマ"
+  },
+  "themeSystem": {
+    "message": "システム"
+  },
+  "themeLight": {
+    "message": "光"
+  },
+  "themeDark": {
+    "message": "暗い"
+  },
+  "revealControlsTitle": {
+    "message": "ブロックされたメディアの表示ボタン"
+  },
+  "revealControlsDescription": {
+    "message": "ブロックされたメディアにクリック・再生ボタンを表示する。デフォルトでは無効です。なぜなら一部のサイトは隠れたメディアの表面を再利用しているからです。"
+  },
+  "diagnosticsTitle": {
+    "message": "高度な診断"
+  },
+  "diagnosticsDescription": {
+    "message": "ブロック問題を再現しながら、ポップアップにコピー可能な各タブの診断ログを表示します。"
+  },
+  "websitePreferencesHeading": {
+    "message": "ウェブサイトの設定"
+  },
+  "websitePreferencesIntro": {
+    "message": "reddit.com、 discord.com、 news.example.com など、正確なホスト名を使いましょう。"
+  },
+  "addSite": {
+    "message": "サイトを追加"
+  },
+  "backupHeading": {
+    "message": "バックアップ"
+  },
+  "backupIntro": {
+    "message": "設定は Chrome 同期ストレージに保存されています。拡張機能で同期が有効 Chrome なら、 Chrome プロフィールをフォローできます。"
+  },
+  "exportJson": {
+    "message": "輸出 JSON"
+  },
+  "importFile": {
+    "message": "インポートファイル"
+  },
+  "applyPastedJson": {
+    "message": "貼り付け JSON"
+  },
+  "refreshFromSync": {
+    "message": "同期からのリフレッシュ"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "エクスポートプレビューはこちらに掲載されています。 MotionBlock JSON バックアップを貼り付けて適用することもできます。"
+  },
+  "globalStatusSaved": {
+    "message": "グローバルステータスが保存されました。"
+  },
+  "globalDefaultsSaved": {
+    "message": "グローバルデフォルトを保存しました。"
+  },
+  "displayModeSaved": {
+    "message": "表示モードが保存されました。"
+  },
+  "themeSaved": {
+    "message": "テーマ保存済み。"
+  },
+  "revealSettingSaved": {
+    "message": "保存済みボタン設定を公開。"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "診断設定を保存しました。"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "推奨デフォルトが復元されました。"
+  },
+  "enterValidHostname": {
+    "message": "有効なホスト名を入力してください。"
+  },
+  "siteAdded": {
+    "message": "サイトが追記。"
+  },
+  "siteRuleSaved": {
+    "message": "サイトのルールは保存されました。"
+  },
+  "siteRemoved": {
+    "message": "サイトは削除されました。"
+  },
+  "settingsExported": {
+    "message": "設定を JSON ファイルにエクスポートしました。"
+  },
+  "settingsImportedFromFile": {
+    "message": "設定はファイルからインポートしました。"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "設定は貼り付けた JSON からインポートしました。"
+  },
+  "settingsRefreshed": {
+    "message": "同期から設定 Chrome 更新されました。"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "設定が読み込めませんでした。"
+  },
+  "defaultOn": {
+    "message": "デフォルトオン"
+  },
+  "defaultOff": {
+    "message": "デフォルトオフ"
+  },
+  "noWebsitePreferences": {
+    "message": "まだウェブサイトの設定はありません。"
+  },
+  "removeSite": {
+    "message": "削除"
+  },
+  "siteTableSite": {
+    "message": "遺跡"
+  },
+  "siteTableActive": {
+    "message": "現役"
+  },
+  "selectInherit": {
+    "message": "継承"
+  },
+  "selectBlock": {
+    "message": "ブロック"
+  },
+  "selectAllow": {
+    "message": "許可して"
+  },
+  "selectOn": {
+    "message": "オン"
+  },
+  "selectOff": {
+    "message": "消えろ"
+  },
+  "saveFailed": {
+    "message": "セーブに失敗しました。"
+  },
+  "importFailed": {
+    "message": "インポート失敗: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "JSON ファイルを選ぶか、まずバックアップを貼り付けてください。"
+  },
+  "invalidJson": {
+    "message": "無効 JSON。"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "これは MotionBlock 設定のバックアップには見えません。"
+  },
+  "errorMissingMessageType": {
+    "message": "メッセージタイプが抜けています。"
+  },
+  "errorMissingSiteHostname": {
+    "message": "サイトのホスト名が失われています。"
+  },
+  "errorUnknownMessageType": {
+    "message": "不明なメッセージタイプ。"
+  },
+  "featureGifsLabel": {
+    "message": "GIF 画像"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "小さなインターフェース GIFs はそのまま、ページの画像要素 GIF 置き換えてください。"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV および GIF に似た動画URL"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "ループするような動作をする.gifvのURLや動画要素をブロック GIFs。"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URLパターン"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": ".webp画像のURLをブロックしてください。デフォルトでオフになっているのは、多くの WebP 画像がアニメーションされていないからです。"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "自動再生とループ動画"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "自動再生"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "自動再生動画を一時停止し、アニメーションとして使われるミュートループ動画を削除してください。"
+  },
+  "featureVideoLabel": {
+    "message": "すべてビデオ"
+  },
+  "featureVideoShortLabel": {
+    "message": "ビデオ"
+  },
+  "featureVideoDescription": {
+    "message": "動画 HTML5 一般的な動画ファイルのリクエストをブロックしてください。"
+  },
+  "featureAudioLabel": {
+    "message": "音声"
+  },
+  "featureAudioShortLabel": {
+    "message": "音声"
+  },
+  "featureAudioDescription": {
+    "message": "音声要素や一般的な音声ファイルリクエストをブロックします。"
+  },
+  "featureImagesLabel": {
+    "message": "すべての画像"
+  },
+  "featureImagesShortLabel": {
+    "message": "画像"
+  },
+  "featureImagesDescription": {
+    "message": "ページの画像要素を置き換えてください。画像が多いサイトにはサイトごとの許可ルールを適用してください。"
+  },
+  "featureEmojiLabel": {
+    "message": "絵文字テキストと絵文字画像"
+  },
+  "featureEmojiShortLabel": {
+    "message": "絵文字"
+  },
+  "featureEmojiDescription": {
+    "message": "絵文字や一般的な絵文字画像レンダラーを削除してください。デフォルトでオフにするのはテキストが変わるからです。"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS アニメーションとトランジション"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "CSS アニメーション、トランジション、滑らかなスクロールを無効にしてください。"
+  },
+  "featureGroupMotionLabel": {
+    "message": "モーションブロッキング"
+  },
+  "featureGroupMotionDescription": {
+    "message": "GIFs、 GIF 風の動画、自動再生、ページ動きの推奨デフォルト設定。"
+  },
+  "featureGroupBroadLabel": {
+    "message": "広範囲メディアブロッカー"
+  },
+  "featureGroupBroadDescription": {
+    "message": "画像、動画、音声、 WebP URL、絵文字のパワーユーザーコントロール。これらは一部のサイトを変えたり壊したりすることがあります。"
+  },
+  "contentShowBlockedImage": {
+    "message": "遮断された画像を表示する"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "ブロックされた音声を再生"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "ブロックされた動画を再生"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "ブロックされたメディアを再生"
+  },
+  "contentBlockedByTitle": {
+    "message": "MotionBlock にブロックされました: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "ブロックされた $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF 系メディア"
+  },
+  "contentReasonVideo": {
+    "message": "ビデオ"
+  },
+  "contentReasonAudio": {
+    "message": "音声"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "ループ映像"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "自動再生ビデオ"
+  },
+  "contentReasonImage": {
+    "message": "画像"
+  },
+  "contentReasonMedia": {
+    "message": "メディア"
+  }
+}

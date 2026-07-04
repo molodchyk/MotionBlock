@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF Blokátor a Zastavovač animace"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Zastavte GIFs, GIFV, automatické přehrávání videa, náhledy myší a rušivý pohyb pomocí ovládání jednotlivých míst."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Možnosti"
+  },
+  "siteLoading": {
+    "message": "Nakládací místo..."
+  },
+  "optionsButton": {
+    "message": "Možnosti"
+  },
+  "statusOnInitial": {
+    "message": "Na"
+  },
+  "checkingActiveRules": {
+    "message": "Kontrola aktivních pravidel..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ zablokováno",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokujte pohyb zde"
+  },
+  "allowThisSite": {
+    "message": "Povolte tuto stránku"
+  },
+  "siteMode": {
+    "message": "Režim lokality"
+  },
+  "followGlobalDefaults": {
+    "message": "Sledujte globální defaulty"
+  },
+  "blockOnThisSite": {
+    "message": "Blok na tomto webu"
+  },
+  "allowThisSiteOption": {
+    "message": "Povolte tuto stránku"
+  },
+  "siteMediaControls": {
+    "message": "Ovládání médií na webu"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostický záznam"
+  },
+  "copyDiagnostics": {
+    "message": "Kopírovací záznam"
+  },
+  "refreshDiagnostics": {
+    "message": "Obnovit"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ zaznamenané diagnostické události.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Zatím žádná diagnostika. Znovu načíst tuto záložku, reprodukovat problém a pak obnovit tento panel."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostika byla obnovena."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Diagnostiku se nepodařilo obnovit."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostika zkopírována."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Diagnostiku jsem nemohl zkopírovat."
+  },
+  "resetSite": {
+    "message": "Resetovací stránka"
+  },
+  "reloadTab": {
+    "message": "Nabít"
+  },
+  "reloadHint": {
+    "message": "Může být potřeba načíst média, která už byla blokována nebo načtena."
+  },
+  "unknownSite": {
+    "message": "Neznámé místo"
+  },
+  "statusBlocking": {
+    "message": "Blokování"
+  },
+  "statusAllowed": {
+    "message": "Povoleno"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nastavení se nepodařilo načíst"
+  },
+  "notAWebsite": {
+    "message": "Není to webová stránka"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock nelze nastavit prohlížeč, rozšíření ani jiné chráněné stránky."
+  },
+  "selectUseGlobal": {
+    "message": "Použijte globální"
+  },
+  "selectBlockHere": {
+    "message": "Blok tady"
+  },
+  "selectAllowHere": {
+    "message": "Povolte sem"
+  },
+  "summaryAllowed": {
+    "message": "Tato stránka je povolena. MotionBlock zde média neblokuje."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Jsem aktivní, ale žádné mediální kategorie momentálně nejsou blokovány."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blokuji $FEATURES$ na tomto webu.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Všechna MotionBlock pravidla na tomto webu neplatí."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Tato stránka používá vlastní MotionBlock nastavení."
+  },
+  "siteRuleOverrides": {
+    "message": "Tento web sleduje globální status s mediálně specifickými přepsáními."
+  },
+  "siteRuleDefaults": {
+    "message": "Tato stránka sleduje vaše globální výchozí nastavení."
+  },
+  "featureMetaInactive": {
+    "message": "Neaktivní, dokud je místo povoleno"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Přepis: blokování"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Přepis: povoleno"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globální: blokování"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globální: povoleno"
+  },
+  "optionsIntro": {
+    "message": "Globální mediální výchozí nastavení a preference pro jednotlivé stránky."
+  },
+  "extensionActive": {
+    "message": "Aktivní rozšíření"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globální platební nesplácení"
+  },
+  "globalDefaultsIntro": {
+    "message": "Začněte s GIFs, videem podobným GIF a automatickým přehráváním. Používejte široké blokátory pouze tehdy, když web potřebuje přísnější kontrolu médií."
+  },
+  "restoreRecommended": {
+    "message": "Doporučeno obnovit"
+  },
+  "blockedMediaDisplay": {
+    "message": "Blokované zobrazení médií"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompaktní zástupce"
+  },
+  "replacementHide": {
+    "message": "Prvek skrytí"
+  },
+  "interfaceTheme": {
+    "message": "Téma rozhraní"
+  },
+  "themeSystem": {
+    "message": "Systém"
+  },
+  "themeLight": {
+    "message": "Světlo"
+  },
+  "themeDark": {
+    "message": "Dark"
+  },
+  "revealControlsTitle": {
+    "message": "Tlačítka pro odhalení blokovaných médií"
+  },
+  "revealControlsDescription": {
+    "message": "Zobrazit tlačítka kliknutí pro přehrávání/zobrazení na blokovaných médiích. Ve výchozím nastavení vypnuté, protože některé stránky znovu používají skryté mediální povrchy."
+  },
+  "diagnosticsTitle": {
+    "message": "Pokročilá diagnostika"
+  },
+  "diagnosticsDescription": {
+    "message": "Zobrazit v vyskaovacím okně zkopírovatelný diagnostický log pro jednotlivé záložky, zatímco reprodukujete problém s blokováním."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preference webových stránek"
+  },
+  "websitePreferencesIntro": {
+    "message": "Používejte přesná hostitelská jména jako reddit.com, discord.com nebo news.example.com."
+  },
+  "addSite": {
+    "message": "Přidat stránku"
+  },
+  "backupHeading": {
+    "message": "Záloha"
+  },
+  "backupIntro": {
+    "message": "Nastavení jsou uložena v Chrome synchronizačním úložišti. Pokud je Chrome synchronizace povolena pro rozšíření, mohou sledovat váš Chrome profil."
+  },
+  "exportJson": {
+    "message": "Exportní JSON"
+  },
+  "importFile": {
+    "message": "Importní soubor"
+  },
+  "applyPastedJson": {
+    "message": "Aplikujte lepidlo JSON"
+  },
+  "refreshFromSync": {
+    "message": "Obnovit ze synchronizace"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Zde se objevuje náhled exportu. Můžete také vložit zálohu MotionBlock JSON a aplikovat ji."
+  },
+  "globalStatusSaved": {
+    "message": "Globální status zachráněn."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globální defaulty uloženy."
+  },
+  "displayModeSaved": {
+    "message": "Režim zobrazení uložen."
+  },
+  "themeSaved": {
+    "message": "Téma uloženo."
+  },
+  "revealSettingSaved": {
+    "message": "Nastavení tlačítka odhalení uloženo."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Nastavení diagnostiky uloženo."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Doporučené výchozí nastavení obnoveno."
+  },
+  "enterValidHostname": {
+    "message": "Zadejte platné jméno hostitele."
+  },
+  "siteAdded": {
+    "message": "Stránka přidána."
+  },
+  "siteRuleSaved": {
+    "message": "Pravidlo stránky uloženo."
+  },
+  "siteRemoved": {
+    "message": "Stránka odstraněna."
+  },
+  "settingsExported": {
+    "message": "Nastavení exportováno do JSON souboru."
+  },
+  "settingsImportedFromFile": {
+    "message": "Nastavení importovaná ze souboru."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Nastavení importované z vložených JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Nastavení obnoveno ze Chrome synchronizace."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nastavení se nepodařilo načítat."
+  },
+  "defaultOn": {
+    "message": "Výchozí nastavení"
+  },
+  "defaultOff": {
+    "message": "Výchozí vypnutí"
+  },
+  "noWebsitePreferences": {
+    "message": "Žádné preference webu zatím nejsou."
+  },
+  "removeSite": {
+    "message": "Odstranit"
+  },
+  "siteTableSite": {
+    "message": "Místo"
+  },
+  "siteTableActive": {
+    "message": "Aktivní"
+  },
+  "selectInherit": {
+    "message": "Dědit"
+  },
+  "selectBlock": {
+    "message": "Blok"
+  },
+  "selectAllow": {
+    "message": "Povolit"
+  },
+  "selectOn": {
+    "message": "Na"
+  },
+  "selectOff": {
+    "message": "Pryč"
+  },
+  "saveFailed": {
+    "message": "Uložení nevyšlo."
+  },
+  "importFailed": {
+    "message": "Import neuspěl: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Vyberte JSON soubor nebo nejdřív vložte zálohu."
+  },
+  "invalidJson": {
+    "message": "neplatné JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Nevypadá to jako záloha MotionBlock nastavení."
+  },
+  "errorMissingMessageType": {
+    "message": "Chybějící typ zprávy."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Chybějící název hostitele stránky."
+  },
+  "errorUnknownMessageType": {
+    "message": "Neznámý typ zprávy."
+  },
+  "featureGifsLabel": {
+    "message": "GIF obrázky"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Nahraďte GIF obrazové prvky na stránce, zatímco malé GIFs rozhraní nechte nedotčené."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV a GIF-like URL videí"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokujte .gifv URL a video prvky, které se chovají jako opakující se GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP vzory URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Zablokujte URL obrázků .webp. Ve výchozím nastavení je vypnutá, protože mnoho WebP obrázků není animovaných."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Automatické přehrávání a smyčkové video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Automatické přehrávání"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Pozastavte automatické přehrávání videa a odstraňte ztlumené smyčkové video používané jako animace."
+  },
+  "featureVideoLabel": {
+    "message": "Vše video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Zablokujte HTML5 video a běžné video soubory."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Blokujte zvukové prvky a běžné požadavky na zvukové soubory."
+  },
+  "featureImagesLabel": {
+    "message": "Všechny obrázky"
+  },
+  "featureImagesShortLabel": {
+    "message": "Obrázky"
+  },
+  "featureImagesDescription": {
+    "message": "Nahraďte obrazové prvky na stránce. Používejte pravidla povolení na každé místo pro stránky s velkým množstvím obrázků."
+  },
+  "featureEmojiLabel": {
+    "message": "Textové emoji a obrázky emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Odstraňte znaky emoji a běžné zobrazovače emoji. Ve výchozím nastavení vypnuté, protože mění text."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animace a přechody"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Vypněte CSS animace, přechody a plynulé posouvání."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Blokování pohybu"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Doporučené výchozí hodnoty pro GIFs, videa podobná GIF, automatické přehrávání a pohyb stránek."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Široké mediální blokátory"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Pokročilí uživatelé ovládají obrázky, video, audio WebP URL adresy a emoji. Tyto mohou některé stránky změnit nebo rozbít."
+  },
+  "contentShowBlockedImage": {
+    "message": "Zobrazit blokovaný obrázek"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Přehrajte blokovaný zvuk"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Přehrajte blokované video"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Přehrát blokovaná média"
+  },
+  "contentBlockedByTitle": {
+    "message": "Zablokováno MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Zablokované $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF podobná média"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Smyčkové video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Automatické přehrávání videa"
+  },
+  "contentReasonImage": {
+    "message": "Obrázek"
+  },
+  "contentReasonMedia": {
+    "message": "Média"
+  }
+}

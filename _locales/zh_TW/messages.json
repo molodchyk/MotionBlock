@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock：GIF 阻斷器與動畫止音器"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "透過每個網站控制， GIFs、 GIFV、自動播放影片、懸停預覽和分散注意力的動作。"
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock 選項"
+  },
+  "siteLoading": {
+    "message": "載入地點......"
+  },
+  "optionsButton": {
+    "message": "選擇權"
+  },
+  "statusOnInitial": {
+    "message": "關於"
+  },
+  "checkingActiveRules": {
+    "message": "正在檢查現行規則......"
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ 被封鎖了",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "這裡有阻擋動議"
+  },
+  "allowThisSite": {
+    "message": "允許本網站"
+  },
+  "siteMode": {
+    "message": "站點模式"
+  },
+  "followGlobalDefaults": {
+    "message": "遵循全域預設值"
+  },
+  "blockOnThisSite": {
+    "message": "本網站封鎖"
+  },
+  "allowThisSiteOption": {
+    "message": "允許本網站"
+  },
+  "siteMediaControls": {
+    "message": "網站媒體控制"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "診斷"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock 診斷日誌"
+  },
+  "copyDiagnostics": {
+    "message": "複製日誌"
+  },
+  "refreshDiagnostics": {
+    "message": "刷新"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ 診斷事件被記錄。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "還沒有診斷結果。重新載入這個分頁，重現問題，然後重新整理這個面板。"
+  },
+  "diagnosticsRefreshed": {
+    "message": "診斷系統重新更新。"
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "無法刷新診斷。"
+  },
+  "diagnosticsCopied": {
+    "message": "診斷資料已複製。"
+  },
+  "diagnosticsCopyFailed": {
+    "message": "無法複製診斷資料。"
+  },
+  "resetSite": {
+    "message": "重置網站"
+  },
+  "reloadTab": {
+    "message": "重新裝填"
+  },
+  "reloadHint": {
+    "message": "對於已經被阻擋或載入的媒體，可能需要重新載入。"
+  },
+  "unknownSite": {
+    "message": "未知地點"
+  },
+  "statusBlocking": {
+    "message": "阻擋"
+  },
+  "statusAllowed": {
+    "message": "允許"
+  },
+  "couldNotLoadSettings": {
+    "message": "無法載入設定"
+  },
+  "notAWebsite": {
+    "message": "不是網站"
+  },
+  "statusNotApplicable": {
+    "message": "無"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock 無法設定瀏覽器、擴充功能或其他受保護頁面。"
+  },
+  "selectUseGlobal": {
+    "message": "全域使用"
+  },
+  "selectBlockHere": {
+    "message": "封鎖這裡"
+  },
+  "selectAllowHere": {
+    "message": "請允許這裡"
+  },
+  "summaryAllowed": {
+    "message": "本網站是被允許的。 MotionBlock 並沒有封鎖媒體。"
+  },
+  "summaryActiveNoCategories": {
+    "message": "目前活躍，但沒有媒體分類被封鎖。"
+  },
+  "summaryBlockingFeatures": {
+    "message": "封鎖 $FEATURES$ 本網站。",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "本網站 MotionBlock 所有規則皆已關閉。"
+  },
+  "siteRuleOwnSettings": {
+    "message": "本網站使用自己的 MotionBlock 設定。"
+  },
+  "siteRuleOverrides": {
+    "message": "本網站遵循全球狀態，並依媒體覆蓋。"
+  },
+  "siteRuleDefaults": {
+    "message": "本網站會追蹤您的全球預設值。"
+  },
+  "featureMetaInactive": {
+    "message": "網站允許時不活躍"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "覆寫：阻擋"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "覆寫：允許"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "全域：阻擋"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "全域：允許"
+  },
+  "optionsIntro": {
+    "message": "全球媒體預設值與各站偏好設定。"
+  },
+  "extensionActive": {
+    "message": "擴展啟動"
+  },
+  "globalDefaultsHeading": {
+    "message": "全局違約"
+  },
+  "globalDefaultsIntro": {
+    "message": "先從 GIFs、 GIF 類影片和自動播放開始。只有當網站需要更嚴格的媒體管控時，才使用廣泛封鎖。"
+  },
+  "restoreRecommended": {
+    "message": "建議恢復"
+  },
+  "blockedMediaDisplay": {
+    "message": "阻擋媒體顯示"
+  },
+  "replacementPlaceholder": {
+    "message": "緊湊佔位符"
+  },
+  "replacementHide": {
+    "message": "隱藏元素"
+  },
+  "interfaceTheme": {
+    "message": "介面主題"
+  },
+  "themeSystem": {
+    "message": "系統"
+  },
+  "themeLight": {
+    "message": "光"
+  },
+  "themeDark": {
+    "message": "黑暗"
+  },
+  "revealControlsTitle": {
+    "message": "顯示被封鎖媒體的按鈕"
+  },
+  "revealControlsDescription": {
+    "message": "在被封鎖的媒體上顯示點擊播放/顯示按鈕。預設是關閉的，因為有些網站會重複使用隱藏媒體表面。"
+  },
+  "diagnosticsTitle": {
+    "message": "先進診斷"
+  },
+  "diagnosticsDescription": {
+    "message": "在彈出視窗中顯示可複製的每個分頁診斷日誌，同時重現阻塞問題。"
+  },
+  "websitePreferencesHeading": {
+    "message": "網站偏好"
+  },
+  "websitePreferencesIntro": {
+    "message": "使用精確的主機名稱，如 reddit.com、 discord.com 或 news.example.com。"
+  },
+  "addSite": {
+    "message": "新增網站"
+  },
+  "backupHeading": {
+    "message": "備用"
+  },
+  "backupIntro": {
+    "message": "設定會儲存在 Chrome 同步儲存空間。如果 Chrome 同步功能啟用，他們就能追蹤你的 Chrome 設定檔。"
+  },
+  "exportJson": {
+    "message": "出口 JSON"
+  },
+  "importFile": {
+    "message": "匯入檔案"
+  },
+  "applyPastedJson": {
+    "message": "貼上貼 JSON"
+  },
+  "refreshFromSync": {
+    "message": "從同步重新整理"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "匯出預覽顯示於此。你也可以貼上 MotionBlock JSON 備份並套用。"
+  },
+  "globalStatusSaved": {
+    "message": "全球狀態已保存。"
+  },
+  "globalDefaultsSaved": {
+    "message": "全域預設值已保存。"
+  },
+  "displayModeSaved": {
+    "message": "顯示模式已儲存。"
+  },
+  "themeSaved": {
+    "message": "主題已存檔。"
+  },
+  "revealSettingSaved": {
+    "message": "顯示按鈕設定已儲存。"
+  },
+  "diagnosticsSettingSaved": {
+    "message": "診斷設定已儲存。"
+  },
+  "recommendedDefaultsRestored": {
+    "message": "建議預設值已恢復。"
+  },
+  "enterValidHostname": {
+    "message": "輸入一個有效的主機名稱。"
+  },
+  "siteAdded": {
+    "message": "網站補充。"
+  },
+  "siteRuleSaved": {
+    "message": "網站規則已存。"
+  },
+  "siteRemoved": {
+    "message": "網站已移除。"
+  },
+  "settingsExported": {
+    "message": "設定匯出成 JSON 檔案。"
+  },
+  "settingsImportedFromFile": {
+    "message": "設定是從檔案匯入的。"
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "設定是從貼上 JSON 匯入的。"
+  },
+  "settingsRefreshed": {
+    "message": "設定已從同步 Chrome 重新整理。"
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "無法載入設定。"
+  },
+  "defaultOn": {
+    "message": "預設開啟"
+  },
+  "defaultOff": {
+    "message": "預設關閉"
+  },
+  "noWebsitePreferences": {
+    "message": "目前還沒有網站偏好設定。"
+  },
+  "removeSite": {
+    "message": "移除"
+  },
+  "siteTableSite": {
+    "message": "地點"
+  },
+  "siteTableActive": {
+    "message": "現役"
+  },
+  "selectInherit": {
+    "message": "繼承"
+  },
+  "selectBlock": {
+    "message": "區塊"
+  },
+  "selectAllow": {
+    "message": "允許"
+  },
+  "selectOn": {
+    "message": "關於"
+  },
+  "selectOff": {
+    "message": "關掉"
+  },
+  "saveFailed": {
+    "message": "存檔失敗。"
+  },
+  "importFailed": {
+    "message": "匯入失敗：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "先選擇 JSON 檔案或貼上備份。"
+  },
+  "invalidJson": {
+    "message": "無效 JSON。"
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "這看起來不像是 MotionBlock 設定備份。"
+  },
+  "errorMissingMessageType": {
+    "message": "缺少訊息類型。"
+  },
+  "errorMissingSiteHostname": {
+    "message": "缺少網站主機名稱。"
+  },
+  "errorUnknownMessageType": {
+    "message": "訊息類型不明。"
+  },
+  "featureGifsLabel": {
+    "message": "GIF 圖片"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "在頁面中替換 GIF 圖片元素，同時保留微小介面 GIFs。"
+  },
+  "featureGifvLabel": {
+    "message": "GIFV 和 GIF 類影片網址"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "封鎖 .gifv 網址和像循環播放的影片元素 GIFs。"
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL 模式"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "封鎖 .webp 圖片網址。預設是關閉的，因為很多 WebP 圖片沒有動畫。"
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "自動播放與循環影片"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "自動播放"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "暫停自動播放影片並移除用作動畫的靜音循環影片。"
+  },
+  "featureVideoLabel": {
+    "message": "全部影片"
+  },
+  "featureVideoShortLabel": {
+    "message": "影片"
+  },
+  "featureVideoDescription": {
+    "message": "封鎖 HTML5 影片及常見視訊檔案請求。"
+  },
+  "featureAudioLabel": {
+    "message": "音效"
+  },
+  "featureAudioShortLabel": {
+    "message": "音效"
+  },
+  "featureAudioDescription": {
+    "message": "封鎖音訊元素與常見音訊檔案請求。"
+  },
+  "featureImagesLabel": {
+    "message": "所有圖片"
+  },
+  "featureImagesShortLabel": {
+    "message": "圖片"
+  },
+  "featureImagesDescription": {
+    "message": "替換頁面中的圖片元素。對於圖片密集的網站，請使用每個網站的允許規則。"
+  },
+  "featureEmojiLabel": {
+    "message": "表情文字與表情符號圖片"
+  },
+  "featureEmojiShortLabel": {
+    "message": "表情符號"
+  },
+  "featureEmojiDescription": {
+    "message": "移除表情符號字元及常見的表情符號圖像渲染器。預設是關閉的，因為會換文字。"
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS 動畫與轉場"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "關閉 CSS 動畫、轉場和平滑捲動。"
+  },
+  "featureGroupMotionLabel": {
+    "message": "動態阻擋"
+  },
+  "featureGroupMotionDescription": {
+    "message": "推薦 GIFs、類 GIF 影片、自動播放和頁面動態的預設設定。"
+  },
+  "featureGroupBroadLabel": {
+    "message": "廣泛媒體阻擋器"
+  },
+  "featureGroupBroadDescription": {
+    "message": "進階使用者控制圖片、影片、音訊、 WebP 網址和表情符號。這些可能會改變或破壞某些網站。"
+  },
+  "contentShowBlockedImage": {
+    "message": "顯示被阻擋的圖片"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "播放阻擋音訊"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "播放阻擋影片"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "播放被封鎖的媒體"
+  },
+  "contentBlockedByTitle": {
+    "message": "被 MotionBlock 封鎖：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "封鎖 $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "類 GIF 媒體"
+  },
+  "contentReasonVideo": {
+    "message": "影片"
+  },
+  "contentReasonAudio": {
+    "message": "音效"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "循環影片"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "自動播放影片"
+  },
+  "contentReasonImage": {
+    "message": "圖片"
+  },
+  "contentReasonMedia": {
+    "message": "媒體"
+  }
+}

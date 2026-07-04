@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF блокер и стопер за анимација"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Стоп GIFs, GIFV, автоматско пуштање видео, прегледи при лебдење и одвлекување на движењето со контроли по сајт."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Опции"
+  },
+  "siteLoading": {
+    "message": "Страница за вчитување..."
+  },
+  "optionsButton": {
+    "message": "Опции"
+  },
+  "statusOnInitial": {
+    "message": "На"
+  },
+  "checkingActiveRules": {
+    "message": "Проверување на активни правила..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ блокирано",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Блокирање на движење тука"
+  },
+  "allowThisSite": {
+    "message": "Дозволете го овој сајт"
+  },
+  "siteMode": {
+    "message": "Режим на локација"
+  },
+  "followGlobalDefaults": {
+    "message": "Следете ги глобалните стандарди"
+  },
+  "blockOnThisSite": {
+    "message": "Блокирајте на оваа страница"
+  },
+  "allowThisSiteOption": {
+    "message": "Дозволете го овој сајт"
+  },
+  "siteMediaControls": {
+    "message": "Контроли на медиуми на локацијата"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Дијагностика"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock лог за дијагностика"
+  },
+  "copyDiagnostics": {
+    "message": "Копирај дневник"
+  },
+  "refreshDiagnostics": {
+    "message": "Освежи"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ дијагностички настани се забележани.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Сè уште нема дијагностика. Вчитај го овој таб, репродуцирај го проблемот, па освежи го овој панел."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Дијагностиката е освежена."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Не можев да ја освежам дијагностиката."
+  },
+  "diagnosticsCopied": {
+    "message": "Дијагностиката е копирана."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Не можев да копирам дијагностика."
+  },
+  "resetSite": {
+    "message": "Локација за ресетирање"
+  },
+  "reloadTab": {
+    "message": "Полнење"
+  },
+  "reloadHint": {
+    "message": "Може да биде потребно повторно вчитување за медиуми кои веќе биле блокирани или вчитани."
+  },
+  "unknownSite": {
+    "message": "Непозната локација"
+  },
+  "statusBlocking": {
+    "message": "Блокирање"
+  },
+  "statusAllowed": {
+    "message": "Дозволено"
+  },
+  "couldNotLoadSettings": {
+    "message": "Не можев да ги вчитам поставките"
+  },
+  "notAWebsite": {
+    "message": "Не веб-страница"
+  },
+  "statusNotApplicable": {
+    "message": "Н/Д"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock не може да конфигурира прелистувач, екстензија или други заштитени страници."
+  },
+  "selectUseGlobal": {
+    "message": "Користи глобално"
+  },
+  "selectBlockHere": {
+    "message": "Блокирај тука"
+  },
+  "selectAllowHere": {
+    "message": "Дозволи тука"
+  },
+  "summaryAllowed": {
+    "message": "Овој сајт е дозволен. MotionBlock не блокира медиуми овде."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Активен сум тука, но моментално нема блокирани медиумски категории."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Блокирање $FEATURES$ на овој сајт.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Сите MotionBlock правила за овој сајт се исклучени."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Овој сајт користи свои MotionBlock поставки."
+  },
+  "siteRuleOverrides": {
+    "message": "Овој сајт следи глобален статус со медиумски специфични надгледувања."
+  },
+  "siteRuleDefaults": {
+    "message": "Овој сајт ги следи вашите глобални стандарди."
+  },
+  "featureMetaInactive": {
+    "message": "Неактивен додека локацијата е дозволена"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Override: блокирање"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Преземање: дозволено"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Глобално: блокирање"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Глобално: дозволено"
+  },
+  "optionsIntro": {
+    "message": "Глобални медиумски стандарди и преференции по сајт."
+  },
+  "extensionActive": {
+    "message": "Екстензија активна"
+  },
+  "globalDefaultsHeading": {
+    "message": "Глобални неплатежи"
+  },
+  "globalDefaultsIntro": {
+    "message": "Започнете со GIFs, видео слично на GIF и автоматско пуштање. Користете широки блокатори само кога сајтот има потреба од построга контрола на медиумите."
+  },
+  "restoreRecommended": {
+    "message": "Препорачано враќање"
+  },
+  "blockedMediaDisplay": {
+    "message": "Блокиран медиумски приказ"
+  },
+  "replacementPlaceholder": {
+    "message": "Компактен заменик"
+  },
+  "replacementHide": {
+    "message": "Елемент за криење"
+  },
+  "interfaceTheme": {
+    "message": "Тема на интерфејсот"
+  },
+  "themeSystem": {
+    "message": "Систем"
+  },
+  "themeLight": {
+    "message": "Светлина"
+  },
+  "themeDark": {
+    "message": "Темно"
+  },
+  "revealControlsTitle": {
+    "message": "Копчиња за откривање на блокирани медиуми"
+  },
+  "revealControlsDescription": {
+    "message": "Прикажи клик-то-плеј/прикажи копчиња на блокирани медиуми. Погрешно е по дифолт затоа што некои сајтови повторно користат скриени медиумски површини."
+  },
+  "diagnosticsTitle": {
+    "message": "Напредна дијагностика"
+  },
+  "diagnosticsDescription": {
+    "message": "Прикажи дијагностички лог што може да се копира по таб во поп-ап додека репродуцираш проблем со блокирање."
+  },
+  "websitePreferencesHeading": {
+    "message": "Преференции на веб-страницата"
+  },
+  "websitePreferencesIntro": {
+    "message": "Користете точни имиња на домаќини како reddit.com, discord.com или news.example.com."
+  },
+  "addSite": {
+    "message": "Додај ја страницата"
+  },
+  "backupHeading": {
+    "message": "Резервна копија"
+  },
+  "backupIntro": {
+    "message": "Поставките се чуваат во Chrome sync меморија. Ако Chrome синхронизација е овозможена за екстензиите, тие можат да го следат вашиот Chrome профил."
+  },
+  "exportJson": {
+    "message": "Извозни JSON"
+  },
+  "importFile": {
+    "message": "Датотека за увоз"
+  },
+  "applyPastedJson": {
+    "message": "Нанеси залепен JSON"
+  },
+  "refreshFromSync": {
+    "message": "Освежи од синхронизација"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Преглед за извоз се појавува тука. Можеш исто така да залепиш MotionBlock JSON резервна копија и да ја примениш."
+  },
+  "globalStatusSaved": {
+    "message": "Глобалниот статус е зачуван."
+  },
+  "globalDefaultsSaved": {
+    "message": "Глобалните неплаќања се спасени."
+  },
+  "displayModeSaved": {
+    "message": "Режимот на прикажување е зачуван."
+  },
+  "themeSaved": {
+    "message": "Темата е зачувана."
+  },
+  "revealSettingSaved": {
+    "message": "Поставката за копче за откривање е зачувана."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Дијагностичката поставка е зачувана."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Препорачаните стандарди се вратени."
+  },
+  "enterValidHostname": {
+    "message": "Внесете валидно име на домаќин."
+  },
+  "siteAdded": {
+    "message": "Додадено е сајтот."
+  },
+  "siteRuleSaved": {
+    "message": "Правилото на сајтот е зачувано."
+  },
+  "siteRemoved": {
+    "message": "Сајтот е отстранет."
+  },
+  "settingsExported": {
+    "message": "Поставките се извезени во JSON датотека."
+  },
+  "settingsImportedFromFile": {
+    "message": "Поставките се увезени од датотека."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Поставките се увезени од залепени JSON."
+  },
+  "settingsRefreshed": {
+    "message": "Поставките се освежени од Chrome синхронизација."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Не можев да ги вчитам поставките."
+  },
+  "defaultOn": {
+    "message": "Стандардно на"
+  },
+  "defaultOff": {
+    "message": "Стандардно исклучено"
+  },
+  "noWebsitePreferences": {
+    "message": "Сè уште немам преференции за веб-страницата."
+  },
+  "removeSite": {
+    "message": "Отстрани"
+  },
+  "siteTableSite": {
+    "message": "Локација"
+  },
+  "siteTableActive": {
+    "message": "Активни"
+  },
+  "selectInherit": {
+    "message": "Наследи"
+  },
+  "selectBlock": {
+    "message": "Блок"
+  },
+  "selectAllow": {
+    "message": "Дозволи"
+  },
+  "selectOn": {
+    "message": "На"
+  },
+  "selectOff": {
+    "message": "Исклучи"
+  },
+  "saveFailed": {
+    "message": "Зачувувањето не успеа."
+  },
+  "importFailed": {
+    "message": "Увозот не успеа: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Изберете JSON фајл или залепете резервна копија прво."
+  },
+  "invalidJson": {
+    "message": "неважечки JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Ова не изгледа како резервна копија MotionBlock поставки."
+  },
+  "errorMissingMessageType": {
+    "message": "Недостасува тип на порака."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Недостасува корисничко име на сајтот."
+  },
+  "errorUnknownMessageType": {
+    "message": "Непознат тип на порака."
+  },
+  "featureGifsLabel": {
+    "message": "GIF слики"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Заменете GIF елементи од сликата на страницата, оставајќи ги малите интерфејси GIFs непроменети."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV и URL-адреси слични на GIF видеа"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Блокирајте .gifv URL адреси и видео елементи кои се однесуваат како да се повторуваат GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL шеми"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Блокирајте .webp URL адреси на слики. Погрешно по дифолт затоа што многу WebP слики не се анимирани."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Автоматска репродукција и повторување на видео"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Автоматска репродукција"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Паузирајте го автоматското пуштање на видеото и отстранете го пригушеното видео што се повторува како анимација."
+  },
+  "featureVideoLabel": {
+    "message": "Сите видеа"
+  },
+  "featureVideoShortLabel": {
+    "message": "Видео"
+  },
+  "featureVideoDescription": {
+    "message": "Блокирајте HTML5 видео и чести барања за видео датотеки."
+  },
+  "featureAudioLabel": {
+    "message": "Аудио"
+  },
+  "featureAudioShortLabel": {
+    "message": "Аудио"
+  },
+  "featureAudioDescription": {
+    "message": "Блокирајте аудио елементи и чести барања за аудио датотеки."
+  },
+  "featureImagesLabel": {
+    "message": "Сите слики"
+  },
+  "featureImagesShortLabel": {
+    "message": "Слики"
+  },
+  "featureImagesDescription": {
+    "message": "Заменете ги елементите на сликата на страницата. Користете правила за дозвола по сајт за сајтови со многу слики."
+  },
+  "featureEmojiLabel": {
+    "message": "Текст на емотикони и слики од емотикони"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Емотикони"
+  },
+  "featureEmojiDescription": {
+    "message": "Отстранете ги емотиконите и вообичаените рендерери на емотикони. Исклучен е по дифолт затоа што го менува текстот."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS анимација и транзиции"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Оневозможи ги CSS анимации, транзиции и мазно скролување."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Блокирање на движење"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Препорачани стандарди за GIFs, видеа слични на GIF, автоматско пуштање и движење на страницата."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Широки медиумски блокатори"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Контроли за напреден корисник за слики, видео, аудио, URL WebP и емотикони. Овие можат да променат или расипат некои сајтови."
+  },
+  "contentShowBlockedImage": {
+    "message": "Прикажи блокирана слика"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Пушти блокирано аудио"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Пуштање блокирано видео"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Пушти блокиран медиум"
+  },
+  "contentBlockedByTitle": {
+    "message": "Блокирано од MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Блокиран $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Медиуми слични на GIF"
+  },
+  "contentReasonVideo": {
+    "message": "Видео"
+  },
+  "contentReasonAudio": {
+    "message": "Аудио"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Видео со повторување"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Автоматско пуштање видео"
+  },
+  "contentReasonImage": {
+    "message": "Слика"
+  },
+  "contentReasonMedia": {
+    "message": "Медиуми"
+  }
+}

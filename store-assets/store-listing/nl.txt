@@ -1,0 +1,31 @@
+Blokkeer afleidende GIFs, GIFV, automatisch video afspelen, hover-previews en paginabeweging voordat ze je in de weg zitten.
+
+Gebruik MotionBlock om te stoppen:
+
+Beelden GIF herhalen.
+GIFV links.
+Korte gedempte video's zoals GIFs.
+Autoplay video- en hover-previews.
+Optionele geanimeerde WebP URL-patronen.
+Optionele video, audio, afbeeldingen, emoji en CSS beweging.
+
+MotionBlock is opgebouwd rond controle per locatie. Houd conservatieve globale standaardinstellingen aan en sta vervolgens specifieke mediatypes toe of blokkeer ze op individuele websites via de pop-up of optiepagina. Instellingen blijven in Chrome extensie-sync opslag en kunnen via Chrome synchroniseren als de gebruiker extensie-synchronisatie heeft ingeschakeld.
+
+Veelvoorkomend gebruik:
+
+Stop met afleidende animaties tijdens het lezen.
+Verminder automatisch videogeluid.
+Bespaar bandbreedte van onnodige media.
+Blokkeer YouTube-stijl hover-previews.
+Rustige Reddit, Giphy, sociale feeds en nieuwspagina's die GIFs omzetten in korte video's.
+Laat beeldrijke sites toe terwijl je beweging elders blokkeert.
+Laat snel media toe op sites die het nodig hebben.
+
+De pop-up bestuurt de huidige site. De optiepagina beheert globale standaardinstellingen, voorkeuren per site, JSON back-up import/export, weergave van geblokkeerde media, optionele onthullingsknoppen en licht/donker/systeem UI-thema.
+
+Chrome staat geen extensies toe om browserinterne pagina's, de Chrome Web Store of sommige beschermde pagina's aan te passen. Als media nog zichtbaar is na installatie of het wijzigen van instellingen, laad dan de pagina opnieuw.
+
+MotionBlock verzamelt geen analyses, stuurt geen browsegegevens naar een server en gebruikt geen externe regellijsten.
+
+Open source onder de GPL-3.0-licentie:
+https://github.com/molodchyk/MotionBlock

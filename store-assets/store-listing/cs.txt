@@ -1,0 +1,31 @@
+Zablokujte rušivé GIFs, GIFV, automatické přehrávání videa, náhledy myší a pohyb stránky dřív, než vám začnou překážet.
+
+Použijte MotionBlock k zastavení:
+
+Opakování GIF obrazů.
+GIFV odkazy.
+Krátká ztlumená videa používaná jako GIFs.
+Automatické přehrávání videa a náhledy na naježdě.
+Volitelné animované WebP URL vzory.
+Volitelné video, audio, obrázky, emoji a CSS pohyb.
+
+MotionBlock je postaven na kontrole jednotlivých lokalit. Udržujte konzervativní globální výchozí nastavení, pak povolte nebo zablokujte konkrétní typy médií na jednotlivých webových stránkách z vyskakovacího okna nebo stránky s možnostmi. Nastavení zůstávají v Chrome úložišti rozšíření synchronizace a mohou se synchronizovat přes Chrome, pokud má uživatel zapnutou synchronizaci rozšíření.
+
+Běžné využití:
+
+Přestaňte rušit animace při čtení.
+Snižte šum z automatického přehrávání videa.
+Šetřete šířku pásma před zbytečnými médii.
+Blokujte YouTube náhledy ve stylu najeho.
+Klidné Reddit, Giphy, sociální sítě a zpravodajské stránky, které GIFs převádějí do krátkých videí.
+Povolte stránky s velkým množstvím obrazů, zatímco pohyb blokujte jinde.
+Rychle povolte média na stránkách, které to potřebují.
+
+Vyskakovací okno ovládá aktuální stránku. Stránka s možnostmi spravuje globální výchozí nastavení, preference pro jednotlivé stránky, JSON import/export záloh, zobrazení blokovaných médií, volitelné tlačítka pro odhalení a téma světlého/tmavého/systémového rozhraní.
+
+Chrome neumožňuje rozšířením upravovat stránky uvnitř prohlížeče, Chrome Web Store ani některé chráněné stránky. Pokud je médium stále viditelné i po instalaci nebo změně nastavení, stránku znovu načtěte.
+
+MotionBlock neshromažďuje analytiku, neposílá data o prohlížení na server ani nepoužívá vzdálené seznamy pravidel.
+
+Open source pod licencí GPL-3.0:
+https://github.com/molodchyk/MotionBlock

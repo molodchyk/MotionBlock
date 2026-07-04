@@ -1,0 +1,31 @@
+Zuia GIFs za kuvuruga, GIFV, video ya kucheza kiotomatiki, muhtasari wa kuelea, na mwendo wa ukurasa kabla ya kukuzuia.
+
+Tumia MotionBlock kuacha:
+
+Kitanzi GIF picha.
+GIFV viungo.
+Video fupi zilizonyamazishwa zinazotumiwa kama GIFs.
+Cheza video kiotomatiki na muhtasari wa kuelea.
+Mifumo ya hiari ya uhuishaji WebP URL.
+Video ya hiari, sauti, picha, emoji, na mwendo wa CSS.
+
+MotionBlock imejengwa karibu na udhibiti wa kila tovuti. Weka chaguo-msingi za kihafidhina za ulimwengu, kisha uruhusu au uzuie aina maalum za media kwenye wavuti za kibinafsi kutoka kwa popup au ukurasa wa chaguo. Mipangilio hukaa katika hifadhi Chrome ya usawazishaji wa kiendelezi na inaweza kusawazisha kupitia Chrome ikiwa mtumiaji amewasha usawazishaji wa kiendelezi.
+
+Matumizi ya kawaida:
+
+Acha uhuishaji wa kuvuruga wakati wa kusoma.
+Punguza kelele ya video ya kucheza kiotomatiki.
+Hifadhi kipimo data kutoka kwa media isiyo ya lazima.
+Zuia muhtasari wa kuelea kwa mtindo wa YouTube.
+Tulia Reddit, Giphy, milisho ya kijamii na kurasa za habari ambazo hubadilisha GIFs kuwa video fupi.
+Ruhusu tovuti nzito za picha wakati unazuia mwendo mahali pengine.
+Ruhusu haraka media kwenye tovuti zinazohitaji.
+
+Dirisha ibukizi linadhibiti tovuti ya sasa. Ukurasa wa chaguo husimamia chaguo-msingi za kimataifa, mapendeleo ya kila tovuti, uagizaji/usafirishaji wa JSON chelezo, onyesho la midia lililozuiwa, vitufe vya hiari vya kufichua, na mandhari ya UI nyepesi/giza/mfumo.
+
+Chrome hairuhusu viendelezi kurekebisha kurasa za ndani za kivinjari, Duka la Wavuti la Chrome, au kurasa zingine zilizolindwa. Ikiwa media bado inaonekana baada ya kusakinisha au kubadilisha mipangilio, pakia upya ukurasa.
+
+MotionBlock haikusanyi uchanganuzi, kutuma data ya kuvinjari kwa seva, au kutumia orodha za sheria za mbali.
+
+Chanzo wazi chini ya leseni ya GPL-3.0:
+https://github.com/molodchyk/MotionBlock

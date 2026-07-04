@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: GIF blokeerija ja animatsiooni peataja"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Peata GIFs, GIFV, esita video automaatselt, hõlju eelvaated ja segav liikumine kohapealsete juhtnuppudega."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Võimalused"
+  },
+  "siteLoading": {
+    "message": "Laadimiskoht..."
+  },
+  "optionsButton": {
+    "message": "Valikud"
+  },
+  "statusOnInitial": {
+    "message": "On"
+  },
+  "checkingActiveRules": {
+    "message": "Kontrollin aktiivseid reegleid..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ blokeeritud",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Blokkiliikumine siin"
+  },
+  "allowThisSite": {
+    "message": "Luba see sait"
+  },
+  "siteMode": {
+    "message": "Saidi režiim"
+  },
+  "followGlobalDefaults": {
+    "message": "Järgi globaalseid vaikimisi"
+  },
+  "blockOnThisSite": {
+    "message": "Blokeeri sellel saidil"
+  },
+  "allowThisSiteOption": {
+    "message": "Luba see sait"
+  },
+  "siteMediaControls": {
+    "message": "Saidi meediakontrollid"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostika"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock diagnostika logi"
+  },
+  "copyDiagnostics": {
+    "message": "Kopeeri logi"
+  },
+  "refreshDiagnostics": {
+    "message": "Värskenda"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ diagnostilised sündmused salvestatud.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Diagnostikat veel pole. Laadi see vahekaart uuesti, taasesita probleem ja siis värskenda see paneel."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostika värskendatud."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Ei saanud diagnostikat värskendada."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostika kopeeritud."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Diagnostikat ei õnnestunud kopeerida."
+  },
+  "resetSite": {
+    "message": "Lähtestamiskoht"
+  },
+  "reloadTab": {
+    "message": "Laadimine"
+  },
+  "reloadHint": {
+    "message": "Võib olla vaja laadida meediat, mis on juba blokeeritud või laaditud."
+  },
+  "unknownSite": {
+    "message": "Tundmatu asukoht"
+  },
+  "statusBlocking": {
+    "message": "Blokeerimine"
+  },
+  "statusAllowed": {
+    "message": "Lubatud"
+  },
+  "couldNotLoadSettings": {
+    "message": "Seadeid ei saanud laadida"
+  },
+  "notAWebsite": {
+    "message": "Mitte veebileht"
+  },
+  "statusNotApplicable": {
+    "message": "Puudub"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock ei saa seadistada brauserit, laiendust ega muid kaitstud lehti."
+  },
+  "selectUseGlobal": {
+    "message": "Globaalne kasutamine"
+  },
+  "selectBlockHere": {
+    "message": "Blokeeri siin"
+  },
+  "selectAllowHere": {
+    "message": "Lubage siin"
+  },
+  "summaryAllowed": {
+    "message": "See sait on lubatud. MotionBlock ei blokeeri siin meediat."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Aktiivne siin, kuid hetkel pole ühtegi meediakategooriat blokeeritud."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blokeerin $FEATURES$ sellel saidil.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Kõik MotionBlock reeglid on sellel saidil keelatud."
+  },
+  "siteRuleOwnSettings": {
+    "message": "See sait kasutab oma MotionBlock seadeid."
+  },
+  "siteRuleOverrides": {
+    "message": "See sait järgib ülemaailmset staatust meediaspetsiifiliste ülekirjutistega."
+  },
+  "siteRuleDefaults": {
+    "message": "See sait järgib teie globaalseid vaikeseadeid."
+  },
+  "featureMetaInactive": {
+    "message": "Passiivne, kuni saidil on lubatud"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Ülekiri: blokeerimine"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Ülekirjutus: lubatud"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globaalne: blokeerimine"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globaalne: lubatud"
+  },
+  "optionsIntro": {
+    "message": "Globaalsed meedia vaikimisi ja saidipõhised eelistused."
+  },
+  "extensionActive": {
+    "message": "Laiendus aktiivne"
+  },
+  "globalDefaultsHeading": {
+    "message": "Globaalsed maksejõuetused"
+  },
+  "globalDefaultsIntro": {
+    "message": "Alusta GIFs, GIF-laadse videoga ja automaatse esitusega. Kasuta laiaulatuslikke blokeerijaid ainult siis, kui sait vajab rangemat meediakontrolli."
+  },
+  "restoreRecommended": {
+    "message": "Soovitatav taastamine"
+  },
+  "blockedMediaDisplay": {
+    "message": "Blokeeritud meediakuvamine"
+  },
+  "replacementPlaceholder": {
+    "message": "Kompaktne kohatäitja"
+  },
+  "replacementHide": {
+    "message": "Peidetud element"
+  },
+  "interfaceTheme": {
+    "message": "Liidese teema"
+  },
+  "themeSystem": {
+    "message": "Süsteem"
+  },
+  "themeLight": {
+    "message": "Valgus"
+  },
+  "themeDark": {
+    "message": "Pime"
+  },
+  "revealControlsTitle": {
+    "message": "Blokeeritud meedia avalikustamise nupud"
+  },
+  "revealControlsDescription": {
+    "message": "Näita blokeeritud meedial klikki/näita nuppe. Vaikimisi on see välja lülitatud, sest mõned saidid kasutavad peidetud meediapindu uuesti."
+  },
+  "diagnosticsTitle": {
+    "message": "Edasijõudnud diagnostika"
+  },
+  "diagnosticsDescription": {
+    "message": "Näita kopeeritavat vahekaardi diagnostikalogi hüpikakena, kui taaskäivitad blokeerimisprobleemi."
+  },
+  "websitePreferencesHeading": {
+    "message": "Veebilehe eelistused"
+  },
+  "websitePreferencesIntro": {
+    "message": "Kasuta täpseid hostinimesi, nagu reddit.com, discord.com või news.example.com."
+  },
+  "addSite": {
+    "message": "Lisa veebileht"
+  },
+  "backupHeading": {
+    "message": "Varu"
+  },
+  "backupIntro": {
+    "message": "Seadistused salvestatakse Chrome sync salvestusse. Kui Chrome sünkroonimine on laienduste jaoks lubatud, saavad nad jälgida sinu Chrome profiili."
+  },
+  "exportJson": {
+    "message": "Ekspordi JSON"
+  },
+  "importFile": {
+    "message": "Impordifail"
+  },
+  "applyPastedJson": {
+    "message": "Kanna kleebitud JSON"
+  },
+  "refreshFromSync": {
+    "message": "Värskenda sünkroonist"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Ekspordi eelvaade kuvatakse siin. Võid ka kleepida MotionBlock JSON varukoopia ja selle rakendada."
+  },
+  "globalStatusSaved": {
+    "message": "Globaalne staatus salvestatud."
+  },
+  "globalDefaultsSaved": {
+    "message": "Globaalsed maksejõuetused salvestatud."
+  },
+  "displayModeSaved": {
+    "message": "Ekraanirežiim salvestatud."
+  },
+  "themeSaved": {
+    "message": "Teema salvestatud."
+  },
+  "revealSettingSaved": {
+    "message": "Avastusnupu seadistus salvestatud."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Diagnostika seaded salvestatud."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Soovitatud vaikeseaded taastatud."
+  },
+  "enterValidHostname": {
+    "message": "Sisesta kehtiv hostinimi."
+  },
+  "siteAdded": {
+    "message": "Leht lisatud."
+  },
+  "siteRuleSaved": {
+    "message": "Saidireegel salvestatud."
+  },
+  "siteRemoved": {
+    "message": "Leht eemaldatud."
+  },
+  "settingsExported": {
+    "message": "Seaded eksporditakse JSON faili."
+  },
+  "settingsImportedFromFile": {
+    "message": "Seadistused imporditud failist."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Seaded imporditi kleepitud JSON-st."
+  },
+  "settingsRefreshed": {
+    "message": "Seaded värskendatud Chrome sünkroonimisest."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Seadeid ei saanud laadida."
+  },
+  "defaultOn": {
+    "message": "Vaikimisi sisselülitamine"
+  },
+  "defaultOff": {
+    "message": "Vaikimisi väljalülitamine"
+  },
+  "noWebsitePreferences": {
+    "message": "Veebilehe eelistusi veel pole."
+  },
+  "removeSite": {
+    "message": "Eemalda"
+  },
+  "siteTableSite": {
+    "message": "Asukoht"
+  },
+  "siteTableActive": {
+    "message": "Aktiivne"
+  },
+  "selectInherit": {
+    "message": "Pärimine"
+  },
+  "selectBlock": {
+    "message": "Plokk"
+  },
+  "selectAllow": {
+    "message": "Luba"
+  },
+  "selectOn": {
+    "message": "On"
+  },
+  "selectOff": {
+    "message": "Väljas"
+  },
+  "saveFailed": {
+    "message": "Salvestus ebaõnnestus."
+  },
+  "importFailed": {
+    "message": "Import ebaõnnestus: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Vali esmalt JSON fail või kleebi varukoopia."
+  },
+  "invalidJson": {
+    "message": "kehtetu JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "See ei tundu olevat MotionBlock seadete varukoopia."
+  },
+  "errorMissingMessageType": {
+    "message": "Puuduv sõnum."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Puudub saidi hostinimi."
+  },
+  "errorUnknownMessageType": {
+    "message": "Teadmata sõnumitüüp."
+  },
+  "featureGifsLabel": {
+    "message": "GIF pildid"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Asenda lehel GIF pildielemendid, jättes väikese liidese GIFs rahule."
+  },
+  "featureGifvLabel": {
+    "message": "GIFV ja GIF-laadsed video-URL-id"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blokeeri .gifv URL-id ja videoelemendid, mis käituvad nagu tsüklis GIFs."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP URL-mustrid"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blokeeri .webp pildi URL-id. Vaikimisi välja lülitatud, sest paljud WebP pildid pole animeeritud."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Automaatne esitus ja korduv video"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Automaatmäng"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Peata automaatne video taasesitus ja eemalda animatsioonina kasutatav vaigistatud korduv video."
+  },
+  "featureVideoLabel": {
+    "message": "Kõik videod"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Blokeeri HTML5 video ja levinud videofailide taotlused."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Blokeeri helielemendid ja levinud helifailipäringud."
+  },
+  "featureImagesLabel": {
+    "message": "Kõik pildid"
+  },
+  "featureImagesShortLabel": {
+    "message": "Pildid"
+  },
+  "featureImagesDescription": {
+    "message": "Asenda pildielemendid lehel. Kasuta saidipõhiseid reegleid piltirohkete saitide jaoks."
+  },
+  "featureEmojiLabel": {
+    "message": "Emotikonide tekst ja emotikonide pildid"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emotikon"
+  },
+  "featureEmojiDescription": {
+    "message": "Eemaldage emotikonid ja levinud emotikonide pildirenderdajad. Vaikimisi välja lülitatud, sest see muudab teksti."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animatsioon ja üleminekud"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Keela CSS animatsioonid, üleminekud ja sujuv kerimine."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Liikumise blokeerimine"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Soovitatud vaikeseaded GIFs, GIF-laadsete videote, automaatse esituse ja lehe liikumise jaoks."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Laiad meediablokeerijad"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Võimsuskasutaja kontrollid piltide, videote, heli, WebP URL-ide ja emotikonide jaoks. Need võivad mõningaid saite muuta või katki teha."
+  },
+  "contentShowBlockedImage": {
+    "message": "Näita blokeeritud pilti"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Mängi blokeeritud heli"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Mängi blokeeritud videot"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Mängi blokeeritud meediat"
+  },
+  "contentBlockedByTitle": {
+    "message": "Blokeeris MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Blokeeritud $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "GIF-laadne meedia"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Heli"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Korduv video"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Automaatne esitusvideo"
+  },
+  "contentReasonImage": {
+    "message": "Kujutis"
+  },
+  "contentReasonMedia": {
+    "message": "Meedia"
+  }
+}

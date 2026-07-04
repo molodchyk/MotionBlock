@@ -1,0 +1,31 @@
+Blokkold a figyelmen kívül hagyó GIFs, GIFV, automatikus lejátszási videót, lefelé vezető előnézeteket és oldalmozgást, mielőtt azok az utadban állnának.
+
+Használd MotionBlock a megállításhoz:
+
+A képek GIF körbefutása.
+GIFV linkek.
+Rövid, tombolt videók használata, mint GIFs.
+Automatikusan lejátszás videó és letérítés előnézetek.
+Opcionális animált WebP URL minták.
+Opcionális videó, hang, képek, emojik és CSS mozgás.
+
+MotionBlock helyszínenkénti irányításra épül. Tartsd meg a konzervatív globális alapértelmezéseket, majd engedélyezd vagy blokkolj bizonyos médiatípusokat az egyes weboldalakon a felugró ablakon vagy opciók oldalán. A beállítások Chrome bővítmény szinkronizációs tárolójában maradnak, és akár Chrome-en keresztül is szinkronizálhatnak, ha a felhasználónak engedélyezett a bővítmény szinkron.
+
+Gyakori felhasználások:
+
+Ne zavarja az animációkat olvasás közben.
+Csökkentsd az automatikus lejátszású videózajt.
+A sávszélességet a felesleges médiáktól spórolhatod.
+Block YouTube stílusú lebegő előzetes.
+Nyugodt Reddit, Giphy, közösségi hírfolyamok és híroldalak, amelyek GIFs rövid videókká alakítják.
+Engedd meg a képekkel gazdag oldalakat, miközben máshol blokkold a mozgást.
+Gyorsan engedd meg a médiát olyan oldalakon, amelyeknek szükségük van rá.
+
+A felugró ablak irányítja az aktuális helyszínt. Az opciók oldala kezeli a globális alapértelmezéseket, helyszínenkénti beállításokat, JSON biztonsági mentési importot/exportot, blokkolt médiamegjelenítést, opcionális megnyitó gombokat, valamint világos/sötét/rendszerfelület témát.
+
+Chrome nem engedélyezi a bővítmények számára, hogy módosítsák a böngészőn belüli oldalakat, a Chrome Webáruházat vagy néhány védett oldalt. Ha a média még látható a telepítés vagy beállítások megváltoztatása után, töltsd be az oldalt.
+
+MotionBlock nem gyűjt elemzéseket, nem küld böngészési adatokat szerverre, és nem használ távoli szabálylistákat.
+
+Nyílt forráskódú a GPL-3.0 licenc alatt:
+https://github.com/molodchyk/MotionBlock

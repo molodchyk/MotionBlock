@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Bloccante GIF e Stopper Animazione"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Ferma GIFs, GIFV, riproduci automaticamente i video, anticipazioni di passaggio e distrae i movimenti con i controlli per sito."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Opzioni"
+  },
+  "siteLoading": {
+    "message": "Sito di caricamento..."
+  },
+  "optionsButton": {
+    "message": "Opzioni"
+  },
+  "statusOnInitial": {
+    "message": "On"
+  },
+  "checkingActiveRules": {
+    "message": "Controllo delle regole attive..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ bloccato",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Movimento di blocco qui"
+  },
+  "allowThisSite": {
+    "message": "Consentite questo sito"
+  },
+  "siteMode": {
+    "message": "Modalità sito"
+  },
+  "followGlobalDefaults": {
+    "message": "Segui i valori predefiniti globali"
+  },
+  "blockOnThisSite": {
+    "message": "Blocca su questo sito"
+  },
+  "allowThisSiteOption": {
+    "message": "Consentite questo sito"
+  },
+  "siteMediaControls": {
+    "message": "Controlli dei media del sito"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnostica"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock registro diagnostico"
+  },
+  "copyDiagnostics": {
+    "message": "Copia registro"
+  },
+  "refreshDiagnostics": {
+    "message": "Refresh"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ eventi diagnostici registrati.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Nessuna diagnostica ancora. Ricarica questa scheda, riproduci il problema, poi aggiorna questo pannello."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnostica aggiornata."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Non è riuscito ad aggiornare la diagnostica."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostica copiata."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Non è riuscito a copiare la diagnostica."
+  },
+  "resetSite": {
+    "message": "Sito di reset"
+  },
+  "reloadTab": {
+    "message": "Ricarica"
+  },
+  "reloadHint": {
+    "message": "Può essere necessario ricaricare per supporti già bloccati o caricati."
+  },
+  "unknownSite": {
+    "message": "Sito sconosciuto"
+  },
+  "statusBlocking": {
+    "message": "Bloccaggio"
+  },
+  "statusAllowed": {
+    "message": "Permesso"
+  },
+  "couldNotLoadSettings": {
+    "message": "Non è riuscito a caricare le impostazioni"
+  },
+  "notAWebsite": {
+    "message": "Non un sito web"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock non può configurare browser, estensioni o altre pagine protette."
+  },
+  "selectUseGlobal": {
+    "message": "Usa globale"
+  },
+  "selectBlockHere": {
+    "message": "Blocca qui"
+  },
+  "selectAllowHere": {
+    "message": "Permettilo qui"
+  },
+  "summaryAllowed": {
+    "message": "Questo sito è consentito. MotionBlock non sta bloccando i media qui."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Sono attivo, ma attualmente nessuna categoria media è bloccata."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blocco $FEATURES$ su questo sito.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Tutte MotionBlock regole sono spente su questo sito."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Questo sito utilizza le proprie impostazioni MotionBlock."
+  },
+  "siteRuleOverrides": {
+    "message": "Questo sito segue lo status globale con override specifici per i media."
+  },
+  "siteRuleDefaults": {
+    "message": "Questo sito segue i tuoi valori predefiniti globali."
+  },
+  "featureMetaInactive": {
+    "message": "Inattivo mentre il sito è consentito"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Override: blocco"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Override: consentito"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Globale: blocco"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Globale: consentito"
+  },
+  "optionsIntro": {
+    "message": "Impostazioni globali dei media e preferenze per sito."
+  },
+  "extensionActive": {
+    "message": "Estensione attiva"
+  },
+  "globalDefaultsHeading": {
+    "message": "Default globali"
+  },
+  "globalDefaultsIntro": {
+    "message": "Inizia con un video GIFs, simile a GIF, e con la riproduzione automatica. Usa i blocchi ampi solo quando un sito necessita di un controllo mediatico più rigoroso."
+  },
+  "restoreRecommended": {
+    "message": "Ripristino consigliato"
+  },
+  "blockedMediaDisplay": {
+    "message": "Visualizzazione dei media bloccati"
+  },
+  "replacementPlaceholder": {
+    "message": "Segnaposto compatto"
+  },
+  "replacementHide": {
+    "message": "Nascondere elemento"
+  },
+  "interfaceTheme": {
+    "message": "Tema dell'interfaccia"
+  },
+  "themeSystem": {
+    "message": "Sistema"
+  },
+  "themeLight": {
+    "message": "Luce"
+  },
+  "themeDark": {
+    "message": "Buio"
+  },
+  "revealControlsTitle": {
+    "message": "Pulsanti di rivelazione per i media bloccati"
+  },
+  "revealControlsDescription": {
+    "message": "Mostra i pulsanti click-to-play/mostra sui media bloccati. Spento di default perché alcuni siti riutilizzano superfici multimediali nascoste."
+  },
+  "diagnosticsTitle": {
+    "message": "Diagnostica avanzata"
+  },
+  "diagnosticsDescription": {
+    "message": "Mostra un registro diagnostico copiabile per scheda nel popup mentre riproduci un problema di blocco."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preferenze sul sito web"
+  },
+  "websitePreferencesIntro": {
+    "message": "Usa nomi host esatti come reddit.com, discord.com o news.example.com."
+  },
+  "addSite": {
+    "message": "Aggiungi sito"
+  },
+  "backupHeading": {
+    "message": "Backup"
+  },
+  "backupIntro": {
+    "message": "Le impostazioni sono memorizzate in Chrome spazio di archiviazione sincronizzata. Se la sincronizzazione Chrome è abilitata per le estensioni, possono seguire il tuo profilo Chrome."
+  },
+  "exportJson": {
+    "message": "Esportazione JSON"
+  },
+  "importFile": {
+    "message": "File di importazione"
+  },
+  "applyPastedJson": {
+    "message": "Applica incollata JSON"
+  },
+  "refreshFromSync": {
+    "message": "Aggiornamento dalla sincronizzazione"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "L'anteprima dell'esportazione appare qui. Puoi anche incollare un backup MotionBlock JSON e applicarlo."
+  },
+  "globalStatusSaved": {
+    "message": "Stato globale salvato."
+  },
+  "globalDefaultsSaved": {
+    "message": "Default globali salvati."
+  },
+  "displayModeSaved": {
+    "message": "Modalità display salvata."
+  },
+  "themeSaved": {
+    "message": "Tema salvato."
+  },
+  "revealSettingSaved": {
+    "message": "Impostazione del pulsante di rivelazione salvata."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Impostazione diagnostica salvata."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Ripristini dei valori predefiniti raccomandati."
+  },
+  "enterValidHostname": {
+    "message": "Inserisci un nome host valido."
+  },
+  "siteAdded": {
+    "message": "Sito aggiunto."
+  },
+  "siteRuleSaved": {
+    "message": "Regola del sito salvata."
+  },
+  "siteRemoved": {
+    "message": "Sito rimosso."
+  },
+  "settingsExported": {
+    "message": "Le impostazioni sono state esportate in un file JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Impostazioni importate dal file."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Impostazioni importate da JSON incollate."
+  },
+  "settingsRefreshed": {
+    "message": "Le impostazioni sono aggiornate dalla sincronizzazione Chrome."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Non riuscivo a caricare le impostazioni."
+  },
+  "defaultOn": {
+    "message": "Impostazione predefinita"
+  },
+  "defaultOff": {
+    "message": "Predefinito disattivato"
+  },
+  "noWebsitePreferences": {
+    "message": "Nessuna preferenza sul sito web per ora."
+  },
+  "removeSite": {
+    "message": "Rimuovere"
+  },
+  "siteTableSite": {
+    "message": "Sito"
+  },
+  "siteTableActive": {
+    "message": "Attivo"
+  },
+  "selectInherit": {
+    "message": "Ereditare"
+  },
+  "selectBlock": {
+    "message": "Blocco"
+  },
+  "selectAllow": {
+    "message": "Permette"
+  },
+  "selectOn": {
+    "message": "On"
+  },
+  "selectOff": {
+    "message": "Spento"
+  },
+  "saveFailed": {
+    "message": "Salvataggio fallito."
+  },
+  "importFailed": {
+    "message": "Importazione fallita: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Scegli un file JSON o incolla prima un backup."
+  },
+  "invalidJson": {
+    "message": "invalido JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Non sembra un backup MotionBlock impostazioni."
+  },
+  "errorMissingMessageType": {
+    "message": "Tipo di messaggio mancante."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Nome host del sito mancante."
+  },
+  "errorUnknownMessageType": {
+    "message": "Tipo di messaggio sconosciuto."
+  },
+  "featureGifsLabel": {
+    "message": "GIF immagini"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Sostituisci GIF elementi immagine nella pagina lasciando invariata la piccola GIFs interfaccia."
+  },
+  "featureGifvLabel": {
+    "message": "URL video GIFV e simili a GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blocca gli URL .gifv e gli elementi video che si comportano come GIFs in loop."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP Pattern URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blocca gli URL delle immagini .webp. Spento di default perché molte immagini WebP non sono animate."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Riproduzione automatica e video in loop"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Riproduzione automatica"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Metti in pausa la riproduzione automatica del video e rimuovi il video in loop silenzioso usato come animazione."
+  },
+  "featureVideoLabel": {
+    "message": "Tutti i video"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Blocca HTML5 video e richieste comuni di file video."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Blocca elementi audio e richieste comuni di file audio."
+  },
+  "featureImagesLabel": {
+    "message": "Tutte le immagini"
+  },
+  "featureImagesShortLabel": {
+    "message": "Immagini"
+  },
+  "featureImagesDescription": {
+    "message": "Sostituisci gli elementi dell'immagine nella pagina. Usa regole di permesso per sito per siti con molta immagini."
+  },
+  "featureEmojiLabel": {
+    "message": "Testo emoji e immagini emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Rimuovi i caratteri emoji e i renderer di immagini emoji comuni. Spento di default perché cambia il testo."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animazione e transizioni"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Disabilita le animazioni CSS, le transizioni e lo scorrimento fluido."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Blocco del movimento"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Impostazioni predefinite consigliate per video GIFs, simili a GIF, riproduzione automatica e movimento pagina."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Ampi blocchi mediatici"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Controlli per utenti avanzati su immagini, video, audio, URL WebP ed emoji. Questi possono cambiare o rompere alcuni siti."
+  },
+  "contentShowBlockedImage": {
+    "message": "Mostra immagine bloccata"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Riproduci audio bloccato"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Riproduci video bloccato"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Riproduci media bloccati"
+  },
+  "contentBlockedByTitle": {
+    "message": "Bloccato da MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Bloccato $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Media simili a GIF"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Video in loop"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Video in riproduzione automatica"
+  },
+  "contentReasonImage": {
+    "message": "Immagine"
+  },
+  "contentReasonMedia": {
+    "message": "Media"
+  }
+}

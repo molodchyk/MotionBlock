@@ -1,0 +1,521 @@
+{
+  "extensionName": {
+    "message": "MotionBlock: Blocator GIF și Opritor de Animație"
+  },
+  "extensionShortName": {
+    "message": "MotionBlock"
+  },
+  "extensionDescription": {
+    "message": "Oprește GIFs, GIFV, redă automat video, previzualizări în hover și distrage mișcarea cu controale pe site."
+  },
+  "actionDefaultTitle": {
+    "message": "MotionBlock"
+  },
+  "popupTitle": {
+    "message": "MotionBlock"
+  },
+  "optionsTitle": {
+    "message": "MotionBlock Opțiuni"
+  },
+  "siteLoading": {
+    "message": "Loc de încărcare..."
+  },
+  "optionsButton": {
+    "message": "Opțiuni"
+  },
+  "statusOnInitial": {
+    "message": "Pe"
+  },
+  "checkingActiveRules": {
+    "message": "Verificarea regulilor active..."
+  },
+  "statsBlockedCount": {
+    "message": "$COUNT$ blocat",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blockMotionHere": {
+    "message": "Mișcare de blocare aici"
+  },
+  "allowThisSite": {
+    "message": "Permiteți acest site"
+  },
+  "siteMode": {
+    "message": "Modul Site"
+  },
+  "followGlobalDefaults": {
+    "message": "Respectați implicitele globale"
+  },
+  "blockOnThisSite": {
+    "message": "Blochează pe acest site"
+  },
+  "allowThisSiteOption": {
+    "message": "Permiteți acest site"
+  },
+  "siteMediaControls": {
+    "message": "Controale media pe site"
+  },
+  "diagnosticsPopupHeading": {
+    "message": "Diagnosticare"
+  },
+  "diagnosticsLogAriaLabel": {
+    "message": "MotionBlock jurnal de diagnosticare"
+  },
+  "copyDiagnostics": {
+    "message": "Copiere jurnal"
+  },
+  "refreshDiagnostics": {
+    "message": "Reîmprospătare"
+  },
+  "diagnosticsSummaryWithEvents": {
+    "message": "$COUNT$ evenimente de diagnostic înregistrate.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "diagnosticsSummaryEmpty": {
+    "message": "Încă nu există diagnostice. Reîncarcă acest tab, reproduce problema, apoi reîmprospătează acest panou."
+  },
+  "diagnosticsRefreshed": {
+    "message": "Diagnosticul a fost reîmprospătat."
+  },
+  "diagnosticsRefreshFailed": {
+    "message": "Nu am putut reîmprospăta diagnosticul."
+  },
+  "diagnosticsCopied": {
+    "message": "Diagnostice copiate."
+  },
+  "diagnosticsCopyFailed": {
+    "message": "Nu am putut copia diagnosticul."
+  },
+  "resetSite": {
+    "message": "Resetarea locului"
+  },
+  "reloadTab": {
+    "message": "Reîncărcare"
+  },
+  "reloadHint": {
+    "message": "Reîncărcarea poate fi necesară pentru mediile deja blocate sau încărcate."
+  },
+  "unknownSite": {
+    "message": "Loc necunoscut"
+  },
+  "statusBlocking": {
+    "message": "Blocaj"
+  },
+  "statusAllowed": {
+    "message": "Permis"
+  },
+  "couldNotLoadSettings": {
+    "message": "Nu s-au putut încărca setările"
+  },
+  "notAWebsite": {
+    "message": "Nu un site web"
+  },
+  "statusNotApplicable": {
+    "message": "N/A"
+  },
+  "unsupportedPageSummary": {
+    "message": "MotionBlock nu poate configura paginile browserului, extensiei sau alte pagini protejate."
+  },
+  "selectUseGlobal": {
+    "message": "Folosirea globală"
+  },
+  "selectBlockHere": {
+    "message": "Blochează aici"
+  },
+  "selectAllowHere": {
+    "message": "Permiteți aici"
+  },
+  "summaryAllowed": {
+    "message": "Acest site este permis. MotionBlock nu blochează media aici."
+  },
+  "summaryActiveNoCategories": {
+    "message": "Activ aici, dar în prezent nu există categorii media blocate."
+  },
+  "summaryBlockingFeatures": {
+    "message": "Blochează $FEATURES$ pe acest site.",
+    "placeholders": {
+      "features": {
+        "content": "$1",
+        "example": "GIFs, GIFV"
+      }
+    }
+  },
+  "siteRuleAllOff": {
+    "message": "Toate regulile MotionBlock sunt dezactivate pentru acest site."
+  },
+  "siteRuleOwnSettings": {
+    "message": "Acest site folosește propriile sale setări MotionBlock."
+  },
+  "siteRuleOverrides": {
+    "message": "Acest site respectă statutul global cu suprascrieri specifice mediei."
+  },
+  "siteRuleDefaults": {
+    "message": "Acest site urmează valorile tale implicite globale."
+  },
+  "featureMetaInactive": {
+    "message": "Inactiv cât timp site-ul este permis"
+  },
+  "featureMetaOverrideBlocking": {
+    "message": "Suprascriere: blocare"
+  },
+  "featureMetaOverrideAllowed": {
+    "message": "Override: permis"
+  },
+  "featureMetaGlobalBlocking": {
+    "message": "Global: blocare"
+  },
+  "featureMetaGlobalAllowed": {
+    "message": "Global: permis"
+  },
+  "optionsIntro": {
+    "message": "Setările implicite globale ale media și preferințele pe site."
+  },
+  "extensionActive": {
+    "message": "Extensie activă"
+  },
+  "globalDefaultsHeading": {
+    "message": "Implicite globale"
+  },
+  "globalDefaultsIntro": {
+    "message": "Începe cu GIFs, video GIF și redare automată. Folosește blocatori largi doar atunci când un site are nevoie de un control media mai strict."
+  },
+  "restoreRecommended": {
+    "message": "Restaurare recomandată"
+  },
+  "blockedMediaDisplay": {
+    "message": "Afișare media blocată"
+  },
+  "replacementPlaceholder": {
+    "message": "Înlocuitor compact"
+  },
+  "replacementHide": {
+    "message": "Ascunde elementul"
+  },
+  "interfaceTheme": {
+    "message": "Tema interfeței"
+  },
+  "themeSystem": {
+    "message": "Sistem"
+  },
+  "themeLight": {
+    "message": "Lumină"
+  },
+  "themeDark": {
+    "message": "Întuneric"
+  },
+  "revealControlsTitle": {
+    "message": "Butoane de dezvăluire pentru media blocată"
+  },
+  "revealControlsDescription": {
+    "message": "Afișează butoanele click-to-play/show pe media blocate. Dezactivat implicit pentru că unele site-uri refolosesc suprafețe de media ascunse."
+  },
+  "diagnosticsTitle": {
+    "message": "Diagnosticare avansată"
+  },
+  "diagnosticsDescription": {
+    "message": "Afișează un jurnal de diagnostic copiabil pe tab în fereastra pop-up în timp ce reproduci o problemă de blocare."
+  },
+  "websitePreferencesHeading": {
+    "message": "Preferințe pentru site-uri"
+  },
+  "websitePreferencesIntro": {
+    "message": "Folosește nume gazde exacte precum reddit.com, discord.com sau news.example.com."
+  },
+  "addSite": {
+    "message": "Adaugă site"
+  },
+  "backupHeading": {
+    "message": "Rezervă"
+  },
+  "backupIntro": {
+    "message": "Setările sunt stocate în Chrome sincronizare. Dacă sincronizarea Chrome este activată pentru extensii, pot urmări profilul tău Chrome."
+  },
+  "exportJson": {
+    "message": "Export JSON"
+  },
+  "importFile": {
+    "message": "Fișier de import"
+  },
+  "applyPastedJson": {
+    "message": "Aplică și lipește JSON"
+  },
+  "refreshFromSync": {
+    "message": "Reîmprospătare de la sincronizare"
+  },
+  "settingsJsonPlaceholder": {
+    "message": "Previzualizarea exportului apare aici. Poți, de asemenea, să lipești un MotionBlock JSON backup și să-l aplici."
+  },
+  "globalStatusSaved": {
+    "message": "Statut global salvat."
+  },
+  "globalDefaultsSaved": {
+    "message": "Implicite globale salvate."
+  },
+  "displayModeSaved": {
+    "message": "Modul de afișare salvat."
+  },
+  "themeSaved": {
+    "message": "Tema a fost salvată."
+  },
+  "revealSettingSaved": {
+    "message": "Setarea butonului de dezvăluire salvată."
+  },
+  "diagnosticsSettingSaved": {
+    "message": "Setarea de diagnosticare salvată."
+  },
+  "recommendedDefaultsRestored": {
+    "message": "Setările implicite recomandate au fost restaurate."
+  },
+  "enterValidHostname": {
+    "message": "Introdu un nume de gazdă valid."
+  },
+  "siteAdded": {
+    "message": "Site-ul a fost adăugat."
+  },
+  "siteRuleSaved": {
+    "message": "Regula de pe site salvată."
+  },
+  "siteRemoved": {
+    "message": "Site-ul a fost eliminat."
+  },
+  "settingsExported": {
+    "message": "Setările sunt exportate într-un fișier JSON."
+  },
+  "settingsImportedFromFile": {
+    "message": "Setări importate din fișier."
+  },
+  "settingsImportedFromPastedJson": {
+    "message": "Setări importate din JSON lipite."
+  },
+  "settingsRefreshed": {
+    "message": "Setările s-au reîmprospătat din sincronizarea Chrome."
+  },
+  "couldNotLoadSettingsPeriod": {
+    "message": "Nu am putut încărca setările."
+  },
+  "defaultOn": {
+    "message": "Implicit pe"
+  },
+  "defaultOff": {
+    "message": "Dezactivarea implicită"
+  },
+  "noWebsitePreferences": {
+    "message": "Încă nu am preferințe pe site-uri."
+  },
+  "removeSite": {
+    "message": "Îndepărtează"
+  },
+  "siteTableSite": {
+    "message": "Amplasament"
+  },
+  "siteTableActive": {
+    "message": "Activitate"
+  },
+  "selectInherit": {
+    "message": "Moștenire"
+  },
+  "selectBlock": {
+    "message": "Block"
+  },
+  "selectAllow": {
+    "message": "Permite"
+  },
+  "selectOn": {
+    "message": "Pe"
+  },
+  "selectOff": {
+    "message": "Off"
+  },
+  "saveFailed": {
+    "message": "Salvarea a eșuat."
+  },
+  "importFailed": {
+    "message": "Import eșuat: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "invalid JSON."
+      }
+    }
+  },
+  "chooseJsonFileError": {
+    "message": "Alege un fișier JSON sau lipește mai întâi un backup."
+  },
+  "invalidJson": {
+    "message": "invalid JSON."
+  },
+  "errorInvalidSettingsBackup": {
+    "message": "Aceasta nu pare o copie de siguranță MotionBlock setări."
+  },
+  "errorMissingMessageType": {
+    "message": "Tip de mesaj lipsă."
+  },
+  "errorMissingSiteHostname": {
+    "message": "Nume de gazdă lipsă al site-ului."
+  },
+  "errorUnknownMessageType": {
+    "message": "Tip de mesaj necunoscut."
+  },
+  "featureGifsLabel": {
+    "message": "GIF imagini"
+  },
+  "featureGifsShortLabel": {
+    "message": "GIFs"
+  },
+  "featureGifsDescription": {
+    "message": "Înlocuiește GIF elemente de imagine din pagină, lăsând GIFs de interfață mică neschimbată."
+  },
+  "featureGifvLabel": {
+    "message": "URL-uri video de tip GIFV și GIF"
+  },
+  "featureGifvShortLabel": {
+    "message": "GIFV"
+  },
+  "featureGifvDescription": {
+    "message": "Blochează URL-urile .gifv și elementele video care se comportă ca GIFs de buclă."
+  },
+  "featureAnimatedWebpLabel": {
+    "message": "WebP Modele URL"
+  },
+  "featureAnimatedWebpShortLabel": {
+    "message": "WebP"
+  },
+  "featureAnimatedWebpDescription": {
+    "message": "Blochează URL-urile imaginilor .webp. Dezactivat implicit pentru că multe imagini WebP nu sunt animate."
+  },
+  "featureAutoplayVideoLabel": {
+    "message": "Redare automată și video în buclă"
+  },
+  "featureAutoplayVideoShortLabel": {
+    "message": "Redare automată"
+  },
+  "featureAutoplayVideoDescription": {
+    "message": "Pune pe pauză videoclipul automat și elimină videoclipurile care se mută în buclă folosite ca animație."
+  },
+  "featureVideoLabel": {
+    "message": "Toate videoclipurile"
+  },
+  "featureVideoShortLabel": {
+    "message": "Video"
+  },
+  "featureVideoDescription": {
+    "message": "Blochează HTML5 videoclipuri și cereri comune de fișiere video."
+  },
+  "featureAudioLabel": {
+    "message": "Audio"
+  },
+  "featureAudioShortLabel": {
+    "message": "Audio"
+  },
+  "featureAudioDescription": {
+    "message": "Blochează elementele audio și cererile comune de fișiere audio."
+  },
+  "featureImagesLabel": {
+    "message": "Toate imaginile"
+  },
+  "featureImagesShortLabel": {
+    "message": "Imagini"
+  },
+  "featureImagesDescription": {
+    "message": "Înlocuiește elementele de imagine din pagină. Folosește reguli de permisiune pe site pentru site-urile cu multe imagini."
+  },
+  "featureEmojiLabel": {
+    "message": "Text cu emoji și imagini cu emoji"
+  },
+  "featureEmojiShortLabel": {
+    "message": "Emoji"
+  },
+  "featureEmojiDescription": {
+    "message": "Elimină personajele emoji și randările comune de imagini emoji. Este dezactivat implicit pentru că schimbă textul."
+  },
+  "featureCssMotionLabel": {
+    "message": "CSS animație și tranziții"
+  },
+  "featureCssMotionShortLabel": {
+    "message": "CSS"
+  },
+  "featureCssMotionDescription": {
+    "message": "Dezactivează animațiile CSS, tranzițiile și derularea fluidă."
+  },
+  "featureGroupMotionLabel": {
+    "message": "Blocarea mișcării"
+  },
+  "featureGroupMotionDescription": {
+    "message": "Setări implicite recomandate pentru videoclipuri GIFs, GIF, redare automată și mișcare a paginii."
+  },
+  "featureGroupBroadLabel": {
+    "message": "Blocatori largi ai mass-mediei"
+  },
+  "featureGroupBroadDescription": {
+    "message": "Utilizatorul avansat controlează imagini, video, audio, URL-uri WebP și emoji-uri. Acestea pot schimba sau strica unele site-uri."
+  },
+  "contentShowBlockedImage": {
+    "message": "Afișează imaginea blocată"
+  },
+  "contentPlayBlockedAudio": {
+    "message": "Redă audio blocat"
+  },
+  "contentPlayBlockedVideo": {
+    "message": "Redă videoclipul blocat"
+  },
+  "contentPlayBlockedMedia": {
+    "message": "Redă media blocată"
+  },
+  "contentBlockedByTitle": {
+    "message": "Blocat de MotionBlock: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentBlockedAlt": {
+    "message": "Blocat $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GIF"
+      }
+    }
+  },
+  "contentReasonGif": {
+    "message": "GIF"
+  },
+  "contentReasonGifv": {
+    "message": "GIFV"
+  },
+  "contentReasonWebp": {
+    "message": "WebP"
+  },
+  "contentReasonGifLikeMedia": {
+    "message": "Media asemănătoare GIF"
+  },
+  "contentReasonVideo": {
+    "message": "Video"
+  },
+  "contentReasonAudio": {
+    "message": "Audio"
+  },
+  "contentReasonLoopingVideo": {
+    "message": "Video în buclă"
+  },
+  "contentReasonAutoplayVideo": {
+    "message": "Redare video automată"
+  },
+  "contentReasonImage": {
+    "message": "Imagine"
+  },
+  "contentReasonMedia": {
+    "message": "Mass-media"
+  }
+}

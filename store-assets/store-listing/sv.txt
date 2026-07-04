@@ -1,0 +1,31 @@
+Blockera distraherande GIFs, GIFV, autoplaya video, hovra förhandsvisningar och sidrörelser innan de kommer i vägen.
+
+Använd MotionBlock för att sluta:
+
+Loopar GIF bilder.
+GIFV länkar.
+Korta, avstängda videor används som GIFs.
+Autoplay-video och förhandsvisningar av hov.
+Valfritt animerade WebP URL-mönster.
+Valfritt video, ljud, bilder, emoji och CSS rörelse.
+
+MotionBlock är byggt kring kontroll per plats. Behåll konservativa globala standardinställningar och tillåt eller blockera sedan specifika medietyper på enskilda webbplatser från popup- eller optionssidan. Inställningarna finns kvar i Chrome tilläggssynkroniseringslagring och kan synka genom Chrome om användaren har tilläggssynkronisering aktiverad.
+
+Vanliga användningsområden:
+
+Sluta med störande animationer medan du läser.
+Minska autoplay-videobrus.
+Spara bandbredd från onödigt media.
+Block YouTube-stil svävande förhandsvisningar.
+Lugna Reddit, Giphy, sociala flöden och nyhetssidor som omvandlar GIFs till korta videor.
+Tillåt bildintensiva platser samtidigt som du blockerar rörelse på andra håll.
+Tillåt snabbt media på sajter som behöver det.
+
+Popupen styr den aktuella sidan. Optionssidan hanterar globala standardinställningar, inställningar per webbplats, import/export av JSON backup, visning av blockerade medier, valfria avslöjandet-knappar och ljus/mörker/system-UI-tema.
+
+Chrome tillåter inte tillägg att ändra webbläsarinterna sidor, Chrome Web Store eller vissa skyddade sidor. Om media fortfarande är synligt efter installation eller ändring av inställningar, ladda om sidan.
+
+MotionBlock samlar inte in analys, skickar inte surfdata till en server eller använder fjärrregellistor.
+
+Öppen källkod under GPL-3.0-licensen:
+https://github.com/molodchyk/MotionBlock

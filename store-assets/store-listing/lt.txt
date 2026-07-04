@@ -1,0 +1,31 @@
+Blokuokite blaškančius GIFs, GIFV, automatinį vaizdo įrašų paleidimą, užvedimo peržiūras ir puslapio judėjimą, kol jie netrukdo.
+
+Naudokite MotionBlock, kad sustabdytumėte:
+
+Vaizdų ciklas GIF.
+GIFV nuorodos.
+Trumpi nutildyti vaizdo įrašai, naudojami kaip GIFs.
+Automatinis vaizdo įrašų paleidimas ir užvedimo peržiūros.
+Pasirenkami animuoti WebP URL šablonai.
+Pasirenkami vaizdo įrašai, garsas, vaizdai, jaustukai ir CSS judesiai.
+
+MotionBlock yra sukurta aplink kiekvienos vietos kontrolę. Išlaikykite konservatyvius visuotinius numatytuosius nustatymus, tada iššokančiajame lange arba parinkčių puslapyje leiskite arba blokuokite konkrečius medijos tipus atskirose svetainėse. Nustatymai lieka Chrome plėtinių sinchronizavimo saugykloje ir gali būti sinchronizuojami per Chrome, jei vartotojas įjungė plėtinių sinchronizavimą.
+
+Bendras naudojimas:
+
+Nustokite blaškyti animaciją skaitydami.
+Sumažinkite automatinio paleidimo vaizdo triukšmą.
+Sutaupykite pralaidumą nuo nereikalingų laikmenų.
+Blokuoti YouTube stiliaus užvedimo peržiūras.
+Ramūs Reddit, Giphy, socialiniai kanalai ir naujienų puslapiai, kurie GIFs paverčia trumpais vaizdo įrašais.
+Leisti daug vaizdų turinčias svetaines ir blokuoti judėjimą kitur.
+Greitai leiskite mediją svetainėse, kurioms jos reikia.
+
+Iššokantis langas valdo dabartinę svetainę. Parinkčių puslapyje valdomi visuotiniai numatytieji nustatymai, svetainės nuostatos, JSON atsarginių kopijų importas / eksportas, užblokuotos medijos rodymas, pasirenkami atskleidimo mygtukai ir šviesi / tamsi / sistemos vartotojo sąsajos tema.
+
+Chrome neleidžia plėtiniams keisti naršyklės vidinių puslapių, Chrome internetinės parduotuvės ar kai kurių apsaugotų puslapių. Jei įdiegus arba pakeitus parametrus laikmena vis dar matoma, įkelkite puslapį iš naujo.
+
+MotionBlock nerenka analizės, nesiunčia naršymo duomenų į serverį ir nenaudoja nuotolinių taisyklių sąrašų.
+
+Atvirasis kodas pagal GPL-3.0 licenciją:
+https://github.com/molodchyk/MotionBlock
